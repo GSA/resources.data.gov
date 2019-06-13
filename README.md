@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/GSA/resources.data.gov.svg?style=svg)](https://circleci.com/gh/GSA/resources.data.gov)
+
 # resources.data.gov
 
 Resources for open data and enterprise data inventory management.
@@ -7,7 +9,7 @@ Resources for open data and enterprise data inventory management.
 ### Prerequisites
 
 - [Ruby 2.6](https://www.ruby-lang.org/)
-- [Bundler](https://bundler.io/)
+- [Bundler 2.x](https://bundler.io/)
 - [Node.js 10](https://nodejs.org/)
 
 
