@@ -6,7 +6,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://resources.data.gov
 twitter_username: usdatagov
 github_username:  gsa
-
 primary_navigation:
   - url: /federal-data-strategy/
     text: Strategy
@@ -20,6 +19,8 @@ primary_navigation:
         text: Playbooks
       - url: /skill-builders/
         text: Skill builders
+searchgov_affiliate: datagov-resources
+
 
 # Build settings
 markdown: kramdown

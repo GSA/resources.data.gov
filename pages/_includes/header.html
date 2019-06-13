@@ -32,13 +32,17 @@
           {% endif %}
         {% endfor %}
       </ul>
-      <form class="usa-search usa-search--small">
+      {% if site.searchgov_affiliate %}
+      <form id="search_form" class="usa-search usa-search--small" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
+        <input name="utf8" type="hidden" value="&#x2713;">
+        <input type="hidden" name="affiliate" id="affiliate" value="{{ site.searchgov_affiliate }}">
         <div role="search">
-          <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
-          <input class="usa-input" id="basic-search-field-small" type="search" name="search">
+          <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
+          <input class="usa-input usagov-search-autocomplete" id="extended-search-field-small" type="search" name="query" autocomplete="off">
           <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
         </div>
       </form>
+      {% endif %}
     </nav>
   </div>
 </header>

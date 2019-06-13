@@ -6,4 +6,17 @@ layout: base
 {{ content }}
 
 {% include footer.html %}
+
+{% if site.searchgov_affiliate %}
+<script>
+//<![CDATA[
+  var usasearch_config = { siteHandle:"{{ site.searchgov_affiliate }}" };
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "//search.usa.gov/javascripts/remote.loader.js";
+  document.getElementsByTagName("head")[0].appendChild(script);
+//]]>
+</script>
+{% endif %}
+
 <script src="{{ site.baseurl }}/assets/uswds/js/uswds.min.js"></script>
