@@ -9,6 +9,7 @@ github_username:  gsa
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 plugins:
   - jekyll-feed
 source: pages
