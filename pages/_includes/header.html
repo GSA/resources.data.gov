@@ -6,34 +6,33 @@
   <div class="usa-nav-container">
     <div class="usa-navbar">
       <div class="usa-logo" id="basic-logo">
-        <em class="usa-logo__text"><a href="{{ site.baseurl }}/" title="Home" aria-label="Home">Project title</a></em>
+        <em class="usa-logo__text"><a href="{{ site.baseurl }}/" title="Home" aria-label="Home">{{ site.title }}</a></em>
       </div>
       <button class="usa-menu-btn">Menu</button>
     </div>
     <nav role="navigation" class="usa-nav">
       <button class="usa-nav__close"><img src="{{ site.baseurl }}/assets/uswds/img/close.svg" alt="close"></button>
       <ul class="usa-nav__primary usa-accordion">
-        <li class="usa-nav__primary-item">
-          <button class="usa-accordion__button usa-nav__link  usa-current" aria-expanded="false" aria-controls="basic-nav-section-one"><span>Current section</span></button>
-          <ul id="basic-nav-section-one" class="usa-nav__submenu">
-            <li class="usa-nav__submenu-item">
-              <a href="{{ site.baseurl }}/">Navigation link</a>
+        {% for nav in site.primary_navigation %}
+          {% if nav.children %}
+            <li class="usa-nav__primary-item">
+              <button class="usa-accordion__button usa-nav__link{% if page.primary_nav_section == nav.text %} usa-current{% endif %}" aria-expanded="false" aria-controls="basic-nav-section-{{ loop.index }}"><span>{{ nav.text | escape }}</span></button>
+              <ul id="basic-nav-section-{{ loop.index }}" class="usa-nav__submenu">
+                {% for subnav in nav.children %}
+                  <li class="usa-nav__submenu-item">
+                    <a href="{{ subnav.url | prepend: site.baseurl }}">{{ subnav.text | escape }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
             </li>
-          </ul>
-        </li>
-        <li class="usa-nav__primary-item">
-          <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="basic-nav-section-two"><span>Section</span></button>
-          <ul id="basic-nav-section-two" class="usa-nav__submenu">
-            <li class="usa-nav__submenu-item">
-              <a href="{{ site.baseurl }}/">Navigation link</a>
+          {% else %}
+            <li class="usa-nav__primary-item">
+              <a class="usa-nav__link{% if page.primary_nav_section == nav.text %} usa-current{% endif %}" href="{{ nav.url | prepend: site.baseurl }}"><span>{{ nav.text | escape }}</span></a>
             </li>
-          </ul>
-        </li>
-        <li class="usa-nav__primary-item">
-          <a class="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
-        </li>
+          {% endif %}
+        {% endfor %}
       </ul>
-      <form class="usa-search usa-search--small ">
+      <form class="usa-search usa-search--small">
         <div role="search">
           <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
           <input class="usa-input" id="basic-search-field-small" type="search" name="search">

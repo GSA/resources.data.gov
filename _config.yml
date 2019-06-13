@@ -7,6 +7,20 @@ url: https://resources.data.gov
 twitter_username: usdatagov
 github_username:  gsa
 
+primary_navigation:
+  - url: /federal-data-strategy/
+    text: Strategy
+  - url: /tools/
+    text: Tools
+  - text: Resources
+    children:
+      - url: /case-studies/
+        text: Case studies
+      - url: /playbooks/
+        text: Playbooks
+      - url: /skill-builders/
+        text: Skill builders
+
 # Build settings
 markdown: kramdown
 permalink: pretty
