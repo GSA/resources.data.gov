@@ -1,0 +1,17 @@
+{
+  "name": "resources.data.gov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "uswds": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "assets": "mkdir -p pages/assets/uswds; for dir in css fonts img js; do cp -r node_modules/uswds/dist/$dir pages/assets/uswds; done",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Data.gov <datagovhelp@gsa.gov>",
+  "license": "CC0-1.0"
+}
