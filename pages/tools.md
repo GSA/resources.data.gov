@@ -3,7 +3,7 @@ title: Tools
 layout: resources
 primary_nav_section: Tools
 resources:
-- url: http://www.json.org/
+- url: https://www.json.org/
   text: >
     JSON (JavaScript Object Notation) is a lightweight data-interchange format.
     It is easy for humans to read and write. It is easy for machines to parse

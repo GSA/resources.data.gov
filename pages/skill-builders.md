@@ -35,7 +35,7 @@ resources:
   text: >
     Project Open Data’s Github repository
 
-- url: http://18f.github.io/API-All-the-X/
+- url: https://18f.github.io/API-All-the-X/
   text: >
     The /Developer Program, a service of GSA’s 18F team, seeks to provide comprehensive support for any federal agency engaged in the production or use of APIs.
 
@@ -63,19 +63,19 @@ resources:
   text: >
     Government Data Hubs
 
-- url: https://youtu.be/hbxA5-GDvvU
+- url: https://www.youtube.com/watch?v=hbxA5-GDvvU
   text: >
     How to Get Your Agency's Data on to Data.gov (video)
 
-- url: https://youtu.be/tuxS1iDwc_c
+- url: https://www.youtube.com/watch?v=tuxS1iDwc_c
   text: >
     Open Data Policy Common Core Metadata v 1 1 Updates (video)
 
-- url: https://youtu.be/ciLYjDsF4lo
+- url: https://www.youtube.com/watch?v=ciLYjDsF4lo
   text: >
     How to use Inventory.Data.Gov (video)
 
-- url: https://www.youtube.com/watch?reload=9&v=_cqE4a8oAHU
+- url: https://www.youtube.com/watch?v=_cqE4a8oAHU
   text: >
     User Research and The Paperwork Reduction Act How to Get it Done
 
