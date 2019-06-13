@@ -9,7 +9,8 @@ Resources for open data and enterprise data inventory management.
 ### Prerequisites
 
 - [Ruby 2.6](https://www.ruby-lang.org/)
-- [Bundler 2.x](https://bundler.io/)
+- [Bundler 1.17.x](https://bundler.io/) (we use an older version for Federalist
+  compatibility)
 - [Node.js 10](https://nodejs.org/)
 
 
