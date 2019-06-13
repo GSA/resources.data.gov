@@ -24,9 +24,6 @@ jobs:
             - v1-ruby-{{ checksum "Gemfile.lock" }}
             - v1-ruby-
       - run:
-          name: update bundler
-          command: gem install bundler:2.0.1
-      - run:
           name: install ruby dependencies
           command: bundle install --path vendor/bundle
       - save_cache:
