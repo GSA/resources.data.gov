@@ -1,6 +1,7 @@
 ---
 title: Skill builders
 layout: resources
+primary_nav_section: Resources
 resources:
 - url: https://opendefinition.org/od/2.1/en/
   text: >

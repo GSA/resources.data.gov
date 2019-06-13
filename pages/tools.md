@@ -1,6 +1,7 @@
 ---
 title: Tools
 layout: resources
+primary_nav_section: Tools
 resources:
 - url: http://www.json.org/
   text: >

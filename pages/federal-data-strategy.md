@@ -1,6 +1,7 @@
 ---
 title: Federal Data Strategy
 layout: resources
+primary_nav_section: Strategy
 resources:
 - url: https://obamawhitehouse.archives.gov/omb/circulars_a119/
   text: Federal Participation in the Development and Use of Voluntary Consensus Standards and in Conformity Assessment Activities

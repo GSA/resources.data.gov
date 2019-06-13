@@ -1,6 +1,7 @@
 ---
 title: Case studies
 layout: resources
+primary_nav_section: Resources
 resources:
 - url: https://project-open-data.cio.gov/labor-case-study/
   text: U.S. Department of Labor Case Study

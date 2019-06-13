@@ -1,6 +1,7 @@
 ---
 title: Playbooks
 layout: resources
+primary_nav_section: Resources
 resources:
 - url: https://labs.data.gov/dashboard/offices/qa
   text: >
