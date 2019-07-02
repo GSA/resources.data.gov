@@ -15,10 +15,13 @@ the Foundations for Evidence Based Policymaking Act.
 > maintain an online repository of tools, best practices, and schema standards to
 > facilitate the adoption of open data practices across the Federal Government,
 > which shall—
+>
 >   “(A) include any definitions, regulations, policies, checklists, and case
 >   studies related to open data policy;
+>
 >   “(B) facilitate collaboration and the adoption of best practices across the
 >   Federal Government relating to the adoption of open data practices; and
+>
 >   “(C) be made available on the Federal data catalogue maintained under paragraph
 >   (1).
 
