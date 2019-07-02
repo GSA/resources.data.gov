@@ -14,6 +14,8 @@ primary_navigation:
     text: Tools
   - text: Resources
     url: /resources/
+  - text: About
+    url: /about/
 searchgov_affiliate: datagov-resources
 
 github:
