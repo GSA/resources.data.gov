@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Business Case for Open Data
+primary_nav_section: Resources
 ---
 
 Making data open and accessible in a standard, machine-readable format by default can have significant productivity and cost savings for agencies. When conducting a cost-benefit analysis to determine whether and to what extent to modify existing datasets and systems in accordance with the recommendations of this memo, consider the following potential benefits.

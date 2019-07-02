@@ -1,12 +1,10 @@
 ---
-published: true
-layout: default
+layout: page
 title: Documenting APIs
-permalink: /v1.1/api/
-filename: api.md
+primary_nav_section: Resources
 ---
 
-Agencies should list private, internal, and public-facing web APIs as part of their Enterprise Data Inventory and Public Data Listing data.json files. The original v1.0 schema accommodated the listing of APIs with a separate `webServices` field, but with the [v1.1 schema](/v1.1/schema/), APIs should now be listed as a separate distribution within a dataset. Since an API provides indirect access to a dataset and the primary URL that a user needs in order to access the API is the API documentation, all web APIs should be referenced using the primary API documentation URL as an `accessURL` with the `format` specified as "API". The `downloadURL` and `mediaType` fields should be left empty for a distribution that describes an API, but if the raw data download that powers the API is also available (as it should be) then that should be specified using the `downloadURL` and `mediaType` of another distribution entry on the same dataset.
+Agencies should list private, internal, and public-facing web APIs as part of their Enterprise Data Inventory and Public Data Listing data.json files. The original v1.0 schema accommodated the listing of APIs with a separate `webServices` field, but with the [v1.1 schema](https://project-open-data.cio.gov/v1.1/schema/), APIs should now be listed as a separate distribution within a dataset. Since an API provides indirect access to a dataset and the primary URL that a user needs in order to access the API is the API documentation, all web APIs should be referenced using the primary API documentation URL as an `accessURL` with the `format` specified as "API". The `downloadURL` and `mediaType` fields should be left empty for a distribution that describes an API, but if the raw data download that powers the API is also available (as it should be) then that should be specified using the `downloadURL` and `mediaType` of another distribution entry on the same dataset.
 
 Machine Readable API Documentation
 --------------------------------------------------

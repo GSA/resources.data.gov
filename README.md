@@ -33,3 +33,11 @@ Run the server
     $ npm start
 
 Open your web browser to [localhost:4000](http://localhost:4000/).
+
+Sanity check the generated site.
+
+    $ npm test
+
+Check for broken links.
+
+    $ npm run qa
