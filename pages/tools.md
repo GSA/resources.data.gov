@@ -1,141 +1,127 @@
 ---
 title: Tools
-layout: resources
+layout: page
 primary_nav_section: Tools
-resources:
-- url: https://www.json.org/
-  text: >
-    JSON (JavaScript Object Notation) is a lightweight data-interchange format.
-    It is easy for humans to read and write. It is easy for machines to parse
-    and generate.
-
-- url: https://ckan.org/
-  text: >
-    CKAN is a powerful data management system that makes data accessible – by
-    providing tools to streamline publishing, sharing, finding and using data.
-
-- url: https://schema.org/
-  text: >
-    Schema.org is a collaborative, community activity with a mission to create,
-    maintain, and promote schemas for structured data on the Internet, on web
-    pages, in email messages, and beyond.
-
-- url: https://labs.data.gov/dashboard/datagov/csv_to_json
-  text: >
-    CSV Converter
-
-- url: https://labs.data.gov/dashboard/validate
-  text: >
-    JSON Validator
-
-- url: https://project-open-data.cio.gov/v1.1/schema/
-  text: >
-    Guidance to support the use of the Project Open Data metadata to list agency
-    datasets and application programming interfaces (APIs) as hosted at
-    agency.gov/data.
-
-- url: https://github.com/GSA/datafiles-wordpress-plugin
-  text: >
-    WordPress Plugin  - Allows sites to serve and track changes of root level
-    XML, JSON, and other data files without directly uploading files to the
-    server.
-
-- url: https://github.com/FCC/digital_strategy
-  text: >
-    Creates 3 page nodes for digital strategy progess on enable. Also creates
-    menu callbacks which load the page nodes and output just the body with the
-    appropriate content type headers.
-
-- url: https://github.com/HHS/ckanext-datajson
-  text: >
-    Custom CKAN extension for Healthdata.gov
-
-- url: https://inventory.data.gov/
-  text: >
-    Inventory.data.gov is a tool for federal agencies to create and publish metadata catalogs
-
-- url: https://www.drupal.org/project/dkan
-  text: >
-    Drupal is an open source platform for building amazing digital experiences.
-    It's made by a dedicated community.
-
-- url: https://datahub.io/
-  text: >
-    Find, share and publish quality data online.
-
-- url: https://github.com/Esri/geoportal-server/
-  text: >
-    Geoportal Server is a standards-based, open source product that enables
-    discovery and use of geospatial resources including data and services.
-
-- url: https://pycsw.org/
-  text: >
-    pycsw is an OGC CSW server implementation written in Python.
-
-- url: http://geonode.org/
-  text: >
-    GeoNode is a web-based application and platform for developing geospatial
-    information systems (GIS) and for deploying spatial data infrastructures
-    (SDI). It is designed to be extended and modified, and can be integrated
-    into existing platforms.
-
-- url: https://github.com/project-open-data/db-to-api
-  text: >
-    Turns a Database into a Secure, RESTful API
-
-- url: https://github.com/project-open-data/csv-to-api
-  text: >
-    Proof of concept to dynamically generate RESTful APIs from static CSVs
-
-- url: https://konklone.io/json/
-  text: >
-    Tool used to Convert JSON to CSV
-
-- url: https://github.com/commonwealth-of-puerto-rico/libre
-  text: >
-    LIBRE = Libre Information Batch Restructuring Engine.
-
-- url: https://github.com/project-open-data/esri2open
-  text: >
-    this repo is an ESRI toolbox and tool(s) that export ESRI Feature Classes to
-    open data formats, CSV, JSON, and GeoJSON
-
-- url: https://github.com/project-open-data/kickstart
-  text: >
-    A WordPress plugin to help agencies kickstart their open data efforts by
-    allowing citizens to browse existing datasets and vote for suggested
-    priorities.
-
-- url: https://github.com/project-open-data/SpatialSearch
-  text: >
-    SpatialSearch is a RESTful API that allows the user to query geographic
-    entities by latitude and longitude, and extract data.
-
-- url: https://digital.gov/dap/
-  text: >
-    The Digital Analytics Program (DAP) offers advanced, easy Web analytics to federal agencies.
-
-- url: https://github.com/project-open-data/iodocs
-  text: >
-    Interactive API documentation system
-
-- url: https://github.com/project-open-data/swagger-core
-  text: >
-    Swagger-core defines annotations and required logic to generate a Swagger server or client.
-
-- url: https://github.com/cfpb/qu
-  text: >
-    qu is a data platform created to serve public data sets. This is a public domain work of the US Government.
-
-- url: https://github.com/cfpb/hmda-tools
-  text: >
-    Tools to make importing and analyzing mortgage application data easier.
-
-- url: https://www.drupal.org/project/datavizwiz
-  text: >
-    Data visualization wizard
-
-- url: https://tabula.technology/
-  text: >
-    Tabula is a tool for liberating data tables locked inside PDF files.
+secondary_nav:
+- url: "#agency-data-inventories"
+  text: Agency data inventories
+- url: "#apis"
+  text: APIs
+- url: "#geospatial"
+  text: Geospatial
+- url: "#other-tools"
+  text: Other tools
 ---
+## Agency data inventories
+
+[Project Open Data Metadata Schema](https://project-open-data.cio.gov/v1.1/schema/) currently used in
+Data.gov.
+
+[Glossary](https://project-open-data.cio.gov/glossary/) of terms used in Project
+Open Data Metadata Schema.
+
+[Field Mapping](https://project-open-data.cio.gov/v1.1/metadata-resources/#field-mappings)
+of fields under the Project Open Data Metadata Schema.
+
+[GitHub](https://github.com/project-open-data) repository for Project Open Data.
+
+[Inventory.data.gov](https://inventory.data.gov/) is a tool for federal agencies
+to create and publish metadata catalogs.
+
+[CKAN](https://ckan.org/) is a powerful data management system that makes data
+accessible – by providing tools to streamline publishing, sharing, finding and
+using data.
+
+[JSON](https://www.json.org/) (JavaScript Object Notation) is a lightweight data-interchange format.
+It is easy for humans to read and write. It is easy for machines to parse
+and generate.
+
+[JSON Validator](https://labs.data.gov/dashboard/validate) is used to check your
+agency's data.json against required federal metadata schema.
+
+[JSON to CSV converter](https://konklone.io/json/).
+
+[CSV to JSON converter](https://labs.data.gov/dashboard/datagov/csv_to_json).
+
+[Schema.org](https://schema.org/) is a collaborative, community activity with
+a mission to create, maintain, and promote schemas for structured data on the
+Internet, on web pages, in email messages, and beyond.
+
+[Guidance](https://project-open-data.cio.gov/v1.1/schema/) to support the use of
+the Project Open Data metadata to list agency datasets and application
+programming interfaces (APIs) as hosted at agency.gov/data.
+
+Custom [CKAN extension](https://github.com/HHS/ckanext-datajson) for [healthdata.gov](https://healthdata.gov/).
+
+[Government Data Hubs](https://project-open-data.cio.gov/data-hubs/).
+
+[How to Get Your Agency's Data on to Data.gov](https://www.youtube.com/watch?v=hbxA5-GDvvU) (video).
+
+
+## APIs
+
+[Database to API](https://github.com/project-open-data/db-to-api) turns
+a Database into a Secure, RESTful API.
+
+[CSV to API](https://github.com/project-open-data/csv-to-api) generator is
+a proof of concept to dynamically generate RESTful APIs from static CSVs.
+
+[Interactive API documentation system](https://github.com/project-open-data/iodocs).
+
+[Documenting APIs]({% link tools/documenting-apis.md %}).
+
+[/Developer program](https://18f.github.io/API-All-the-X/) provides support to
+agencies engaged in the production or use of APIs.
+
+
+## Geospatial
+
+[Geoportal Server](https://github.com/Esri/geoportal-server/) is
+a standards-based, open source product that enables discovery and use of
+geospatial resources including data and services.
+
+
+[pycsw](https://pycsw.org/) is an OGC CSW server implementation written in
+Python.
+
+[GeoNode](http://geonode.org/) is a web-based application and platform for
+developing geospatial information systems (GIS) and for deploying spatial data
+infrastructures (SDI). It is designed to be extended and modified, and can be
+integrated into existing platforms.
+
+[Repository](https://github.com/project-open-data/esri2open) is an ESRI toolbox
+and tool(s) that export ESRI Feature Classes to open data formats, CSV, JSON,
+and GeoJSON.
+
+[SpatialSearch](https://github.com/project-open-data/SpatialSearch) is a RESTful
+API that allows the user to query geographic entities by latitude and longitude,
+and extract data.
+
+
+## Other tools
+
+[Dashboard](https://labs.data.gov/dashboard/offices/qa) of agency performance on open data.
+
+[JSON Based Serialization for Linked Data](https://www.w3.org/TR/json-ld/).
+
+[WordPress Plugin](https://github.com/project-open-data/kickstart) allows sites
+to serve and track changes of root level XML, JSON, and other data files without
+directly uploading files to the server.
+
+[DKAN](https://www.drupal.org/project/dkan) is a Drupal based open data platform.
+
+[LIBRE](https://github.com/commonwealth-of-puerto-rico/libre), the Libre
+Information Batch Restructuring Engine.
+
+The [Digital Analytics Program](https://digital.gov/dap/) (DAP) offers advanced,
+easy Web analytics to federal agencies.
+
+[Data Visualization](https://www.drupal.org/project/datavizwiz) wizard.
+
+[qu](https://github.com/cfpb/qu) is a data platform created to serve public data
+sets. This is a public domain work of the US Government.
+
+[Tabula](https://tabula.technology/) is a tool for liberating data tables locked
+inside PDF files.
+
+[HMDA tools](https://github.com/cfpb/hmda-tools) import and analyze mortgage application data.

@@ -36,7 +36,10 @@
     "build": "gulp init",
     "federalist": "npm run build",
     "prestart": "npm run build",
+    "qa": "bundle exec htmlproofer --check-html _site",
+    "setup": "bundle install",
     "start": "concurrently \"npm run watch:*\" \"bundle exec jekyll serve\"",
+    "test": "bundle exec htmlproofer --check-html --disable-external _site",
     "watch:js": "gulp watch-js",
     "watch:sass": "gulp watch-sass"
   },

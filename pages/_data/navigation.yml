@@ -1,10 +1,20 @@
 - text: Strategy
-  href: /federal-data-strategy/
+  url: /strategy/
 - text: Tools
-  href: /tools/
-- text: Case Studies
-  href: /case-studies/
-- text: Playbooks
-  href: /playbooks/
-- text: Skills Builders
-  href: /skill-builders/
+  url: /tools/
+- text: Resources
+  children:
+    - text: Case studies
+      url: /case-studies/
+    - text: Playbooks
+      url: /playbooks/
+    - text: Guidance
+      url: /guidance/
+    - text: Skill builders
+      url: /skill-builders/
+- text: About
+  children:
+    - text: History
+      url: /history/
+    - text: Requirements
+      url: /requirements/

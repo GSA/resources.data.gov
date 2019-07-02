@@ -1,25 +1,12 @@
-title: Data.gov Resources
+title: Federal Enterprise Data Resources
 email: datagov@gsa.gov
 description: >-
-  Resources for open data and managing your agency’s enterprise data inventory.
+  Federal Enterprise Data Resources are tools, best practices, and schema standards to facilitate the adoption of open data practices across the federal government
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://resources.data.gov
 twitter_username: usdatagov
 github_username:  gsa
 dap_agency: GSA
-primary_navigation:
-  - url: /federal-data-strategy/
-    text: Strategy
-  - url: /tools/
-    text: Tools
-  - text: Resources
-    children:
-      - url: /case-studies/
-        text: Case studies
-      - url: /playbooks/
-        text: Playbooks
-      - url: /skill-builders/
-        text: Skill builders
 searchgov_affiliate: datagov-resources
 
 github:
