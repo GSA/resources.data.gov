@@ -1,6 +1,6 @@
 ---
 title: Federal Data Strategy
-layout: resources
+layout: page
 primary_nav_section: Strategy
 resources:
 - url: https://obamawhitehouse.archives.gov/omb/circulars_a119/
@@ -23,3 +23,15 @@ resources:
 - url: https://project-open-data.cio.gov/implementation-guide/
   text: Supplemental Guidance on the Implementation of M-13-13 “Open Data Policy – Managing Information as an Asset”
 ---
+
+[Federal Data Strategy Principles](https://strategy.data.gov/principles/)
+contains motivational guidelines in the areas of Ethical Governance, Conscious
+Design, and a Learning Culture.
+
+[Federal Data Strategy Practices](https://strategy.data.gov/practices/) are
+goals designed to inform and guide agency actions to improve the government’s
+approach to data stewardship and use.
+
+[Federal Data Strategy Action Plan](https://strategy.data.gov/action-plan/)
+describes specific government-wide and agency commitments supporting the Federal
+Data Strategy.
