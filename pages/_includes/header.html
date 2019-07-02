@@ -13,9 +13,18 @@
       <ul class="usa-nav__primary usa-accordion">
         {% for _section in primary_links %}
         <li class="usa-nav__primary-item">
-          <a class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav__link {% endif %} {% if _section.href == page.permalink or page.url contains _section.href or page.permalink contains _section.href %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
-            <span>{{ _section.text }}</span>
-          </a>
+          {% if _section.children %}
+            <button class="usa-accordion__button usa-nav__link{% if page.primary_nav_section == _section.text %} usa-current{% endif %}" aria-expanded="false" aria-controls="basic-nav-section-{{ forloop.index }}"><span>{{ _section.text | escape }}</span></button>
+            <ul id="basic-nav-section-{{ forloop.index }}" class="usa-nav__submenu">
+              {% for subnav in _section.children %}
+                <li class="usa-nav__submenu-item">
+                  <a href="{{ subnav.url | prepend: site.baseurl }}">{{ subnav.text | escape }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <a class="usa-nav__link{% if page.primary_nav_section == _section.text %} usa-current{% endif %}" href="{{ _section.url | prepend: site.baseurl }}"><span>{{ _section.text | escape }}</span></a>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>

@@ -7,27 +7,6 @@ url: https://resources.data.gov
 twitter_username: usdatagov
 github_username:  gsa
 dap_agency: GSA
-primary_navigation:
-  - url: /strategy/
-    text: Strategy
-  - url: /tools/
-    text: Tools
-  - text: Resources
-    children:
-      - text: Case studies
-        url: /case-studies/
-      - text: Playbooks
-        url: /playbooks/
-      - text: Guidance
-        url: /guidance/
-      - text: Skill builders
-        url: /skill-builders/
-  - text: About
-    children:
-      - text: History
-        url: /history/
-      - text: Requirements
-        url: /requirements/
 searchgov_affiliate: datagov-resources
 
 github:
