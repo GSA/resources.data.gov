@@ -8,26 +8,26 @@ twitter_username: usdatagov
 github_username:  gsa
 dap_agency: GSA
 primary_navigation:
-  - url: /federal-data-strategy/
+  - url: /strategy/
     text: Strategy
   - url: /tools/
     text: Tools
   - text: Resources
     children:
       - text: Case studies
-        url: /resources/case-studies/
+        url: /case-studies/
       - text: Playbooks
-        url: /resources/playbooks-and-standards/
+        url: /playbooks/
       - text: Guidance
-        url: /resources/guidance-and-memoranda/
+        url: /guidance/
       - text: Skill builders
-        url: /resources/skill-builders/
+        url: /skill-builders/
   - text: About
     children:
       - text: History
-        url: /about/history/
+        url: /history/
       - text: Requirements
-        url: /about/requirements/
+        url: /requirements/
 searchgov_affiliate: datagov-resources
 
 github:
