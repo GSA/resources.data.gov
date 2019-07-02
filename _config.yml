@@ -13,13 +13,7 @@ primary_navigation:
   - url: /tools/
     text: Tools
   - text: Resources
-    children:
-      - url: /case-studies/
-        text: Case studies
-      - url: /playbooks/
-        text: Playbooks
-      - url: /skill-builders/
-        text: Skill builders
+    url: /resources/
 searchgov_affiliate: datagov-resources
 
 github:
