@@ -13,7 +13,15 @@ primary_navigation:
   - url: /tools/
     text: Tools
   - text: Resources
-    url: /resources/
+    children:
+      - text: Case studies
+        url: /resources/case-studies/
+      - text: Playbooks
+        url: /resources/playbooks-and-standards/
+      - text: Guidance
+        url: /resources/guidance-and-memoranda/
+      - text: Skill builders
+        url: /resources/skill-builders/
   - text: About
     children:
       - text: History
