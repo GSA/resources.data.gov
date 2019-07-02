@@ -15,7 +15,11 @@ primary_navigation:
   - text: Resources
     url: /resources/
   - text: About
-    url: /about/
+    children:
+      - text: History
+        url: /about/history/
+      - text: Requirements
+        url: /about/requirements/
 searchgov_affiliate: datagov-resources
 
 github:
