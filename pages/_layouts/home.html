@@ -1,10 +1,27 @@
 ---
 layout: default
+class: home
 ---
-<main id="main-content" class="grid-container">
-  <div class="grid-row">
-    <div class="desktop:grid-col-12">
-      {{ content }}
+
+<div class="bg-primary text-white margin-bottom-3 tablet:margin-bottom-6" id="main-content">
+  <div class="grid-container padding-y-3 tablet:padding-y-6">
+    <div class="measure-1 font-heading-md tablet:font-heading-xl line-height-serif-4 margin-bottom-4">
+      {{page.tagline}}
     </div>
+    <a href="{{page.button.href | relative_url}}" class="usa-button usa-button--secondary width-auto">{{page.button.text}}</a>
   </div>
-</main>
+</div>
+<div class="grid-container  margin-bottom-3 tablet:margin-bottom-6 usa-layout__docs-main">
+  
+  <div class="grid-row grid-gap">
+  {% for card in page.cards %}
+    <div class="tablet:grid-col-4 display-flex margin-bottom-205 tablet:margin-bottom-0">
+      <a href="{{ card.href | relative_url}}" class="border border-base radius-sm padding-x-5 padding-y-3 tablet:padding-5 hover:bg-base-lightest hover:shadow-2 text-no-underline">
+        <h3 class="margin-top-0 text-primary-vivid icon-arrow font-heading-sm">{{ card.heading }}</h3>
+        <p class="text-ink margin-bottom-0 line-height-sans-4">{{ card.body }}</p>
+      </a>
+    </div>
+  {% endfor %}
+  </div>
+  {{ content }}
+</div>

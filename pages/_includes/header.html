@@ -1,37 +1,27 @@
-<a class="usa-skipnav" href="#main-content">Skip to main content</a>
-{% include usa-banner.html %}
-
 <div class="usa-overlay"></div>
-<header class="usa-header usa-header--basic" role="banner">
-  <div class="usa-nav-container">
-    <div class="usa-navbar">
-      <div class="usa-logo" id="basic-logo">
-        <em class="usa-logo__text"><a href="{{ site.baseurl }}/" title="Home" aria-label="Home">{{ site.title }}</a></em>
-      </div>
-      <button class="usa-menu-btn">Menu</button>
+<header class="usa-header usa-header--extended" role="banner">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="extended-logo">
+      <em class="usa-logo__text"><a href="{{ '/' | relative_url }}" title="Home" aria-label="Home"><img src="{{ '/assets/img/resources-heading--desktop--light.svg' | relative_url }}" alt="{{site.title}}" class="display-block" /></a></em>
     </div>
-    <nav role="navigation" class="usa-nav">
-      <button class="usa-nav__close"><img src="{{ site.baseurl }}/assets/uswds/img/close.svg" alt="close"></button>
+    <button class="usa-menu-btn text-semibold">Menu</button>
+  </div>
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav__inner"><button class="usa-nav__close"><img src="{{ '/assets/uswds/img/close.svg' | relative_url }}" alt="close" /></button>
+
+      {% assign primary_links = site.data.navigation %} {% if primary_links %}
       <ul class="usa-nav__primary usa-accordion">
-        {% for nav in site.primary_navigation %}
-          {% if nav.children %}
-            <li class="usa-nav__primary-item">
-              <button class="usa-accordion__button usa-nav__link{% if page.primary_nav_section == nav.text %} usa-current{% endif %}" aria-expanded="false" aria-controls="basic-nav-section-{{ loop.index }}"><span>{{ nav.text | escape }}</span></button>
-              <ul id="basic-nav-section-{{ loop.index }}" class="usa-nav__submenu">
-                {% for subnav in nav.children %}
-                  <li class="usa-nav__submenu-item">
-                    <a href="{{ subnav.url | prepend: site.baseurl }}">{{ subnav.text | escape }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </li>
-          {% else %}
-            <li class="usa-nav__primary-item">
-              <a class="usa-nav__link{% if page.primary_nav_section == nav.text %} usa-current{% endif %}" href="{{ nav.url | prepend: site.baseurl }}"><span>{{ nav.text | escape }}</span></a>
-            </li>
-          {% endif %}
+        {% for _section in primary_links %}
+        <li class="usa-nav__primary-item">
+          <a class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav__link {% endif %} {% if _section.href == page.permalink or page.url contains _section.href or page.permalink contains _section.href %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
+            <span>{{ _section.text }}</span>
+          </a>
+        </li>
         {% endfor %}
       </ul>
+      {% endif %}
+      <div class="usa-nav__secondary">
+
       {% if site.searchgov_affiliate %}
       <form id="search_form" class="usa-search usa-search--small" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
         <input name="utf8" type="hidden" value="&#x2713;">
@@ -43,6 +33,9 @@
         </div>
       </form>
       {% endif %}
-    </nav>
-  </div>
+
+
+      </div>
+    </div>
+  </nav>
 </header>

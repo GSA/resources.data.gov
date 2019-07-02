@@ -1,0 +1,6 @@
+.usa-footer__secondary-section,
+.usa-footer__secondary-section a,
+.usa-footer__secondary-section a:hover,
+.usa-footer__secondary-section a:visited {
+  @include u-text("white");
+}

@@ -22,6 +22,13 @@ primary_navigation:
         text: Skill builders
 searchgov_affiliate: datagov-resources
 
+github:
+  organization: GSA
+  repository: resources.data.gov
+  default_branch: master
+
+styles:
+  - assets/uswds/css/styles.css
 
 # Build settings
 markdown: kramdown
@@ -29,3 +36,24 @@ permalink: pretty
 plugins:
   - jekyll-feed
 source: pages
+
+keep_files:
+  - assets/js
+  - assets/uswds
+
+exclude:
+  - CONTRIBUTING.md
+  - LICENSE.md
+  - README.md
+  - _js
+  - _scss
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package-lock.json
+  - package.json
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

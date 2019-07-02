@@ -1,0 +1,59 @@
+#glossary {
+  transition: right 0.2s;
+
+  &[aria-hidden="true"] {
+    right: -20rem;
+  }
+
+  div[aria-hidden="true"] {
+    display: none !important;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    @include u-text("left");
+  }
+
+  .glossary__definition {
+    @include u-font("sans", "xs");
+    @include u-line-height("sans", 6);
+    @include u-margin-y(2);
+    @include u-width("full");
+  }
+
+  .glossary__term {
+    @include u-border-bottom("1px");
+    @include u-border("base");
+    @include u-margin(0);
+    @include u-padding-y(1);
+    @include u-padding-left(0);
+    @include u-padding-right(3);
+    @include u-text("bold");
+    @include u-width("full");
+
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg%20%20fill%3D%27%23ffffff%27%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2020c5.523%200%2010-4.477%2010-10S15.523%200%2010%200%200%204.477%200%2010s4.477%2010%2010%2010zm4.208-9.063h-3.175v3.126a.945.945%200%200%201-.953.937.945.945%200%200%201-.952-.938v-3.124H5.953A.945.945%200%200%201%205%2010c0-.518.426-.938.953-.938h3.175V5.938c0-.518.426-.938.952-.938s.953.42.953.938v3.125h3.175c.526%200%20.952.42.952.937a.945.945%200%200%201-.952.938z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+
+    &[aria-expanded="true"] {
+      background-image: url("data:image/svg+xml;charset=utf8, %3Csvg%20%20fill%3D%27%23ffffff%27%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2020c5.523%200%2010-4.477%2010-10S15.523%200%2010%200%200%204.477%200%2010s4.477%2010%2010%2010zm1.033-9.125h-5.08A.945.945%200%200%201%205%209.937C5%209.42%205.426%209%205.953%209H14.208c.526%200%20.952.42.952.938a.945.945%200%200%201-.952.937h-3.175z%22%2F%3E%3C%2Fsvg%3E");
+    }
+  }
+}
+
+[data-term] {
+  border-bottom: 1px dotted;
+  border-color: color("secondary-light");
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  background-image: url("../../img/icon-glossary.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 17px;
+}
+
+[data-term]:hover {
+  @include u-bg("secondary-lightest");
+}

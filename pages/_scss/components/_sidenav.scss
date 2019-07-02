@@ -1,0 +1,43 @@
+.usa-sidenav {
+  @include u-border-bottom("base");
+
+  a {
+    @include u-padding-y("2");
+    @include u-text("bold");
+
+    &.usa-current {
+      @include u-text("ink");
+
+      &:after {
+        @include u-bg("secondary-light");
+      }
+    }
+
+    &:hover {
+      background-color: transparent;
+      @include u-text("secondary");
+    }
+  }
+}
+
+.usa-sidenav__item:first-child,
+.usa-sidenav__item:only-child {
+  @include u-border-top(0);
+}
+
+.usa-sidenav__item {
+  @include u-border-top("base");
+}
+
+.usa-sidenav__sublist {
+  @include u-padding-bottom("1");
+
+  a {
+    @include u-padding-y("1");
+    @include u-text("normal");
+  }
+
+  .usa-sidenav__item {
+    @include u-border-top(0);
+  }
+}

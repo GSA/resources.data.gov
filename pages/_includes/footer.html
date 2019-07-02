@@ -1,55 +1,53 @@
-<footer class="usa-footer" role="contentinfo">
+<footer class="usa-footer usa-footer--slim" role="contentinfo">
+  {% unless page.no_top_link %}
   <div class="grid-container usa-footer__return-to-top">
-    <a href="#main-content">Return to top</a>
+    <a href="#">Return to top</a>
   </div>
-  <div class="usa-footer__primary-section">
-    <nav class="usa-footer__nav">
-      <ul class="add-list-reset grid-row grid-gap">
-        <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="https://www.data.gov/about">About</a>
-        </li>
-        <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="https://www.data.gov/meta/">Blog</a>
-        </li>
-        <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="https://www.usa.gov/">USA.gov</a>
-        </li>
-        <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="https://project-open-data.cio.gov/">Project Open Data</a>
-        </li>
-        <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="https://www.data.gov/privacy-policy">Privacy</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  {% endunless %}
 
-  <div class="usa-footer__secondary-section">
+  <div class="usa-footer__secondary-section bg-primary">
     <div class="grid-container">
-      <div class="grid-row grid-gap">
-        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
-          <div class="mobile-lg:grid-col-auto">
-            <img class="usa-footer__logo-img" src="{{ site.baseurl }}/assets/img/logo.svg" alt="Data.gov logo">
-          </div>
-          <div class="mobile-lg:grid-col-auto">
-            <h3 class="usa-footer__logo-heading">Data.gov</h3>
+      <div class="display-flex flex-align-center margin-bottom-4">
+        <a href="https://www.whitehouse.gov/omb/"
+          ><img
+            class="width-10 display-block"
+            src="{{ '/assets/img/eop-omb.png' | relative_url }}"
+            alt="Office of Management and Budget"
+        /></a>
+        <div class="separator display-flex flex-align-center">
+         <a href="https://www.gsa.gov"
+          ><img
+            class="width-10 display-block"
+            src="{{ '/assets/img/gsa-logo.png' | relative_url }}"
+            alt="General Services Administration"
+        /></a>
+        </div>
+        <div class="separator display-flex flex-align-center">
+          <a href="https://www.archives.gov/ogis"
+            ><img
+              class="height-10 display-block"
+              src="{{ '/assets/img/ogis-nara-logo.png' | relative_url }}"
+              alt="NARA Office of Government Information &amp; Oversight"
+          /></a>
+        </div>
+      </div>
+      <div class="grid-row">
+        <div class="desktop:grid-col-10">
+          <div class="measure-6 font-sans-2xs">
+            <p class="margin-top-0">
+              The Federal Enterprise Data Resources content is maintained by the <a href="">Data.gov</a> Program Management Office in <a href="https://www.gsa.gov/tts">GSA TTS</a>, the <a href="https://www.archives.gov/ogis">Office of Government Information &amp; Oversight</a>, and the <a href="https://www.whitehouse.gov/omb/management/egov/">Office of the Federal CIO</a>, part of the <a href="https://www.whitehouse.gov/omb/">Office of Management and Budget (OMB)</a>. </p>
+            <p>
+              Help us improve this site
+              on <a href="https://github.com/{{ site.github.organization }}/{{ site.github.repository }}/edit/{{ site.github.default_branch }}/pages/{{ page.path }}">GitHub</a>.
+            </p>
           </div>
         </div>
-        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-          <div class="usa-footer__social-links grid-row grid-gap-1">
-            <div class="grid-col-auto">
-              <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/{{ site.twitter_username }}">
-                <span>Twitter</span>
-              </a>
-            </div>
-          </div>
-          <address class="usa-footer__address">
-            <div class="usa-footer__contact-info grid-row grid-gap">
-              <div class="grid-col-auto">
-                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-              </div>
-            </div>
-          </address>
+        <div class="desktop:grid-col-2">
+          <ul class="add-list-reset font-sans-2xs">
+            <li class="margin-bottom-1">
+              <a href="{{ '/privacy/' | relative_url }}">Privacy policy</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
