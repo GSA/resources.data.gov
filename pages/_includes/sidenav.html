@@ -1,0 +1,47 @@
+<aside class="usa-layout__docs-sidenav desktop:grid-col-3 margin-top-4 desktop:margin-top-0 padding-top-4 order-last desktop:padding-top-0 desktop:order-first border-base border-top desktop:border-top-0">
+  <div class="font-serif-xs margin-bottom-205">In this section:</div>
+  <nav>
+    {% assign _url = page.url | split: '/' %}
+    {% assign _parent_dir = _url[1] %}
+    {% assign _parent_url = _parent_dir | relative_url | append: '/' %}
+    {% assign _parent_path = _parent_dir | append: '/index.md' %}
+    {% assign _parent_meta = site.pages | where_exp:"item", "item.path contains _parent_path" %}
+    {% assign _current_url = page.url | relative_url %}
+    {% assign _pages = site.pages | where_exp:"item",
+    "item.url contains _parent_dir" %}
+
+    <ul class="usa-sidenav font-family-sans font-sans-2xs {% if _pages.size < 2 %}border-bottom-0{% endif %}">
+
+      <li class="usa-sidenav__item">
+        <a href="{{ _parent_url }}" {% if _parent_url==_current_url %}class="usa-current" {% endif %}>{{ _parent_meta[0].title }}</a>
+        {% if _parent_url == _current_url and page.anchors%}
+        <ul class="usa-sidenav__sublist font-family-sans font-sans-2xs">
+          {% for _anchor in page.anchors %}
+          <li class="usa-sidenav__item">
+            <a href="#{{_anchor.name | remove: "'" | slugify}}">{{_anchor.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+
+      {% for _page in _pages %}
+      {% unless _page.path contains "index.md" %}
+      <li class="usa-sidenav__item">
+        <a href="{{ _page.url | relative_url }}" {% if _page.url==page.url %}class="usa-current" {% endif %}>{{ _page.title }}</a>
+        {% if _page.url == page.url and page.anchors%}
+        <ul class="usa-sidenav__sublist font-family-sans font-sans-2xs">
+          {% for _anchor in page.anchors %}
+          <li class="usa-sidenav__item">
+            <a href="#{{_anchor.name | remove: "'" | slugify}}">{{_anchor.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endunless %}
+      {% endfor %}
+
+    </ul>
+  </nav>
+</aside>

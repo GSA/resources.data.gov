@@ -1,0 +1,103 @@
+.usa-logo {
+  img {
+    width: 252px;
+  }
+
+  @include at-media("mobile-lg") {
+    img {
+      width: auto;
+    }
+  }
+}
+
+.usa-header--extended .usa-current:after,
+.usa-header--extended .usa-nav__link:hover:after,
+.usa-header--extended [aria-expanded=true]:after {
+  @include at-media($theme-navigation-width) {
+    @include u-bg("secondary-light");
+    bottom: -1px;
+  }
+}
+
+.usa-nav__primary > .usa-nav__primary-item > a {
+  @include at-media($theme-navigation-width) {
+    @include u-border(1px, "transparent");
+    @include u-text("semibold");
+
+    &.usa-nav__link:hover {
+      @include u-bg("base-lightest");
+      @include u-text("primary");
+      @include u-border(1px, "base-lighter");
+
+      &:not(.usa-current):after {
+        content: none;
+      }
+    }
+
+    &.usa-current {
+      @include u-text("ink");
+    }
+  }
+}
+
+.usa-nav__secondary {
+  @include at-media($theme-navigation-width) {
+    bottom: 4.5rem;
+  }
+}
+
+.usa-nav__secondary-links {
+  a {
+    @include u-text("ink");
+    text-decoration: none;
+
+    &:hover {
+      @include u-text("primary");
+      text-decoration: none;
+    }
+  }
+}
+
+.usa-nav__secondary-links
+  .usa-nav__secondary-item
+  + .usa-nav__secondary-item:before {
+  @include at-media($theme-navigation-width) {
+    color: #d5d8db;
+  }
+}
+
+.usa-nav__secondary-item::after {
+  display: none !important;
+}
+
+.usa-header--extended .usa-nav {
+  @include at-media($theme-navigation-width) {
+    border-color: transparent;
+  }
+}
+
+.usa-header + .usa-section,
+.usa-header + main {
+  @include at-media($theme-navigation-width) {
+    border-color: color("base");
+  }
+}
+
+.usa-navbar {
+  @include at-media-max("desktop") {
+    border-color: color("base");
+  }
+  @include u-height("10");
+}
+
+.usa-menu-btn,
+.usa-menu-btn:hover {
+  @include u-bg("secondary-lightest");
+  @include u-border(1px);
+  @include u-border("secondary-lighter");
+  @include u-margin-right(2);
+  @include u-height("5");
+  @include u-radius("sm");
+  @include u-text("no-uppercase", "primary");
+  @include u-width("10");
+}

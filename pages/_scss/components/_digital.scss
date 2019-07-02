@@ -1,0 +1,7 @@
+.digital-banner {
+  @include u-bg("indigo-warm-80");
+
+  a, a:hover, a:visited {
+    @include u-text("white");
+  }
+}
