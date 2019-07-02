@@ -22,6 +22,7 @@ markdown: kramdown
 permalink: pretty
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 source: pages
 
 keep_files:
