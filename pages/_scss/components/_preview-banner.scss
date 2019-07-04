@@ -1,0 +1,9 @@
+.preview-banner {
+  @include u-bg("gray-5");
+  padding: 1rem;
+}
+
+.preview-banner__body {
+  @include u-font('body', '3xs');
+  text-align: center;
+}
