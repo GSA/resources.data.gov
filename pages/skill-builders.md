@@ -4,6 +4,10 @@ layout: page
 primary_nav_section: Resources
 ---
 
+A critical aspect of improving federal open data is building the relevant skills
+among the personnel working with the data. Resources to assist those working
+with data are provided below.
+
 [Open Definition 2.1](https://opendefinition.org/od/2.1/en/) from Open Knowledge Foundation.
 
 [Annotated 8 Principles of Open Government Data](https://opengovdata.org/).

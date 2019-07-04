@@ -4,6 +4,9 @@ layout: page
 primary_nav_section: Resources
 ---
 
+There are a number of data standards and vocabularies relevant to federal
+datasets. Key standards, models, and playbooks include the following.
+
 [Data Catalog Vocabulary (DCAT)](https://www.w3.org/TR/vocab-dcat/).
 
 The [U.S. Public Participation Playbook](https://participation.usa.gov/) is a resource for government managers
