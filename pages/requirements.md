@@ -15,3 +15,5 @@ the Executive Order on Artificial Intelligence that directs federal agencies to
 take actions designed to promote and protect American advancements in AI,
 including actions to support discoverability and usability of federal data and
 models on AI.
+
+[Geospatial Data Act of 2018](https://www.fgdc.gov/gda).
