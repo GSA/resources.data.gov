@@ -23,3 +23,7 @@ with data are provided below.
 [User Research and The Paperwork Reduction Act How to Get it Done](https://www.youtube.com/watch?v=_cqE4a8oAHU) (video).
 
 [Identifying data sets for public release](https://opendata.guide/chapter2.html).
+
+[Federal Digital Communities of Service](https://digital.gov/communities/).
+
+[Federal Committee on Statistical Methodology](https://nces.ed.gov/FCSM/index.asp).

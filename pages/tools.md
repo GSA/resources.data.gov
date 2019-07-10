@@ -97,6 +97,8 @@ and GeoJSON.
 API that allows the user to query geographic entities by latitude and longitude,
 and extract data.
 
+[Federal Geographic Data Committee](https://www.fgdc.gov/).
+
 
 ## Other tools
 
@@ -125,3 +127,5 @@ sets. This is a public domain work of the US Government.
 inside PDF files.
 
 [HMDA tools](https://github.com/cfpb/hmda-tools) import and analyze mortgage application data.
+
+[Data and Statistics about the U.S.](https://www.usa.gov/statistics).
