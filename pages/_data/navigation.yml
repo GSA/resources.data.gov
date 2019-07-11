@@ -12,6 +12,8 @@
       url: /guidance/
     - text: Skill builders
       url: /skill-builders/
+    - text: Standards
+      url: /standards/
 - text: About
   children:
     - text: History
