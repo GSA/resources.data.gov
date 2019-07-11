@@ -4,14 +4,6 @@ title: History
 primary_nav_section: About
 ---
 
-[Executive Order on Open
-Data](https://www.govinfo.gov/content/pkg/CFR-2014-title3-vol1/pdf/CFR-2014-title3-vol1-eo13642.pdf)
-from 2013 requiring open and machine readable as the new default for government information.
+The [Foundations for Evidence-Based Policymaking Act of 2018 (“Evidence Act”)](https://www.congress.gov/bill/115th-congress/house-bill/4174/text) signed into law on January 14, 2019, emphasizes collaboration and coordination to advance data and evidence-building functions in the Federal Government by statutorily mandating Federal evidence-building activities, open government data, and confidential information protection and statistical efficiency. Title II of the Foundations for Evidence Based Policymaking Act, the OPEN Government Data Act,requires the Office of Management and Budget to collaborate with the Office of Government Information Services and the Administrator of General Services to develop and maintain an online repository of tools, best practices, and schema standards to facilitate the adoption of open data practices across the Federal Government.
 
-[Open Data Policy](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf)
-defined by OMB Memo M-13-13 on managing information as an asset created specific
-requirements on federal agencies to maintain enterprise data inventories of
-their data assets.
-
-[Implementation Guidance on Open Data Policy](https://project-open-data.cio.gov/implementation-guide/) contains supplemental
-guidance on implementing the Open Data Policy.
+Beyond open data, [Resources.data.gov] serves as the central repository for Federal Enterprise Data resources including tools, case studies, playbooks, and guidance on how to manage and use Federal data. Provide feedback and check back often as Resources.data.gov continues to be updated.
