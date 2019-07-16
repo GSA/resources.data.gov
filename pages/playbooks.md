@@ -5,7 +5,7 @@ primary_nav_section: Resources
 ---
 
 There are a number of playbook relevant to federal
-management and use, inbcluding the following:
+management and use, including the following:
 
 The [Data Governance Playbook]({{ site.baseurl }}/assets/documents/fds-data-governance-playbook.pdf) supports the Federal Data Strategy by helping agencies get started with prioritizing data governance and assessing maturity. 
 
