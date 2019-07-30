@@ -1,6 +1,6 @@
 ---
 layout: home
-tagline: Federal Enterprise Data Resources is online repository of policies, schema standards, tools, best practices, and case studies to provide agencies a one-stop shop for resources related to Federal data management and use
+tagline: Federal Enterprise Data Resources is an online repository of policies, schema standards, tools, best practices, and case studies to provide agencies a one-stop shop for resources related to federal data management and use
 button:
   text: Learn more
   href: /history/
