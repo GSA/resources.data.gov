@@ -10,6 +10,20 @@ We want to ensure a welcoming environment for all of our projects. Our staff fol
 
 We adhere to the [18F Open Source Policy](https://github.com/18f/open-source-policy). If you have any questions, just [shoot us an email](mailto:18f@gsa.gov).
 
+
+## Site previews
+
+If you are an Owner of resources.data.gov, you should be added as a collaborator
+to this repository. When submitting changes, create a branch instead of a fork.
+That way [Federalist](https://federalist.18f.gov) will build a preview link for
+your changes.
+
+To view your preview, at the bottom of the pull request are status checks,
+including one from Federalist with a "details" link to your preview. For more
+information, see the [Federalist
+documentation](https://federalist.18f.gov/documentation/previews/).
+
+
 ## Public domain
 
 This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
