@@ -14,10 +14,10 @@ Janet L. Norwood Conference and Training Center at the Bureau of Labor Statistic
 2 Massachusetts Avenue, NE, Washington, DC 20212
 
 ### When
-Plenary Session (All Officials): September 10th  
-Chief Data Officer Orientation: September 10th through September 12th 
-Evaluation Orientation: September 16th and September 17th  
-Statistical Official Orientation: September 18th and September 19th  
+Plenary Session (All Officials): September 10th AM  
+Chief Data Officer Orientation: September 11th and 12th  
+Evaluation Officer Orientation: September 16th and 17th  
+Statistical Official Orientation: September 18th and 19th  
 
 ## Reference Materials
 * [Foundations for Evidence-based Policymaking Act of 2018](https://www.congress.gov/bill/115th-congress/house-bill/4174/text)
@@ -28,6 +28,6 @@ Statistical Official Orientation: September 18th and September 19th
 
 ## Additional Information
 
-For additional pre-orientation materials and to RSVP Chief Data Officers, Evaluation Officers, and Statistical Officials must visit the forthcoming Interagency Evidence Act Orientation MAX Page.
+For additional pre-orientation materials and to RSVP Chief Data Officers, Evaluation Officers, and Statistical Officials must visit the  [Interagency Evidence Act Orientation MAX Page](https://community.max.gov/x/frXmZg).
 
 Contact: [EvidenceAct@OMB.eop.gov](mailto:EvidenceAct@omb.eop.gov) 
