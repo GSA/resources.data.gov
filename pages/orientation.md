@@ -4,8 +4,6 @@ layout: page
 primary_nav_section: Evidence Act Orientation
 ---
 
-# Evidence Act Orientation
-
 ### What
 All designated officials must attend an Evidence Act Orientation hosted by the Office of Management and Budget (OMB) in September 2019 to gain a fuller understanding of the requirements under Evidence Act guidance, develop a common baseline of knowledge about key competencies required for their roles, learn about resources for fulfilling statutory responsibilities, and meet and build relationships with their peers and with OMB officials to promote interagency coordination and collaboration.
 
