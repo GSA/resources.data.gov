@@ -28,4 +28,4 @@ Statistical Official Orientation: September 18th and 19th
 
 For additional pre-orientation materials and to RSVP Chief Data Officers, Evaluation Officers, and Statistical Officials must visit the  [Interagency Evidence Act Orientation MAX Page](https://community.max.gov/x/frXmZg).
 
-Contact: [EvidenceAct@OMB.eop.gov](mailto:EvidenceAct@omb.eop.gov) 
+Contact: [EvidenceAct@omb.eop.gov](mailto:EvidenceAct@omb.eop.gov) 
