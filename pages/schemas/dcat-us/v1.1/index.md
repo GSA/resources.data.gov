@@ -6,6 +6,11 @@ permalink: /schemas/dcat-us/v1.1/
 filename: index.md
 id: schema v1.1
 primary_nav_section: Resources
+breadcrumb_nav:
+- url: "/standards/"
+  text: Schema Standards
+- url: ""
+  text: DCAT-US v1.1
 secondary_nav:
 - url: "#overview"
   text: Overview

@@ -4,6 +4,13 @@ layout: page
 title: Data Collections
 permalink: /schemas/dcat-us/v1.1/collections/
 filename: collections.md
+breadcrumb_nav:
+- url: "/standards/"
+  text: Schema Standards
+- url: "/schemas/dcat-us/v1.1/"
+  text: DCAT-US v1.1
+- url: ""
+  text: Collections
 ---
 
 Agencies should enrich their Enterprise Data Inventory and Public Data Listing data.json files by ensuring all data assets (including databases and web applications) include metadata for the individual datasets contained within. Including metadata for the individual datasets containted within a larger data asset makes that data more discoverable improving searchability, facilitating use, and providing a comprehensive reference for data management and coordination. The original v1.0 schema did not accommodate data collections, but with the [v1.1 schema](/schemas/dcat-us/v1.1), datasets that belong to a larger collection of data should now use the `isPartOf` field to reference the `identifier` of a parent dataset. The parent dataset acts as a container for all the datasets in the collection so it may not have any distributions associated with it, but it can also be used to list distributions that provide consolidated or merged versions of the datasets in the collection for bulk download.  
