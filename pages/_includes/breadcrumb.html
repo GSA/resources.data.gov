@@ -5,7 +5,7 @@
 
     {% if forloop.first == false %} &gt; {% endif %}
    
-    {% if nav.url != "" %}<a href="{{ nav.url }}">{% endif %}
+    {% if nav.url != "" %}<a href="{{ site.baseurl }}{{ nav.url }}">{% endif %}
       {{ nav.text | escape }}
     {% if nav.url != "" %}</a>{% endif %}
 

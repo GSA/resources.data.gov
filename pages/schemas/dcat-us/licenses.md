@@ -10,7 +10,7 @@ The [Federal Open Data Policy](https://project-open-data.cio.gov/policy-memo/#c-
 
 As described below, works created by U.S. Government employees within the scope of their employment default to U.S. Public Domain. However, works produced by outside parties which are created or obtained for use by the U.S. Government may need open licenses applied to them: *"When information is acquired or accessed by an agency through performance of a contract, appropriate existing clauses <sup>[22](https://acquisition.gov/far/current/html/Subpart%2027_4.html)</sup> shall be utilized to meet these objectives"*
 
-The [Project Open Data Metadata Schema](/schemas/dcat-us/v1.1/) provides a `license` field which is defined as *"the license or non-license (i.e. Public Domain) status with which the dataset or API has been published"* and [must be provided as a URL](/schemas/dcat-us/v1.1/#license). Guidance and example URLs can be found below for properly documenting the license or non-license of your agency's data in accordance with the open data policy.
+The [Project Open Data Metadata Schema]({{ site.baseurl }}/schemas/dcat-us/v1.1/) provides a `license` field which is defined as *"the license or non-license (i.e. Public Domain) status with which the dataset or API has been published"* and [must be provided as a URL]({{ site.baseurl }}/schemas/dcat-us/v1.1/#license). Guidance and example URLs can be found below for properly documenting the license or non-license of your agency's data in accordance with the open data policy.
 
 ## Definitions
 
@@ -50,5 +50,5 @@ When agencies purchase data or content from third-party vendors, care must be ta
 
 ## More Information
 * *[Copyright and Other Rights Pertaining to U.S. Government Works](http://www.usa.gov/copyright.shtml)*
-* *[Licensing Policies, Principles, and Resources: Examples of how government has addressed open licensing questions](/licensing-resources/)*
+* *[Licensing Policies, Principles, and Resources: Examples of how government has addressed open licensing questions]({{ site.baseurl }}/licensing-resources/)*
 * *[Extended list of conformant licenses](http://opendefinition.org/licenses/)*

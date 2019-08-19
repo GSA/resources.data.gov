@@ -63,7 +63,7 @@ A dataset is an identifiable collection of structured data objects unified by so
 
 A Web API (**A**pplication **P**rogramming **I**nterface) allows computer programs to dynamically query a dataset using the World Wide Web. For example, a dataset of [farmers markets](http://catalog.data.gov/dataset/farmers-markets-geographic-data) may be made available for download as a single file (e.g., a CSV), or may be made available to developers through a Web API, such that a computer program could use a ZIP Code to retrieve a list of farmers markets in the ZIP Code area.
 
-The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files](/schemas/dcat-us/v1.1/api/).  
+The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files]({{ site.baseurl }}/schemas/dcat-us/v1.1/api/).  
 
 
 Metadata File Format --  JSON
@@ -84,7 +84,7 @@ The Project Open Data schema is case sensitive. The schema uses a camel case con
 > Incorrect: `contactpoint`  
 > incorrect: `CONTACTPOINT`  
 
-Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources](/schemas/dcat-us/v1.1/metadata-resources/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
+Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources]({{ site.baseurl }}/schemas/dcat-us/v1.1/metadata-resources/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
 
 
 Catalog Fields
@@ -104,7 +104,7 @@ Field                           | Label                 | Definition    | Requir
 
 Dataset Fields
 -----------------------------
-See the *[Further Metadata Field Guidance](#further-metadata-field-guidance)* section to learn more about the use of each element, including the range of valid entries where appropriate. Consult the [field mappings](/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields. 
+See the *[Further Metadata Field Guidance](#further-metadata-field-guidance)* section to learn more about the use of each element, including the range of valid entries where appropriate. Consult the [field mappings]({{ site.baseurl }}/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields. 
 
 {: .table .table-schema}
 Field                                                      | Label                     | Definition      | Required
@@ -166,7 +166,7 @@ Extending the Schema
 
 Further Metadata Field Guidance
 -------------------------------
-Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings](/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
+Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings]({{ site.baseurl }}/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
 
 
 {: .schema-fields .requirements-key}
