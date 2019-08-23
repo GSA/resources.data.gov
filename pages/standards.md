@@ -41,5 +41,11 @@ technology standards for the next generation of innovation.
 vocabulary that enables efficient information exchange across diverse public and
 private organizations.
 
+[Internet Engineering Task Force](https://www.ietf.org/) (IEFT) is a large open international community of network designers, operators, vendors, and researchers concerned with the evolution of the Internet architecture and the smooth operation of the Internet.
+
+[The World Wide Web Consortium](https://www.w3.org/) The (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards.
+
+[United Nations Economic Commission for Europe](http://www.unece.org/cefact/about.html) UNECE serves as the focal point for trade facilitation recommendations and electronic business standards, covering both commercial and government business processes that can foster growth in international trade and related services. 
+
 
 
