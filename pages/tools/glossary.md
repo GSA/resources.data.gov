@@ -1,4 +1,7 @@
-# Glossary
+---
+title: Glossary
+layout: page
+---
 This section contains explanations of common terms referenced in Project Open Data and the Open Data Policy.
 ## API
 An application programming interface, which is a set of definitions of the ways one piece of computer software communicates with another. It is a method of achieving abstraction, usually (but not necessarily) between higher-level and lower-level software.
