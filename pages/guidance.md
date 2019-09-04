@@ -22,3 +22,6 @@ guidance applicable to federal agencies are provided below.
 [CIO Council](https://www.cio.gov/) is the principal interagency forum for
 improving agency practices related to the design, acquisition, development,
 modernization, use, sharing, and performance of Federal information resources.
+
+[Open Data Engagement Guidance]({{ site.baseurl }}{% link
+guidance/open-data-engagement-guidance.md %}).
