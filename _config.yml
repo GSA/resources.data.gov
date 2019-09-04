@@ -25,6 +25,12 @@ plugins:
   - jekyll-sitemap
 source: pages
 
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: page
+
 keep_files:
   - assets/js
   - assets/uswds
