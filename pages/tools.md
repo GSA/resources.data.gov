@@ -68,7 +68,7 @@ a proof of concept to dynamically generate RESTful APIs from static CSVs.
 
 [Interactive API documentation system](https://github.com/project-open-data/iodocs).
 
-[Documenting APIs]({% link tools/documenting-apis.md %}).
+[Documenting APIs]({{ site.baseurl }}{% link tools/documenting-apis.md %}).
 
 [/Developer program](https://18f.github.io/API-All-the-X/) provides support to
 agencies engaged in the production or use of APIs.
@@ -130,4 +130,4 @@ inside PDF files.
 
 [Data and Statistics about the U.S.](https://www.usa.gov/statistics).
 
-About [Open Licenses]({% link tools/open-licenses.md %}).
+About [Open Licenses]({{ site.baseurl }}{% link tools/open-licenses.md %}).

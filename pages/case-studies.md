@@ -4,7 +4,7 @@ layout: page
 primary_nav_section: Resources
 ---
 
-[Business case for open data]({% link case-studies/business-case.md %}).
+[Business case for open data]({{ site.baseurl }}{% link case-studies/business-case.md %}).
 
 [U.S. Department of Labor Case Study](https://project-open-data.cio.gov/labor-case-study/).
 
