@@ -50,8 +50,10 @@ Examples of goals include:
 * Contribution to an agency’s IT modernization
 * Improve efficiency in data sharing with the public, other agencies
 * Use of open data event to further a core mission of an agency, such as transportation safety or supporting education
+
 ## Document roles and responsibilities for those involved in the initiative
 Agencies that have held events have found it a best practice to clearly document roles and responsibilities for those working on planning the event, especially for events that involve working with outside organizations as co-sponsors. Some agencies have used a detailed “tick tock” document with daily action items that show what each individual team member must complete.
+
 ## Hold regular check-ins with those involved in the implementation
 Planning of most open data events begins with ad hoc meetings at the early stages, then monthly, weekly, or other intervals with increasing frequency as the date of the event nears.
 A best practice is to make sure that for each task or line of effort such as press, logistics, IT, etc., that there is a primary contact and also a backup for each line of effort.
