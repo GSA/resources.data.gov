@@ -1,4 +1,6 @@
-# Open Licenses
+---
+title: Open Licenses
+---
 The Federal Open Data Policy states: “Agencies must apply open licenses, in consultation with the best practices found in Project Open Data, to information as it is collected or created so that if data are made public there are no restrictions on copying, publishing, distributing, transmitting, adapting, or otherwise using the information for non-commercial or for commercial purposes.”
 
 As described below, works created by U.S. Government employees within the scope of their employment default to U.S. Public Domain. However, works produced by outside parties which are created or obtained for use by the U.S. Government may need open licenses applied to them: “When information is acquired or accessed by an agency through performance of a contract, appropriate existing clauses shall be utilized to meet these objectives.”
