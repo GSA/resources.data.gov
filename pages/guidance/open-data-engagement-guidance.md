@@ -1,4 +1,7 @@
-# Open Data Engagement Guidance
+---
+title: Open Data Engagement Guidance
+layout: page
+---
 On any given month, there are multiple events listed on [Data.gov/events](https:data.gov/events "Events") in which federal agencies engage with the public, the private sector, non-profits, academia and others on open data issues. From the numerous open data events held by federal agencies in the last several years, there are a number of lessons learned and best practices in engaging with the public on open data and holding events.
 ## Articulate the purpose of the event
 Agencies that have held open data events have found that emphasizing the purpose of the event is critical to success. It can be essential in gaining agency leadership support and approvals for the public engagement or event.
