@@ -129,3 +129,5 @@ inside PDF files.
 [HMDA tools](https://github.com/cfpb/hmda-tools) import and analyze mortgage application data.
 
 [Data and Statistics about the U.S.](https://www.usa.gov/statistics).
+
+About [Open Licenses]({% link tools/open-licenses.md %}).
