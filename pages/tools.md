@@ -17,7 +17,7 @@ secondary_nav:
 [Project Open Data Metadata Schema](https://project-open-data.cio.gov/v1.1/schema/) currently used in
 Data.gov.
 
-[Glossary](https://project-open-data.cio.gov/glossary/) of terms used in Project
+[Glossary]({{ site.baseurl }}{% link tools/glossary.md %}) of terms used in Project
 Open Data Metadata Schema.
 
 [Field Mapping](https://project-open-data.cio.gov/v1.1/metadata-resources/#field-mappings)
