@@ -34,3 +34,105 @@ i.e.
 @import "components/icons";
 @import "components/sidenav";
 @import "components/typography";
+
+.usa-prose table.vertical-headings th {
+	font-weight : normal;
+}
+
+.usa-prose table.vertical-headings th:nth-child(1),
+.usa-prose table.vertical-headings td:nth-child(1), 
+.table-schema td:nth-child(1) {
+font-weight : bold;	
+background-color : color('gray-5');
+}
+
+table tr td code {
+    display: inline-block;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+table.child-field {
+    margin-left: 6em;
+}
+
+ul.schema-fields, ul.schema-fields ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.schema-fields {
+  margin-top : 1em;
+}
+
+ul.schema-fields li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+.schema-fields.requirements-key {
+    float: right;
+    border: 1px solid #ccc;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.field-optional:before, .field-required .field-optional, .field-required-if-applicable .field-optional {
+    font-weight: normal;
+}
+
+.field-optional:before, .field-required .field-optional:before, .field-required-if-applicable .field-optional:before {
+    content: "◌ ";
+    color: MidnightBlue;
+}
+
+.field-required:before {
+    content: "● ";
+    color: DarkRed;
+}
+
+.field-required-if-applicable:before, .field-required .field-required-if-applicable:before {
+    content: "◎ ";
+    color: DarkMagenta;
+}
+
+.usa-section.breadcrumb-page {
+  padding-top : 1rem;
+}
+
+.usa-section.breadcrumb-page .breadcrumb-nav {
+  padding-bottom : 2rem;
+}
