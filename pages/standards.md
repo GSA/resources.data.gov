@@ -14,6 +14,10 @@ datasets. Key guidance, models, and communities include the following:
 [FIPS 199](https://csrc.nist.gov/csrc/media/publications/fips/199/final/documents/fips-pub-199-final.pdf)
 contains standards for categorization of federal information systems.
 
+# Reports and Best Practices
+
+[Final Report and Recommendations of the 2016-2018 FOIA Advisory Commitee](https://www.archives.gov/files/final-report-and-recommendations-of-2016-2018-foia-advisory-committee.pdf)
+
 # Models 
 
 [Project Open Data Metadata Schema](https://project-open-data.cio.gov/v1.1/schema/).
