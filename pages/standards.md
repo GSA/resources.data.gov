@@ -16,7 +16,7 @@ contains standards for categorization of federal information systems.
 
 # Reports and Best Practices
 
-[Final Report and Recommendations of the 2016-2018 FOIA Advisory Commitee](https://www.archives.gov/files/final-report-and-recommendations-of-2016-2018-foia-advisory-committee.pdf)
+[Final Report and Recommendations of the 2016-2018 FOIA Advisory Committee](https://www.archives.gov/files/final-report-and-recommendations-of-2016-2018-foia-advisory-committee.pdf)
 
 # Models 
 
