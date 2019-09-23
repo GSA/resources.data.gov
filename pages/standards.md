@@ -20,7 +20,7 @@ contains standards for categorization of federal information systems.
 
 # Models 
 
-[Project Open Data Metadata Schema](https://project-open-data.cio.gov/v1.1/schema/).
+[DCAT-US (Project Open Data Metadata Schema)]({{ site.baseurl }}/schemas/dcat-us/v1.1/).
 
 [Data Catalog Vocabulary (DCAT)](https://www.w3.org/TR/vocab-dcat/).
 
