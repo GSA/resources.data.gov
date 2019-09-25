@@ -12,7 +12,7 @@ searchgov_affiliate: datagov-resources
 github:
   organization: GSA
   repository: resources.data.gov
-  default_branch: master
+  default_branch: develop
 
 styles:
   - assets/uswds/css/styles.css
