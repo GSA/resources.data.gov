@@ -1,5 +1,5 @@
 ---
-title: IncubatorPlaybookInteractive
+title: Incubator Playbook Interactive
 layout: page
 primary_nav_section: Resources
 ---
@@ -10,23 +10,117 @@ primary_nav_section: Resources
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 <script>
-  function display_18f_p1() {
-    document.getElementById("play1").innerHTML = "<h3>18F</h3><br><strong>The OPPORTUNITY</strong><br><p>18F helps agencies move paper processes online, increase data access, save millions of dollars on cloud hosting, and implement new acquisition techniques. 18F is an office of Federal employees, within the General Services Administration (GSA), collaborating with other agencies to fix technical problems, build products, and improve how government serves the public through technology. 18F is part of the Technology Transformation Services, within the Federal Acquisition Service.</p><br><strong>ELEMENTS: Requirements</strong><br><p>18F partners with civilian and military Federal agencies to help you build or buy exceptional digital services. 18F works with partners who have Federal funding, and, as a cost recoverable office, they are required to charge for their work. 18F also offers procurement services to state and local governments with access to Federal funds.</p>";
-  }
-  function display_ntis_p1() {
-    document.getElementById("play1").innerHTML = "some <strong>words</strong> about ntis";
-  }
-  function display_usds_p1() {
-    document.getElementById("play1").innerHTML = "Some text about usds.";
-  }
-  function display_coe_p1() {
-    document.getElementById("play1").innerHTML = "some words about coe";
-  }
-  function display_op_p1() {
-    document.getElementById("play1").innerHTML = "some words about op";
-  }
-  function display_ch_p1() {
-    document.getElementById("play1").innerHTML = "some words about CH!";
+  function change_play(playnum,value){
+    if(value == "tenx")
+    {
+      title = "10x Process",
+      opportunity = "10x provides start-up funding for new technology projects and products across government. It aims to uncover and elevate the most promising ideas from the Federal workforce. 10x is a program that lives within the  Technology Transformation Services (TTS), and is managed by the Office of Products and Programs of the General Services Administration. TTS manages the Digital Services Fund. 10x starts their funding small and increase their investment as an idea matures into a sustainable project. 10x accepts ideas from Federal employees throughout the year. A few times a year, 10x collects all the ideas and evaluates them for funding. The most promising ideas proceed to Phase 1.",
+      elements = "The idea will be evaluated based on the following three criteria, each given equal weight: Clarity: The idea is no more than three sentences long and it explains a real problem. Alignment: The idea must help develop new, good-for-government technology and improve the public’s experience with government through technology. Impact: Solving this problem will have an important effect on the Federal government or the public.",
+      success = "Past projects include the U.S. Web Design Systems, Federalist, and the TTS Bug Bounty Programs.",
+      proof = "Federal Grantee Reporting This project will identify opportunities to improve the Federal grant reporting process, by eliminating redundancies and creating efficiencies through improved technology — with the goal of generating a prototype that could be adapted across Federal programs, thereby increasing Federal grant programs’ efficacy to those being served as well as taxpayers’ return on investment.<br><br><b>PRA.Gov</b><br><br>OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing Federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.",
+      gettingstarted = "Pitch an idea. https://10x.gsa.gov/send-us-an-idea/ Use their Google form (online form) – https://10x.gsa.gov the google form https://docs.google.com/forms/d/e/1FAIpQLSdJJXKYxW8PERXJ_33oHB1JqUB4wBomHiwM8B7nnYdgyjW2bQ/viewform or email them directly at 10x@gsa.gov<br><br>Visit this site for more info https://10x.gsa.gov/the-10x-process/"
+    }
+    if(value == "18f")
+    {
+      title = "18f",
+      opportunity = "18F helps agencies move paper processes online, increase data access, save millions of dollars on cloud hosting, and implement new acquisition techniques. 18F is an office of Federal employees, within the General Services Administration (GSA), collaborating with other agencies to fix technical problems, build products, and improve how government serves the public through technology. 18F is part of the Technology Transformation Services, within the Federal Acquisition Service.",
+      elements = "18F partners with civilian and military Federal agencies to help you build or buy exceptional digital services. 18F works with partners who have Federal funding, and, as a cost recoverable office, they are required to charge for their work. 18F also offers procurement services to state and local governments with access to Federal funds.",
+      success = "18F delivers websites, applications, and strategies to help agencies provide excellent value to public. The Federal Election Commission (FED) found success with their brand new website at FEC.gov. \“We engaged with 18F, and it was a game-changer for us. They came in and helped the IT team and business owners get involved in the agile development process. It changed our whole methodology. - Alec Palmer, FEC’s Chief Information Officer\”",
+      proof = "The Contract-Awarded Labor Category (CALC) tool <br>In May, 18F and GSA’s Professional Services Category launched CALC, a powerful labor category and pricing research tool to help the Federal contracting community make smarter, faster buying decisions. CALC helps contracting officers determine the range of pricing at the highest level for a specific labor category across a database of contract awarded prices for 48,000 labor categories from more than 5,000 recent GSA contracts. The tool saved Federal contracting officers and the cities time and money.<br><br><i>New website at FEC.gov</i><br>The Federal Election Commission (FEC) new website at FEC.gov is the result of a years-long collaboration with GSA’s 18F and features completely revamped tools for exploring campaign finance data. It provides user-centered content for understanding the reporting and compliance requirements for people participating in Federal elections, redesigned tools for exploring legal resources, and more.",
+      gettingstarted = "Email Kenny Daniel on their Agency Partnerships team to see if 18F can help your agency. For all inquiries, you can reach their outreach team at 18F@gsa.gov<br><BR>Visit this site for more info https://18f.gsa.gov/"
+    }
+    if(value == "adrf")
+    {
+      title = "Administrative Data Research Facility",
+      opportunity = "NYU’s Administrative Data Research Facility (ADRF) is a secure cloud environment for hosting both confidential micro-data and analytics tools. Through a combination of data sharing agreements and trainings, the ADRF is evolving the empirical foundation of social science, statistical, and public agencies in the United States, in turn transforming our understanding of how society works.",
+      elements = "The ADRF allows agencies within the same state or different states to agree to share their data in a common area in the cloud for specific approved projects. If approved, staff from multiple agencies can jointly access the common area, so that they can work together to develop new integrated datasets, share information about coding differences or similarities, and develop common measures. No personally identifiable information is stored in the cloud. The data are hashed and de-identified (with a common hash algorithm) before being transferred to the secure area. Moreover, data stewardship modules can be deployed so that agencies can track data use and work output.",
+      success = "The ADRF has hosted almost 50 confidential government datasets from 12 different agencies at all levels of government. Over 175 agency staff, from about 50 agencies, have already accessed and used the ADRF. The ADRF has received Authorization to Operate from the Census Bureau, has achieved a FedRAMP Moderate approval, and is listed on the FedRAMP Marketplace.",
+      proof = "RICH CONTEXT COMPETITION (2019) All too often, organizations provide data to the public without any way to track its use, and therefore the value of making those data available. Furthermore, researchers have a hard time determining what data has proved helpful to previous projects pursuing related research questions. The goal of this competition was to automate the discovery of research datasets and the associated research methods and fields in social science research publications. Participants used any combination of machine learning and data analysis methods to identify the datasets used in a corpus of social science publications and infer both the scientific methods and fields used in the analysis and the research fields. All submitted algorithms will be made publicly available as open source tools.",
+      gettingstarted = "Contacting their Slack team is one method of communication for their Applied Data Analytics program. They include channels for programming specific issues (for example Python and SQL, training program specific topics, and general discussion. Contact Information POC: Julia Lane at fedramp-adrf@nyu.edu . Visit this site for more info, visit https://cusp.nyu.edu/coleridge-initiative."
+    }
+    if(value == "bdp")
+    {
+      title = "Big Data Project",
+      opportunity = "The NOAA Big Data Project (BDP) was created to explore the potential benefits of storing copies of key observations and model outputs in the Cloud to allow computing directly on the data without requiring further distribution. Such an approach helps form new lines of business and economic growth while making NOAA’s data more accessible to the American public.",
+      elements = "High-quality environmental data and expertise in NOAA Computing capabilities of our industry collaborators Innovative energy of the American economy.",
+      success = "NOAA’s Big Data Collaborators and their partners (not an all-inclusive list)<ul><li>Amazon: Jed Sundwall, Arial Gold (now @DOT), Jeff Layton, Joe Flasher</li><li>Microsoft: Sam Khoury, Sid Krishna, Shannon</li><li>Google: Will Curran, Matt Hancher, Eli Bixby, Tino Tereshko, Amy Unruh, Tanya Shastri, Ossama Alami, Valliappa “Lak” Lakshmanan, Mike Hamberg</li><li>Open Commons Consortium: Walt Wells, Maria Patterson, Zac Flamig</li><li>Unidata: Mohan Ramamurthy, Jeff Weber</li><li>IBM: James Stevenson, Stefani Jones, Mary Glackin, Peter Neilley, John Aviles</li><li>The Climate Corporation: Adam Pasch</li></ul>",
+      proof = "Big Data Project (BDP)‘s NOAA’s Cooperative Research and Development Agreement or CRADA with Saildrone, Inc. is providing mountains of data across multiple NOAA mission areas. See Adaptable and driven by renewable energy, Saildrones voyage into remote waters. Tampa Bay Times news team uses NOAA NEXRAD data provided through the Big Data Project (BDP) for an in-depth analysis of Hurricane Irma. See How the slightest shift kept Hurricane Irma from turning into an even worse disaster. More Big Data Project (BDP) successes at https://techpartnerships.noaa.gov/News-Successes/PID/7817/evl/0/CategoryID/197/CategoryName/CRADA",
+      gettingstarted = "There are access platforms developed by the CRADA Collaborators to provide free, full, and open access to the original NOAA data. Additionally, a more granular list of the available datasets through the BDP offsite link is available from the Cooperative Institute for Climate Satellites-North Carolina (CICS-NC). While the data access is free, you may have to register for an account with the website before you can access the data.<br><br>Visit this site for more info https://www.noaa.gov/big-data-project"
+    }
+    if(value == "challengegov")
+    {
+      title = "Challenge.gov",
+      opportunity = "Challenge.gov allows Federal agencies to crowdsource ideas from the public and solves problems. The Challenge and Prize Toolkit joins the Federal Crowdsourcing and Citizen Science Toolkit, launched in February 2016, as open innovation resources designed to help to engage the public.",
+      elements = "There are three main sections, Challenge Phases, Challenge Types, and Case Studies, any of which can be used as a starting point for learning about challenges. There are additional sections listing Mentors who can help you refine the challenges, and Resources like development tools, templates, and examples. There are steps involved: <ul><li>Agency announces a problem to the public</li><li>Participants create and submit solutions to the problem</li><li>Agency evaluates solutions and awards prizes to the best ones.</li></ul>",
+      success = "Since 2010, the U.S. government has run nearly 1,000 challenges and offered well over $250 million in cash prizes for the best ideas. Students, hobbyists, small business owners, and academic researchers have won these challenges. Government users with a Federal agency may also run a challenge and/or post a challenge. Challenges have produced concepts for cost-effective clean water systems, gunshot detectors to improve responses to school shootings, and robots capable of setting up life support and communications infrastructure on Mars in preparation for future human missions.",
+      proof = "The Agile Robotics for Industrial Automation Competition, ARIAC In June 2017, the National Institute of Standard and Technology (NIST) put on the first ARIAC Competition. The goal of the competition was to test the agility of industrial robot systems, with the goal of enabling industrial robots on the shop floors to be more productive, more autonomous, and to require less time from shop floor workers. For the second year of the competition, they introduced a cash prize to motivate and expand participation. This is the third year of the competition. Up to three winners will be selected.<br><br><b>Travel Data Challenge</b><br><br>General Service Administration (GSA)’s Office of Government-wide Policy (OGP) sponsored the GSA Travel Data Challenge. This was to bring a quantitative approach by attaining a tool that can provide better business decisions for Federal government travel data. Better accountability and cost-saving measures that save money for American taxpayers. The competition was launched on Feb. 14, 2014 and closed on April 11, 2014. The winner was announced on May 9, 2014. He designed an innovative technology tool using open-source code to help agencies better visualize and understand their data, compare their travel data against key benchmarks and identify behaviors to reduce costs on future travel.",
+      gettingstarted = "Browse the challenges on the site for topics. Register for an account to participate. It is free. Need to create a username and password before you can submit an idea to challenge. Email them at team@challenge.gov for questions. If Federal worker and want to run a challenge and/or post a challenge on Challenge.gov, drop them a line at team@challenge.gov to get started.<br><br>Visit this site for more info https://challenge.gov/a/buzz/challenge"
+    }
+    if(value == "gear")
+    {
+      title = "Government Effectiveness Advanced Research",
+      opportunity = "The GEAR Center is looking for ideas from the public, academics, experts, and industry on how to establish the Government Effectiveness Advanced Research (GEAR) Center, a public-private partnership to improve mission delivery, citizen services, and stewardship of public resources. After review of 42 responses from the stakeholder to the request for information by selected Federal agencies, the role of GEAR center is set to be: <ul><li>Conducting applied research projects directly</li><li>Serving as a program management office (PMO)</li<li>Scaling successful practices</li><li>Facilitating data exchange Serving as a procurement lab</li><li>Providing other policy expertise.</li></ul>",
+      elements = "GEAR Center Challenge Idea Submission Guidelines: The competition will run through three phases. In the first, Solvers will be evaluated on their proposal (including any proposal to scale or grow existing initiatives) to deliver a relevant solution to a PMA-related challenge. The second phase will evaluate invited semi-finalists to share a more in-depth project plan and [evaluate] how this could be executed, as well as how this project supports a longer-term GEAR Center vision. In the third phase, finalists will be invited to present their proposals to a panel of Federal executives through 60-minute virtual meetings.",
+      success = "This center is intended to provide innovation and modernization of the Federal government for the 21st century.",
+      proof = "Fill Critical Professions: The Office of Personnel Management (OPM) created new direct hire authorities for Scientific, Technical, Engineering, and Mathematics (STEM) and cybersecurity workers. Hiring top talent in these fields is vital to long-term security and national competitiveness. Federal Cyber Reskilling Academy: The Chief Information Officers Council and Department of Education (ED) launched the first-ever Cyber Reskilling Academy, selecting a first cadre of 25 high-quality candidates from over 1,500 applicants. Top cyber talent in Government is essential to keeping America safe, secure, and competitive.  Learn to Buy Technology: USDS and the Office of Management and Budget (OMB) trained Contracting Officers to better understand and adopt technology industry language. Previously, the Federal Government bought technology the same way it acquired tanks and helicopters. The demands of tech procurement require new approaches.",
+      gettingstarted = "Email your submissions to GEARCenter@gsa.gov - for more info visit https://www.challenge.gov/challenge/gear-center-challenge/ https://www.performance.gov/GEARcenter/"
+    }
+    if(value == "ntis")
+    {
+      title = "National Technical Information Service",
+      opportunity = "The National Technical Information Service (NTIS) is part of the U.S. Department of Commerce. NTIS helps Federal agencies make better decisions about data, with data. They provide the support and structure to help their partners store, analyze, sort, and aggregate data in new ways securely.",
+      elements = "NTIS will help implement: Open access and open data, using its existing legal authorities and capabilities to deliver government data services through agile partnerships with the private sector to rapidly execute innovative projects; Enable the private sector to develop new and improved data products and services; and support the entire delivery pipeline for trusted data networks with stringent privacy and security, including discovery, usability, analytics, interoperability, and standards.",
+      success = "NTIS has also successfully implemented controlled access to critical Federal datasets with stringent privacy and security requirements such as the DEA Controlled Substance Data- base and the Federal Wage Determination Database. In addition, NTIS plans to collaborate with the National Institute of Standards and Technology for private sector delivery of Internet time and custom services. Just as making Global Positioning System (GPS) data publicly available in the early 1980s led to an explosion of GPS-related innovations, access to precision network timing could lead to another innovation surge.",
+      proof = "Innovation Projects Involving Blockchain Technology: This project explains how Blockchain Technology is being utilized to develop solutions for the Office of Personnel Management and the U.S. Food and Drug Administration. NTIS manages an expanding portfolio of innovation projects that address important national issues such as fraud, waste and abuse; improvements to internal government operations; or enhancements to external citizen-facing services. As a trusted Fed-to-Fed advisor, NTIS helps other Federal programs improve their mission outcomes by leveraging data science services and emerging technologies.",
+      gettingstarted = "After identifying a technical project need in your agency; prepare a proposal, submit it to the NTIS using this link businessopportunities@ntis.gov . After the project proposal is submitted to the NTIS advisory board. Visit this site for more https://www.ntis.gov/"
+    }
+    if(value == "op")
+    {
+      title = "Opportunity Project",
+      opportunity = "The Opportunity Project of the U.S. Census Bureau is a collaborative effort between government agencies, technology companies, and nongovernment organizations to translate into user-friendly tools to solve real world problems for families, communities, and businesses nationwide.",
+      elements = "Relevant sectors and groups such as Federal agencies, educational institutions, business, industry, and public-private partnerships are identified with specific suggestions for each group.",
+      success = "To date, 30 Federal agencies and more than 100 technology companies, universities, and local communities have come together to develop solutions to improve access to economic opportunity, resulting in the creation of over 70 digital tools now helping families, schools, local officials and other members of the public.",
+      proof = "Nepris Teachers and students connect with the right industry experts, virtually without having to spend much planning time or leaving the classroom while providing an effective way for companies to extend education outreach and create equity of access.<br><br><b>Disaster Awareness Games</b><br><br>Geoslug, a partnership between University of California, Santa Cruz, and Motiv, created a serious game using Federal disaster declaration and protective action data to engage young adults in preparing for emergencies.",
+      gettingstarted = "To start with, this process view the opportunity project toolkit @ https://opportunity.census.gov/toolkit.html this is a step-by-step guide to the process used by the Census Bureau team, and adapt it for your own project. Use this process to run your own sprint. Visit this site for more info https://opportunity.census.gov"
+    }
+    if(value == "pifs")
+    {
+      title = "piffiller",
+      opportunity = "piffiller",
+      elements = "piffiller",
+      success = "piffiller",
+      proof = "piffiller",
+      gettingstarted = "piffiller"
+    }
+    if(value == "tmf")
+    {
+      title = "tmffiller",
+      opportunity = "tmffiller",
+      elements = "tmffiller",
+      success = "tmffiller",
+      proof = "tmffiller",
+      gettingstarted = "tmffiller"
+    }
+    if(value == "usds")
+    {
+      title = "usdstitle",
+      opportunity = "usdstitle",
+      elements = "usdstitle",
+      success = "usdstitle",
+      proof = "usdstitle",
+      gettingstarted = "usdstitle"
+    }
+    if(value == "coe")
+    {
+      title = "coetitle",
+      opportunity = "coetitle",
+      elements = "coetitle",
+      success = "coetitle",
+      proof = "coetitle",
+      gettingstarted = ""
+    }
+    resolved_play = "<h3>"+title+"</h3><b>Opportunity</b><p>"+opportunity+"</p><b>Elements</b><p>"+elements+"</p><b>Finding Success</b><p>"+success+"</p><b>Evidence and Examples</b><p>"+proof+"</p><b>Getting Started</b><p>"+gettingstarted+"</p"
+    document.getElementById("play"+playnum+"_display").innerHTML = resolved_play;
   }
 </script>
 
@@ -45,12 +139,12 @@ primary_nav_section: Resources
     <td rowspan="6">Product Support (Website, Application, Tools...</td>
     <td>Federal Agencies</td>
     <td>
-      <button type="button" onclick="display_18f_p1()">18F</button>, 
-      <button type="button" onclick="display_ntis_p1()">NTIS</button>,
-      <button type="button" onclick="display_usds_p1()">USDS</button>,
-      <button type="button" onclick="display_coe_p1()">CoE</button>
+      <button type="button" value="18f" onclick="change_play(1,this.value);">18F</button>, 
+      <button type="button" value="ntis" onclick="change_play(1,this.value);">NTIS</button>,
+      <button type="button" value="usds" onclick="change_play(1,this.value);">USDS</button>,
+      <button type="button" value="coe" onclick="change_play(1,this.value);">CoE</button>
     </td>
-    <td rowspan="6"><p id="play1"> </p></td>
+    <td rowspan="6"><p id="play1_display"> </p></td>
   </tr>
   <tr>
     <td>State Agencies</td>
@@ -58,29 +152,33 @@ primary_nav_section: Resources
   </tr>
   <tr>
     <td>Local Agencies</td>
-    <td><button type="button" onclick="display_op_p1()">OP</button></td>
+    <td>
+      <button type="button" value="op" onclick="change_play(1,this.value);">OP</button>
+    </td>
   </tr>
   <tr>
     <td>Research Institutions and Non-profits</td>
     <td>
-      <button type="button" onclick="display_op_p1()">OP</button>, 
-      <button type="button" onclick="display_ch_p1()">CH</button>
+      <button type="button" value="op" onclick="change_play(1,this.value);">OP</button>,
+      <button type="button" value="challengegov" onclick="change_play(1,this.value);">CH</button>
     </td>
   </tr>
   <tr>
     <td>Commercial</td>
     <td>
-      <button type="button" onclick="display_op_p1()">OP</button>, 
-      <button type="button" onclick="display_ch_p1()">CH</button>
+      <button type="button" value="op" onclick="change_play(1,this.value);">OP</button>,
+      <button type="button" value="challengegov" onclick="change_play(1,this.value);">CH</button>
     </td>
   </tr>
   <tr>
     <td>Private Citizens</td>
     <td>
-      <button type="button" onclick="display_op_p1()">OP</button>, 
-      <button type="button" onclick="display_ch_p1()">CH</button>
+      <button type="button" value="op" onclick="change_play(1,this.value);">OP</button>,
+      <button type="button" value="challengegov" onclick="change_play(1,this.value);">CH</button>
     </td>
   </tr>
+
+<!-- NEW ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -89,29 +187,46 @@ primary_nav_section: Resources
   <tr>
     <td rowspan="6">IT and Database (Fix Technical Issues)</td>
     <td>Federal Agencies</td>
-    <td><a href="#tmf">TMF</a>, <a href="#coe">CoE</a></td>
-    <td rowspan="6"></td>
+    <td>
+      <button type="button" value="tmf" onclick="change_play(2,this.value);">TMF</button>,
+      <button type="button" value="coe" onclick="change_play(2,this.value);">COE</button>
+    </td>
+    <td rowspan="6"><p id="play2_display"> </p></td>
   </tr>
+
   <tr>
     <td>State Agencies</td>
     <td> </td>
   </tr>
+
   <tr>
     <td>Local Agencies</td>
     <td> </td>
   </tr>
+
   <tr>
     <td>Research Institutions and Non-profits</td>
-    <td><a href="#gear">GEAR</a></td>
+    <td>
+      <button type="button" value="gear" onclick="change_play(2,this.value);">GEAR</button>
+    </td>
   </tr>
+
   <tr>
     <td>Commercial</td>
-    <td><a href="#gear">GEAR</a></td>
+    <td>
+      <button type="button" value="gear" onclick="change_play(2,this.value);">GEAR</button>
+    </td>  
   </tr>
+  
   <tr>
     <td>Private Citizens</td>
-    <td><a href="#gear">GEAR</a>, <a href="#pifs"></a></td>
+    <td>
+      <button type="button" value="gear" onclick="change_play(2,this.value);">GEAR</button>,
+      <button type="button" value="pifs" onclick="change_play(2,this.value);">PIFs</button>
+    </td>  
   </tr>
+
+<!-- NEW ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -143,6 +258,8 @@ primary_nav_section: Resources
     <td>Private Citizens</td>
     <td><a href="#gear">GEAR</a>, <a href="#pifs"></a></td>
   </tr>
+
+<!-- NEW ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -206,9 +323,6 @@ primary_nav_section: Resources
     <td><a href="#gear">GEAR</a>, <a href="#pifs">PIFs</a></td>
   </tr>
 
-
-
-
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
   </tr>
@@ -240,7 +354,7 @@ primary_nav_section: Resources
     <td> </td>
   </tr>
 
-
+<!-- NEW ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -273,7 +387,7 @@ primary_nav_section: Resources
     <td><a href="#challenge-gov">CH</a></td>
   </tr>
 
-
+<!-- NEW ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -308,7 +422,6 @@ primary_nav_section: Resources
 
 </table>
 
-[Back to Go](#top-of-page)
 
 ## Opportunity Descriptions  <a name="opportunity-descriptions"></a>
 

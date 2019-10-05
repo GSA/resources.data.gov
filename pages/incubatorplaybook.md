@@ -441,9 +441,7 @@ Visit this site for more info, visit https://cusp.nyu.edu/coleridge-initiative.
 The NOAA Big Data Project (BDP) was created to explore the potential benefits of storing copies of key observations and model outputs in the Cloud to allow computing directly on the data without requiring further distribution. Such an approach helps form new lines of business and economic growth while making NOAA's data more accessible to the American public.
   
 *ELEMENTS: Requirements*  
-High-quality environmental data and expertise in NOAA
-Computing capabilities of our industry collaborators
-Innovative energy of the American economy
+High-quality environmental data and expertise in NOAA Computing capabilities of our industry collaborators Innovative energy of the American economy.
   
 *FINDING SUCCESS*  
 NOAA’s Big Data Collaborators and their partners (not an all-inclusive list)
@@ -470,9 +468,9 @@ Challenge.gov allows Federal agencies to crowdsource ideas from the public and s
   
 *ELEMENTS: Requirements*  
 There are three main sections, Challenge Phases, Challenge Types, and Case Studies, any of which can be used as a starting point for learning about challenges. There are additional sections listing Mentors who can help you refine the challenges, and Resources like development tools, templates, and examples.  There are steps involved:
-Agency announces a problem to the public
-Participants create and submit solutions to the problem
-Agency evaluates solutions and awards prizes to the best ones
+* Agency announces a problem to the public,
+* Participants create and submit solutions to the problem,
+* Agency evaluates solutions and awards prizes to the best ones.
   
 *FINDING SUCCESS*  
 Since 2010, the U.S. government has run nearly 1,000 challenges and offered well over $250 million in cash prizes for the best ideas. Students, hobbyists, small business owners, and academic researchers have won these challenges. Government users with a Federal agency may also run a challenge and/or post a challenge. Challenges have produced concepts for cost-effective clean water systems, gunshot detectors to improve responses to school shootings, and robots capable of setting up life support and communications infrastructure on Mars in preparation for future human missions. 
@@ -492,15 +490,15 @@ Visit this site for more info https://challenge.gov/a/buzz/challenge
 *The OPPORTUNITY*  
 The GEAR Center is looking for ideas from the public, academics, experts, and industry on how to establish the Government Effectiveness Advanced Research (GEAR) Center, a public-private partnership to improve mission delivery, citizen services, and stewardship of public resources.
 After review of 42 responses from the stakeholder to the request for information by selected Federal agencies, the role of GEAR center is set to be: 
-Conducting applied research projects directly
-Serving as a program management office (PMO)
-Scaling successful practices
-Facilitating data exchange
-Serving as a procurement lab
-Providing other policy expertise
+* Conducting applied research projects directly
+* Serving as a program management office (PMO)
+* Scaling successful practices
+* Facilitating data exchange
+* Serving as a procurement lab
+* Providing other policy expertise.
   
 *ELEMENTS: Requirements*  
-GEAR Center Challenge Idea Submission Guidelines: The competition will run through three phases. In the first, Solvers will be evaluated on their proposal (including any proposal to scale or grow existing initiatives) to deliver a relevant solution to a PMA-related challenge. The second phase will evaluate invited semi-finalists to share a more in-depth project plan and [evaluate] how this could be executed, as well as how this project supports a longer-term GEAR Center vision. In the third phase, finalists will be invited to present their proposals to a panel of Federal executives through 60-minute virtual meetings
+GEAR Center Challenge Idea Submission Guidelines: The competition will run through three phases. In the first, Solvers will be evaluated on their proposal (including any proposal to scale or grow existing initiatives) to deliver a relevant solution to a PMA-related challenge. The second phase will evaluate invited semi-finalists to share a more in-depth project plan and [evaluate] how this could be executed, as well as how this project supports a longer-term GEAR Center vision. In the third phase, finalists will be invited to present their proposals to a panel of Federal executives through 60-minute virtual meetings.
   
 *FINDING SUCCESS*  
 This center is intended to provide innovation and modernization of the Federal government for the 21st century.
