@@ -1,5 +1,5 @@
 ---
-title: Incubator Playbook Interactive
+title: Incubator Playbook (Table Version)
 layout: page
 primary_nav_section: Resources
 ---

@@ -1,5 +1,5 @@
 ---
-title: IncubatorPlaybook
+title: Incubator Playbook (static version)
 layout: page
 primary_nav_section: Resources
 ---

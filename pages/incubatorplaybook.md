@@ -1,6 +1,6 @@
 ---
-title: Incubator Playbook Interactive v2
-layout: page
+title: Incubator Playbook
+layout: widepage
 primary_nav_section: Resources
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
@@ -352,8 +352,8 @@ function handleClick(type,num,val) {
 
 <table>
   <tr>
-    <th>What type of challenge are you solving for?</th>
-    <th>What type of user are you solving for?</th>
+    <th><b>What type of challenge are you solving for?</b></th>
+    <th><b>What type of user are you solving for?</b></th>
   </tr>
 
   <tr>
@@ -380,13 +380,14 @@ function handleClick(type,num,val) {
       </form>
     </td>
   </tr>
+  <tr>
+    <td colspan="2">
+      <h4 id="play_display_lede">Selecting from the choices above will generate recommended plays here. To read more about the purpose and thinking behind the playbook, read the sections that follow below.</h4>
+      <p id="play_display_body"> </p>
+    </td>
+  </tr>
 </table>
 
-<h4 id="play_display_lede">Selecting from the choices above will generate recommended plays here. To read more about the purpose and thinking behind the playbook, read the sections that follow below.</h4>
-<p id="play_display_body"> </p>
-
-<hr>
-<hr>
 ##### *Prepared by the Federal Data Strategy Incubator Team*
 
 1. [Purpose of the Data Incubator Playbook](#purpose)

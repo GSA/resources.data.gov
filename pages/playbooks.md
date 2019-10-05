@@ -7,6 +7,8 @@ primary_nav_section: Resources
 There are a number of playbook relevant to federal
 management and use, including the following:
 
+The [Incubator Playbook]({{ site.baseurl }}/incubatorplaybook) helps public and private users identify new opportunities in data management and technology through references to discrete projects and programs.
+
 The [Data Governance Playbook]({{ site.baseurl }}/assets/documents/fds-data-governance-playbook.pdf) supports the Federal Data Strategy by helping agencies get started with prioritizing data governance and assessing maturity. 
 
 The [Digital Services Playbook](https://playbook.cio.gov/) is a resource of 13 key “plays” drawn from successful practices from the private sector and government that, if followed together, will help government build effective digital services.
