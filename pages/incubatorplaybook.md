@@ -589,9 +589,9 @@ The TMF received $100 million in FY 2018 to fund modernization projects, and ano
 
 *PROOF POINTS: Evidence and Examples*  
 To date, the fund has awarded a total of $45 million to three projects, each of which has received initial funding to begin their modernization work. An additional $55 million remains in the fund and the board is continuing to review proposals for future awards:
-HUD Moves Away From Mainframe -- $20 million 
-Energy Wants One Email Platform -- $15 million
-Farming Goes Digital—USDA -- $10 million
+* HUD Moves Away From Mainframe -- $20 million 
+* Energy Wants One Email Platform -- $15 million
+* Farming Goes Digital—USDA -- $10 million
 
 *GETTING STARTED*  
 Agencies submit IT-related project proposals for the Board to review and consider. Agencies submit technology modernization proposals to the Board through a two-phased approval process.  Proposal templates for the IPP and FPP phases are available in the Document & Templates.  Visit this site for more info https://tmf.cio.gov
@@ -601,9 +601,9 @@ Agencies submit IT-related project proposals for the Board to review and conside
 USDS deploys small, responsive groups of designers, engineers, product managers, and bureaucracy specialists to work with and empower civil servants. Like 10x, USDS program live within the Technology Transformation Service (TTS), and is managed by the Office of Products and Programs of the General Services Administration. TTS manages the Digital Services Fund. USDS provides consultation services to Federal agencies on information technology. It seeks to improve and simplify digital service, and to improve Federal websites. 
 
 *ELEMENTS: Requirements*  
-Design and user experience
-Engineering
-Product, strategy, and operations
+* Design and user experience
+* Engineering
+* Product, strategy, and operations
 
 *FINDING SUCCESS*  
 USDS’s Federal agency work spans across the Veterans Affairs, Department of Defense, Small Business Administration, General Services Administration, Department of Homeland Security, Department of Education, and Health and Human Services.
@@ -612,8 +612,9 @@ USDS’s Federal agency work spans across the Veterans Affairs, Department of De
 Creator of A Digital Services Playbook, to improve digital government, Draft Web Design Standards, building consistent, beautiful, Federal government websites, 
 TechFAR Handbook, on Federal contracting and procurement, and 
 College Scorecard, to help students and their families make more informed decisions about college selection.
- 
-*Medicare Payment System Modernization*  
+<br>  
+
+**Medicare Payment System Modernization**  
 The Centers for Medicare and Medicaid Services (CMS) modernize its legacy system. Scott Haselton, a Senior Software Engineer on the Health and Human Services team at the United States Digital Service (USDS) who is the lead on the Medicare Payment Modernization project took on this challenge. They stand up a new cloud environment to continue processing claims; they started to migrate off the mainframe. The new cloud environment positions Medicare systems to scale and flex rapidly with how CMS processes claims and pays providers, transforming technology from a policy inhibitor to a multiplier. 
 
 *GETTING STARTED*  
@@ -625,24 +626,23 @@ Visit this site for more info  https://www.usds.gov
 The Centers of excellence (CoE), a signature White House initiative, were designed by the Office of American Innovation (OAI), and implemented at GSA in October 2017, within the Technology Transformation Services (TTS) office at GSA. The CoE use IT modernization as a means to improve government services by leveraging private sector innovations.
 
 *ELEMENTS: Requirements*  
-Cloud Adoption—Analyzes current systems and applications to provide recommendations for planning cloud migration.
-Contact Center—Helps improve contact center delivery services and customer interactions.
-Customer Experience—Works to develop a better understanding of customer needs and helps translate those findings into actions.
-Data Analytics—Helps make more efficient use of data management, analysis, and reporting capabilities.
-Infrastructure Optimization—Assists in optimizing data centers and reducing infrastructure costs.
+* Cloud Adoption—Analyzes current systems and applications to provide recommendations for planning cloud migration.
+* Contact Center—Helps improve contact center delivery services and customer interactions.
+* Customer Experience—Works to develop a better understanding of customer needs and helps translate those findings into actions.
+* Data Analytics—Helps make more efficient use of data management, analysis, and reporting capabilities.
+* Infrastructure Optimization—Assists in optimizing data centers and reducing infrastructure costs.
 
 *FINDING SUCCESS*  
 The U.S. General Services Administration (GSA) and the U.S. Department of Housing and Urban Development (HUD) teamed up for a discovery sprint as part of GSA’s Centers of Excellence (CoE) initiative.  CoE at GSA are working on the aging HUD technology. 
 
 *PROOF POINTS: Evidence and Examples*  
-Becoming A More Fact-Based and Data-Driven Organization , The Data Analytics Center of Excellence (CoE) is helping the United States Department of Agriculture (USDA by applying data tools and tactics such as: data sharing, data visualization, predictive analysis, and ad hoc analysis Through better access to timely, accurate information for leaders to be enabled to improve their decisions, program outcomes, and overall management of the Department’s resources.
-
-Using USDA Datasets to Address Water Management Challenges at the IoT World Hackathon by CoE @ GSA.
+* Becoming A More Fact-Based and Data-Driven Organization , The Data Analytics Center of Excellence (CoE) is helping the United States Department of Agriculture (USDA by applying data tools and tactics such as: data sharing, data visualization, predictive analysis, and ad hoc analysis Through better access to timely, accurate information for leaders to be enabled to improve their decisions, program outcomes, and overall management of the Department’s resources.
+* Using USDA Datasets to Address Water Management Challenges at the IoT World Hackathon by CoE @ GSA.
 	
 *GETTING STARTED*  
 If you are interested in learning more about the Centers of Excellence at GSA or discussing tools or solutions, please reach out to them at connectcoe@gsa.gov..
 The CoE engage in a phased approach:
-Phase 0 - Engagement scoping, Inter-Agency Agreement (IAA) development, and funding identification
-Phase I - A comprehensive department-wide discovery and planning effort to identify initial and high-impact modernization projects
-Phase II - Implementation of the agreed upon Phase I recommendations and build sustainment for continue modernization beyond CoE Phase II
+* Phase 0 - Engagement scoping, Inter-Agency Agreement (IAA) development, and funding identification
+* Phase I - A comprehensive department-wide discovery and planning effort to identify initial and high-impact modernization projects
+* Phase II - Implementation of the agreed upon Phase I recommendations and build sustainment for continue modernization beyond CoE Phase II
 Visit this site for more info https://coe.gsa.gov/connect/contact-us.html

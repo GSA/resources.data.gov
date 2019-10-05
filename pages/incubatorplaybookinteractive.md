@@ -17,8 +17,8 @@ primary_nav_section: Resources
       opportunity = "10x provides start-up funding for new technology projects and products across government. It aims to uncover and elevate the most promising ideas from the Federal workforce. 10x is a program that lives within the  Technology Transformation Services (TTS), and is managed by the Office of Products and Programs of the General Services Administration. TTS manages the Digital Services Fund. 10x starts their funding small and increase their investment as an idea matures into a sustainable project. 10x accepts ideas from Federal employees throughout the year. A few times a year, 10x collects all the ideas and evaluates them for funding. The most promising ideas proceed to Phase 1.",
       elements = "The idea will be evaluated based on the following three criteria, each given equal weight: Clarity: The idea is no more than three sentences long and it explains a real problem. Alignment: The idea must help develop new, good-for-government technology and improve the public’s experience with government through technology. Impact: Solving this problem will have an important effect on the Federal government or the public.",
       success = "Past projects include the U.S. Web Design Systems, Federalist, and the TTS Bug Bounty Programs.",
-      proof = "Federal Grantee Reporting This project will identify opportunities to improve the Federal grant reporting process, by eliminating redundancies and creating efficiencies through improved technology — with the goal of generating a prototype that could be adapted across Federal programs, thereby increasing Federal grant programs’ efficacy to those being served as well as taxpayers’ return on investment.<br><br><b>PRA.Gov</b><br><br>OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing Federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.",
-      gettingstarted = "Pitch an idea. https://10x.gsa.gov/send-us-an-idea/ Use their Google form (online form) – https://10x.gsa.gov the google form https://docs.google.com/forms/d/e/1FAIpQLSdJJXKYxW8PERXJ_33oHB1JqUB4wBomHiwM8B7nnYdgyjW2bQ/viewform or email them directly at 10x@gsa.gov<br><br>Visit this site for more info https://10x.gsa.gov/the-10x-process/"
+      proof = "Federal Grantee Reporting This project will identify opportunities to improve the Federal grant reporting process, by eliminating redundancies and creating efficiencies through improved technology — with the goal of generating a prototype that could be adapted across Federal programs, thereby increasing Federal grant programs’ efficacy to those being served as well as taxpayers’ return on investment.<br><br><i>PRA.Gov</i><br>OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing Federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.",
+      gettingstarted = "<ul><li>Pitch an idea @ <a href='https://10x.gsa.gov/send-us-an-idea/'>https://10x.gsa.gov/send-us-an-idea/</a></li><li>Use their <a href='https://docs.google.com/forms/d/e/1FAIpQLSdJJXKYxW8PERXJ_33oHB1JqUB4wBomHiwM8B7nnYdgyjW2bQ/viewform/'>google form</a></li><li>or email them directly at <a href='mailto:10x@gsa.gov'>10x@gsa.gov</a></li></ul>Visit <a href='https://10x.gsa.gov/the-10x-process/'>this site</a> for more info"
     }
     if(value == "18f")
     {
@@ -56,6 +56,15 @@ primary_nav_section: Resources
       proof = "The Agile Robotics for Industrial Automation Competition, ARIAC In June 2017, the National Institute of Standard and Technology (NIST) put on the first ARIAC Competition. The goal of the competition was to test the agility of industrial robot systems, with the goal of enabling industrial robots on the shop floors to be more productive, more autonomous, and to require less time from shop floor workers. For the second year of the competition, they introduced a cash prize to motivate and expand participation. This is the third year of the competition. Up to three winners will be selected.<br><br><b>Travel Data Challenge</b><br><br>General Service Administration (GSA)’s Office of Government-wide Policy (OGP) sponsored the GSA Travel Data Challenge. This was to bring a quantitative approach by attaining a tool that can provide better business decisions for Federal government travel data. Better accountability and cost-saving measures that save money for American taxpayers. The competition was launched on Feb. 14, 2014 and closed on April 11, 2014. The winner was announced on May 9, 2014. He designed an innovative technology tool using open-source code to help agencies better visualize and understand their data, compare their travel data against key benchmarks and identify behaviors to reduce costs on future travel.",
       gettingstarted = "Browse the challenges on the site for topics. Register for an account to participate. It is free. Need to create a username and password before you can submit an idea to challenge. Email them at team@challenge.gov for questions. If Federal worker and want to run a challenge and/or post a challenge on Challenge.gov, drop them a line at team@challenge.gov to get started.<br><br>Visit this site for more info https://challenge.gov/a/buzz/challenge"
     }
+    if(value == "coe")
+    {
+      title = "Centers of Excellence",
+      opportunity = "The Centers of excellence (CoE), a signature White House initiative, were designed by the Office of American Innovation (OAI), and implemented at GSA in October 2017, within the Technology Transformation Services (TTS) office at GSA. The CoE use IT modernization as a means to improve government services by leveraging private sector innovations.",
+      elements = "<ul><li>Cloud Adoption—Analyzes current systems and applications to provide recommendations for planning cloud migration.</li><li>Contact Center—Helps improve contact center delivery services and customer interactions.</li><li>Customer Experience—Works to develop a better understanding of customer needs and helps translate those findings into actions.</li><li>Data Analytics—Helps make more efficient use of data management, analysis, and reporting capabilities.</li><li>Infrastructure Optimization—Assists in optimizing data centers and reducing infrastructure costs.</li></ul>",
+      success = "The U.S. General Services Administration (GSA) and the U.S. Department of Housing and Urban Development (HUD) teamed up for a discovery sprint as part of GSA’s Centers of Excellence (CoE) initiative. CoE at GSA are working on the aging HUD technology.",
+      proof = "<ul><li>Becoming A More Fact-Based and Data-Driven Organization , The Data Analytics Center of Excellence (CoE) is helping the United States Department of Agriculture (USDA by applying data tools and tactics such as: data sharing, data visualization, predictive analysis, and ad hoc analysis Through better access to timely, accurate information for leaders to be enabled to improve their decisions, program outcomes, and overall management of the Department’s resources.</li><li>Using USDA Datasets to Address Water Management Challenges at the IoT World Hackathon by CoE @ GSA.</li></ul>",
+      gettingstarted = "If you are interested in learning more about the Centers of Excellence at GSA or discussing tools or solutions, please reach out to them at connectcoe@gsa.gov.. The CoE engage in a phased approach:<ul><li>Phase 0 - Engagement scoping, Inter-Agency Agreement (IAA) development, and funding identification</li><li>Phase I - A comprehensive department-wide discovery and planning effort to identify initial and high-impact modernization projects</li><li>Phase II - Implementation of the agreed upon Phase I recommendations and build sustainment for continue modernization beyond CoE Phase II.</li></ul><br><br>Visit this site for more info https://coe.gsa.gov/connect/contact-us.html"
+    }
     if(value == "gear")
     {
       title = "Government Effectiveness Advanced Research",
@@ -72,7 +81,7 @@ primary_nav_section: Resources
       elements = "NTIS will help implement: Open access and open data, using its existing legal authorities and capabilities to deliver government data services through agile partnerships with the private sector to rapidly execute innovative projects; Enable the private sector to develop new and improved data products and services; and support the entire delivery pipeline for trusted data networks with stringent privacy and security, including discovery, usability, analytics, interoperability, and standards.",
       success = "NTIS has also successfully implemented controlled access to critical Federal datasets with stringent privacy and security requirements such as the DEA Controlled Substance Data- base and the Federal Wage Determination Database. In addition, NTIS plans to collaborate with the National Institute of Standards and Technology for private sector delivery of Internet time and custom services. Just as making Global Positioning System (GPS) data publicly available in the early 1980s led to an explosion of GPS-related innovations, access to precision network timing could lead to another innovation surge.",
       proof = "Innovation Projects Involving Blockchain Technology: This project explains how Blockchain Technology is being utilized to develop solutions for the Office of Personnel Management and the U.S. Food and Drug Administration. NTIS manages an expanding portfolio of innovation projects that address important national issues such as fraud, waste and abuse; improvements to internal government operations; or enhancements to external citizen-facing services. As a trusted Fed-to-Fed advisor, NTIS helps other Federal programs improve their mission outcomes by leveraging data science services and emerging technologies.",
-      gettingstarted = "After identifying a technical project need in your agency; prepare a proposal, submit it to the NTIS using this link businessopportunities@ntis.gov . After the project proposal is submitted to the NTIS advisory board. Visit this site for more https://www.ntis.gov/"
+      gettingstarted = "After identifying a technical project need in your agency; prepare a proposal, submit it to the NTIS using this link businessopportunities@ntis.gov . After the project proposal is submitted to the NTIS advisory board.<br><br>Visit this site for more https://www.ntis.gov/"
     }
     if(value == "op")
     {
@@ -80,44 +89,35 @@ primary_nav_section: Resources
       opportunity = "The Opportunity Project of the U.S. Census Bureau is a collaborative effort between government agencies, technology companies, and nongovernment organizations to translate into user-friendly tools to solve real world problems for families, communities, and businesses nationwide.",
       elements = "Relevant sectors and groups such as Federal agencies, educational institutions, business, industry, and public-private partnerships are identified with specific suggestions for each group.",
       success = "To date, 30 Federal agencies and more than 100 technology companies, universities, and local communities have come together to develop solutions to improve access to economic opportunity, resulting in the creation of over 70 digital tools now helping families, schools, local officials and other members of the public.",
-      proof = "Nepris Teachers and students connect with the right industry experts, virtually without having to spend much planning time or leaving the classroom while providing an effective way for companies to extend education outreach and create equity of access.<br><br><b>Disaster Awareness Games</b><br><br>Geoslug, a partnership between University of California, Santa Cruz, and Motiv, created a serious game using Federal disaster declaration and protective action data to engage young adults in preparing for emergencies.",
+      proof = "Nepris Teachers and students connect with the right industry experts, virtually without having to spend much planning time or leaving the classroom while providing an effective way for companies to extend education outreach and create equity of access.<br><br><i>Disaster Awareness Games</i><br>Geoslug, a partnership between University of California, Santa Cruz, and Motiv, created a serious game using Federal disaster declaration and protective action data to engage young adults in preparing for emergencies.",
       gettingstarted = "To start with, this process view the opportunity project toolkit @ https://opportunity.census.gov/toolkit.html this is a step-by-step guide to the process used by the Census Bureau team, and adapt it for your own project. Use this process to run your own sprint. Visit this site for more info https://opportunity.census.gov"
     }
     if(value == "pifs")
     {
-      title = "piffiller",
-      opportunity = "piffiller",
-      elements = "piffiller",
-      success = "piffiller",
-      proof = "piffiller",
-      gettingstarted = "piffiller"
+      title = "Presidential Innovation Fellows",
+      opportunity = "The Presidential Innovation Fellows program is housed for administrative purposes in the General Services Administration and all Fellows are hired by the General Services Administration (GSA), and then detailed to agencies. It pairs talented, diverse technologists and innovators with top civil servants and change-makers working at the highest levels of the Federal government to tackle some of the nation’s biggest challenges.",
+      elements = "This position require ability to work in a modern technical, design and product environment. Many of the fellows have significant experience and records of accomplishment for delivering at a high-level, are proven leaders, and innovative thinkers. They look at domain expertise, functional expertise, and many other factors, including how the overall group will work together. the Presidential Innovation Fellowship is a twelve-month program. They accept applications in the spring, for the summer cohort of fellows.",
+      success = "Check the link for the projects that the fellows have worked on: https://presidentialinnovationfellows.gov/projects/ <br><br>See the recent biography of 2019 fellows here: https://presidentialinnovationfellows.gov/fellows/",
+      proof = "Blue Button Initiative The Blue Button symbol signifies a website has functionality for customers download health records. It helps patients find places to get their health records electronically across the internet securely. A team of Presidential Innovation Fellows, in partnership with the Office of the National Coordinator for Health Information Technology (ONC), VA, DoD, & CMS to expand the Blue Button Initiatives including connector, Fast Healthcare Interoperability Resources (FHIR) API standards for interoperability and a FHIR test server in SITE and CMS. This increased the transparency and access to the health information, in order to make more informed decisions about their health, to care for their family members, and to share information with their providers.<br><br><i>FBI Risk Management</i><br>In collaboration with the FBI, the Presidential Innovation Fellows focused on the challenge of defining an ecosystem to help the private sector manage risk and mitigate threats, as part of the overall strategy to protect the US economy. To understand the challenge, Fellows met with a broad range of stakeholders in private sector companies—those on the front lines who are responsible for preventing attacks—to see firsthand their challenges.",
+      gettingstarted = "Visit this site for more info on this program and how you can contact the program head at GSA. https://presidentialinnovationfellows.gov/ "
     }
     if(value == "tmf")
     {
-      title = "tmffiller",
-      opportunity = "tmffiller",
-      elements = "tmffiller",
-      success = "tmffiller",
-      proof = "tmffiller",
-      gettingstarted = "tmffiller"
+      title = "Technology Modernization Fund",
+      opportunity = "The Technology Modernization Fund (TMF) is an innovative funding vehicle to give agencies additional ways to deliver services to the American public more quickly, better secure sensitive systems and data, and use taxpayer dollars more efficiently. It is not a free source of money. Approved projects receive incremental funding and technical expertise to ensure project success. The Technology Modernization Board, comprised of Government IT leaders representing proven expertise in technology, transformation, and operations, oversees the TMF. The Modernizing Government Technology Act of 2017 authorized the TMF.",
+      elements = "Agencies have a number of reasons to consider the Technology Modernization Fund (TMF) as the funding source for their proposed solution. The TMF reimagines how IT modernization projects are funded and executed. The five-year repayment window provides agencies with flexibility to invest in new IT modernization projects and leverage savings generated to repay the Fund.",
+      success = "The TMF received $100 million in FY 2018 to fund modernization projects, and another $25 million in FY 2019. The President’s FY 2020 Budget requests an additional $150 million. A bill appropriating funding for a host of government agencies referred to as the Financial Services and General Government spending package is currently in conference between the House and Senate.",
+      proof = "To date, the fund has awarded a total of $45 million to three projects, each of which has received initial funding to begin their modernization work. An additional $55 million remains in the fund and the board is continuing to review proposals for future awards: <ul><li>HUD Moves Away From Mainframe – $20 million</li><li>Energy Wants One Email Platform – $15 million</li><li>Farming Goes Digital—USDA – $10 million.</li></ul>",
+      gettingstarted = "Agencies submit IT-related project proposals for the Board to review and consider. Agencies submit technology modernization proposals to the Board through a two-phased approval process. Proposal templates for the IPP and FPP phases are available in the Document & Templates. <br><br>Visit this site for more info https://tmf.cio.gov"
     }
     if(value == "usds")
     {
-      title = "usdstitle",
-      opportunity = "usdstitle",
-      elements = "usdstitle",
-      success = "usdstitle",
-      proof = "usdstitle",
-      gettingstarted = "usdstitle"
-    }
-    if(value == "coe")
-    {
-      title = "coetitle",
-      opportunity = "coetitle",
-      elements = "coetitle",
-      success = "coetitle",
-      proof = "coetitle",
-      gettingstarted = ""
+      title = "United States Digital Service",
+      opportunity = "USDS deploys small, responsive groups of designers, engineers, product managers, and bureaucracy specialists to work with and empower civil servants. Like 10x, USDS program live within the Technology Transformation Service (TTS), and is managed by the Office of Products and Programs of the General Services Administration. TTS manages the Digital Services Fund. USDS provides consultation services to Federal agencies on information technology. It seeks to improve and simplify digital service, and to improve Federal websites.",
+      elements = "<ul><li>Design and user experience</li><li>Engineering</li><li>Product, strategy, and operations</li></ul>",
+      success = "USDS’s Federal agency work spans across the Veterans Affairs, Department of Defense, Small Business Administration, General Services Administration, Department of Homeland Security, Department of Education, and Health and Human Services.",
+      proof = "Creator of A Digital Services Playbook, to improve digital government, Draft Web Design Standards, building consistent, beautiful, Federal government websites, TechFAR Handbook, on Federal contracting and procurement, and College Scorecard, to help students and their families make more informed decisions about college selection.<br><br><i>Medicare Payment System Modernization</i><br>The Centers for Medicare and Medicaid Services (CMS) modernize its legacy system. Scott Haselton, a Senior Software Engineer on the Health and Human Services team at the United States Digital Service (USDS) who is the lead on the Medicare Payment Modernization project took on this challenge. They stand up a new cloud environment to continue processing claims; they started to migrate off the mainframe. The new cloud environment positions Medicare systems to scale and flex rapidly with how CMS processes claims and pays providers, transforming technology from a policy inhibitor to a multiplier.",
+      gettingstarted = "Use the playbook to get started: https://playbook.cio.gov <br><br>Check this site to see how USDS works: https://www.usds.gov/how-we-work Visit this site for more info https://www.usds.gov"
     }
     resolved_play = "<h3>"+title+"</h3><b>Opportunity</b><p>"+opportunity+"</p><b>Elements</b><p>"+elements+"</p><b>Finding Success</b><p>"+success+"</p><b>Evidence and Examples</b><p>"+proof+"</p><b>Getting Started</b><p>"+gettingstarted+"</p"
     document.getElementById("play"+playnum+"_display").innerHTML = resolved_play;
@@ -178,7 +178,7 @@ primary_nav_section: Resources
     </td>
   </tr>
 
-<!-- NEW ROW -->
+<!-- SECOND ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -226,7 +226,7 @@ primary_nav_section: Resources
     </td>  
   </tr>
 
-<!-- NEW ROW -->
+<!-- THIRD ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -235,8 +235,10 @@ primary_nav_section: Resources
   <tr>
     <td rowspan="6">Partnerships and Collaboration</td>
     <td>Federal Agencies</td>
-    <td><a href="#10x-process">10x Process</a></td>
-    <td rowspan="6"></td>
+    <td>
+      <button type="button" value="tenx" onclick="change_play(3,this.value);">10x</button>
+    </td>
+    <td rowspan="6"><p id="play3_display"> </p></td>
   </tr>
   <tr>
     <td>State Agencies</td>
@@ -248,15 +250,22 @@ primary_nav_section: Resources
   </tr>
   <tr>
     <td>Research Institutions and Non-profits</td>
-    <td><a href="#gear">GEAR</a></td>
+    <td>
+      <button type="button" value="gear" onclick="change_play(3,this.value);">GEAR</button>
+    </td>
   </tr>
   <tr>
     <td>Commercial</td>
-    <td><a href="#gear">GEAR</a></td>
+    <td>
+      <button type="button" value="gear" onclick="change_play(3,this.value);">GEAR</button>
+    </td>
   </tr>
   <tr>
     <td>Private Citizens</td>
-    <td><a href="#gear">GEAR</a>, <a href="#pifs"></a></td>
+    <td>
+      <button type="button" value="gear" onclick="change_play(3,this.value);">GEAR</button>,
+      <button type="button" value="pifs" onclick="change_play(3,this.value);">PIFs</button>,
+    </td>
   </tr>
 
 <!-- NEW ROW -->
@@ -268,29 +277,56 @@ primary_nav_section: Resources
   <tr>
     <td rowspan="6">Data Sharing</td>
     <td>Federal Agencies</td>
-    <td><a href="#adrf">ADRF</a>, <a href="#bdp">BDP</a>, <a href="#usds">USDS</a>, <a href="#ntis">NTIS</a>, <a href="#coe">CoE</a></td>
-    <td rowspan="6"></td>
+    <td>
+      <button type="button" value="adrf" onclick="change_play(4,this.value);">ADRF</button>,
+      <button type="button" value="bdp" onclick="change_play(4,this.value);">BDP</button>,
+      <button type="button" value="usds" onclick="change_play(4,this.value);">USDS</button>,
+      <button type="button" value="ntis" onclick="change_play(4,this.value);">NTIS</button>,
+      <button type="button" value="coe" onclick="change_play(4,this.value);">COE</button>,
+    </td>
+    <td rowspan="6"><p id="play4_display"> </p></td>
   </tr>
   <tr>
     <td>State Agencies</td>
-    <td><a href="#adrf">ADRF</a>, <a href="#bdp">BDP</a></td>
+    <td>
+      <button type="button" value="adrf" onclick="change_play(4,this.value);">ADRF</button>,
+      <button type="button" value="bdp" onclick="change_play(4,this.value);">BDP</button>
+    </td>
   </tr>
   <tr>
     <td>Local Agencies</td>
-    <td><a href="#adrf">ADRF</a>, <a href="#bdp">BDP</a>, <a href="#opportunity-project">OP</a></td>
+    <td>
+      <button type="button" value="adrf" onclick="change_play(4,this.value);">ADRF</button>,
+      <button type="button" value="bdp" onclick="change_play(4,this.value);">BDP</button>,
+      <button type="button" value="op" onclick="change_play(4,this.value);">OP</button>
+    </td>
   </tr>
   <tr>
     <td>Research Institutions and Non-profits</td>
-    <td><a href="#bdp">BDP</a>, <a href="#gear">GEAR</a>, <a href="#opportunity-project">OP</a></td>
+    <td>
+      <button type="button" value="bdp" onclick="change_play(4,this.value);">BDP</button>,
+      <button type="button" value="gear" onclick="change_play(4,this.value);">GEAR</button>,
+      <button type="button" value="op" onclick="change_play(4,this.value);">OP</button>
+    </td>
   </tr>
   <tr>
     <td>Commercial</td>
-    <td><a href="#bdp">BDP</a>, <a href="#gear">GEAR</a>, <a href="#opportunity-project">OP</a></td>
+    <td>
+      <button type="button" value="bdp" onclick="change_play(4,this.value);">BDP</button>,
+      <button type="button" value="gear" onclick="change_play(4,this.value);">GEAR</button>,
+      <button type="button" value="op" onclick="change_play(4,this.value);">OP</button>
+    </td>
   </tr>
   <tr>
     <td>Private Citizens</td>
-    <td><a href="#bdp">BDP</a>, <a href="#gear">GEAR</a>, <a href="#opportunity-project">OP</a></td>
+    <td>
+      <button type="button" value="bdp" onclick="change_play(4,this.value);">BDP</button>,
+      <button type="button" value="gear" onclick="change_play(4,this.value);">GEAR</button>,
+      <button type="button" value="op" onclick="change_play(4,this.value);">OP</button>
+    </td>
   </tr>
+
+<!-- FIFTH ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -299,8 +335,11 @@ primary_nav_section: Resources
   <tr>
     <td rowspan="6">Policy Expertise (Data Management, Legal and Consulting Practices)</td>
     <td>Federal Agencies</td>
-    <td><a href="#ntis">NTIS</a>, <a href="#coe">CoE</a></td>
-    <td rowspan="6"></td>
+    <td>
+      <button type="button" value="ntis" onclick="change_play(5,this.value);">NTIS</button>,
+      <button type="button" value="coe" onclick="change_play(5,this.value);">COE</button>
+    </td>
+    <td rowspan="6"><p id="play5_display"> </p></td>
   </tr>
   <tr>
     <td>State Agencies</td>
@@ -312,16 +351,25 @@ primary_nav_section: Resources
   </tr>
   <tr>
     <td>Research Institutions and Non-profits</td>
-    <td><a href="#gear">GEAR</a></td>
+    <td>
+      <button type="button" value="gear" onclick="change_play(5,this.value);">GEAR</button>
+    </td>
   </tr>
   <tr>
     <td>Commercial</td>
-    <td><a href="#gear">GEAR</a></td>
+    <td>
+      <button type="button" value="gear" onclick="change_play(5,this.value);">GEAR</button>
+    </td>
   </tr>
   <tr>
     <td>Private Citizens</td>
-    <td><a href="#gear">GEAR</a>, <a href="#pifs">PIFs</a></td>
+    <td>
+      <button type="button" value="gear" onclick="change_play(5,this.value);">GEAR</button>,
+      <button type="button" value="pifs" onclick="change_play(5,this.value);">PIFs</button>
+    </td>
   </tr>
+
+<!-- SIXTH ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -330,8 +378,11 @@ primary_nav_section: Resources
   <tr>
     <td rowspan="6">Finance and Administration</td>
     <td>Federal Agencies</td>
-    <td><a href="#10x-process">10x Process</a>, <a href="#tmf">TMF</a></td>
-    <td rowspan="6"></td>
+    <td>
+      <button type="button" value="tenx" onclick="change_play(6,this.value);">10x</button>,
+      <button type="button" value="tmf" onclick="change_play(6,this.value);">tmf</button>
+    </td>
+    <td rowspan="6"><p id="play6_display"> </p></td>
   </tr>
   <tr>
     <td>State Agencies</td>
@@ -354,7 +405,7 @@ primary_nav_section: Resources
     <td> </td>
   </tr>
 
-<!-- NEW ROW -->
+<!-- SEVENTH ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -363,8 +414,10 @@ primary_nav_section: Resources
   <tr>
     <td rowspan="6">Workforce Training and Develment</td>
     <td>Federal Agencies</td>
-    <td><a href="#18f">18F</a></td>
-    <td rowspan="6"></td>
+    <td>
+      <button type="button" value="18f" onclick="change_play(7,this.value);">18F</button>
+    </td>
+    <td rowspan="6"><p id="play7_display"> </p></td>
   </tr>
   <tr>
     <td>State Agencies</td>
@@ -376,18 +429,24 @@ primary_nav_section: Resources
   </tr>
   <tr>
     <td>Research Institutions and Non-profits</td>
-    <td><a href="#challenge-gov">CH</a></td>
+    <td>
+      <button type="button" value="challengegov" onclick="change_play(7,this.value);">CH</button>
+    </td>
   </tr>
   <tr>
     <td>Commercial</td>
-    <td><a href="#challenge-gov">CH</a></td>
+    <td>
+      <button type="button" value="challengegov" onclick="change_play(7,this.value);">CH</button>
+    </td>
   </tr>
   <tr>
     <td>Private Citizens</td>
-    <td><a href="#challenge-gov">CH</a></td>
+    <td>
+      <button type="button" value="challengegov" onclick="change_play(7,this.value);">CH</button>
+    </td>
   </tr>
 
-<!-- NEW ROW -->
+<!-- eighth ROW -->
 
   <tr style="background-color: #dddddd;">
     <td colspan="5" style="background-color: #dddddd;"></td>
@@ -396,8 +455,10 @@ primary_nav_section: Resources
   <tr>
     <td rowspan="6">Innovation, Technology, Analytics (Services)</td>
     <td>Federal Agencies</td>
-    <td><a href="#coe">CoE</a></td>
-    <td rowspan="6"></td>
+    <td>
+      <button type="button" value="coe" onclick="change_play(8,this.value);">COE</button>
+    </td>
+    <td rowspan="6"><p id="play8_display"> </p></td>
   </tr>
   <tr>
     <td>State Agencies</td>
@@ -409,15 +470,24 @@ primary_nav_section: Resources
   </tr>
   <tr>
     <td>Research Institutions and Non-profits</td>
-    <td><a href="#challenge-gov">CH</a>, <a href="#opportunity-project">OP</a></td>
+    <td>
+      <button type="button" value="challengegov" onclick="change_play(8,this.value);">CH</button>,
+      <button type="button" value="op" onclick="change_play(8,this.value);">OP</button>
+    </td>
   </tr>
   <tr>
     <td>Commercial</td>
-    <td><a href="#challenge-gov">CH</a>, <a href="#opportunity-project">OP</a></td>
+    <td>
+      <button type="button" value="challengegov" onclick="change_play(8,this.value);">CH</button>,
+      <button type="button" value="op" onclick="change_play(8,this.value);">OP</button>
+    </td>
   </tr>
   <tr>
     <td>Private Citizens</td>
-    <td><a href="#challenge-gov">CH</a>, <a href="#opportunity-project">OP</a></td>
+    <td>
+      <button type="button" value="challengegov" onclick="change_play(8,this.value);">CH</button>,
+      <button type="button" value="op" onclick="change_play(8,this.value);">OP</button>
+    </td>
   </tr>
 
 </table>
