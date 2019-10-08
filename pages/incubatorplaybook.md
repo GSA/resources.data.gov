@@ -359,13 +359,17 @@ function handleClick(type,num,val) {
   <tr>
     <td>
       <form>
+      <b>Policy:</b><br>
+        <input type="radio" name="playnum" onclick="handleClick(1,5,this.value);" value="Policy Expertise, Data Management, Legal and Consulting Practices">Policy Expertise, Data Management, Legal and Consulting Practices<br>
+      <br><b>People:</b><br>
+        <input type="radio" name="playnum" onclick="handleClick(1,3,this.value);" value="Partnership, Collaboration">Partnership, Collaboration<br>
+        <input type="radio" name="playnum" onclick="handleClick(1,7,this.value);" value="Workforce Training and Development">Workforce Training and Development<br>
+      <br><b>Process:</b><br>
+        <input type="radio" name="playnum" onclick="handleClick(1,4,this.value);" value="Data Sharing">Data Sharing<br>
+        <input type="radio" name="playnum" onclick="handleClick(1,6,this.value);" value="Finance and Administration">Finance and Administration<br>
+      <br><b>Platform:</b><br>
         <input type="radio" name="playnum" onclick="handleClick(1,1,this.value);" value="Product Support (Website, Application, Tools)">Product Support (Website, Application, Tools)<br>
         <input type="radio" name="playnum" onclick="handleClick(1,2,this.value);" value="IT and Database (Fix Technical Problems)">IT and Database (Fix Technical Problems)<br>
-        <input type="radio" name="playnum" onclick="handleClick(1,3,this.value);" value="Partnership, Collaboration">Partnership, Collaboration<br>
-        <input type="radio" name="playnum" onclick="handleClick(1,4,this.value);" value="Data Sharing">Data Sharing<br>
-        <input type="radio" name="playnum" onclick="handleClick(1,5,this.value);" value="Policy Expertise, Data Management, Legal and Consulting Practices">Policy Expertise, Data Management, Legal and Consulting Practices<br>
-        <input type="radio" name="playnum" onclick="handleClick(1,6,this.value);" value="Finance and Administration">Finance and Administration<br>
-        <input type="radio" name="playnum" onclick="handleClick(1,7,this.value);" value="Workforce Training and Development">Workforce Training and Development<br>
         <input type="radio" name="playnum" onclick="handleClick(1,8,this.value);" value="Innovation, Technology, Analytics (Services)">Innovation, Technology, Analytics (Services)<br>
       </form>
     </td>
@@ -393,8 +397,7 @@ function handleClick(type,num,val) {
 1. [Purpose of the Data Incubator Playbook](#purpose)
 2. [Goals of the Data Incubator Playbook](#goals)
 3. [Key Plays](#key-plays)
-4. [Four P’s – Plays](#four-ps)
-5. [Finding the Right Opportunity](#decision-table)
+4. [Finding the Right Opportunity](#decision-table)
 
 ## Purpose of the Data Incubator Playbook <a name="purpose"></a>
 Q. How will Data Incubator Playbook Interactive Support Users?  
@@ -430,22 +433,6 @@ A. By using the Data Incubator Playbook Interactive, the user will choose their 
 * Play 8:  Innovation, Technology, Analytics (Services)  
 
 ![Key plays include product support, IT and database, partnership and collaboration, data sharing, policy expertise, finance and administration, workforce training and development, as well as innovation technology and analytics]({{ site.baseurl }}/assets/img/incubatorplaybook/keyPlays.png "Key plays")  
-
-[Back to Go](#top-of-page)
-
-## Four P’s – Plays <a name="four-ps"></a>
-1. Policy
-    * Policy Expertise, Data Management, Legal and Consulting Practices
-2. People
-    * Partnership, Collaboration
-    * Workforce Training and Development
-3. Process
-    * Data Sharing
-    * Finance and Administration
-4. Platform
-    * Product support (Website, Application, Tools)
-    * IT and Database (Fix Technical Problem)
-    * Innovation, Technology, Analytics (Services)
 
 ### Opportunities		
 * 10x Process
