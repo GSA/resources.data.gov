@@ -1,14 +1,14 @@
 # Inventory.data.gov Guide
 
-- [Introduction](#introduction) 
+* [Introduction](#introduction) 
 * Features
-* Using Inventory.data.gov
-. Creating a User Account
-. Using inventory.data.gov to manage datasets
-. Adding a dataset
-. Exporting data.json
-. Automating data.json downloads by agencies 
-. Dataset hosting
+* [Using Inventory.data.gov](#using-inventory-data-gov)
+* Creating a User Account
+* Using inventory.data.gov to manage datasets
+* Adding a dataset
+* Exporting data.json
+* Automating data.json downloads by agencies 
+* Dataset hosting
 * Webinar on inventory.data.gov
 
 ## Introduction
@@ -22,6 +22,7 @@ Inventory.data.gov provides the following features for dataset management/OPEN G
 * A platform to manage public/non-public datasets: create new entries, modify existing ones, and delete any datasets as needed
 * Unredacted Inventory / Enterprise Data Inventory (EDI) and Redacted Inventory / Public Data Listing (PDL) functionality exports the successfully validated datasets in the form of a data.json file complying to the POD Schema 1.1 version. Error records are provided in a log file for review and resolution by agency users.
 ## Using Inventory.data.gov
+{:#using-inventory-data-gov}
 Once an agency has consulted with the Data.gov PMO and has decided to use inventory.data.gov for dataset management, the next steps are:
 1. Setting up an “organization” on inventory.data.gov. First, the agency should decide how they want to present their structure within inventory.data.gov. An agency could make the “organization” the entire agency (for example, make the entire Department of Veterans Affairs one “organization). In that case, everyone with a user account associated to VA on inventory.data.gov would be able to view, add, edit or delete datasets for all of VA within inventory.data.gov. An agency could create an “organization” for sub-agencies, for instance creating an organization for the Farm Service Agency and all the other units of the Department of Agriculture. In that scenario, a user account for Farm Service Agency could view, add, edit or delete datasets for the Farm Service Agency only.The Data.gov PMO will set up organizations in the manner requested by the agency.
 2. Migrating existing datasets to inventory.data.gov. Many agencies have already created data inventories pursuant to the 2013 Open Data Policy. To begin using inventory.data.gov to manage the datasets, the Data.gov team will migrate the existing data listings to inventory.data.gov so that agencies can start editing from the current versions.
