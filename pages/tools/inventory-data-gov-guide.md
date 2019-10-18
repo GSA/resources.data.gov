@@ -4,9 +4,9 @@ layout: page
 ---
 
 * [Introduction](#introduction) 
-* Features
+* [Features](#features)
 * [Using Inventory.data.gov](#using-inventory-data-gov)
-* Creating a User Account
+* [Creating a User Account](#creating-a-user-account)
 * Using inventory.data.gov to manage datasets
 * Adding a dataset
 * Exporting data.json
@@ -15,10 +15,15 @@ layout: page
 * Webinar on inventory.data.gov
 
 ## Introduction
+{:#introduction}
+
 [Inventory.data.gov](http://inventory.data.gov/) is a data management tool established in 2013 by the Data.gov Program Management Office (PMO) in what is now the Technology Transformation Services of the U.S. General Services Administration (GSA). Inventory.data.gov supports the implementation of the OPEN Government Data Act, which is Title II of the [Foundations for Evidence Based Policymaking Act](https://www.congress.gov/bill/115th-congress/house-bill/4174/text), by providing all of the relevant metadata fields and export formats required for agencies to have their data harvested by Data.gov and to comply with the OPEN Government Data Act. Inventory.data.gov is not required to be used by all agencies, but rather offered in order to assist agencies that do not have another solution for creating and maintaining data inventories.
 [The Data.gov catalog](http://catalog.data.gov/) is based on [CKAN](http://ckan.org/) (Comprehensive Knowledge Archive Network), an open source technology that powers many government open data sites. [Inventory.data.gov](http://inventory.data.gov/) is a separate instance of CKAN hosted at GSA on the same infrastructure as the Data.gov catalog. To avoid confusion, neither site should simply be referred to as the “CKAN site”, but instead by the full URL.
 Inventory.data.gov as a dataset management system requires a user account and is not publicly accessible (with the exception of a few datasets that are hosted on inventory.data.gov, discussed in more detail below). Inventory.data.gov allows the registered users to manage the datasets for their agency only.
+
 ## Features
+{:#features}
+
 Inventory.data.gov provides the following features for dataset management/OPEN Government Data Act compliance purposes:
 * Existing data.json and enterprise data inventory metadata can be imported directly into inventory.data.gov.
 * User group organizations can be created either for an entire agency or for individual bureaus so that users and permissions can be managed and delegated as needed by the agency
@@ -35,6 +40,8 @@ Once an agency has consulted with the Data.gov PMO and has decided to use invent
 3. Creating user accounts for the agency representatives who will be using inventory.data.gov to manage the agency datasets. Inventory.data.gov, for dataset management purposes, is not publicly accessible. Users must have accounts on the system. There are three levels of accounts for any “organization” on inventory.data.gov: Administrator, Editor, and Member. For dataset management, agency users will either have an Administrator or Editor account. Administrators can add additional members from that agency (organization), including additional Administrators. All other functions for managing metadata can be accomplished with an Editor account. The Data.gov PMO will create these accounts and ensure that the Administrators are familiar with the process of adding additional Administrators and Members for their agency (organization).
 
 ## Creating a User Account 
+{:#creating-a-user-account}
+
 New users to inventory.data.gov should request an account by completing this form. If your agency does not permit access to the google [form](https://docs.google.com/forms/d/e/1FAIpQLSetStmwqrbMWDz_WIlh1trjhP0PFCjKXHzshsJveYmtIvlG2Q/viewform?usp=sf_link), contact[ datagov@gsa.gov](mailto:datagov@gsa.gov) to complete a Word version of the form. 
 Creating your inventory.data.gov account requires an initial login. Logins to use inventory.data.gov are integrated with [OMB MAX login](https://login.max.gov/cas/login?service=https%3A%2F%2Fmax.gov%2Fmaxportal%2Fsa%2Flogin.action%3Bjsessionid%3D994E6FE4CC968B89D599672C9F9DDAAE). You should log in to OMB MAX using your OMB MAX credentials on your first use of inventory.data.gov.
 Two-factor authentication (2FA) is now required, so enable 2FA through the instructions on the [OMB MAX login](https://login.max.gov/cas/login?service=https%3A%2F%2Fmax.gov%2Fmaxportal%2Fsa%2Flogin.action%3Bjsessionid%3D994E6FE4CC968B89D599672C9F9DDAAE) page. You can add a device by clicking on “Manage SMS 2-Factor Devices” under your profile settings. This is not necessary if you use your PIV/CAC card to log in to MAX; it is already considered 2FA.
