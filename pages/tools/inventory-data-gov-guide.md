@@ -1,4 +1,7 @@
-# Inventory.data.gov Guide
+---
+title: Inventory.data.gov Guide
+layout: page
+---
 
 * [Introduction](#introduction) 
 * Features
@@ -21,12 +24,16 @@ Inventory.data.gov provides the following features for dataset management/OPEN G
 * User group organizations can be created either for an entire agency or for individual bureaus so that users and permissions can be managed and delegated as needed by the agency
 * A platform to manage public/non-public datasets: create new entries, modify existing ones, and delete any datasets as needed
 * Unredacted Inventory / Enterprise Data Inventory (EDI) and Redacted Inventory / Public Data Listing (PDL) functionality exports the successfully validated datasets in the form of a data.json file complying to the POD Schema 1.1 version. Error records are provided in a log file for review and resolution by agency users.
+
 ## Using Inventory.data.gov
 {:#using-inventory-data-gov}
+
 Once an agency has consulted with the Data.gov PMO and has decided to use inventory.data.gov for dataset management, the next steps are:
+
 1. Setting up an “organization” on inventory.data.gov. First, the agency should decide how they want to present their structure within inventory.data.gov. An agency could make the “organization” the entire agency (for example, make the entire Department of Veterans Affairs one “organization). In that case, everyone with a user account associated to VA on inventory.data.gov would be able to view, add, edit or delete datasets for all of VA within inventory.data.gov. An agency could create an “organization” for sub-agencies, for instance creating an organization for the Farm Service Agency and all the other units of the Department of Agriculture. In that scenario, a user account for Farm Service Agency could view, add, edit or delete datasets for the Farm Service Agency only.The Data.gov PMO will set up organizations in the manner requested by the agency.
 2. Migrating existing datasets to inventory.data.gov. Many agencies have already created data inventories pursuant to the 2013 Open Data Policy. To begin using inventory.data.gov to manage the datasets, the Data.gov team will migrate the existing data listings to inventory.data.gov so that agencies can start editing from the current versions.
 3. Creating user accounts for the agency representatives who will be using inventory.data.gov to manage the agency datasets. Inventory.data.gov, for dataset management purposes, is not publicly accessible. Users must have accounts on the system. There are three levels of accounts for any “organization” on inventory.data.gov: Administrator, Editor, and Member. For dataset management, agency users will either have an Administrator or Editor account. Administrators can add additional members from that agency (organization), including additional Administrators. All other functions for managing metadata can be accomplished with an Editor account. The Data.gov PMO will create these accounts and ensure that the Administrators are familiar with the process of adding additional Administrators and Members for their agency (organization).
+
 ## Creating a User Account 
 New users to inventory.data.gov should request an account by completing this form. If your agency does not permit access to the google [form](https://docs.google.com/forms/d/e/1FAIpQLSetStmwqrbMWDz_WIlh1trjhP0PFCjKXHzshsJveYmtIvlG2Q/viewform?usp=sf_link), contact[ datagov@gsa.gov](mailto:datagov@gsa.gov) to complete a Word version of the form. 
 Creating your inventory.data.gov account requires an initial login. Logins to use inventory.data.gov are integrated with [OMB MAX login](https://login.max.gov/cas/login?service=https%3A%2F%2Fmax.gov%2Fmaxportal%2Fsa%2Flogin.action%3Bjsessionid%3D994E6FE4CC968B89D599672C9F9DDAAE). You should log in to OMB MAX using your OMB MAX credentials on your first use of inventory.data.gov.
