@@ -11,8 +11,8 @@ layout: page
 * [Adding a dataset](#adding-a-dataset)
 * [Exporting data.json](#exporting-data-json)
 * [Automating data.json downloads by agencies](#automating-data-json-downloads-by-agencies) 
-* Dataset hosting
-* Webinar on inventory.data.gov
+* [Dataset hosting](#dataset-hosting)
+* [Webinar on inventory.data.gov](#webinar-on-inventory-data-gov)
 
 ## Introduction
 {:#introduction}
@@ -174,36 +174,51 @@ The above process downloads the Redacted.zip file containing the data.json and e
 ![red](https://user-images.githubusercontent.com/49877323/66869292-12f48800-ef6d-11e9-8fa6-9473db1cc830.jpg)
 
 ## Dataset Hosting
+{:#dataset-hosting}
+
 The primary use of [inventory.data.gov](https://inventory.data.gov/dataset) is to provide a dataset management system for agencies that need a tool to meet the requirements of the Open Data Policy.Data.gov uses inventory.data.gov for a second purpose. From 2011-2014, Data.gov featured data hosting using the Socrata platform. About a dozen agencies used the platform to host their datasets directly on Data.gov. At the conclusion of the Socrata contract in 2014, several agencies indicated a continuing need for hosting capability for these datasets (approximately 100). To accommodate these agencies, the Data.gov PMO migrated the datasets previously hosted at the platform to a hosting capability using the CKAN [DataStore](http://docs.ckan.org/en/ckan-2.2/datastore.html) extension, on the CKAN instance at inventory.data.gov. As a result, the access URLs for this small number of datasets begin with inventory.data.gov and are publicly accessible without needing a user account.
 For the time being, the Data.gov PMO will continue to provide this hosting capability on inventory.data.gov while it remains small scale and does not require significant additional Data.gov resources.
 
 ## Webinar on inventory.data.gov
+{:#webinar-on-inventory-data-gov}
+
 Data.gov, working with DigitalGov University, presented a webinar for agencies interested in using inventory on December 16, 2014. For more information, consult the recording of the webinar.
 Here are some questions and answers raised during the [webinar](http://youtu.be/ciLYjDsF4lo):
 
 
 1. Who do we email to request our organization be created?
 Contact the DataGov team via email.
+
 2. Who should I contact to get my organization approved/created?
 When you contact the Data.gov team (see contact info above) about using inventory.data.gov, we can create the organization for you.
+
 3. For the record to be identified as geospatial, does “geospatial” go in Theme (Category)
 Yes. That designation also ensures that record is included in geoplatform.gov.
+
 4. Is there a way to import an existing data.json into inventory.data.gov?
 For importing existing data.json, please contact the Data.gov team and we will work with you to migrate into inventory.data.gov.
+
 5. How do we know our agency POC?
 For Data.gov/Open Data Policy purposes, if you don’t know your agency’s POC, contact the Data.gov team and we will connect you. 
+
 6. How does this work with Data.gov?
 Inventory.data.gov is a separate system from the Data.gov catalog, using the same technology as the catalog (CKAN) to provide a service that agencies can use to create and maintain data inventories that are ultimately harvested by the Data.gov catalog from agency.gov/data.json
+
 7.Can we add custom core metadata fields?
 Yes, but not through the user interface on inventory.data.gov currently. Please contact the Data.gov team if you have this situation.
+
 8. Does search works only on dataset name and description or the actual content as well?
 Search does not cover the actual content.
+
 9. What is the difference between public and restricted-public?
 See the “access level” field in [Resources.data.gov](https://resources.data.gov/schemas/dcat-us/v1.1/): The degree to which this dataset could be made publicly-available, regardless of whether it has been made available. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public).
+
 10. Can you clarify the difference between central and inventory CKAN? It seems like many datasets are using the datastore feature on inventory.data.gov – is this no longer the policy and inventory is mainly for creating data.json files?
 “Central CKAN” was a term used in 2014 to refer to what we call inventory.data.gov – it is one and the same. This webinar focused on the primary purpose of inventory.data.gov – to provide a dataset management system to help agencies create and maintain their data inventories and arrive at a data.json. We do use inventory.data.gov for a second purpose – to host a small number of datasets for agencies that needed a hosting capability at the conclusion of the Socrata platform contract that Data.gov had until July 2014.
+
 11. If inventory.data.gov is not intended for geospatial metadata, what system is? Geoplatform.gov? If we have standards-compliant (ISO, FGDC, etc.) metadata already published, can we import these metadata fields? Or must we enter them manually?
 Inventory.data.gov in its current form is not designed to handle geospatial metadata. As discussed in our harvesting documentation, Data.gov continues to harvest geospatial datasets directly from geospatial harvest sources. Agencies should have the remainder of their agencies in a “non-geospatial” data.json that the Data.gov catalog can harvest.
+
 12. So the system does not push errors to you; you have to search for them?
 When you are ready to export your agency’s datasets to data.json and hit the button on inventory.data.gov, you will be prompted to download a zip file containing the data.json. If there are errors, the zip file will also contain an error log containing information about the datasets with errors. We are working on improving validation within inventory.data.gov so that more errors are identified as you are adding and editing datasets, before you reach the export stage.
 
