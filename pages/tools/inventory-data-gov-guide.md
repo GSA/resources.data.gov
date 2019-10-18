@@ -7,10 +7,10 @@ layout: page
 * [Features](#features)
 * [Using Inventory.data.gov](#using-inventory-data-gov)
 * [Creating a User Account](#creating-a-user-account)
-* Using inventory.data.gov to manage datasets
-* Adding a dataset
-* Exporting data.json
-* Automating data.json downloads by agencies 
+* [Using inventory.data.gov to manage datasets](#using-inventory-data-gov-to-manage-datasets)
+* [Adding a dataset](#adding-a-dataset)
+* [Exporting data.json](#exporting-data-json)
+* [Automating data.json downloads by agencies](#automating-data-json-downloads-by-agencies) 
 * Dataset hosting
 * Webinar on inventory.data.gov
 
@@ -47,7 +47,10 @@ Creating your inventory.data.gov account requires an initial login. Logins to us
 Two-factor authentication (2FA) is now required, so enable 2FA through the instructions on the [OMB MAX login](https://login.max.gov/cas/login?service=https%3A%2F%2Fmax.gov%2Fmaxportal%2Fsa%2Flogin.action%3Bjsessionid%3D994E6FE4CC968B89D599672C9F9DDAAE) page. You can add a device by clicking on “Manage SMS 2-Factor Devices” under your profile settings. This is not necessary if you use your PIV/CAC card to log in to MAX; it is already considered 2FA.
 <img width="300" alt="maxlogingraphic" src="https://user-images.githubusercontent.com/49877323/66851405-aff0fa00-ef48-11e9-9ed8-fb29cc5af1db.png">
 After you have logged in to OMB MAX, email us at datagov@gsa.gov to let us know you have completed the initial login. We will then associate requested permissions to your account. On subsequent logins to inventory.data.gov (through OMB MAX), you should be able to use inventory.data.gov to manage metadata without further assistance.
-## Using inventory.data.gov to manage datasets
+
+## Using inventory.data.gov to manage datasets(#using-inventory-data-gov-to-manage-datasets)
+{:#using-inventory-data-gov-to-manage-datasets}
+
 Once you have an account as an Editor or Administrator for your agency (Organization), you can use inventory.data.gov to add or edit datasets for your Organization.
 Once you log in, you’ll see an activity page showing your recent activity on inventory.data.gov.
 ![inventorylogin](https://user-images.githubusercontent.com/49877323/66858334-0ebd7000-ef57-11e9-9f56-9c5bee4cc4d9.jpg)
@@ -62,14 +65,19 @@ There’s an Admin button on the upper right for Administrators. By clicking on 
 Clicking on “Members” brings up all the Members of the Organization who can add and edit datasets. Clicking on the Add Members button gives you the option of adding an existing user of inventory.data.gov to your Organization. Before you can add Members to your organization, the new Member has to complete initial log in on inventory.data.gov using the OMB MAX, 2FA or PIV authentication. In addition, agency users with Administrator access are requested to coordinate the addition of new members with the Data.gov PMO, so that the documentation requirements for additional accounts are met.
 ![members](https://user-images.githubusercontent.com/49877323/66859471-65c44480-ef59-11e9-9946-f612cc306800.jpg)
 There are three levels of access. Member is read only access. Editor allows you to add and edit datasets. Admin can perform the same actions as an Editor and also add members to the Organization.
+
 ## Adding a Dataset
+{:#adding-a-dataset}
+
 Click on the Dataset tab.
 Then click on Add a Dataset. That takes you to the Create Dataset page.
 The Create Dataset page features the metadata following the [Project Open Data](https://resources.data.gov/schemas/dcat-us/v1.1/)
 ![metadata](https://user-images.githubusercontent.com/49877323/66859801-f864e380-ef59-11e9-8395-adeef909a30f.jpg) metadata schema version 1.1.
 There are examples displayed in each field, and there is also pop-up help information for each field. Full details are on the [Resources.data.gov](https://resources.data.gov/schemas/dcat-us/v1.1/) page. Fields marked by the red asterisk are required.
 There is validation for each field, so if you try to skip a required field or enter improper formats for a particular field, you’ll get an error message when you try to add the dataset.
+
 **Entering Metadata**
+
 Enter the **Title** for the dataset, as you would like the Title to be displayed.
 The URL for the dataset will be generated automatically based on the Title.
 Enter the **Description** for the dataset as a summary about the dataset.
@@ -119,7 +127,10 @@ Users can create a clone of a particular dataset by clicking on the “Clone” 
 After you click on the Clone button, make sure to correct the Dataset title and Unique Identifier at a minimum on the cloned dataset, and review all the other field values to make sure they are correct before updating the dataset.
 Please note that resources like the CSV file uploaded or linked to the original dataset will not be cloned as it is expected that resources will be different for the cloned datasets. Resources need to be entered manually for the cloned datasets.
 ![clone](https://user-images.githubusercontent.com/49877323/66867814-15a1ae00-ef6a-11e9-99af-877acf516e8a.jpg)
+
 ## Exporting Data.json
+{:#exporting-data-json}
+
 Once you have finished entering and editing the metadata for your organization, you are ready to export the datasets to generate the data.json files which comply with Project Open Data Schema 1.1 version. This is done from the main Organization page, by clicking on your agency Organization icon on the left or by clicking on your agency Organization name on the top of the page.
 There are three choices at the top.
 ![helpguide](https://user-images.githubusercontent.com/49877323/66868022-8943bb00-ef6a-11e9-8f26-20e3ae89b9a9.jpg)
@@ -142,6 +153,7 @@ Once you fix the errors, go back to the Organization page and re-download the Re
 The agency’s data.json will need to be posted on the agency’s website at agency.gov/data.json in order to be harvested by the Data.gov catalog. If the data.json is being posted on the agency.gov website for the first time, please contact the Data.gov team via email to set the harvest source on catalog.data.gov.
 
 ## Automating data.json downloads by agencies
+{:#automating-data-json-downloads-by-agencies}
 Rather than log in to inventory.data.gov and manually click the buttons to download the Redacted Inventory (PDL) and Unredacted Inventory (EDI) files, it is possible to use the API and your API key in order to automate the process of adding the data.json file to the agency website.
 Here’s what the request would look like using the curl-like tool[ httpie](http://www.httpie.org/)
 
