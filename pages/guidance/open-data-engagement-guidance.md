@@ -2,7 +2,7 @@
 title: Open Data Engagement Guidance
 layout: page
 ---
-On any given month, there are multiple events listed on [Data.gov/events](https:data.gov/events "Events") in which federal agencies engage with the public, the private sector, non-profits, academia and others on open data issues. From the numerous open data events held by federal agencies in the last several years, there are a number of lessons learned and best practices in engaging with the public on open data and holding events.
+On any given month, there are multiple events listed on [Data.gov/events](https://www.data.gov/events) in which federal agencies engage with the public, the private sector, non-profits, academia and others on open data issues. From the numerous open data events held by federal agencies in the last several years, there are a number of lessons learned and best practices in engaging with the public on open data and holding events.
 ## Articulate the purpose of the event
 Agencies that have held open data events have found that emphasizing the purpose of the event is critical to success. It can be essential in gaining agency leadership support and approvals for the public engagement or event.
 For example, the annual [USDA Open Data Summer Camp](https://www.data.gov/event/2018-usda-open-data-summer-camp/ "Open Data Summer Camp"), aimed at high school students, is designed to increase awareness and understanding of the Department of Agriculture’s mission and activities. As members of America’s agricultural community age, it is important for USDA to connect with young people and inform them of agriculture’s role in the economy and American culture. USDA hopes this awareness will spur young people’s interest in agriculture as they reach higher education and the workforce.
