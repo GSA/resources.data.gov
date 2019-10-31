@@ -14,7 +14,7 @@ secondary_nav:
 ---
 ## Agency data inventories
 
-[Project Open Data Metadata Schema](https://project-open-data.cio.gov/v1.1/schema/) currently used in
+[Project Open Data Metadata Schema](https://resources.data.gov/schemas/dcat-us/v1.1/) currently used in
 Data.gov.
 
 [Glossary]({{ site.baseurl }}{% link tools/glossary.md %}) of terms used in Project
