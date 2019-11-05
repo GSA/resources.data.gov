@@ -1,3 +1,8 @@
+---
+title: How to Get Your Open Data on Data.gov
+layout: page
+---
+
 # How to Get Your Open Data on Data.gov
 Data.gov is the central clearinghouse for open data from the United States federal government. It also provides access to many local government and non-federal open data resources. Find out below how federal, federal geospatial, and non-federal data is funneled to Data.gov and how you can get your data federated on Data.gov for greater discoverability and impact.
 
