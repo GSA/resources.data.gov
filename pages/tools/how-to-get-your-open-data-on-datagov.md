@@ -3,16 +3,18 @@ Data.gov is the central clearinghouse for open data from the United States feder
 
 This guide is primarily for the Open Data Points of Contact (POC) at each agency. If you would like to add data to Data.gov and you are not the POC for your agency, please contact your POC. If you do not know your agency POC, please continue reading and [contact Data.gov](https://www.data.gov/contact) for assistance. 
 
-* [Overview](https://digital.gov/resources/how-to-get-your-open-data-on-data-gov/#overview)
-* [Step 1: Organize your open data for the Data.gov Pipeline](https://digital.gov/resources/how-to-get-your-open-data-on-data-gov/#step-1-organize-your-open-data-for-the-data-gov-pipeline)
- *** [Federal Data with Project Open Data](https://digital.gov/resources/how-to-get-your-open-data-on-data-gov/#federal-data-with-project-open-data)
-*** [Federal Geospatial Data](https://digital.gov/resources/how-to-get-your-open-data-on-data-gov/#federal-geospatial-data)
-*** [Non-Federal Data](https://digital.gov/resources/how-to-get-your-open-data-on-data-gov/#non-federal-data)
-* [Step 2: Coordinate with Data.gov](https://digital.gov/resources/how-to-get-your-open-data-on-data-gov/#step-2-coordinate-with-data-gov)
-* [Resources and Tools](https://digital.gov/resources/how-to-get-your-open-data-on-data-gov/#resources-tools)
-* [Frequently Asked Questions](https://digital.gov/resources/how-to-get-your-open-data-on-data-gov/#frequently-asked-questions)
+* [Overview](#overview)
+* [Step 1 Organize your open data for the Data.gov pipeline](#step-1-organize-your-open-data-for-the-data-gov-pipeline)
+* [Federal Data with Project Open Data](#federal-data-with-project-open-data)
+* [Federal Geospatial Data](#federal-geospatial-data)
+* [Non-Federal Data](#non-federal-data)
+* [Step 2 Coordinate with Data.gov](#step-2-coordinate-with-data-gov)
+
+
 
 # Overview 
+{:#overview}
+
 Data.gov is primarily a federal open government data site. However, state, local, and tribal governments can also publish metadata describing their open data resources on Data.gov for greater discoverability. Data.gov does not host data directly (with a few exceptions), but rather aggregates metadata about open data resources in one centralized location. Once an open data source meets the necessary format and metadata requirements, the Data.gov team can harvest the metadata directly, synchronizing that source’s metadata on Data.gov as often as every 24 hours.
 
 ## Background 
@@ -23,14 +25,20 @@ Additions, updates, and deletions occur through a Harvest Source rather than wit
 ![opendatagraphic](https://user-images.githubusercontent.com/49877323/66601676-78640580-eb76-11e9-9388-69ec9ee9952b.png)
 
 # Step 1: Organize your open data for the Data.gov Pipeline
+
+{:#step-1-organize-your-open-data-for-the-data-gov-pipeline}
+
 Getting your data source ready for harvesting by the Data.gov catalog depends on your data source type:
-1. **Federal Data with Project Open Data (non-geospatial):** The most common source is the Public Data Listing as required by the [Federal Open Data Policy](https://policy.cio.gov/open-data/) and the [OPEN Government Data Act (Title II of the Foundations for Evidence Based Policymaking Act)](https://www.congress.gov/bill/115th-congress/house-bill/4174/text).
+1. **Federal Data with Project Open Data (non-geospatial):** 
+The most common source is the Public Data Listing as required by the [Federal Open Data Policy](https://policy.cio.gov/open-data/) and the [OPEN Government Data Act (Title II of the Foundations for Evidence Based Policymaking Act)](https://www.congress.gov/bill/115th-congress/house-bill/4174/text).
 2. **Federal Geospatial Data:** Federal maps, images, GIS products, and other location-based data resources.
 3. **Non-federal Data:**  Non-federal government sources are not covered by the Federal Open Data Policy, or OPEN Government Data Act, but can be included included in the Data.gov catalog voluntarily.
 
 The steps for all three types of data sources are described in detail below.
 
 ## Federal Data with Project Open Data
+{:#federal-data-with-project-open-data}
+
 Under the OPEN Government Data Act and the Open Data Policy, federal agencies are required to publish an enterprise data inventory, provided as a data.json file,using the standard [Project Open Data metadata schema](https://resources.data.gov/schemas/dcat-us/v1.1/). 
 The machine readable listing, as a standalone JSON file on the agency’s website at `agency.gov/data.json.` This `data.json` file is what gets harvested to the Data.gov catalog.
 
@@ -47,6 +55,8 @@ When an agency is ready for Data.gov to harvest its data.json for the first time
 **Error log reports**  Every time the data.json is harvested, an error log is generated that identifies any issues that occurred during the harvest process. If requested, an agency point of contact can receive a daily harvest report with this error log via email.
 
 ## Federal Geospatial Data
+{:#federal-geospatial-data}
+
 **Background**
 Several federal agencies maintain and manage geospatial data and geographic information systems (GIS). The documentation of geospatial data is subject to authorities pre-dating the Open Data Policy. Agencies are required to develop metadata as outlined in [the Geospatial Data Act](https://www.fgdc.gov/gda), [Executive Order 12906](http://www.archives.gov/federal-register/executive-orders/pdf/12906.pdf), and [ OMB Circular A-16, revised (2002)](https://www.whitehouse.gov/wp-content/uploads/2017/11/Circular-016.pdf) to support the National Spatial Data Infrastructure (NSDI). The Federal Geographic Data Committee (FGDC) is the interagency group responsible for facilitating these federal activities and collaboration with non-federal organizations on geospatial data efforts. The FGDC has endorsed several geospatial metadata standards, as directed by [OMB Circular A-119](https://www.whitehouse.gov/wp-content/uploads/2017/11/Circular-119-1.pdf), including the Content Standard for Digital Geospatial Metadata [(CSDGM)](http://www.fgdc.gov/metadata/csdgm),  [ISO 19115:2003 Geographic Information – Metadata](http://www.fgdc.gov/metadata/geospatial-metadata-standards)  and several related ISO geospatial standards. Since ISO 19115 and the associated standards are voluntary consensus standards (vs. federally-authored) and endorsed by the FGDC, federal agencies are encouraged to transition to ISO metadata as their agencies are able to do so. While the selection of appropriate standards is dependent on the nature of your metadata collection and publication process, ISO metadata should be considered an option now. For more information, [see the FGDC website](https://www.fgdc.gov/metadata).
 Metadata for geospatial datasets in [catalog.data.gov](http://catalog.data.gov/dataset) is also made available in GeoPlatform.gov. GeoPlatform.gov provides access and management of geospatial resources through common geospatial data, services, and applications contributed and administered by trusted sources and hosted on shared infrastructure for use by federal agencies, agency partners, and the public. Geospatial metadata is made available to GeoPlatform.gov from the metadata harvested by catalog.data.gov and is displayed on GeoPlatform.gov via an application programming interface (API) on catalog.data.gov. In other words, the datasets discoverable on [GeoPlatform.gov](http://www.geoplatform.gov/) are from the geospatial metadata collected by the catalog using the following API call:
@@ -70,6 +80,8 @@ All datasets included in the CSW will be displayed on GeoPlatform.gov. Datasets 
 If an agency has a geospatial dataset in the data-nonspatial-harvest.json that should be part of GeoPlatform.gov, but is not included in the CSW harvest source, or if an agency has geospatial holdings and is only able to provide a data.json file and not the CSW, it should denote the geospatial dataset using “geospatial” as a value within the “theme” field. For example: “theme”: [“geospatial”]
 
 ## **Non-Federal Data**
+{:#non-federal-data}
+
 Data.gov incorporates data sources from state, local, and tribal governments. Non-federal sources are not covered by the Federal Open Data Policy or the OPEN Government Data Act, but can be included in the Data.gov catalog voluntarily. Depending on your local government open data platform, you may already have a harvest source that is Data.gov-ready, or it could take a little more work. Either way, the Data.gov team is available to answer questions about these requirements. For non-federal data to be connected to Data.gov, the following items are required:
 
 1. **A Data Harvest Source** Some open data catalog platforms already have a Data.gov harvest source built in (see these examples from [Socrata](https://nycopendata.socrata.com/data.json) and [ArcGIS Open Data](http://opendata.dc.gov/data.json)), but it is possible to set up a harvest source with any data management system (see [this CKAN example](https://www.opendataphilly.org/data.json)). The metadata required from non-federal sources does not include the [USG noted fields](https://resources.data.gov/schemas/dcat-us/v1.1/#federal-government-fields) and additional fields can be left out on a case-by-case basis. To learn more about metadata best practices and validators, check out the Resources and Tools below. **Required:** A Harvest Source at: `https://_______.gov/data.json`, e.g. `https://data.brla.gov/data.json`
@@ -78,6 +90,9 @@ Data.gov incorporates data sources from state, local, and tribal governments. No
 Once you have coordinated with Data.gov on these two items, automated updates to Data.gov can be set up very quickly. Non-federal organizations can provide the necessary information through [the form](http://www.data.gov/local/add).
 
 ## Step 2: Coordinate with Data.gov 
+{:#step-2-coordinate-with-data-gov}
+
+
 **Contact the Data.gov team**
 
 Contact the Data.gov team via email to let them know you’d like to get started. Please include a link to your metadata in the data.json format (see Step 1: Organize your open data for the Data.gov Pipeline) or let us know if you have questions about how to create a data.json file from your current database along with any relevant links.
