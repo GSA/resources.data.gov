@@ -14,7 +14,11 @@ secondary_nav:
 ---
 ## Agency data inventories
 
-[Project Open Data Metadata Schema](https://project-open-data.cio.gov/v1.1/schema/) currently used in
+[How to get your Open Data on Data.gov]({{ site.baseurl }}{% link tools/how-to-get-your-open-data-on-datagov.md %}).
+
+[Inventory.data.gov Guide]({{ site.baseurl }}{% link tools/inventory-data-gov-guide.md %}).
+
+[Project Open Data Metadata Schema](https://resources.data.gov/schemas/dcat-us/v1.1/) currently used in
 Data.gov.
 
 [Glossary]({{ site.baseurl }}{% link tools/glossary.md %}) of terms used in Project
@@ -50,6 +54,8 @@ Internet, on web pages, in email messages, and beyond.
 [Guidance](https://project-open-data.cio.gov/v1.1/schema/) to support the use of
 the Project Open Data metadata to list agency datasets and application
 programming interfaces (APIs) as hosted at agency.gov/data.
+
+[Open Data Communities]({{ site.baseurl }}{% link open-data-communities.md %}).
 
 Custom [CKAN extension](https://github.com/HHS/ckanext-datajson) for [healthdata.gov](https://healthdata.gov/).
 
