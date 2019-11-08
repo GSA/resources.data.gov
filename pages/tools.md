@@ -55,6 +55,8 @@ Internet, on web pages, in email messages, and beyond.
 the Project Open Data metadata to list agency datasets and application
 programming interfaces (APIs) as hosted at agency.gov/data.
 
+[Open Data Communities]({{ site.baseurl }}{% link open-data-communities.md %}).
+
 Custom [CKAN extension](https://github.com/HHS/ckanext-datajson) for [healthdata.gov](https://healthdata.gov/).
 
 [Government Data Hubs](https://project-open-data.cio.gov/data-hubs/).
