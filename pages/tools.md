@@ -14,7 +14,7 @@ secondary_nav:
 ---
 ## Agency data inventories
 
-[How to get your Open Data on Data.gov]({{ site.baseur }}{% link tools/how-to-get-your-open-data-on-datagov.md %}).
+[How to get your Open Data on Data.gov]({{ site.baseurl }}{% link tools/how-to-get-your-open-data-on-datagov.md %}).
 
 [Inventory.data.gov Guide]({{ site.baseurl }}{% link tools/inventory-data-gov-guide.md %}).
 
