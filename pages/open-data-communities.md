@@ -1,4 +1,7 @@
-# Open Data Community of Practice
+---
+title: Open Data Community of Practice
+layout: page
+---
 
 ## Who we are
 
