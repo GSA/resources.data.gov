@@ -58,7 +58,7 @@ Examples of goals include:
 * Use of open data event to further a core mission of an agency, such as transportation safety or supporting education
 
 ## Document roles and responsibilities for those involved in the initiative
-Agencies that have held events have found it a best practice to clearly document roles and responsibilities for those working on planning the event, especially for events that involve working with outside organizations as co-sponsors. Some agencies have used a detailed “tick tock” document with daily action items that show what each individual team member must complete.
+Agencies that have held events have found it a best practice to clearly document roles and responsibilities for those working on planning the event, especially for events that involve working with outside organizations as co-sponsors. Some agencies have used a detailed “tick tock” document with daily action items that show what each individual team member must complete. Agencies should clearly document the tasks assigned to each participating agency or entity, including responsibilities for participant outreach and communication, and data collection for the event, whether for event planning and organization, substantive data on the topic of the event, or for post-event follow-up actions and surveys.
 
 ## Hold regular check-ins with those involved in the implementation
 Planning of most open data events begins with ad hoc meetings at the early stages, then monthly, weekly, or other intervals with increasing frequency as the date of the event nears.
