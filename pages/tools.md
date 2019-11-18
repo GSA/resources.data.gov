@@ -18,7 +18,7 @@ secondary_nav:
 
 [Inventory.data.gov Guide]({{ site.baseurl }}{% link tools/inventory-data-gov-guide.md %}).
 
-[Project Open Data Metadata Schema](https://resources.data.gov/schemas/dcat-us/v1.1/) currently used in
+[DCAT-US Schema v1.1 (Project Open Data Metadata Schema)](https://resources.data.gov/schemas/dcat-us/v1.1/) currently used in
 Data.gov.
 
 [Glossary]({{ site.baseurl }}{% link tools/glossary.md %}) of terms used in Project
