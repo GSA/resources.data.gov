@@ -1,7 +1,7 @@
 ---
 published: true
 layout: page
-title: Project Open Data Metadata Schema v1.1 (DCAT-US)
+title: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
 permalink: /schemas/dcat-us/v1.1/
 filename: index.md
 id: schema v1.1
@@ -37,7 +37,7 @@ secondary_nav:
 ---
 
 {: .vertical-headings}
-| Specification name: | Project Open Data Metadata Schema (DCAT-US) |
+| Specification name: | DCAT-US Schema v1.1 (Project Open Data Metadata Schema) |
 |---------------------|-----------------------------------|
 | This version:       | 1.1                               |
 | Latest version:     | This version                      |
