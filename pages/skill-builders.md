@@ -12,8 +12,6 @@ with data are provided below.
 
 [Annotated 8 Principles of Open Government Data](https://opengovdata.org/).
 
-[Licensing Policies, Principles, and Resources](https://project-open-data.cio.gov/licensing-resources/).
-
 [Learn more about how copyright applies to U.S. government works](https://www.usa.gov/government-works).
 
 [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/).
