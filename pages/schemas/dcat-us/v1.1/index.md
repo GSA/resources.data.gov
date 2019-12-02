@@ -1,7 +1,7 @@
 ---
 published: true
 layout: page
-title: Project Open Data Metadata Schema v1.1 (DCAT-US)
+title: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
 permalink: /schemas/dcat-us/v1.1/
 filename: index.md
 id: schema v1.1
@@ -37,7 +37,7 @@ secondary_nav:
 ---
 
 {: .vertical-headings}
-| Specification name: | Project Open Data Metadata Schema (DCAT-US) |
+| Specification name: | DCAT-US Schema v1.1 (Project Open Data Metadata Schema) |
 |---------------------|-----------------------------------|
 | This version:       | 1.1                               |
 | Latest version:     | This version                      |
@@ -118,8 +118,8 @@ Field                                                      | Label              
 [contactPoint](#contactPoint)                              | Contact Name and Email    | Contact person's name and email for the asset. | Always                                                                                                           
 [identifier](#identifier)                                  | Unique Identifier         | A unique identifier for the dataset or API as maintained within an Agency catalog or database. | Always                                                 
 [accessLevel](#accessLevel)                                | Public Access Level       | The degree to which this dataset **could** be made publicly-available, *regardless of whether it has been made available*. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public). | Always 
-[bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](/data/omb_bureau_codes.csv)) in the format of `015:11`. | Always  
-[programCode](#programCode)<sup>[USG](#USG-note)</sup>     | Program Code              | Federal agencies, list the primary program related to this data asset, from the [Federal Program Inventory](pages/assets/documents/FederalProgramInventory_FY13_MachineReadable_091613.csv). Use the format of `015:001`. | Always                                                                                                                       
+[bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](pages/schemas/dcat-us/v1.1/omb_bureau_codes (1).csv) in the format of `015:11`. | Always  
+[programCode](#programCode)<sup>[USG](#USG-note)</sup>     | Program Code              | Federal agencies, list the primary program related to this data asset, from the [Federal Program Inventory](pages/schemas/dcat-us/v1.1/FederalProgramInventory_FY13_MachineReadable_091613.csv). Use the format of `015:001`. | Always                                                                                                                       
 [license](#license)                                        | License                   | The license or non-license (i.e. Public Domain) status with which the dataset or API has been published.  See [Open Licenses](/open-licenses/) for more information. | If-Applicable 
 [rights](#rights)                                          | Rights                    | This may include information regarding access or restrictions based on privacy, security, or other policies. This should also serve as an explanation for the selected “accessLevel” including instructions for how to access a restricted file, if applicable, or explanation for why a “non-public” or “restricted public” data asset is not “public,” if applicable. Text, 255 characters. | If-Applicable 
 [spatial](#spatial)                                        | Spatial                   | The range of spatial applicability of a dataset.  Could include a spatial region like a bounding box or a named place. | If-Applicable                        
