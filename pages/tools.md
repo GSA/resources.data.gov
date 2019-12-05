@@ -51,7 +51,7 @@ agency's data.json against required federal metadata schema.
 a mission to create, maintain, and promote schemas for structured data on the
 Internet, on web pages, in email messages, and beyond.
 
-[Guidance](https://project-open-data.cio.gov/v1.1/schema/) to support the use of
+[Guidance](https://resources.data.gov/schemas/dcat-us/v1.1/#what-to-document--datasets-and-web-apis) to support the use of
 the Project Open Data metadata to list agency datasets and application
 programming interfaces (APIs) as hosted at agency.gov/data.
 
