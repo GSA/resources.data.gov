@@ -29,7 +29,8 @@
     "uswds-gulp": "github:uswds/uswds-gulp",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
-    "watchify": "^3.11.1"
+    "watchify": "^3.11.1",
+    "snyk": "^1.258.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -41,8 +42,11 @@
     "start": "concurrently \"npm run watch:*\" \"bundle exec jekyll serve\"",
     "test": "bundle exec htmlproofer --check-html --disable-external _site",
     "watch:js": "gulp watch-js",
-    "watch:sass": "gulp watch-sass"
+    "watch:sass": "gulp watch-sass",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Data.gov <datagovhelp@gsa.gov>",
-  "license": "CC0-1.0"
+  "license": "CC0-1.0",
+  "snyk": true
 }
