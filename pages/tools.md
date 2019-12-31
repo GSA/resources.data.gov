@@ -135,3 +135,5 @@ inside PDF files.
 [HMDA tools](https://github.com/cfpb/hmda-tools) import and analyze mortgage application data.
 
 [Data and Statistics about the U.S.](https://www.usa.gov/statistics).
+
+[ExtendsClass](https://extendsclass.com/json-diff.html) - A semantic JSON compare tool.
