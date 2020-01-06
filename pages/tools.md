@@ -135,3 +135,5 @@ inside PDF files.
 [HMDA tools](https://github.com/cfpb/hmda-tools) import and analyze mortgage application data.
 
 [Data and Statistics about the U.S.](https://www.usa.gov/statistics).
+
+[Measuring data literacy against the DatabilitiesⓇ framework](http://www.datatothepeople.org) applies a robust, research-backed framework to assess organizational data literacy at an individual level.
