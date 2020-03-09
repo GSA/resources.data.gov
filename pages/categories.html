@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: categories.html
+---
+
+{% for category in site.page_categories %}
+	<h2>{{ category }}</h2>
+	{% for page in site.pages %}
+		{% if page.categories contains category %}
+			<li><a href="{{ page.url }}">{{page.title}}</a></li>
+		{% endif %}
+	{% endfor %}
+{% endfor %}

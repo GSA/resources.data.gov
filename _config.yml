@@ -45,3 +45,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+page_categories: [test, people, work, top]
+page_tags: [apple, orange, grape]

@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: tags.html
+---
+
+{% for tag in site.page_tags %}
+	<h2>{{ tag }}</h2>
+	{% for page in site.pages %}
+		{% if page.tags contains tag %}
+			<li><a href="{{ page.url }}">{{page.title}}</a></li>
+		{% endif %}
+	{% endfor %}
+{% endfor %}
