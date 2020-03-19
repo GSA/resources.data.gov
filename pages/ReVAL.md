@@ -5,6 +5,7 @@ categories: [test, people]
 tags: [apple, orange]
 ---
 ## Agency data inventories
+
 {{ page.categories }}
 
 [How to get your Open Data on Data.gov]({{ site.baseurl }}{% link tools/how-to-get-your-open-data-on-datagov.md %}).
@@ -56,7 +57,6 @@ Custom [CKAN extension](https://github.com/HHS/ckanext-datajson) for [healthdata
 
 [How to Get Your Agency's Data on to Data.gov](https://www.youtube.com/watch?v=hbxA5-GDvvU) (video).
 
-
 ## APIs
 
 [Database to API](https://github.com/project-open-data/db-to-api) turns
@@ -72,13 +72,11 @@ a proof of concept to dynamically generate RESTful APIs from static CSVs.
 [/Developer program](https://18f.github.io/API-All-the-X/) provides support to
 agencies engaged in the production or use of APIs.
 
-
 ## Geospatial
 
 [Geoportal Server](https://github.com/Esri/geoportal-server/) is
 a standards-based, open source product that enables discovery and use of
 geospatial resources including data and services.
-
 
 [pycsw](https://pycsw.org/) is an OGC CSW server implementation written in
 Python.
@@ -97,7 +95,6 @@ API that allows the user to query geographic entities by latitude and longitude,
 and extract data.
 
 [Federal Geographic Data Committee](https://www.fgdc.gov/).
-
 
 ## Other tools
 
