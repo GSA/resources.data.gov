@@ -26,7 +26,7 @@
     "path": "^0.12.7",
     "smooth-scroll": "^16.0.3",
     "snyk": "^1.296.1",
-    "uswds": "^2.0.1",
+    "uswds": "^2.6.0",
     "uswds-gulp": "github:uswds/uswds-gulp",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
