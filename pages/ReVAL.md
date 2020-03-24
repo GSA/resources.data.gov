@@ -1,127 +1,45 @@
 ---
 title: ReVAL
 layout: page
-categories: [test, people]
-tags: [apple, orange]
+categories: [Data Validation]
+format: Software tool
+tags: [API, web interface, data aggregation, Python]
 ---
-## Agency data inventories
+#### Categories
 
 {{ page.categories }}
 
-[How to get your Open Data on Data.gov]({{ site.baseurl }}{% link tools/how-to-get-your-open-data-on-datagov.md %}).
+#### Tags
 
-[Inventory.data.gov Guide]({{ site.baseurl }}{% link tools/inventory-data-gov-guide.md %}).
+{% assign siteTags = site.page_tags %}
+{% for tag in page.tags %}
+  {% if siteTags contains tag %}
+    {{ tag }}
+  {% endif %}
+{% endfor %}
 
-[DCAT-US Schema v1.1 (Project Open Data Metadata Schema)](https://resources.data.gov/schemas/dcat-us/v1.1/) currently used in
-Data.gov.
+#### Format
 
-[Glossary]({{ site.baseurl }}{% link tools/glossary.md %}) of terms used in Project
-Open Data Metadata Schema.
+{% assign siteFormats = site.page_formats %}
+{% if siteFormats contains page.format %}
+  {{ page.format }}
+{% endif %}
 
-[Field Mapping](https://project-open-data.cio.gov/v1.1/metadata-resources/#field-mappings)
-of fields under the Project Open Data Metadata Schema.
+## Description
+ReVAL (Reusable Validation & Aggregation Library) is a Django App for validating and aggregating data via API and web interface.
 
-[GitHub](https://github.com/project-open-data) repository for Project Open Data.
+## How the US Government uses {{page.title}}
+USDA FNS uses ReVAL to implement their Data Validation Service tool for validating data from FNS-742 form submissions.  Each year state agencies report these data for each School Food Authority (SFA) with schools operating the National School Lunch Programs (NSLP) and/or the School Breakfast Program (SBP).
 
-[Inventory.data.gov](https://inventory.data.gov/) is a tool for federal agencies
-to create and publish metadata catalogs.
+The Census Bureau uses ReVAL to explore an implementation to check Commodity Flow Survey (CFS) Data.  These CFS data are used by policy makers and transportation planners in various federal, state, and local agencies for assessing the demand for transportation facilities and services, energy use, and safety risk and environmental concerns.
 
-[CKAN](https://ckan.org/) is a powerful data management system that makes data
-accessible – by providing tools to streamline publishing, sharing, finding and
-using data.
+The Department of Transportation uses ReVAL to validate Work Zone Data by validating it against the Work Zone Data Exchange (WZDx) Specification.  The Work Zone Data Exchange (WZDx) Specification enables infrastructure owners and operators (IOOs) to make harmonized work zone data available for third party use. The intent is to make travel on public roads safer and more efficient through ubiquitous access to data on work zone activity. Specifically, the project aims to get data on work zones into vehicles to help automated driving systems (ADS) and human drivers navigate more safely.
 
-[JSON](https://www.json.org/) (JavaScript Object Notation) is a lightweight data-interchange format.
-It is easy for humans to read and write. It is easy for machines to parse
-and generate.
 
-[JSON Validator](https://labs.data.gov/dashboard/validate) is used to check your
-agency's data.json against required federal metadata schema.
+#### Case studies
+(only generate this section and links to case studies if this has the case studies tag)
 
-[JSON to CSV converter](https://konklone.io/json/).
 
-[CSV to JSON converter](https://labs.data.gov/dashboard/datagov/csv_to_json).
+## Get started
 
-[Schema.org](https://schema.org/) is a collaborative, community activity with
-a mission to create, maintain, and promote schemas for structured data on the
-Internet, on web pages, in email messages, and beyond.
-
-[Guidance](https://resources.data.gov/schemas/dcat-us/v1.1/#what-to-document--datasets-and-web-apis) to support the use of
-the Project Open Data metadata to list agency datasets and application
-programming interfaces (APIs) as hosted at agency.gov/data.
-
-[Open Data Communities]({{ site.baseurl }}{% link open-data-communities.md %}).
-
-Custom [CKAN extension](https://github.com/HHS/ckanext-datajson) for [healthdata.gov](https://healthdata.gov/).
-
-[Government Data Hubs](https://project-open-data.cio.gov/data-hubs/).
-
-[How to Get Your Agency's Data on to Data.gov](https://www.youtube.com/watch?v=hbxA5-GDvvU) (video).
-
-## APIs
-
-[Database to API](https://github.com/project-open-data/db-to-api) turns
-a Database into a Secure, RESTful API.
-
-[CSV to API](https://github.com/project-open-data/csv-to-api) generator is
-a proof of concept to dynamically generate RESTful APIs from static CSVs.
-
-[Interactive API documentation system](https://github.com/project-open-data/iodocs).
-
-[Documenting APIs]({% link tools/documenting-apis.md %}).
-
-[/Developer program](https://18f.github.io/API-All-the-X/) provides support to
-agencies engaged in the production or use of APIs.
-
-## Geospatial
-
-[Geoportal Server](https://github.com/Esri/geoportal-server/) is
-a standards-based, open source product that enables discovery and use of
-geospatial resources including data and services.
-
-[pycsw](https://pycsw.org/) is an OGC CSW server implementation written in
-Python.
-
-[GeoNode](http://geonode.org/) is a web-based application and platform for
-developing geospatial information systems (GIS) and for deploying spatial data
-infrastructures (SDI). It is designed to be extended and modified, and can be
-integrated into existing platforms.
-
-[Repository](https://github.com/project-open-data/esri2open) is an ESRI toolbox
-and tool(s) that export ESRI Feature Classes to open data formats, CSV, JSON,
-and GeoJSON.
-
-[SpatialSearch](https://github.com/project-open-data/SpatialSearch) is a RESTful
-API that allows the user to query geographic entities by latitude and longitude,
-and extract data.
-
-[Federal Geographic Data Committee](https://www.fgdc.gov/).
-
-## Other tools
-
-[Dashboard](https://labs.data.gov/dashboard/offices/qa) of agency performance on open data.
-
-[JSON Based Serialization for Linked Data](https://www.w3.org/TR/json-ld/).
-
-[WordPress Plugin](https://github.com/project-open-data/kickstart) allows sites
-to serve and track changes of root level XML, JSON, and other data files without
-directly uploading files to the server.
-
-[DKAN](https://www.drupal.org/project/dkan) is a Drupal based open data platform.
-
-[LIBRE](https://github.com/commonwealth-of-puerto-rico/libre), the Libre
-Information Batch Restructuring Engine.
-
-The [Digital Analytics Program](https://digital.gov/dap/) (DAP) offers advanced,
-easy Web analytics to federal agencies.
-
-[Data Visualization](https://www.drupal.org/project/datavizwiz) wizard.
-
-[qu](https://github.com/cfpb/qu) is a data platform created to serve public data
-sets. This is a public domain work of the US Government.
-
-[Tabula](https://tabula.technology/) is a tool for liberating data tables locked
-inside PDF files.
-
-[HMDA tools](https://github.com/cfpb/hmda-tools) import and analyze mortgage application data.
-
-[Data and Statistics about the U.S.](https://www.usa.gov/statistics).
+[Source code](https://github.com/18F/ReVAL)
