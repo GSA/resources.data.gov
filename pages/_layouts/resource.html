@@ -10,7 +10,8 @@ layout: page
 <p>
   Tags:
   {% assign siteTags = site.page_tags %}
-  {% for tag in page.tags %}
+  {% assign pageTags = page.tags | split: ", " %}
+  {% for tag in pageTags %}
      {% if siteTags contains tag %}
        {{ tag }}
      {% endif %}
