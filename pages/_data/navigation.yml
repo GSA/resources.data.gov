@@ -2,6 +2,11 @@
   url: /strategy/
 - text: Tools
   url: /tools/
+  children:
+    - text: Categories
+      url: /categories
+    - text: Tags
+      url: /tags
 - text: Resources
   children:
     - text: Case studies
