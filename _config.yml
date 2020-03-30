@@ -20,6 +20,7 @@ backend:
   auth_endpoint: external/auth/github
   preview_context: federalist/build
   branch: netlify
+  use_graphql: true
 
 styles:
   - assets/uswds/css/styles.css
