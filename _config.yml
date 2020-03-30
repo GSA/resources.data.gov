@@ -10,9 +10,17 @@ dap_agency: GSA
 searchgov_affiliate: datagov-resources
 
 github:
-  organization: GSA
+  organization: 18F
   repository: resources.data.gov
   default_branch: develop
+
+backend:
+  name: github
+  repo: 18F/resources.data.gov
+  base_url: https://federalistapp.18f.gov
+  auth_endpoint: external/auth/github
+  preview_context: federalist/build
+  branch: netlify
 
 styles:
   - assets/uswds/css/styles.css
