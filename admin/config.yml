@@ -6,3 +6,5 @@ backend:
   preview_context: federalist/build
   branch: netlify
   use_graphql: true
+
+publish_mode: editorial_workflow
