@@ -8,3 +8,17 @@ backend:
   use_graphql: true
 
 publish_mode: editorial_workflow
+
+media_folder: "pages/assets/media"
+public_folder: "/assets/media"
+
+collections:
+  - name: "testing"
+    label: "testing collections"
+    create: true
+    folder: "testing/"
+    fields:
+      - label: "name"
+        name: "name"
+        widget: "string"
+        hint: "(name)"
