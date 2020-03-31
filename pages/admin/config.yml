@@ -16,7 +16,7 @@ collections:
   - name: "testing"
     label: "testing collections"
     create: true
-    folder: "testing/"
+    folder: "pages/testing/"
     fields:
       - label: "name"
         name: "name"
