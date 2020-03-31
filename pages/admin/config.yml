@@ -21,4 +21,18 @@ collections:
       - label: "name"
         name: "name"
         widget: "string"
-        hint: "(name)"
+        hint: "name of the resource"
+        required: true
+
+      - label: "description"
+        name: "description"
+        widget: "text"
+        hint: "description of the resource"
+        required: false
+
+      - label: "format"
+        name: "format"
+        widget: "select"
+        hint: "format of the resource"
+        options: ["---", "Case study", "Glossary", "Software tool", "Best practice", "Standard/schema", "Form/template", "Report"]
+        required: false
