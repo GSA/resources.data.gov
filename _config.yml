@@ -48,3 +48,7 @@ exclude:
 collections:
   resources:
     output: true
+
+page_categories: [Policy, Data Management, Data Governance, Working with Data, Workforce Development, Data Standards, Data Inventories, Data Validation]
+page_tags: [API, web interface, data aggregation, Python, Community of practice, open data, FDS, Evidence Act, Procurement, ERM, CDO Council, Culture change, data analysis, DATA ACT, data validation, data sharing, data literacy, FOIA, data viz, data cleaning, metadata, PRA, data.gov, geospatial]
+page_formats: [Case study, Glossary, Software tool, Best practice, Standard/schema, Form/template, Report]
