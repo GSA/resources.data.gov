@@ -13,10 +13,10 @@ media_folder: "pages/assets/media"
 public_folder: "/assets/media"
 
 collections:
-  - name: "testing"
-    label: "testing collections"
+  - name: "resources"
+    label: "resources"
     create: true
-    folder: "pages/testing/"
+    folder: "pages/resources/"
     fields:
       - label: "name"
         name: "name"
