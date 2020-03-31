@@ -1,0 +1,43 @@
+---
+layout: page
+---
+
+<p>
+  Category:
+  <span class="usa-tag">{{ page.categories }}</span>
+</p>
+
+<p>
+  Tags:
+  {% assign siteTags = site.page_tags %}
+  {% assign pageTags = page.tags | split: ", " %}
+  {% for tag in pageTags %}
+    {% if siteTags contains tag %}
+      {{ tag }}
+    {% endif %}
+  {% endfor %}
+</p>
+
+<p>
+  Format:
+  {% assign siteFormats = site.page_formats %}
+  {% if siteFormats contains page.format %}
+    {{ page.format }}
+  {% endif %}
+</p>
+
+<h1>Description</h1>
+
+{{ page.summary }}
+
+<h2>How the US Government uses {{ page.title }}</h2>
+
+{{ page.description | markdownify }}
+
+<h3>Case studies</h3>
+
+{{ page.case_studies }}
+
+<h2>Get started</h2>
+
+{{ page.get_started }}

@@ -1,3 +1,4 @@
 ---
+layout: resource
 name: baz
 ---
