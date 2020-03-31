@@ -4,40 +4,48 @@ layout: page
 
 <p>
   Category:
-  <span class="usa-tag">{{ page.categories }}</span>
+  <span class="usa-tag">{{ page.categories | default: "(none)" }}</span>
 </p>
 
 <p>
   Tags:
-  {% assign siteTags = site.page_tags %}
-  {% assign pageTags = page.tags | split: ", " %}
-  {% for tag in pageTags %}
-    {% if siteTags contains tag %}
-      {{ tag }}
-    {% endif %}
-  {% endfor %}
+  {% if page.tags %}
+    {% assign siteTags = site.page_tags %}
+    {% assign pageTags = page.tags | split: ", " %}
+    {% for tag in pageTags %}
+      {% if siteTags contains tag %}
+        {{ tag }}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    (none)
+  {% endif %}
 </p>
 
 <p>
   Format:
-  {% assign siteFormats = site.page_formats %}
-  {% if siteFormats contains page.format %}
-    {{ page.format }}
+  {% if page.format %}
+    {% assign siteFormats = site.page_formats %}
+    {% if siteFormats contains page.format %}
+      {{ page.format }}
+    {% endif %}
+  {% else %}
+    (none)
   {% endif %}
 </p>
 
 <h1>Description</h1>
 
+{{ page.description | default: "(none)" | markdownify }}
+
+<h2>How the US Government uses {{ page.name }}</h2>
+
 {{ page.summary }}
-
-<h2>How the US Government uses {{ page.title }}</h2>
-
-{{ page.description | markdownify }}
 
 <h3>Case studies</h3>
 
-{{ page.case_studies }}
+{{ page.case_studies | default: "(none)" }}
 
 <h2>Get started</h2>
 
-{{ page.get_started }}
+{{ page.get_started | default: "(none)" }}
