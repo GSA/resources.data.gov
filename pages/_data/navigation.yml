@@ -1,19 +1,15 @@
-- text: Strategy
-  url: /strategy/
-- text: Tools
-  url: /tools/
 - text: Resources
   children:
-    - text: Case studies
-      url: /case-studies/
-    - text: Playbooks
-      url: /playbooks/
-    - text: Guidance
-      url: /guidance/
-    - text: Skill builders
-      url: /skill-builders/
-    - text: Standards
-      url: /standards/
+    - text: Data governance & management
+      url: /governance-management/
+    - text: Regualation & compliance
+      url: /reg-compliance/
+    - text: Hands-on data work
+      url: /hands-on/
+    - text: Workforce development
+      url: /workforce-development/  
+- text: Communities
+  url: /communities/
 - text: About
   children:
     - text: History
