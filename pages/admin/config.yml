@@ -28,11 +28,57 @@ collections:
         name: "description"
         widget: "text"
         hint: "description of the resource"
-        required: false
+        required: true
+
+      - label: "source"
+        name: "source"
+        widget: "string"
+        hint: "who created the resource"
+        required: true
+
+      - label: "category"
+        name: "category"
+        widget: "select"
+        hint: "category of the resource"
+        options: ["---", "Data governance & management", "Regulation & compliance", "Hands-on", "Workforce development"]
+        required: true
+
+      - label: "tags"
+        name: "tags"
+        widget: "select"
+        hint: "tags for this resource"
+        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", ]
+        required: true
 
       - label: "format"
         name: "format"
         widget: "select"
         hint: "format of the resource"
-        options: ["---", "Case study", "Glossary", "Software tool", "Best practice", "Standard/schema", "Form/template", "Report"]
+        options: ["---", "Case study", "Software tool", "Standard/schema", "Form/template", "Report", "OMB Memo", "Skill-builder"]
         required: false
+        
+      - label: "link"
+        name: "link to resource"
+        widget: "markdown"
+        hint: "link to the resource"
+        required: false
+
+      - label: "details"
+        name: "details"
+        widget: "markdown"
+        hint: "detailed description of the resource"
+        required: false
+        
+      - label: "govt-use"
+        name: "use in government"
+        widget: "markdown"
+        hint: "how this resource has been used in government"
+        required: false
+        
+      - label: "download"
+        name: "download"
+        widget: "file"
+        hint: "downloadable resource"
+        required: false
+        
+     
