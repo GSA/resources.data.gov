@@ -46,6 +46,7 @@ collections:
       - label: "tags"
         name: "tags"
         widget: "select"
+        multiple: true
         hint: "tags for this resource"
         options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", ]
         required: true
