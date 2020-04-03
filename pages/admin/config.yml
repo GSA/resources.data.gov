@@ -82,7 +82,7 @@ collections:
         hint: "downloadable resource"
         required: false
         
-     - name: "summaries"
+    - name: "summaries"
       label: "Summaries"
       create: true
       folder: "pages/summaries/"
