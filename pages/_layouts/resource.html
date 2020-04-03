@@ -4,34 +4,18 @@ layout: page
 
 <p>
   Category:
-  <span class="usa-tag">{{ page.categories | default: "(none)" }}</span>
+  <span class="usa-tag">{{ page.category }}</span>
 </p>
 
 <p>
   Tags:
-  {% if page.tags %}
-    {% assign siteTags = site.page_tags %}
-    {% assign pageTags = page.tags | split: ", " %}
-    {% for tag in pageTags %}
-      {% if siteTags contains tag %}
-        {{ tag }}
-      {% endif %}
-    {% endfor %}
-  {% else %}
-    (none)
-  {% endif %}
+  {% for tag in page.tags %}
+    {{ tag }}
+  {% endfor %}
 </p>
 
 <p>
-  Format:
-  {% if page.format %}
-    {% assign siteFormats = site.page_formats %}
-    {% if siteFormats contains page.format %}
-      {{ page.format }}
-    {% endif %}
-  {% else %}
-    (none)
-  {% endif %}
+  Format: {{ page.format }}
 </p>
 
 <h1>Description</h1>
