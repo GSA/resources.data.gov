@@ -82,4 +82,53 @@ collections:
         hint: "downloadable resource"
         required: false
         
-     
+     - name: "summaries"
+      label: "Summaries"
+      create: true
+      folder: "pages/summaries/"
+      fields:
+      - label: "name"
+        name: "name"
+        widget: "string"
+        hint: "name of the resource"
+        required: true
+
+      - label: "shortdescription"
+        name: "shortdescription"
+        widget: "text"
+        hint: "short description of the resource"
+        required: true
+
+      - label: "source"
+        name: "source"
+        widget: "string"
+        hint: "who created the resource"
+        required: true
+
+      - label: "category"
+        name: "category"
+        widget: "select"
+        hint: "category of the resource"
+        options: ["---", "Data governance & management", "Regulation & compliance", "Hands-on", "Workforce development"]
+        required: true
+
+      - label: "tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        hint: "tags for this resource"
+        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", ]
+        required: true
+
+      - label: "format"
+        name: "format"
+        widget: "select"
+        hint: "format of the resource"
+        options: ["---", "Case study", "Software tool", "Standard/schema", "Form/template", "Report", "OMB Memo", "Skill-builder"]
+        required: false
+        
+      - label: "link"
+        name: "link to resource"
+        widget: "markdown"
+        hint: "link to the resource"
+        required: true
