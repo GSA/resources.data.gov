@@ -4,7 +4,7 @@ backend:
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
   preview_context: federalist/build
-  branch: netlify
+  branch: develop
   use_graphql: true
 
 publish_mode: editorial_workflow
