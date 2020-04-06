@@ -92,6 +92,14 @@ collections:
         hint: "downloadable resource"
         required: false
 
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["resource"]
+        default: ["resource"]
+        hint: "the layout template to use"
+        required: true
+
   - name: "summaries"
     label: "summaries"
 
