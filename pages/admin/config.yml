@@ -92,11 +92,12 @@ collections:
         hint: "downloadable resource"
         required: false
 
-    - name: "summaries"
-      label: "Summaries"
-      create: true
-      folder: "pages/summaries/"
-      fields:
+  - name: "summaries"
+    label: "Summaries"
+    create: true
+    folder: "pages/summaries/"
+
+    fields:
       - label: "name"
         name: "name"
         widget: "string"
