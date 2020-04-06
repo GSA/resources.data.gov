@@ -48,3 +48,5 @@ exclude:
 collections:
   resources:
     output: true
+  summaries:
+    output: false
