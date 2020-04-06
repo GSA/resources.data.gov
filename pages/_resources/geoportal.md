@@ -6,6 +6,7 @@ details: ''
 download: ''
 format: Software tool
 govt-use: ''
+layout: resource
 link: https://github.com/Esri/geoportal-server/
 name: Geoportal
 publish: 'TRUE'

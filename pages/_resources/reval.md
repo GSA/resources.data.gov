@@ -22,6 +22,7 @@ download: ''
 format: Software tool
 govt-use: (only generate this section and links to case studies if this has the case
   studies tag)
+layout: resource
 link: '[Source code](https://github.com/18F/ReVAL)'
 name: ReVal (Reusable Validation Library)
 publish: 'TRUE'

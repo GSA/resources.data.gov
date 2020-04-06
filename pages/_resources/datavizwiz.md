@@ -5,6 +5,7 @@ details: ''
 download: ''
 format: Software tool
 govt-use: ''
+layout: resource
 link: https://www.drupal.org/project/datavizwiz
 name: Data Visualization Wizard
 publish: 'TRUE'

@@ -6,6 +6,7 @@ details: ''
 download: ''
 format: Software tool
 govt-use: ''
+layout: resource
 link: https://github.com/project-open-data/SpatialSearch
 name: SpatialSearch
 publish: 'TRUE'

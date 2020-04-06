@@ -5,6 +5,7 @@ details: ''
 download: ''
 format: Software tool
 govt-use: ''
+layout: resource
 link: https://github.com/project-open-data
 name: Project Open Data
 publish: 'TRUE'

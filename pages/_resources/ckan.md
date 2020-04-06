@@ -7,6 +7,7 @@ details: ''
 download: ''
 format: Software tool
 govt-use: ''
+layout: resource
 link: https://ckan.org/
 name: CKAN
 publish: 'TRUE'

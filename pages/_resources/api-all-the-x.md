@@ -6,6 +6,7 @@ details: ''
 download: ''
 format: Software tool
 govt-use: ''
+layout: resource
 link: https://18f.github.io/API-All-the-X/
 name: API All the X
 publish: 'TRUE'

@@ -9,7 +9,7 @@ if len(sys.argv) != 3:
 
 collection_name = sys.argv[1]
 filename = sys.argv[2]
-path = f"pages/{collection_name}"
+path = f"pages/_{collection_name}"
 admin_file = "pages/admin/config.yml"
 
 # get the referenced collection from the netlify admin file.
@@ -58,6 +58,7 @@ with open(filename) as fd:
         markdown_file = f"{path}/{slug}.md"
         with open(markdown_file, "w") as f:
             markdown_data = dict(zip(headers, row))
+            markdown_data["layout"] = "resource"
             f.write("---\n")
             f.write(yaml.dump(markdown_data))
             f.write("---")

@@ -5,6 +5,7 @@ details: ''
 download: ''
 format: Software tool
 govt-use: ''
+layout: resource
 link: https://tabula.technology/
 name: Tabula
 publish: 'TRUE'

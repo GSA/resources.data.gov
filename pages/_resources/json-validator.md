@@ -6,6 +6,7 @@ details: ''
 download: ''
 format: Software tool
 govt-use: ''
+layout: resource
 link: https://labs.data.gov/dashboard/validate
 name: JSON Validator
 publish: 'TRUE'

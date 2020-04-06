@@ -8,6 +8,7 @@ details: ''
 download: ''
 format: Software tool
 govt-use: ''
+layout: resource
 link: http://geonode.org/
 name: GeoNode
 publish: 'TRUE'
