@@ -8,6 +8,7 @@ backend:
   use_graphql: true
 
 publish_mode: editorial_workflow
+show_preview_links: true
 
 media_folder: "pages/assets/media"
 public_folder: "/assets/media"
@@ -17,6 +18,8 @@ collections:
     label: "resources"
     create: true
     folder: "pages/resources/"
+    editor:
+      preview: false
     fields:
       - label: "name"
         name: "name"
@@ -57,7 +60,7 @@ collections:
         hint: "format of the resource"
         options: ["---", "Case study", "Software tool", "Standard/schema", "Form/template", "Report", "OMB Memo", "Skill-builder"]
         required: false
-        
+
       - label: "link"
         name: "link to resource"
         widget: "markdown"
@@ -69,19 +72,19 @@ collections:
         widget: "markdown"
         hint: "detailed description of the resource"
         required: false
-        
+
       - label: "govt-use"
         name: "use in government"
         widget: "markdown"
         hint: "how this resource has been used in government"
         required: false
-        
+
       - label: "download"
         name: "download"
         widget: "file"
         hint: "downloadable resource"
         required: false
-        
+
     - name: "summaries"
       label: "Summaries"
       create: true
@@ -126,7 +129,7 @@ collections:
         hint: "format of the resource"
         options: ["---", "Case study", "Software tool", "Standard/schema", "Form/template", "Report", "OMB Memo", "Skill-builder"]
         required: false
-        
+
       - label: "link"
         name: "link to resource"
         widget: "markdown"
