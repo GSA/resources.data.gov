@@ -2,9 +2,8 @@
 category: Hands-on
 description: GitHub repository for Project Open Data.
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: https://github.com/project-open-data
 name: Project Open Data

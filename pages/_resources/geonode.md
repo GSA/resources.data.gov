@@ -5,9 +5,8 @@ description: GeoNode is a web-based application and platform for developing geos
   It is designed to be extended and modified, and can be integrated into existing
   platforms.
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: http://geonode.org/
 name: GeoNode

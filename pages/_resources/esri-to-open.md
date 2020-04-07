@@ -3,9 +3,8 @@ category: Hands-on
 description: Repository is an ESRI toolbox and tool(s) that export ESRI Feature Classes
   to open data formats, CSV, JSON, and GeoJSON.
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: https://github.com/project-open-data/esri2open
 name: ESRI to OPEN

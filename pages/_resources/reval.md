@@ -18,10 +18,9 @@ details: USDA FNS uses ReVAL to implement their Data Validation Service tool for
   data on work zone activity. Specifically, the project aims to get data on work zones
   into vehicles to help automated driving systems (ADS) and human drivers navigate
   more safely.
-download: ''
-format: Software tool
-govt-use: (only generate this section and links to case studies if this has the case
+examples: (only generate this section and links to case studies if this has the case
   studies tag)
+format: Software tool
 layout: resource
 link: '[Source code](https://github.com/18F/ReVAL)'
 name: ReVal (Reusable Validation Library)

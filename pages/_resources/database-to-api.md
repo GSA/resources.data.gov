@@ -2,9 +2,8 @@
 category: Hands-on
 description: Database to API turns a Database into a Secure, RESTful API.
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: https://github.com/project-open-data/db-to-api
 name: Database to API

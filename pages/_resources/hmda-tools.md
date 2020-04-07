@@ -2,9 +2,8 @@
 category: Hands-on
 description: HMDA tools import and analyze mortgage application data.
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: https://github.com/cfpb/hmda-tools
 name: HMDA tools

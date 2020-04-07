@@ -4,9 +4,8 @@ description: "CKAN is a powerful data management system that makes data accessib
   \ \u2013 by providing tools to streamline publishing, sharing, finding and using\
   \ data."
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: https://ckan.org/
 name: CKAN

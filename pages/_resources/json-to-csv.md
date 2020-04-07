@@ -2,9 +2,8 @@
 category: Hands-on
 description: JSON to CSV converter.
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: https://konklone.io/json/
 name: JSON to CSV

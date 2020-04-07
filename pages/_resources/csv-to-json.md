@@ -2,9 +2,8 @@
 category: Hands-on
 description: CSV to JSON converter.
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: https://labs.data.gov/dashboard/datagov/csv_to_json
 name: CSV to JSON

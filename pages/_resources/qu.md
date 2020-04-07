@@ -3,9 +3,8 @@ category: Hands-on
 description: qu is a data platform created to serve public data sets. This is a public
   domain work of the US Government.
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: https://github.com/cfpb/qu
 name: qu

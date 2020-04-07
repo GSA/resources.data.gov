@@ -3,9 +3,8 @@ category: Hands-on
 description: /Developer program provides support to agencies engaged in the production
   or use of APIs.
 details: ''
-download: ''
+examples: ''
 format: Software tool
-govt-use: ''
 layout: resource
 link: https://18f.github.io/API-All-the-X/
 name: API All the X
