@@ -4,22 +4,18 @@ layout: page
 primary_nav_section: Resources
 ---
 
-<h1>Resources</h1>
+{% assign all_resources = site.resources | concat: site.summaries | sort: "name" | group_by: "category" %}
 
-<ul>
-  {% for resource in site.resources %}
-    <li>
-      {{ resource.name }}
-    </li>
-  {% endfor %}
-</ul>
-
-<h1>Summaries</h1>
-
-<ul>
-  {% for summary in site.summaries %}
-    <li>
-      {{ summary.name }}
-    </li>
-  {% endfor %}
-</ul>
+{% for group in all_resources %}
+  <h2>{{ group.name }}</h2>
+  <ul>
+    {% for resource in group.items %}
+      <li>
+        {{ resource.name }}
+        {% if resource.shortdescription %}
+          <span class="usa-tag">summary</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
