@@ -80,16 +80,10 @@ collections:
         hint: "detailed description of the resource"
         required: false
 
-      - label: "govt-use"
-        name: "use in government"
+      - label: "examples"
+        name: "examples"
         widget: "markdown"
-        hint: "how this resource has been used in government"
-        required: false
-
-      - label: "download"
-        name: "download"
-        widget: "file"
-        hint: "downloadable resource"
+        hint: "descriptions of or links to how this resource has been used"
         required: false
 
       - label: "layout"
