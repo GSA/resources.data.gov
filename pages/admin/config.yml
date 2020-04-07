@@ -98,8 +98,15 @@ collections:
     label: "Summaries"
     create: true
     folder: "pages/_summaries/"
+    slug: "{{fields.slug}}"
 
     fields:
+      - label: "slug"
+        name: "slug"
+        widget: "string"
+        hint: "slug link (part that comes at the very end of a url)"
+        required: true
+
       - label: "name"
         name: "name"
         widget: "string"
