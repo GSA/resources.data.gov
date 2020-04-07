@@ -15,7 +15,8 @@ public_folder: "/assets/media"
 
 collections:
   - name: "resources"
-    label: "resources"
+    preview_path: "resources/{{slug}}"
+    label: "Resources"
     create: true
     folder: "pages/_resources/"
     slug: "{{fields.slug}}"
