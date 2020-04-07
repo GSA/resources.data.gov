@@ -19,8 +19,6 @@ collections:
     create: true
     folder: "pages/_resources/"
     slug: "{{fields.slug}}"
-    editor:
-      preview: false
     fields:
       - label: "name"
         name: "name"
