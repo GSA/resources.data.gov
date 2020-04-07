@@ -1,5 +1,7 @@
 - text: Resources
   children:
+    - text: List
+      url: /resource-list
     - text: Data governance & management
       url: /governance-management/
     - text: Regualation & compliance
@@ -7,7 +9,7 @@
     - text: Hands-on data work
       url: /hands-on/
     - text: Workforce development
-      url: /workforce-development/  
+      url: /workforce-development/
 - text: Communities
   url: /communities/
 - text: About
