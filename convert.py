@@ -34,6 +34,9 @@ def find_field(all_fields, field_name):
     except ValueError:
         return None
 
+# ensure slugs are unique
+slug_set = set()
+
 with open(filename) as fd:
     data = list(csv.reader(fd))
     headers = data[0]
@@ -53,8 +56,23 @@ with open(filename) as fd:
         sys.exit(1)
 
     rows = data[1:]
+
+    # verify slug uniqueness before we write anything
+    for index, row in enumerate(rows):
+        slug = row[slug_index].lower()
+        if not slug:
+            print(f"warning: row {index} has no slug, skipping")
+            continue
+        if slug in slug_set:
+            print(f"error: duplicated slug {slug}")
+            print("Please fix csv data before proceeding.")
+            sys.exit(1)
+        slug_set.add(slug)
+
     for row in rows:
         slug = row[slug_index]
+        if not slug:
+            continue
         markdown_file = f"{path}/{slug}.md"
         with open(markdown_file, "w") as f:
             markdown_data = dict(zip(headers, row))
