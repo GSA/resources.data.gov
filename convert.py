@@ -2,6 +2,7 @@
 import csv
 import yaml
 import sys
+import os
 
 if len(sys.argv) != 3:
     print(f"{sys.argv[0]}: collection csv-file")
@@ -69,12 +70,17 @@ with open(filename) as fd:
             sys.exit(1)
         slug_set.add(slug)
 
+    # remove pre-existing files so we have a clean copy every time.
+    for filename in os.listdir(path):
+        if filename.endswith(".md"):
+            os.unlink(f"{path}/{filename}")
+
     for row in rows:
         slug = row[slug_index]
         if not slug:
             continue
         markdown_file = f"{path}/{slug}.md"
-        with open(markdown_file, "w") as f:
+        with open(markdown_file, "x") as f:
             markdown_data = dict(zip(headers, row))
             markdown_data["layout"] = "resource"
             f.write("---\n")
