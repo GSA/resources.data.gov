@@ -5,12 +5,12 @@ layout: default
 {% if page.breadcrumb_nav %}
   {% assign breadcrumb_nav = "breadcrumb-page" %}
 {% else %}
-	{% assign breadcrumb_nav = "" %}
+  {% assign breadcrumb_nav = "" %}
 {% endif %}
 
 <main class="usa-layout-docs usa-section {{ breadcrumb_nav }}" id="main-content">
   <div class="grid-container">
-  	{% include breadcrumb.html %}
+    {% include breadcrumb.html %}
     <div class="grid-row grid-gap">
       {% include sidenav.html %}
       <div class="usa-layout__docs-main desktop:grid-col-9 usa-prose">
@@ -20,5 +20,3 @@ layout: default
     </div>
   </div>
 </main>
-
-

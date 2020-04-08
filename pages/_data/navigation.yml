@@ -8,16 +8,16 @@
       url: /open-data-communities
 - text: Resources
   children:
-    - text: Data management & governance
-      url: /data-management-and-governance
+    - text: Data governance and management
+      url: /resources/data-governance-and-management
     - text: Policy
-      url: /policy
+      url: /resources/policy
     - text: Skills Development
-      url: /skills-development
+      url: /resources/skills-development
     - text: Data tools
-      url: /data-tools
-    - text: Case studies & examples
-      url: /case-studies-and-examples
+      url: /resources/data-tools
+    - text: Case studies and examples
+      url: /resources/case-studies-and-examples
 - text: Communities
   url: /communities/
 - text: About
