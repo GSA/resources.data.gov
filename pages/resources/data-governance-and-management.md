@@ -6,13 +6,47 @@ layout: page
 
 {% assign resources = site.resources | concat: site.summaries | where: "category", "Data governance & management" | sort: "name" %}
 
-<ul>
-  {% for resource in resources %}
-    <li>
-      {{ resource.name }}
-      {% if resource.shortdescription %}
-        <span class="usa-tag">summary</span>
+<p class="resource-introduction">
+  <p>Intro text about this category</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</p>
+
+{% for resource in resources %}
+  <div class="resource">
+    <div class="resource-main">
+      <h2>{{ resource.name }}</h2>
+
+      <p>
+        {% if resource.description %}
+          {{ resource.description | default: "No description provided" }}
+        {% else if resource.shortdescription %}
+          {{ resource.shortdescription | default: "No short description provided" }}
+        {% endif %}
+      </p>
+
+      <p class="resource-source">
+        Source: {{ resource.source | default: "No source provided" }}
+      </p>
+
+      {% if resource.description %}
+        <a href="">Learn More</a>
+      {% else if resource.shortdescription %}
+        <a href="{{ resource.link }}">Link to Resource</a>
       {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+    </div>
+
+    <div class="resource-side">
+      <h3>Keywords</h3>
+      <!-- TODO: tags are not quoted in front matter, so they are split into spaces. -->
+      {% assign resource_tags = resource.tags | join: " " | split: "," %}
+      {% for tag in resource_tags %}
+        <span class="usa-tag">{{ tag }}</span>
+      {% else %}
+        This resource has no keywords.
+      {% endfor %}
+      <h3>Format</h3>
+      {{ resource.format | default: "No format provided" }}
+    </div>
+  </div>
+{% endfor %}
