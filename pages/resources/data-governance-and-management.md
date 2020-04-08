@@ -4,7 +4,7 @@ primary_nav_section: Resources
 layout: page
 ---
 
-{% assign resources = site.resources | concat: site.summaries | sort: "name" | where: "category", "Data governance & management" %}
+{% assign resources = site.resources | concat: site.summaries | where: "category", "Data governance & management" | sort: "name" %}
 
 <ul>
   {% for resource in resources %}
