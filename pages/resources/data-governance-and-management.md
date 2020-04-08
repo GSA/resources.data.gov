@@ -40,13 +40,18 @@ layout: page
       <h3>Keywords</h3>
       <!-- TODO: tags are not quoted in front matter, so they are split into spaces. -->
       {% assign resource_tags = resource.tags | join: " " | split: "," %}
-      {% for tag in resource_tags %}
-        <span class="usa-tag">{{ tag }}</span>
-      {% else %}
-        This resource has no keywords.
-      {% endfor %}
+      <p>
+        {% for tag in resource_tags %}
+          <span class="usa-tag">{{ tag }}</span>
+        {% else %}
+          This resource has no keywords.
+        {% endfor %}
+      </p>
+
       <h3>Format</h3>
-      {{ resource.format | default: "No format provided" }}
+      <p>
+        {{ resource.format | default: "No format provided" }}
+      </p>
     </div>
   </div>
 {% endfor %}
