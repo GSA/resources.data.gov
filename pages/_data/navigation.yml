@@ -9,7 +9,7 @@
 - text: Resources
   children:
     - text: Data governance and management
-      url: /resources/data-governance-and-management
+      url: /resources/data-management-and-governance
     - text: Policy
       url: /resources/policy
     - text: Skills Development
