@@ -5,9 +5,7 @@ layout: page
 {% assign resources = site.resources | concat: site.summaries | where: "category", page.category | sort: "name" %}
 
 <p class="resource-introduction">
-  <p>Intro text about this category</p>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  {{ page.intro_text | default: "No introductory text provided for this category." }}
 </p>
 
 {% for resource in resources %}
