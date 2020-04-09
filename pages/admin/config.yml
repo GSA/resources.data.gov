@@ -49,7 +49,7 @@ collections:
         name: "category"
         widget: "select"
         hint: "category of the resource"
-        options: ["---", "Data governance & management", "Regulation & compliance", "Hands-on", "Workforce development"]
+        options: ["---", "Data management & governance", "Data tools", "Skills development", "Communities"]
         required: true
 
       - label: "tags"
@@ -128,7 +128,7 @@ collections:
         name: "category"
         widget: "select"
         hint: "category of the resource"
-        options: ["---", "Data governance & management", "Regulation & compliance", "Hands-on", "Workforce development"]
+        options: ["---", "Data management & governance", "Data tools", "Skills development", "Communities"]
         required: true
 
       - label: "tags"
