@@ -1,5 +1,5 @@
 ---
-category: Regulation & compliance
+category: Data management & governance
 format: ''
 layout: resource
 link: https://opendefinition.org/od/2.1/en/

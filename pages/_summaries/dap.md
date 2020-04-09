@@ -1,5 +1,5 @@
 ---
-category: Hands-on
+category: Data tools
 format: ''
 layout: resource
 link: https://digital.gov/dap/

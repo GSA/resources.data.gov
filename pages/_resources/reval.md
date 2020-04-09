@@ -1,5 +1,5 @@
 ---
-category: Hands-on
+category: Data tools
 description: ReVAL (Reusable Validation & Aggregation Library) is a Django App for
   validating and aggregating data via API and web interface.
 details: USDA FNS uses ReVAL to implement their Data Validation Service tool for validating

@@ -1,5 +1,5 @@
 ---
-category: Workforce development
+category: Skills development
 format: ''
 layout: resource
 link: https://opendata.guide/chapter2.html

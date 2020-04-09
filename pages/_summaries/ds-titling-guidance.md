@@ -1,5 +1,5 @@
 ---
-category: Workforce development
+category: Data management & governance
 format: ''
 layout: resource
 link: https://www.chcoc.gov/content/data-scientist-titling-guidance

@@ -1,5 +1,5 @@
 ---
-category: CoP
+category: Communities
 format: https://www.fgdc.gov/
 layout: resource
 link: 'TRUE'

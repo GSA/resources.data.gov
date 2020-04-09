@@ -1,5 +1,5 @@
 ---
-category: CoP
+category: Communities
 format: https://www.cio.gov/
 layout: resource
 link: 'TRUE'

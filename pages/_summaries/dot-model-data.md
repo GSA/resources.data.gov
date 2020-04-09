@@ -1,5 +1,5 @@
 ---
-category: Data governance & management
+category: Data management & governance
 format: Case study
 layout: resource
 link: https://www.transportation.gov/sites/dot.gov/files/docs/DOT%20-%20OpenData%20-%20Data%20Inventory%20Approach.pdf

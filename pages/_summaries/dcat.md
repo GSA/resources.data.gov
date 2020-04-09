@@ -1,5 +1,5 @@
 ---
-category: Data governance & management
+category: Data management & governance
 format: ''
 layout: resource
 link: https://www.w3.org/TR/vocab-dcat/

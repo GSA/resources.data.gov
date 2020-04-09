@@ -1,5 +1,5 @@
 ---
-category: Data governance & management
+category: Data management & governance
 format: Case study
 layout: resource
 link: https://www.federalregister.gov/uploads/2012/11/FR2-API-Case-Study1.pdf

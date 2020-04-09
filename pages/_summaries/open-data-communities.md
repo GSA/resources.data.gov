@@ -1,5 +1,5 @@
 ---
-category: CoP
+category: Communities
 format: https://resources.data.gov/open-data-communities/
 layout: resource
 link: 'TRUE'

@@ -1,5 +1,5 @@
 ---
-category: CoP
+category: Communities
 format: https://nces.ed.gov/FCSM/index.asp
 layout: resource
 link: 'TRUE'

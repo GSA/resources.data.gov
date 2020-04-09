@@ -1,5 +1,5 @@
 ---
-category: Hands-on
+category: Data tools
 format: Software tool
 layout: resource
 link: https://pycsw.org/

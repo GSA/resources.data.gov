@@ -1,5 +1,5 @@
 ---
-category: Regulation & compliance
+category: Data management & governance
 format: ''
 layout: resource
 link: https://resources.data.gov/guidance/open-data-engagement-guidance/

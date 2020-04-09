@@ -1,5 +1,5 @@
 ---
-category: CoP
+category: Communities
 format: ''
 layout: resource
 link: ''

@@ -1,5 +1,5 @@
 ---
-category: Data governance & management
+category: Data management & governance
 format: Case study
 layout: resource
 link: https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/ResearchGenInfo/Downloads/CMS-Data-and-Information-Products.pdf

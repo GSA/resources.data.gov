@@ -1,5 +1,5 @@
 ---
-category: Data governance & management
+category: Data management & governance
 format: ''
 layout: resource
 link: https://participation.usa.gov/

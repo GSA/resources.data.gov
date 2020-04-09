@@ -1,5 +1,5 @@
 ---
-category: Data governance & management
+category: Data management & governance
 format: ''
 layout: resource
 link: https://resources.data.gov/assets/documents/fds-data-governance-playbook.pdf

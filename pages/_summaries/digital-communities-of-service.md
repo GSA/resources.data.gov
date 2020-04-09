@@ -1,5 +1,5 @@
 ---
-category: CoP
+category: Communities
 format: https://digital.gov/communities/
 layout: resource
 link: 'TRUE'

@@ -1,5 +1,5 @@
 ---
-category: Regulation & compliance
+category: Data management & governance
 format: ''
 layout: resource
 link: https://resources.data.gov/schemas/dcat-us/v1.1/#what-to-document--datasets-and-web-apis

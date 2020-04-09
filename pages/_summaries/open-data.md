@@ -1,5 +1,5 @@
 ---
-category: Data governance & management
+category: Data management & governance
 format: Case study
 layout: resource
 link: https://resources.data.gov/case-studies/business-case/

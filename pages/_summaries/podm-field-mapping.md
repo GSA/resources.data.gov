@@ -1,5 +1,5 @@
 ---
-category: Data governance & management
+category: Data management & governance
 format: ''
 layout: resource
 link: https://project-open-data.cio.gov/v1.1/metadata-resources/#field-mappings

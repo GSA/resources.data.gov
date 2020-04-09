@@ -1,5 +1,5 @@
 ---
-category: Workforce development
+category: Skills development
 format: ''
 layout: resource
 link: https://resources.data.gov/tools/how-to-get-your-open-data-on-datagov/

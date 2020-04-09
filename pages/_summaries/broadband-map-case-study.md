@@ -1,5 +1,5 @@
 ---
-category: Data governance & management
+category: Data management & governance
 format: Case study
 layout: resource
 link: https://www.scribd.com/document/109998799/The-National-Broadband-Map-A-Case-Study-on-Open-Innovation-for-National-Policy

@@ -1,5 +1,5 @@
 ---
-category: Regulation & compliance
+category: Data management & governance
 format: ''
 layout: resource
 link: https://www.w3.org/TR/dwbp/

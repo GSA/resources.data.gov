@@ -1,5 +1,5 @@
 ---
-category: Workforce development
+category: Skills development
 format: ''
 layout: resource
 link: https://www.youtube.com/watch?v=_cqE4a8oAHU
