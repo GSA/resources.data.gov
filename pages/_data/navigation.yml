@@ -19,7 +19,7 @@
     - text: Case studies and examples
       url: /resources/case-studies-and-examples
 - text: Communities
-  url: /communities/
+  url: /communities
 - text: About
   children:
     - text: History

@@ -1,39 +1,49 @@
 ---
 layout: page
 ---
+<div class="resource">
+  <div class="resource-main">
+    <h1>Description</h1>
+    {{ page.description | default: "No description provided." | markdownify }}
 
-<p>
-  Category:
-  <span class="usa-tag">{{ page.category }}</span>
-</p>
+    <h2>Use in government</h2>
+    {{ page.summary | default "No summary provided." | markdownify }}
 
-<p>
-  Keywords:
-  {% assign tags = page.tags | join: " " | split: "," %}
-  {% for tag in tags %}
-    {% assign slug_tag = tag | slugify %}
-    <a href="{{ "/resources/keywords#" | append: slug_tag | relative_url }}">
-      {{ tag }}
-    </a>
-  {% endfor %}
-</p>
+    <h3>Case studies</h3>
+    {{ page.case_studies | default: "No case studies provided." | markdownify }}
 
-<p>
-  Format: {{ page.format }}
-</p>
+    <h2>Get started</h2>
+    {{ page.get_started | default: "No 'get started' section provided." | markdownify }}
+  </div>
 
-<h1>Description</h1>
-
-{{ page.description | default: "(none)" | markdownify }}
-
-<h2>How the US Government uses {{ page.name }}</h2>
-
-{{ page.summary }}
-
-<h3>Case studies</h3>
-
-{{ page.case_studies | default: "(none)" }}
-
-<h2>Get started</h2>
-
-{{ page.get_started | default: "(none)" }}
+  <div class="resource-side">
+    <h3>Category</h3>
+    <p>
+      <!-- special case communities -->
+      {% if page.category == "Communities" %}
+        <a href="{{ page.category | slugify | relative_url }}">
+          {{ page.category }}
+        </a>
+      {% else %}
+        {% assign category_slug = page.category | slugify %}
+        <a href="{{ "/resources/" | append: category_slug | relative_url }}">
+          {{ page.category }}
+        </a>
+      {% endif %}
+    </p>
+    <h3>Keywords</h3>
+    <p>
+      {% assign tags = page.tags | join: " " | split: "," %}
+      {% for tag in tags %}
+        {% assign slug_tag = tag | slugify %}
+        <a href="{{ "/resources/keywords#" | append: slug_tag | relative_url }}">
+          {{ tag }}
+        </a>
+      {% endfor %}
+    </p>
+    <h3>Format</h3>
+    <p>
+      {{ page.format }}
+    </p>
+  </div>
+</div>
