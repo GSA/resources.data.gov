@@ -43,7 +43,10 @@ layout: page
     </p>
     <h3>Format</h3>
     <p>
-      {{ page.format }}
+      {% assign slug_format = page.format | slugify %}
+      <a href="{{ "/resources/formats#" | append: slug_format | relative_url }}">
+        {{ page.format }}
+      </a>
     </p>
   </div>
 </div>

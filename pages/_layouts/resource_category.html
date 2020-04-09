@@ -53,7 +53,14 @@ layout: page
 
       <h3>Format</h3>
       <p>
-        {{ resource.format | default: "No format provided" }}
+        {% if resource.format != "" %}
+          {% assign slug_format = resource.format | slugify %}
+          <a href="{{ "/resources/formats#" | append: slug_format | relative_url }}">
+            {{ resource.format }}
+          </a>
+        {% else %}
+          No format provided.
+        {% endif %}
       </p>
     </div>
   </div>
