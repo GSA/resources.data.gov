@@ -1,10 +1,10 @@
 ---
 category: Communities
-format: https://resources.data.gov/open-data-communities/
+format: ''
 layout: resource
-link: 'TRUE'
+link: https://resources.data.gov/open-data-communities/
 name: Open Data Communities.
-publish: ''
+publish: 'TRUE'
 shortdescription: ''
 slug: open-data-communities
 source: ''

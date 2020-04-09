@@ -1,10 +1,10 @@
 ---
 category: Communities
-format: https://nces.ed.gov/FCSM/index.asp
+format: ''
 layout: resource
-link: 'TRUE'
+link: https://nces.ed.gov/FCSM/index.asp
 name: Federal Committee on Statistical Methodology.
-publish: ''
+publish: 'TRUE'
 shortdescription: ''
 slug: statistical-methodology
 source: ''

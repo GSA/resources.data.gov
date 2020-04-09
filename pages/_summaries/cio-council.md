@@ -1,10 +1,10 @@
 ---
 category: Communities
-format: https://www.cio.gov/
+format: ''
 layout: resource
-link: 'TRUE'
+link: https://www.cio.gov/
 name: CIO Council
-publish: ''
+publish: 'TRUE'
 shortdescription: the principal interagency forum for improving agency practices related
   to the design, acquisition, development, modernization, use, sharing, and performance
   of Federal information resources.

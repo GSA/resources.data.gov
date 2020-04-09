@@ -1,10 +1,10 @@
 ---
 category: Communities
-format: https://digital.gov/communities/
+format: ''
 layout: resource
-link: 'TRUE'
+link: https://digital.gov/communities/
 name: Federal Digital Communities of Service.
-publish: ''
+publish: 'TRUE'
 shortdescription: ''
 slug: digital-communities-of-service
 source: ''

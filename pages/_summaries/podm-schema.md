@@ -1,5 +1,5 @@
 ---
-category: Data management & governance
+category: Skills development
 format: ''
 layout: resource
 link: https://resources.data.gov/tools/glossary/
