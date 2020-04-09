@@ -8,9 +8,13 @@ layout: page
 </p>
 
 <p>
-  Tags:
-  {% for tag in page.tags %}
-    {{ tag }}
+  Keywords:
+  {% assign tags = page.tags | join: " " | split: "," %}
+  {% for tag in tags %}
+    {% assign slug_tag = tag | slugify %}
+    <a href="{{ "/resources/keywords#" | append: slug_tag | relative_url }}">
+      {{ tag }}
+    </a>
   {% endfor %}
 </p>
 
