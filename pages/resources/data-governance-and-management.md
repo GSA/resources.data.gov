@@ -31,7 +31,9 @@ layout: page
 
       <p class="resource-link">
         {% if resource.description %}
-          <a href="/resources/{{ resource.slug }}">Learn More</a>
+          <a href="{{ "/resources/" | append: resource.slug | relative_url }}">
+            Learn More
+          </a>
         {% else if resource.shortdescription %}
           <a href="{{ resource.link }}">Link to Resource</a>
         {% endif %}
@@ -44,7 +46,10 @@ layout: page
       {% assign resource_tags = resource.tags | join: " " | split: "," %}
       <p>
         {% for tag in resource_tags %}
-          <a href="/resources/tags#{{ tag | slugify }}">{{ tag }}</a>
+          {% assign slug_tag = tag | slugify %}
+          <a href="{{ "/resources/tags#" | append: slug_tag | relative_url }}">
+            {{ tag }}
+          </a>
         {% else %}
           This resource has no keywords.
         {% endfor %}

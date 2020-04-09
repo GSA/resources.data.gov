@@ -16,8 +16,8 @@ layout: page
             {{ resource.name }}
             <span class="usa-tag">summary</span>
           {% else %}
-            <a href="/resources/{{ resource.slug }}">
-              {{resource.name}}
+            <a href="{{ "/resources/" | append: resource.slug | relative_url }}">
+              {{ resource.name }}
             </a>
           {% endif %}
         </li>
