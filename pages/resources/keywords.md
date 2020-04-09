@@ -1,5 +1,5 @@
 ---
-title: Resource Tags
+title: Browse Resources By Keyword
 layout: page
 ---
 
