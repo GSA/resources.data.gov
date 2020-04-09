@@ -29,11 +29,13 @@ layout: page
         Source: {{ resource.source | default: "No source provided" }}
       </p>
 
-      {% if resource.description %}
-        <a href="">Learn More</a>
-      {% else if resource.shortdescription %}
-        <a href="{{ resource.link }}">Link to Resource</a>
-      {% endif %}
+      <p class="resource-link">
+        {% if resource.description %}
+          <a href="/resources/{{ resource.slug }}">Learn More</a>
+        {% else if resource.shortdescription %}
+          <a href="{{ resource.link }}">Link to Resource</a>
+        {% endif %}
+      </p>
     </div>
 
     <div class="resource-side">
@@ -42,7 +44,7 @@ layout: page
       {% assign resource_tags = resource.tags | join: " " | split: "," %}
       <p>
         {% for tag in resource_tags %}
-          <span class="usa-tag">{{ tag }}</span>
+          <a href="/resources/tags#{{ tag | slugify }}">{{ tag }}</a>
         {% else %}
           This resource has no keywords.
         {% endfor %}
