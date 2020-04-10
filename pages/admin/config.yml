@@ -156,9 +156,10 @@ collections:
     label: "Categories"
     create: true
     folder: "pages/_categories/"
+    identifier_field: "category_name"
 
     fields:
-      - label: "name"
+      - label: "category_name"
         name: "name"
         widget: "string"
         hint: "name of the category"
