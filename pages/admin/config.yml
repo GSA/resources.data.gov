@@ -159,8 +159,8 @@ collections:
     identifier_field: "category_name"
 
     fields:
-      - label: "category_name"
-        name: "name"
+      - label: "name"
+        name: "category_name"
         widget: "string"
         hint: "name of the category"
         required: true
