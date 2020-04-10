@@ -2,11 +2,14 @@
 layout: page
 ---
 
-{% assign resources = site.resources | concat: site.summaries | where: "category", page.category | sort: "name" %}
+{% assign category = site.categories | where: "category_name", page.category | first %}
+{% assign intro_text = category.description %}
 
 <p class="resource-introduction">
-  {{ page.intro_text | default: "No introductory text provided for this category." }}
+  {{ intro_text | default: "No introductory text provided for this category." }}
 </p>
+
+{% assign resources = site.resources | concat: site.summaries | where: "category", page.category | sort: "name" %}
 
 {% for resource in resources %}
   <div class="resource">

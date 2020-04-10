@@ -151,3 +151,21 @@ collections:
         widget: "markdown"
         hint: "link to the resource"
         required: true
+
+  - name: "categories"
+    label: "Categories"
+    create: true
+    folder: "pages/_categories/"
+
+    fields:
+      - label: "name"
+        name: "name"
+        widget: "string"
+        hint: "name of the category"
+        required: true
+
+      - label: "description"
+        name: "description"
+        widget: "text"
+        hint: "description of the category"
+        required: true

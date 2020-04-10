@@ -1,14 +1,12 @@
 - text: Unlinked
   children:
-    - text: Resources (testing page)
-      url: /resource-list
     - text: Strategy
       url: /strategy
     - text: Open Data Communities
       url: /open-data-communities
 - text: Resources
   children:
-    - text: Data governance and management
+    - text: Data management and governance
       url: /resources/data-management-and-governance
     - text: Policy
       url: /resources/policy

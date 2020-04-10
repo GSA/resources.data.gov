@@ -50,7 +50,8 @@ collections:
     output: true
   summaries:
     output: false
+  categories:
+    output: false
 
-resource_categories: [Data management & governance, Data tools, Skills development, Communities]
 resource_tags: [open data, data converter, data schema, data standards, data inventory, data management, API, data analytics, data visualization, data validation, data cleaning, geospatial, data governance, CDO, PRA]
 resource_formats: [Case study, Software tool, Standard/schema, Form/template, Report, OMB Memo, Skill-builder]

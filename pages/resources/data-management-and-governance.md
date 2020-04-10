@@ -1,5 +1,5 @@
 ---
-title: Data Governance and Management
+title: Data Management and Governance
 primary_nav_section: Resources
 layout: resource_category
 category: Data management & governance
