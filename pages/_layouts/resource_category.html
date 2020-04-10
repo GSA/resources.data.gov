@@ -30,7 +30,7 @@ layout: page
 
       <p class="resource-link">
         {% if resource.description %}
-          <a href="{{ "/resources/" | append: resource.slug | relative_url }}">
+          <a class="usa-button" href="{{ "/resources/" | append: resource.slug | relative_url }}">
             Learn More
           </a>
         {% else if resource.shortdescription %}
