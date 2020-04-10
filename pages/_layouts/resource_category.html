@@ -1,13 +1,17 @@
 ---
 layout: page
+suppress_title: true
 ---
 
 {% assign category = site.categories | where: "category_name", page.category | first %}
 {% assign intro_text = category.description %}
 
-<p class="resource-introduction">
-  {{ intro_text | default: "No introductory text provided for this category." }}
-</p>
+<div class="resource-introduction">
+  <h1>{{ page.title }}</h1>
+  <p>
+    {{ intro_text | default: "No introductory text provided for this category." }}
+  </p>
+</div>
 
 {% assign resources = site.resources | concat: site.summaries | where: "category", page.category | sort: "name" %}
 

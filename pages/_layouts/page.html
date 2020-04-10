@@ -14,7 +14,10 @@ layout: default
     <div class="grid-row grid-gap">
       {% include sidenav.html %}
       <div class="usa-layout__docs-main desktop:grid-col-9 usa-prose">
-        <h1>{{ page.title }}</h1>
+        {% assign suppress_title = layout.suppress_title | default: false %}
+        {% unless suppress_title %}
+          <h1>{{ page.title }}</h1>
+        {% endunless %}
         {{ content }}
       </div>
     </div>

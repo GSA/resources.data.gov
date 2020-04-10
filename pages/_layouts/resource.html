@@ -7,7 +7,7 @@ layout: page
     {{ page.description | default: "No description provided." | markdownify }}
 
     <h2>Details</h2>
-    {{ page.details | default "No details provided." | markdownify }}
+    {{ page.details | default: "No details provided." | markdownify }}
 
     <h2>Examples</h2>
     {{ page.examples | default: "No examples provided." | markdownify }}
@@ -16,7 +16,7 @@ layout: page
 
   <div class="resource-side">
     <h3>Source</h3>
-    {{ page.source | default "No source provided." | markdownify }}
+    {{ page.source | default: "No source provided." | markdownify }}
 
     <h3>Category</h3>
     <p>
