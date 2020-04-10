@@ -12,6 +12,9 @@ tags:
 format: Case study
 link to resource: ""
 details: >-
+  *First published May 17, 2019*
+
+
   ### The opportunity
 
 
