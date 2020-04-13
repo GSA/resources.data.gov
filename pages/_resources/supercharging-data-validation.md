@@ -1,4 +1,5 @@
 ---
+toc: true
 name: Supercharging Data through Validation as a Service
 slug: supercharging-data-validation
 description: This Federal Data Strategy Proof Point describes how FNS

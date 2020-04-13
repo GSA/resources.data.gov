@@ -1,20 +1,10 @@
 ---
-layout: page
-suppress_title: true
+layout: toc
 ---
-
-<div class="breadcrumb-nav">
-  <a href="{{ page.category | slugify | relative_url }}">
-    {{ page.category }}
-  </a>
-  &gt;
-  {{ page.title }}
-</div>
-
-<h1>{{ page.title }}</h1>
-
 <div class="resource">
   <div class="resource-main">
+    <h1 class="no_toc">{{ page.title }}</h1>
+
     <h2>Description</h2>
     {{ page.description | default: "No description provided." | markdownify }}
 
@@ -26,7 +16,7 @@ suppress_title: true
 
   </div>
 
-  <div class="resource-side">
+  <div class="resource-side no_toc_section">
     <h3>Source</h3>
     {{ page.source | default: "No source provided." | markdownify }}
 

@@ -22,6 +22,7 @@ permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-toc
 source: pages
 
 keep_files:
