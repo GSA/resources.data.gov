@@ -1,6 +1,18 @@
 ---
 layout: page
+suppress_title: true
 ---
+
+<div class="breadcrumb-nav">
+  <a href="{{ page.category | slugify | relative_url }}">
+    {{ page.category }}
+  </a>
+  &gt;
+  {{ page.title }}
+</div>
+
+<h1>{{ page.title }}</h1>
+
 <div class="resource">
   <div class="resource-main">
     <h2>Description</h2>
