@@ -57,6 +57,10 @@ collections:
 toc:
   min_level: 2
   max_level: 3
+  list_class: 'usa-sidenav'
+  sublist_class: 'usa-sidenav__sublist'
+  item_class: 'usa-sidenav__item'
+  item_prefix: 'usa-'
 
 resource_tags: [open data, data converter, data schema, data standards, data inventory, data management, API, data analytics, data visualization, data validation, data cleaning, geospatial, data governance, CDO, PRA]
 resource_formats: [Case study, Software tool, Standard/schema, Form/template, Report, OMB Memo, Skill-builder]
