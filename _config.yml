@@ -54,5 +54,9 @@ collections:
   categories:
     output: false
 
+toc:
+  min_level: 2
+  max_level: 3
+
 resource_tags: [open data, data converter, data schema, data standards, data inventory, data management, API, data analytics, data visualization, data validation, data cleaning, geospatial, data governance, CDO, PRA]
 resource_formats: [Case study, Software tool, Standard/schema, Form/template, Report, OMB Memo, Skill-builder]
