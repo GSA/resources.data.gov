@@ -16,61 +16,7 @@ suppress_title: true
 {% assign resources = site.resources | concat: site.summaries | where: "category", page.category | sort: "name" %}
 
 {% for resource in resources %}
-  <div class="resource">
-    <div class="resource-main">
-      <h2>{{ resource.name }}</h2>
-
-      <p>
-        {% if resource.description %}
-          {{ resource.description | default: "No description provided" }}
-        {% else if resource.shortdescription %}
-          {{ resource.shortdescription | default: "No short description provided" }}
-        {% endif %}
-      </p>
-
-      <p class="resource-source">
-        Source: {{ resource.source | default: "No source provided" }}
-      </p>
-
-      <p class="resource-link">
-        {% if resource.description %}
-          <a class="usa-button" href="{{ "/resources/" | append: resource.slug | relative_url }}">
-            Learn More
-          </a>
-        {% else if resource.shortdescription %}
-          <a href="{{ resource.link }}">Link to Resource</a>
-        {% endif %}
-      </p>
-    </div>
-
-    <div class="resource-side">
-      <h3>Keywords</h3>
-      <!-- TODO: tags are not quoted in front matter, so they are split into spaces. -->
-      {% assign resource_tags = resource.tags | join: " " | split: "," %}
-      <p>
-        {% for tag in resource_tags %}
-          {% assign slug_tag = tag | slugify %}
-          <a href="{{ "/resources/keywords#" | append: slug_tag | relative_url }}">
-            {{ tag }}
-          </a>
-        {% else %}
-          This resource has no keywords.
-        {% endfor %}
-      </p>
-
-      <h3>Format</h3>
-      <p>
-        {% if resource.format != "" %}
-          {% assign slug_format = resource.format | slugify %}
-          <a href="{{ "/resources/formats#" | append: slug_format | relative_url }}">
-            {{ resource.format }}
-          </a>
-        {% else %}
-          No format provided.
-        {% endif %}
-      </p>
-    </div>
-  </div>
+  {% include resource_block.html resource=resource %}
 {% else %}
   <div class="resource">
     <div class="resource-main">
