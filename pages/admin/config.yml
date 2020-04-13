@@ -36,7 +36,7 @@ collections:
       - label: "description"
         name: "description"
         widget: "text"
-        hint: "description of the resource"
+        hint: "short description of the resource"
         required: true
 
       - label: "source"
@@ -100,20 +100,20 @@ collections:
     slug: "{{fields.slug}}"
 
     fields:
+      - label: "name"
+        name: "name"
+        widget: "string"
+        hint: "name of the resource"
+        required: true
+        
       - label: "slug"
         name: "slug"
         widget: "string"
         hint: "slug link (part that comes at the very end of a url)"
         required: true
 
-      - label: "name"
-        name: "name"
-        widget: "string"
-        hint: "name of the resource"
-        required: true
-
-      - label: "shortdescription"
-        name: "shortdescription"
+      - label: "description"
+        name: "description"
         widget: "text"
         hint: "short description of the resource"
         required: true
@@ -168,5 +168,5 @@ collections:
       - label: "description"
         name: "description"
         widget: "text"
-        hint: "description of the category"
+        hint: "short description of the category"
         required: true
