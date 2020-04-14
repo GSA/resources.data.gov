@@ -1,12 +1,12 @@
 ---
 category: Communities
+description: ''
 format: ''
 layout: resource
 link: https://www.fgdc.gov/
-name: Federal Geographic Data Committee.
+name: Federal Geographic Data Committee
 publish: 'TRUE'
-shortdescription: ''
 slug: geographic-data-commitee
 source: ''
-tags: ''
+tags: geospatial
 ---
