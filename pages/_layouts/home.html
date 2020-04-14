@@ -26,7 +26,8 @@ class: home
         <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
           <h3 class="margin-top-0 text-primary-vivid">{{ category.category_name }}</h3>
           <p class="text-ink margin-bottom-0 line-height-sans-4">{{ category.description }}</p>
-          <a href="{{ category.href | relative_url }}" class="text-no-underline">
+          {% assign category_slug = category.category_name | slugify %}
+          <a href="{{ "/resources/" | append: category_slug | relative_url }}">
             See all {{ category.category_name }} resources &gt;
           </a>
         </div>
@@ -41,7 +42,8 @@ class: home
     <div class="grid-col-8 padding-205 display-flex flex-row flex-wrap">
       {% for tag in site.resource_tags %}
         <div class="border border-base radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-1 grid-col-3 display-flex flex-justify-center">
-          <a href="{{ tag.href | relative_url }}" class="text-no-underline">
+          {% assign slug_tag = tag | slugify %}
+          <a href="{{ "/resources/keywords#" | append: slug_tag | relative_url }}" class="text-no-underline">
             {{ tag }}
           </a>
         </div>
