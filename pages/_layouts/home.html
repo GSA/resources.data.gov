@@ -23,7 +23,7 @@ class: home
     </div>
     <div class="grid-col-8 padding-205">
       {% for category in site.categories %}
-        <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 border-bottom">
+        <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
           <h3 class="margin-top-0 text-primary-vivid">{{ category.category_name }}</h3>
           <p class="text-ink margin-bottom-0 line-height-sans-4">{{ category.description }}</p>
           <a href="{{ category.href | relative_url }}" class="text-no-underline">
@@ -32,9 +32,21 @@ class: home
         </div>
       {% endfor %}
     </div>
+  </div>
 
+  <div class="grid-row grid-gap border-top">
     <div class="grid-col-4">
       <h2>Browse resources by keyword</h2>
     </div>
+    <div class="grid-col-8 padding-205 display-flex flex-row flex-wrap">
+      {% for tag in site.resource_tags %}
+        <div class="border border-base radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-1 grid-col-3 display-flex flex-justify-center">
+          <a href="{{ tag.href | relative_url }}" class="text-no-underline">
+            {{ tag }}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
   </div>
+
 </div>
