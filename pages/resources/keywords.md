@@ -10,13 +10,23 @@ layout: toc
 {% assign all_tags = site.resource_tags | sort %}
 
 {% for tag in all_tags %}
-  <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
-  <ul>
+
+  <div class="resource-keyword">
+    {% assign tagged_resources = "" | split: "," %}
     {% for resource in all_resources %}
       {% assign resource_tags = resource.tags | join: " " | split: "," %}
       {% if resource_tags contains tag %}
-        {% include resource_block.html resource=resource %}
+        {% assign tagged_resources = tagged_resources | push: resource %}
       {% endif %}
     {% endfor %}
-  </ul>
+
+    {% assign tagged_resources_length = tagged_resources | size %}
+    {% if tagged_resources_length != 0 %}
+      <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+      {% for resource in tagged_resources %}
+        {% include resource_block.html resource=resource %}
+      {% endfor %}
+    {% endif %}
+  </div>
+
 {% endfor %}
