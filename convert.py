@@ -65,13 +65,19 @@ with open(filename) as fd:
 
     # verify slug uniqueness before we write anything
     for index, row in enumerate(rows):
-        tags = row[tags_index].split(",")
-        for tag in tags:
-            if tag not in tags:
-                print(f"warning: row {index} has an unknown category {tag}, skipping")
+        csv_tags = row[tags_index]
+        if not csv_tags:
+            print(f"warning: row {index} has empty tags, skipping")
+        else:
+            for tag in csv_tags.split(","):
+                if tag.strip() not in tags:
+                    print(f"warning: row {index} has an unknown category {tag.strip()}, skipping")
         category = row[category_index]
-        if category not in categories:
-            print(f"warning: row {index} has an unknown category {category}, skipping")
+        if not category:
+            print(f"warning: row {index} has an empty category, skipping")
+        else:
+            if category not in categories:
+                print(f"warning: row {index} has an unknown category {category}, skipping")
         slug = row[slug_index].lower()
         if not slug:
             print(f"warning: row {index} has no slug, skipping")

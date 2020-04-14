@@ -57,7 +57,7 @@ collections:
         widget: "select"
         multiple: true
         hint: "tags for this resource"
-        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", ]
+        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", "ai", "data access", "data quality", "data analysis", "data sharing", "workforce development", "data governance board", "standards", "metadata"]
         required: true
 
       - label: "format"
@@ -144,7 +144,7 @@ collections:
         widget: "select"
         multiple: true
         hint: "tags for this resource"
-        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", ]
+        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", "ai", "data access", "data quality", "data analysis", "data sharing", "workforce development", "data governance board", "standards", "metadata"]
         required: true
 
       - label: "format"
