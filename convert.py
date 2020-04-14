@@ -27,13 +27,16 @@ if not fields:
     print(f"{sys.argv[0]}: could not load {collection_name} from the admin file")
     sys.exit(1)
 
-def find_field(all_fields, field_name):
+def find_field(all_fields, field_name, get_options=False):
     labels = list(map(lambda f: f["label"], all_fields))
     try:
         index = labels.index(field_name)
-        return labels[index]
+        return all_fields[index]["options"] if get_options else fields[index]
     except ValueError:
         return None
+
+categories = find_field(fields, "category", get_options=True)
+tags = find_field(fields, "tags", get_options=True)
 
 # ensure slugs are unique
 slug_set = set()
@@ -42,6 +45,8 @@ with open(filename) as fd:
     data = list(csv.reader(fd))
     headers = data[0]
     slug_index = headers.index("slug")  # must be present
+    tags_index = headers.index("tags")
+    category_index = headers.index("category")
 
     errors = False
     for header in headers:
@@ -60,6 +65,13 @@ with open(filename) as fd:
 
     # verify slug uniqueness before we write anything
     for index, row in enumerate(rows):
+        tags = row[tags_index].split(",")
+        for tag in tags:
+            if tag not in tags:
+                print(f"warning: row {index} has an unknown category {tag}, skipping")
+        category = row[category_index]
+        if category not in categories:
+            print(f"warning: row {index} has an unknown category {category}, skipping")
         slug = row[slug_index].lower()
         if not slug:
             print(f"warning: row {index} has no slug, skipping")
