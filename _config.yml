@@ -13,6 +13,10 @@ github:
   repository: resources.data.gov
   default_branch: develop
 
+scripts:
+  - assets/uswds/js/uswds.min.js
+  - assets/js/bundle.js
+
 styles:
   - assets/uswds/css/styles.css
 
@@ -53,6 +57,12 @@ collections:
     output: false
   categories:
     output: false
+
+page_gen:
+  - index_files: false
+    data: glossary
+    name: term
+    title: "Glossary: "
 
 toc:
   min_level: 2
