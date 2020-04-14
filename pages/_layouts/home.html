@@ -11,17 +11,30 @@ class: home
     <a href="{{page.button.href | relative_url}}" class="usa-button usa-button--secondary width-auto">{{page.button.text}}</a>
   </div>
 </div>
-<div class="grid-container  margin-bottom-3 tablet:margin-bottom-6 usa-layout__docs-main">
-  
-  <div class="grid-row grid-gap">
-  {% for card in page.cards %}
-    <div class="tablet:grid-col-4 display-flex margin-bottom-205 tablet:margin-bottom-0">
-      <a href="{{ card.href | relative_url}}" class="border border-base radius-sm padding-x-5 padding-y-3 tablet:padding-5 hover:bg-base-lightest hover:shadow-2 text-no-underline">
-        <h3 class="margin-top-0 text-primary-vivid icon-arrow font-heading-sm">{{ card.heading }}</h3>
-        <p class="text-ink margin-bottom-0 line-height-sans-4">{{ card.body }}</p>
-      </a>
-    </div>
-  {% endfor %}
+
+<div class="grid-container margin-bottom-3 tablet:margin-bottom-6 usa-layout__docs-main">
+  <div class="padding-bottom-205">
+    {{ content }}
   </div>
-  {{ content }}
+
+  <div class="grid-row grid-gap border-top">
+    <div class="grid-col-4">
+      <h2>Browse resources by category</h2>
+    </div>
+    <div class="grid-col-8 padding-205">
+      {% for category in site.categories %}
+        <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 border-bottom">
+          <h3 class="margin-top-0 text-primary-vivid">{{ category.category_name }}</h3>
+          <p class="text-ink margin-bottom-0 line-height-sans-4">{{ category.description }}</p>
+          <a href="{{ category.href | relative_url }}" class="text-no-underline">
+            See all {{ category.category_name }} resources &gt;
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="grid-col-4">
+      <h2>Browse resources by keyword</h2>
+    </div>
+  </div>
 </div>

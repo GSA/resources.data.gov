@@ -1,4 +1,4 @@
 ---
 category_name: Communities
-description: Description of <code>communities</code> goes here.
+description: <p>Description of <code>communities</code> goes here.</p>
 ---
