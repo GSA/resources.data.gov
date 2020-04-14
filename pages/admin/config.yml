@@ -93,6 +93,14 @@ collections:
         hint: "the layout template to use"
         required: true
 
+      - label: "toc"
+        name: "toc"
+        widget: "select"
+        options: ["true", "false"]
+        default: ["true"]
+        hint: "autogenerate a table of contents"
+        required: true
+
   - name: "summaries"
     label: "Summaries"
     create: true
@@ -105,7 +113,7 @@ collections:
         widget: "string"
         hint: "name of the resource"
         required: true
-        
+
       - label: "slug"
         name: "slug"
         widget: "string"
