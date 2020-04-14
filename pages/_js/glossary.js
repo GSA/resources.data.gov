@@ -37,5 +37,13 @@ function decorator(glossary) {
   };
 }
 
-var g = new Glossary(terms);
+// add in source to description.
+var adjusted_terms = terms.map(function(t) {
+  return {
+    term: t.term,
+    definition: `<p>${t.definition}</p><a href="${t.source}">(Source)</a>`
+  };
+});
+
+var g = new Glossary(adjusted_terms);
 decorator(g);
