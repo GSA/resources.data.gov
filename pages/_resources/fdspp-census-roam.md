@@ -11,5 +11,5 @@ name: The Census Bureau Uses Its Own Data to Increase Response Rates, Helps Comm
 publish: ''
 slug: fdspp-census-roam
 source: Federal Data Strategy
-tags: open data, data sharing, data management, data analysis, data access
+tags: open data, data sharing, data management, data analysis
 ---

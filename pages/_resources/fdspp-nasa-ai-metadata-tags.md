@@ -11,5 +11,5 @@ name: 'Improving Data Access and Data Management: Artificial Intelligence-Genera
 publish: ''
 slug: fdspp-nasa-ai-metadata-tags
 source: Federal Data Strategy
-tags: metadata, data management, data access
+tags: metadata, data management, data sharing
 ---

@@ -10,5 +10,5 @@ name: Helping Baltimore Volunteers Find Where to Help
 publish: ''
 slug: fdspp-census-helping-baltimore-volunteers-find-where-to-help
 source: Federal Data Strategy
-tags: geospatial, data access
+tags: geospatial, data sharing
 ---

@@ -72,6 +72,6 @@ toc:
   item_class: 'usa-sidenav__item'
   item_prefix: 'usa-'
 
-resource_tags: ["open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", "ai", "data access", "data quality", "data analysis", "data sharing", "workforce development", "data governance board", "standards", "metadata", "DCAT", "inventory.data.gov", "position description", "data visualization"]
+resource_tags: ["open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", "ai", "data quality", "data analysis", "data sharing", "workforce development", "standards", "metadata", "DCAT", "inventory.data.gov", "position description", "data visualization"]
 
 resource_formats: [Case study, Software tool, Standard/schema, Form/template, Report, OMB Memo, Skill-builder]

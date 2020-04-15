@@ -10,5 +10,5 @@ name: Open Energy Data at DOE
 publish: ''
 slug: fdspp-doe-open-energy
 source: Federal Data Strategy
-tags: open data, data sharing, data access
+tags: open data, data sharing
 ---

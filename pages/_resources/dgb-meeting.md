@@ -10,5 +10,5 @@ name: Data Governance Board Meeting Strategy
 publish: ''
 slug: dgb-meeting
 source: SSA
-tags: data governance, data governance board
+tags: data governance
 ---
