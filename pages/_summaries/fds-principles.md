@@ -10,6 +10,6 @@ link: https://strategy.data.gov/principles/
 name: Federal Data Strategy Principles
 publish: 'TRUE'
 slug: fds-principles
-source: ''
+source: Federal Data Strategy
 tags: ''
 ---

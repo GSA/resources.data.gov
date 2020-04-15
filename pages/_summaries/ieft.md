@@ -1,18 +1,18 @@
 ---
 category: Communities
-description: BETTER description TKTKTK OMB A1-119 has guidance on how agencies should
-  work with existing data-standard-setting organizations to develop and maintain data
-  standards. IEFT is a large open international community of network designers, operators,
-  vendors, and researchers concerned with the evolution of the Internet architecture
-  and the smooth operation of the Internet.
+description: 'The Internet Engineering Task Force (IETF) is the premier Internet standards
+  body, developing open standards through open processes. IEFT is a large open international
+  community of network designers, operators, vendors, and researchers concerned with
+  the evolution of the Internet architecture and the smooth operation of the Internet.
+  IETF is one example of the existing standards organizations (or voluntary consensus
+  standards bodies) that OMB Circular A-119 directs Federal agencies to utilize to
+  develop and maintain agency data standards. '
 format: ''
 layout: resource
 link: https://www.ietf.org/
-name: Internet Engineering Task Force (IEFT) is a large open international community
-  of network designers, operators, vendors, and researchers concerned with the evolution
-  of the Internet architecture and the smooth operation of the Internet.
+name: Internet Engineering Task Force (IEFT)
 publish: 'TRUE'
 slug: ieft
-source: ''
+source: IEFT
 tags: data standards
 ---

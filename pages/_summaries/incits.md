@@ -1,15 +1,16 @@
 ---
 category: Communities
-description: BETTER description TKTKTK OMB A1-119 has guidance on how agencies should
-  work with existing data-standard-setting organizations to develop and maintain data
-  standards. The central U.S. forum dedicated to creating technology standards for
-  the next generation of innovation
+description: 'The InterNational Committee for Information Technology Standards (INCITS)
+  is the central U.S. forum dedicated to creating technology standards for the next
+  generation of innovation. INCITS is one example of the existing standards organizations
+  (or voluntary consensus standards bodies) that OMB Circular A-119 directs Federal
+  agencies to utilize to develop and maintain agency data standards. '
 format: ''
 layout: resource
 link: http://www.incits.org/
 name: "INCITS \u2013 the InterNational Committee for Information Technology Standards "
 publish: 'TRUE'
 slug: incits
-source: ''
+source: INCITS
 tags: data standards
 ---
