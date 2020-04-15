@@ -36,8 +36,17 @@ def find_field(all_fields, field_name, get_options=False):
     except ValueError:
         return None
 
+def get_tags():
+    keywords = list()
+    for keyword_slug in os.listdir("pages/_keywords/"):
+        with open(f"pages/_keywords/{keyword_slug}") as keyword_fd:
+            raw = keyword_fd.read().replace('---', '')
+            data = yaml.load(raw, Loader=yaml.FullLoader)
+            keywords.append(data["name"])
+    return keywords
+
 categories = find_field(fields, "category", get_options=True)
-tags = find_field(fields, "tags", get_options=True)
+tags = get_tags()
 tag_counter = Counter()
 
 # ensure slugs are unique
