@@ -38,8 +38,6 @@ class: home
               See all {{ category.category_name }} resources &gt;
             </a>
           {% endif %}
-
-
         </div>
       {% endfor %}
     </div>
@@ -51,9 +49,9 @@ class: home
     </div>
     <div class="grid-col-8 padding-205 display-flex flex-row flex-wrap">
       {% for tag in site.resource_tags %}
-        <div class="border border-base radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-1 grid-col-3 display-flex flex-justify-center">
+        <div class="border border-base radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-1 grid-col-3 display-flex flex-justify-center text-center">
           {% assign slug_tag = tag | slugify %}
-          <a href="{{ "/resources/keywords#" | append: slug_tag | relative_url }}" class="text-no-underline">
+          <a href="{{ "/resources/keywords#" | append: slug_tag | relative_url }}" class="text-no-underline display-flex flex-align-center">
             {{ tag }}
           </a>
         </div>
