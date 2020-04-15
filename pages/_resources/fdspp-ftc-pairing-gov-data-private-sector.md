@@ -10,5 +10,5 @@ name: Pairing Government Data with Private-Sector Ingenuity to Take on Unwanted 
 publish: ''
 slug: fdspp-ftc-pairing-gov-data-private-sector
 source: Federal Data Strategy
-tags: data quality
+tags: data cleaning
 ---

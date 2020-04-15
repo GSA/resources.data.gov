@@ -11,5 +11,5 @@ name: Agencies Mobilize to Improve Emergency Response in Puerto Rico through Bet
 publish: ''
 slug: fdspp-pr-emergency-response
 source: Federal Data Strategy
-tags: geospatial, standards, data quality
+tags: geospatial, standards, data cleaning
 ---

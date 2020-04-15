@@ -10,5 +10,5 @@ name: Data Standdown - Interrupting process to fix information
 publish: ''
 slug: fdspp-onr-data-standdown-interrupting-process-to-fix-information
 source: Federal Data Strategy
-tags: data governance, data quality
+tags: data governance, data cleaning
 ---
