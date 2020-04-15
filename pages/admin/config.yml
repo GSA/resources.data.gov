@@ -20,6 +20,7 @@ collections:
     create: true
     folder: "pages/_resources/"
     slug: "{{fields.slug}}"
+
     fields:
       - label: "name"
         name: "name"
@@ -54,10 +55,12 @@ collections:
 
       - label: "tags"
         name: "tags"
-        widget: "select"
+        widget: "relation"
+        collection: "keywords"
         multiple: true
         hint: "tags for this resource"
-        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", "ai", "data analysis", "data sharing", "workforce development", "standards", "metadata", "position description", "data visualization"]
+        valueField: "name"
+        searchFields: ["name"]
         required: true
 
       - label: "format"
@@ -89,7 +92,7 @@ collections:
         name: "layout"
         widget: "select"
         options: ["resource"]
-        default: ["resource"]
+        default: "resource"
         hint: "the layout template to use"
         required: true
 
@@ -97,7 +100,7 @@ collections:
         name: "toc"
         widget: "select"
         options: ["true", "false"]
-        default: ["true"]
+        default: "true"
         hint: "autogenerate a table of contents"
         required: true
 
@@ -177,4 +180,39 @@ collections:
         name: "description"
         widget: "text"
         hint: "short description of the category"
+        required: true
+
+  - name: "keywords"
+    label: "Keywords"
+    create: true
+    folder: "pages/_keywords/"
+    slug: "{{fields.slug}}"
+
+    fields:
+      - label: "name"
+        name: "name"
+        widget: "string"
+        hint: "name of the keyword"
+        required: true
+
+      - label: "slug"
+        name: "slug"
+        widget: "string"
+        hint: "slug link (part that comes at the very end of a url)"
+        required: true
+
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["keyword"]
+        default: "keyword"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "toc"
+        name: "toc"
+        widget: "select"
+        options: ["true", "false"]
+        default: "true"
+        hint: "autogenerate a table of contents"
         required: true

@@ -1,0 +1,22 @@
+---
+layout: toc
+---
+
+<h1>Browse Resources By Keyword {{ page.name }}</h1>
+
+<!-- todo filter by name -->
+{% assign all_resources = site.resources | concat: site.summaries | where: "tags",
+page.name | sort: "name" | group_by: "category" | sort: "name" %}
+
+<div class="keyword">
+  {% for group in all_resources %}
+    {% if group.items %}
+      <h2>{{ group.name }}</h2>
+      {% for resource in group.items %}
+        <div class="resource-keyword">
+          {% include resource_block.html resource=resource %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</div>

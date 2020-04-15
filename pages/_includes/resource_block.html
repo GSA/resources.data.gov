@@ -32,7 +32,7 @@
     <p>
       {% for tag in resource_tags %}
         {% assign slug_tag = tag | slugify %}
-        <a href="{{ "/resources/keywords#" | append: slug_tag | relative_url }}">
+        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">
           {{ tag }}
         </a>
         {% else %}
