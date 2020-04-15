@@ -50,8 +50,7 @@ class: home
     <div class="grid-col-8 padding-205 display-flex flex-row flex-wrap">
       {% for tag in site.keywords %}
         <div class="border border-base radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-1 grid-col-3 display-flex flex-justify-center text-center">
-          {% assign slug_tag = tag.name | slugify %}
-          <a href="{{ "/keywords/" | append: slug_tag | relative_url }}" class="text-no-underline display-flex flex-align-center">
+          <a href="{{ tag.url | relative_url }}" class="text-no-underline display-flex flex-align-center">
             {{ tag.name }}
           </a>
         </div>
