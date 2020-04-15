@@ -3,6 +3,7 @@ import csv
 import yaml
 import sys
 import os
+from collections import Counter
 
 if len(sys.argv) != 3:
     print(f"{sys.argv[0]}: collection csv-file")
@@ -37,6 +38,7 @@ def find_field(all_fields, field_name, get_options=False):
 
 categories = find_field(fields, "category", get_options=True)
 tags = find_field(fields, "tags", get_options=True)
+tag_counter = Counter()
 
 # ensure slugs are unique
 slug_set = set()
@@ -70,8 +72,10 @@ with open(filename) as fd:
             print(f"warning: row {index} has empty tags, skipping")
         else:
             for tag in csv_tags.split(","):
-                if tag.strip() not in tags:
-                    print(f"warning: row {index} has an unknown category {tag.strip()}, skipping")
+                tag_name = tag.strip()
+                tag_counter[tag_name] += 1
+                if tag_name not in tags:
+                    print(f"warning: row {index} has an unknown category {tag_name}, skipping")
         category = row[category_index]
         if not category:
             print(f"warning: row {index} has an empty category, skipping")
@@ -104,3 +108,8 @@ with open(filename) as fd:
             f.write("---\n")
             f.write(yaml.dump(markdown_data))
             f.write("---")
+
+# obtain unused tags (NB: unused tags can be in other collections)
+used_tags = set(tag_counter.keys())
+listed_tags = set(tags)
+print(f"unused tags for {collection_name}: {listed_tags - used_tags}")
