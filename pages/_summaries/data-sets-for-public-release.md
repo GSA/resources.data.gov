@@ -1,12 +1,13 @@
 ---
 category: Skills development
-description: ''
+description: 'Guide that outlines 5 easy ways to identify data sets that are a candidate
+  for public release:'
 format: ''
 layout: resource
 link: https://opendata.guide/chapter2.html
 name: Identifying data sets for public release
 publish: 'TRUE'
 slug: data-sets-for-public-release
-source: ''
+source: Mark Headd
 tags: open data
 ---

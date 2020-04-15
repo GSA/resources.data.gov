@@ -9,5 +9,6 @@ name: Data Scientist Titling Guidance
 publish: 'TRUE'
 slug: ds-titling-guidance
 source: OPM
-tags: position description, data analytics, data management, data viz, data cleaning
+tags: position description, data analytics, data management, data visualization, data
+  cleaning
 ---

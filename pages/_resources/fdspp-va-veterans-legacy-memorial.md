@@ -10,5 +10,5 @@ name: The Veterans Legacy Memorial
 publish: ''
 slug: fdspp-va-veterans-legacy-memorial
 source: Federal Data Strategy
-tags: data access, data viz
+tags: data access, data visualization
 ---
