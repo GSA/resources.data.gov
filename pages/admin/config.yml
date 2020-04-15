@@ -111,7 +111,7 @@ collections:
       - label: "name"
         name: "name"
         widget: "string"
-        hint: "name of the resource"
+        hint: "name of the resource summary"
         required: true
 
       - label: "slug"
@@ -123,13 +123,13 @@ collections:
       - label: "description"
         name: "description"
         widget: "text"
-        hint: "short description of the resource"
+        hint: "short description of the resource summary"
         required: true
 
       - label: "source"
         name: "source"
         widget: "string"
-        hint: "who created the resource"
+        hint: "who created the resource summary"
         required: true
 
       - label: "category"
@@ -143,19 +143,19 @@ collections:
         name: "tags"
         widget: "select"
         multiple: true
-        hint: "tags for this resource"
-        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", "ai", "data access", "data quality", "data analysis", "data sharing", "workforce development", "data governance board", "standards", "metadata"]
+        hint: "tags for this resource summary"
+        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", "ai", "data access", "data quality", "data analysis", "data sharing", "workforce development", "data governance board", "standards", "metadata", "DCAT", "inventory.data.gov"]
         required: true
 
       - label: "format"
         name: "format"
         widget: "select"
-        hint: "format of the resource"
+        hint: "format of the resource summary"
         options: ["---", "Case study", "Software tool", "Standard/schema", "Form/template", "Report", "OMB Memo", "Skill-builder"]
         required: false
 
       - label: "link"
-        name: "link to resource"
+        name: "link to resource summary"
         widget: "markdown"
         hint: "link to the resource"
         required: true

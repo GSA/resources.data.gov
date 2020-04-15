@@ -10,5 +10,5 @@ name: Supercharging Data through Validation as a Service
 publish: ''
 slug: fdspp-usda-fns-supercharging-data-validation-service
 source: Federal Data Strategy
-tags: data quality, data validation, working with apis, data access
+tags: data quality, data validation, API, data access
 ---

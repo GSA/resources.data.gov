@@ -10,5 +10,5 @@ name: Project Open Data CSV to JSON converter
 publish: 'TRUE'
 slug: pod-csv-to-json
 source: Project Open Data
-tags: data converters
+tags: data converter
 ---

@@ -1,12 +1,14 @@
 ---
 category: Data management & governance
-description: ''
+description: Most U.S. government creative works such as writing or images are usually
+  copyright-free, but there are some exceptions. This resource outlines when and how
+  copyright applies to U.S. government works.
 format: ''
 layout: resource
 link: https://www.usa.gov/government-works
-name: Learn more about how copyright applies to U.S. government works.
+name: How copyright applies to U.S. Government Works
 publish: 'TRUE'
 slug: copyright
-source: ''
-tags: ''
+source: usa.gov
+tags: data management
 ---

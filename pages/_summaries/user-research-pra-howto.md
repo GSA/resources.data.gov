@@ -8,5 +8,5 @@ name: User Research and The Paperwork Reduction Act How to Get it Done (video)
 publish: 'TRUE'
 slug: user-research-pra-howto
 source: ''
-tags: pra
+tags: PRA
 ---

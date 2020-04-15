@@ -1,12 +1,13 @@
 ---
 category: Skills development
-description: ''
-format: ''
+description: Webinar guide to using data.gov, produced by DigitalGov University, an
+  initiative of the General Services Administration (45 minute video).
+format: Video
 layout: resource
 link: https://www.youtube.com/watch?v=hbxA5-GDvvU
-name: "How to Get Your Agency\u2019s Data on to Data.gov (video)"
+name: "How to Get Your Agency\u2019s Data on to Data.gov"
 publish: 'TRUE'
 slug: data-gov-howto
-source: ''
+source: digitalgov.gov
 tags: open data
 ---

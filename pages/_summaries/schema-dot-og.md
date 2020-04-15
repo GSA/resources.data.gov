@@ -1,14 +1,15 @@
 ---
 category: Data management & governance
-description: is a collaborative, community activity with a mission to create, maintain,
-  and promote schemas for structured data on the Internet, on web pages, in email
-  messages, and beyond.
+description: Through an open community process, schema.org creates, maintains, and
+  promotes schemas for structured data on the Internet. The schema.org vocabulary
+  is used along with the Microdata, RDFa, or JSON-LD formats to add information to
+  Web content.
 format: ''
 layout: resource
 link: Schema.org
 name: 'Schema.org '
 publish: 'TRUE'
 slug: schema-dot-og
-source: ''
+source: schema.org
 tags: data schema
 ---

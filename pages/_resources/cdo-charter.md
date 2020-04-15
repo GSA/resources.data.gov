@@ -10,5 +10,5 @@ name: CDO Charter template
 publish: ''
 slug: cdo-charter
 source: GSA
-tags: data governance, cdo council
+tags: data governance, CDO
 ---

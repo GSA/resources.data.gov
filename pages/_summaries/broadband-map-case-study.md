@@ -1,5 +1,5 @@
 ---
-category: Data management & governance
+category: Case studies & examples
 description: The National Broadband Map is a tool that provide consumers nationwide
   reliable information on broadband internet connections.This case study describes
   how crowd-sourcing, open source software, and public engagement informs the development

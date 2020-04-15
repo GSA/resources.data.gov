@@ -9,5 +9,5 @@ name: Database to API
 publish: 'TRUE'
 slug: db-to-api
 source: Project Open Data
-tags: api
+tags: API
 ---
