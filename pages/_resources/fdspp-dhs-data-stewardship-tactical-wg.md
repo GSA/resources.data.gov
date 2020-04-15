@@ -10,5 +10,8 @@ name: Investing in Learning with the Data Stewardship Tactical Working Group at 
 publish: ''
 slug: fdspp-dhs-data-stewardship-tactical-wg
 source: Federal Data Strategy
-tags: data governance, data management, workforce development
+tags: data governance, data management, FDS Principle 3 Promote Transparency, FDS
+  Principle 8 Invest in Learning, FDS Principle 9 Develop Data Leaders, FDS Principle
+  10 Practice Accountability, FDS Practice 2 Assess and Balance the Needs of Stakeholders,
+  training
 ---

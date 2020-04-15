@@ -1,14 +1,14 @@
 ---
-category: Case studies & examples
+category: Data management & governance
 description: ''
 details: ''
 examples: ''
 format: Template/How-to
 layout: resource
 link: ''
-name: CDO Charter template
+name: Office of the Chief Data Officer (OCDO) Charter Template
 publish: ''
-slug: cdo-charter
+slug: ocdo-charter
 source: GSA
 tags: data governance, CDO
 ---
