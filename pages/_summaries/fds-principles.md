@@ -8,6 +8,7 @@ format: ''
 layout: resource
 link: https://strategy.data.gov/principles/
 name: Federal Data Strategy Principles
+policy tags: ''
 publish: true
 slug: fds-principles
 source: Federal Data Strategy

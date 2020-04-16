@@ -5,6 +5,7 @@ format: ''
 layout: resource
 link: https://www.iso.org/standards-catalogue/browse-by-ics.html
 name: International Organization for Standardization (ISO) standards catalog
+policy tags: ''
 publish: false
 slug: iso-catalog
 source: ISO

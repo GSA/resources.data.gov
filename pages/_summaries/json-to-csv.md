@@ -1,10 +1,11 @@
 ---
 category: Data tools
 description: A web-based tool to convert JSON to CSV with a simple copy and paste.
-format: Software tool
+format: ''
 layout: resource
 link: https://konklone.io/json/
 name: JSON to CSV converter
+policy tags: ''
 publish: true
 slug: json-to-csv
 source: Eric Mill (@konklone)

@@ -1,18 +1,19 @@
 ---
 category: Case studies & examples
-description: ''
+description: "Although not a true pause in operations, ONR\u2019s data standdown made\
+  \ data quality and data consolidation the top priority for the entire organization.\
+  \ It aimed to establish an automated and repeatable solution to enable a more holistic\
+  \ view of ONR investments and activities, and to increase transparency and effectiveness\
+  \ throughout its mission support functions. In addition, it demonstrated that getting\
+  \ top-level buy-in from management to prioritize data can truly advance a more data-driven\
+  \ culture."
 details: '[contents of the proof point]'
 examples: ''
 format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/05/10/data-standdown-interrupting-process-to-fix-information/
 name: 'Data Standdown: Interrupting process to fix information'
-publish: false
-slug: fdspp-onr-data-standdown-interrupting-process-to-fix-information
-source: Federal Data Strategy
-tags:
-- data governance
-- data cleaning
+policy tags:
 - FDS Principle 5 Harness Existing Data
 - FDS Principle 7 Demonstrate Responsiveness
 - FDS Practice 1 Identify Data Needs to Answer Key Agency Questions
@@ -24,7 +25,15 @@ tags:
 - FDS Practice 28 Align Quality with Intended Use
 - FDS Practice 30 Communicate Planned and Potential Uses of Data
 - FDS Practice 32 Harness Safe Data Linkage
+- ''
+publish: false
+slug: fdspp-onr-data-standdown-interrupting-process-to-fix-information
+source: Federal Data Strategy
+tags:
+- data governance
+- data cleaning
 - collaboration
 - process redesign
+- internal-todo
 toc: true
 ---

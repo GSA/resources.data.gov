@@ -8,6 +8,7 @@ format: ''
 layout: resource
 link: https://project-open-data.cio.gov/v1.1/metadata-resources/#field-mappings
 name: Field Mappings under the Project Open Data Metadata Schema (DCAT-US Schema v1.1)
+policy tags: ''
 publish: false
 slug: podm-field-mapping
 source: data.gov
@@ -17,5 +18,7 @@ tags:
 - data schema
 - DCAT
 - Project Open Metadata Schema
+- open data
+- internal-todo
 toc: true
 ---

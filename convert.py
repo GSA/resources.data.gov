@@ -73,7 +73,7 @@ with open(filename) as fd:
         if header == "publish":
             # ignore for now
             continue
-        has_field = find_field(fields, header)
+        has_field = find_field(fields, header.replace(' ', '_'))
         if not has_field:
             errors = True
             print(f"error: csv header does not match admin config: {header}")

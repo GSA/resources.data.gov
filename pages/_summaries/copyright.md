@@ -7,6 +7,7 @@ format: ''
 layout: resource
 link: https://www.usa.gov/government-works
 name: How copyright applies to U.S. Government Works
+policy tags: ''
 publish: true
 slug: copyright
 source: usa.gov

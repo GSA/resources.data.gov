@@ -1,7 +1,11 @@
 ---
 category: Case studies & examples
-description: By linking existing data resources, USDA was able to enrich and expand
-  the analysis capabilities of both datasets
+description: Purchase-to-Plate Crosswalk (PPC) links the more than 359,000 food products
+  in a comercial company database to several thousand foods in a series of USDA nutrition
+  databases. By linking existing data resources, USDA was able to enrich and expand
+  the analysis capabilities of both datasets. Since there were no common identifiers
+  between the two data structures, the team used probabilistic and semantic methods
+  to reduce the manual effort required to link the data.
 details: '[contents of the proof point]'
 examples: ''
 format: FDS Proof Point
@@ -9,11 +13,7 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/09/06/usda-linked-nutrition-data/
 name: How USDA Linked Federal and Commercial Data to Shed Light on the Nutritional
   Value of Retail Food Sales
-publish: false
-slug: fdspp-usda-linked-nutrition-data
-source: Federal Data Strategy
-tags:
-- data sharing
+policy tags:
 - FDS Principle 3 Promote Transparency
 - FDS Principle 5 Harness Existing Data
 - FDS Principle 8 Invest in Learning
@@ -22,7 +22,13 @@ tags:
 - FDS Practice 6 Convey Insights from Data
 - FDS Practice 17 Recognize the Value of Data Assets
 - FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles
+publish: false
+slug: fdspp-usda-linked-nutrition-data
+source: Federal Data Strategy
+tags:
+- data sharing
 - process redesign
 - training
+- internal-todo
 toc: true
 ---

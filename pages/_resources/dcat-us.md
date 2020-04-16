@@ -9,6 +9,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/schemas/dcat-us/v1.1/
 name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
+policy tags: ''
 publish: false
 slug: dcat-us
 source: data.gov
@@ -17,5 +18,6 @@ tags:
 - open data
 - DCAT
 - Project Open Metadata Schema
+- internal-todo
 toc: true
 ---

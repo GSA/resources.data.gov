@@ -8,6 +8,7 @@ format: ''
 layout: resource
 link: https://strategy.data.gov/practices/
 name: Federal Data Strategy Practices
+policy tags: ''
 publish: true
 slug: fds-practices
 source: Federal Data Strategy

@@ -59,6 +59,8 @@ collections:
     output: true
   keywords:
     output: true
+  policy_tags:
+    output: true
 
 page_gen:
   - index_files: false

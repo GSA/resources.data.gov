@@ -8,6 +8,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/tools/inventory-data-gov-guide/
 name: Inventory.data.gov Guide
+policy tags: ''
 publish: false
 slug: inventory-data-gov-guide
 source: inventory.data.gov
@@ -15,5 +16,7 @@ tags:
 - data inventory
 - data management
 - inventory.data.gov
+- open data
+- internal-todo
 toc: true
 ---

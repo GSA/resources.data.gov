@@ -6,6 +6,7 @@ format: ''
 layout: resource
 link: https://opendata.guide/chapter2.html
 name: Identifying data sets for public release
+policy tags: ''
 publish: true
 slug: data-sets-for-public-release
 source: Mark Headd

@@ -8,6 +8,7 @@ layout: resource
 link: https://www.congress.gov/bill/115th-congress/house-bill/4174/text
 name: "Foundations for Evidence-Based Policymaking Act of 2018 (\u201CEvidence Act\u201D\
   )"
+policy tags: ''
 publish: true
 slug: evidence-act
 source: congress.gov

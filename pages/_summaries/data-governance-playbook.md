@@ -6,6 +6,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/assets/documents/fds-data-governance-playbook.pdf
 name: The Data Governance Playbook
+policy tags: ''
 publish: true
 slug: data-governance-playbook
 source: Federal Data Strategy

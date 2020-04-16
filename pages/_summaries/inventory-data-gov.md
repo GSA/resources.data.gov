@@ -2,10 +2,11 @@
 category: Data tools
 description: Inventory.data.gov a tool for federal agencies to create and publish
   metadata catalogs. MAX login is required to access this link.
-format: Software tool
+format: ''
 layout: resource
 link: https://inventory.data.gov/
 name: 'Inventory.data.gov '
+policy tags: ''
 publish: true
 slug: inventory-data-gov
 source: TTS

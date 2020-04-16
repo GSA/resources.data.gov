@@ -2,10 +2,11 @@
 category: Data tools
 description: HMDA tools from the CFPB GitHub repository import and analyze mortgage
   application data.
-format: Software tool
+format: ''
 layout: resource
 link: https://github.com/cfpb/hmda-tools
 name: HMDA tools
+policy tags: ''
 publish: true
 slug: hmda-tools
 source: CFPB

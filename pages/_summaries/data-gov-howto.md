@@ -6,6 +6,7 @@ format: Video
 layout: resource
 link: https://www.youtube.com/watch?v=hbxA5-GDvvU
 name: "How to Get Your Agency\u2019s Data on to Data.gov"
+policy tags: ''
 publish: true
 slug: data-gov-howto
 source: digitalgov.gov

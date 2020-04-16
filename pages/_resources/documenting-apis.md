@@ -9,6 +9,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/tools/documenting-apis/
 name: Documenting APIs
+policy tags: ''
 publish: false
 slug: documenting-apis
 source: data.gov
@@ -16,5 +17,7 @@ tags:
 - API
 - DCAT
 - Project Open Metadata Schema
+- open data
+- internal-todo
 toc: true
 ---

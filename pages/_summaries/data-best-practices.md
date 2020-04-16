@@ -6,6 +6,7 @@ format: ''
 layout: resource
 link: https://www.w3.org/TR/dwbp/
 name: Data on the Web Best Practices
+policy tags: ''
 publish: true
 slug: data-best-practices
 source: W3C

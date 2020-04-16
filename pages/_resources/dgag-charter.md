@@ -7,9 +7,11 @@ format: Template/How-to
 layout: resource
 link: ''
 name: Data Governance Advisory Group (DGAG) Charter Template
+policy tags: ''
 publish: false
 slug: dgag-charter
 source: GSA
-tags: ''
+tags:
+- internal-todo
 toc: true
 ---

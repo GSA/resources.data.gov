@@ -9,6 +9,7 @@ format: ''
 layout: resource
 link: https://opendefinition.org/od/2.1/en/
 name: Open Definition 2.1
+policy tags: ''
 publish: true
 slug: okf-open-definition
 source: Open Knowledge Foundation

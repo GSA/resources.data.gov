@@ -4,10 +4,11 @@ description: GeoNode is a web-based application and platform for developing geos
   information systems (GIS) and for deploying spatial data infrastructures (SDI).
   It is designed to be extended and modified, and can be integrated into existing
   platforms.
-format: Software tool
+format: ''
 layout: resource
 link: http://geonode.org/
 name: 'GeoNode '
+policy tags: ''
 publish: true
 slug: geonode
 source: GeoNode

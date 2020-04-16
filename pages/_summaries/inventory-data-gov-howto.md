@@ -8,6 +8,7 @@ format: Video
 layout: resource
 link: https://www.youtube.com/watch?v=ciLYjDsF4lo
 name: How to use Inventory.Data.Gov
+policy tags: ''
 publish: true
 slug: inventory-data-gov-howto
 source: digitalgov.gov
