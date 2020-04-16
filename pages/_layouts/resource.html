@@ -47,10 +47,7 @@ layout: toc
     </p>
     <h3>Format</h3>
     <p>
-      {% assign slug_format = page.format | slugify %}
-      <a href="{{ "/resources/formats#" | append: slug_format | relative_url }}">
-        {{ page.format }}
-      </a>
+      {{ page.format }}
     </p>
   </div>
 </div>
