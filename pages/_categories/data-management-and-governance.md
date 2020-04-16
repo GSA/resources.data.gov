@@ -1,6 +1,8 @@
 ---
 category_name: Data management and governance
-description: <p>Intro text about this category</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+description: Find resources to support the implementation of policy, the
+  creation of data governance structures, and the day-to-day work of data
+  management in the federal government.
 primary_nav_section: Resources
 layout: resource_category
 show_on_front_page: true
