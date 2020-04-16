@@ -68,9 +68,8 @@ collections:
 
       - label: "format"
         name: "format"
-        widget: "select"
-        hint: "format of the resource"
-        options: ["---", "Case study", "Software tool", "Standard/schema", "Form/template", "Report", "OMB Memo", "Skill-builder"]
+        widget: "string"
+        hint: "format or type of resource"
         required: false
 
       - label: "link"
@@ -159,9 +158,8 @@ collections:
 
       - label: "format"
         name: "format"
-        widget: "select"
-        hint: "format of the resource summary"
-        options: ["---", "Case study", "Software tool", "Standard/schema", "Form/template", "Report", "OMB Memo", "Skill-builder"]
+        widget: "string"
+        hint: "format or type of resource"
         required: false
 
       - label: "link"
