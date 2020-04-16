@@ -7,17 +7,17 @@
 - text: Resources
   children:
     - text: Data management and governance
-      url: /resources/data-management-and-governance
+      url: /categories/data-management-and-governance
     - text: Policy
-      url: /resources/policy
+      url: /categories/policy
     - text: Skills Development
-      url: /resources/skills-development
+      url: /categories/skills-development
     - text: Data tools
-      url: /resources/data-tools
+      url: /categories/data-tools
     - text: Case studies and examples
-      url: /resources/case-studies-examples
+      url: /categories/case-studies-examples
 - text: Communities
-  url: /communities
+  url: /categories/communities
 - text: About
   children:
     - text: History
