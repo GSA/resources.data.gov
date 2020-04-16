@@ -6,7 +6,7 @@ description: Webinar guide to using the Paperwork Reduction Act (PRA) for user r
 format: Video
 layout: resource
 link: https://www.youtube.com/watch?v=_cqE4a8oAHU
-name: User Research and The Paperwork Reduction Act How to Get it Done (video)
+name: User Research and The Paperwork Reduction Act How to Get it Done
 publish: 'TRUE'
 slug: user-research-pra-howto
 source: digitalgov.gov

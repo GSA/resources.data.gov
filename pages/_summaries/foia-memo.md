@@ -1,8 +1,8 @@
 ---
 category: Policy
-description: PDF copy of the (March 19, 2009) Office of the Attorney General memo
-  that issues guidelines for the implementation of the Freedom of Information Act
-  (FOIA).  (3 pages, 1.2 MB)
+description: PDF copy of the Office of the Attorney General memo that issues guidelines
+  for the implementation of the Freedom of Information Act (FOIA). Dated March 19,
+  2009. (3 pages, 1.2 MB)
 format: PDF
 layout: resource
 link: https://www.justice.gov/sites/default/files/ag/legacy/2009/06/24/foia-memo-march2009.pdf

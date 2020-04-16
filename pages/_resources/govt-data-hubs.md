@@ -1,15 +1,16 @@
 ---
 category: Case studies & examples
-description: ''
+description: A list of Federal agency open data hubs, including USDA, HHS, NASA, and
+  many others.
 details: '[contents of the markdown file]'
 examples: ''
-format: Case study
+format: ''
 layout: resource
 link: https://project-open-data.cio.gov/data-hubs/
-name: Government Data Hubs.
+name: Government Data Hubs
 publish: ''
 slug: govt-data-hubs
-source: ''
+source: data.gov
 tags:
 - open data
 toc: true

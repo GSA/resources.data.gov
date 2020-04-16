@@ -1,15 +1,16 @@
 ---
 category: Case studies & examples
-description: ''
+description: Six reasons why making your agency's data open and accessible is a good
+  business decision.
 details: '[contents of the markdown file]'
 examples: ''
-format: Case study
+format: ''
 layout: resource
 link: https://resources.data.gov/case-studies/business-case/
-name: Business case for open data.
+name: Business case for open data
 publish: ''
 slug: open-data
-source: ''
+source: data.gov
 tags:
 - open data
 toc: true
