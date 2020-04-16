@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://www.cio.gov/
 name: CIO Council
-publish: 'TRUE'
+publish: true
 slug: cio-council
 source: cio.gov
 tags: ''

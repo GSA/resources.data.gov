@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://www.chcoc.gov/content/data-scientist-titling-guidance
 name: Data Scientist Titling Guidance
-publish: 'TRUE'
+publish: true
 slug: ds-titling-guidance
 source: OPM
 tags:

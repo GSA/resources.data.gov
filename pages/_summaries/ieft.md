@@ -11,7 +11,7 @@ format: ''
 layout: resource
 link: https://www.ietf.org/
 name: Internet Engineering Task Force (IEFT)
-publish: 'TRUE'
+publish: true
 slug: ieft
 source: IEFT
 tags:

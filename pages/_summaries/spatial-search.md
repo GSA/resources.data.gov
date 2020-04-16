@@ -7,7 +7,7 @@ format: Software tool
 layout: resource
 link: https://github.com/project-open-data/SpatialSearch
 name: 'SpatialSearch '
-publish: 'TRUE'
+publish: true
 slug: spatial-search
 source: Project Open Data
 tags:

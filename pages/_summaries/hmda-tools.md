@@ -6,7 +6,7 @@ format: Software tool
 layout: resource
 link: https://github.com/cfpb/hmda-tools
 name: HMDA tools
-publish: 'TRUE'
+publish: true
 slug: hmda-tools
 source: CFPB
 tags:

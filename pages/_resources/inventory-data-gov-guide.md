@@ -8,7 +8,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/tools/inventory-data-gov-guide/
 name: Inventory.data.gov Guide
-publish: ''
+publish: false
 slug: inventory-data-gov-guide
 source: inventory.data.gov
 tags:

@@ -8,7 +8,7 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/07/26/pradwg/
 name: Agencies Mobilize to Improve Emergency Response in Puerto Rico through Better
   Data
-publish: ''
+publish: false
 slug: fdspp-pr-emergency-response
 source: Federal Data Strategy
 tags:

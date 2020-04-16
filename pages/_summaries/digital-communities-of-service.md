@@ -8,7 +8,7 @@ format: ''
 layout: resource
 link: https://digital.gov/communities/
 name: Federal Digital Communities of Practice
-publish: 'TRUE'
+publish: true
 slug: digital-communities-of-service
 source: digital.gov
 tags: ''

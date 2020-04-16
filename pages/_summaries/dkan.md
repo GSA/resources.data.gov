@@ -6,7 +6,7 @@ format: Software tool
 layout: resource
 link: https://www.drupal.org/project/dkan
 name: DKAN
-publish: 'TRUE'
+publish: true
 slug: dkan
 source: DRUPAL
 tags:

@@ -6,7 +6,7 @@ format: Software tool
 layout: resource
 link: https://github.com/cfpb/qu
 name: qu
-publish: 'TRUE'
+publish: true
 slug: qu
 source: CFPB
 tags:

@@ -7,7 +7,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/04/19/veterans-legacy-memorial/
 name: The Veterans Legacy Memorial
-publish: ''
+publish: false
 slug: fdspp-va-veterans-legacy-memorial
 source: Federal Data Strategy
 tags:

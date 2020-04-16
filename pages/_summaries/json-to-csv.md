@@ -5,7 +5,7 @@ format: Software tool
 layout: resource
 link: https://konklone.io/json/
 name: JSON to CSV converter
-publish: 'TRUE'
+publish: true
 slug: json-to-csv
 source: Eric Mill (@konklone)
 tags:

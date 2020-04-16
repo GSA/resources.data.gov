@@ -8,7 +8,7 @@ format: PDF
 layout: resource
 link: https://www.federalregister.gov/uploads/2012/11/FR2-API-Case-Study1.pdf
 name: FederalRegister.gov API Case Study
-publish: 'TRUE'
+publish: true
 slug: federalregister-gov
 source: NARA/GPO
 tags:

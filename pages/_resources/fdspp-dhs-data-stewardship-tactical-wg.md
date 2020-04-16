@@ -7,7 +7,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/04/12/investing-in-learning-with-the-data-stewardship-tactical-working-group-at-dhs/
 name: Investing in Learning with the Data Stewardship Tactical Working Group at DHS
-publish: ''
+publish: false
 slug: fdspp-dhs-data-stewardship-tactical-wg
 source: Federal Data Strategy
 tags:

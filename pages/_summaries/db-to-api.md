@@ -6,7 +6,7 @@ format: Software tool
 layout: resource
 link: https://github.com/project-open-data/db-to-api
 name: Database to API
-publish: 'TRUE'
+publish: true
 slug: db-to-api
 source: Project Open Data
 tags:

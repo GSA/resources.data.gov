@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://www.w3.org/TR/vocab-dcat/
 name: Data Catalog Vocabulary (DCAT)
-publish: 'TRUE'
+publish: true
 slug: dcat
 source: W3C
 tags:

@@ -10,7 +10,7 @@ format: Software tool
 layout: resource
 link: https://ckan.org/
 name: CKAN
-publish: 'TRUE'
+publish: true
 slug: ckan
 source: CKAN
 tags:

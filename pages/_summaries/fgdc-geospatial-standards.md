@@ -8,7 +8,7 @@ format: ''
 layout: resource
 link: https://www.fgdc.gov/standards
 name: Federal Geographic Data Committee Geospatial Standards
-publish: 'TRUE'
+publish: true
 slug: fgdc-geospatial-standards
 source: FGDC
 tags:

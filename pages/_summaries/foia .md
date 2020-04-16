@@ -5,7 +5,7 @@ format: ''
 layout: resource
 link: https://www.foia.gov/
 name: FOIA.gov
-publish: 'TRUE'
+publish: true
 slug: 'foia '
 source: FOIA
 tags:

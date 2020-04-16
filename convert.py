@@ -36,6 +36,15 @@ def find_field(all_fields, field_name, get_options=False):
     except ValueError:
         return None
 
+def get_categories():
+    categories  = list()
+    for category_slug in os.listdir("pages/_categories/"):
+        with open(f"pages/_categories/{category_slug}") as category_fd:
+            raw = category_fd.read().replace('---', '')
+            data = yaml.load(raw, Loader=yaml.FullLoader)
+            categories.append(data["category_name"])
+    return categories
+
 def get_tags():
     keywords = list()
     for keyword_slug in os.listdir("pages/_keywords/"):
@@ -45,7 +54,7 @@ def get_tags():
             keywords.append(data["name"])
     return keywords
 
-categories = find_field(fields, "category", get_options=True)
+categories = get_categories()
 tags = get_tags()
 tag_counter = Counter()
 
@@ -123,6 +132,7 @@ with open(filename) as fd:
             markdown_data = dict(zip(headers, row))
             markdown_data["layout"] = "resource"
             markdown_data["toc"] = True
+            markdown_data["publish"] = bool(markdown_data["publish"])
             f.write("---\n")
             f.write(yaml.dump(markdown_data, default_flow_style=False))
             f.write("---")

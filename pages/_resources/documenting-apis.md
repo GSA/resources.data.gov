@@ -9,7 +9,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/tools/documenting-apis/
 name: Documenting APIs
-publish: ''
+publish: false
 slug: documenting-apis
 source: data.gov
 tags:

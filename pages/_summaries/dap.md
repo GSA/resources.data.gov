@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://digital.gov/dap/
 name: 'The Digital Analytics Program (DAP) '
-publish: 'TRUE'
+publish: true
 slug: dap
 source: digital.gov
 tags:

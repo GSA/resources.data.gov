@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://pra.digital.gov/
 name: Implementation Guide to the Paperwork Reduction Act
-publish: 'TRUE'
+publish: true
 slug: paperwork-reduction-act
 source: digital.gov
 tags:

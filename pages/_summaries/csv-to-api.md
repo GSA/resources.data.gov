@@ -6,7 +6,7 @@ format: Software tool
 layout: resource
 link: https://github.com/project-open-data/csv-to-api
 name: 'CSV to API generator '
-publish: 'TRUE'
+publish: true
 slug: csv-to-api
 source: Project Open Data
 tags:

@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/open-data-communities/
 name: Open Data Community of Practice
-publish: ''
+publish: false
 slug: open-data-communities
 source: data.gov
 tags:

@@ -5,7 +5,7 @@ format: Software tool
 layout: resource
 link: https://tabula.technology/
 name: Tabula
-publish: 'TRUE'
+publish: true
 slug: tabula
 source: Tabula
 tags:

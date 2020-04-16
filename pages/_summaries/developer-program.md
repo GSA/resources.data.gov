@@ -6,7 +6,7 @@ format: Software tool
 layout: resource
 link: https://18f.github.io/API-All-the-X/
 name: /Developer program
-publish: 'TRUE'
+publish: true
 slug: developer-program
 source: 18F
 tags:

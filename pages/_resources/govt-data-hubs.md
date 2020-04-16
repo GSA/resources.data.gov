@@ -8,7 +8,7 @@ format: ''
 layout: resource
 link: https://project-open-data.cio.gov/data-hubs/
 name: Government Data Hubs
-publish: ''
+publish: false
 slug: govt-data-hubs
 source: data.gov
 tags:

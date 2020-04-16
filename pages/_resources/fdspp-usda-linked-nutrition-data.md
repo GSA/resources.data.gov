@@ -9,7 +9,7 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/09/06/usda-linked-nutrition-data/
 name: How USDA Linked Federal and Commercial Data to Shed Light on the Nutritional
   Value of Retail Food Sales
-publish: ''
+publish: false
 slug: fdspp-usda-linked-nutrition-data
 source: Federal Data Strategy
 tags:

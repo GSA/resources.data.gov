@@ -5,7 +5,7 @@ format: ''
 layout: resource
 link: ''
 name: Data Exchange Community of Practice
-publish: ''
+publish: false
 slug: data-exchange-community-of-practice
 source: ''
 tags:

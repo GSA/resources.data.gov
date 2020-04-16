@@ -11,7 +11,7 @@ format: ''
 layout: resource
 link: http://www.unece.org/cefact/about.html
 name: United Nations Economic Commission for Europe (UNECE)
-publish: 'TRUE'
+publish: true
 slug: unece
 source: UNECE
 tags:

@@ -6,7 +6,7 @@ format: Software tool
 layout: resource
 link: https://pycsw.org/
 name: pycsw
-publish: 'TRUE'
+publish: true
 slug: pycsw
 source: pycsw
 tags:

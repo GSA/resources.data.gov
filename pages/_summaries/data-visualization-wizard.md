@@ -6,7 +6,7 @@ format: Software tool
 layout: resource
 link: https://www.drupal.org/project/datavizwiz
 name: Data Visualization wizard
-publish: 'TRUE'
+publish: true
 slug: data-visualization-wizard
 source: DRUPAL
 tags:

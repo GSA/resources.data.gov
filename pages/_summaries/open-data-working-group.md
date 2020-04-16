@@ -5,7 +5,7 @@ format: ''
 layout: resource
 link: ''
 name: Open Data Working Group
-publish: ''
+publish: false
 slug: open-data-working-group
 source: ''
 tags:

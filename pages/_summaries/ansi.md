@@ -10,7 +10,7 @@ format: ''
 layout: resource
 link: https://www.ansi.org/
 name: American National Standards Institute
-publish: 'TRUE'
+publish: true
 slug: ansi
 source: ANSI
 tags:

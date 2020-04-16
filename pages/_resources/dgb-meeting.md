@@ -7,7 +7,7 @@ format: Template/How-to
 layout: resource
 link: ''
 name: Data Governance Board Meeting Strategy
-publish: ''
+publish: false
 slug: dgb-meeting
 source: SSA
 tags:

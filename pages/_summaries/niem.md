@@ -9,7 +9,7 @@ format: ''
 layout: resource
 link: https://www.niem.gov/
 name: National Information Exchange Model (NIEM)
-publish: 'TRUE'
+publish: true
 slug: niem
 source: NIEM
 tags:

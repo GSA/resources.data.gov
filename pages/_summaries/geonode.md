@@ -8,7 +8,7 @@ format: Software tool
 layout: resource
 link: http://geonode.org/
 name: 'GeoNode '
-publish: 'TRUE'
+publish: true
 slug: geonode
 source: GeoNode
 tags:

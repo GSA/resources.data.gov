@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://playbook.cio.gov/
 name: The Digital Services Playbook
-publish: 'TRUE'
+publish: true
 slug: digital-services-playbook
 source: CIO
 tags:

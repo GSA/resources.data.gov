@@ -7,7 +7,7 @@ format: Case study
 layout: resource
 link: https://developer.nrel.gov/api-case-study/
 name: National Renewable Energy Laboratory API Case Study
-publish: 'TRUE'
+publish: true
 slug: nrel-api-case-study
 source: NREL
 tags:

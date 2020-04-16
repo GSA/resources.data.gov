@@ -7,7 +7,7 @@ format: Software tool
 layout: resource
 link: https://labs.data.gov/dashboard/datagov/csv_to_json
 name: Project Open Data CSV to JSON converter
-publish: 'TRUE'
+publish: true
 slug: pod-csv-to-json
 source: Project Open Data
 tags:
