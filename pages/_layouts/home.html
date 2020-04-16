@@ -22,7 +22,10 @@ class: home
       <h2>Browse resources by category</h2>
     </div>
     <div class="grid-col-8 padding-205">
-      {% for category in site.categories %}
+      <!-- rely on site navigation to guide which resources show up -->
+      {% assign resources = site.data.navigation | where: "text", "Resources" | first %}
+      {% for resource in resources.children %}
+        {% assign category = site.categories | where: "category_name", resource.text | first %}
         {% if category.show_on_front_page %}
           <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
             <h3 class="margin-top-0 text-primary-vivid">{{ category.category_name }}</h3>
