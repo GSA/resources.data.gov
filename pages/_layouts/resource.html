@@ -36,12 +36,13 @@ layout: toc
     </p>
     <h3>Keywords</h3>
     <p>
-      {% assign tags = page.tags | join: " " | split: "," %}
-      {% for tag in tags %}
-        {% assign slug_tag = tag | slugify %}
-        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">
-          {{ tag }}
-        </a>
+      {% for tag in page.tags %}
+        <div>
+          {% assign slug_tag = tag | slugify %}
+          <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">
+            {{ tag }}
+          </a>
+        </div>
       {% endfor %}
     </p>
     <h3>Format</h3>

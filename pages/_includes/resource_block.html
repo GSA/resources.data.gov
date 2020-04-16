@@ -27,14 +27,14 @@
 
   <div class="resource-side no_toc_section">
     <h4>Keywords</h4>
-    <!-- TODO: tags are not quoted in front matter, so they are split into spaces. -->
-    {% assign tags = resource.tags | join: " " | split: "," %}
     <p>
-      {% for tag in tags %}
-        {% assign slug_tag = tag | slugify %}
-        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">
-          {{ tag }}
-        </a>
+      {% for tag in resource.tags %}
+        <div>
+          {% assign slug_tag = tag | slugify %}
+          <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">
+            {{ tag }}
+          </a>
+        </div>
         {% else %}
         This resource has no keywords.
       {% endfor %}
