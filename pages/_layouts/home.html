@@ -26,7 +26,7 @@ class: home
         {% if category.show_on_front_page %}
           <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
             <h3 class="margin-top-0 text-primary-vivid">{{ category.category_name }}</h3>
-            <p class="text-ink margin-bottom-0 line-height-sans-4">{{ category.description }}</p>
+            <p class="text-ink line-height-sans-4">{{ category.description }}</p>
             <a href="{{ category.url | relative_url }}">
               See all {{ category.category_name }} resources &gt;
             </a>
