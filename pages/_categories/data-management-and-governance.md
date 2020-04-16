@@ -1,6 +1,6 @@
 ---
 category_name: Data management and governance
-description: Playbooks, guidance, and other resources to support the
+description: Playbooks, guidance, templates, and other resources to support the
   implementation of policy, the creation of data governance structures, and the
   day-to-day work of data management in the federal government
 primary_nav_section: Resources
