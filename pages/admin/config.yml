@@ -191,12 +191,19 @@ collections:
         hint: "the layout template to use"
         required: true
 
-      - label: "primary_nav_section"
-        name: "navigation section"
+      - label: "navigation section"
+        name: "primary_nav_section"
         widget: "select"
         options: ["Resources", "Communities"]
         default: "Resources"
         hint: "the navigation section this category belongs to"
+        required: true
+
+      - label: "show on front page"
+        name: "show_on_front_page"
+        widget: "boolean"
+        default: true
+        hint: "show this category on the front page?"
         required: true
 
   - name: "keywords"
