@@ -2,18 +2,18 @@
   children:
     - text: Strategy
       url: /strategy
-    - text: Open Data Communities
+    - text: Open data communities
       url: /open-data-communities
 - text: Resources
   children:
     - text: Data management and governance
       url: /categories/data-management-and-governance
-    - text: Policy
-      url: /categories/policy
-    - text: Skills Development
-      url: /categories/skills-development
     - text: Data tools
       url: /categories/data-tools
+    - text: Skills development
+      url: /categories/skills-development 
+    - text: Policy
+      url: /categories/policy
     - text: Case studies and examples
       url: /categories/case-studies-examples
 - text: Communities
