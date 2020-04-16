@@ -40,16 +40,11 @@
       {% endfor %}
     </p>
 
-    <h4>Format</h4>
-    <p>
-      {% if resource.format != "" %}
-        {% assign slug_format = resource.format | slugify %}
-        <a href="{{ "/resources/formats#" | append: slug_format | relative_url }}">
-          {{ resource.format }}
-        </a>
-      {% else %}
-        No format provided.
-      {% endif %}
-    </p>
+    {% if resource.format %}
+      <h4>Format</h4>
+      <p>
+        {{ resource.format }}
+      </p>
+    {% endif %}
   </div>
 </div>

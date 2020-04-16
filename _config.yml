@@ -73,5 +73,3 @@ toc:
   sublist_class: 'usa-sidenav__sublist'
   item_class: 'usa-sidenav__item'
   item_prefix: 'usa-'
-
-resource_formats: [Case study, Software tool, Standard/schema, Form/template, Report, OMB Memo, Skill-builder]
