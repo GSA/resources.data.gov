@@ -23,22 +23,15 @@ class: home
     </div>
     <div class="grid-col-8 padding-205">
       {% for category in site.categories %}
-        <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
-          <h3 class="margin-top-0 text-primary-vivid">{{ category.category_name }}</h3>
-          <p class="text-ink margin-bottom-0 line-height-sans-4">{{ category.description }}</p>
-
-          <!-- special case communities -->
-          {% assign category_slug = category.category_name | slugify %}
-          {% if category.category_name == "Communities" %}
-            <a href="{{ category_slug | relative_url }}">
+        {% if category.show_on_front_page %}
+          <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
+            <h3 class="margin-top-0 text-primary-vivid">{{ category.category_name }}</h3>
+            <p class="text-ink margin-bottom-0 line-height-sans-4">{{ category.description }}</p>
+            <a href="{{ category.url | relative_url }}">
               See all {{ category.category_name }} resources &gt;
             </a>
-          {% else %}
-            <a href="{{ "/resources/" | append: category_slug | relative_url }}">
-              See all {{ category.category_name }} resources &gt;
-            </a>
-          {% endif %}
-        </div>
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
