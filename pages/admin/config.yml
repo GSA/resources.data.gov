@@ -48,9 +48,12 @@ collections:
 
       - label: "category"
         name: "category"
-        widget: "select"
+        widget: "relation"
+        valueField: "category_name"
+        searchFields: ["category_name"]
         hint: "category of the resource"
-        options: ["---", "Data management & governance", "Data tools", "Skills development", "Communities", "Case studies & examples", "Policy"]
+        collection: "categories"
+        multiple: false
         required: true
 
       - label: "tags"
@@ -136,9 +139,12 @@ collections:
 
       - label: "category"
         name: "category"
-        widget: "select"
-        hint: "category of the resource"
-        options: ["---", "Data management & governance", "Data tools", "Skills development", "Communities", "Case studies & examples", "Policy"]
+        widget: "relation"
+        valueField: "category_name"
+        searchFields: ["category_name"]
+        hint: "category of the resource summary"
+        collection: "categories"
+        multiple: false
         required: true
 
       - label: "tags"

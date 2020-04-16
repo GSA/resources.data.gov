@@ -1,5 +1,5 @@
 ---
-category_name: Data management and governance
+category_name: Data management & governance
 description: Playbooks, guidance, templates, and other resources to support the
   implementation of policy, the creation of data governance structures, and the
   day-to-day work of data management in the federal government

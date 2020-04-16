@@ -7,7 +7,7 @@
 - text: Resources
   children:
     - text: Data management & governance
-      url: /categories/data-management-and-governance
+      url: /categories/data-management-governance
     - text: Data tools
       url: /categories/data-tools
     - text: Skills development
