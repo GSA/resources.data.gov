@@ -12,4 +12,5 @@ slug: repository
 source: Project Open Data
 tags:
 - geospatial
+toc: true
 ---

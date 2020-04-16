@@ -12,4 +12,5 @@ slug: dgb-meeting
 source: SSA
 tags:
 - data governance
+toc: true
 ---

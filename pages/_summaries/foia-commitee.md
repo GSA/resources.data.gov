@@ -11,4 +11,5 @@ slug: foia-commitee
 source: NARA
 tags:
 - open data
+toc: true
 ---

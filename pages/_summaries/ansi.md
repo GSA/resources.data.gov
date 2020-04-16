@@ -15,4 +15,5 @@ slug: ansi
 source: ANSI
 tags:
 - data standards
+toc: true
 ---

@@ -11,4 +11,5 @@ slug: data-sets-for-public-release
 source: Mark Headd
 tags:
 - open data
+toc: true
 ---

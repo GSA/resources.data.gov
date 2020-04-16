@@ -12,4 +12,5 @@ slug: geoportal-server
 source: Esri
 tags:
 - geospatial
+toc: true
 ---

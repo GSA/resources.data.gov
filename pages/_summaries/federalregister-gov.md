@@ -13,4 +13,5 @@ slug: federalregister-gov
 source: NARA/GPO
 tags:
 - API
+toc: true
 ---

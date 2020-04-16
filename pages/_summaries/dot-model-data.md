@@ -12,4 +12,5 @@ slug: dot-model-data
 source: DOT
 tags:
 - data inventory
+toc: true
 ---

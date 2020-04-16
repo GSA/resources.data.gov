@@ -12,4 +12,5 @@ slug: data-gov-open-data-howto
 source: ''
 tags:
 - open data
+toc: true
 ---

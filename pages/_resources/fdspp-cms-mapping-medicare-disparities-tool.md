@@ -18,4 +18,5 @@ tags:
 - FDS Practice 4 Use Data to Guide Decision-Making
 - FDS Practice 6 Convey Insights from Data
 - FDS Practice 36 Leverage Partnerships
+toc: true
 ---

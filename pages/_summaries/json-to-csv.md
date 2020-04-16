@@ -10,4 +10,5 @@ slug: json-to-csv
 source: Eric Mill (@konklone)
 tags:
 - data converter
+toc: true
 ---

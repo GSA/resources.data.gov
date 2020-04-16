@@ -122,6 +122,7 @@ with open(filename) as fd:
         with open(markdown_file, "x") as f:
             markdown_data = dict(zip(headers, row))
             markdown_data["layout"] = "resource"
+            markdown_data["toc"] = True
             f.write("---\n")
             f.write(yaml.dump(markdown_data, default_flow_style=False))
             f.write("---")

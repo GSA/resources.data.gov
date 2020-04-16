@@ -14,4 +14,5 @@ tags:
 - data management
 - data inventory
 - inventory.data.gov
+toc: true
 ---

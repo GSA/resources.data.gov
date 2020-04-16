@@ -12,4 +12,5 @@ slug: copyright
 source: usa.gov
 tags:
 - data management
+toc: true
 ---

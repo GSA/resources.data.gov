@@ -18,4 +18,5 @@ tags:
 - data management
 - data inventory
 - open data
+toc: true
 ---

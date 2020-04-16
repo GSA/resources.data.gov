@@ -13,4 +13,5 @@ source: GSA
 tags:
 - data governance
 - CDO
+toc: true
 ---

@@ -13,4 +13,5 @@ slug: json-validator
 source: Project Open Data
 tags:
 - data validation
+toc: true
 ---

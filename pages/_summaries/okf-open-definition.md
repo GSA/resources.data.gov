@@ -14,4 +14,5 @@ slug: okf-open-definition
 source: Open Knowledge Foundation
 tags:
 - open data
+toc: true
 ---

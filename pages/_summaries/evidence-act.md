@@ -13,4 +13,5 @@ slug: evidence-act
 source: congress.gov
 tags:
 - open data
+toc: true
 ---

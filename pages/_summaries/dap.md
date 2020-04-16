@@ -12,4 +12,5 @@ slug: dap
 source: digital.gov
 tags:
 - data analytics
+toc: true
 ---

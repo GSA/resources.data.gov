@@ -24,4 +24,5 @@ tags:
 - FDS Practice 28 Align Quality with Intended Use
 - collaboration
 - geospatial
+toc: true
 ---

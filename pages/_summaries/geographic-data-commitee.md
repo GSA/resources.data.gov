@@ -13,4 +13,5 @@ slug: geographic-data-commitee
 source: FGDC
 tags:
 - geospatial
+toc: true
 ---

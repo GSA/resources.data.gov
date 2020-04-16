@@ -12,4 +12,5 @@ slug: 8-principles-open-data
 source: opengovdata.org
 tags:
 - open data
+toc: true
 ---

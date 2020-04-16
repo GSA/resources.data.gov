@@ -14,4 +14,5 @@ source: digitalgov.gov
 tags:
 - data inventory
 - inventory.data.gov
+toc: true
 ---

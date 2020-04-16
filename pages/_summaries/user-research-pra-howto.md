@@ -12,4 +12,5 @@ slug: user-research-pra-howto
 source: digitalgov.gov
 tags:
 - PRA
+toc: true
 ---

@@ -10,4 +10,5 @@ slug: tabula
 source: Tabula
 tags:
 - data cleaning
+toc: true
 ---

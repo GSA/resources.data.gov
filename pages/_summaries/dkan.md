@@ -11,4 +11,5 @@ slug: dkan
 source: DRUPAL
 tags:
 - open data
+toc: true
 ---

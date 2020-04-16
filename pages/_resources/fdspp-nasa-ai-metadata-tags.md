@@ -22,4 +22,5 @@ tags:
 - FDS Practice 4 Use Data to Guide Decision-Making
 - FDS Practice 10 Provide Resources Explicitly to Leverage Data Assets
 - process redesign
+toc: true
 ---

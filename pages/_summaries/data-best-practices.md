@@ -11,4 +11,5 @@ slug: data-best-practices
 source: W3C
 tags:
 - data management
+toc: true
 ---

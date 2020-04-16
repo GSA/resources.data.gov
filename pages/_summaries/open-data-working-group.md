@@ -10,4 +10,5 @@ slug: open-data-working-group
 source: ''
 tags:
 - open data
+toc: true
 ---

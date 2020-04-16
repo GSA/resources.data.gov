@@ -13,4 +13,5 @@ slug: geonode
 source: GeoNode
 tags:
 - geospatial
+toc: true
 ---

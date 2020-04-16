@@ -15,4 +15,5 @@ publish: 'TRUE'
 slug: fds-action-plan
 source: Federal Data Strategy
 tags: ''
+toc: true
 ---

@@ -14,4 +14,5 @@ slug: w3c
 source: W3C
 tags:
 - data standards
+toc: true
 ---

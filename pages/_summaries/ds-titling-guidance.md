@@ -15,4 +15,5 @@ tags:
 - data management
 - data visualization
 - data cleaning
+toc: true
 ---

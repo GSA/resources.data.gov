@@ -11,4 +11,5 @@ slug: github-repo-pod
 source: Project Open Data
 tags:
 - open data
+toc: true
 ---

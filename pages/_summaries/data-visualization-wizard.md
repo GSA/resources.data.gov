@@ -11,4 +11,5 @@ slug: data-visualization-wizard
 source: DRUPAL
 tags:
 - data visualization
+toc: true
 ---

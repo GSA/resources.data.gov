@@ -12,4 +12,5 @@ slug: spatial-search
 source: Project Open Data
 tags:
 - geospatial
+toc: true
 ---

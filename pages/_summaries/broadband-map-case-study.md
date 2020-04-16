@@ -13,4 +13,5 @@ slug: broadband-map-case-study
 source: FCC
 tags:
 - open data
+toc: true
 ---

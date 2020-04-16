@@ -24,4 +24,5 @@ tags:
 - FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles
 - process redesign
 - training
+toc: true
 ---

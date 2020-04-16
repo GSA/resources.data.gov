@@ -11,4 +11,5 @@ publish: 'TRUE'
 slug: foia-memo
 source: Office of the Attorney General
 tags: ''
+toc: true
 ---

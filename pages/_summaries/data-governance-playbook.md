@@ -11,4 +11,5 @@ slug: data-governance-playbook
 source: Federal Data Strategy
 tags:
 - data governance
+toc: true
 ---

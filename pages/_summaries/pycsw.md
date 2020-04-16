@@ -11,4 +11,5 @@ slug: pycsw
 source: pycsw
 tags:
 - geospatial
+toc: true
 ---

@@ -11,4 +11,5 @@ slug: hmda-tools
 source: CFPB
 tags:
 - data analytics
+toc: true
 ---

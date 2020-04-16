@@ -13,4 +13,5 @@ source: W3C
 tags:
 - DCAT
 - data schema
+toc: true
 ---

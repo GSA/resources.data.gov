@@ -10,4 +10,5 @@ slug: iso-catalog
 source: ISO
 tags:
 - data standards
+toc: true
 ---

@@ -11,4 +11,5 @@ publish: ''
 slug: dgag-charter
 source: GSA
 tags: ''
+toc: true
 ---

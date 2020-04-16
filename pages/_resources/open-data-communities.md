@@ -12,4 +12,5 @@ slug: open-data-communities
 source: ''
 tags:
 - open data
+toc: true
 ---

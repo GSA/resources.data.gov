@@ -11,4 +11,5 @@ publish: ''
 slug: labor-case-study
 source: ''
 tags: ''
+toc: true
 ---

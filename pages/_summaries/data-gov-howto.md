@@ -11,4 +11,5 @@ slug: data-gov-howto
 source: digitalgov.gov
 tags:
 - open data
+toc: true
 ---

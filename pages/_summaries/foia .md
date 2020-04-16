@@ -10,4 +10,5 @@ slug: 'foia '
 source: FOIA
 tags:
 - open data
+toc: true
 ---

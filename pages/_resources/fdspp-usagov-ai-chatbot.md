@@ -17,4 +17,5 @@ tags:
 - FDS Practice 2 Assess and Balance the Needs of Stakeholders
 - FDS Practice 3 Champion Data Use
 - process redesign
+toc: true
 ---

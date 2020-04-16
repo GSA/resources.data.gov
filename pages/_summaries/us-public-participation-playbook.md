@@ -12,4 +12,5 @@ slug: us-public-participation-playbook
 source: ''
 tags:
 - data management
+toc: true
 ---

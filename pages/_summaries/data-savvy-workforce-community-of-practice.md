@@ -9,4 +9,5 @@ publish: ''
 slug: data-savvy-workforce-community-of-practice
 source: ''
 tags: ''
+toc: true
 ---

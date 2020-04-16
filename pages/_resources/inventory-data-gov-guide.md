@@ -13,4 +13,5 @@ source: ''
 tags:
 - data inventory
 - data management
+toc: true
 ---

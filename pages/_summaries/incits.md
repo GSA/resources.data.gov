@@ -14,4 +14,5 @@ slug: incits
 source: INCITS
 tags:
 - data standards
+toc: true
 ---

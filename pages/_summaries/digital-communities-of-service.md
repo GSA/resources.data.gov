@@ -12,4 +12,5 @@ publish: 'TRUE'
 slug: digital-communities-of-service
 source: digital.gov
 tags: ''
+toc: true
 ---

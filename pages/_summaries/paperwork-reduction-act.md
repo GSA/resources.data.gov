@@ -11,4 +11,5 @@ slug: paperwork-reduction-act
 source: digital.gov
 tags:
 - PRA
+toc: true
 ---

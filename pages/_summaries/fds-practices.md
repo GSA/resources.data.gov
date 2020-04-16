@@ -12,4 +12,5 @@ publish: 'TRUE'
 slug: fds-practices
 source: Federal Data Strategy
 tags: ''
+toc: true
 ---

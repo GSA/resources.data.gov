@@ -12,4 +12,5 @@ slug: documenting-apis
 source: ''
 tags:
 - API
+toc: true
 ---

@@ -12,4 +12,5 @@ slug: nrel-api-case-study
 source: NREL
 tags:
 - API
+toc: true
 ---

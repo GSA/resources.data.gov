@@ -12,4 +12,5 @@ slug: odeg
 source: ''
 tags:
 - open data
+toc: true
 ---

@@ -12,4 +12,5 @@ slug: digital-services-playbook
 source: CIO
 tags:
 - data management
+toc: true
 ---

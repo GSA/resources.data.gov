@@ -10,4 +10,5 @@ slug: data-exchange-community-of-practice
 source: ''
 tags:
 - open data
+toc: true
 ---
