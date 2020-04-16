@@ -11,5 +11,6 @@ name: 'FIPS 199: "Standards for Security Categorization of Federal Information a
 publish: 'TRUE'
 slug: fips-199
 source: NIST
-tags: data standards
+tags:
+- data standards
 ---

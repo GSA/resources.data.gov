@@ -14,5 +14,6 @@ name: Internet Engineering Task Force (IEFT)
 publish: 'TRUE'
 slug: ieft
 source: IEFT
-tags: data standards
+tags:
+- data standards
 ---

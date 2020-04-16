@@ -9,5 +9,9 @@ name: 'Inventory.data.gov '
 publish: 'TRUE'
 slug: inventory-data-gov
 source: TTS
-tags: data schema,data management,data inventory, inventory.data.gov
+tags:
+- data schema
+- data management
+- data inventory
+- inventory.data.gov
 ---

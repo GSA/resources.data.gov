@@ -12,5 +12,6 @@ name: Open Definition 2.1
 publish: 'TRUE'
 slug: okf-open-definition
 source: Open Knowledge Foundation
-tags: open data
+tags:
+- open data
 ---

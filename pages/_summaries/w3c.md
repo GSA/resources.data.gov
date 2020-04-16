@@ -12,5 +12,6 @@ name: 'The World Wide Web Consortium (W3C) '
 publish: 'TRUE'
 slug: w3c
 source: W3C
-tags: data standards
+tags:
+- data standards
 ---

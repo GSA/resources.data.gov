@@ -10,5 +10,6 @@ name: The Digital Services Playbook
 publish: 'TRUE'
 slug: digital-services-playbook
 source: CIO
-tags: data management
+tags:
+- data management
 ---

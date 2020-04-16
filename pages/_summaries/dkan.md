@@ -9,5 +9,6 @@ name: DKAN
 publish: 'TRUE'
 slug: dkan
 source: DRUPAL
-tags: open data
+tags:
+- open data
 ---

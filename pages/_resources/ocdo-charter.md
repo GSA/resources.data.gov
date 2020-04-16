@@ -10,5 +10,7 @@ name: Office of the Chief Data Officer (OCDO) Charter Template
 publish: ''
 slug: ocdo-charter
 source: GSA
-tags: data governance, CDO
+tags:
+- data governance
+- CDO
 ---

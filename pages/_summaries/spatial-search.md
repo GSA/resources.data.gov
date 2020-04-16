@@ -10,5 +10,6 @@ name: 'SpatialSearch '
 publish: 'TRUE'
 slug: spatial-search
 source: Project Open Data
-tags: geospatial
+tags:
+- geospatial
 ---

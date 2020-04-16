@@ -9,5 +9,6 @@ name: GitHub repository for Project Open Data
 publish: 'TRUE'
 slug: github-repo-pod
 source: Project Open Data
-tags: open data
+tags:
+- open data
 ---

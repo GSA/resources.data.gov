@@ -10,7 +10,12 @@ name: The Mapping Medicare Disparities Tool
 publish: ''
 slug: fdspp-cms-mapping-medicare-disparities-tool
 source: Federal Data Strategy
-tags: geospatial, FDS Principle 1 Uphold Ethics, FDS Principle 3 Promote Transparency,
-  FDS Principle 5 Harness Existing Data, FDS Practice 4 Use Data to Guide Decision-Making,
-  FDS Practice 6 Convey Insights from Data, FDS Practice 36 Leverage Partnerships
+tags:
+- geospatial
+- FDS Principle 1 Uphold Ethics
+- FDS Principle 3 Promote Transparency
+- FDS Principle 5 Harness Existing Data
+- FDS Practice 4 Use Data to Guide Decision-Making
+- FDS Practice 6 Convey Insights from Data
+- FDS Practice 36 Leverage Partnerships
 ---

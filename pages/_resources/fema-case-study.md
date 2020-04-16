@@ -10,5 +10,6 @@ name: Disaster Assistance Program Coordination - FEMA Case Study.
 publish: ''
 slug: fema-case-study
 source: ''
-tags: data sharing
+tags:
+- data sharing
 ---

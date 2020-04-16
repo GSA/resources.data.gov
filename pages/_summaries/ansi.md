@@ -13,5 +13,6 @@ name: American National Standards Institute
 publish: 'TRUE'
 slug: ansi
 source: ANSI
-tags: data standards
+tags:
+- data standards
 ---

@@ -10,5 +10,6 @@ name: The U.S. Public Participation Playbook
 publish: 'TRUE'
 slug: us-public-participation-playbook
 source: ''
-tags: data management
+tags:
+- data management
 ---

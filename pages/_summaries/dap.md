@@ -10,5 +10,6 @@ name: 'The Digital Analytics Program (DAP) '
 publish: 'TRUE'
 slug: dap
 source: digital.gov
-tags: data analytics
+tags:
+- data analytics
 ---

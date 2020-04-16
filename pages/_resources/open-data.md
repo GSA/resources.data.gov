@@ -10,5 +10,6 @@ name: Business case for open data.
 publish: ''
 slug: open-data
 source: ''
-tags: open data
+tags:
+- open data
 ---

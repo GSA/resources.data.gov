@@ -9,5 +9,6 @@ name: pycsw
 publish: 'TRUE'
 slug: pycsw
 source: pycsw
-tags: geospatial
+tags:
+- geospatial
 ---

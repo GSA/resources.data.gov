@@ -106,6 +106,14 @@ with open(filename) as fd:
         if filename.endswith(".md"):
             os.unlink(f"{path}/{filename}")
 
+    # custom handling for tags: convert them to a list so that the
+    # yaml dump can produce tags as a list, not inline
+    for index, row in enumerate(rows)        :
+        csv_tags = row[tags_index]
+        if not csv_tags:
+            continue
+        row[tags_index] = [t.strip() for t in csv_tags.split(",")]
+
     for row in rows:
         slug = row[slug_index]
         if not slug:
@@ -115,7 +123,7 @@ with open(filename) as fd:
             markdown_data = dict(zip(headers, row))
             markdown_data["layout"] = "resource"
             f.write("---\n")
-            f.write(yaml.dump(markdown_data))
+            f.write(yaml.dump(markdown_data, default_flow_style=False))
             f.write("---")
 
 # obtain unused tags (NB: unused tags can be in other collections)

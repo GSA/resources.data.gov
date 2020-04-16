@@ -9,5 +9,6 @@ name: qu
 publish: 'TRUE'
 slug: qu
 source: CFPB
-tags: open data
+tags:
+- open data
 ---

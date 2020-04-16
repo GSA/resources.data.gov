@@ -9,5 +9,6 @@ name: Data Visualization wizard
 publish: 'TRUE'
 slug: data-visualization-wizard
 source: DRUPAL
-tags: data visualization
+tags:
+- data visualization
 ---

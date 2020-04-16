@@ -9,5 +9,6 @@ name: The Data Governance Playbook
 publish: 'TRUE'
 slug: data-governance-playbook
 source: Federal Data Strategy
-tags: data governance
+tags:
+- data governance
 ---

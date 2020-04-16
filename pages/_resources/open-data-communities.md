@@ -10,5 +10,6 @@ name: Open Data Community of Practice
 publish: ''
 slug: open-data-communities
 source: ''
-tags: open data
+tags:
+- open data
 ---

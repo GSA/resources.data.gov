@@ -9,5 +9,6 @@ name: /Developer program
 publish: 'TRUE'
 slug: developer-program
 source: 18F
-tags: API
+tags:
+- API
 ---

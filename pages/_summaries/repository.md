@@ -10,5 +10,6 @@ name: ESRI2Open
 publish: 'TRUE'
 slug: repository
 source: Project Open Data
-tags: geospatial
+tags:
+- geospatial
 ---

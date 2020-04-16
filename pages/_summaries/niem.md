@@ -12,5 +12,6 @@ name: National Information Exchange Model (NIEM)
 publish: 'TRUE'
 slug: niem
 source: NIEM
-tags: data standards
+tags:
+- data standards
 ---

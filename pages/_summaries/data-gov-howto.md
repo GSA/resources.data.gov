@@ -9,5 +9,6 @@ name: "How to Get Your Agency\u2019s Data on to Data.gov"
 publish: 'TRUE'
 slug: data-gov-howto
 source: digitalgov.gov
-tags: open data
+tags:
+- open data
 ---

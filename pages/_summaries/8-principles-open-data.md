@@ -10,5 +10,6 @@ name: Annotated 8 Principles of Open Government Data
 publish: 'TRUE'
 slug: 8-principles-open-data
 source: opengovdata.org
-tags: open data
+tags:
+- open data
 ---

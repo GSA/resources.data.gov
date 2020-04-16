@@ -8,5 +8,6 @@ name: JSON to CSV converter
 publish: 'TRUE'
 slug: json-to-csv
 source: Eric Mill (@konklone)
-tags: data converter
+tags:
+- data converter
 ---

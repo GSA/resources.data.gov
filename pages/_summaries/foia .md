@@ -8,5 +8,6 @@ name: FOIA.gov
 publish: 'TRUE'
 slug: 'foia '
 source: FOIA
-tags: open data
+tags:
+- open data
 ---

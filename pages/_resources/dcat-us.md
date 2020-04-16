@@ -11,5 +11,7 @@ name: DCAT-US (Project Open Data Metadata Schema).
 publish: ''
 slug: dcat-us
 source: ''
-tags: data schema, open data
+tags:
+- data schema
+- open data
 ---

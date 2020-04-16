@@ -10,5 +10,6 @@ name: Geoportal Server
 publish: 'TRUE'
 slug: geoportal-server
 source: Esri
-tags: geospatial
+tags:
+- geospatial
 ---

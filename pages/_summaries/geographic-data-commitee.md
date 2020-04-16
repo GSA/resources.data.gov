@@ -11,5 +11,6 @@ name: Federal Geographic Data Committee
 publish: 'TRUE'
 slug: geographic-data-commitee
 source: FGDC
-tags: geospatial
+tags:
+- geospatial
 ---

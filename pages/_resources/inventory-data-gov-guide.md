@@ -10,5 +10,7 @@ name: Inventory.data.gov Guide.
 publish: ''
 slug: inventory-data-gov-guide
 source: ''
-tags: data inventory, data management
+tags:
+- data inventory
+- data management
 ---

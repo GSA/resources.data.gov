@@ -10,5 +10,6 @@ name: National Renewable Energy Laboratory API Case Study
 publish: 'TRUE'
 slug: nrel-api-case-study
 source: NREL
-tags: API
+tags:
+- API
 ---

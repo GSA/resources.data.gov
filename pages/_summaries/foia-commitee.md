@@ -9,5 +9,6 @@ name: Final Report and Recommendations of the 2016-2018 FOIA Advisory Committee
 publish: 'TRUE'
 slug: foia-commitee
 source: NARA
-tags: open data
+tags:
+- open data
 ---

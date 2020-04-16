@@ -10,5 +10,6 @@ name: Documenting APIs.
 publish: ''
 slug: documenting-apis
 source: ''
-tags: API
+tags:
+- API
 ---

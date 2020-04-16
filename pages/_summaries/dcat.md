@@ -10,5 +10,7 @@ name: Data Catalog Vocabulary (DCAT)
 publish: 'TRUE'
 slug: dcat
 source: W3C
-tags: DCAT, data schema
+tags:
+- DCAT
+- data schema
 ---

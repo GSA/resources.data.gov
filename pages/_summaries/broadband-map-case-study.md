@@ -11,5 +11,6 @@ name: 'The National Broadband Map: A Case Study on Open Innovation for National 
 publish: 'TRUE'
 slug: broadband-map-case-study
 source: FCC
-tags: open data
+tags:
+- open data
 ---

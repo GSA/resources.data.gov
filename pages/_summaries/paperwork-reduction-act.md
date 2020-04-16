@@ -9,5 +9,6 @@ name: Implementation Guide to the Paperwork Reduction Act
 publish: 'TRUE'
 slug: paperwork-reduction-act
 source: digital.gov
-tags: PRA
+tags:
+- PRA
 ---

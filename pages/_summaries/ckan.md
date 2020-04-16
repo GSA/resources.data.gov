@@ -13,5 +13,9 @@ name: CKAN
 publish: 'TRUE'
 slug: ckan
 source: CKAN
-tags: data schema,data management,data inventory, open data
+tags:
+- data schema
+- data management
+- data inventory
+- open data
 ---

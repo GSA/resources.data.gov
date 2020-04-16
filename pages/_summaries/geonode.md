@@ -11,5 +11,6 @@ name: 'GeoNode '
 publish: 'TRUE'
 slug: geonode
 source: GeoNode
-tags: geospatial
+tags:
+- geospatial
 ---

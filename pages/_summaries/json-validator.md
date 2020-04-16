@@ -11,5 +11,6 @@ name: 'JSON Validator '
 publish: 'TRUE'
 slug: json-validator
 source: Project Open Data
-tags: data validation
+tags:
+- data validation
 ---

@@ -8,5 +8,6 @@ name: Tabula
 publish: 'TRUE'
 slug: tabula
 source: Tabula
-tags: data cleaning
+tags:
+- data cleaning
 ---

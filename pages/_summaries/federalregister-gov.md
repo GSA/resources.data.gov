@@ -11,5 +11,6 @@ name: FederalRegister.gov API Case Study
 publish: 'TRUE'
 slug: federalregister-gov
 source: NARA/GPO
-tags: API
+tags:
+- API
 ---

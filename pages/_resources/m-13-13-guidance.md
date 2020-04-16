@@ -11,5 +11,6 @@ name: "Supplemental Guidance on the Implementation of M-13-13 \u201COpen Data Po
 publish: ''
 slug: m-13-13-guidance
 source: ''
-tags: open data
+tags:
+- open data
 ---

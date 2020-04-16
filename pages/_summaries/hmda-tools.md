@@ -9,5 +9,6 @@ name: HMDA tools
 publish: 'TRUE'
 slug: hmda-tools
 source: CFPB
-tags: data analytics
+tags:
+- data analytics
 ---

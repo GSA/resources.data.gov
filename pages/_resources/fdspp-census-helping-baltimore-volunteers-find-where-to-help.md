@@ -10,7 +10,13 @@ name: Helping Baltimore Volunteers Find Where to Help
 publish: ''
 slug: fdspp-census-helping-baltimore-volunteers-find-where-to-help
 source: Federal Data Strategy
-tags: geospatial, data sharing, FDS Principle 4 Ensure Relevance, FDS Principle 5
-  Harness Existing Data, FDS Practice 33 Promote Wide Access, FDS Practice 36 Leverage
-  Partnerships, FDS Practice 40 Support Non-Federal Stakeholders, collaboration
+tags:
+- geospatial
+- data sharing
+- FDS Principle 4 Ensure Relevance
+- FDS Principle 5 Harness Existing Data
+- FDS Practice 33 Promote Wide Access
+- FDS Practice 36 Leverage Partnerships
+- FDS Practice 40 Support Non-Federal Stakeholders
+- collaboration
 ---

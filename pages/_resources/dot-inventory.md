@@ -10,5 +10,6 @@ name: Department of Transportation Enterprise Data Inventory.
 publish: ''
 slug: dot-inventory
 source: ''
-tags: data inventory
+tags:
+- data inventory
 ---

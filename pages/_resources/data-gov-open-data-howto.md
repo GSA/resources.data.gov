@@ -10,5 +10,6 @@ name: How to get your Open Data on Data.gov
 publish: ''
 slug: data-gov-open-data-howto
 source: ''
-tags: open data
+tags:
+- open data
 ---

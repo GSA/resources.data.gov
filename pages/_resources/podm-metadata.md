@@ -11,5 +11,7 @@ name: Guidance to support the use of the Project Open Data metadata to list agen
 publish: ''
 slug: podm-metadata
 source: ''
-tags: data schema,data standards
+tags:
+- data schema
+- data standards
 ---

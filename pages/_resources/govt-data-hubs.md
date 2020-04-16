@@ -10,5 +10,6 @@ name: Government Data Hubs.
 publish: ''
 slug: govt-data-hubs
 source: ''
-tags: open data
+tags:
+- open data
 ---

@@ -11,5 +11,6 @@ name: 'Schema.org '
 publish: 'TRUE'
 slug: schema-dot-og
 source: schema.org
-tags: data schema
+tags:
+- data schema
 ---

@@ -11,5 +11,7 @@ name: Federal Geographic Data Committee Geospatial Standards
 publish: 'TRUE'
 slug: fgdc-geospatial-standards
 source: FGDC
-tags: geospatial, data standards
+tags:
+- geospatial
+- data standards
 ---

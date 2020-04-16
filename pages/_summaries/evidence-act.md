@@ -11,5 +11,6 @@ name: "Foundations for Evidence-Based Policymaking Act of 2018 (\u201CEvidence A
 publish: 'TRUE'
 slug: evidence-act
 source: congress.gov
-tags: open data
+tags:
+- open data
 ---

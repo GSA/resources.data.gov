@@ -9,5 +9,6 @@ name: 'CSV to API generator '
 publish: 'TRUE'
 slug: csv-to-api
 source: Project Open Data
-tags: API
+tags:
+- API
 ---

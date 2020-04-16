@@ -12,5 +12,6 @@ name: "INCITS \u2013 the InterNational Committee for Information Technology Stan
 publish: 'TRUE'
 slug: incits
 source: INCITS
-tags: data standards
+tags:
+- data standards
 ---

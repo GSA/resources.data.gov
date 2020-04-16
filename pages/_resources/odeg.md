@@ -10,5 +10,6 @@ name: Open Data Engagement Guidance.
 publish: ''
 slug: odeg
 source: ''
-tags: open data
+tags:
+- open data
 ---

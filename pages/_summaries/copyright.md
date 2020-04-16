@@ -10,5 +10,6 @@ name: How copyright applies to U.S. Government Works
 publish: 'TRUE'
 slug: copyright
 source: usa.gov
-tags: data management
+tags:
+- data management
 ---

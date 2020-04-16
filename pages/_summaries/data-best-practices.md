@@ -9,5 +9,6 @@ name: Data on the Web Best Practices
 publish: 'TRUE'
 slug: data-best-practices
 source: W3C
-tags: data management
+tags:
+- data management
 ---

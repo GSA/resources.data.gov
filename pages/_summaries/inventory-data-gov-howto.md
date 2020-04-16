@@ -11,5 +11,7 @@ name: How to use Inventory.Data.Gov
 publish: 'TRUE'
 slug: inventory-data-gov-howto
 source: digitalgov.gov
-tags: data inventory, inventory.data.gov
+tags:
+- data inventory
+- inventory.data.gov
 ---

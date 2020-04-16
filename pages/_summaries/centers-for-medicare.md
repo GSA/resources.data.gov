@@ -13,5 +13,6 @@ name: Transitioning to a Data Driven Culture at CMS
 publish: 'TRUE'
 slug: centers-for-medicare
 source: CMS
-tags: data management
+tags:
+- data management
 ---

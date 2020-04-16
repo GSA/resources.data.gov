@@ -10,5 +10,6 @@ name: Department of Transportation Model Data Inventory Approach
 publish: 'TRUE'
 slug: dot-model-data
 source: DOT
-tags: data inventory
+tags:
+- data inventory
 ---

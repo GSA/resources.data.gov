@@ -12,5 +12,7 @@ name: 'OMB M-11-02: "Sharing Data While Protecting Privacy"'
 publish: 'TRUE'
 slug: data-sharing-privacy
 source: OMB
-tags: open data, data sharing
+tags:
+- open data
+- data sharing
 ---

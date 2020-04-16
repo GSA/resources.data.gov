@@ -10,5 +10,8 @@ name: Field Mapping of fields under the Project Open Data Metadata Schema.
 publish: ''
 slug: podm-field-mapping
 source: ''
-tags: open data,data standards,data schema
+tags:
+- open data
+- data standards
+- data schema
 ---

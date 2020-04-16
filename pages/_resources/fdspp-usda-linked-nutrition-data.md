@@ -12,10 +12,16 @@ name: How USDA Linked Federal and Commercial Data to Shed Light on the Nutrition
 publish: ''
 slug: fdspp-usda-linked-nutrition-data
 source: Federal Data Strategy
-tags: data sharing, FDS Principle 3 Promote Transparency, FDS Principle 5 Harness
-  Existing Data, FDS Principle 8 Invest in Learning, FDS Practice 1 Identify Data
-  Needs to Answer Key Agency Questions, FDS Practice 4 Use Data to Guide Decision-Making,
-  FDS Practice 6 Convey Insights from Data, FDS Practice 17 Recognize the Value of
-  Data Assets, FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles,
-  process redesign, training
+tags:
+- data sharing
+- FDS Principle 3 Promote Transparency
+- FDS Principle 5 Harness Existing Data
+- FDS Principle 8 Invest in Learning
+- FDS Practice 1 Identify Data Needs to Answer Key Agency Questions
+- FDS Practice 4 Use Data to Guide Decision-Making
+- FDS Practice 6 Convey Insights from Data
+- FDS Practice 17 Recognize the Value of Data Assets
+- FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles
+- process redesign
+- training
 ---

@@ -8,5 +8,6 @@ name: International Organization for Standardization (ISO) standards catalog
 publish: ''
 slug: iso-catalog
 source: ISO
-tags: data standards
+tags:
+- data standards
 ---

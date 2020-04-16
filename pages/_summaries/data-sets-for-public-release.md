@@ -9,5 +9,6 @@ name: Identifying data sets for public release
 publish: 'TRUE'
 slug: data-sets-for-public-release
 source: Mark Headd
-tags: open data
+tags:
+- open data
 ---

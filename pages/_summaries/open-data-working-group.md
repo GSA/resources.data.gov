@@ -8,5 +8,6 @@ name: Open Data Working Group
 publish: ''
 slug: open-data-working-group
 source: ''
-tags: open data
+tags:
+- open data
 ---
