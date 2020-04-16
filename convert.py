@@ -66,6 +66,7 @@ with open(filename) as fd:
     headers = data[0]
     slug_index = headers.index("slug")  # must be present
     tags_index = headers.index("tags")
+    policy_tags_index = headers.index("policy tags")
     category_index = headers.index("category")
 
     errors = False
@@ -122,6 +123,11 @@ with open(filename) as fd:
         if not csv_tags:
             continue
         row[tags_index] = [t.strip() for t in csv_tags.split(",")]
+    for index, row in enumerate(rows)        :
+        csv_tags = row[policy_tags_index]
+        if not csv_tags:
+            continue
+        row[policy_tags_index] = [t.strip() for t in csv_tags.split(",")]
 
     for row in rows:
         slug = row[slug_index]
