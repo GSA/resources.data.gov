@@ -144,10 +144,12 @@ collections:
 
       - label: "tags"
         name: "tags"
-        widget: "select"
+        widget: "relation"
+        collection: "keywords"
         multiple: true
         hint: "tags for this resource summary"
-        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", "ai", "data analysis", "data sharing", "workforce development", "standards", "metadata", "DCAT", "inventory.data.gov", "position description", "data visualization"]
+        valueField: "name"
+        searchFields: ["name"]
         required: true
 
       - label: "format"
