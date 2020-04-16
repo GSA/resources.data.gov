@@ -183,6 +183,22 @@ collections:
         hint: "short description of the category"
         required: true
 
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["resource_category"]
+        default: "resource_category"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "primary_nav_section"
+        name: "navigation section"
+        widget: "select"
+        options: ["Resources", "Communities"]
+        default: "Resources"
+        hint: "the navigation section this category belongs to"
+        required: true
+
   - name: "keywords"
     label: "Keywords"
     create: true
