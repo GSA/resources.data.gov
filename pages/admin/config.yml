@@ -98,9 +98,8 @@ collections:
 
       - label: "toc"
         name: "toc"
-        widget: "select"
-        options: ["true", "false"]
-        default: "true"
+        widget: "boolean"
+        default: true
         hint: "autogenerate a table of contents"
         required: true
 
