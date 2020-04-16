@@ -7,7 +7,8 @@ description: ReVAL (Reusable Validation & Aggregation Library) is a Django App
 source: General Services Administration
 category: Data tools
 tags:
-  - API, web interface, data aggregation, Python, data validation
+- api
+- data validation
 format: Software tool
 link to resource: "[GitHub repository](https://github.com/18F/ReVAL)"
 details: >-
