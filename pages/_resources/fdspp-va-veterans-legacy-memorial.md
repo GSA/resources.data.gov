@@ -13,12 +13,12 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/04/19/veterans-legacy-memorial/
 name: The Veterans Legacy Memorial
 policy_tags:
-- FDS Principle 1 Uphold Ethics
-- FDS Principle 4 Ensure Relevance
-- FDS Principle 5 Harness Existing Data
-- FDS Principle 6 Anticipate Future Uses
+- FDS Principle 01 Uphold Ethics
+- FDS Principle 04 Ensure Relevance
+- FDS Principle 05 Harness Existing Data
+- FDS Principle 06 Anticipate Future Uses
 - FDS Principle 10 Practice Accountability
-- FDS Practice 2 Assess and Balance the Needs of Stakeholders
+- FDS Practice 02 Assess and Balance the Needs of Stakeholders
 publish: false
 slug: fdspp-va-veterans-legacy-memorial
 source: Federal Data Strategy

@@ -141,6 +141,8 @@ with open(filename) as fd:
             markdown_data["layout"] = "resource"
             markdown_data["toc"] = True
             markdown_data["publish"] = bool(markdown_data["publish"])
+            pt = markdown_data.pop("policy tags")
+            markdown_data["policy_tags"] = pt
             f.write("---\n")
             f.write(yaml.dump(markdown_data, default_flow_style=False))
             f.write("---")

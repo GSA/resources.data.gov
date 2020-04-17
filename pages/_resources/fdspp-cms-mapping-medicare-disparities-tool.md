@@ -11,11 +11,11 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/05/03/the-mapping-medicare-disparities-tools/
 name: The Mapping Medicare Disparities Tool
 policy_tags:
-- FDS Principle 1 Uphold Ethics
-- FDS Principle 3 Promote Transparency
-- FDS Principle 5 Harness Existing Data
-- FDS Practice 4 Use Data to Guide Decision-Making
-- FDS Practice 6 Convey Insights from Data
+- FDS Principle 01 Uphold Ethics
+- FDS Principle 03 Promote Transparency
+- FDS Principle 05 Harness Existing Data
+- FDS Practice 04 Use Data to Guide Decision-Making
+- FDS Practice 06 Convey Insights from Data
 - FDS Practice 36 Leverage Partnerships
 publish: false
 slug: fdspp-cms-mapping-medicare-disparities-tool

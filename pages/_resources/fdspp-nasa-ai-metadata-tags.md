@@ -12,11 +12,11 @@ link: https://strategy.data.gov/proof-points/2019/05/28/improving-data-access-an
 name: 'Improving Data Access and Data Management: Artificial Intelligence-Generated
   Metadata Tags at NASA'
 policy_tags:
-- FDS Principle 3 Promote Transparency
-- FDS Principle 4 Ensure Relevance
-- FDS Principle 5 Harness Existing Data
-- FDS Practice 2 Assess and Balance the Needs of Stakeholders
-- FDS Practice 4 Use Data to Guide Decision-Making
+- FDS Principle 03 Promote Transparency
+- FDS Principle 04 Ensure Relevance
+- FDS Principle 05 Harness Existing Data
+- FDS Practice 02 Assess and Balance the Needs of Stakeholders
+- FDS Practice 04 Use Data to Guide Decision-Making
 - FDS Practice 10 Provide Resources Explicitly to Leverage Data Assets
 publish: false
 slug: fdspp-nasa-ai-metadata-tags

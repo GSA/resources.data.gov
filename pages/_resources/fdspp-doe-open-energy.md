@@ -10,9 +10,9 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/06/28/open-energy-data-at-doe/
 name: Open Energy Data at DOE
 policy_tags:
-- FDS Principle 4 Ensure Relevance
-- FDS Principle 6 Anticipate Future Uses
-- FDS Practice 5 Prepare to Share
+- FDS Principle 04 Ensure Relevance
+- FDS Principle 06 Anticipate Future Uses
+- FDS Practice 05 Prepare to Share
 - FDS Practice 26 Share Data Between State Local and and Tribal Governments and Federal
   Agencies
 - FDS Practice 30 Communicate Planned and Potential Uses of Data

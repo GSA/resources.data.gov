@@ -13,14 +13,14 @@ link: https://strategy.data.gov/proof-points/2019/08/09/bea-bls-data-blend-forei
 name: 'How to Blend Your Data: BEA and BLS Harness Big Data to Gain New Insights about
   Foreign Direct Investment in the U.S.'
 policy_tags:
-- FDS Principle 3 Promote Transparency
-- FDS Principle 2 Exercise Responsibility
-- FDS Principle 5 Harness Existing Data
-- Principle 8 Invest in Learning
-- FDS Practice 1 Identify Data Needs to Answer Key Agency Questions
-- FDS Practice 3 Champion Data Use
-- FDS Practice 6 Convey Insights from Data
-- FDS Practice 9 Connect Data Functions Across Agencies
+- FDS Principle 03 Promote Transparency
+- FDS Principle 02 Exercise Responsibility
+- FDS Principle 05 Harness Existing Data
+- FDS Principle 08 Invest in Learning
+- FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
+- FDS Practice 03 Champion Data Use
+- FDS Practice 06 Convey Insights from Data
+- FDS Practice 09 Connect Data Functions Across Agencies
 - Practice 17 Recognize the Value of Data Assets
 - FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles
 - process redesign

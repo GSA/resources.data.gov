@@ -12,10 +12,10 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/06/21/pairing-government-data-with-private-sector-ingenuity-take-on-unwanted-calls/
 name: Pairing Government Data with Private-Sector Ingenuity to Take on Unwanted Calls
 policy_tags:
-- FDS Principle 5 Harness Existing Data
-- FDS Principle 7 Demonstrate Responsiveness
-- FDS Practice 2 Assess and Balance the Needs of Stakeholders
-- FDS Practice 4 Use Data to Guide Decision-Making
+- FDS Principle 05 Harness Existing Data
+- FDS Principle 07 Demonstrate Responsiveness
+- FDS Practice 02 Assess and Balance the Needs of Stakeholders
+- FDS Practice 04 Use Data to Guide Decision-Making
 - FDS Practice 12 Govern Data to Protect Confidentiality and Privacy
 - FDS Practice 28 Align Quality with Intended Use
 - FDS Practice 29 Design Data for Use and Re-Use

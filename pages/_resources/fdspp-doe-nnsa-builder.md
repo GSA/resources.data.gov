@@ -14,9 +14,9 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/07/19/NNSA-Builder/
 name: 'BUILDER: A Science-Based Approach to Infrastructure Management'
 policy_tags:
-- FDS Principle 8 Invest in Learning
+- FDS Principle 08 Invest in Learning
 - FDS Principle 10 Practice Accountability
-- FDS Practice 4 Use Data to Guide Decision-Making
+- FDS Practice 04 Use Data to Guide Decision-Making
 - FDS Practice 10 Provide Resources Explicitly to Leverage Data Assets
 - FDS Practice 18 Manage with a Long View
 - FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles

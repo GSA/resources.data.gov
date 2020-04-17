@@ -16,10 +16,10 @@ link: https://strategy.data.gov/proof-points/2019/07/14/census-pdb-roam/
 name: The Census Bureau Uses Its Own Data to Increase Response Rates, Helps Communities
   and Other Stakeholders Do the Same
 policy_tags:
-- FDS Principle 5 Harness Existing Data
-- FDS Practice 1 Identify Data Needs to Answer Key Agency Questions
-- FDS Practice 4 Use Data to Guide Decision-Making
-- FDS Practice 6 Convey Insights from Data
+- FDS Principle 05 Harness Existing Data
+- FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
+- FDS Practice 04 Use Data to Guide Decision-Making
+- FDS Practice 06 Convey Insights from Data
 - FDS Practice 10 Provide Resources Explicitly to Leverage Data Assets
 - FDS Practice 26 Share Data Between State Local and Tribal Governments and Federal
   Agencies

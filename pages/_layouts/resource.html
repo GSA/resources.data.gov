@@ -45,9 +45,21 @@ layout: toc
         </div>
       {% endfor %}
     </p>
-    <h3>Format</h3>
-    <p>
-      {{ page.format }}
-    </p>
+
+    {% if page.format %}
+      <h3>Format</h3>
+      <p>
+        {{ page.format }}
+      </p>
+    {% endif %}
+
+    {% if page.policy_tags %}
+      <h3>Policy Tags</h3>
+      {% for tag in page.policy_tags %}
+        <p>
+          {{ page.format }}
+        </p>
+      {% endfor %}
+    {% endif %}
   </div>
 </div>
