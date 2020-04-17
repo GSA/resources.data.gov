@@ -271,8 +271,8 @@ collections:
     slug: "{{fields.slug}}"
 
     fields:
-      - label: "name"
-        name: "name"
+      - label: "policy name"
+        name: "policy_name"
         widget: "string"
         hint: "name of the keyword"
         required: true
