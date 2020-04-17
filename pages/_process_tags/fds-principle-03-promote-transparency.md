@@ -1,4 +1,6 @@
 ---
-policy_name: FDS Principle 3 Promote Transparency
-slug: fds-principle-3-promote-transparency
+layout: policy_tag
+policy_name: FDS Principle 03 Promote Transparency
+slug: fds-principle-03-promote-transparency
+toc: true
 ---

@@ -263,3 +263,37 @@ collections:
         default: true
         hint: "autogenerate a table of contents"
         required: true
+
+  - name: "policy_tags"
+    label: "Policy Tags"
+    create: true
+    folder: "pages/_policy_tags/"
+    slug: "{{fields.slug}}"
+
+    fields:
+      - label: "name"
+        name: "name"
+        widget: "string"
+        hint: "name of the keyword"
+        required: true
+
+      - label: "slug"
+        name: "slug"
+        widget: "string"
+        hint: "slug link (part that comes at the very end of a url)"
+        required: true
+
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["policy_tag"]
+        default: "policy_tag"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "toc"
+        name: "toc"
+        widget: "boolean"
+        default: true
+        hint: "autogenerate a table of contents"
+        required: true

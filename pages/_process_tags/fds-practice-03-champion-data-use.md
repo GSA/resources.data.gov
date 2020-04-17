@@ -1,4 +1,6 @@
 ---
-policy_name: FDS Practice 3 Champion Data Use
-slug: fds-practice-3-champion-data-use
+layout: policy_tag
+policy_name: FDS Practice 03 Champion Data Use
+slug: fds-practice-03-champion-data-use
+toc: true
 ---

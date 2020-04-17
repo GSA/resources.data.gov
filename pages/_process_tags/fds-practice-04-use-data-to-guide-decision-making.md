@@ -1,4 +1,6 @@
 ---
-policy_name: FDS Practice 4 Use Data to Guide Decision-Making
-slug: fds-practice-4-use-data-to-guide-decision-making
+layout: policy_tag
+policy_name: FDS Practice 04 Use Data to Guide Decision-Making
+slug: fds-practice-04-use-data-to-guide-decision-making
+toc: true
 ---

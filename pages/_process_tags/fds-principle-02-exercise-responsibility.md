@@ -1,4 +1,6 @@
 ---
-policy_name: FDS Principle 2 Exercise Responsibility
-slug: fds-principle-2-exercise-responsibility
+layout: policy_tag
+policy_name: FDS Principle 02 Exercise Responsibility
+slug: fds-principle-02-exercise-responsibility
+toc: true
 ---

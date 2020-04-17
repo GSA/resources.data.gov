@@ -1,4 +1,6 @@
 ---
-policy_name: FDS Principle 7 Demonstrate Responsiveness
-slug: fds-principle-7-demonstrate-responsiveness
+layout: policy_tag
+policy_name: FDS Principle 07 Demonstrate Responsiveness
+slug: fds-principle-07-demonstrate-responsiveness
+toc: true
 ---
