@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://github.com/Esri/geoportal-server/
 name: Geoportal Server
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: geoportal-server
 source: Esri

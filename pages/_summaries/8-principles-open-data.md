@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://opengovdata.org/
 name: Annotated 8 Principles of Open Government Data
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: 8-principles-open-data
 source: opengovdata.org

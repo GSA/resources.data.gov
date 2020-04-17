@@ -5,7 +5,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/tools/glossary/
 name: Glossary of terms used in Project Open Data Metadata Schema.
-policy tags: ''
+policy_tags: ''
 publish: false
 slug: podm-schema
 source: ''

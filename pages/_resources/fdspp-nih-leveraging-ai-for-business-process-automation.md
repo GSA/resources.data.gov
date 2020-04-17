@@ -12,7 +12,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/06/14/leveraging-ai-for-business-process-automation-nih/
 name: Leveraging AI for Business Process Automation at NIH
-policy tags:
+policy_tags:
 - FDS Principle 5 Harness Existing Data
 - FDS Principle 7 Demonstrate Responsiveness
 - FDS Practice 2 Assess and Balance the Needs of Stakeholders

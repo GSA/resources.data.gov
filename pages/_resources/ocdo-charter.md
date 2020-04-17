@@ -7,7 +7,7 @@ format: Template/How-to
 layout: resource
 link: ''
 name: Office of the Chief Data Officer (OCDO) Charter Template
-policy tags: ''
+policy_tags: ''
 publish: false
 slug: ocdo-charter
 source: GSA

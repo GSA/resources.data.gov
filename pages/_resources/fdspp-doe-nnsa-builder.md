@@ -13,7 +13,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/07/19/NNSA-Builder/
 name: 'BUILDER: A Science-Based Approach to Infrastructure Management'
-policy tags:
+policy_tags:
 - FDS Principle 8 Invest in Learning
 - FDS Principle 10 Practice Accountability
 - FDS Practice 4 Use Data to Guide Decision-Making

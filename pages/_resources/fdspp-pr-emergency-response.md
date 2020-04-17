@@ -12,7 +12,7 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/07/26/pradwg/
 name: Agencies Mobilize to Improve Emergency Response in Puerto Rico through Better
   Data
-policy tags:
+policy_tags:
 - FDS Principle 7 Demonstrate Responsiveness
 - FDS Principle 10 Practice Accountability
 - FDS Practice 1 Identify Data Needs to Answer Key Agency Questions

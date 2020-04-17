@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://participation.usa.gov/
 name: The U.S. Public Participation Playbook
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: us-public-participation-playbook
 source: ''

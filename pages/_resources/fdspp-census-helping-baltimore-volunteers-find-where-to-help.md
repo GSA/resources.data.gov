@@ -13,7 +13,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/04/26/helping-baltimore-volunteers-find-where-to-help/
 name: Helping Baltimore Volunteers Find Where to Help
-policy tags:
+policy_tags:
 - FDS Principle 4 Ensure Relevance
 - FDS Principle 5 Harness Existing Data
 - FDS Practice 33 Promote Wide Access

@@ -8,7 +8,7 @@ format: ''
 layout: resource
 link: https://www.fgdc.gov/
 name: Federal Geographic Data Committee
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: geographic-data-commitee
 source: FGDC

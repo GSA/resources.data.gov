@@ -5,7 +5,7 @@ format: ''
 layout: resource
 link: https://tabula.technology/
 name: Tabula
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: tabula
 source: Tabula

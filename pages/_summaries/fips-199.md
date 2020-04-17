@@ -8,7 +8,7 @@ layout: resource
 link: https://csrc.nist.gov/csrc/media/publications/fips/199/final/documents/fips-pub-199-final.pdf
 name: 'FIPS 199: "Standards for Security Categorization of Federal Information and
   Information Systems"'
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: fips-199
 source: NIST

@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://inventory.data.gov/
 name: 'Inventory.data.gov '
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: inventory-data-gov
 source: TTS

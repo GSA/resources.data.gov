@@ -9,7 +9,7 @@ layout: resource
 link: https://project-open-data.cio.gov/implementation-guide/
 name: "Supplemental Guidance on the Implementation of M-13-13 \u201COpen Data Policy\
   \ \u2013 Managing Information as an Asset\u201D "
-policy tags:
+policy_tags:
 - M-13-13
 publish: false
 slug: m-13-13-guidance

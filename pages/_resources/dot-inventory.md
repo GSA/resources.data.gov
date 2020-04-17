@@ -11,7 +11,7 @@ format: ''
 layout: resource
 link: https://project-open-data.cio.gov/transportation-case-study/
 name: 'Department of Transportation Case Study: Enterprise Data Inventory'
-policy tags: ''
+policy_tags: ''
 publish: false
 slug: dot-inventory
 source: DOT

@@ -14,7 +14,7 @@ format: ''
 layout: resource
 link: https://project-open-data.cio.gov/labor-case-study/
 name: 'U.S. Department of Labor Case Study: SDKs'
-policy tags: ''
+policy_tags: ''
 publish: false
 slug: labor-case-study
 source: DOL

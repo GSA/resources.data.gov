@@ -10,7 +10,7 @@ layout: resource
 link: https://resources.data.gov/schemas/dcat-us/v1.1/#what-to-document--datasets-and-web-apis
 name: "DCAT-US Schema v1.1 (Project Open Data Metadata Schema): What to Document \u2013\
   \ Datasets and Web APIs"
-policy tags: ''
+policy_tags: ''
 publish: false
 slug: podm-metadata
 source: data.gov

@@ -10,7 +10,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/04/12/investing-in-learning-with-the-data-stewardship-tactical-working-group-at-dhs/
 name: Investing in Learning with the Data Stewardship Tactical Working Group at DHS
-policy tags:
+policy_tags:
 - FDS Principle 3 Promote Transparency
 - FDS Principle 8 Invest in Learning
 - FDS Principle 9 Develop Data Leaders

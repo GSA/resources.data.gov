@@ -16,7 +16,7 @@ format: ''
 layout: resource
 link: https://project-open-data.cio.gov/fema-case-study/
 name: 'FEMA Case Study: Disaster Assistance Program Coordination'
-policy tags: ''
+policy_tags: ''
 publish: false
 slug: fema-case-study
 source: FEMA

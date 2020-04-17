@@ -7,7 +7,7 @@ format: Video
 layout: resource
 link: https://www.youtube.com/watch?v=_cqE4a8oAHU
 name: User Research and The Paperwork Reduction Act How to Get it Done
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: user-research-pra-howto
 source: digitalgov.gov

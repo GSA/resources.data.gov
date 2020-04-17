@@ -12,7 +12,7 @@ layout: resource
 link: https://strategy.data.gov/proof-points/2019/08/09/bea-bls-data-blend-foreign-investment/
 name: 'How to Blend Your Data: BEA and BLS Harness Big Data to Gain New Insights about
   Foreign Direct Investment in the U.S.'
-policy tags:
+policy_tags:
 - FDS Principle 3 Promote Transparency
 - FDS Principle 2 Exercise Responsibility
 - FDS Principle 5 Harness Existing Data

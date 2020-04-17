@@ -8,7 +8,7 @@ format: ''
 layout: resource
 link: Schema.org
 name: 'Schema.org '
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: schema-dot-og
 source: schema.org

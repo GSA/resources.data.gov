@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://labs.data.gov/dashboard/datagov/csv_to_json
 name: Project Open Data CSV to JSON converter
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: pod-csv-to-json
 source: Project Open Data

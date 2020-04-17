@@ -8,7 +8,7 @@ format: ''
 layout: resource
 link: http://geonode.org/
 name: 'GeoNode '
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: geonode
 source: GeoNode

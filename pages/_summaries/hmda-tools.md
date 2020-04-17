@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://github.com/cfpb/hmda-tools
 name: HMDA tools
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: hmda-tools
 source: CFPB

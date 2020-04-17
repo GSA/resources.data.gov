@@ -9,7 +9,7 @@ format: ''
 layout: resource
 link: https://www.w3.org/
 name: 'The World Wide Web Consortium (W3C) '
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: w3c
 source: W3C

@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://www.drupal.org/project/dkan
 name: DKAN
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: dkan
 source: DRUPAL

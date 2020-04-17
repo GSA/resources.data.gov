@@ -11,7 +11,7 @@ format: ''
 layout: resource
 link: https://strategy.data.gov/action-plan/
 name: Federal Data Strategy 2020 Action Plan
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: fds-action-plan
 source: Federal Data Strategy

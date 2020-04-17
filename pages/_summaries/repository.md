@@ -7,7 +7,7 @@ format: ''
 layout: resource
 link: https://github.com/project-open-data/esri2open
 name: ESRI2Open
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: repository
 source: Project Open Data

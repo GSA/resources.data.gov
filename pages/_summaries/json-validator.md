@@ -8,7 +8,7 @@ format: ''
 layout: resource
 link: https://labs.data.gov/dashboard/validate
 name: 'JSON Validator '
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: json-validator
 source: Project Open Data

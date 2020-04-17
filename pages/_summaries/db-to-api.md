@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://github.com/project-open-data/db-to-api
 name: Database to API
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: db-to-api
 source: Project Open Data

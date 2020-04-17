@@ -9,7 +9,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/guidance/open-data-engagement-guidance/
 name: Open Data Engagement Guidance
-policy tags: ''
+policy_tags: ''
 publish: false
 slug: odeg
 source: data.gov

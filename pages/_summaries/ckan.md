@@ -10,7 +10,7 @@ format: ''
 layout: resource
 link: https://ckan.org/
 name: CKAN
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: ckan
 source: CKAN

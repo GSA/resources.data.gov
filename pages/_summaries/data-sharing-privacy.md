@@ -9,7 +9,7 @@ format: PDF
 layout: resource
 link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2011/m11-02.pdf
 name: 'OMB M-11-02: "Sharing Data While Protecting Privacy"'
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: data-sharing-privacy
 source: OMB

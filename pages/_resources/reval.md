@@ -52,7 +52,7 @@ format: ''
 layout: resource
 link: '[GitHub repository](https://github.com/18F/ReVAL)'
 name: ReVal (Reusable Validation Library)
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: reval
 source: General Services Administration

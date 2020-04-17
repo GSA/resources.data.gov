@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://pycsw.org/
 name: pycsw
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: pycsw
 source: pycsw

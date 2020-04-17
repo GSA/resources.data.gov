@@ -13,7 +13,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/05/10/data-standdown-interrupting-process-to-fix-information/
 name: 'Data Standdown: Interrupting process to fix information'
-policy tags:
+policy_tags:
 - FDS Principle 5 Harness Existing Data
 - FDS Principle 7 Demonstrate Responsiveness
 - FDS Practice 1 Identify Data Needs to Answer Key Agency Questions

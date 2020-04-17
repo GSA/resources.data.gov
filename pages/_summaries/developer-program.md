@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://18f.github.io/API-All-the-X/
 name: /Developer program
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: developer-program
 source: 18F

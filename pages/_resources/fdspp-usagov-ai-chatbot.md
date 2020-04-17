@@ -9,7 +9,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/06/07/usagov-uses-human-centered-design-to-roll-out-ai-chatbot/
 name: USA.gov Uses Human-Centered Design to Roll Out AI Chatbot
-policy tags:
+policy_tags:
 - FDS Principle 2 Exercise Responsibility
 - FDS Principle 6 Anticipate Future Uses
 - FDS Principle 7 Demonstrate Responsiveness

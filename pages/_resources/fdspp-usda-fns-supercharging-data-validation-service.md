@@ -9,7 +9,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/05/17/supercharging-data-through-validation-as-a-service/
 name: Supercharging Data through Validation as a Service
-policy tags:
+policy_tags:
 - FDS Principle 6 Anticipate Future Uses
 - FDS Principle 8 Invest in Learning
 - FDS Practice 1 Identify Data Needs to Answer Key Agency Questions

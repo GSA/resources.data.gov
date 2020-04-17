@@ -8,7 +8,7 @@ format: ''
 layout: resource
 link: https://resources.data.gov/case-studies/business-case/
 name: Business case for open data
-policy tags: ''
+policy_tags: ''
 publish: false
 slug: open-data
 source: data.gov

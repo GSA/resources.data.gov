@@ -9,7 +9,7 @@ format: ''
 layout: resource
 link: http://www.incits.org/
 name: "INCITS \u2013 the InterNational Committee for Information Technology Standards "
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: incits
 source: INCITS

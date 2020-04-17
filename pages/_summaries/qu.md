@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://github.com/cfpb/qu
 name: qu
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: qu
 source: CFPB

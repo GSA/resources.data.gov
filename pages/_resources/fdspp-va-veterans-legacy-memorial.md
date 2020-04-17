@@ -12,7 +12,7 @@ format: FDS Proof Point
 layout: resource
 link: https://strategy.data.gov/proof-points/2019/04/19/veterans-legacy-memorial/
 name: The Veterans Legacy Memorial
-policy tags:
+policy_tags:
 - FDS Principle 1 Uphold Ethics
 - FDS Principle 4 Ensure Relevance
 - FDS Principle 5 Harness Existing Data

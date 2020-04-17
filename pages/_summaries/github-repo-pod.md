@@ -6,7 +6,7 @@ format: ''
 layout: resource
 link: https://github.com/project-open-data
 name: GitHub repository for Project Open Data
-policy tags: ''
+policy_tags: ''
 publish: true
 slug: github-repo-pod
 source: Project Open Data
