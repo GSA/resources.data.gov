@@ -46,19 +46,5 @@
         {{ resource.format }}
       </p>
     {% endif %}
-
-    {% if resource.policy_tags %}
-      <h4>Policy Tags</h4>
-      <div>
-        {% for tag in resource.policy_tags %}
-          <div class="margin-bottom-3">
-            {% assign slug_tag = tag | slugify %}
-            <a href="{{ "/policy_tags/" | append: slug_tag | relative_url }}">
-              {{ tag }}
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
   </div>
 </div>
