@@ -57,6 +57,7 @@ def get_tags():
 categories = get_categories()
 tags = get_tags()
 tag_counter = Counter()
+policy_tags = set()
 
 # ensure slugs are unique
 slug_set = set()
@@ -128,6 +129,7 @@ with open(filename) as fd:
         if not csv_tags:
             continue
         row[policy_tags_index] = [t.strip() for t in csv_tags.split(",")]
+        policy_tags.update([t.strip() for t in csv_tags.split(",")])
 
     for row in rows:
         slug = row[slug_index]
@@ -147,3 +149,4 @@ with open(filename) as fd:
 used_tags = set(tag_counter.keys())
 listed_tags = set(tags)
 print(f"unused tags for {collection_name}: {listed_tags - used_tags}")
+print(policy_tags)
