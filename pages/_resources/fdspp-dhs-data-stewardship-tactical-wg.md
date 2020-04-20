@@ -22,7 +22,6 @@ source: Federal Data Strategy
 tags:
 - data governance
 - data management
-- training
 - internal-todo
 toc: true
 ---

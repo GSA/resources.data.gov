@@ -28,7 +28,6 @@ source: Federal Data Strategy
 tags:
 - data sharing
 - process redesign
-- training
 - internal-todo
 toc: true
 ---

@@ -8,16 +8,15 @@ details: "ReVal (Reusable Validation Library) is an open source Django App for v
   \ basic change tracking and duplicate file handling. Each file generally contains\
   \ multiple data rows, and each user may submit multiple files.\n\nUsing the API,\
   \ ReVal can validate data and generally do anything that is possible via the web\
-  \ interface.\n\n### Features\n\n* Flexible input format\n* Validation with:\n\n\
-  \  * [goodtables](https://github.com/frictionlessdata/goodtables-py)\n  * [JSON\
-  \ Logic](https://github.com/QubitProducts/json-logic-py)\n  * [SQL](https://sqlite.org/lang_keywords.html)\n\
-  \  * [JSON Schema](https://github.com/Julian/jsonschema)\n  * a custom validation\
-  \ class\n* Row-by-row feedback on validation results\n* Manage and track status\
-  \ of data submissions\n* Re-submit previous submissions\n* Flexible ultimate destination\
-  \ for data\n* [API](https://github.com/18F/ReVAL/blob/master/docs/api.md) for validation\n\
-  \n### [](https://github.com/18F/ReVAL#requirements)Requirements\n\n* Python (3.5,\
-  \ 3.6)\n* Django (2.2+)\n* Goodtables\n* pyyaml\n* djangorestframework\n* psycopg2\n\
-  * json_logic_qubit\n* dj-database-url\n* requests"
+  \ interface.\n\n### Features\n\n* Flexible input format\n* Validation with:\n  *\
+  \ [goodtables](https://github.com/frictionlessdata/goodtables-py)\n  * [JSON Logic](https://github.com/QubitProducts/json-logic-py)\n\
+  \  * [SQL](https://sqlite.org/lang_keywords.html)\n  * [JSON Schema](https://github.com/Julian/jsonschema)\n\
+  \  * a custom validation class\n* Row-by-row feedback on validation results\n* Manage\
+  \ and track status of data submissions\n* Re-submit previous submissions\n* Flexible\
+  \ ultimate destination for data\n* [API](https://github.com/18F/ReVAL/blob/master/docs/api.md)\
+  \ for validation\n\n### [](https://github.com/18F/ReVAL#requirements)Requirements\n\
+  \n* Python (3.5, 3.6)\n* Django (2.2+)\n* Goodtables\n* pyyaml\n* djangorestframework\n\
+  * psycopg2\n* json_logic_qubit\n* dj-database-url\n* requests"
 examples: '### Use case: USDA Food & Nutrition Service
 
 

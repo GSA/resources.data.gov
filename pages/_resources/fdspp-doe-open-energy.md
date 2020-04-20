@@ -13,7 +13,7 @@ policy_tags:
 - FDS Principle 04 Ensure Relevance
 - FDS Principle 06 Anticipate Future Uses
 - FDS Practice 05 Prepare to Share
-- FDS Practice 26 Share Data Between State Local and and Tribal Governments and Federal
+- FDS Practice 26 Share Data Between State Local and Tribal Governments and Federal
   Agencies
 - FDS Practice 30 Communicate Planned and Potential Uses of Data
 - FDS Practice 33 Promote Wide Access

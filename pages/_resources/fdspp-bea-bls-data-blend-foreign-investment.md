@@ -21,12 +21,12 @@ policy_tags:
 - FDS Practice 03 Champion Data Use
 - FDS Practice 06 Convey Insights from Data
 - FDS Practice 09 Connect Data Functions Across Agencies
-- Practice 17 Recognize the Value of Data Assets
+- FDS Practice 17 Recognize the Value of Data Assets
 - FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles
 - process redesign
-- training
 - FDS Practice 25 Coordinate Federal Data Assets
-- FDS Practice 26 Share Data Between Federal Agencies
+- FDS Practice 26 Share Data Between State Local and Tribal Governments and Federal
+  Agencies
 publish: false
 slug: fdspp-bea-bls-data-blend-foreign-investment
 source: Federal Data Strategy

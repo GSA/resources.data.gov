@@ -26,7 +26,6 @@ slug: fdspp-sba-learning-agenda
 source: Federal Data Strategy
 tags:
 - process redesign
-- training
 - internal-todo
 toc: true
 ---
