@@ -23,7 +23,7 @@ layout: default
       {% include sidenav.html %}
       <div class="usa-layout__docs-main desktop:grid-col-12 usa-prose">
 
-        {% assign resources = site.resources | concat: site.summaries | where: "category", page.category | sort: "name" %}
+        {% assign resources = site.resources | concat: site.summaries | where: "category", page.category_name | sort: "name" %}
 
         {% for resource in resources %}
           {% include resource_block.html resource=resource %}
