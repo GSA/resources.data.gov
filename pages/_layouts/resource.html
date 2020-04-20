@@ -1,20 +1,20 @@
 ---
 layout: toc
 ---
-<div class="resource">
+<div class="display-flex border-bottom border-base padding-bottom-2">
   <div class="resource-main">
-    <h1>{{ page.title }}</h1>
+    <h1 class="margin-top-0 margin-bottom-0">{{ page.title }}</h1>
 
     <h2>Overview</h2>
     {{ page.description | default: "No description provided." | markdownify }}
 
-    <div class="resource-metadata no_toc_section">
-      <div class="resource-metadata-item">
+    <div class="display-flex margin-top-2 margin-bottom-2 border-bottom border-top border-base no_toc_section">
+      <div class="padding-2">
         <h3>Source</h3>
         {{ page.source | default: "No source provided." | markdownify }}
       </div>
 
-      <div class="resource-metadata-item">
+      <div class="padding-2">
         <h3>Category</h3>
         <p>
           <!-- special case communities -->
@@ -31,7 +31,7 @@ layout: toc
         </p>
       </div>
 
-      <div class="resource-metadata-item">
+      <div class="padding-2">
         <h3>Keywords</h3>
         <p>
           {% for tag in page.tags %}
@@ -49,7 +49,7 @@ layout: toc
       </div>
 
       {% if page.format %}
-        <div class="resource-metadata-item">
+        <div class="padding-2">
           <h3>Format</h3>
           <p>
             {{ page.format }}

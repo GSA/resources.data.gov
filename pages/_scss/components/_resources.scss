@@ -1,26 +1,9 @@
-.resource {
-  display: flex;
-  padding: 1em 0;
-  border-bottom: 1px solid black;
-}
-
 .resource-main {
   display: flex;
   flex-direction: column;
   flex-grow: 3;
   width: 0;
   padding-right: 1em;
-}
-
-.resource-metadata {
-  display: flex;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  margin: 1em 0;
-}
-
-.resource-metadata-item {
-  padding: 1em;
 }
 
 .resource-side {
