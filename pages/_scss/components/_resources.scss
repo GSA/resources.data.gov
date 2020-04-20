@@ -16,6 +16,17 @@
   }
 }
 
+.resource-metadata {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 1em 0;
+}
+
+.resource-metadata-item {
+  padding: 1em;
+}
+
 .resource-side {
   display: flex;
   flex-direction: column;
