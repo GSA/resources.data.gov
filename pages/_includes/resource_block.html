@@ -1,6 +1,6 @@
-<div class="resource">
+<div class="resource margin-top-4">
   <div class="resource-main">
-    <h3>{{ resource.name }}</h3>
+    <h3 class="margin-top-0">{{ resource.name }}</h3>
 
     <p>
       {% if resource.description %}
@@ -8,10 +8,6 @@
       {% else if resource.shortdescription %}
         {{ resource.shortdescription | default: "No short description provided" }}
       {% endif %}
-    </p>
-
-    <p class="resource-source">
-      Source: {{ resource.source | default: "No source provided" }}
     </p>
 
     <p class="resource-link">
@@ -26,22 +22,28 @@
   </div>
 
   <div class="resource-side no_toc_section">
-    <h4>Keywords</h4>
+    <h4 class="margin-top-0 margin-bottom-0">Source</h4>
+    <p>
+      {{ resource.source | default: "No source provided" }}
+    </p>
+
+    <h4 class="margin-top-0 margin-bottom-0">Keywords</h4>
     <p>
       {% for tag in resource.tags %}
-        <div>
-          {% assign slug_tag = tag | slugify %}
-          <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">
-            {{ tag }}
-          </a>
-        </div>
-        {% else %}
+        {% assign slug_tag = tag | slugify %}
+        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">
+          {{ tag }}
+        </a>
+        {% if forloop.last == false %}
+          ,&nbsp;
+        {% endif %}
+      {% else %}
         This resource has no keywords.
       {% endfor %}
     </p>
 
-    {% if resource.format %}
-      <h4>Format</h4>
+    {% if resource.format != "" %}
+      <h4 class="margin-top-0 margin-bottom-0">Format</h4>
       <p>
         {{ resource.format }}
       </p>

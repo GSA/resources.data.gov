@@ -1,26 +1,41 @@
 ---
-layout: page
-suppress_title: true
+layout: default
 ---
 
 {% assign category = site.categories | where: "category_name", page.category | first %}
-{% assign intro_text = category.description %}
 
-<div class="resource-introduction">
-  <h1>{{ page.title }}</h1>
-  <p>
-    {{ intro_text | default: "No introductory text provided for this category." }}
-  </p>
-</div>
+<main class="category-introduction usa-layout-docs usa-section" id="main-content">
 
-{% assign resources = site.resources | concat: site.summaries | where: "category", page.category | sort: "name" %}
-
-{% for resource in resources %}
-  {% include resource_block.html resource=resource %}
-{% else %}
-  <div class="resource">
-    <div class="resource-main">
-      <p>No categories match the category <code>{{ page.category }}</code>.</p>
+  <div class="bg-primary text-white padding-bottom-4">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <h1 class="margin-bottom-0">{{ page.title }}</h1>
+        <p>
+          {{ category.description | default: "No introductory text provided for this category." }}
+        </p>
+      </div>
     </div>
   </div>
-{% endfor %}
+
+  <div class="grid-container">
+    {% include breadcrumb.html %}
+    <div class="grid-row grid-gap">
+      {% include sidenav.html %}
+      <div class="usa-layout__docs-main desktop:grid-col-12 usa-prose">
+
+        {% assign resources = site.resources | concat: site.summaries | where: "category", page.category | sort: "name" %}
+
+        {% for resource in resources %}
+          {% include resource_block.html resource=resource %}
+{% else %}
+          <div class="resource">
+            <div class="resource-main">
+              <p>No categories match the category <code>{{ page.category }}</code>.</p>
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</main>

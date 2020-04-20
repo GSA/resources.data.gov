@@ -10,10 +10,6 @@
   flex-grow: 3;
   width: 0;
   padding-right: 1em;
-
-  .resource-source {
-    font-style: italic;
-  }
 }
 
 .resource-metadata {
@@ -34,7 +30,6 @@
   width: 0;
 }
 
-.resource-introduction {
-  padding: 1em 0;
-  background-color: #eee;
+.category-introduction {
+  padding-top: 0 !important;
 }
