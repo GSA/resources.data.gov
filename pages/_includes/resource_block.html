@@ -15,12 +15,12 @@
     </p>
 
     <p class="resource-link">
-      {% if resource.description %}
-        <a class="usa-button" href="{{ "/resources/" | append: resource.slug | relative_url }}">
+      {% if resource.collection == "summaries" %}
+        <a href="{{ resource.link }}">Link to Resource</a>
+      {% else %}
+        <a href="{{ "/resources/" | append: resource.slug | relative_url }}">
           Learn More
         </a>
-      {% else if resource.shortdescription %}
-        <a href="{{ resource.link }}">Link to Resource</a>
       {% endif %}
     </p>
   </div>
