@@ -5,7 +5,7 @@ layout: toc
   <div class="resource-main">
     <h1 class="margin-top-0 margin-bottom-0">{{ page.title }}</h1>
 
-    <h2 class="text-primary-vivid">Overview</h2>
+    <h2 id="overview" class="text-primary-vivid">Overview</h2>
     {{ page.description | default: "No description provided." | markdownify }}
 
     <div class="display-flex margin-top-2 margin-bottom-2 border-bottom border-top border-base no_toc_section">
@@ -58,14 +58,14 @@ layout: toc
       {% endif %}
     </div>
 
-    <h2 class="text-primary-vivid">Details</h2>
+    <h2 id="details" class="text-primary-vivid">Details</h2>
     {{ page.details | default: "No details provided." | markdownify }}
 
-    <h2 class="text-primary-vivid">Examples</h2>
+    <h2 id="examples" class="text-primary-vivid">Examples</h2>
     {{ page.examples | default: "No examples provided." | markdownify }}
 
     {% if page.policy_tags %}
-      <h2 class="text-primary-vivid">Policy References</h2>
+      <h2 id="policy-references" class="text-primary-vivid">Policy References</h2>
       <div>
         <ul>
           {% for tag in page.policy_tags %}
