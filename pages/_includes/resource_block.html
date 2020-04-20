@@ -1,6 +1,6 @@
 <div class="display-flex border-bottom border-base margin-top-4 padding-bottom-2 padding-top-2">
   <div class="resource-main">
-    <h3 class="margin-top-0">{{ resource.name }}</h3>
+    <h3 id="{{ resource.name | slugify }}" class="margin-top-0">{{ resource.name }}</h3>
 
     <p>
       {% if resource.description %}
