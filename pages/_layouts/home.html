@@ -3,7 +3,7 @@ layout: default
 class: home
 ---
 
-<div class="bg-primary text-white margin-bottom-3 tablet:margin-bottom-6" id="main-content">
+<div class="bg-primary text-white margin-bottom-1 tablet:margin-bottom-1" id="main-content">
   <div class="grid-container padding-y-3 tablet:padding-y-6">
     <div class="measure-1 font-heading-md tablet:font-heading-xl line-height-serif-4 margin-bottom-4">
       {{page.tagline}}
@@ -13,11 +13,11 @@ class: home
 </div>
 
 <div class="grid-container margin-bottom-3 tablet:margin-bottom-6 usa-layout__docs-main">
-  <div class="padding-bottom-205">
+  <div>
     {{ content }}
   </div>
 
-  <div class="grid-row grid-gap border-top">
+  <div class="grid-row grid-gap">
     <div class="grid-col-4">
       <h2>Browse resources by category</h2>
     </div>
@@ -28,10 +28,10 @@ class: home
         {% assign category = site.categories | where: "category_name", resource.text | first %}
         {% if category.show_on_front_page %}
           <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
-            <h3 class="margin-top-0 text-primary-vivid">{{ category.category_name }}</h3>
+            <h3 class="margin-top-0 margin-bottom-0">{{ category.category_name }}</h3>
             <p class="text-ink line-height-sans-4">{{ category.description }}</p>
             <a href="{{ category.url | relative_url }}">
-              See all {{ category.category_name }} resources &gt;
+              Browse {{ category.category_name }} &gt;
             </a>
           </div>
         {% endif %}
@@ -45,7 +45,7 @@ class: home
     </div>
     <div class="grid-col-8 padding-205 display-flex flex-row flex-wrap">
       {% for tag in site.keywords %}
-        <div class="border border-base radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-1 grid-col-3 display-flex flex-justify-center text-center">
+        <div class="border-primary-vivid border-2px radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-1 grid-col-3 display-flex flex-justify-center text-center">
           <a href="{{ tag.url | relative_url }}" class="text-no-underline display-flex flex-align-center">
             {{ tag.name }}
           </a>
