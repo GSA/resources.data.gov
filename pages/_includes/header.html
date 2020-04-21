@@ -1,11 +1,15 @@
 <div class="usa-overlay"></div>
 <header class="usa-header usa-header--extended" role="banner">
+
+  {% include preview-banner.html %}
+
   <div class="usa-navbar">
     <div class="usa-logo" id="extended-logo">
       <em class="usa-logo__text"><a href="{{ '/' | relative_url }}" title="Home" aria-label="Home"><img src="{{ '/assets/img/resources-heading--desktop--light.svg' | relative_url }}" alt="{{site.title}}" class="display-block" /></a></em>
     </div>
     <button class="usa-menu-btn text-semibold">Menu</button>
   </div>
+
   <nav role="navigation" class="usa-nav bg-base-lightest">
     <div class="usa-nav__inner"><button class="usa-nav__close"><img src="{{ '/assets/uswds/img/close.svg' | relative_url }}" alt="close" /></button>
 
@@ -45,6 +49,7 @@
       <form id="search_form" class="usa-search usa-search--small" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
         <input name="utf8" type="hidden" value="&#x2713;">
         <input type="hidden" name="affiliate" id="affiliate" value="{{ site.searchgov_affiliate }}">
+
         <div role="search">
           <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
           <input class="usa-input usagov-search-autocomplete" id="extended-search-field-small" type="search" name="query" autocomplete="off">
