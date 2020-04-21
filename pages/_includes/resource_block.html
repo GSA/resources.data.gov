@@ -3,11 +3,11 @@
   <div class="resource-main">
     {% if resource.collection == "summaries" %}
       <a href="{{ resource.link }}">
-        <h3 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}&nbsp;<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h3>
+        <h2 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}&nbsp;<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
       </a>
     {% else %}
       <a href="{{ "/resources/" | append: resource.slug | relative_url }}">
-        <h3 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}</h3>
+        <h2 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}</h2>
       </a>
     {% endif %}
 
@@ -21,12 +21,12 @@
   </div>
 
   <div class="resource-side no_toc_section">
-    <h4 class="margin-top-0 margin-bottom-0">Source</h4>
+    <h3 class="margin-top-0 margin-bottom-0">Source</h3>
     <p>
       {{ resource.source | default: "No source provided" }}
     </p>
 
-    <h4 class="margin-top-0 margin-bottom-0">Keywords</h4>
+    <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
     <p>
       {% for tag in resource.tags %}
         {% assign slug_tag = tag | slugify %}
@@ -42,7 +42,7 @@
     </p>
 
     {% if resource.format != "" %}
-      <h4 class="margin-top-0 margin-bottom-0">Format</h4>
+      <h3 class="margin-top-0 margin-bottom-0">Format</h3>
       <p>
         {{ resource.format }}
       </p>

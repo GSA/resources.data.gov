@@ -19,7 +19,7 @@ class: home
 
   <div class="grid-row grid-gap">
     <div class="grid-col-4">
-      <h2>Browse resources by category</h2>
+      <h1>Browse resources by category</h1>
     </div>
     <div class="grid-col-8 padding-205">
       <!-- rely on site navigation to guide which resources show up -->
@@ -28,7 +28,7 @@ class: home
         {% assign category = site.categories | where: "category_name", resource.text | first %}
         {% if category.show_on_front_page %}
           <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
-            <h3 class="margin-top-0 margin-bottom-0">{{ category.category_name }}</h3>
+            <h2 class="margin-top-0 margin-bottom-0">{{ category.category_name }}</h2>
             <p class="text-ink line-height-sans-4">{{ category.description }}</p>
             <a href="{{ category.url | relative_url }}">
               Browse {{ category.category_name }} &gt;
@@ -41,7 +41,7 @@ class: home
 
   <div class="grid-row grid-gap border-top">
     <div class="grid-col-4">
-      <h2>Browse resources by keyword</h2>
+      <h1>Browse resources by keyword</h1>
     </div>
     <div class="grid-col-8 padding-205 display-flex flex-row flex-wrap">
       {% for tag in site.keywords %}
