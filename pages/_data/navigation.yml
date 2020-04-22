@@ -1,9 +1,3 @@
-- text: Unlinked
-  children:
-    - text: Strategy
-      url: /strategy
-    - text: Open data communities
-      url: /open-data-communities
 - text: Resources
   children:
     - text: Data management & governance
