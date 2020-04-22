@@ -14,9 +14,7 @@
   url: /categories/communities
 - text: About
   children:
-    - text: History
-      url: /about/history/
-    - text: Requirements
-      url: /about/requirements/
+    - text: Learn more about this repository
+      url: /about/about-this-repository/
     - text: Governance
       url: /about/governance/
