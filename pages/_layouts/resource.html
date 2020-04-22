@@ -8,14 +8,21 @@ layout: toc
     <h2 id="overview" class="text-primary-vivid">Overview</h2>
     {{ page.description | default: "No description provided." | markdownify }}
 
-    <div class="display-flex margin-top-2 margin-bottom-2 border-bottom border-top border-base no_toc_section">
-      <div class="padding-2">
-        <h3 class="margin-top-0 margin-bottom-0">Source</h3>
+    <div class="grid-row grid-gap display-flex margin-top-2 margin-bottom-2 border-bottom border-top border-base no_toc_section">
+
+      {% if page.format != "" %}
+        {% assign column_length = "grid-col-4" %}
+      {% else %}
+        {% assign column_length = "grid-col-6" %}
+      {% endif %}
+
+      <div class="{{ column_length }}">
+        <h3>Source</h3>
         {{ page.source | default: "No source provided." | markdownify }}
       </div>
 
-      <div class="padding-2">
-        <h3 class="margin-top-0 margin-bottom-0">Category</h3>
+      <div class="{{ column_length }}">
+        <h3>Category</h3>
         <p>
           <!-- special case communities -->
           {% if page.category == "Communities" %}
@@ -29,28 +36,21 @@ layout: toc
             </a>
           {% endif %}
         </p>
-      </div>
 
-      <div class="padding-2">
-        <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
+        <h3>Keywords</h3>
         <p>
           {% for tag in page.tags %}
             <div>
               {% assign slug_tag = tag | slugify %}
-              <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">
-                {{ tag }}
-              </a>
-              {% if forloop.last != true %}
-                ,
-              {% endif %}
+              <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last != true %},{% endif %}
             </div>
           {% endfor %}
         </p>
       </div>
 
-      {% if page.format %}
-        <div class="padding-2">
-          <h3 class="margin-top-0 margin-bottom-0">Format</h3>
+      {% if page.format != "" %}
+        <div class="{{ column_length }}">
+          <h3>Format</h3>
           <p>
             {{ page.format }}
           </p>
