@@ -27,10 +27,8 @@ layout: default
 
         {% for resource in resources %}
           {% include resource_block.html resource=resource %}
-{% else %}
-          <div class="resource-main">
-            <p>No categories match the category <code>{{ page.category }}</code>.</p>
-          </div>
+        {% else %}
+          <p>No categories match the category <code>{{ page.category }}</code>.</p>
         {% endfor %}
 
       </div>
