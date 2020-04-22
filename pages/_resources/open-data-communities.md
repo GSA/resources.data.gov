@@ -1,14 +1,6 @@
 ---
 details: >-
-  ---
-
-  title: Open Data Community of Practice
-
-  layout: page
-
-  ---
-
-
+  
   ## Who we are
 
 
