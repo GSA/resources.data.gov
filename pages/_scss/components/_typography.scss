@@ -1,70 +1,70 @@
 h1,
 .usa-prose > h1 {
   @include u-font($theme-font-role-heading, $theme-h1-mobile-font-size);
-  @include u-text("normal");
+  @include u-text("semibold");
 }
 
 @include at-media("mobile-lg") {
   h1,
   .usa-prose > h1 {
     @include u-font($theme-font-role-heading, $theme-h1-font-size);
-    @include u-text("normal");
+    @include u-text("semibold");
   }
 }
 
 h2,
 .usa-prose > h2 {
   @include u-font($theme-font-role-heading, $theme-h2-mobile-font-size);
-  @include u-text("normal");
+  @include u-text("semibold");
 }
 
 @include at-media("mobile-lg") {
   h2,
   .usa-prose > h2 {
     @include u-font($theme-font-role-heading, $theme-h2-font-size);
-    @include u-text("normal");
+    @include u-text("semibold");
   }
 }
 
 h3,
 .usa-prose > h3 {
   @include u-font($theme-font-role-heading, $theme-h3-mobile-font-size);
-  @include u-text("normal");
+  @include u-text("semibold");
 }
 
 @include at-media("mobile-lg") {
   h3,
   .usa-prose > h3 {
     @include u-font($theme-font-role-heading, $theme-h3-font-size);
-    @include u-text("normal");
+    @include u-text("semibold");
   }
 }
 
 h4,
 .usa-prose > h4 {
   @include u-font($theme-font-role-heading, $theme-h4-mobile-font-size);
-  @include u-text("normal");
+  @include u-text("semibold");
 }
 
 @include at-media("mobile-lg") {
   h4,
   .usa-prose > h4 {
     @include u-font($theme-font-role-heading, $theme-h4-font-size);
-    @include u-text("normal");
+    @include u-text("semibold");
   }
 }
 
 h5,
 .usa-prose > h5 {
   @include u-font($theme-font-role-heading, $theme-h5-mobile-font-size);
-  @include u-text("normal");
+  @include u-text("semibold");
 }
 
 @include at-media("mobile-lg") {
   h5,
   .usa-prose > h5 {
     @include u-font($theme-font-role-heading, $theme-h5-font-size);
-    @include u-text("normal");
+    @include u-text("semibold");
   }
 }
 
