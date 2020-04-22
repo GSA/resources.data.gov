@@ -5,8 +5,10 @@ layout: toc
   <h1 class="margin-top-0 margin-bottom-0">{{ page.name }}</h1>
 
   <div class="grid-row grid-gap display-flex flex-column border-bottom border-base">
-    <h2 id="overview" class="text-primary-vivid">Overview</h2>
-    {{ page.description | default: "No description provided." | markdownify }}
+    <h2 id="overview" class="text-primary-dark">Overview</h2>
+    <div class="usa-prose-intro">
+      {{ page.description | default: "No description provided." | markdownify }}
+    </div>
   </div>
 
   <div class="grid-row grid-gap display-flex margin-bottom-2 border-bottom border-base no_toc_section">
@@ -60,18 +62,18 @@ layout: toc
   </div>
 
   <div class="grid-row grid-gap display-flex flex-column border-bottom border-base">
-    <h2 id="details" class="text-primary-vivid">Details</h2>
+    <h2 id="details" class="text-primary-dark">Details</h2>
     {{ page.details | default: "No details provided." | markdownify }}
   </div>
 
   <div class="grid-row grid-gap display-flex flex-column border-bottom border-base">
-    <h2 id="examples" class="text-primary-vivid">Examples</h2>
+    <h2 id="examples" class="text-primary-dark">Examples</h2>
     {{ page.examples | default: "No examples provided." | markdownify }}
   </div>
 
   {% if page.policy_tags != "" %}
     <div class="grid-row grid-gap border-bottom border-base">
-      <h2 id="policy-references" class="text-primary-vivid">Policy References</h2>
+      <h2 id="policy-references" class="text-primary-dark">Policy References</h2>
       <div>
         <ul>
           {% for tag in page.policy_tags %}
