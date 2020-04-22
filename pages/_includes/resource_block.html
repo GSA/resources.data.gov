@@ -2,7 +2,7 @@
 
   <div class="resource-main">
     {% if resource.collection == "summaries" %}
-      <a href="{{ resource.link }}">
+      <a href="{{ resource.link }}" target="_blank">
         <h2 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}&nbsp;<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
       </a>
     {% else %}
