@@ -4,14 +4,14 @@ layout: toc
 <div class="padding-bottom-2">
   <h1 class="margin-top-0 margin-bottom-0">{{ page.name }}</h1>
 
-  <div class="grid-row grid-gap display-flex flex-column border-bottom border-base">
-    <h2 id="overview" class="text-primary-dark">Overview</h2>
+  <div class="grid-row grid-gap display-flex flex-column margin-top-205 border-bottom border-base">
+    <h2 id="overview" class="margin-top-0 margin-bottom-0 text-primary-dark">Overview</h2>
     <div class="usa-prose-intro">
       {{ page.description | default: "No description provided." | markdownify }}
     </div>
   </div>
 
-  <div class="grid-row grid-gap display-flex margin-bottom-2 border-bottom border-base no_toc_section">
+  <div class="grid-row grid-gap display-flex margin-top-205 border-bottom border-base no_toc_section">
 
     {% if page.format != "" %}
       {% assign column_length = "grid-col-4" %}
@@ -20,12 +20,12 @@ layout: toc
     {% endif %}
 
     <div class="{{ column_length }}">
-      <h3>Source</h3>
+      <h3 class="margin-top-0 margin-bottom-0">Source</h3>
       {{ page.source | default: "No source provided." | markdownify }}
     </div>
 
     <div class="{{ column_length }}">
-      <h3>Category</h3>
+      <h3 class="margin-top-0 margin-bottom-0">Category</h3>
       <p>
         <!-- special case communities -->
         {% if page.category == "Communities" %}
@@ -40,7 +40,7 @@ layout: toc
         {% endif %}
       </p>
 
-      <h3>Keywords</h3>
+      <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
       <p>
         {% for tag in page.tags %}
           <div>
@@ -53,7 +53,7 @@ layout: toc
 
     {% if page.format != "" %}
       <div class="{{ column_length }}">
-        <h3>Format</h3>
+        <h3 class="margin-top-0 margin-bottom-0">Format</h3>
         <p>
           {{ page.format }}
         </p>
@@ -61,19 +61,19 @@ layout: toc
     {% endif %}
   </div>
 
-  <div class="grid-row grid-gap display-flex flex-column border-bottom border-base">
-    <h2 id="details" class="text-primary-dark">Details</h2>
+  <div class="grid-row grid-gap display-flex flex-column margin-top-205 border-bottom border-base">
+    <h2 id="details" class="margin-top-0 margin-bottom-0 text-primary-dark">Details</h2>
     {{ page.details | default: "No details provided." | markdownify }}
   </div>
 
-  <div class="grid-row grid-gap display-flex flex-column border-bottom border-base">
-    <h2 id="examples" class="text-primary-dark">Examples</h2>
+  <div class="grid-row grid-gap display-flex flex-column margin-top-205 border-bottom border-base">
+    <h2 id="examples" class="margin-top-0 margin-bottom-0 text-primary-dark">Examples</h2>
     {{ page.examples | default: "No examples provided." | markdownify }}
   </div>
 
   {% if page.policy_tags != "" %}
-    <div class="grid-row grid-gap border-bottom border-base">
-      <h2 id="policy-references" class="text-primary-dark">Policy References</h2>
+    <div class="grid-row grid-gap display-flex flex-column margin-top-205 border-bottom border-base">
+      <h2 id="policy-references" class="margin-top-0 margin-bottom-0 text-primary-dark">Policy References</h2>
       <div>
         <ul>
           {% for tag in page.policy_tags %}
