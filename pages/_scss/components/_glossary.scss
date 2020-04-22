@@ -1,5 +1,6 @@
 #glossary {
   transition: right 0.2s;
+  background-color: #112f4e;
 
   &[aria-hidden="true"] {
     right: -20rem;
@@ -22,7 +23,7 @@
     @include u-width("full");
 
     a {
-      @include u-text('blue-50v');
+      @include u-text('blue-30v');
     }
   }
 
