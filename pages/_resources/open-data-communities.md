@@ -25,7 +25,7 @@ policy_tags: ""
 name: Open Data Community of Practice
 slug: open-data-communities
 description: Federal open data community that meets on a monthly basis.
-source: resouces.data.gov
+source: resources.data.gov
 category: Communities
 tags:
   - open data
