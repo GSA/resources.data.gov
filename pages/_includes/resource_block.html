@@ -3,7 +3,7 @@
   <div class="resource-main">
     {% if resource.collection == "summaries" %}
       <a href="{{ resource.link }}" target="_blank">
-        <h2 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}&nbsp;<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
+        <h2 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
       </a>
     {% else %}
       <a href="{{ "/resources/" | append: resource.slug | relative_url }}">
@@ -30,12 +30,7 @@
     <p>
       {% for tag in resource.tags %}
         {% assign slug_tag = tag | slugify %}
-        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">
-          {{ tag }}
-        </a>
-        {% if forloop.last == false %}
-          ,&nbsp;
-        {% endif %}
+        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
       {% else %}
         This resource has no keywords.
       {% endfor %}
