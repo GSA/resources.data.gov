@@ -13,10 +13,14 @@ layout: toc
 
   <div class="grid-row grid-gap display-flex margin-top-205 border-bottom border-base no_toc_section">
 
-    {% if page.format != "" %}
-      {% assign column_length = "grid-col-4" %}
+    {% if page.format == "" %}
+      {% if page.link == "" %}
+        {% assign column_length = "grid-col-6" %}
+      {% else %}
+        {% assign column_length = "grid-col-4" %}
+      {% endif %}
     {% else %}
-      {% assign column_length = "grid-col-6" %}
+      {% assign column_length = "grid-col-3" %}
     {% endif %}
 
     <div class="{{ column_length }}">
@@ -56,6 +60,15 @@ layout: toc
         <h3 class="margin-top-0">Format</h3>
         <p>
           {{ page.format }}
+        </p>
+      </div>
+    {% endif %}
+
+    {% if page.link != "" %}
+      <div class="{{ column_length }}">
+        <h3 class="margin-top-0">External Link</h3>
+        <p>
+          {{ page.link | markdownify }}
         </p>
       </div>
     {% endif %}
