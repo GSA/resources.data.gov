@@ -300,12 +300,12 @@ values from the USWDS system type scale
 ----------------------------------------
 */
 
-$theme-type-scale-3xs: 2;
-$theme-type-scale-2xs: 3;
-$theme-type-scale-xs: 6;
-$theme-type-scale-sm: 8;
-$theme-type-scale-md: 10;
-$theme-type-scale-lg: 11;
+$theme-type-scale-3xs: 1;
+$theme-type-scale-2xs: 2;
+$theme-type-scale-xs: 3;
+$theme-type-scale-sm: 5;
+$theme-type-scale-md: 6;
+$theme-type-scale-lg: 10;
 $theme-type-scale-xl: 12;
 $theme-type-scale-2xl: 14;
 $theme-type-scale-3xl: 15;
@@ -404,7 +404,7 @@ $theme-h3-font-size: "md";
 $theme-h4-font-size: "sm";
 $theme-h5-font-size: "xs";
 $theme-h6-font-size: "2xs";
-$theme-heading-line-height: 3;
+$theme-heading-line-height: 5;
 $theme-small-font-size: "3xs";
 $theme-title-font-size: "2xl";
 
