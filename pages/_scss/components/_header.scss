@@ -14,7 +14,7 @@
 .usa-header--extended .usa-nav__link:hover:after,
 .usa-header--extended [aria-expanded=true]:after {
   @include at-media($theme-navigation-width) {
-    background-color: white;
+    background-color: primary;
     bottom: -1px;
   }
 }
