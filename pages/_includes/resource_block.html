@@ -1,47 +1,47 @@
 <div class="grid-row grid-gap display-flex border-bottom border-base margin-top-4 padding-bottom-2 padding-top-2">
 
-    <div class="grid-col-8">
-      {% if resource.collection == "summaries" %}
-        <a href="{{ resource.link }}" target="_blank">
-          <h2 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
-        </a>
-      {% else %}
-        <a href="{{ "/resources/" | append: resource.slug | relative_url }}">
-          <h2 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}</h2>
-        </a>
+  <div class="grid-col-8">
+    {% if resource.collection == "summaries" %}
+      <a href="{{ resource.link }}" target="_blank">
+        <h2 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
+      </a>
+    {% else %}
+      <a href="{{ "/resources/" | append: resource.slug | relative_url }}">
+        <h2 id="{{ resource.name | slugify }}" class="margin-top-0 margin-bottom-0">{{ resource.name }}</h2>
+      </a>
+    {% endif %}
+
+    <p>
+      {% if resource.description %}
+        {{ resource.description | default: "No description provided" }}
+      {% else if resource.shortdescription %}
+        {{ resource.shortdescription | default: "No short description provided" }}
       {% endif %}
+    </p>
+  </div>
 
-      <p>
-        {% if resource.description %}
-          {{ resource.description | default: "No description provided" }}
-        {% else if resource.shortdescription %}
-          {{ resource.shortdescription | default: "No short description provided" }}
-        {% endif %}
-      </p>
-    </div>
+  <div class="grid-col-4 no_toc_section">
+    <h3 class="margin-top-0 margin-bottom-0">Source</h3>
+    <p>
+      {{ resource.source | default: "No source provided" }}
+    </p>
 
-    <div class="grid-col-4 no_toc_section">
-      <h3 class="margin-top-0 margin-bottom-0">Source</h3>
-      <p>
-        {{ resource.source | default: "No source provided" }}
-      </p>
-
-      <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
-      <p>
-        {% for tag in resource.tags %}
-          {% assign slug_tag = tag | slugify %}
-          <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
+    <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
+    <p>
+      {% for tag in resource.tags %}
+        {% assign slug_tag = tag | slugify %}
+        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
       {% else %}
-          This resource has no keywords.
-        {% endfor %}
-      </p>
+        This resource has no keywords.
+      {% endfor %}
+    </p>
 
-      {% if resource.format != "" %}
-        <h3 class="margin-top-0 margin-bottom-0">Format</h3>
-        <p>
-          {{ resource.format }}
-        </p>
-      {% endif %}
-    </div>
+    {% if resource.format != "" %}
+      <h3 class="margin-top-0 margin-bottom-0">Format</h3>
+      <p>
+        {{ resource.format }}
+      </p>
+    {% endif %}
+  </div>
 
 </div>

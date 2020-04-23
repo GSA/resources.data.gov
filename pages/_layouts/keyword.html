@@ -15,7 +15,7 @@ page.name | sort: "name" | group_by: "category" | sort: "name" %}
         {{ group.name }}
       </h2>
       {% for resource in group.items %}
-        <div>
+        <div class="no_toc_section">
           {% include resource_block.html resource=resource %}
         </div>
       {% endfor %}
