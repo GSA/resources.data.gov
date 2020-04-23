@@ -172,8 +172,8 @@ collections:
         collection: "policy_tags"
         multiple: true
         hint: "policy tags for this resource summary"
-        valueField: "name"
-        searchFields: ["name"]
+        valueField: "policy_name"
+        searchFields: ["policy_name"]
         required: true
 
       - label: "format"
