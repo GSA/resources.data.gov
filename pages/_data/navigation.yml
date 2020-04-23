@@ -14,7 +14,7 @@
   url: /categories/communities
 - text: About
   children:
-    - text: Learn more about this repository
+    - text: About this repository
       url: /about/about-this-repository/
     - text: Governance
       url: /about/governance/
