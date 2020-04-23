@@ -139,7 +139,7 @@ details: >
 
   [accessLevel](#accessLevel)                                | Public Access Level       | The degree to which this dataset **could** be made publicly-available, *regardless of whether it has been made available*. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public). | Always 
 
-  [bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](pages/schemas/dcat-us/v1.1/omb_bureau_codes (1).csv) in the format of `015:11`. | Always  
+  [bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](pages/schemas/dcat-us/v1.1/omb_bureau_codes.csv) in the format of `015:11`. | Always  
 
   [programCode](#programCode)<sup>[USG](#USG-note)</sup>     | Program Code              | Federal agencies, list the primary program related to this data asset, from the [Federal Program Inventory](pages/schemas/dcat-us/v1.1/FederalProgramInventory_FY13_MachineReadable_091613.csv). Use the format of `015:001`. | Always                                                                                                                       
 
@@ -726,7 +726,7 @@ details: >
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This should be the URL for an indirect means of accessing the data, such as [API documentation](/v1.1/api/), a 'wizard' or other graphical interface which is used to generate a download, feed, or a request form for the data. When accessLevel is "restricted public" but the dataset is available online indirectly, this field should be the URL that provides indirect access. This should not be a **direct** download URL.  It is usually assumed that accessURL is an HTML webpage.  
+  **Usage Notes** | This should be the URL for an indirect means of accessing the data, such as [API documentation]({{ site.baseurl }}/pages/schemas/v1.1/dcat-us/api/), a 'wizard' or other graphical interface which is used to generate a download, feed, or a request form for the data. When accessLevel is "restricted public" but the dataset is available online indirectly, this field should be the URL that provides indirect access. This should not be a **direct** download URL.  It is usually assumed that accessURL is an HTML webpage.  
 
   **Example** |  `{"accessURL":"http://www.agency.gov/api/vegetables/"}`
 
