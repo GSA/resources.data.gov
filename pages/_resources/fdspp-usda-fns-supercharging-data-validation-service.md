@@ -3,7 +3,7 @@ details: >-
   *First published May 17, 2019*
 
 
-  ***Concept Note:** This Proof Point discusses data validation, the process of checking data entries for proper format, reasonable range, and other indicators that make up data quality. This is distinct from program participation verification, which is the process of examining program participants’ information against participation requirements.*
+  **\*Concept Note:** This Proof Point discusses data validation, the process of checking data entries for proper format, reasonable range, and other indicators that make up data quality. This is distinct from program participation verification, which is the process of examining program participants’ information against participation requirements.*
 
 
   ### The opportunity
@@ -83,7 +83,7 @@ details: >-
   ### Postscript
 
 
-  To learn more about the Data Validation Service, contact Ed Harper at[Edward.Harper@usda.gov](mailto:Edward.Harper@usda.gov). Ed, the Director of the Office of Program Integrity for the Child Nutrition Programs, along with Program Analysts Janis Johnston and Whitney Peters, conceived of and helped develop the Data Validation Service in collaboration with 18F. You can also check out GSA’s work with FNS on this project at[18F’s blog](https://18f.gsa.gov/2019/03/05/the-us-data-federation/).
+  To learn more about the Data Validation Service, contact Ed Harper at [Edward.Harper@usda.gov](mailto:Edward.Harper@usda.gov). Ed, the Director of the Office of Program Integrity for the Child Nutrition Programs, along with Program Analysts Janis Johnston and Whitney Peters, conceived of and helped develop the Data Validation Service in collaboration with 18F. You can also check out GSA’s work with FNS on this project at [18F’s blog](https://18f.gsa.gov/2019/03/05/the-us-data-federation/).
 policy_tags:
   - FDS Principle 6 Anticipate Future Uses
   - FDS Principle 8 Invest in Learning
