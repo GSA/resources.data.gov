@@ -71,9 +71,9 @@ collections:
         widget: "relation"
         collection: "policy_tags"
         multiple: true
-        hint: "policy tags for this resource summary"
-        valueField: "name"
-        searchFields: ["name"]
+        hint: "policy tags for this resource"
+        valueField: "policy_name"
+        searchFields: ["policy_name"]
         required: false
 
       - label: "format"
@@ -174,7 +174,7 @@ collections:
         hint: "policy tags for this resource summary"
         valueField: "policy_name"
         searchFields: ["policy_name"]
-        required: true
+        required: false
 
       - label: "format"
         name: "format"
