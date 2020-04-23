@@ -11,11 +11,11 @@ page.name | sort: "name" | group_by: "category" | sort: "name" %}
 <div>
   {% for group in all_resources %}
     {% if group.items %}
-      <h2 id="{{ group.name | slugify }}" class="resource-category margin-top-0 text-uppercase border-base border-top-2px">
+      <h2 id="{{ group.name | slugify }}" class="resource-category margin-top-0 text-uppercase border-base border-top-05">
         {{ group.name }}
       </h2>
       {% for resource in group.items %}
-        <div class="no_toc_section">
+        <div class="no_toc_section grid-container">
           {% include resource_block.html resource=resource %}
         </div>
       {% endfor %}
