@@ -1,21 +1,5 @@
 ---
-details: ""
-policy_tags: ""
-name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
-slug: dcat-us
-description: How to use Project Open Data Metadata Schema guidelines to document
-  and list agency datasets and application programming interfaces (APIs) for
-  hosting at agency.gov/data and currently in use at data.gov
-source: data.gov
-category: Data management & governance
-tags:
-  - data schema
-  - open data
-  - DCAT
-  - Project Open Metadata Schema
-  - internal-todo
-format: ""
-link to resource: >-
+details: >-
   {: .vertical-headings}
 
   | Specification name: | DCAT-US Schema v1.1 (Project Open Data Metadata Schema) |
@@ -1322,6 +1306,22 @@ link to resource: >-
   * [Metadata Resources](./metadata-resources/) (including starter template and sample files)
 
   * [DCAT](http://www.w3.org/TR/vocab-dcat/)
+policy_tags: ""
+name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
+slug: dcat-us
+description: How to use Project Open Data Metadata Schema guidelines to document
+  and list agency datasets and application programming interfaces (APIs) for
+  hosting at agency.gov/data and currently in use at data.gov
+source: data.gov
+category: Data management & governance
+tags:
+  - data schema
+  - open data
+  - DCAT
+  - Project Open Metadata Schema
+  - internal-todo
+format: ""
+link to resource: ""
 examples: ""
 layout: resource
 toc: true
