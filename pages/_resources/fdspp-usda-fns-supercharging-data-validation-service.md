@@ -3,7 +3,7 @@ details: >-
   *First published May 17, 2019*
 
 
-  **\*Concept Note:** This Proof Point discusses data validation, the process of checking data entries for proper format, reasonable range, and other indicators that make up data quality. This is distinct from program participation verification, which is the process of examining program participants’ information against participation requirements.*
+  *Concept Note: This Proof Point discusses data validation, the process of checking data entries for proper format, reasonable range, and other indicators that make up data quality. This is distinct from program participation verification, which is the process of examining program participants’ information against participation requirements.*
 
 
   ### The opportunity
@@ -109,7 +109,9 @@ tags:
   - data sharing
   - process redesign
 policy tags:
-  - ""
+  - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
+  - FDS Practice 02 Assess and Balance the Needs of Stakeholders
+  - FDS Practice 28 Align Quality with Intended Use
 format: FDS Proof Point
 examples: ""
 layout: resource
