@@ -22,12 +22,12 @@
 
   <div class="desktop:grid-col-4 no_toc_section">
     <h3 class="margin-top-0 margin-bottom-0">Source</h3>
-    <p>
+    <p class="margin-top-05 margin-bottom-205">
       {{ resource.source | default: "No source provided" }}
     </p>
 
     <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
-    <p>
+    <p class="margin-top-05 margin-bottom-205">
       {% for tag in resource.tags %}
         {% assign slug_tag = tag | slugify %}
         <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
@@ -38,7 +38,7 @@
 
     {% if resource.format != "" %}
       <h3 class="margin-top-0 margin-bottom-0">Format</h3>
-      <p>
+      <p class="margin-top-05 margin-bottom-205">
         {{ resource.format }}
       </p>
     {% endif %}
