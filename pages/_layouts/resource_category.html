@@ -27,7 +27,7 @@ layout: default
     {% include breadcrumb.html %}
     <div class="grid-row grid-gap">
       {% include sidenav.html %}
-      <div class="usa-layout__docs-main desktop:grid-col-12 usa-prose">
+      <div class="usa-layout__docs-main desktop:grid-col-12">
 
         {% assign resources = site.resources | concat: site.summaries | where: "category", page.category_name | sort: "name" %}
 
