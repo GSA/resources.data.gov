@@ -11,7 +11,7 @@ page.name | sort: "name" | group_by: "category" | sort: "name" %}
 <div>
   {% for group in all_resources %}
     {% if group.items %}
-      <h2 id="{{ group.name | slugify }}" class="resource-category margin-top-0 text-uppercase border-base border-top-05">
+      <h2 id="{{ group.name | slugify }}" class="resource-category margin-top-0 text-uppercase">
         {{ group.name }}
       </h2>
       {% for resource in group.items %}
