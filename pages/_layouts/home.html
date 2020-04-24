@@ -45,7 +45,7 @@ class: home
     </div>
     <div class="grid-col-8 padding-top-205 display-flex flex-row flex-wrap">
       {% for tag in site.keywords %}
-        <div class="grid-col-4">
+        <div class="mobile-lg:grid-col-6 tablet:grid-col-6 desktop:grid-col-4">
           <div class="border-primary-vivid border-2px radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-05 display-flex flex-justify-center text-center">
             <a href="{{ tag.url | relative_url }}" class="text-no-underline display-flex flex-align-center">
               {{ tag.name }}
