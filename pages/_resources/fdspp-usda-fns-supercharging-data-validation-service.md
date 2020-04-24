@@ -84,17 +84,6 @@ details: >-
 
 
   To learn more about the Data Validation Service, contact Ed Harper at [Edward.Harper@usda.gov](mailto:Edward.Harper@usda.gov). Ed, the Director of the Office of Program Integrity for the Child Nutrition Programs, along with Program Analysts Janis Johnston and Whitney Peters, conceived of and helped develop the Data Validation Service in collaboration with 18F. You can also check out GSA’s work with FNS on this project at [18F’s blog](https://18f.gsa.gov/2019/03/05/the-us-data-federation/).
-policy_tags:
-  - FDS Principle 6 Anticipate Future Uses
-  - FDS Principle 8 Invest in Learning
-  - FDS Practice 1 Identify Data Needs to Answer Key Agency Questions
-  - FDS Practice 2 Assess and Balance the Needs of Stakeholders
-  - FDS Practice 26 Share Data Between State Local and Tribal Governments and
-    Federal Agencies
-  - FDS Practice 28 Align Quality with Intended Use
-  - FDS Practice 33 Promote Wide Access
-  - FDS Practice 39 Support Federal Stakeholders
-  - FDS Practice 40 Support Non-Federal Stakeholders
 name: Supercharging Data through Validation as a Service
 slug: fdspp-usda-fns-supercharging-data-validation-service
 description: USDA's Food and Nutrition Service restructured its approach to data
@@ -108,7 +97,7 @@ tags:
   - API
   - data sharing
   - process redesign
-policy tags:
+policy_tags:
   - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders
   - FDS Practice 28 Align Quality with Intended Use

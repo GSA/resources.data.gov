@@ -66,8 +66,8 @@ collections:
         searchFields: ["name"]
         required: true
 
-      - label: "policy_tags"
-        name: "policy tags"
+      - label: "policy tags"
+        name: "policy_tags"
         widget: "relation"
         collection: "policy_tags"
         multiple: true
@@ -166,8 +166,8 @@ collections:
         searchFields: ["name"]
         required: true
 
-      - label: "policy_tags"
-        name: "policy tags"
+      - label: "policy tags"
+        name: "policy_tags"
         widget: "relation"
         collection: "policy_tags"
         multiple: true
