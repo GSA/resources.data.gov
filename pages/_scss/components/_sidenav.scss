@@ -4,12 +4,13 @@
   a {
     @include u-padding-y("2");
     @include u-text("bold");
+    @include u-text("primary");
 
     &.usa-current {
       @include u-text("ink");
 
       &:after {
-        @include u-bg("secondary-light");
+        @include u-bg("primary");
       }
     }
 
