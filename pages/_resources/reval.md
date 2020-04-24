@@ -32,7 +32,7 @@ details: >-
   * [API](https://github.com/18F/ReVAL/blob/master/docs/api.md) for validation
 
 
-  ### [](https://github.com/18F/ReVAL#requirements)Requirements
+  ### [Requirements](https://github.com/18F/ReVAL#requirements)
 
 
   * Python (3.5, 3.6)
