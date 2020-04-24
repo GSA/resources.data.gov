@@ -12,7 +12,7 @@ page.policy_name | sort: "name" | group_by: "category" | sort: "name" %}
     {% if group.items %}
       <h2 id="{{ group.name | slugify }}">{{ group.name }}</h2>
       {% for resource in group.items %}
-        <div class="resource-keyword">
+        <div class="border-bottom border-base">
           {% include resource_block.html resource=resource %}
         </div>
       {% endfor %}

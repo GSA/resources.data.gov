@@ -32,7 +32,9 @@ layout: default
         {% assign resources = site.resources | concat: site.summaries | where: "category", page.category_name | sort: "name" %}
 
         {% for resource in resources %}
-          {% include resource_block.html resource=resource %}
+          <div class="border-bottom border-base">
+            {% include resource_block.html resource=resource %}
+          </div>
         {% else %}
           <p>No categories match the category <code>{{ page.category }}</code>.</p>
         {% endfor %}
