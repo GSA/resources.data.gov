@@ -549,7 +549,7 @@ slug: m-13-13-guidance
 description: This document focuses on near-term efforts agencies must take to
   meet the five initial requirements of M-13-13, which were due November 30,
   2013.
-source: Project Open Data
+source: resources.data.gov
 category: Data management & governance
 tags:
   - open data
