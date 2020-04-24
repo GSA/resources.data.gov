@@ -79,10 +79,12 @@ layout: toc
     {{ page.details | default: "No details provided." | markdownify }}
   </div>
 
-  <div class="grid-row grid-gap display-flex flex-column margin-top-205 border-bottom border-base">
-    <h2 id="examples" class="margin-top-0 margin-bottom-0 text-primary-dark">Examples</h2>
-    {{ page.examples | default: "No examples provided." | markdownify }}
-  </div>
+  {% if page.examples != "" %}
+    <div class="grid-row grid-gap display-flex flex-column margin-top-205 border-bottom border-base">
+      <h2 id="examples" class="margin-top-0 margin-bottom-0 text-primary-dark">Examples</h2>
+      {{ page.examples | markdownify }}
+    </div>
+  {% endif %}
 
   {% if page.policy_tags != "" %}
     <div class="grid-row grid-gap display-flex flex-column margin-top-205 border-bottom border-base">
