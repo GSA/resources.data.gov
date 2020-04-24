@@ -82,12 +82,6 @@ collections:
         hint: "format or type of resource"
         required: false
 
-      - label: "link"
-        name: "link to resource"
-        widget: "markdown"
-        hint: "link to the resource"
-        required: false
-
       - label: "details"
         name: "details"
         widget: "markdown"
@@ -98,6 +92,12 @@ collections:
         name: "examples"
         widget: "markdown"
         hint: "descriptions of or links to how this resource has been used"
+        required: false
+
+      - label: "link"
+        name: "link to resource"
+        widget: "markdown"
+        hint: "link to the resource"
         required: false
 
       - label: "layout"
