@@ -9,12 +9,12 @@ details: >
 
 
 
-  # Supplemental Guidance on the Implementation of M-13-13 "Open Data Policy – Managing Information as an Asset”
+  ### Supplemental Guidance on the Implementation of M-13-13 "Open Data Policy – Managing Information as an Asset”
 
   *NOTE: Due to the government shutdown in the fall of 2013, OMB extended the previous Nov 1, 2013 deadlines in this document to Nov 30, 2013*
 
 
-  ## I. Introduction
+  ### I. Introduction
 
 
   The purpose of this guidance is to provide additional clarification and detailed requirements to assist agencies in carrying out the objectives of [Executive Order 13642](https://obamawhitehouse.archives.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-) of May 9, 2013, *Making Open and Machine Readable the New Default for Government Information* and [OMB Memorandum M-13-13](/policy-memo) *Open Data Policy-Managing Information as an Asset*.  Specifically, this document focuses on near-term efforts agencies must take to meet the following five initial requirements of M-13-13, which are due November 30, 2013 (six months from publication of M-13-13):
@@ -53,13 +53,13 @@ details: >
   This guidance introduces an Enterprise Data Inventory framework to provide agencies with improved clarity on specific actions to be taken and minimum requirements to be met.  It also provides OMB with a rubric by which to evaluate compliance and progress toward the objectives laid out in the Open Data Policy. Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the Open Data Cross-Agency Priority (CAP) Goal. Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources.
 
 
-  ## II. Policy Requirements
+  ### II. Policy Requirements
 
 
-  ### A. Create and Maintain an Enterprise Data Inventory
+  #### A. Create and Maintain an Enterprise Data Inventory
 
 
-  #### Purpose
+  ##### Purpose
 
   To develop a clear and comprehensive understanding of what data assets they possess, Federal Agencies are required to create an Enterprise Data Inventory (Inventory) that accounts for all data assets created or collected by the agency.  This includes, but is not limited to, data assets used in the agency’s information systems. The Inventory must be enterprise-wide, accounting for data assets across programs<sup>[2](#footnote-2)</sup>  and bureaus<sup>[3](#footnote-3)</sup>,  and must use the required [Project Open Data metadata schema](/v1.1/schema) available on Project Open Data.   After creating the Inventory, agencies should continually improve the usefulness of the Inventory by expanding, enriching, and opening the Inventory (concepts described in the framework below).
 
@@ -130,10 +130,10 @@ details: >
   > Example ways to evaluate “Open” maturity: How many releasable data assets have been released in the Public Data Listing? How have more data assets been released in accordance with the [“open data” principles](/principles) over time?\*
 
 
-  ### Minimum Requirements to Create and Maintain an Enterprise Data Inventory
+  #### Minimum Requirements to Create and Maintain an Enterprise Data Inventory
 
 
-  #### Develop and Submit to OMB an Inventory Schedule (by November 30, 2013)
+  ##### Develop and Submit to OMB an Inventory Schedule (by November 30, 2013)
 
   * Describe how the agency will ensure that all data assets from each bureau and program in the agency have been identified and accounted for in the Inventory, to the extent practicable, no later than November 30, 2014.  **Note: After the November 2014 deadline, agencies will still be required to update their Inventories and submit them to OMB on a quarterly basis until directed otherwise.**
 
@@ -153,14 +153,14 @@ details: >
   * Submit to OMB via MAX Community<sup>[12](#footnote-12)</sup>  the inventory as a single JSON file using the defined schema from Project Open Data. OMB invites agency input on the option of replacing future submission with an API via a discussion on Project Open Data.
 
 
-  #### Maintain the Enterprise Data Inventory (ongoing after November 30, 2013)
+  ##### Maintain the Enterprise Data Inventory (ongoing after November 30, 2013)
 
   * Continue to expand, enrich, and open the Inventory on an on-going basis.
 
   * Update the Inventory Schedule submitted on November 30, 2013 on a quarterly basis on the www.[agency].gov/digitalstrategy page.<sup>[13](#footnote-13)</sup>
 
 
-  #### Tools and Resources on Project Open Data
+  ##### Tools and Resources on Project Open Data
 
   * Out-of-the-box Inventory Tool: OMB and GSA have provided a data inventory tool (CKAN) that is customized to be compliant with the Open Data Policy out of the box. Customization includes the ability to generate the compliant Public Data Listing directly from the Inventory, as well as integration of the required Project Open Data metadata schema. Agencies may choose to install CKAN on their servers or use the centrally hosted tool.
 
@@ -171,10 +171,10 @@ details: >
   * Additional best practices, case studies, and tools
 
 
-  ### B. Create and Maintain a Public Data Listing
+  #### B. Create and Maintain a Public Data Listing
 
 
-  #### Purpose
+  ##### Purpose
 
   To improve the discoverability and usability of data assets, all federal agencies must develop a Public Data Listing, which contains a list of all data assets that are or could be made available to the public. This Public Data Listing, posted at www.[agency].gov//data.json, would typically be a subset of the agency’s Inventory.  This will allow the public to view agencies’ open data assets and subsequent progress as additional data assets are published.
 
@@ -195,7 +195,7 @@ details: >
   * Include data assets produced through agency-funded grants, contracts, and cooperative agreements
 
 
-  #### Minimum Requirements to Create and Maintain a Public Data Listing
+  ##### Minimum Requirements to Create and Maintain a Public Data Listing
 
 
   **Publish a Public Data Listing (by November 30, 2013)**
@@ -220,10 +220,10 @@ details: >
   * JSON Validator
 
 
-  ### C. Create a Process to Engage With Customers to Help Facilitate and Prioritize Data Release
+  #### C. Create a Process to Engage With Customers to Help Facilitate and Prioritize Data Release
 
 
-  #### Purpose
+  ##### Purpose
 
   Identifying and engaging with key data customers to help determine the value of federal data assets can help agencies prioritize those of highest value for quickest release. Data customers include public as well as government stakeholders<sup>[17](#footnote-17)</sup>.  All Federal Agencies will be required to engage public input and reflect on how to incorporate customer feedback into their data management practices. Agencies may develop criteria at their discretion for prioritizing the opening of data assets, accounting for a range of factors, such as the quantity and quality of user demand, internal management priorities, and agency mission relevance. As customer feedback mechanisms and internal prioritization criteria will likely evolve over time and vary across agencies, agencies should share successful innovations in incorporating customer feedback through interagency working groups and Project Open Data to disseminate best practices. Agencies should regularly review the evolving customer feedback and public engagement strategy.
 
@@ -238,7 +238,7 @@ details: >
   * Help agencies prioritize data release through the Public Data Listing and management efforts to improve data discoverability and usability
 
 
-  #### Minimum Requirements to Create a Process to Engage With Customers to Help Facilitate and Prioritize Data Release
+  ##### Minimum Requirements to Create a Process to Engage With Customers to Help Facilitate and Prioritize Data Release
 
 
   **Establish Customer Feedback Mechanism (by November 30, 2013)**
@@ -265,10 +265,10 @@ details: >
   * [GSA’s API Resources](http://18f.github.io/API-All-the-X/)
 
 
-  ### D. Document if Data Cannot be Released
+  #### D. Document if Data Cannot be Released
 
 
-  #### Purpose
+  ##### Purpose
 
   The Open Data Policy requires agencies to strengthen and develop policies and processes to ensure that only the appropriate data are made available publicly.  Agencies should work with their Senior Agency Official for Privacy and other relevant officials to ensure a complete analysis of issues that could preclude public disclosure of information collected or created.  If the agency determines the data should not be made publicly available because of law, regulation, or policy or because the data are subject to privacy, confidentiality, security, trade secret, contractual, or other valid restrictions to release, agencies must document the determination in consultation with their Office of General Counsel or equivalent. The agency should designate one of three “access levels” for each data asset listed in the inventory: public, restricted public, and non-public.  The descriptions of these categories can be found below and on Project Open Data.
 
@@ -303,7 +303,7 @@ details: >
   *This category includes data assets that are only available for internal use by the Federal Government, such as by a single program, single agency, or across multiple agencies.  This category might include some but not all data assets designated as Controlled Unclassified Information (CUI), consistent with Executive Order 13556.  Some non-public data assets may still potentially be available to other intra-agency operating units and/or other government agencies, as discussed in [OMB Memorandum M-11-02: Sharing Data While Protecting Privacy](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2011/m11-02.pdf).  The accessLevelComment field for non-public datasets must contain an explanation for the reasoning behind why these data cannot be made public.*
 
 
-  #### Minimum Requirements to Document if Data Cannot be Released
+  ##### Minimum Requirements to Document if Data Cannot be Released
 
 
   **Describe Data Publication Process (by November 30, 2013)**
@@ -314,10 +314,10 @@ details: >
   * Agencies must publish a general overview of this process on the www.[agency].gov/digitalstrategy page. Overviews should include information on the actual process by which data is determined to have a valid restriction to release and examples of what kinds of characteristics a data asset has that leads to a determination to not release.
 
 
-  ### E. Clarify Roles and Responsibilities for Promoting Efficient and Effective Data Release
+  #### E. Clarify Roles and Responsibilities for Promoting Efficient and Effective Data Release
 
 
-  #### Purpose
+  ##### Purpose
 
   Agencies should identify points of contact for the following roles and responsibilities related to managing information as an asset:
 
@@ -335,13 +335,13 @@ details: >
   * Working with the Chief Information Security Officer (CISO) and mission owners to assess overall organizational risk, based on the impact of releasing potentially sensitive data, and make a risk-based determination.
 
 
-  #### Minimum Requirements to Clarify Roles and Responsibilities for Promoting Efficient and Effective Data Release
+  ##### Minimum Requirements to Clarify Roles and Responsibilities for Promoting Efficient and Effective Data Release
 
 
   **Report the point of contact for each of these roles and responsibilities via the E-Gov IDC<sup>[20](#footnote-20)</sup> by November 30, 2013**
 
 
-  #### Tools and Resources on Project Open Data
+  ##### Tools and Resources on Project Open Data
 
 
   * Sample Chief Data Officer Job Descriptions
@@ -349,7 +349,7 @@ details: >
   * Best practices such as Data Governance Board
 
 
-  ## III.	Summary of Agency Actions and Reporting Requirements
+  ### III.	Summary of Agency Actions and Reporting Requirements
 
 
   This section includes a high-level summary of agency actions and reporting requirements which are described in detail in the Policy Requirements section. Some requirements are one-time requirements, and others shall be updated quarterly as a part of the E-Gov IDC. This guidance uses three reporting channels:
@@ -413,10 +413,10 @@ details: >
 
 
 
-  ##Appendix
+  ###Appendix
 
 
-  ###Enterprise Data Inventory Enrichment Examples
+  ####Enterprise Data Inventory Enrichment Examples
 
 
   | **Enrichment Area** | **Examples** |
@@ -434,7 +434,7 @@ details: >
   |**Openness**|	These fields describe to what extent each data asset achieves the criteria for “open data” in [M-13-13](/policy-memo). |
 
 
-  ##Footnotes
+  ###Footnotes
 
 
   <sup><a id="footnote-1">1</a></sup> Data Asset: A collection of data elements or datasets that make sense to group together. Each community of interest identifies the Data Assets specific to supporting the needs of their respective mission or business functions. Notably, a Data Asset is a deliberately abstract concept. A given Data Asset may represent an entire database consisting of multiple distinct entity classes, or may represent a single entity class.
@@ -549,7 +549,7 @@ slug: m-13-13-guidance
 description: This document focuses on near-term efforts agencies must take to
   meet the five initial requirements of M-13-13, which were due November 30,
   2013.
-source: Project Open Data
+source: resources.data.gov
 category: Data management & governance
 tags:
   - open data
