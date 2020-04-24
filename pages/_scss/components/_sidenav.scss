@@ -36,6 +36,7 @@
   a {
     @include u-padding-y("1");
     @include u-text("normal");
+    @include u-text("ink");
   }
 
   .usa-sidenav__item {
