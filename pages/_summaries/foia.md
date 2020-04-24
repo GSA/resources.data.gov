@@ -7,7 +7,7 @@ link: https://www.foia.gov/
 name: FOIA.gov
 policy_tags: ''
 publish: true
-slug: 'foia '
+slug: 'foia'
 source: FOIA
 tags:
 - open data
