@@ -18,10 +18,10 @@ class: home
   </div>
 
   <div class="grid-row grid-gap">
-    <div class="grid-col-4">
+    <div class="desktop:grid-col-4">
       <h1>Browse resources by category</h1>
     </div>
-    <div class="grid-col-8 padding-205">
+    <div class="desktop:grid-col-8 padding-205">
       <!-- rely on site navigation to guide which resources show up -->
       {% assign resources = site.data.navigation | where: "text", "Resources" | first %}
       {% for resource in resources.children %}
@@ -40,10 +40,10 @@ class: home
   </div>
 
   <div class="grid-row grid-gap border-top">
-    <div class="grid-col-4">
+    <div class="desktop:grid-col-4">
       <h1>Browse resources by keyword</h1>
     </div>
-    <div class="grid-col-8 padding-top-205 display-flex flex-row flex-wrap">
+    <div class="desktop:grid-col-8 padding-top-205 display-flex flex-row flex-wrap">
       {% for tag in site.keywords %}
         <div class="mobile-lg:grid-col-6 tablet:grid-col-6 desktop:grid-col-4">
           <div class="border-primary-vivid border-2px radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-05 display-flex flex-justify-center text-center">
