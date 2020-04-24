@@ -24,13 +24,15 @@ layout: toc
     {% endif %}
 
     <div class="{{ column_length }}">
-      <h3 class="margin-top-0">Source</h3>
-      {{ page.source | default: "No source provided." | markdownify }}
+      <h3 class="margin-top-0 margin-bottom-0">Source</h3>
+      <div class="resource-markdown-metadata">
+        {{ page.source | default: "No source provided." | markdownify }}
+      </div>
     </div>
 
     <div class="{{ column_length }}">
-      <h3 class="margin-top-0">Category</h3>
-      <p>
+      <h3 class="margin-top-0 margin-bottom-0">Category</h3>
+      <p class="margin-top-05 margin-bottom-205">
         <!-- special case communities -->
         {% if page.category == "Communities" %}
           <a href="{{ page.category | slugify | relative_url }}">
@@ -44,21 +46,21 @@ layout: toc
         {% endif %}
       </p>
 
-      <h3 class="margin-top-0">Keywords</h3>
-      <p>
+      <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
+      <div class="margin-top-05 margin-bottom-205">
         {% for tag in page.tags %}
           <div>
             {% assign slug_tag = tag | slugify %}
             <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last != true %},{% endif %}
           </div>
         {% endfor %}
-      </p>
+      </div>
     </div>
 
     {% if page.format != "" %}
       <div class="{{ column_length }}">
-        <h3 class="margin-top-0">Format</h3>
-        <p>
+        <h3 class="margin-top-0 margin-bottom-0">Format</h3>
+        <p class="margin-top-05 margin-bottom-205">
           {{ page.format }}
         </p>
       </div>
@@ -66,10 +68,10 @@ layout: toc
 
     {% if page.link != "" %}
       <div class="{{ column_length }}">
-        <h3 class="margin-top-0">External Link</h3>
-        <p>
+        <h3 class="margin-top-0 margin-bottom-0">External Link</h3>
+        <div class="resource-markdown-metadata">
           {{ page.link | markdownify }}
-        </p>
+        </div>
       </div>
     {% endif %}
   </div>

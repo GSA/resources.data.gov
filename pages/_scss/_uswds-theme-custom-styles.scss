@@ -161,3 +161,8 @@ nav {
   padding-top: .25rem;
   @include u-font("sans", "md");
 }
+
+.resource-markdown-metadata p {
+  margin-bottom: 1.25rem;
+  margin-top: .25rem;
+}
