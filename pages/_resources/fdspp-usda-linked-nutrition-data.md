@@ -26,8 +26,8 @@ policy_tags:
   - FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles
 format: FDS Proof Point
 details: >-
-  # How USDA Linked Federal and Commercial Data to Shed Light on the Nutritional
-  Value of Retail Food Sales
+  ### How USDA Linked Federal and Commercial Data to Shed Light on the
+  Nutritional Value of Retail Food Sales
 
 
   September 6, 2019
@@ -39,19 +39,19 @@ details: >-
   USDA’s Economic Research Service (ERS) Food and Nutrition Service – Center for Nutrition Policy and Promotion (FNS-CNPP) and Agricultural Research Service (ARS) recently created the Purchase-to-Plate Crosswalk (PPC), which expands the use of the commercial data for research on American food choices. This crosswalk links the more than 359,000 food products in a comercial company database to several thousand foods in a series of USDA nutrition databases. Since there is no common identifiers between the two data structures, the team used probabilistic and semantic methods to reduce the manual effort required to link the data.
 
 
-  ## Lessons for other agencies
+  #### Lessons for other agencies
 
 
   By linking existing data resources, USDA was able to enrich and expand the analysis capabilities of both datasets. Other agencies can learn from the USDA’s approach to linking data to gain new insights from already available data. Working with both internal and external stakeholders, USDA identified clear project goals, linking criteria, and evaluation methods. The team sought a contractor with expertise in automated data matching strategies. In addition, an independent team of data scientists is conducting a data audit which involves a review of the methods as well as discussions with current and potential stake holders on future uses and usability of the data.
 
 
-  ## The Problem
+  #### The Problem
 
 
   Without these linked data, policy makers and researchers have been limited in their ability to address some important questions. For example, for over a decade, ERS has purchased and analyzed proprietary data on household food purchases and retail food sales from IRI, a market research company, but these data offer limited information about the nutritional value of the purchases. To better understand how buyers’ food choices compare to the recommendations in the Dietary Guidelines for Americans, the proprietarydata needed to be linked to USDA nutrition databases. The USDA databases quantify amounts of nutrients (beyond the Nutrition Facts label) and the number of servings of major food groups contained in about 15,000 food items. In addition, linking the datasets will allow USDA to estimate food prices for the next update of the market basket for the Thrifty Food Plan, the basis of the annual update for the maximum allotment for the Supplemental Nutrition Assistance Program (SNAP) benefits.
 
 
-  ## Challenges to Linking Data
+  #### Challenges to Linking Data
 
 
   Any matching problem requires a set of match criteria to define which matches are acceptable. This project had two criteria: nutrition and price. That is, the linking database is used both to integrate nutrition data into the scanner data and to provide price estimates for foods in the USDA Food Plans. This dual match criteria added to the complexity of the matching problem, and led to more unmatched Universal Product Code (UPCs) than if the team had simply chosen one.
