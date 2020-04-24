@@ -1,15 +1,16 @@
 ---
-category: Data management & governance
-description: DO WE NEED TO KEEP THIS LINK????? The public-facing site for FOIA requests.
-format: ''
-layout: resource
-link: https://www.foia.gov/
-name: FOIA.gov
-policy_tags: ''
-publish: true
-slug: 'foia'
-source: FOIA
-tags:
-- open data
+policy_tags: ""
 toc: true
+layout: resource
+name: FOIA.gov
+slug: foia
+publish: true
+description: The public-facing site for Freedom of Information Act (FOIA) requests.
+source: FOIA
+category: Data management & governance
+tags:
+  - open data
+format: ""
+link to resource summary: <https://www.foia.gov/>
+link: https://www.foia.gov/
 ---
