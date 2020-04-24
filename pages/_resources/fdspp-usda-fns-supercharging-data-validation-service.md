@@ -109,7 +109,9 @@ tags:
   - data sharing
   - process redesign
 policy tags:
-  - ""
+  - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
+  - FDS Practice 02 Assess and Balance the Needs of Stakeholders
+  - FDS Practice 28 Align Quality with Intended Use
 format: FDS Proof Point
 examples: ""
 layout: resource
