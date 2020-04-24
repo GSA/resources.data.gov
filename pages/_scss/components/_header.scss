@@ -1,12 +1,6 @@
 .usa-logo {
   img {
-    width: 252px;
-  }
-
-  @include at-media("mobile-lg") {
-    img {
-      width: auto;
-    }
+    width: 75%;
   }
 }
 
