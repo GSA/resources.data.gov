@@ -3,7 +3,7 @@ layout: toc
 show_resource: true
 ---
 
-<h1 class="padding-bottom-205">Results for "{{ page.name }}"</h1>
+<h1 class="margin-top-0 padding-bottom-205">Results for "{{ page.name }}"</h1>
 
 {% assign all_resources = site.resources | concat: site.summaries | where: "tags",
 page.name | sort: "name" | group_by: "category" | sort: "name" %}
