@@ -1,4 +1,15 @@
 ---
+name: ReVal (Reusable Validation Library)
+slug: reval
+description: ReVAL (Reusable Validation & Aggregation Library) is a Django App
+  for validating and aggregating data via API and web interface.
+source: General Services Administration
+category: Data tools
+tags:
+  - API
+  - data validation
+policy_tags: ""
+format: ""
 details: >-
   ReVal (Reusable Validation Library) is an open source Django App for
   validating data via an API and web interface.
@@ -16,6 +27,7 @@ details: >-
   * Flexible input format
 
   * Validation with:
+
     * [goodtables](https://github.com/frictionlessdata/goodtables-py)
     * [JSON Logic](https://github.com/QubitProducts/json-logic-py)
     * [SQL](https://sqlite.org/lang_keywords.html)
@@ -32,7 +44,7 @@ details: >-
   * [API](https://github.com/18F/ReVAL/blob/master/docs/api.md) for validation
 
 
-  ### [Requirements](https://github.com/18F/ReVAL#requirements)
+  ### Requirements
 
 
   * Python (3.5, 3.6)
@@ -52,18 +64,6 @@ details: >-
   * dj-database-url
 
   * requests
-policy_tags: ""
-name: ReVal (Reusable Validation Library)
-slug: reval
-description: ReVAL (Reusable Validation & Aggregation Library) is a Django App
-  for validating and aggregating data via API and web interface.
-source: General Services Administration
-category: Data tools
-tags:
-  - API
-  - data validation
-format: ""
-link to resource: "[Source code on GitHub](https://github.com/18F/ReVAL)"
 examples: >-
   ### Use case: USDA Food & Nutrition Service
 
@@ -81,8 +81,9 @@ examples: >-
 
 
   The Department of Transportation uses ReVal to validate Work Zone Data by validating it against the Work Zone Data Exchange (WZDx) Specification.  The Work Zone Data Exchange (WZDx) Specification enables infrastructure owners and operators (IOOs) to make harmonized work zone data available for third party use. The intent is to make travel on public roads safer and more efficient through ubiquitous access to data on work zone activity. Specifically, the project aims to get data on work zones into vehicles to help automated driving systems (ADS) and human drivers navigate more safely.
+link: "[GitHub repository](https://github.com/18F/ReVAL)"
 layout: resource
 toc: true
+link to resource: "[Source code on GitHub](https://github.com/18F/ReVAL)"
 publish: true
-link: "[GitHub repository](https://github.com/18F/ReVAL)"
 ---
