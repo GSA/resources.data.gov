@@ -68,7 +68,7 @@ examples: >-
   ### Use case: USDA Food & Nutrition Service
 
 
-  USDA FNS uses ReVal to implement their Data Validation Service tool for validating data from FNS-742 form submissions.  Each year state agencies report these data for each School Food Authority (SFA) with schools operating the National School Lunch Programs (NSLP) and/or the School Breakfast Program (SBP).
+  USDA FNS uses ReVal to implement their Data Validation Service tool for validating data from FNS-742 form submissions.  Each year state agencies report these data for each School Food Authority (SFA) with schools operating the National School Lunch Programs (NSLP) and/or the School Breakfast Program (SBP). States piloting this tool in 2019 [reported time savings, reduced stress, and greater efficiency for the pilot states.](https://18f.gsa.gov/2020/04/23/saving-time-and-improving-data-quality-for-the-national-school-lunch-breakfast-program/)
 
 
   ### Use case: Census Commodity Flow
@@ -81,7 +81,7 @@ examples: >-
 
 
   The Department of Transportation uses ReVal to validate Work Zone Data by validating it against the Work Zone Data Exchange (WZDx) Specification.  The Work Zone Data Exchange (WZDx) Specification enables infrastructure owners and operators (IOOs) to make harmonized work zone data available for third party use. The intent is to make travel on public roads safer and more efficient through ubiquitous access to data on work zone activity. Specifically, the project aims to get data on work zones into vehicles to help automated driving systems (ADS) and human drivers navigate more safely.
-link: "[GitHub repository](https://github.com/18F/ReVAL)"
+link: "[Source code on GitHub](https://github.com/18F/ReVAL)"
 layout: resource
 toc: true
 link to resource: "[Source code on GitHub](https://github.com/18F/ReVAL)"
