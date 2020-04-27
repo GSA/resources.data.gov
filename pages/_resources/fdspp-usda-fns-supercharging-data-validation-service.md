@@ -18,7 +18,7 @@ policy_tags:
   - FDS Practice 28 Align Quality with Intended Use
 format: FDS Proof Point
 details: >-
-  *First published May 17, 2019*
+  *Originally published May 17, 2019*
 
 
   *Concept Note: This Proof Point discusses data validation, the process of checking data entries for proper format, reasonable range, and other indicators that make up data quality. This is distinct from program participation verification, which is the process of examining program participants’ information against participation requirements.*
