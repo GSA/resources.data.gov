@@ -100,7 +100,7 @@ details: >-
   To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
 
 
-  **The Federal Data Strategy Incubator Project**
+  #### The Federal Data Strategy Incubator Project
 
 
   The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
