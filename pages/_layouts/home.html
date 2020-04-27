@@ -28,7 +28,7 @@ class: home
         {% assign category = site.categories | where: "category_name", resource.text | first %}
         {% if category.show_on_front_page %}
           <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
-            <h2 class="margin-top-0 margin-bottom-0">{{ category.category_name }}</h2>
+            <h2 class="margin-top-0">{{ category.category_name }}</h2>
             <p class="text-ink line-height-sans-4">{{ category.description }}</p>
             <a href="{{ category.url | relative_url }}">
               Browse {{ category.category_name }} &gt;
