@@ -107,7 +107,7 @@ details: >-
   ### Postscript
 
 
-  To learn more, read the technical bulletin: “[Linking USDA Nutrition Databases to IRI Household-Based and Store-Based Scanner Data](https://www.ers.usda.gov/publications/pub-details/?pubid=92570)” or contact Andrea Carlson at[andrea.carlson@usda.gov](mailto:andrea.carlson@usda.gov)or Elina Page at[elina.t.page@usda.gov](mailto:elina.t.page@usda.gov).
+  To learn more, read the technical bulletin: “[Linking USDA Nutrition Databases to IRI Household-Based and Store-Based Scanner Data](https://www.ers.usda.gov/publications/pub-details/?pubid=92570)” or contact Andrea Carlson at [andrea.carlson@usda.gov](mailto:andrea.carlson@usda.gov)or Elina Page at [elina.t.page@usda.gov](mailto:elina.t.page@usda.gov).
 
 
   ### The Federal Data Strategy Incubator Project
@@ -115,7 +115,7 @@ details: >-
 
   The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
-link: https://strategy.data.gov/proof-points/2019/09/06/usda-linked-nutrition-data/
+link: ""
 layout: resource
 toc: true
 publish: false
