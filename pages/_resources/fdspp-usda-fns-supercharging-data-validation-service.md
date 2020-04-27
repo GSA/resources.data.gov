@@ -102,6 +102,15 @@ details: >-
 
 
   To learn more about the Data Validation Service, contact Ed Harper at [Edward.Harper@usda.gov](mailto:Edward.Harper@usda.gov). Ed, the Director of the Office of Program Integrity for the Child Nutrition Programs, along with Program Analysts Janis Johnston and Whitney Peters, conceived of and helped develop the Data Validation Service in collaboration with 18F. You can also check out GSA’s work with FNS on this project at [18F’s blog](https://18f.gsa.gov/2019/03/05/the-us-data-federation/).
+
+
+  To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
+
+
+  #### The Federal Data Strategy Incubator Project
+
+
+  The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
 link: ""
 layout: resource
