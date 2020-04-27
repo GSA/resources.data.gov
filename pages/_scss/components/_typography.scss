@@ -30,6 +30,7 @@ h3,
 .usa-prose > h3 {
   @include u-font($theme-font-role-heading, $theme-h3-mobile-font-size);
   @include u-text("semibold");
+  margin-bottom: 0.5em;
 }
 
 @include at-media("mobile-lg") {
@@ -37,6 +38,7 @@ h3,
   .usa-prose > h3 {
     @include u-font($theme-font-role-heading, $theme-h3-font-size);
     @include u-text("semibold");
+    margin-bottom: 0.5em;
   }
 }
 
