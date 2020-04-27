@@ -9,7 +9,7 @@ description: Purchase-to-Plate Crosswalk (PPC) links the more than 359,000 food
   were no common identifiers between the two data structures, the team used
   probabilistic and semantic methods to reduce the manual effort required to
   link the data.
-source: Federal Data Strategy
+source: Federal Data Strategy / USDA
 category: Case studies & examples
 tags:
   - data sharing
@@ -104,13 +104,13 @@ details: >-
   By linking datasets for this project, USDA provided a new way to examine American food purchases and how they measure up, offering additional insights and evidence for assessing food and nutrition choices.
 
 
-  ### Postscript
+  #### Postscript
 
 
   To learn more, read the technical bulletin: “[Linking USDA Nutrition Databases to IRI Household-Based and Store-Based Scanner Data](https://www.ers.usda.gov/publications/pub-details/?pubid=92570)” or contact Andrea Carlson at [andrea.carlson@usda.gov](mailto:andrea.carlson@usda.gov)or Elina Page at [elina.t.page@usda.gov](mailto:elina.t.page@usda.gov).
 
 
-  ### The Federal Data Strategy Incubator Project
+  #### The Federal Data Strategy Incubator Project
 
 
   The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
