@@ -1,4 +1,22 @@
 ---
+name: Supercharging Data through Validation as a Service
+slug: fdspp-usda-fns-supercharging-data-validation-service
+description: USDA's Food and Nutrition Service restructured its approach to data
+  validation at the state level using an open-source, API-based validation
+  service managed at the federal level.
+source: Federal Data Strategy / USDA Food & Nutrition Service
+category: Case studies & examples
+tags:
+  - data cleaning
+  - data validation
+  - API
+  - data sharing
+  - process redesign
+policy_tags:
+  - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
+  - FDS Practice 02 Assess and Balance the Needs of Stakeholders
+  - FDS Practice 28 Align Quality with Intended Use
+format: FDS Proof Point
 details: >-
   *First published May 17, 2019*
 
@@ -84,27 +102,9 @@ details: >-
 
 
   To learn more about the Data Validation Service, contact Ed Harper at [Edward.Harper@usda.gov](mailto:Edward.Harper@usda.gov). Ed, the Director of the Office of Program Integrity for the Child Nutrition Programs, along with Program Analysts Janis Johnston and Whitney Peters, conceived of and helped develop the Data Validation Service in collaboration with 18F. You can also check out GSA’s work with FNS on this project at [18F’s blog](https://18f.gsa.gov/2019/03/05/the-us-data-federation/).
-name: Supercharging Data through Validation as a Service
-slug: fdspp-usda-fns-supercharging-data-validation-service
-description: USDA's Food and Nutrition Service restructured its approach to data
-  validation at the state level using an open-source, API-based validation
-  service managed at the federal level.
-source: Federal Data Strategy / USDA Food & Nutrition Service
-category: Case studies & examples
-tags:
-  - data cleaning
-  - data validation
-  - API
-  - data sharing
-  - process redesign
-policy_tags:
-  - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
-  - FDS Practice 02 Assess and Balance the Needs of Stakeholders
-  - FDS Practice 28 Align Quality with Intended Use
-format: FDS Proof Point
 examples: ""
+link: ""
 layout: resource
 toc: true
 publish: false
-link: https://strategy.data.gov/proof-points/2019/05/17/supercharging-data-through-validation-as-a-service/
 ---
