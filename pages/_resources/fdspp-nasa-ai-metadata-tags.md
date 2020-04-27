@@ -112,12 +112,6 @@ details: >-
 
 
   If you’d like to learn more about this project, please contact [anthony.r.buonomo@nasa.gov](mailto:anthony.r.buonomo@nasa.gov)or[brian.a.thomas@nasa.gov](mailto:brian.a.thomas@nasa.gov). Visit [https://www.sti.nasa.gov](https://www.sti.nasa.gov/)to see a sample of the sort of data the tagger was trained on. At present, the code related to the project it not publicly available.
-
-
-  #### The Federal Data Strategy Incubator Project
-
-
-  The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
 link: ""
 layout: resource
