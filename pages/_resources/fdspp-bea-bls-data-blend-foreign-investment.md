@@ -93,9 +93,6 @@ details: >-
   This BLS-BEA collaboration provides a model for other agencies to publish linked or blended data to satisfy user demands for expanded data products, illustrating the necessary resource investments for such projects, as well as their payoff.
 
 
-  ### Postscript
-
-
   To learn more about the BEA-BLS data blend, go to [www.bls.gov/fdi](https://www.bls.gov/fdi/) or contact [Ricardo Limes](mailto:Ricardo.limes@bea.gov).
 
 
