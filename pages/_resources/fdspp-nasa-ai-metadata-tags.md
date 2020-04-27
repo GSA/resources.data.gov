@@ -51,7 +51,7 @@ details: >-
   To illustrate these points, the STI-managed NASA Technical Reports Server (NTRS) is constantly ingesting new documents, requiring constant tagging by dedicated content managers. Scaling this tagging effort across multiple systems would require hiring many more dedicated content managers. Such experts are difficult to find, and the funding for hiring more experts may not be available.
 
 
-  Additionally, the sheer number of possible keywords presents difficulties for standardization. STI has organized its corpus by manually tagging each document with about ten keywords each from its evolving collection of over[20,000 standardized keywords](https://www.sti.nasa.gov/nasa-thesaurus/)(roughly half the size of the average adult’s vocabulary). Uniformly applying this many keywords is difficult for STI specialist content managers, and almost impossible for other NASA workers for whom tagging is a small part of their overall responsibilities.
+  Additionally, the sheer number of possible keywords presents difficulties for standardization. STI has organized its corpus by manually tagging each document with about ten keywords each from its evolving collection of over [20,000 standardized keywords](https://www.sti.nasa.gov/nasa-thesaurus/)(roughly half the size of the average adult’s vocabulary). Uniformly applying this many keywords is difficult for STI specialist content managers, and almost impossible for other NASA workers for whom tagging is a small part of their overall responsibilities.
 
 
   ### Machine learning and automation can help
@@ -87,7 +87,7 @@ details: >-
   The tagger API was quickly applied to different text systems. For example, the NASA Open Innovation (OI) Program developed a WordPress plugin that uses the tagger API to automatically tag blog posts. The tagger expands the number of tags on blog posts over the typical number of human-generated tags, making posts easier to find and encouraging exploration of the site. After some refinements are made, OI plans to release this plugin to all NASA WordPress site administrators.
 
 
-  OI has also utilized the tagger API to increase the number tags on NASA’s Open Source Software website,[https://code.nasa.gov](https://code.nasa.gov/). Because the website’s search function relies on text string matching, it only works if the user’s search terms match words in the project description. Keywords represent higher-order concepts; using keywords, a user can more quickly skim, search, and iteratively explore the site. The faster a user can reach interesting information, the more likely they are to stay on the page and explore further. The increased tag coverage from the tagger API has made it is easier for NASA colleagues and the public to find and explore NASA code.
+  OI has also utilized the tagger API to increase the number tags on NASA’s Open Source Software website, [https://code.nasa.gov](https://code.nasa.gov/). Because the website’s search function relies on text string matching, it only works if the user’s search terms match words in the project description. Keywords represent higher-order concepts; using keywords, a user can more quickly skim, search, and iteratively explore the site. The faster a user can reach interesting information, the more likely they are to stay on the page and explore further. The increased tag coverage from the tagger API has made it is easier for NASA colleagues and the public to find and explore NASA code.
 
 
   ![A search result on code.nasa.gov based on tags created by both humans and the AI tagger](https://strategy.data.gov/assets/img/posts/2019-05-28-image003.png "A search result on code.nasa.gov based on tags created by both humans and the AI tagger")*A search on [https://code.nasa.gov](https://code.nasa.gov/) yields code projects, like this one, based on tags created by both humans and the AI tagger.*
@@ -111,7 +111,13 @@ details: >-
   Anthony Buonomo, Justin Gosses, Andrew Adrian, and Brian Thomas work on the Data Analytics Team within the Transformation Data Division of NASA’s Office of the Chief Information Officer. Substantial software contributions were made by Anthony Buonomo, Brian Thomas, Yulan Lin and Justin Gosses.
 
 
-  If you’d like to learn more about this project, please contact [anthony.r.buonomo@nasa.gov](mailto:anthony.r.buonomo@nasa.gov)or[brian.a.thomas@nasa.gov](mailto:brian.a.thomas@nasa.gov). Visit [https://www.sti.nasa.gov](https://www.sti.nasa.gov/)to see a sample of the sort of data the tagger was trained on. At present, the code related to the project it not publicly available.
+  If you’d like to learn more about this project, please contact [anthony.r.buonomo@nasa.gov](mailto:anthony.r.buonomo@nasa.gov) or [brian.a.thomas@nasa.gov](mailto:brian.a.thomas@nasa.gov). Visit [https://www.sti.nasa.gov](https://www.sti.nasa.gov/) to see a sample of the sort of data the tagger was trained on. At present, the code related to the project it not publicly available.
+
+
+  #### The Federal Data Strategy Incubator Project
+
+
+  The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
 link: ""
 layout: resource
