@@ -5,7 +5,9 @@
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<title>
+  {{ page.name | default: page.policy_name | default: page.category_name | default: page.title }} | {{ site.title }}
+</title>
 
 {% assign description = page.description | default: site.description %}
 {% if description %}
