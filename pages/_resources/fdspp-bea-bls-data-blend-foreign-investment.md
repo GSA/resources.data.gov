@@ -99,6 +99,11 @@ details: >-
   To learn more about the BEA-BLS data blend, go to [www.bls.gov/fdi](https://www.bls.gov/fdi/) or contact [Ricardo Limes](mailto:Ricardo.limes@bea.gov).
 
 
+  #### The Federal Data Strategy Incubator Project
+
+
+  The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
+
 
   {:.footnotes}
 
@@ -111,12 +116,6 @@ details: >-
   [^3]: BEA’s statistics on FDIUS and on the activities of foreign-owned U.S. businesses are produced from BEA surveys of such businesses, who report at a consolidated enterprise level for all their U.S. operations (i.e. one report can potentially include hundreds, or even thousands, of business establishments). This level of reporting does not allow for production of statistics at a sub-national level, except for the select data items that are collected by state.
 
   [^4]: For this project, the employer identification number (EIN), a unique nine-digit number issued by the Internal Revenue Service to identify a business entity, was used as the common identifier.
-
-
-  ####The Federal Data Strategy Incubator Project
-
-
-  The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
 link: ""
 layout: resource
