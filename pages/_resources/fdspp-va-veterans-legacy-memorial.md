@@ -22,9 +22,6 @@ policy_tags:
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders
 format: FDS Proof Point
 details: >-
-  ### The Veterans Legacy Memorial
-
-
   April 19, 2019
 
 
