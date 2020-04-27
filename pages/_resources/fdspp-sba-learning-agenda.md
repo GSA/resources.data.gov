@@ -44,7 +44,7 @@ details: >-
 
   {:.post-image-box .post-image-box-center}
 
-  ![Research and Evaluation Questions]({{ site.baseurl }}/assets/img/posts/2019-08-02-image001.png "Research and evaluation questions related to SBA’s second strategic goal; “Build healthy entrepreneurial ecosystems and create business friendly environments,” from SBA’s FY 2018 ELA.")  
+  ![Research and Evaluation Questions]({{ https://strategy.data.gov/assets/img/posts/2019-08-02-image001.png "Research and evaluation questions related to SBA’s second strategic goal; “Build healthy entrepreneurial ecosystems and create business friendly environments,” from SBA’s FY 2018 ELA.")  
 
 
   The ELA goes on to describe how planned evaluations will help answer these questions using available data. The SBA has begun to identify datasets internal and external to the agency that can help answer these questions. During the scoping of an evaluation, the evaluation team asks what data are available and who manages those data. These questions start a conversation about the data, its history, and its quality. For example, the SBA began this conversation with the HUBZone program manager in 2017 to help improve program outcomes. The HUBZone program helps the Federal Government awards its prime contracts to HUBZone-certified businesses. The program evaluation informed the wider research questions and strategic goal by researching what factors contribute to agencies’ opportunities and challenges in meeting this goal, as well as the characteristics of small businesses that win these contracts.
