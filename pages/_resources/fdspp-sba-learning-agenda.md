@@ -8,7 +8,7 @@ description: Through its Enterprise Learning Agenda, Small Business
   insights. Other agencies can learn from the innovative ways SBA identifies
   data to answer agency strategic questions and adopt those aspects that work
   for their own needs.
-source: Federal Data Strategy
+source: Federal Data Strategy / SBA
 category: Case studies & examples
 tags:
   - process redesign
@@ -24,11 +24,7 @@ policy_tags:
   - FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles
 format: FDS Proof Point
 details: >-
-  ### SBA’s Approach to Identifying Data, Using a Learning Agenda, and
-  Leveraging Partnerships to Build its Evidence Base
-
-
-  August 2, 2019
+  *Originally published August 2, 2019*
 
 
   The Small Business Administration’s (SBA) evaluation office employs cutting edge and creative approaches to access and use data in order to assess the agency’s programs and advance its strategic goals.
@@ -40,7 +36,7 @@ details: >-
   Other agencies can learn from the innovative ways SBA identifies data to answer agency strategic questions and adopt those aspects that work for their own needs.
 
 
-  #### SBA’s Enterprise Learning Agenda
+  ### SBA’s Enterprise Learning Agenda
 
 
   SBA’s FY 2018 Enterprise Learning Agenda (ELA) is organized around the agency’s four FY 2018 – 2022 Strategic Plan goals: (1) support small business revenue and job growth, (2) build healthy entrepreneurial ecosystems and create business friendly environments, (3) restore small businesses and communities after disasters, and (4) strengthen the SBA’s ability to serve small businesses. Within each of these strategic goals, the ELA gives a brief overview of what prior research revealed, then enumerates key research and evaluation questions. Finally, the ELA lays out several planned evaluations for the coming fiscal year designed to answer a subset of those questions.
@@ -55,7 +51,7 @@ details: >-
   The HUBZone evaluation was planned, like all evaluations laid out in the ELA, to help answer questions identified by senior leadership. In this case, it helps address the fifth research/evaluation question affiliated with the agency’s second strategic goal: what factors most influence the Federal Government’s ability to reach its small business contracting goals?
 
 
-  #### Identifying Data Needed to Answer Questions
+  ### Identifying Data Needed to Answer Questions
 
 
   SBA’s evaluation work shows that meaningful insights can be derived without the extensive use of randomized trials or surveys. Rather, ‘administrative data’ – the information created in the process of running a government program – may sometimes be leveraged to answer evaluation questions. In the case of the HUBZone evaluation, researchers were able to produce valuable results in a short timeframe by analyzing existing data in the Federal Procurement Data System (which tracks contract awards for federal agencies) and SBA’s own program data accrued in the administration of the HUBZone certification process.
@@ -75,7 +71,7 @@ details: >-
   > - Jason Bossie (Director, Office of Program Performance, Analysis, and Evaluation)
 
 
-  #### Outside help
+  ### Outside help
 
 
   The HUBZone evaluation and similar efforts demonstrated that short-term, affordable evaluations can shed light on crucial evidence-related questions. There are, however, instances when questions linked with SBA’s strategic goals are unanswerable with limited internal resources. The SBA has built partnerships with stakeholders outside the agency to support its evaluations. Many research universities and other stakeholders with skill sets in research and evaluation can provide support.
@@ -86,7 +82,7 @@ details: >-
   > - Jason Bossie (Director, Office of Program Performance, Analysis, and Evaluation)
 
 
-  #### Completing the circle
+  ### Completing the circle
 
 
   As the SBA’s evaluation work matures, it is increasingly working with program officials to change data collection and other upstream aspects of data creation, so that those data can facilitate more powerful downstream analysis and evaluation.
@@ -101,18 +97,12 @@ details: >-
   Visit[www.sba.gov/evaluation](https://www.sba.gov/evaluation)to learn more about SBA’s Enterprise Learning Agenda and recently completed evaluations.
 
 
-  To receive updates on activities related to the Federal Data Strategy, please[sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
-
-
-  ![Federal Data Strategy Incubator Project Logo](https://strategy.data.gov/assets/img/federal-data-strategy-incubator-project-logo.png)
-
-
   #### The Federal Data Strategy Incubator Project
 
 
   The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
-link: https://strategy.data.gov/proof-points/2019/08/02/sba-ela/
+link: ""
 layout: resource
 toc: true
 publish: false
