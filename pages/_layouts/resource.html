@@ -41,7 +41,7 @@ layout: toc
             </a>
           {% else %}
             {% assign category_slug = page.category | slugify %}
-            <a href="{{ "/resources/" | append: category_slug | relative_url }}">
+            <a href="{{ "/categories/" | append: category_slug | relative_url }}">
               {{ page.category }}
             </a>
           {% endif %}
