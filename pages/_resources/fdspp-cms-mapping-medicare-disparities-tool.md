@@ -62,7 +62,7 @@ details: >-
   ### Protecting privacy while gaining insights
 
 
-  The privacy of the Medicare data the MMD Tool is built upon is protected by the privacy regulations as PHI (protected health information), which is individually identifiable health information held by covered entities and their business associates.[1](https://strategy.data.gov/proof-points/2019/05/03/the-mapping-medicare-disparities-tools/#fn:1) The MMD Tool extracts value from the aggregation of Medicare beneficiary data while still putting privacy first, performing a series of checks and data suppression steps before offering results to MMD Tool users. For example, if a user selects characteristics that would yield a population of fewer than 11 beneficiaries, the MMD Tool will conceal the result to protect privacy (you can read more about the approaches to protecting beneficiaries’ data on the [FAQ page](https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/MappingPublicFAQs.pdf)).
+  The privacy of the Medicare data the MMD Tool is built upon is protected by the privacy regulations as PHI (protected health information), which is individually identifiable health information held by covered entities and their business associates.[^1] The MMD Tool extracts value from the aggregation of Medicare beneficiary data while still putting privacy first, performing a series of checks and data suppression steps before offering results to MMD Tool users. For example, if a user selects characteristics that would yield a population of fewer than 11 beneficiaries, the MMD Tool will conceal the result to protect privacy (you can read more about the approaches to protecting beneficiaries’ data on the [FAQ page](https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/MappingPublicFAQs.pdf)). 
 
 
   ### Plan for the tool to evolve
@@ -80,10 +80,11 @@ details: >-
   CMS OMH hopes that others will learn from the MMD effort, converting millions of data records into an interactive, user-friendly tool to identify health disparities. If you are interested in sharing your experience or have questions, ideas, or suggestions, please email the team at [HealthEquityTA@cms.hhs.gov](mailto:HealthEquityTA@cms.hhs.gov).
 
 
-  ##### Footnotes
+  {:.footnotes}
 
+  #### Footnotes
 
-  1. These regulations are promulgated under the Health Insurance Portability and Accountability Act of 1996 and the Health Information Technology for Economic and Clinical Health (HITECH) at 45 CFR part 160 and subparts A and E of part 164 (the HIPAA Privacy Rule regulations). [↩](https://strategy.data.gov/proof-points/2019/05/03/the-mapping-medicare-disparities-tools/#fnref:1)
+  [^1]: These regulations are promulgated under the Health Insurance Portability and Accountability Act of 1996 and the Health Information Technology for Economic and Clinical Health (HITECH) at 45 CFR part 160 and subparts A and E of part 164 (the HIPAA Privacy Rule regulations).
 
 
   To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
