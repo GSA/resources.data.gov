@@ -2,7 +2,7 @@
 details: >
   {: .bgbox.success}
 
-  Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the [Office of Management and Budget Integrated Data Collection (IDC)](IDC/), the [Project Open Data Dashboard](http://labs.data.gov/dashboard/offices) and [Open Data Cross-Agency Priority (CAP) Goal](http://goals.performance.gov/opendata). Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources. 
+  Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the [Office of Management and Budget Integrated Data Collection (IDC)](PoD/IDC/), the [Project Open Data Dashboard](http://labs.data.gov/dashboard/offices) and [Open Data Cross-Agency Priority (CAP) Goal](http://goals.performance.gov/opendata). Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources. 
 
 
   ---------------------------
