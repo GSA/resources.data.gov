@@ -34,7 +34,7 @@ details: >-
   ### Build a tool for understanding the data
 
 
-  To provide user-friendly access to data on areas where Medicare populations exhibit health disparities and amplify awareness of health disparities, CMS OMH launched the[Mapping Medicare Disparities (MMD) Tool](https://data.cms.gov/mapping-medicare-disparities)in March of 2016.
+  To provide user-friendly access to data on areas where Medicare populations exhibit health disparities and amplify awareness of health disparities, CMS OMH launched the[Mapping Medicare Disparities (MMD) Tool](https://data.cms.gov/mapping-medicare-disparities) in March of 2016.
 
 
   The MMD Tool is an interactive map identifying geographic areas of disparities between subgroups of Medicare beneficiaries. It also features downloadable maps, tables, and trending data.
@@ -54,15 +54,13 @@ details: >-
   The MMD Tool allows users to identify health disparities so that they can evaluate them and prioritize improvements. The MMD Tool also empowers beneficiaries to understand and compare their own health outcomes to those of others in their communities. Researchers and state/local health representatives can identify disparities in Medicare to inform the design of targeted interventions. Hospitals can analyze their quality performance and compare themselves to other similar hospitals.
 
 
-  ![A screenshot of the MMD Tool with detailed information about Baltimore’s Northwest Hospital Center.](https://strategy.data.gov/assets/img/posts/2019-05-03-image002.png "A user looks into detailed information about Baltimore’s Northwest Hospital Center.")\
-
-  *A user looks into detailed information about Baltimore’s Northwest Hospital Center.*
+  ![A screenshot of the MMD Tool with detailed information about Baltimore’s Northwest Hospital Center.](https://strategy.data.gov/assets/img/posts/2019-05-03-image002.png "A user looks into detailed information about Baltimore’s Northwest Hospital Center.") *A user looks into detailed information about Baltimore’s Northwest Hospital Center.*
 
 
   ### Protecting privacy while gaining insights
 
 
-  The privacy of the Medicare data the MMD Tool is built upon is protected by the privacy regulations as PHI (protected health information), which is individually identifiable health information held by covered entities and their business associates.[^1] The MMD Tool extracts value from the aggregation of Medicare beneficiary data while still putting privacy first, performing a series of checks and data suppression steps before offering results to MMD Tool users. For example, if a user selects characteristics that would yield a population of fewer than 11 beneficiaries, the MMD Tool will conceal the result to protect privacy (you can read more about the approaches to protecting beneficiaries’ data on the [FAQ page](https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/MappingPublicFAQs.pdf)). 
+  The privacy of the Medicare data the MMD Tool is built upon is protected by the privacy regulations as PHI (protected health information), which is individually identifiable health information held by covered entities and their business associates.\[^1] The MMD Tool extracts value from the aggregation of Medicare beneficiary data while still putting privacy first, performing a series of checks and data suppression steps before offering results to MMD Tool users. For example, if a user selects characteristics that would yield a population of fewer than 11 beneficiaries, the MMD Tool will conceal the result to protect privacy (you can read more about the approaches to protecting beneficiaries’ data on the [FAQ page](https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/MappingPublicFAQs.pdf)). 
 
 
   ### Plan for the tool to evolve
@@ -82,9 +80,11 @@ details: >-
 
   {:.footnotes}
 
+
   #### Footnotes
 
-  [^1]: These regulations are promulgated under the Health Insurance Portability and Accountability Act of 1996 and the Health Information Technology for Economic and Clinical Health (HITECH) at 45 CFR part 160 and subparts A and E of part 164 (the HIPAA Privacy Rule regulations).
+
+  \[^1]: These regulations are promulgated under the Health Insurance Portability and Accountability Act of 1996 and the Health Information Technology for Economic and Clinical Health (HITECH) at 45 CFR part 160 and subparts A and E of part 164 (the HIPAA Privacy Rule regulations).
 
 
   To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
