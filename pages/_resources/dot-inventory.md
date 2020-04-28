@@ -1,22 +1,37 @@
 ---
+name: "Department of Transportation Case Study: Enterprise Data Inventory"
+slug: dot-inventory
+description: In response to the Open Government Directive, DOT developed a
+  strategic action plan to inventory and release high-value information through
+  the Data.gov portal. The Department sustained efforts in building its data
+  inventory, responding to the President’s memorandum on regulatory compliance
+  with a comprehensive plan that was recognized as a model for other agencies to
+  follow.
+source: Department of Transportation
+category: Case studies & examples
+tags:
+  - data inventory
+  - open data
+  - internal-todo
+policy_tags: ""
+format: ""
 details: >-
-  
-  *January 8, 2013  
+  *Originally published January 8, 2013*
 
-  Open Data at DOT - A Case Study for Maturing Data Release Practices to Drive Innovation and Increase Accountability  
 
-  Kristen Baldwin, Associate Chief Information Officer for IT Policy Oversight  
+  *Open Data at DOT - A Case Study for Maturing Data Release Practices to Drive Innovation and Increase Accountability*
+
+
+  *Kristen Baldwin, Associate Chief Information Officer for IT Policy Oversight\
 
   Office of the Chief Information Officer, Department of Transportation*  
-
-
-  --------------------
 
 
   ### Executive Summary
 
 
   The DOT performs a wide range of business services aimed at solving the complex safety issues associated with our Nation’s transportation systems. The DOT relies heavily on its data resources to drive business and investment decisions. These include data compiled by State, local, and tribal governments, as well as private sector entities. The Department is committed to unlocking more public data to:
+
 
   * Drive innovation by tapping into the ingenuity of the American people;
 
@@ -26,6 +41,7 @@ details: >-
 
 
   In response to the [Open Government Directive](http://www.whitehouse.gov/sites/default/files/omb/assets/memoranda_2010/m10-06.pdf), DOT developed a strategic action plan to inventory and release high-value information through the [Data.gov](http://www.data.gov/) portal. In the winter of 2010, the DOT Associate Chief Information Officer for IT Policy Oversight, serving as the Senior Accountable Official for Open Government, convened a wide-ranging group of stakeholders from around the Department to develop the required strategic action plan. The plan was detailed in DOT’s Open Government Plan, version 1.2 (released on June 25, 2010), and included three tracks:
+
 
   * **Strategy**: In the near-term, transform DOT’s data release posture and in the long-term, sustain openness.
 
@@ -41,6 +57,7 @@ details: >-
 
 
   The DOT has a long-standing tradition of making data available to the public. As a partner agency involved in the stand-up of [Fedstats.gov](http://www.fedstats.gov/), the [Bureau of Transportation Statistics](http://www.rita.dot.gov/bts/) helped to lead the development of an important pre-cursor to [Data.gov](http://www.data.gov/). In addition, the DOT operates a number of transparency portals that provide information on [railroad safety](http://safetydata.fra.dot.gov/OfficeofSafety/default.aspx), [commercial motor vehicle safety](http://ai.fmcsa.dot.gov/), [vehicle safety](http://www-odi.nhtsa.dot.gov/downloads/), and [pipeline safety](http://primis.phmsa.dot.gov/comm/reports/enforce/Enforcement.html?nocache=8644). The Department’s leaders identified a number of fundamental issues that must be considered in order to provide sustained access to high-value transportation data. Many of these issues are being addressed and managed through internal policies. These issues include:
+
 
   * Determining a process to release data and contextualize that data;
 
@@ -84,9 +101,8 @@ details: >-
 
   DOT has already recognized benefits as a result of regulatory transparency efforts. For example, for the first time, FMCSA has begun releasing the information behind its Safety Measurement System (SMS) to the public in bulk, downloadable formats. Business and private citizens are mining this data for potential opportunities. For instance, a windshield repair company looking to grow its business is mining FMCSA information about safety violations to identify new customers. DOT and the public realize a benefit because the commercial vehicle operator customer is using a safer vehicle and operating in compliance with Federal Motor Carrier Safety Regulations. In addition, DOT has pursued innovation in its data release practices:
 
-  * FMCSA released an [API](https://mobile.fmcsa.dot.gov/developer/home.page) and [mobile application](https://www.fmcsa.dot.gov/safety-security/saferbus/saferbus.aspx) to help people easily access a bus
 
-  company’s safety performance record, file a complaint and more.
+  * FMCSA released an [API](https://mobile.fmcsa.dot.gov/developer/home.page) and [mobile application](https://www.fmcsa.dot.gov/safety-security/saferbus/saferbus.aspx) to help people easily access a bus company’s safety performance record, file a complaint and more.
 
   * FRA released public access to its safety data [APIs](https://safetydata.fra.dot.gov/MasterWebService/FRASafetyDataAPIs.aspx).
 
@@ -94,15 +110,11 @@ details: >-
   ### Lessons Learned
 
 
-  * Transparency, collaboration, and participation depend upon information which is
-
-  available, easy to find, and easily manipulated, aggregated, and/or re-published. While this task is daunting for an enterprise such as the DOT, it can be achieved incrementally. Getting a handle on the data inventory and ensuring that the public can find that information is an important first step, and improvements in release practices can be prioritized as a second step.
+  * Transparency, collaboration, and participation depend upon information which is available, easy to find, and easily manipulated, aggregated, and/or re-published. While this task is daunting for an enterprise such as the DOT, it can be achieved incrementally. Getting a handle on the data inventory and ensuring that the public can find that information is an important first step, and improvements in release practices can be prioritized as a second step.
 
   * While CIOs have a great detail of statutory authority and responsibility for open data, they must engage with policymakers and business process owners to develop a complete inventory of datasets and understand their releasability. In developing the Department’s response to the President’s [memorandum](http://www.gpo.gov/fdsys/pkg/DCPD-201100032/pdf/DCPD-201100032.pdf) on regulatory compliance, the CIO collaborated closely with the Office of General Counsel. Similarly, in building the [safety community on Data.gov](http://safety.data.gov/), the CIO collaborated closely with the DOT Safety Council.
 
-  * Ensuring that all of the DOT datasets were listed on Data.gov provided a solid
-
-  foundation for further innovation. DOT took the vision for the [safety community on Data.gov](http://safety.data.gov/) from concept to functioning prototype in just five months. The existing data releases helped us frame the foundational categories and taxonomy for the community, and it enabled us to quickly bring other Federal agencies on board. The shared, centralized platform of Data.gov was essential to this rapid development process.
+  * Ensuring that all of the DOT datasets were listed on Data.gov provided a solid foundation for further innovation. DOT took the vision for the [safety community on Data.gov](http://safety.data.gov/) from concept to functioning prototype in just five months. The existing data releases helped us frame the foundational categories and taxonomy for the community, and it enabled us to quickly bring other Federal agencies on board. The shared, centralized platform of Data.gov was essential to this rapid development process.
 
 
   ### Related Information
@@ -119,32 +131,13 @@ details: >-
   * [Safety community on Data.gov](http://safety.data.gov)
 
 
-
   ### Disclaimer
 
 
-  * References to the product and/or service names of the hardware and/or software
-
-  products used in this case study do not constitute an endorsement of such hardware and/or software products.
-policy_tags: ""
-name: "Department of Transportation Case Study: Enterprise Data Inventory"
-slug: dot-inventory
-description: In response to the Open Government Directive, DOT developed a
-  strategic action plan to inventory and release high-value information through
-  the Data.gov portal. The Department sustained efforts in building its data
-  inventory, responding to the President’s memorandum on regulatory compliance
-  with a comprehensive plan that was recognized as a model for other agencies to
-  follow.
-source: DOT
-category: Case studies & examples
-tags:
-  - data inventory
-  - open data
-  - internal-todo
-format: ""
+  References to the product and/or service names of the hardware and/or software products used in this case study do not constitute an endorsement of such hardware and/or software products.
 examples: ""
+link: ""
 layout: resource
 toc: true
 publish: false
-link: https://project-open-data.cio.gov/transportation-case-study/
 ---
