@@ -9,7 +9,7 @@ details: >-
 
   ### Terms and Abbreviations ###
 
-  * **POD** - [Project Open Data]({{ site.baseurl }}/schemas/dcat-us/v1.1/)
+  * **POD** - [Project Open Data](/schemas/dcat-us/v1.1/)
 
   * **JSON** - [JavaScript Object Notation](http://json.org/)
 
@@ -27,31 +27,31 @@ details: >-
   ### JSON Schema Files ###
 
 
-  * [1.1 Schema]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/catalog.json) (Draft). The [Catalog]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/catalog.json) schema includes by reference the [Dataset]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/dataset.json), [Distribution]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/distribution.json), [Organization]({{ site.baseurl }}/schemas/v1.1/schema/organization.json), and [vCard]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/vcard.json) schemas. 
+  * [1.1 Schema](/schemas/dcat-us/v1.1/schema/catalog.json) (Draft). The [Catalog](/schemas/dcat-us/v1.1/schema/catalog.json) schema includes by reference the [Dataset](/schemas/dcat-us/v1.1/schema/dataset.json), [Distribution](/schemas/dcat-us/v1.1/schema/distribution.json), [Organization](/schemas/v1.1/schema/organization.json), and [vCard](/schemas/dcat-us/v1.1/schema/vcard.json) schemas.
 
 
   ### JSON-LD Context ###
 
 
-  * [1.1 Schema]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/catalog.jsonld) (Draft)
+  * [1.1 Schema](/schemas/dcat-us/v1.1/schema/catalog.jsonld) (Draft)
 
 
 
   ### Sample Data Files
 
 
-  - [JSON - Minimum Requirements]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample.json)
+  - [JSON - Minimum Requirements](/schemas/dcat-us/v1.1/examples/catalog-sample.json)
 
-  - [JSON - With Extended Fields]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample-extended.json)
+  - [JSON - With Extended Fields](/schemas/dcat-us/v1.1/examples/catalog-sample-extended.json)
 
-  - [CSV - Minimum Requirements]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample.csv) *(limited to one distribution per dataset)*
+  - [CSV - Minimum Requirements](/schemas/dcat-us/v1.1/examples/catalog-sample.csv) *(limited to one distribution per dataset)*
 
-  - [CSV - With Extended Fields]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample-extended.csv) *(limited to one distribution per dataset)*
+  - [CSV - With Extended Fields](/schemas/dcat-us/v1.1/examples/catalog-sample-extended.csv) *(limited to one distribution per dataset)*
 
 
 
-  ### Use Cases  
-    
+  ### Use Cases
+
   #### Starting from a spreadsheet
 
   Some agencies may initially build or maintain data catalogs through large spreadsheets.  In order to then generate a data.json file from this, simply import the spreadsheet (in the form of a CSV file) into the [CSV Converter](http://labs.data.gov/dashboard/datagov/csv_to_json), translate the metadata as needed, and then generate an appropriately formatted JSON file.
@@ -81,7 +81,7 @@ details: >-
 
   -----------------------------
 
-  ![Schema Diagram]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema-diagram.svg)
+  ![Schema Diagram](/schemas/dcat-us/v1.1/schema-diagram.svg)
 
 
 
@@ -99,11 +99,11 @@ details: >-
 
   -------             | -------                       | -------      | -------     | -------        | -------
 
-  Metadata Context    | *@context*                    | *n/a*        | *n/a*       | *n/a*          |  *n/a* 
+  Metadata Context    | *@context*                    | *n/a*        | *n/a*       | *n/a*          |  *n/a*
 
   Metadata Catalog ID | *@id*                         | *n/a*        | *n/a*       | *n/a*          |  *n/a*
 
-  Metadata Type       | *@type*                       | *n/a*        | *n/a*       | *n/a*          |  *itemtype attribute*  
+  Metadata Type       | *@type*                       | *n/a*        | *n/a*       | *n/a*          |  *itemtype attribute*
 
   Schema Version      | *conformsTo*                  | *n/a*        | *n/a*       | *n/a*          |  *n/a*
 
@@ -117,7 +117,7 @@ details: >-
 
   -----------------------------
 
-  Note the mapping for `license` and `rights` from Project Open Data to DCAT applies the fields from the Dataset object in Project Open Data to each of the Distribution objects in DCAT. 
+  Note the mapping for `license` and `rights` from Project Open Data to DCAT applies the fields from the Dataset object in Project Open Data to each of the Distribution objects in DCAT.
 
 
   {: .table .table-striped}
@@ -126,7 +126,7 @@ details: >-
 
   -------                        | -------                                | -------      | -------| ------- | -------
 
-  Metadata Type                  | *@type*                                | *n/a*        | *n/a*       | *n/a*          |  *itemtype attribute* 
+  Metadata Type                  | *@type*                                | *n/a*        | *n/a*       | *n/a*          |  *itemtype attribute*
 
   Title                          | *title*                                | *title*                 | *title*           | [dct:title](http://www.w3.org/TR/vocab-dcat/#Property:dataset_title)                  | [name](http://schema.org/name)
 
@@ -182,13 +182,13 @@ details: >-
 
   System of Records              | *systemOfRecords*                      | *systemOfRecords*                  | *n/a*                | *n/a*  | *n/a*
 
-  Primary IT Investment          | *primaryITInvestmentUII*               | *primaryITInvestmentUII*             |                                   | *n/a*   | *n/a*  
+  Primary IT Investment          | *primaryITInvestmentUII*               | *primaryITInvestmentUII*             |                                   | *n/a*   | *n/a*
 
   Data Dictionary                | *describedBy*                          | *dataDictionary*       | *n/a*                | *n/a* | *n/a*
 
-  Data Dictionary Type           | *describedByType*                      | *n/a*             |                                   | *n/a*   | *n/a*     
+  Data Dictionary Type           | *describedByType*                      | *n/a*             |                                   | *n/a*   | *n/a*
 
-  Data Standard                  | *conformsTo*                           | *n/a*             |                                   | *n/a*   | *n/a*  
+  Data Standard                  | *conformsTo*                           | *n/a*             |                                   | *n/a*   | *n/a*
 
 
 
@@ -203,7 +203,7 @@ details: >-
 
   -------                 | -------           | -------           | -------                           | ------- | -------
 
-  Metadata Type           | *@type*           | *n/a*             | *n/a*                             | *n/a*   |  *itemtype attribute* 
+  Metadata Type           | *@type*           | *n/a*             | *n/a*                             | *n/a*   |  *itemtype attribute*
 
   Download URL            | *downloadURL*     | *accessURL*       | *resources*  &rarr; *url*         | [dcat:downloadURL](http://www.w3.org/TR/vocab-dcat/#Property:distribution_downloadurl) | [contentUrl](http://schema.org/contentUrl)
 
@@ -217,11 +217,11 @@ details: >-
 
   Description             | *description*     | *n/a*             | *resources*  &rarr; *description* | [dct:description](http://www.w3.org/TR/vocab-dcat/#Property:distribution_description)   | [description](http://schema.org/description)
 
-  Data Dictionary         | *describedBy*     | *n/a*             |                                   | *n/a*   | *n/a*  
+  Data Dictionary         | *describedBy*     | *n/a*             |                                   | *n/a*   | *n/a*
 
-  Data Dictionary Type    | *describedByType* | *n/a*             |                                   | *n/a*   | *n/a*     
+  Data Dictionary Type    | *describedByType* | *n/a*             |                                   | *n/a*   | *n/a*
 
-  Data Standard           | *conformsTo*      | *n/a*             |                                   | *n/a*   | *n/a*           
+  Data Standard           | *conformsTo*      | *n/a*             |                                   | *n/a*   | *n/a*
 
 
   Crosswalks for Geospatial Metadata
@@ -234,7 +234,7 @@ details: >-
   The crosswalks will be periodically updated to address user comments and revisions to the source metadata standards. Users are asked to add their own information about strategies, applications, and other products generated using these crosswalks. Problems or suggestions can be submitted by [creating a new issue](https://github.com/project-open-data/project-open-data.github.io/issues/new) or improvements can be proposed directly following the [guidelines for contributing](https://github.com/project-open-data/project-open-data.github.io/blob/master/CONTRIBUTING.md).
 
 
-  Since the Project Open Data Metadata Schema v1.1 is also a JSON and JSON-LD serialization of [DCAT](http://www.w3.org/TR/vocab-dcat/). Others working with transforms between ISO 19115 and DCAT may also be interested in this crosswalk. 
+  Since the Project Open Data Metadata Schema v1.1 is also a JSON and JSON-LD serialization of [DCAT](http://www.w3.org/TR/vocab-dcat/). Others working with transforms between ISO 19115 and DCAT may also be interested in this crosswalk.
 
 
   [CSDGM](http://www.fgdc.gov/metadata/csdgm/) to Project Open Data Metadata Schema v1.1 (POD v1.1) Crosswalk
@@ -248,7 +248,7 @@ details: >-
 
   ------- | ------- | ------- | ------- | ------- | ------- | -------
 
-  **Catalog Fields** |  |  |  |  |  | 
+  **Catalog Fields** |  |  |  |  |  |
 
   ------- | ------- | ------- | ------- | ------- | ------- | -------
 
@@ -256,13 +256,13 @@ details: >-
 
   dataset | Dataset | required | Yes | -- | -- | Populated by Agency Enterprise Inventory Application
 
-  **Dataset Fields** |  |  |  |  |  | 
+  **Dataset Fields** |  |  |  |  |  |
 
   ------- | ------- | ------- | ------- | ------- | ------- | -------
 
-  title | Title | required | No | title | `metadata>idinfo>citation>citeinfo>title` | 
+  title | Title | required | No | title | `metadata>idinfo>citation>citeinfo>title` |
 
-  description | Description | required | No | abstract | `metadata>idinfo>descript>abstract` | 
+  description | Description | required | No | abstract | `metadata>idinfo>descript>abstract` |
 
   keyword | Tags | required | Yes | keywords (theme, place, stratum, temporal) add to:Keyword (any type) = `geospatial` | `metadata>idinfo>keywords>theme>themekey` & `metadata>idinfo>keywords>place>placekeymetadata>idinfo>keywords>stratum>stratkeymetadata>idinfo>keywords>temporal>tempkey` | Compile values from Theme, Place, Stratum, and Temporal Keywords, e.g. vegetation, Gulf Coast, Hurricane Katrina
 
@@ -274,7 +274,7 @@ details: >-
 
   contactPoint>hasEmail | Contact Email | required | No | point of contact person & organization if  null, metadata contact email | `metadata>idinfo>ptcontac>cntinfo>cntemail` if `metadata>idinfo>ptcontac>cntinfo>cntorgp>cntorg` and `metadata>idinfo>ptcontac>cntinfo>cntorgp>cntper` null then `metadata>metainfo>metc>cntinfo>cntemail` | Use the contact email associated with the POC designated above
 
-  identifier | Unique Identifier | required | No | title | `metadata>idinfo>citation>citeinfo>title` | 
+  identifier | Unique Identifier | required | No | title | `metadata>idinfo>citation>citeinfo>title` |
 
   accessLevel | Public Access Level | required | No | insert POD default `public` | -- | If data is not `public`, manually change value to `restricted public` or `non-public`. If most data is not `public` change your default value to `restricted public` or `non-public`
 
@@ -288,11 +288,11 @@ details: >-
 
   theme | Theme | optional | Yes | insert POD default `geospatial` | -- | Insert default value `geospatial` directly into POD record (POD requests this value to identify geospatial resources)
 
-  **Distribution Fields** |  |  |  |  |  | 
+  **Distribution Fields** |  |  |  |  |  |
 
   distribution>downloadURL | Download URL | if applicable | No |  | `metadata>distinfo>storder>digform>digtoption>onlinopt>networka>networkr` if null then `metadata>idinfo>citation>citeinfo>onlink` | Include if CSDGM value occurs, first instance
 
-  distribution>mediaType | Media Type | required for download URL | No | insert POD default `application/http` |  | Insert default value `application/http` directly into POD record 
+  distribution>mediaType | Media Type | required for download URL | No | insert POD default `application/http` |  | Insert default value `application/http` directly into POD record
 
 
   ISO 19115 to Project Open Data Metadata Schema v1.1 (POD v1.1) Crosswalk
@@ -306,7 +306,7 @@ details: >-
 
   ------- | ------- | ------- | ------- | ------- | ------- | -------
 
-  **Catalog Fields** |  |  |  |  |  | 
+  **Catalog Fields** |  |  |  |  |  |
 
   ------- | ------- | ------- | ------- | ------- | ------- | -------
 
@@ -314,7 +314,7 @@ details: >-
 
   dataset | Dataset | required |  | populated by Agency Enterprise Inventory Application | -- | --
 
-  **Dataset Fields** |  |  |  |  |  | 
+  **Dataset Fields** |  |  |  |  |  |
 
   ------- | ------- | ------- | ------- | ------- | ------- | -------
 
@@ -324,13 +324,13 @@ details: >-
 
   keyword | Tags | required | yes | POD JSON validator expects unique keywords. | keywords (theme, place, temporal) | `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword` (gco:CharacterString or gmx:Anchor)
 
-  modified | Last Update | required | no |  | 1. resource maintenance frequency <br> 2. data citation revision date <br> 3. first data citation date available | 1. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceMaintenance/gmd:MD_MaintenanceInformation/gmd:maintenanceAndUpdateFrequency/gmd:userDefinedMaintenanceFrequency/gts:TM_PeriodDuration`<br> 2.`//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode == "revision" + gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date` <br> 3.`//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date`  
+  modified | Last Update | required | no |  | 1. resource maintenance frequency <br> 2. data citation revision date <br> 3. first data citation date available | 1. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceMaintenance/gmd:MD_MaintenanceInformation/gmd:maintenanceAndUpdateFrequency/gmd:userDefinedMaintenanceFrequency/gts:TM_PeriodDuration`<br> 2.`//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode == "revision" + gmi:MI_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date` <br> 3.`//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date`
 
   publisher > name | Publisher | required | no |  | 1. data citedResponsibleParty with publisher roleCode <br> 2. point of contact with publisher roleCode <br> 3. distributor | 1. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:organisationName/gmd:organisationName[../../gmd:role/gmd:CI_RoleCode/@codeListValue=’publisher’]` <br> 2. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:organisationName[../../gmd:role/gmd:CI_RoleCode/@codeListValue=’publisher’]` <br>  3. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorContact/gmd:CI_ResponsibleParty/gmd:organisationName`
 
   publisher > subOrganizationOf |  | optional | no |  | --  | --
 
-  contactPoint > fn | Contact Name | required | no | if person's name is null, then use organization or position name | 1. point of contact <br> 1a. person name <br> 1b. organization <br> 1c. position <br> 2. data citedResponsibleParty with 'pointOfContact' roleCode <br> 2a. person name <br> 2b. organization <br> 2c. position | 1a. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:individualName` (gco:CharacterString or gmx:Anchor) <br> 1b. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:organisationName`  (gco:CharacterString or gmx:Anchor) <br>  1c. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:positionName` (gco:CharacterString or gmx:Anchor) <br> 2a.`//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:individualName[../../gmd:role/gmd:CI_RoleCode/@codeListValue=’pointofContact’]` <br> 2b.`//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:organisationName[../../gmd:role/gmd:CI_RoleCode/@codeListValue=’pointofContact’]2c.//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:positionName[../../gmd:role/gmd:CI_RoleCode/@codeListValue=’pointofContact’]` 
+  contactPoint > fn | Contact Name | required | no | if person's name is null, then use organization or position name | 1. point of contact <br> 1a. person name <br> 1b. organization <br> 1c. position <br> 2. data citedResponsibleParty with 'pointOfContact' roleCode <br> 2a. person name <br> 2b. organization <br> 2c. position | 1a. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:individualName` (gco:CharacterString or gmx:Anchor) <br> 1b. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:organisationName`  (gco:CharacterString or gmx:Anchor) <br>  1c. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:positionName` (gco:CharacterString or gmx:Anchor) <br> 2a.`//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:individualName[../../gmd:role/gmd:CI_RoleCode/@codeListValue=’pointofContact’]` <br> 2b.`//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:organisationName[../../gmd:role/gmd:CI_RoleCode/@codeListValue=’pointofContact’]2c.//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:positionName[../../gmd:role/gmd:CI_RoleCode/@codeListValue=’pointofContact’]`
 
   contactPoint > hasEmail | Contact Email | required | no |  | point of contact email | for point of contact above:  `//gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString`
 
@@ -348,7 +348,7 @@ details: >-
 
   spatial | Spatial | if applicable | no | minimum longitude, minimum latitude, maximum longitude, maximum latitude | Geographic Bounding Coordinates | `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude` + `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude` + `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude` + `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude`
 
-  temporal | Temporal | if applicable |  | concatonate values, e.g. `2015-01-01/2015-02-02` | 1. time period begin and end dates <br> 2. time instant <br> 3. min and max value of multiple date ranges | 1. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition` + `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition` <br>  2. if single date use this field to populate as both start/end date `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimeInstant/timePosition` <br> 3. if more than two instances of this field exist choose the earliest date value and latest date value to populate the range of dates `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimeInstant/timePosition` 
+  temporal | Temporal | if applicable |  | concatonate values, e.g. `2015-01-01/2015-02-02` | 1. time period begin and end dates <br> 2. time instant <br> 3. min and max value of multiple date ranges | 1. `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition` + `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition` <br>  2. if single date use this field to populate as both start/end date `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimeInstant/timePosition` <br> 3. if more than two instances of this field exist choose the earliest date value and latest date value to populate the range of dates `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimeInstant/timePosition`
 
   accrualPeriodicity | Frequency | optional | no |  |  resource maintenance and update frequency | `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceMaintenance/gmd:MD_MaintenanceInformation/gmd:maintenanceAndUpdateFrequency/gmd:MD_MaintenanceFrequencyCode` Convert values of this field based on the following mapping:  <br> continual - `R/PT1S`  <br> daily - `R/P1D`  <br> weekly - `R/P1W`  <br> fortnightly - `R/P0.5M`  <br> monthly - `R/P1M`  <br> quarterly - `R/P3M`  <br> biannually - `R/P0.5Y`  <br> asNeeded - `irregular`  <br> irregular - `irregular`  <br> notPlanned - `irregular`  <br> unknown - `irregular`
 
@@ -376,11 +376,11 @@ details: >-
 
   theme | Theme | optional |  | POD requested value to identify geospatial resources | ISO topic category | `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory/gmd:MD_TopicCategoryCode`
 
-  **Dataset Distribution Fields** | Distribution | optional | yes |  |  | 
+  **Dataset Distribution Fields** | Distribution | optional | yes |  |  |
 
   ------- | ------- | ------- | ------- | ------- | ------- | -------
 
-  accessURL | Access URL | if applicable | no |  | 1. distribution url with function code of information, search, order or offlineAccess  <br> 2. distributor url with function code of information, search, order or offlineAccess | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == information, search, order or offlineAccess` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/linkage/URL`  <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == information, search, order or Offline Access` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL`  
+  accessURL | Access URL | if applicable | no |  | 1. distribution url with function code of information, search, order or offlineAccess  <br> 2. distributor url with function code of information, search, order or offlineAccess | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == information, search, order or offlineAccess` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/linkage/URL`  <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == information, search, order or Offline Access` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL`
 
   conformsTo  | Data Standard | optional | no | provide URL to specification of format | 1. distribution format specification  <br> 2. distributor format specification | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:specification` IF content of gmd:specification begins with "http"  <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorFormat/gmd:MD_Format/gmd:specification` IF content of gmd:specification begins with "http"
 
@@ -392,11 +392,11 @@ details: >-
 
   downloadURL  | Download URL | if applicable | no |  | 1. distribution url with 'download' function  <br> 2. distributor url with 'download' function | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/linkage/URL`  <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL`
 
-  format  | Format | optional | no |  | 1. Distribution format name 2. Distributor format name | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/name/gco:CharacterString`  <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorFormat/gmd:MD_Format/gmd:name/gco:CharacterString` 
+  format  | Format | optional | no |  | 1. Distribution format name 2. Distributor format name | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/name/gco:CharacterString`  <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorFormat/gmd:MD_Format/gmd:name/gco:CharacterString`
 
   mediaType  | Media Type | if applicable | no | infer mime type from 'downloadURL' url | -- | --
 
-  title  | Title | optional | no |  | 1. distribution url name with 'download' function  <br> 2. distributor url name with 'download' function | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString` <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString`  
+  title  | Title | optional | no |  | 1. distribution url name with 'download' function  <br> 2. distributor url name with 'download' function | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString` <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString`
 policy_tags: ""
 name: Metadata Resources and Field Mappings under the Project Open Data Metadata
   Schema (DCAT-US Schema v1.1)
