@@ -1,8 +1,27 @@
 ---
+name: "U.S. Department of Labor Case Study: Software Development Kits"
+slug: labor-case-study-software-development-kits
+description: The U.S. Department of Labor sought to go beyond merely making data
+  available to developers and take ease of use of the data to the next level by
+  giving developers tools that would make using DOL’s data easier.  DOL created
+  software development kits (SDKs), which are downloadable code packages that
+  developers can drop into their apps, making access to DOL’s data easy for even
+  the most novice developer. These SDKs have even been published as open source
+  projects with the aim of speeding up their conversion to SDKs that will
+  eventually support all federal APIs.
+source: Department of Labor
+category: Case studies & examples
+tags:
+  - open data
+  - API
+  - internal-todo
+policy_tags: ""
+format: ""
 details: >-
-  *September 28, 2012  
+  *Originally published September 28, 2012*
 
-  Mike Pulsifer, U.S. Department of Labor*  
+
+  *Mike Pulsifer, U.S. Department of Labor*  
 
 
   ### Executive Summary
@@ -60,7 +79,6 @@ details: >-
   * Sample code makes your API, and by extension, your data, more accessible to novice developers.
 
 
-
   ### Related Information
 
 
@@ -73,27 +91,9 @@ details: >-
 
 
   References to the product and/or service names of the hardware and/or software products used in this case study do not constitute an endorsement of such hardware and/or software products.
-policy_tags: ""
-name: "U.S. Department of Labor Case Study: SDKs"
-slug: labor-case-study
-description: The U.S. Department of Labor sought to go beyond merely making data
-  available to developers and take ease of use of the data to the next level by
-  giving developers tools that would make using DOL’s data easier.  DOL created
-  software development kits (SDKs), which are downloadable code packages that
-  developers can drop into their apps, making access to DOL’s data easy for even
-  the most novice developer. These SDKs have even been published as open source
-  projects with the aim of speeding up their conversion to SDKs that will
-  eventually support all federal APIs.
-source: DOL
-category: Case studies & examples
-tags:
-  - open data
-  - API
-  - internal-todo
-format: ""
 examples: ""
+link: ""
 layout: resource
 toc: true
 publish: false
-link: https://project-open-data.cio.gov/labor-case-study/
 ---
