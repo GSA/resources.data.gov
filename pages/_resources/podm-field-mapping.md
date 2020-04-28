@@ -1,15 +1,15 @@
 ---
 details: >-
   This section provides further background and resources to assist agencies in
-  implementing the [Project Open Data Metadata Schema v1.1](./).
+  implementing the [Project Open Data Metadata Schema v1.1](../dcat-us/).
 
 
   In addition to template and sample files we also produce Project Open Data Metadata schema in JSON schema format. [JSON schema](http://json-schema.org/) describes a JSON data format. It can be used to automatically validate Data.json files and to generate forms for creating JSON.
 
 
-  ### Terms and Abbreviations ###
+  ### Terms and Abbreviations 
 
-  * **POD** - [Project Open Data]({{ site.baseurl }}/schemas/dcat-us/v1.1/)
+  * **POD** - [Project Open Data](../../schemas/dcat-us/v1.1/)
 
   * **JSON** - [JavaScript Object Notation](http://json.org/)
 
@@ -24,29 +24,29 @@ details: >-
   * **JSON-LD** - [JSON-LD docs](http://json-ld.org/) and [specification](http://www.w3.org/TR/json-ld/)
 
 
-  ### JSON Schema Files ###
+  ### JSON Schema Files 
 
 
-  * [1.1 Schema]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/catalog.json) (Draft). The [Catalog]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/catalog.json) schema includes by reference the [Dataset]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/dataset.json), [Distribution]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/distribution.json), [Organization]({{ site.baseurl }}/schemas/v1.1/schema/organization.json), and [vCard]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/vcard.json) schemas. 
+  * [1.1 Schema](../../schemas/dcat-us/v1.1/schema/catalog.json) (Draft). The [Catalog](../../schemas/dcat-us/v1.1/schema/catalog.json) schema includes by reference the [Dataset](../../schemas/dcat-us/v1.1/schema/dataset.json), [Distribution](../../schemas/dcat-us/v1.1/schema/distribution.json), [Organization](../../schemas/v1.1/schema/organization.json), and [vCard](../../schemas/dcat-us/v1.1/schema/vcard.json) schemas. 
 
 
-  ### JSON-LD Context ###
+  ### JSON-LD Context 
 
 
-  * [1.1 Schema]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/catalog.jsonld) (Draft)
+  * [1.1 Schema](../../schemas/dcat-us/v1.1/schema/catalog.jsonld) (Draft)
 
 
 
   ### Sample Data Files
 
 
-  - [JSON - Minimum Requirements]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample.json)
+  - [JSON - Minimum Requirements](../../schemas/dcat-us/v1.1/examples/catalog-sample.json)
 
-  - [JSON - With Extended Fields]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample-extended.json)
+  - [JSON - With Extended Fields](../../schemas/dcat-us/v1.1/examples/catalog-sample-extended.json)
 
-  - [CSV - Minimum Requirements]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample.csv) *(limited to one distribution per dataset)*
+  - [CSV - Minimum Requirements](../../schemas/dcat-us/v1.1/examples/catalog-sample.csv) *(limited to one distribution per dataset)*
 
-  - [CSV - With Extended Fields]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample-extended.csv) *(limited to one distribution per dataset)*
+  - [CSV - With Extended Fields](../../schemas/dcat-us/v1.1/examples/catalog-sample-extended.csv) *(limited to one distribution per dataset)*
 
 
 
@@ -77,18 +77,18 @@ details: >-
   In order to generate appropriately formatted JSON, simply import an appropriately formatted CSV into the [CSV Converter](http://labs.data.gov/dashboard/datagov/csv_to_json), ensure that the metadata fields line up, and re-export the file.
 
 
-  Schema Object Model Diagram
+  ### Schema Object Model Diagram
 
   -----------------------------
 
-  ![Schema Diagram]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema-diagram.svg)
+  ![Schema Diagram](../../schemas/dcat-us/v1.1/schema-diagram.svg)
 
 
 
-  ### Field Mappings ###
+  ### Field Mappings 
 
 
-  Catalog Fields
+  #### Catalog Fields
 
   -----------------------------
 
@@ -113,7 +113,7 @@ details: >-
 
 
 
-  Dataset Fields
+ #### Dataset Fields
 
   -----------------------------
 
@@ -192,7 +192,7 @@ details: >-
 
 
 
-  Dataset Distribution Fields
+  #### Dataset Distribution Fields
 
   -------------------------------------------
 
@@ -224,7 +224,7 @@ details: >-
   Data Standard           | *conformsTo*      | *n/a*             |                                   | *n/a*   | *n/a*           
 
 
-  Crosswalks for Geospatial Metadata
+  ### Crosswalks for Geospatial Metadata
 
   -----------------------------
 
@@ -237,7 +237,7 @@ details: >-
   Since the Project Open Data Metadata Schema v1.1 is also a JSON and JSON-LD serialization of [DCAT](http://www.w3.org/TR/vocab-dcat/). Others working with transforms between ISO 19115 and DCAT may also be interested in this crosswalk. 
 
 
-  [CSDGM](http://www.fgdc.gov/metadata/csdgm/) to Project Open Data Metadata Schema v1.1 (POD v1.1) Crosswalk
+  #### [CSDGM](http://www.fgdc.gov/metadata/csdgm/) to Project Open Data Metadata Schema v1.1 (POD v1.1) Crosswalk
 
   -------------------------------------------
 
@@ -340,7 +340,7 @@ details: >-
 
   bureauCode | Bureau Code | required | yes | insert value when uploaded to Agency Enterprise Inventory | -- | --
 
-  programCode | Program Code | required | yes | Recommend hardcoding program information into the POD, if not feasible then add to keywords - locate program code in the [Federal Program Inventory doc](http://goals.performance.gov/sites/default/files/images/FederalProgramInventory_FY13_MachineReadable_091613.xls) - add Program Code, e.g. `"015:001"` as a Theme Keyword - list  'Federal Program Inventory' as associated Theme Keyword Thesaurus  | Keyword = `<program code>` + Thesaurus = `Federal Program Inventory` | `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword` (gco:CharacterString or gmx:Anchor) + `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title = 'Federal Program Inventory'`
+  programCode | Program Code | required | yes | Recommend hardcoding program information into the POD, if not feasible then add to keywords - locate program code in the [Federal Program Inventory doc](../../schemas/dcat-us/v1.1/FederalProgramInventory_FY13_MachineReadable_091613.csv) - add Program Code, e.g. `"015:001"` as a Theme Keyword - list  'Federal Program Inventory' as associated Theme Keyword Thesaurus  | Keyword = `<program code>` + Thesaurus = `Federal Program Inventory` | `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword` (gco:CharacterString or gmx:Anchor) + `//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title = 'Federal Program Inventory'`
 
   license | License | if applicable | no | default value for government data is 'Public Domain'  | -- | --
 
@@ -396,7 +396,8 @@ details: >-
 
   mediaType  | Media Type | if applicable | no | infer mime type from 'downloadURL' url | -- | --
 
-  title  | Title | optional | no |  | 1. distribution url name with 'download' function  <br> 2. distributor url name with 'download' function | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString` <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString`  
+  title  | Title | optional | no |  | 1. distribution url name with 'download' function  <br> 2. distributor url name with 'download' function | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString` <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString`
+
 policy_tags: ""
 name: Metadata Resources and Field Mappings under the Project Open Data Metadata
   Schema (DCAT-US Schema v1.1)
@@ -420,5 +421,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://project-open-data.cio.gov/v1.1/metadata-resources/#field-mappings
+link: ""
 ---

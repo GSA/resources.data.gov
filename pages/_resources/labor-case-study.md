@@ -1,8 +1,8 @@
 ---
 details: >-
-  *September 28, 2012  
-
-  Mike Pulsifer, U.S. Department of Labor*  
+  *September 28, 2012*  
+  
+  *Mike Pulsifer, U.S. Department of Labor*  
 
 
   ### Executive Summary
@@ -95,5 +95,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://project-open-data.cio.gov/labor-case-study/
+link: ""
 ---

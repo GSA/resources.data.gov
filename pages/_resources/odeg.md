@@ -184,5 +184,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://resources.data.gov/guidance/open-data-engagement-guidance/
+link: ""
 ---

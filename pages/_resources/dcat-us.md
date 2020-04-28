@@ -16,14 +16,14 @@ details: >-
   ---------------------------
 
 
-  ## Overview
+  ### Overview
 
 
   This section contains guidance to support the use of the Project Open Data metadata to list agency datasets and application programming interfaces (APIs) as hosted at agency.gov/data. Additional technical information about the schema can be found on the [Metadata Resources](./metadata-resources/) page. 
 
 
 
-  Standard Metadata Vocabulary
+  ### Standard Metadata Vocabulary
 
   ----------------------------
 
@@ -33,7 +33,7 @@ details: >-
   Establishing a common vocabulary is the key to communication. The **metadata schema** specified in this memorandum is based on [DCAT](http://www.w3.org/TR/vocab-dcat/), a hierarchical vocabulary specific to datasets. This specification defines three types of metadata elements: Required, Required-if (conditionally required), and Expanded fields.  These elements were selected to represent information that is most often looked for on the web. To assist users of other metadata standards, [field mappings](./metadata-resources/#field-mappings) to equivalent elements in other standards are provided.  
 
 
-  What to Document -- Datasets and Web APIs
+  ### What to Document -- Datasets and Web APIs
 
   -------------------------------------
 
@@ -48,12 +48,12 @@ details: >-
 
 
 
-  Metadata File Format --  JSON
+  ### Metadata File Format --  JSON
 
   ---------------------------------------
 
 
-  The [Implementation Guidance](/implementation-guide/) available as a part of Project Open Data describes Agency requirements for the development of metadata as per the Open Data Policy.  A quick primer on the file format involved:
+  The [Implementation Guidance](../m-13-13-guidance/) available as a part of Project Open Data describes Agency requirements for the development of metadata as per the Open Data Policy.  A quick primer on the file format involved:
 
 
   [JSON](http://www.json.org) is a lightweight data-exchange format that is very easy to read, parse and generate.  Based on a subset of the JavaScript programming language, JSON is a text format that is optimized for data interchange.  JSON is built on two structures: (1) a collection of name/value pairs and (2) an ordered list of values.  
@@ -81,7 +81,7 @@ details: >-
 
 
 
-  Catalog Fields
+  ### Catalog Fields
 
   -------------------------------------------------
 
@@ -108,7 +108,7 @@ details: >-
 
 
 
-  Dataset Fields
+  ### Dataset Fields
 
   -----------------------------
 
@@ -181,7 +181,7 @@ details: >-
 
 
 
-  Dataset Distribution Fields
+  ### Dataset Distribution Fields
 
   -------------------------------------------
 
@@ -215,7 +215,7 @@ details: >-
   [title](#distribution-title)                    | Title                 | Human-readable name of the distribution. | No
                                                                                                                         
 
-  Extending the Schema
+  ### Extending the Schema
 
   ------------------------------------------
 
@@ -223,7 +223,7 @@ details: >-
 
 
 
-  Further Metadata Field Guidance
+  ### Further Metadata Field Guidance
 
   -------------------------------
 
@@ -295,7 +295,7 @@ details: >-
           * {: .field-required}[title](#title)
 
 
-  Catalog Fields {#Catalog}
+  ### Catalog Fields {#Catalog}
 
   -------------------------------
 
@@ -403,7 +403,7 @@ details: >-
 
 
 
-  Dataset Fields {#Dataset}
+  ### Dataset Fields {#Dataset}
 
   -------------------------------
 
@@ -1250,7 +1250,7 @@ details: >-
 
 
 
-  Federal Government Fields {#USG-note}
+  ### Federal Government Fields {#USG-note}
 
   ----------------------
 
@@ -1269,7 +1269,7 @@ details: >-
   publishers are encouraged to make use of this schema, but these fields should not be seen as required and may not be relevant for those entities. 
 
 
-  Rationale for Metadata Nomenclature
+  ### Rationale for Metadata Nomenclature
 
   ----------------------
 
@@ -1298,7 +1298,7 @@ details: >-
 
 
 
-  Additional Information
+  ### Additional Information
 
   ----------------------
 
@@ -1326,5 +1326,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://resources.data.gov/schemas/dcat-us/v1.1/
+link: ""
 ---

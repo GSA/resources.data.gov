@@ -135,7 +135,7 @@ description: In response to the Open Government Directive, DOT developed a
   inventory, responding to the President’s memorandum on regulatory compliance
   with a comprehensive plan that was recognized as a model for other agencies to
   follow.
-source: DOT
+source: Federal Data Strategy / Department of Transportation
 category: Case studies & examples
 tags:
   - data inventory
@@ -146,5 +146,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://project-open-data.cio.gov/transportation-case-study/
+link: ""
 ---

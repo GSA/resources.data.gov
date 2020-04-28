@@ -2,7 +2,7 @@
 published: true
 layout: default
 title: Office of Management and Budget Integrated Data Collection (IDC) Requirements 
-permalink: /IDC/
+permalink: PoD/IDC/
 filename: IDC.md
 id: IDC
 ---

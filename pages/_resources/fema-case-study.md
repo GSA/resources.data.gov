@@ -82,7 +82,7 @@ description: "In 2008, the Disaster Assistance Improvement Program (DAIP), an
   for data sharing interfaces with three of DAIP’s federal partners and
   transfers application data to reduce duplicate data entry by disaster
   survivors. "
-source: FEMA
+source: Federal Data Strategy / FEMA
 category: Case studies & examples
 tags:
   - data sharing
@@ -92,5 +92,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://project-open-data.cio.gov/fema-case-study/
+link: ""
 ---
