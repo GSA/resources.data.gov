@@ -5,7 +5,7 @@ description: A community listserv and working group that unites 900 open data
   leads at federal agencies, data stewards, and all others in government
   interested in open data, enterprise data inventory, civic tech, and
   data-driven government issues.
-source: resources.data.gov
+source: GSA / OMB
 category: Communities
 tags:
   - open data
