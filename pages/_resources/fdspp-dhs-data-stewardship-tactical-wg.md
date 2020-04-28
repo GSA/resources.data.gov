@@ -61,7 +61,9 @@ details: >-
   In the years since its founding, the DSTWG’s mandate has expanded. The group has built tools to help colleagues wrangle data, assemble data sharing agreements, and complete other tasks related to solving not just the technical, but also the legal and practical challenges involved in maximizing value from data. The group is currently moving these tools off of the Department intranet and into Collibra, software that will support various elements of Departmental data governance, such as data cataloging, metadata management, reference materials, policy documents, data usage monitoring, and data sharing.
 
 
-  ![A flier from a 2018 DSTWG training sessions shows topics and featured speaker.](https://strategy.data.gov/assets/img/posts/2018-12-13-image003.png "A flier from a 2018 DSTWG training sessions shows topics and featured speaker.")*A flier from a 2018 DSTWG training sessions shows topics and featured speaker.*
+  ![A flier from a 2018 DSTWG training sessions shows topics and featured speaker.](https://strategy.data.gov/assets/img/posts/2018-12-13-image003.png "A flier from a 2018 DSTWG training sessions shows topics and featured speaker.")\
+
+  *A flier from a 2018 DSTWG training sessions shows topics and featured speaker.*
 
 
   The DSTWG also invests in the most important enabler of better data – Department employees. The group sponsors classroom training in data governance as well as informal walk-throughs of Department data processes and tools. Developing data literacy and knowledge has provided Department personnel with the right vocabulary to work with the DSTWG and solve problems collaboratively.
@@ -76,7 +78,9 @@ details: >-
   The DSTWG’s work supports officials at every stage of the data lifecycle: the clerk capturing survey responses, the operator responsible for records management, the developer setting up an API call, and the people who need to share, report, or understand Department data. The DSTWG issues annual surveys to prioritize the needs of these diverse stakeholders and determine its high-level agenda for the subsequent year. Publishing the results of the survey is an important way to ‘close the loop,’ ensuring the community sees how the group is shaping its work in response to stakeholder requests.
 
 
-  ![Snapshot of results from a DSTWG-administered survey to the broader data community.](https://strategy.data.gov/assets/img/posts/2018-12-13-image004.png "Snapshot of results from a DSTWG-administered survey to the broader data community.")*Snapshot of results from a DSTWG-administered survey to the broader data community.*
+  ![Snapshot of results from a DSTWG-administered survey to the broader data community.](https://strategy.data.gov/assets/img/posts/2018-12-13-image004.png "Snapshot of results from a DSTWG-administered survey to the broader data community.")\
+
+  *Snapshot of results from a DSTWG-administered survey to the broader data community.*
 
 
   ### Communicate your Impact
