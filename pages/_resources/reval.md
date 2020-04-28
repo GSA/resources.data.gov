@@ -14,9 +14,7 @@ details: >-
   ReVal (Reusable Validation Library) is an open source Django App for
   validating data via an API and web interface.
 
-
   In the web interface, ReVal can manage data submitted as file uploads to a central gathering point, including data validation, basic change tracking and duplicate file handling. Each file generally contains multiple data rows, and each user may submit multiple files.
-
 
   Using the API, ReVal can validate data and generally do anything that is possible via the web interface.
 
