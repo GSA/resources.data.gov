@@ -2,7 +2,7 @@
   position: relative;
 
   svg {
-    @include u-text("secondary");
+    @include u-text("primary-vivid");
     fill: currentColor;
     left: -20px;
     position: absolute;

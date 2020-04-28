@@ -1,13 +1,17 @@
 ---
 category: Data tools
-format: Software tool
+description: ESRI2Open is an ESRI toolbox and tool(s) that export ESRI Feature Classes
+  to open data formats, CSV, JSON, and GeoJSON. Runs inside the ESRI ArcGIS desktop
+  suite.
+format: ''
 layout: resource
 link: https://github.com/project-open-data/esri2open
-name: Repository
-publish: 'TRUE'
-shortdescription: is an ESRI toolbox and tool(s) that export ESRI Feature Classes
-  to open data formats, CSV, JSON, and GeoJSON.
+name: ESRI2Open
+policy_tags: ''
+publish: true
 slug: repository
-source: ''
-tags: Geospatial
+source: Project Open Data
+tags:
+- geospatial
+toc: true
 ---

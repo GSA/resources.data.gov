@@ -1,13 +1,16 @@
 ---
 category: Data tools
-format: Software tool
+description: The CSV to API generator dynamically generates RESTful APIs from static
+  CSVs. Provides JSON, XML, and HTML.
+format: ''
 layout: resource
 link: https://github.com/project-open-data/csv-to-api
 name: 'CSV to API generator '
-publish: 'TRUE'
-shortdescription: is a proof of concept to dynamically generate RESTful APIs from
-  static CSVs.
+policy_tags: ''
+publish: true
 slug: csv-to-api
-source: ''
-tags: API
+source: Project Open Data
+tags:
+- API
+toc: true
 ---

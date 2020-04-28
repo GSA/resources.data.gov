@@ -1,7 +1,7 @@
-title: Federal Enterprise Data Resources
+title: resources.data.gov
 email: datagov@gsa.gov
 description: >-
-  Federal Enterprise Data Resources are tools, best practices, and schema standards to facilitate the adoption of open data practices across the federal government
+  Resources.data.gov is an online repository of policies, tools, case studies and other resources to support data governance, management, and use throughout the federal government
 baseurl: "/preview/18f/resources.data.gov/develop/" # the subpath of your site, e.g. /blog
 twitter_username: usdatagov
 github_username: 18F
@@ -13,6 +13,10 @@ github:
   repository: resources.data.gov
   default_branch: develop
 
+scripts:
+  - assets/uswds/js/uswds.min.js
+  - assets/js/bundle.js
+
 styles:
   - assets/uswds/css/styles.css
 
@@ -22,6 +26,7 @@ permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-toc
 source: pages
 
 keep_files:
@@ -51,7 +56,22 @@ collections:
   summaries:
     output: false
   categories:
-    output: false
+    output: true
+  keywords:
+    output: true
+  policy_tags:
+    output: true
 
-resource_tags: [open data, data converter, data schema, data standards, data inventory, data management, API, data analytics, data visualization, data validation, data cleaning, geospatial, data governance, CDO, PRA]
-resource_formats: [Case study, Software tool, Standard/schema, Form/template, Report, OMB Memo, Skill-builder]
+page_gen:
+  - index_files: false
+    data: glossary
+    name: term
+    title: "Glossary: "
+
+toc:
+  min_level: 2
+  max_level: 3
+  list_class: 'usa-sidenav'
+  sublist_class: 'usa-sidenav__sublist'
+  item_class: 'usa-sidenav__item'
+  item_prefix: 'usa-'

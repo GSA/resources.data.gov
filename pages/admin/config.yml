@@ -20,6 +20,7 @@ collections:
     create: true
     folder: "pages/_resources/"
     slug: "{{fields.slug}}"
+
     fields:
       - label: "name"
         name: "name"
@@ -36,7 +37,7 @@ collections:
       - label: "description"
         name: "description"
         widget: "text"
-        hint: "description of the resource"
+        hint: "short description of the resource"
         required: true
 
       - label: "source"
@@ -47,30 +48,38 @@ collections:
 
       - label: "category"
         name: "category"
-        widget: "select"
+        widget: "relation"
+        valueField: "category_name"
+        searchFields: ["category_name"]
         hint: "category of the resource"
-        options: ["---", "Data management & governance", "Data tools", "Skills development", "Communities"]
+        collection: "categories"
+        multiple: false
         required: true
 
       - label: "tags"
         name: "tags"
-        widget: "select"
+        widget: "relation"
+        collection: "keywords"
         multiple: true
         hint: "tags for this resource"
-        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", ]
+        valueField: "name"
+        searchFields: ["name"]
         required: true
+
+      - label: "policy tags"
+        name: "policy_tags"
+        widget: "relation"
+        collection: "policy_tags"
+        multiple: true
+        hint: "policy tags for this resource"
+        valueField: "policy_name"
+        searchFields: ["policy_name"]
+        required: false
 
       - label: "format"
         name: "format"
-        widget: "select"
-        hint: "format of the resource"
-        options: ["---", "Case study", "Software tool", "Standard/schema", "Form/template", "Report", "OMB Memo", "Skill-builder"]
-        required: false
-
-      - label: "link"
-        name: "link to resource"
-        widget: "markdown"
-        hint: "link to the resource"
+        widget: "string"
+        hint: "format or type of resource"
         required: false
 
       - label: "details"
@@ -85,12 +94,25 @@ collections:
         hint: "descriptions of or links to how this resource has been used"
         required: false
 
+      - label: "link"
+        name: "link"
+        widget: "markdown"
+        hint: "link to the resource"
+        required: false
+
       - label: "layout"
         name: "layout"
         widget: "select"
         options: ["resource"]
-        default: ["resource"]
+        default: "resource"
         hint: "the layout template to use"
+        required: true
+
+      - label: "toc"
+        name: "toc"
+        widget: "boolean"
+        default: true
+        hint: "autogenerate a table of contents"
         required: true
 
   - name: "summaries"
@@ -100,54 +122,68 @@ collections:
     slug: "{{fields.slug}}"
 
     fields:
+      - label: "name"
+        name: "name"
+        widget: "string"
+        hint: "name of the resource summary"
+        required: true
+
       - label: "slug"
         name: "slug"
         widget: "string"
         hint: "slug link (part that comes at the very end of a url)"
         required: true
 
-      - label: "name"
-        name: "name"
-        widget: "string"
-        hint: "name of the resource"
-        required: true
-
-      - label: "shortdescription"
-        name: "shortdescription"
+      - label: "description"
+        name: "description"
         widget: "text"
-        hint: "short description of the resource"
+        hint: "short description of the resource summary"
         required: true
 
       - label: "source"
         name: "source"
         widget: "string"
-        hint: "who created the resource"
+        hint: "who created the resource summary"
         required: true
 
       - label: "category"
         name: "category"
-        widget: "select"
-        hint: "category of the resource"
-        options: ["---", "Data management & governance", "Data tools", "Skills development", "Communities"]
+        widget: "relation"
+        valueField: "category_name"
+        searchFields: ["category_name"]
+        hint: "category of the resource summary"
+        collection: "categories"
+        multiple: false
         required: true
 
       - label: "tags"
         name: "tags"
-        widget: "select"
+        widget: "relation"
+        collection: "keywords"
         multiple: true
-        hint: "tags for this resource"
-        options: ["---", "open data", "data converter", "data schema", "data standards", "data inventory", "data management", "API", "data analytics", "data visualization", "data validation", "data cleaning", "geospatial", "data governance", "CDO", "PRA", ]
+        hint: "tags for this resource summary"
+        valueField: "name"
+        searchFields: ["name"]
         required: true
+
+      - label: "policy tags"
+        name: "policy_tags"
+        widget: "relation"
+        collection: "policy_tags"
+        multiple: true
+        hint: "policy tags for this resource summary"
+        valueField: "policy_name"
+        searchFields: ["policy_name"]
+        required: false
 
       - label: "format"
         name: "format"
-        widget: "select"
-        hint: "format of the resource"
-        options: ["---", "Case study", "Software tool", "Standard/schema", "Form/template", "Report", "OMB Memo", "Skill-builder"]
+        widget: "string"
+        hint: "format or type of resource"
         required: false
 
       - label: "link"
-        name: "link to resource"
+        name: "link to resource summary"
         widget: "markdown"
         hint: "link to the resource"
         required: true
@@ -168,5 +204,96 @@ collections:
       - label: "description"
         name: "description"
         widget: "text"
-        hint: "description of the category"
+        hint: "short description of the category"
+        required: true
+
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["resource_category"]
+        default: "resource_category"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "navigation section"
+        name: "primary_nav_section"
+        widget: "select"
+        options: ["Resources", "Communities"]
+        default: "Resources"
+        hint: "the navigation section this category belongs to"
+        required: true
+
+      - label: "show on front page"
+        name: "show_on_front_page"
+        widget: "boolean"
+        default: true
+        hint: "show this category on the front page?"
+        required: true
+
+  - name: "keywords"
+    label: "Keywords"
+    create: true
+    folder: "pages/_keywords/"
+    slug: "{{fields.slug}}"
+
+    fields:
+      - label: "name"
+        name: "name"
+        widget: "string"
+        hint: "name of the keyword"
+        required: true
+
+      - label: "slug"
+        name: "slug"
+        widget: "string"
+        hint: "slug link (part that comes at the very end of a url)"
+        required: true
+
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["keyword"]
+        default: "keyword"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "toc"
+        name: "toc"
+        widget: "boolean"
+        default: true
+        hint: "autogenerate a table of contents"
+        required: true
+
+  - name: "policy_tags"
+    label: "Policy Tags"
+    create: true
+    folder: "pages/_policy_tags/"
+    slug: "{{fields.slug}}"
+
+    fields:
+      - label: "policy name"
+        name: "policy_name"
+        widget: "string"
+        hint: "name of the keyword"
+        required: true
+
+      - label: "slug"
+        name: "slug"
+        widget: "string"
+        hint: "slug link (part that comes at the very end of a url)"
+        required: true
+
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["policy_tag"]
+        default: "policy_tag"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "toc"
+        name: "toc"
+        widget: "boolean"
+        default: true
+        hint: "autogenerate a table of contents"
         required: true

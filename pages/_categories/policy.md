@@ -1,4 +1,8 @@
 ---
 category_name: Policy
-description: <p>Intro text about this category</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+description: Legislation, official memos, regulations, and mandates related to
+  the governance, management, and use of data in the federal government
+primary_nav_section: Resources
+layout: resource_category
+show_on_front_page: true
 ---

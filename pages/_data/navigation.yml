@@ -1,28 +1,20 @@
-- text: Unlinked
-  children:
-    - text: Strategy
-      url: /strategy
-    - text: Open Data Communities
-      url: /open-data-communities
 - text: Resources
   children:
-    - text: Data management and governance
-      url: /resources/data-management-and-governance
-    - text: Policy
-      url: /resources/policy
-    - text: Skills Development
-      url: /resources/skills-development
+    - text: Data management & governance
+      url: /categories/data-management-governance
     - text: Data tools
-      url: /resources/data-tools
-    - text: Case studies and examples
-      url: /resources/case-studies-and-examples
+      url: /categories/data-tools
+    - text: Skills development
+      url: /categories/skills-development
+    - text: Policy
+      url: /categories/policy
+    - text: Case studies & examples
+      url: /categories/case-studies-examples
 - text: Communities
-  url: /communities
+  url: /categories/communities
 - text: About
   children:
-    - text: History
-      url: /about/history/
-    - text: Requirements
-      url: /about/requirements/
+    - text: About this repository
+      url: /about/about-this-repository/
     - text: Governance
       url: /about/governance/

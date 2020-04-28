@@ -1,13 +1,16 @@
 ---
 category: Data tools
-format: Software tool
+description: The /Developer program provides support to federal agencies engaged in
+  the production or use of APIs.
+format: ''
 layout: resource
 link: https://18f.github.io/API-All-the-X/
 name: /Developer program
-publish: 'TRUE'
-shortdescription: provides support to agencies engaged in the production or use of
-  APIs.
+policy_tags: ''
+publish: true
 slug: developer-program
-source: ''
-tags: API
+source: 18F
+tags:
+- API
+toc: true
 ---

@@ -1,12 +1,15 @@
 ---
 category: Data tools
-format: Software tool
+description: Tabula is a tool for liberating data tables locked inside PDF files.
+format: ''
 layout: resource
 link: https://tabula.technology/
 name: Tabula
-publish: 'TRUE'
-shortdescription: is a tool for liberating data tables locked inside PDF files.
+policy_tags: ''
+publish: true
 slug: tabula
-source: ''
-tags: Data cleaning
+source: Tabula
+tags:
+- data cleaning
+toc: true
 ---

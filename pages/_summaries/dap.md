@@ -1,12 +1,17 @@
 ---
 category: Data tools
+description: 'The Digital Analytics Program (DAP) provides a web analytics tool for
+  measuring digital services in the federal government. Executive branch federal agencies
+  are required to implement DAP on all public-facing federal websites. '
 format: ''
 layout: resource
 link: https://digital.gov/dap/
 name: 'The Digital Analytics Program (DAP) '
-publish: 'TRUE'
-shortdescription: offers advanced, easy Web analytics to federal agencies.
+policy_tags: ''
+publish: true
 slug: dap
-source: ''
-tags: Data analytics
+source: digital.gov
+tags:
+- data analytics
+toc: true
 ---

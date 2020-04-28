@@ -1,13 +1,16 @@
 ---
 category: Data tools
-format: Software tool
+description: qu is a data platform created to serve public data sets. This is a public
+  domain work of the US Government.
+format: ''
 layout: resource
 link: https://github.com/cfpb/qu
 name: qu
-publish: 'TRUE'
-shortdescription: ' is a data platform created to serve public data sets. This is
-  a public domain work of the US Government.'
+policy_tags: ''
+publish: true
 slug: qu
-source: ''
-tags: open data
+source: CFPB
+tags:
+- open data
+toc: true
 ---

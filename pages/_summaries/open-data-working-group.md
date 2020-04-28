@@ -1,12 +1,15 @@
 ---
 category: Communities
+description: ''
 format: ''
 layout: resource
 link: ''
 name: Open Data Working Group
-publish: ''
-shortdescription: ''
+policy_tags: ''
+publish: false
 slug: open-data-working-group
 source: ''
-tags: ''
+tags:
+- open data
+toc: true
 ---

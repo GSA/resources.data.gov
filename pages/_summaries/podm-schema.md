@@ -1,12 +1,17 @@
 ---
 category: Skills development
+description: ''
 format: ''
 layout: resource
 link: https://resources.data.gov/tools/glossary/
 name: Glossary of terms used in Project Open Data Metadata Schema.
-publish: 'TRUE'
-shortdescription: ''
+policy_tags: ''
+publish: false
 slug: podm-schema
 source: ''
-tags: open data,Data schema,Data standards
+tags:
+- open data
+- data schema
+- data standards
+toc: true
 ---

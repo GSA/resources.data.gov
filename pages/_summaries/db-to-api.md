@@ -1,12 +1,16 @@
 ---
 category: Data tools
-format: Software tool
+description: Database to API turns a Database into a Secure, RESTful API. Provides
+  JSON, XML, and HTML.
+format: ''
 layout: resource
 link: https://github.com/project-open-data/db-to-api
 name: Database to API
-publish: 'TRUE'
-shortdescription: Database to API turns a Database into a Secure, RESTful API.
+policy_tags: ''
+publish: true
 slug: db-to-api
-source: ''
-tags: API
+source: Project Open Data
+tags:
+- API
+toc: true
 ---

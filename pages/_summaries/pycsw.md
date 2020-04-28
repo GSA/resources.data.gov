@@ -1,12 +1,16 @@
 ---
 category: Data tools
-format: Software tool
+description: 'pycsw allows for the publishing and discovery of geospatial metadata
+  via numerous APIs. pycsw is an OGC CSW server implementation written in Python. '
+format: ''
 layout: resource
 link: https://pycsw.org/
 name: pycsw
-publish: 'TRUE'
-shortdescription: is an OGC CSW server implementation written in Python.
+policy_tags: ''
+publish: true
 slug: pycsw
-source: ''
-tags: Geospatial
+source: pycsw
+tags:
+- geospatial
+toc: true
 ---
