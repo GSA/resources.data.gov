@@ -5,7 +5,7 @@ description: This case study details the development of the renewable energy
   applications built on the Open Energy Information (OpenEI) platform, sponsored
   by the Department of Energy (DOE) and implemented by the National Renewable
   Energy Laboratory (NREL).
-source: Federal Data Strategy
+source: Federal Data Strategy / Department of Energy
 category: Case studies & examples
 tags:
   - open data
@@ -26,16 +26,13 @@ policy_tags:
   - FDS Practice 40 Support Non-Federal Stakeholders
 format: FDS Proof Point
 details: >-
-  ### Open Energy Data at DOE
-
-
-  June 28, 2019
+  *Originally published June 28, 2019*
 
 
   The Geothermal Data Repository (GDR), the Map of US Wind Farms, and the Regulatory and Permitting Information Desktop Toolkit (RAPID). What do they have in common? They are all about renewable energy and they are all free applications built on the Open Energy Information (OpenEI) platform, sponsored by the Department of Energy (DOE) and implemented by the National Renewable Energy Laboratory (NREL).
 
 
-  #### The Opportunity
+  ### The Opportunity
 
 
   OpenEI and the associated Open Energy Data Initiative (OEDI) support DOE’s fulfillment of open government tenets: transparency, public participation, and collaboration. They aim to improve and automate access to high-value energy datasets across the DOE’s programs, offices, and national laboratories. OpenEI and OEDI strive to provide open data and make data actionable and discoverable by government staff, researchers, industry, and the public, thereby enabling more new datasets to be created, accelerating analysis, empowering game changing innovations, and growing businesses.
@@ -44,7 +41,7 @@ details: >-
   ![Screenshots of Geothermal Data Repository (GDR), Map of US Wind Farms, and Regulatory and Permitting Information Desktop Toolkit (RAPID)](https://strategy.data.gov/assets/img/posts/2019-06-28-image001.jpg "Screenshots of the Geothermal Data Repository (GDR), the Map of US Wind Farms, and the Regulatory and Permitting Information Desktop Toolkit (RAPID)")
 
 
-  #### OpenEI – First Generation of Open Data
+  ### OpenEI – First Generation of Open Data
 
 
   Since the beginning of the 21st century, energy-related information and data have grown exponentially around the world, from Research & Development (R&D) data to market trends to policy developments. However, these valuable resources were dispersed among numerous individuals and organizations, available in widely disparate formats, and highly variable in quality and usefulness.
@@ -67,10 +64,10 @@ details: >-
 
   > “OpenEI is at the vanguard of the Federal Government’s efforts to increase transparency, portability, and usability of information produced at the National Laboratories. The OpenEI team, at the National Renewable Energy Laboratory, is the best in class with exceptional knowledge, skills, and experience. They are my go-to team when I need to develop federated or distributable information solutions for customers across the Nation.”\
 
-  > – Rob Bectel, Senior Program Analyst, the Office of Technology Transitions (OTT)
+  > — Rob Bectel, Senior Program Analyst, the Office of Technology Transitions (OTT)
 
 
-  #### OEDI – Cutting Edge Open Data Initiative
+  ### OEDI – Cutting Edge Open Data Initiative
 
 
   Entering the era of big data and the Internet of Things (IoT), the energy community faces a new set of challenges: many researchers have difficulty accessing and utilizing big data and complex data because 1) data can be difficult to find and use, 2) data aren’t publicly available, 3) data are rarely in standard sizes or formats, and 4) large data sets can be costly to store and manage.
@@ -106,7 +103,7 @@ details: >-
   Future datasets will be dependent on laboratory researchers and other stakeholders. Criteria for OEDI datasets include usefulness to a broad audience and researchers who will support the inclusion of their data. Initial plans will focus on additional resource and technology data (such as solar, wind, geothermal, water, bioenergy, and transportation), utility rates, technology performance data, materials and market data, information from cities and states, and data related to grid systems.
 
 
-  #### Future Directions
+  ### Future Directions
 
 
   The data and information coming out of DOE national laboratories are valuable assets. OEDI gives laboratory staff a platform through which they can easily share datasets with the public. Access to big data analytics and computation in the cloud will enable innovation and data mash-ups like never before. Using key analysis tools only found in the cloud, researchers can analyze data faster and industry can leverage large-scale federal datasets in new ways. “Through this program, the Office of Energy Efficiency and Renewable Energy (EERE) will make more widely available the largest and most highly trafficked datasets it maintains,” said Solar Energy Technologies Office program manager Garrett Nilsen. “This will make it easier to find and compare energy data across the country and allow America’s talented academic, national lab, and industrial researchers to develop new innovative products, make scientific discoveries, and create more value from federal research dollars.”
@@ -115,7 +112,7 @@ details: >-
   For the coming year, the NREL/OEDI team is planning to leverage and expand the data catalog on OpenEI and utilize it for OEDI – providing access to big data. They are working to secure new big data sets that are currently not accessible to the public. Furthermore, they are partnering with the Linux Foundation’s LF Energy to build an open source community around this project.
 
 
-  #### Postscript
+  ### Postscript
 
 
   To learn more about OpenEI and OEDI, you may contact Debbie Brodt-Giles, Director at DOE/NREL, at [Debbie.brodt.giles@nrel.gov](mailto:Debbie.brodt.giles@nrel.gov).
@@ -124,15 +121,12 @@ details: >-
   To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
 
 
-  ![Federal Data Strategy Incubator Project Logo](https://strategy.data.gov/assets/img/federal-data-strategy-incubator-project-logo.png)
-
-
   #### The Federal Data Strategy Incubator Project
 
 
   The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
-link: https://strategy.data.gov/proof-points/2019/06/28/open-energy-data-at-doe/
+link: ""
 layout: resource
 toc: true
 publish: false
