@@ -49,7 +49,7 @@ details: >-
   Census staff have learned the crucial role of ‘self-response’—the idea that when a census form is sent to an address, that form, ideally, should be filled out, without further government prompting, by someone knowledgeable who lives at that address. When no one from the address responds, the Census Bureau has to conduct the costly operation of sending interviewers to obtain a response. The cost of these nonresponse follow-up operations is considerable. The Census Bureau, therefore, spends a good amount of time and effort convincing individuals to self-respond.
 
 
-  Given the resources involved, it makes sense to target efforts towards those households that are less likely to self-respond. For the 2020 Census, the Census Bureau is doing just that. A metric called the Low Response Score (LRS) identifies what percentage of households in a given census tract is unlikely to self-respond—you can think of it like this—the higher the score, the harder to count.[1](https://strategy.data.gov/proof-points/2019/07/14/census-pdb-roam/#fn:1)The LRS is generated through regression analysis of 25 census tract-level statistics, such as the percentage of individuals in a certain age bracket.
+  Given the resources involved, it makes sense to target efforts towards those households that are less likely to self-respond. For the 2020 Census, the Census Bureau is doing just that. A metric called the Low Response Score (LRS) identifies what percentage of households in a given census tract is unlikely to self-respond—you can think of it like this—the higher the score, the harder to count.[^1]  The LRS is generated through regression analysis of 25 census tract-level statistics, such as the percentage of individuals in a certain age bracket.
 
 
   ![LRS is credible)](https://strategy.data.gov/assets/img/posts/2019-07-14-image001.png "LRS is credible")\
@@ -66,7 +66,7 @@ details: >-
   As useful as the PDB is, leveraging it to make decisions at a geographic level requires the ability to take the data and link them with geospatial data. Hence the introduction of the ROAM application which expanded the PDB’s utility to a much broader group of analysts and other users.
 
 
-  In 2017, staff at the Census Bureau requested a map of the LRS to help inform operations. The team decided to expand the vision, making not just a static choropleth map of the LRS, but an interactive web map prototype, which could facilitate internal operations and be used to gauge whether others would benefit from such a tool.[2](https://strategy.data.gov/proof-points/2019/07/14/census-pdb-roam/#fn:2)
+  In 2017, staff at the Census Bureau requested a map of the LRS to help inform operations. The team decided to expand the vision, making not just a static choropleth map of the LRS, but an interactive web map prototype, which could facilitate internal operations and be used to gauge whether others would benefit from such a tool.[^2] 
 
 
   Before the team could turn the prototype into a production-ready tool, however, they had to win the approval and enthusiasm of Census Bureau leadership. They quickly learned the importance of crafting a non-technical elevator speech, along with examples to help make the case. Without clear communication to leadership about the benefits of the project, it would have been impossible to secure the budget to procure hardware and complete the certification for the platform used to build ROAM. Showing a prototype tool wasn’t just about attracting the attention of senior level management. It was also useful to get the reaction of people whose work could directly benefit from the creation of this tool.
@@ -86,7 +86,7 @@ details: >-
   ![LRS of a tract on ROAM)](https://strategy.data.gov/assets/img/posts/2019-07-14-image002.png "LRS of a tract on ROAM")Selecting a census tract on the Response Outreach Area Mapper reveals its LRS, an indication of how likely any household is to not self-respond to a Census Bureau survey, along with socioeconomic and demographic characteristics within that census tract.
 
 
-  The LRS, as packaged in ROAM, has also become a data-based decision-making tool for non-federal organizations, providing them with objective data validated by the Census Bureau. Given the representation and financial ramifications—seats in Congress and hundreds of billions of federal dollars are allocated according to decennial census information—state governments and other organizations invest a lot of resources in getting their residents tallied properly. California, for instance, has “already allocated more than $100 million on efforts aimed at getting all its residents counted” in the upcoming census, with other states following suit.[3](https://strategy.data.gov/proof-points/2019/07/14/census-pdb-roam/#fn:3)ROAM helps these governments, especially those that lack the geospatial information programming capacity to work with raw PDB data, to allocate their census programs efficiently.
+  The LRS, as packaged in ROAM, has also become a data-based decision-making tool for non-federal organizations, providing them with objective data validated by the Census Bureau. Given the representation and financial ramifications—seats in Congress and hundreds of billions of federal dollars are allocated according to decennial census information—state governments and other organizations invest a lot of resources in getting their residents tallied properly. California, for instance, has “already allocated more than $100 million on efforts aimed at getting all its residents counted” in the upcoming census, with other states following suit.[^3]  ROAM helps these governments, especially those that lack the geospatial information programming capacity to work with raw PDB data, to allocate their census programs efficiently.
 
 
   Several organizations have taken it a step further, building on the firm foundation of the PDB and ROAM. California built its own tool, called the Statewide Outreach and Rapid Deployment (also known as SWoRD) tool on top of PDB data and using ROAM as an example. New York City and others have taken their own similar approaches. To help facilitate value creation on top of ROAM, its underlying data services are made available by the Census Bureau at [census.gov/roam](http://www.census.gov/roam) as a RESTful API (an Application Program Interface that responds predictably to other computers’ requests made over the internet).
@@ -112,14 +112,15 @@ details: >-
   To learn more, check out the PDB’s [website](https://www.census.gov/topics/research/guidance/planning-databases.html) or email [census.pdb.questions@census.gov](mailto:census.pdb.questions@census.gov).
 
 
+  {:.footnotes}
+
   #### Footnotes
 
+  [^1]: Census tracts are relatively permanent statistical subdivisions of a county or county equivalent.
 
-  1. Census tracts are relatively permanent statistical subdivisions of a county or county equivalent. [↩](https://strategy.data.gov/proof-points/2019/07/14/census-pdb-roam/#fnref:1)
+  [^2]: A choropleth map is type of thematic map in which geographic areas are colored or shaded based on the value of a particular variable within each geographic area.
 
-  2. A choropleth map is type of thematic map in which geographic areas are colored or shaded based on the value of a particular variable within each geographic area. [↩](https://strategy.data.gov/proof-points/2019/07/14/census-pdb-roam/#fnref:2)
-
-  3. <https://www.rollcall.com/news/congress/census-states-spending-2020> [↩](https://strategy.data.gov/proof-points/2019/07/14/census-pdb-roam/#fnref:3)
+  [^3]: [https://www.rollcall.com/news/congress/census-states-spending-2020](https://www.rollcall.com/news/congress/census-states-spending-2020)
 
 
   To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
