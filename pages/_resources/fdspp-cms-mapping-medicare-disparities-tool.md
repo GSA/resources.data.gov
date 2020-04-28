@@ -54,7 +54,7 @@ details: >-
   The MMD Tool allows users to identify health disparities so that they can evaluate them and prioritize improvements. The MMD Tool also empowers beneficiaries to understand and compare their own health outcomes to those of others in their communities. Researchers and state/local health representatives can identify disparities in Medicare to inform the design of targeted interventions. Hospitals can analyze their quality performance and compare themselves to other similar hospitals.
 
 
-  ![A screenshot of the MMD Tool with detailed information about Baltimore’s Northwest Hospital Center.](https://strategy.data.gov/assets/img/posts/2019-05-03-image002.png "A user looks into detailed information about Baltimore’s Northwest Hospital Center.")\
+  ![A screenshot of the MMD Tool with detailed information about Baltimore’s Northwest Hospital Center.](https://strategy.data.gov/assets/img/posts/2019-05-03-image002.png "A user looks into detailed information about Baltimore’s Northwest Hospital Center.")
 
   *A user looks into detailed information about Baltimore’s Northwest Hospital Center.*
 
