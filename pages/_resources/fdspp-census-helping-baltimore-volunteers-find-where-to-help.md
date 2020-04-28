@@ -30,7 +30,9 @@ details: >-
   The City of Baltimore features great community spaces, but it suffers from a litter problem. Wrappers, bottles, bags, and other urban detritus build up over time, taking away from the otherwise terrific experience of visiting these treasured spots. Luckily, there are community groups and others interested in keeping things clean for the benefit of all. The problem is that people who want to help need help themselves to find where their efforts are needed. Recently, Bloomberg Government analysts put together a prototype through the Census Bureau’s [Opportunity Project](https://opportunity.census.gov/) to better assess where volunteers should direct their efforts. Using Census Bureau and Forest Service information, the team brought a data-driven approach to their work. Their experience reveals how individuals with data expertise can identify a real-world problem that data can help solve, navigate across agencies to find and obtain the most useful data, and work within resource constraints to provide a tool to help address the problem.
 
 
-  ![A screenshot of the DEVOPL project](https://strategy.data.gov/assets/img/posts/2019-04-26-image001.png "DEVOPL jumps off from the realization that there is a mismatch between where litter is worst and where volunteer groups tend to visit")*DEVOPL jumps off from the realization that there is a mismatch between where litter is worst and where volunteer groups tend to visit.*
+  ![A screenshot of the DEVOPL project](https://strategy.data.gov/assets/img/posts/2019-04-26-image001.png "DEVOPL jumps off from the realization that there is a mismatch between where litter is worst and where volunteer groups tend to visit")\
+
+  *DEVOPL jumps off from the realization that there is a mismatch between where litter is worst and where volunteer groups tend to visit.*
 
 
   ### Optimizing volunteerism
@@ -63,7 +65,9 @@ details: >-
   With an idea of where non-profit organizations are based and where small grocery stores are located, a tool could spatially indicate areas that need volunteer work.
 
 
-  ![A map of convenience store locations](https://strategy.data.gov/assets/img/posts/2019-04-26-image002.png "Convenience store locations are used to predict areas of prevalent litter")*Convenience store locations are used to predict areas of prevalent litter*
+  ![A map of convenience store locations](https://strategy.data.gov/assets/img/posts/2019-04-26-image002.png "Convenience store locations are used to predict areas of prevalent litter")\
+
+  *Convenience store locations are used to predict areas of prevalent litter*
 
 
   ### The mismatch between volunteer traffic and litter risk
