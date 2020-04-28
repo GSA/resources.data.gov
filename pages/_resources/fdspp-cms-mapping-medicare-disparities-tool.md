@@ -78,17 +78,17 @@ details: >-
   CMS OMH hopes that others will learn from the MMD effort, converting millions of data records into an interactive, user-friendly tool to identify health disparities. If you are interested in sharing your experience or have questions, ideas, or suggestions, please email the team at [HealthEquityTA@cms.hhs.gov](mailto:HealthEquityTA@cms.hhs.gov).
 
 
+  #### The Federal Data Strategy Incubator Project
+
+
+  The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
+
+
   {:.footnotes}
 
   #### Footnotes
 
   [^1]: These regulations are promulgated under the Health Insurance Portability and Accountability Act of 1996 and the Health Information Technology for Economic and Clinical Health (HITECH) at 45 CFR part 160 and subparts A and E of part 164 (the HIPAA Privacy Rule regulations).
-
-
-  #### The Federal Data Strategy Incubator Project
-
-
-  The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
 link: ""
 layout: resource
