@@ -40,7 +40,9 @@ details: >-
   The MMD Tool is an interactive map identifying geographic areas of disparities between subgroups of Medicare beneficiaries. It also features downloadable maps, tables, and trending data.
 
 
-  ![A screenshot of the Population View of the MMD Tool](https://strategy.data.gov/assets/img/posts/2019-05-03-image001.png "A user pulls up the Population View of the MMD Tool to observe the difference in hospitalization rates, 9 per 1,000 people, between White Medicare beneficiaries and Black Medicare beneficiaries in Wayne County, Michigan.")*A user pulls up the Population View of the MMD Tool to observe the difference in hospitalization rates, 9 per 1,000 people, between White Medicare beneficiaries and Black Medicare beneficiaries in Wayne County, Michigan.*
+  ![A screenshot of the Population View of the MMD Tool](https://strategy.data.gov/assets/img/posts/2019-05-03-image001.png "A user pulls up the Population View of the MMD Tool to observe the difference in hospitalization rates, 9 per 1,000 people, between White Medicare beneficiaries and Black Medicare beneficiaries in Wayne County, Michigan.")\
+
+  *A user pulls up the Population View of the MMD Tool to observe the difference in hospitalization rates, 9 per 1,000 people, between White Medicare beneficiaries and Black Medicare beneficiaries in Wayne County, Michigan.*
 
 
   The tool has two views. The Population View identifies disparities by geography, race, and ethnicity in chronic disease prevalence, costs, hospital and emergency department utilization, readmission and mortality rates, potentially disabling conditions, preventable hospitalizations, and preventive services. In addition, the data can be viewed by sex, dual status, and age. The Hospital View provides over 50 quality measures for analyzing and comparing hospitals based on geography, hospital type, and hospital size.
@@ -52,7 +54,9 @@ details: >-
   The MMD Tool allows users to identify health disparities so that they can evaluate them and prioritize improvements. The MMD Tool also empowers beneficiaries to understand and compare their own health outcomes to those of others in their communities. Researchers and state/local health representatives can identify disparities in Medicare to inform the design of targeted interventions. Hospitals can analyze their quality performance and compare themselves to other similar hospitals.
 
 
-  ![A screenshot of the MMD Tool with detailed information about Baltimore’s Northwest Hospital Center.](https://strategy.data.gov/assets/img/posts/2019-05-03-image002.png "A user looks into detailed information about Baltimore’s Northwest Hospital Center.")*A user looks into detailed information about Baltimore’s Northwest Hospital Center.*
+  ![A screenshot of the MMD Tool with detailed information about Baltimore’s Northwest Hospital Center.](https://strategy.data.gov/assets/img/posts/2019-05-03-image002.png "A user looks into detailed information about Baltimore’s Northwest Hospital Center.")\
+
+  *A user looks into detailed information about Baltimore’s Northwest Hospital Center.*
 
 
   ### Protecting privacy while gaining insights
