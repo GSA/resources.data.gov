@@ -55,11 +55,6 @@
     "source": "http://www.data.gov/glossary"
   },
   {
-    "term": "/Data page",
-    "definition": "A hub for data discovery which provides a common location that lists and links to an organization’s datasets. Such a hub is often located at www.example.com/data.",
-    "source": "none"
-  },
-  {
     "term": "Data Asset",
     "definition": "A collection of data elements or datasets that make sense to group together. Each community of interest identifies the Data Assets specific to supporting the needs of their respective mission or business functions. Notably, a Data Asset is a deliberately abstract concept. A given Data Asset may represent an entire database consisting of multiple distinct entity classes, or may represent a single entity class.",
     "source": "https://csrc.nist.gov/glossary/term/data-asset"
@@ -68,11 +63,6 @@
     "term": "Dataset",
     "definition": "A dataset is an organized collection of data. The most basic representation of a dataset is data elements presented in tabular form. Each column represents a particular variable. Each row corresponds to a given value of that column’s variable. A dataset may also present information in a variety of non-tabular formats, such as an extensible mark-up language (XML) file, a geospatial data file, or an image file, etc.",
     "source": "http://www.data.gov/glossary"
-  },
-  {
-    "term": "/Developer page",
-    "definition": "A hub for API discovery which provides a common location where an organization’s APIs and their associated documentation. Such a hub is often located at www.example.com/developer.",
-    "source": "none"
   },
   {
     "term": "Database",
@@ -132,7 +122,7 @@
   {
     "term": "JSONP",
     "definition": "JSONP or “JSON with padding” is a JSON extension wherein the name of a callback function is specified as an input argument of the underlying JSON call itself. JSONP makes use of runtime script tag injection.",
-    "source": "none"
+    "source": "https://en.wikipedia.org/wiki/JSONP"
   },
   {
     "term": "Machine Readable File",
