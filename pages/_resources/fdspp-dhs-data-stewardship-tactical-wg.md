@@ -5,7 +5,7 @@ description: The Department of Homeland Security (DHS) experience forming the
   Data Stewardship Tactical Working Group (DSTWG) provides meaningful insights
   for those who want to address data-related challenges collaboratively and
   successfully in their own agencies.
-source: Federal Data Strategy
+source: Federal Data Strategy / Department of Homeland Security
 category: Case studies & examples
 tags:
   - data governance
@@ -19,14 +19,10 @@ policy_tags:
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders
 format: FDS Proof Point
 details: >-
-  ### Investing in Learning with the Data Stewardship Tactical Working Group at
-  DHS
+  *Originally published April 12, 2019*
 
 
-  April 12, 2019
-
-
-  #### Issue
+  ### Issue
 
 
   ![Logo for Data Stewardship Tactical Working Group (DSTWG)](https://strategy.data.gov/assets/img/posts/2018-12-13-image002.png "Logo for Data Stewardship Tactical Working Group (DSTWG)")
@@ -35,7 +31,7 @@ details: >-
   Diffusion of responsibility for managing federal data, differing mandates across operating and support units, and various levels of data know-how among officials – these are among the factors that can make data-related issues especially challenging. To tackle these challenges, the Department of Homeland Security, one of the largest and most federated government organizations, brought together data practitioners of all stripes to find solutions, learn from each other, and set standards applicable department-wide. The DHS experience forming the Data Stewardship Tactical Working Group (DSTWG) provides meaningful insights for those who want to address data-related challenges collaboratively and successfully in their own agencies.
 
 
-  #### Start Small
+  ### Start Small
 
 
   Before the group came together in January 2014, DHS data practitioners Jennifer Kish and Curtis Ross often ran into missing data problems and bureaucratic obstacles. Soon, they began convening a group of similarly frustrated colleagues who were determined to forge a path forward. Every other week, participants brought specific challenges to the group to collectively problem-solve.
@@ -44,7 +40,7 @@ details: >-
   As word spread, more issues were brought to the table. Existing members recruited additional colleagues with the right knowledge and skills to be part of the solution. In this way, the DSTWG grew from the bottom up, rather than forming as a response to a top-down directive. Over five years, the group grew from 12 people troubleshooting and supporting each other to a formally-empowered group of 600 employees from across a wide spectrum of operations and support roles.
 
 
-  #### Identify a Conversation-Starter
+  ### Identify a Conversation-Starter
 
 
   The DSTWG’s efforts originated in a request to fix data errors within US Citizenship and Immigration Services (USCIS) systems. Thousands of records were affected, requiring manual repair and workarounds. The early DSTWG members were able to locate and fix the source of the issue: a reference data code that was established in Customs and Boarder Protection (CBP) and never adopted by linked systems. Having corrected the underlying problem, the group went on to develop a related reference data standard and appoint a steward to oversee change management of that standard.
@@ -59,10 +55,10 @@ details: >-
   If the group’s name, which emphasized tactical work, was a commitment to address concrete issues, then its first projects represented an early down payment on that commitment. By solving concrete problems, the DSTWG earned trust and credibility with cross-Department stakeholders and attracted new initiative proposals in the process.
 
 
-  #### Invest in your Colleagues
+  ### Invest in your Colleagues
 
 
-  ![A flier from a 2018 DSTWG training sessions shows topics and featured speaker.](https://strategy.data.gov/assets/img/posts/2018-12-13-image003.png "A flier from a 2018 DSTWG training sessions shows topics and featured speaker.")A flier from a 2018 DSTWG training sessions shows topics and featured speaker.
+  ![A flier from a 2018 DSTWG training sessions shows topics and featured speaker.](https://strategy.data.gov/assets/img/posts/2018-12-13-image003.png "A flier from a 2018 DSTWG training sessions shows topics and featured speaker.")*A flier from a 2018 DSTWG training sessions shows topics and featured speaker.*
 
 
   In the years since its founding, the DSTWG’s mandate has expanded. The group has built tools to help colleagues wrangle data, assemble data sharing agreements, and complete other tasks related to solving not just the technical, but also the legal and practical challenges involved in maximizing value from data. The group is currently moving these tools off of the Department intranet and into Collibra, software that will support various elements of Departmental data governance, such as data cataloging, metadata management, reference materials, policy documents, data usage monitoring, and data sharing.
@@ -74,16 +70,16 @@ details: >-
   Training and tool development sometimes go hand in hand. When the group builds new repeatable processes and templates that go beyond tackling the immediate issue to address the root cause, it then trains stakeholders in the newly-established toolset to bring them up to speed.
 
 
-  #### Demonstrate Responsiveness
+  ### Demonstrate Responsiveness
 
 
-  ![Snapshot of results from a DSTWG-administered survey to the broader data community.](https://strategy.data.gov/assets/img/posts/2018-12-13-image004.png "Snapshot of results from a DSTWG-administered survey to the broader data community.")Snapshot of results from a DSTWG-administered survey to the broader data community.
+  ![Snapshot of results from a DSTWG-administered survey to the broader data community.](https://strategy.data.gov/assets/img/posts/2018-12-13-image004.png "Snapshot of results from a DSTWG-administered survey to the broader data community.")*Snapshot of results from a DSTWG-administered survey to the broader data community.*
 
 
   The DSTWG’s work supports officials at every stage of the data lifecycle: the clerk capturing survey responses, the operator responsible for records management, the developer setting up an API call, and the people who need to share, report, or understand Department data. The DSTWG issues annual surveys to prioritize the needs of these diverse stakeholders and determine its high-level agenda for the subsequent year. Publishing the results of the survey is an important way to ‘close the loop,’ ensuring the community sees how the group is shaping its work in response to stakeholder requests.
 
 
-  #### Communicate your Impact
+  ### Communicate your Impact
 
 
   Much of the DSTWG’s impact takes the form of internal improvements. Bringing legacy environments into compliance with modern standards has improved data quality. Developing tools has decreased data-sharing friction. Establishing lines of accountability has promoted active management of programs’ common standards.
@@ -95,16 +91,16 @@ details: >-
   To remain effective, the DSTWG cannot accomplish its work in isolation. Communications efforts, such as regular brief-outs to senior decision-makers, are critical to hard-wiring the group’s progress into the Department’s operating procedures. The DHS Immigration Data Integration Initiative Executive Steering Committee (IDII ESC) formally recognizes stewards. DHS USCIS have also formally recognized the DSTWG by awarding the community with the Management Directive Award for Exceptional Service. These communication and recognition efforts ensure that people know what sorts of problems the group can help solve and how to bring their queries to the group’s attention.
 
 
-  #### Get Involved
+  ### Get Involved
 
 
   Your agency can learn from the DSTWG experience at DHS. There may be a data community already active at your agency and, if so, join! If not, try convening one yourself – and do not be afraid to start small! Make a commitment to unify, build trust, learn together, and support one another. Demonstrate responsiveness by surveying your colleagues about which tools and training would help their programs improve. Share those results and make sure you respond to them with concrete action aimed at serving your colleagues’ needs. While you help work through their challenges, you will have a great opportunity to demonstrate the finer points of good data management!
 
 
-  > “It is amazing to witness every other week what happens when you see people empowered and moving in sync, always willing to step up, and in, to support each other.” ~ Jen Kish
+  > “It is amazing to witness every other week what happens when you see people empowered and moving in sync, always willing to step up, and in, to support each other.” — Jen Kish
 
 
-  #### Postscript
+  ### Postscript
 
 
   To learn more about DHS’ DSTWG, you may contact DHSDataGovernance@HQ.DHS.Gov. Jennifer Kish is the Data Governance Chair for the Immigration Domain at DHS. Curtis Ross is the Data Governance, Standards lead for the Immigration Domain at DHS. Both Jen and Curtis facilitate and provide support services to the stewards and community of the DSTWG.
@@ -113,15 +109,12 @@ details: >-
   To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
 
 
-  ![Federal Data Strategy Incubator Project Logo](https://strategy.data.gov/assets/img/federal-data-strategy-incubator-project-logo.png)
-
-
   #### The Federal Data Strategy Incubator Project
 
 
   The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
-link: https://strategy.data.gov/proof-points/2019/04/12/investing-in-learning-with-the-data-stewardship-tactical-working-group-at-dhs/
+link: ""
 layout: resource
 toc: true
 publish: false
