@@ -5,7 +5,7 @@ description: To improve customer service and give better answers to users of the
   USA.gov website, the Technology Transformation and Services team at General
   Services Administration (GSA) created a chatbot using artificial intelligence
   (AI) and automation.
-source: Federal Data Strategy
+source: Federal Data Strategy / General Services Administration
 category: Case studies & examples
 tags:
   - process redesign
