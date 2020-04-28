@@ -1326,5 +1326,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://resources.data.gov/schemas/dcat-us/v1.1/
+link: "[DCAT-US Schema v1.1](https://resources.data.gov/schemas/dcat-us/v1.1/)"
 ---
