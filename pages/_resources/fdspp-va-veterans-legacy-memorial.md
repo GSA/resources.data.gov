@@ -52,7 +52,9 @@ details: >-
   The scale of the idea was big. Three million veterans are buried in NCA cemeteries, and Dr. Carpenter was proposing to have a detailed, expandable profile for each of them. The IT considerations – server strain, database connections, permissions provisioning – were intimidating. But in starting with a minimum viable product (MVP), rather than an enterprise IT solution, the team was able to put aside the technical distractions, instead focusing on what users could experience on the site. They created a demonstration for what the eventual site would look like and how users could interact with it, and they determined what the full-fledged version might cost, all within a roughly eight month timeframe. Creating and testing this prototype helped the team confirm that existing NCA data could provide the information needed to populate veteran profiles.
 
 
-  ![A veteran’s profile page from the prototype site developed with the help of VA proposal funding.](https://strategy.data.gov/assets/img/posts/2019-04-19-image001.png "A veteran’s profile page from the prototype site developed with the help of VA proposal funding.")*A veteran’s profile page from the prototype site developed with the help of VA proposal funding.*
+  ![A veteran’s profile page from the prototype site developed with the help of VA proposal funding.](https://strategy.data.gov/assets/img/posts/2019-04-19-image001.png "A veteran’s profile page from the prototype site developed with the help of VA proposal funding.")\
+
+  *A veteran’s profile page from the prototype site developed with the help of VA proposal funding.*
 
 
   ### From scrappy startup to a full product team
