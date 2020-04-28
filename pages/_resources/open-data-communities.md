@@ -30,7 +30,7 @@ details: >-
 
   Anyone with a .gov or .mil email address can join the listserv. To join, send an email to listserv@listserv.gsa.gov with no subject and body content containing “subscribe open-data”.
 examples: ""
-link: <https://digital.gov/communities/open-data/>
+link: "[digital.gov open data communities](https://digital.gov/communities/open-data/)"
 layout: resource
 toc: true
 publish: false
