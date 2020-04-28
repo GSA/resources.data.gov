@@ -15,11 +15,6 @@
     "source": "https://swagger.io/blog/api-documentation/what-is-api-documentation-and-why-it-matters/"
   },
   {
-    "term": "Application Library",
-    "definition": "Complete, functioning applications built on an API is the end goal of any API owner. Make sure and showcase all applications that are built on an API using an application showcase or directory. App showcases are a great way to showcase not just applications built by the API owner, but also showcase the successful integrations of ecosystem partners and individual developers.",
-    "source": "none"
-  },
-  {
     "term": "Basic Auth",
     "definition": "Basic Auth is a way for a web browser or application to provide credentials in the form of a username and password. Because Basic Auth is integrated into HTTP protocol it is the easiest way for users to authenticate with a RESTful API. Basic Auth is easily integrated, however if SSL is not used, the username and password are passed in plain text and can be easily intercepted on the open Internet.",
     "source": "https://swagger.io/docs/specification/authentication/basic-authentication/"
