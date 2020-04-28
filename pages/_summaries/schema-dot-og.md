@@ -6,7 +6,7 @@ description: Through an open community process, schema.org creates, maintains, a
   Web content.
 format: ''
 layout: resource
-link: Schema.org
+link: https://schema.org
 name: 'Schema.org '
 policy_tags: ''
 publish: true
