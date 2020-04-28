@@ -19,7 +19,7 @@ details: >-
   ## Overview
 
 
-  This section contains guidance to support the use of the Project Open Data metadata to list agency datasets and application programming interfaces (APIs) as hosted at agency.gov/data. Additional technical information about the schema can be found on the [Metadata Resources](./metadata-resources/) page.
+  This section contains guidance to support the use of the Project Open Data metadata to list agency datasets and application programming interfaces (APIs) as hosted at agency.gov/data. Additional technical information about the schema can be found on the [Metadata Resources](./metadata-resources/) page. 
 
 
 
@@ -30,7 +30,7 @@ details: >-
   Metadata is structured information that describes, explains, locates, or otherwise makes it easier to retrieve, use, or manage an information resource (NISO 2004, ISBN: 1-880124-62-9).  The challenge is to define and name standard metadata fields so that a data consumer has sufficient information to process and understand the described data. The more information that can be conveyed in a standardized regular format, the more valuable data becomes. Metadata can range from basic to advanced, from allowing one to discover the mere fact that a certain data asset exists and is about a general subject all the way to providing detailed information documenting the structure, processing history, quality, relationships, and other properties of a dataset. Making metadata machine readable greatly increases its utility, but requires more detailed standardization, defining not only field names, but also how information is encoded in the metadata fields.
 
 
-  Establishing a common vocabulary is the key to communication. The **metadata schema** specified in this memorandum is based on [DCAT](http://www.w3.org/TR/vocab-dcat/), a hierarchical vocabulary specific to datasets. This specification defines three types of metadata elements: Required, Required-if (conditionally required), and Expanded fields.  These elements were selected to represent information that is most often looked for on the web. To assist users of other metadata standards, [field mappings](./metadata-resources/#field-mappings) to equivalent elements in other standards are provided.
+  Establishing a common vocabulary is the key to communication. The **metadata schema** specified in this memorandum is based on [DCAT](http://www.w3.org/TR/vocab-dcat/), a hierarchical vocabulary specific to datasets. This specification defines three types of metadata elements: Required, Required-if (conditionally required), and Expanded fields.  These elements were selected to represent information that is most often looked for on the web. To assist users of other metadata standards, [field mappings](./metadata-resources/#field-mappings) to equivalent elements in other standards are provided.  
 
 
   What to Document -- Datasets and Web APIs
@@ -44,7 +44,7 @@ details: >-
   A Web API (**A**pplication **P**rogramming **I**nterface) allows computer programs to dynamically query a dataset using the World Wide Web. For example, a dataset of [farmers markets](http://catalog.data.gov/dataset/farmers-markets-geographic-data) may be made available for download as a single file (e.g., a CSV), or may be made available to developers through a Web API, such that a computer program could use a ZIP Code to retrieve a list of farmers markets in the ZIP Code area.
 
 
-  The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files](/schemas/dcat-us/v1.1/api/).
+  The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files]({{ site.baseurl }}/schemas/dcat-us/v1.1/api/).  
 
 
 
@@ -56,28 +56,28 @@ details: >-
   The [Implementation Guidance](/implementation-guide/) available as a part of Project Open Data describes Agency requirements for the development of metadata as per the Open Data Policy.  A quick primer on the file format involved:
 
 
-  [JSON](http://www.json.org) is a lightweight data-exchange format that is very easy to read, parse and generate.  Based on a subset of the JavaScript programming language, JSON is a text format that is optimized for data interchange.  JSON is built on two structures: (1) a collection of name/value pairs and (2) an ordered list of values.
+  [JSON](http://www.json.org) is a lightweight data-exchange format that is very easy to read, parse and generate.  Based on a subset of the JavaScript programming language, JSON is a text format that is optimized for data interchange.  JSON is built on two structures: (1) a collection of name/value pairs and (2) an ordered list of values.  
 
 
-  Where optional fields are included in a catalog file but are unpopulated, they may be represented by a `null` value.  They should not be represented by an empty string (`""`).
+  Where optional fields are included in a catalog file but are unpopulated, they may be represented by a `null` value.  They should not be represented by an empty string (`""`).  
 
 
-  When a record has an **accessURL** or **downloadURL**, they should be contained as objects within a **distribution**. Any object may be described by **title**, **description**, **format**, or **mediaType**, though when an object contains **downloadURL**, it must be accompanied by **mediaType**.
+  When a record has an **accessURL** or **downloadURL**, they should be contained as objects within a **distribution**. Any object may be described by **title**, **description**, **format**, or **mediaType**, though when an object contains **downloadURL**, it must be accompanied by **mediaType**.  
 
 
-  The Project Open Data schema is case sensitive. The schema uses a camel case convention where the first letter of some words within a field are capitalized (usually all words but the first one). While it may seem subtle which characters are uppercase and lowercase, it is necessary to follow the exact same casing as defined in the schema documented here.  For example:
+  The Project Open Data schema is case sensitive. The schema uses a camel case convention where the first letter of some words within a field are capitalized (usually all words but the first one). While it may seem subtle which characters are uppercase and lowercase, it is necessary to follow the exact same casing as defined in the schema documented here.  For example: 
 
 
-  > Correct: `contactPoint`
+  > Correct: `contactPoint`  
 
-  > Incorrect: `ContactPoint`
+  > Incorrect: `ContactPoint`  
 
-  > Incorrect: `contactpoint`
+  > Incorrect: `contactpoint`  
 
-  > incorrect: `CONTACTPOINT`
+  > incorrect: `CONTACTPOINT`  
 
 
-  Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources](/schemas/dcat-us/v1.1/metadata-resources/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
+  Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources]({{ site.baseurl }}/schemas/dcat-us/v1.1/metadata-resources/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
 
 
 
@@ -85,7 +85,7 @@ details: >-
 
   -------------------------------------------------
 
-  These fields describe the entire Public Data Listing catalog file. Publishers can also use the `describedBy` field to reference the default [JSON Schema](http://json-schema.org/) file used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.json*) or they may refer to their own JSON Schema file if they have extended the schema with additional schema definitions. Similarly, `@context` can be used to reference the default [JSON-LD](http://www.w3.org/TR/json-ld) Context used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld*) or publishers can refer to their own if they have extended the schema with additional linked data vocabularies. See the [Catalog section](#Catalog) under *Further Metadata Field Guidance* for more details.
+  These fields describe the entire Public Data Listing catalog file. Publishers can also use the `describedBy` field to reference the default [JSON Schema](http://json-schema.org/) file used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.json*) or they may refer to their own JSON Schema file if they have extended the schema with additional schema definitions. Similarly, `@context` can be used to reference the default [JSON-LD](http://www.w3.org/TR/json-ld) Context used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld*) or publishers can refer to their own if they have extended the schema with additional linked data vocabularies. See the [Catalog section](#Catalog) under *Further Metadata Field Guidance* for more details. 
 
 
   {: .table .table-schema}
@@ -94,13 +94,13 @@ details: >-
 
   --------------                  | --------------        | --------------| --------------
 
-  [@context](#context)            | Metadata Context      | URL or JSON object for the [JSON-LD Context](http://www.w3.org/TR/json-ld/#the-context) that defines the schema used. | No
+  [@context](#context)            | Metadata Context      | URL or JSON object for the [JSON-LD Context](http://www.w3.org/TR/json-ld/#the-context) that defines the schema used. | No 
 
-  [@id](#id)                      | Metadata Catalog ID   | IRI for the [JSON-LD Node Identifier](http://www.w3.org/TR/json-ld/#node-identifiers) of the Catalog. This should be the URL of the data.json file itself. | No
+  [@id](#id)                      | Metadata Catalog ID   | IRI for the [JSON-LD Node Identifier](http://www.w3.org/TR/json-ld/#node-identifiers) of the Catalog. This should be the URL of the data.json file itself. | No 
 
-  [@type](#type)                  | Metadata Type         | IRI for the [JSON-LD data type](http://www.w3.org/TR/json-ld/#specifying-the-type). This should be `dcat:Catalog` for the Catalog. | No
+  [@type](#type)                  | Metadata Type         | IRI for the [JSON-LD data type](http://www.w3.org/TR/json-ld/#specifying-the-type). This should be `dcat:Catalog` for the Catalog. | No 
 
-  [conformsTo](#conformsTo)       | Schema Version        | URI that identifies the version of the Project Open Data schema being used. | Always
+  [conformsTo](#conformsTo)       | Schema Version        | URI that identifies the version of the Project Open Data schema being used. | Always 
 
   [describedBy](#describedBy)     | Data Dictionary       | URL for the [JSON Schema](http://json-schema.org/) file that defines the schema used.  | No
 
@@ -112,7 +112,7 @@ details: >-
 
   -----------------------------
 
-  See the *[Further Metadata Field Guidance](#further-metadata-field-guidance)* section to learn more about the use of each element, including the range of valid entries where appropriate. Consult the [field mappings](/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
+  See the *[Further Metadata Field Guidance](#further-metadata-field-guidance)* section to learn more about the use of each element, including the range of valid entries where appropriate. Consult the [field mappings]({{ site.baseurl }}/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields. 
 
 
   {: .table .table-schema}
@@ -123,57 +123,57 @@ details: >-
 
   [@type](#dataset-type)                                     | Metadata Type             | IRI for the [JSON-LD data type](http://www.w3.org/TR/json-ld/#specifying-the-type). This should be `dcat:Dataset` for each Dataset. | No
 
-  [title](#title)                                            | Title                     | Human-readable name of the asset.  Should be in plain English and include sufficient detail to facilitate search and discovery. | Always
+  [title](#title)                                            | Title                     | Human-readable name of the asset.  Should be in plain English and include sufficient detail to facilitate search and discovery. | Always                
 
-  [description](#description)                                | Description               | Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest. | Always
+  [description](#description)                                | Description               | Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest. | Always 
 
-  [keyword](#keyword)                                        | Tags                      | Tags (or keywords) help users discover your dataset; please include terms that would be used by technical and non-technical users. | Always
+  [keyword](#keyword)                                        | Tags                      | Tags (or keywords) help users discover your dataset; please include terms that would be used by technical and non-technical users. | Always              
 
-  [modified](#modified)                                      | Last Update               | Most recent date on which the dataset was changed, updated or modified. | Always
+  [modified](#modified)                                      | Last Update               | Most recent date on which the dataset was changed, updated or modified. | Always                                                                        
 
-  [publisher](#publisher)                                    | Publisher                 | The publishing entity and optionally their parent organization(s). | Always
+  [publisher](#publisher)                                    | Publisher                 | The publishing entity and optionally their parent organization(s). | Always                                                                                                                     
 
-  [contactPoint](#contactPoint)                              | Contact Name and Email    | Contact person's name and email for the asset. | Always
+  [contactPoint](#contactPoint)                              | Contact Name and Email    | Contact person's name and email for the asset. | Always                                                                                                           
 
-  [identifier](#identifier)                                  | Unique Identifier         | A unique identifier for the dataset or API as maintained within an Agency catalog or database. | Always
+  [identifier](#identifier)                                  | Unique Identifier         | A unique identifier for the dataset or API as maintained within an Agency catalog or database. | Always                                                 
 
-  [accessLevel](#accessLevel)                                | Public Access Level       | The degree to which this dataset **could** be made publicly-available, *regardless of whether it has been made available*. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public). | Always
+  [accessLevel](#accessLevel)                                | Public Access Level       | The degree to which this dataset **could** be made publicly-available, *regardless of whether it has been made available*. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public). | Always 
 
-  [bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](pages/schemas/dcat-us/v1.1/omb_bureau_codes (1).csv) in the format of `015:11`. | Always
+  [bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](pages/schemas/dcat-us/v1.1/omb_bureau_codes (1).csv) in the format of `015:11`. | Always  
 
-  [programCode](#programCode)<sup>[USG](#USG-note)</sup>     | Program Code              | Federal agencies, list the primary program related to this data asset, from the [Federal Program Inventory](pages/schemas/dcat-us/v1.1/FederalProgramInventory_FY13_MachineReadable_091613.csv). Use the format of `015:001`. | Always
+  [programCode](#programCode)<sup>[USG](#USG-note)</sup>     | Program Code              | Federal agencies, list the primary program related to this data asset, from the [Federal Program Inventory](pages/schemas/dcat-us/v1.1/FederalProgramInventory_FY13_MachineReadable_091613.csv). Use the format of `015:001`. | Always                                                                                                                       
 
-  [license](#license)                                        | License                   | The license or non-license (i.e. Public Domain) status with which the dataset or API has been published.  See [Open Licenses](/open-licenses/) for more information. | If-Applicable
+  [license](#license)                                        | License                   | The license or non-license (i.e. Public Domain) status with which the dataset or API has been published.  See [Open Licenses](/open-licenses/) for more information. | If-Applicable 
 
-  [rights](#rights)                                          | Rights                    | This may include information regarding access or restrictions based on privacy, security, or other policies. This should also serve as an explanation for the selected “accessLevel” including instructions for how to access a restricted file, if applicable, or explanation for why a “non-public” or “restricted public” data asset is not “public,” if applicable. Text, 255 characters. | If-Applicable
+  [rights](#rights)                                          | Rights                    | This may include information regarding access or restrictions based on privacy, security, or other policies. This should also serve as an explanation for the selected “accessLevel” including instructions for how to access a restricted file, if applicable, or explanation for why a “non-public” or “restricted public” data asset is not “public,” if applicable. Text, 255 characters. | If-Applicable 
 
-  [spatial](#spatial)                                        | Spatial                   | The range of spatial applicability of a dataset.  Could include a spatial region like a bounding box or a named place. | If-Applicable
+  [spatial](#spatial)                                        | Spatial                   | The range of spatial applicability of a dataset.  Could include a spatial region like a bounding box or a named place. | If-Applicable                        
 
-  [temporal](#temporal)                                      | Temporal                  | The range of temporal applicability of a dataset (i.e., a start and end date of applicability for the data).  | If-Applicable
+  [temporal](#temporal)                                      | Temporal                  | The range of temporal applicability of a dataset (i.e., a start and end date of applicability for the data).  | If-Applicable                                  
 
   [distribution](#distribution)                              | Distribution              | A container for the array of Distribution objects. See [Dataset Distribution Fields](#dataset-distribution-fields) below for details. | If-Applicable
 
-  [accrualPeriodicity](#accrualPeriodicity)                  | Frequency                 | The frequency with which dataset is published.   | No
+  [accrualPeriodicity](#accrualPeriodicity)                  | Frequency                 | The frequency with which dataset is published.   | No                                                                                                  
 
   [conformsTo](#dataset-conformsTo)                          | Data Standard             | URI used to identify a standardized specification the dataset conforms to. | No
 
-  [dataQuality](#dataQuality)<sup>[USG](#USG-note)</sup>     | Data Quality              | Whether the dataset meets the agency's Information Quality Guidelines (true/false). | No
+  [dataQuality](#dataQuality)<sup>[USG](#USG-note)</sup>     | Data Quality              | Whether the dataset meets the agency's Information Quality Guidelines (true/false). | No    
 
-  [describedBy](#dataset-describedBy)                        | Data Dictionary           | URL to the data dictionary for the dataset.  Note that documentation other than a data dictionary can be referenced using Related Documents (`references`). | No
+  [describedBy](#dataset-describedBy)                        | Data Dictionary           | URL to the data dictionary for the dataset.  Note that documentation other than a data dictionary can be referenced using Related Documents (`references`). | No              
 
   [describedByType](#dataset-describedByType)                | Data Dictionary Type      | The machine-readable file format ([IANA Media Type](http://www.iana.org/assignments/media-types) also known as [MIME Type](http://en.wikipedia.org/wiki/Internet_media_type)) of the dataset's Data Dictionary (`describedBy`). | No
 
   [isPartOf](#isPartOf)                                      | Collection                | The collection of which the dataset is a subset.  | No
 
-  [issued](#issued)                                          | Release Date              | Date of formal issuance. | No
+  [issued](#issued)                                          | Release Date              | Date of formal issuance. | No                                                                                                                      
 
-  [language](#language)                                      | Language                  | The language of the dataset. | No
+  [language](#language)                                      | Language                  | The language of the dataset. | No                                                                                                                  
 
-  [landingPage](#landingPage)                                | Homepage URL              | This field is not intended for an agency's homepage (e.g. www.agency.gov), but rather if a dataset has a human-friendly hub or landing page that users can be directed to for all resources tied to the dataset. | No
+  [landingPage](#landingPage)                                | Homepage URL              | This field is not intended for an agency's homepage (e.g. www.agency.gov), but rather if a dataset has a human-friendly hub or landing page that users can be directed to for all resources tied to the dataset. | No 
 
   [primaryITInvestmentUII](#primaryITInvestmentUII)<sup>[USG](#USG-note)</sup> | Primary IT Investment UII | For linking a dataset with an IT Unique Investment Identifier (UII). | No
 
-  [references](#references)                                  | Related Documents         | Related documents such as technical information about a dataset, developer documentation, etc. | No
+  [references](#references)                                  | Related Documents         | Related documents such as technical information about a dataset, developer documentation, etc. | No                                                                                           
 
   [systemOfRecords](#systemOfRecords)<sup>[USG](#USG-note)</sup>        | System of Records         | If the system is designated as a system of records under the Privacy Act of 1974, provide the URL to the System of Records Notice related to this dataset. | No
 
@@ -185,14 +185,14 @@ details: >-
 
   -------------------------------------------
 
-  Within a dataset, **distribution** is used to aggregate the metadata specific to a dataset's resources (**accessURL** and **downloadURL**), which may be described using the following fields.  Each distribution should contain one **accessURL** or **downloadURL**.  A **downloadURL** should always be accompanied by **mediaType**.
+  Within a dataset, **distribution** is used to aggregate the metadata specific to a dataset's resources (**accessURL** and **downloadURL**), which may be described using the following fields.  Each distribution should contain one **accessURL** or **downloadURL**.  A **downloadURL** should always be accompanied by **mediaType**.  
 
 
   {: .table .table-schema}
 
   Field                                           | Label                 | Definition     | Required
 
-  --------------                                  | --------------        | -------------- | --------------
+  --------------                                  | --------------        | -------------- | --------------                                                                                                                      
 
   [@type](#distribution-type)                     | Metadata Type         | IRI for the [JSON-LD data type](http://www.w3.org/TR/json-ld/#specifying-the-type). This should be `dcat:Distribution` for each Distribution. | No
 
@@ -200,7 +200,7 @@ details: >-
 
   [conformsTo](#distribution-conformsTo)          | Data Standard         | URI used to identify a standardized specification the distribution conforms to. | No
 
-  [describedBy](#distribution-describedBy)        | Data Dictionary       | URL to the data dictionary for the distribution found at the `downloadURL`.  Note that documentation other than a data dictionary can be referenced using Related Documents as shown in the expanded fields. | No
+  [describedBy](#distribution-describedBy)        | Data Dictionary       | URL to the data dictionary for the distribution found at the `downloadURL`.  Note that documentation other than a data dictionary can be referenced using Related Documents as shown in the expanded fields. | No             
 
   [describedByType](#distribution-describedByType)| Data Dictionary Type  | The machine-readable file format ([IANA Media Type](http://www.iana.org/assignments/media-types) or [MIME Type](http://en.wikipedia.org/wiki/Internet_media_type)) of the distribution's `describedBy` URL. | No
 
@@ -210,10 +210,10 @@ details: >-
 
   [format](#distribution-format)                  | Format                | A human-readable description of the file format of a distribution. | No
 
-  [mediaType](#distribution-mediaType)            | Media Type            | The machine-readable file format ([IANA Media Type](http://www.iana.org/assignments/media-types) or [MIME Type](http://en.wikipedia.org/wiki/Internet_media_type)) of the distribution's `downloadURL`. | If-Applicable
+  [mediaType](#distribution-mediaType)            | Media Type            | The machine-readable file format ([IANA Media Type](http://www.iana.org/assignments/media-types) or [MIME Type](http://en.wikipedia.org/wiki/Internet_media_type)) of the distribution's `downloadURL`. | If-Applicable   
 
   [title](#distribution-title)                    | Title                 | Human-readable name of the distribution. | No
-
+                                                                                                                        
 
   Extending the Schema
 
@@ -227,7 +227,7 @@ details: >-
 
   -------------------------------
 
-  Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings](/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
+  Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings]({{ site.baseurl }}/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
 
 
 
@@ -254,7 +254,7 @@ details: >-
           * {: .field-required}[bureauCode](#bureauCode)
           * {: .field-optional}[conformsTo](#dataset-conformsTo)
           * {: .field-required}[contactPoint](#contactPoint)
-              * {: .field-optional}[@type](#contactPoint-type)
+              * {: .field-optional}[@type](#contactPoint-type)    
               * {: .field-required}[fn](#contactPoint-fn)
               * {: .field-required}[hasEmail](#contactPoint-hasEmail)
           * {: .field-required-if-applicable}[dataQuality](#dataQuality)
@@ -262,7 +262,7 @@ details: >-
           * {: .field-optional}[describedByType](#dataset-describedByType)
           * {: .field-required}[description](#description)
           * {: .field-required-if-applicable}[distribution](#distribution)
-              * {: .field-optional}[@type](#distribution-type)
+              * {: .field-optional}[@type](#distribution-type)    
               * {: .field-optional}[accessURL](#distribution-accessURL)
               * {: .field-optional}[conformsTo](#distribution-conformsTo)
               * {: .field-required-if-applicable}[downloadURL](#distribution-downloadURL)
@@ -283,7 +283,7 @@ details: >-
           * {: .field-optional}[primaryITInvestmentUII](#primaryITInvestmentUII)
           * {: .field-required}[programCode](#programCode)
           * {: .field-required}[publisher](#publisher)
-              * {: .field-optional}[@type](#publisher-type)
+              * {: .field-optional}[@type](#publisher-type) 
               * {: .field-required}[name](#publisher-name)
               * {: .field-optional}[subOrganizationOf](#publisher-subOrganizationOf)
           * {: .field-optional}[references](#references)
@@ -380,7 +380,7 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This is used to specify a [JSON Schema](http://json-schema.org/) file that defines all fields. By default, it is recommended that the canonical JSON Schema file is referenced (https://project-open-data.cio.gov/v1.1/schema/catalog.json) but if the schema had been extended, publishers may reference a file that defines those extensions.
+  **Usage Notes** | This is used to specify a [JSON Schema](http://json-schema.org/) file that defines all fields. By default, it is recommended that the canonical JSON Schema file is referenced (https://project-open-data.cio.gov/v1.1/schema/catalog.json) but if the schema had been extended, publishers may reference a file that defines those extensions. 
 
   **Example** | `{"describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json"}`
 
@@ -454,7 +454,7 @@ details: >-
 
   **Accepted Values** | ISO 8601 Repeating Duration (or `irregular`)
 
-  **Usage Notes** | Must be an ISO 8601 repeating duration unless this is not possible because the accrual periodicity is completely irregular, in which case the value should simply be `irregular`.  The value should not include a start or end date but rather simply express the duration of time between data publishing.  For example, a dataset which is published on an annual basis would be `R/P1Y`; every three months would be `R/P3M`; weekly would be `R/P1W`; and daily would be `R/P1D`.  Further examples and documentation [can be found here](/iso8601_guidance#accrualperiodicity).
+  **Usage Notes** | Must be an ISO 8601 repeating duration unless this is not possible because the accrual periodicity is completely irregular, in which case the value should simply be `irregular`.  The value should not include a start or end date but rather simply express the duration of time between data publishing.  For example, a dataset which is published on an annual basis would be `R/P1Y`; every three months would be `R/P3M`; weekly would be `R/P1W`; and daily would be `R/P1D`.  Further examples and documentation [can be found here](/iso8601_guidance#accrualperiodicity).  
 
   **Example** |  `{"accrualPeriodicity":"R/P1Y"}`
 
@@ -506,7 +506,7 @@ details: >-
 
   **Accepted Values** | vCard object
 
-  **Usage Notes** | This is a container for two fields that together make up the contact information for the dataset.  `contactPoint` should always contain both the person's appropriately formatted full name (`fn`) and email (`hasEmail`).
+  **Usage Notes** | This is a container for two fields that together make up the contact information for the dataset.  `contactPoint` should always contain both the person's appropriately formatted full name (`fn`) and email (`hasEmail`).  
 
   **Example** | See below
 
@@ -550,7 +550,7 @@ details: >-
 
   **Accepted Values** | String
 
-  **Usage Notes** | This should include included with `hasEmail` as part of a record's `contactPoint` (see above example).
+  **Usage Notes** | This should include included with `hasEmail` as part of a record's `contactPoint` (see above example).  
 
   **Example** |  `{"fn": "Jane Doe"}`
 
@@ -567,7 +567,7 @@ details: >-
 
   **Accepted Values** | String
 
-  **Usage Notes** | This should be formatted per vCard specifications (see example below) and included with `fn` as part of a record's `contactPoint` (see above example).
+  **Usage Notes** | This should be formatted per vCard specifications (see example below) and included with `fn` as part of a record's `contactPoint` (see above example).    
 
   **Example** |  `{"hasEmail": "mailto:jane.doe@agency.gov"}`
 
@@ -648,14 +648,14 @@ details: >-
 
   **Cardinality** | (0,n)
 
-  **Required** | Yes, if the dataset has an `accessURL` or `downloadURL`.
+  **Required** | Yes, if the dataset has an `accessURL` or `downloadURL`.  
 
-  **Accepted Values** | Array of Objects
+  **Accepted Values** | Array of Objects 
 
-  **Usage Notes** | This is a container for one or multiple `distribution` objects which group together the fields: `accessURL`, `conformsTo`, `downloadURL`, `describedBy`, `describedByType`, `description`, `format`, `mediaType`, and `title`.
+  **Usage Notes** | This is a container for one or multiple `distribution` objects which group together the fields: `accessURL`, `conformsTo`, `downloadURL`, `describedBy`, `describedByType`, `description`, `format`, `mediaType`, and `title`.  
 
   **Example** | See below
-
+   
   ~~~
 
   "distribution": [
@@ -666,7 +666,7 @@ details: >-
                        "format": "CSV",
                        "mediaType": "text/csv",
                        "title": "listofvegetables.csv"
-                   },
+                   }, 
                    {
                        "@type": "dcat:Distribution",
                        "conformsTo": "http://www.agency.gov/vegetables-data-standard/",
@@ -726,7 +726,7 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This should be the URL for an indirect means of accessing the data, such as [API documentation](/v1.1/api/), a 'wizard' or other graphical interface which is used to generate a download, feed, or a request form for the data. When accessLevel is "restricted public" but the dataset is available online indirectly, this field should be the URL that provides indirect access. This should not be a **direct** download URL.  It is usually assumed that accessURL is an HTML webpage.
+  **Usage Notes** | This should be the URL for an indirect means of accessing the data, such as [API documentation](/v1.1/api/), a 'wizard' or other graphical interface which is used to generate a download, feed, or a request form for the data. When accessLevel is "restricted public" but the dataset is available online indirectly, this field should be the URL that provides indirect access. This should not be a **direct** download URL.  It is usually assumed that accessURL is an HTML webpage.  
 
   **Example** |  `{"accessURL":"http://www.agency.gov/api/vegetables/"}`
 
@@ -760,7 +760,7 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This must be the **direct** download URL. Other means of accessing the dataset should be expressed using `accessURL`.  This should always be accompanied by `mediaType`.
+  **Usage Notes** | This must be the **direct** download URL. Other means of accessing the dataset should be expressed using `accessURL`.  This should always be accompanied by `mediaType`.  
 
   **Example** |  `{"downloadURL":"http://www.agency.gov/vegetables/listofvegetables.csv"}`
 
@@ -777,7 +777,7 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This is used to specify a data dictionary or schema that defines fields or column headings in the distribution. If this is a machine readable file the media type should be specified with `describedByType` - otherwise it's assumed to be a human readable HTML webpage.
+  **Usage Notes** | This is used to specify a data dictionary or schema that defines fields or column headings in the distribution. If this is a machine readable file the media type should be specified with `describedByType` - otherwise it's assumed to be a human readable HTML webpage. 
 
   **Example** | `{"describedBy": "http://www.agency.gov/vegetables/schema.json"}`
 
@@ -794,7 +794,7 @@ details: >-
 
   **Accepted Values** | String ([IANA Media Type](http://www.iana.org/assignments/media-types))
 
-  **Usage Notes** | This is used to identify the media type ([IANA Media Type](http://www.iana.org/assignments/media-types) also known as [MIME Type](http://en.wikipedia.org/wiki/Internet_media_type)) of the URL used for the distribution's `describedBy` field. This is especially important if `describedBy` is a machine readable file.
+  **Usage Notes** | This is used to identify the media type ([IANA Media Type](http://www.iana.org/assignments/media-types) also known as [MIME Type](http://en.wikipedia.org/wiki/Internet_media_type)) of the URL used for the distribution's `describedBy` field. This is especially important if `describedBy` is a machine readable file. 
 
   **Example** | `{"describedByType": "application/schema+json"}`
 
@@ -811,7 +811,7 @@ details: >-
 
   **Accepted Values** | String
 
-  **Usage Notes** | This should be a human-readable description of the distribution.
+  **Usage Notes** | This should be a human-readable description of the distribution. 
 
   **Example** | `{"description":"Vegetable data as a zipped CSV file with attached data dictionary"}`
 
@@ -828,7 +828,7 @@ details: >-
 
   **Accepted Values** | String
 
-  **Usage Notes** | This should be a human-readable description of the file format of the dataset, that provides useful information that might not be apparent from `mediaType`.  Note that `API` should always be used to distinguish web APIs.
+  **Usage Notes** | This should be a human-readable description of the file format of the dataset, that provides useful information that might not be apparent from `mediaType`.  Note that `API` should always be used to distinguish web APIs.  
 
   **Example** | `{"format":"CSV"}`
 
@@ -897,7 +897,7 @@ details: >-
 
   **Accepted Values** | String
 
-  **Usage Notes** | This field allows the grouping of multiple datasets into a "collection".  This field should be employed by the individual datasets that together make up a collection.  The value for this field should match the `identifier` of the parent dataset.
+  **Usage Notes** | This field allows the grouping of multiple datasets into a "collection".  This field should be employed by the individual datasets that together make up a collection.  The value for this field should match the `identifier` of the parent dataset.  
 
   **Example** |  `{"isPartOf":"http://dx.doi.org/10.7927/H4PZ56R2"}`
 
@@ -914,7 +914,7 @@ details: >-
 
   **Accepted Values** | ISO 8601 Date
 
-  **Usage Notes** | Dates should be [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) of least resolution. In other words, as much of YYYY-MM-DDThh:mm:ss.sTZD as is relevant to this dataset.
+  **Usage Notes** | Dates should be [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) of least resolution. In other words, as much of YYYY-MM-DDThh:mm:ss.sTZD as is relevant to this dataset. 
 
   **Example** |  `{"issued":"2001-01-15"}`
 
@@ -931,7 +931,7 @@ details: >-
 
   **Accepted Values** | Array of strings
 
-  **Usage Notes** | Surround each keyword with quotes. Separate keywords with commas.  Avoid duplicate keywords in the same record.
+  **Usage Notes** | Surround each keyword with quotes. Separate keywords with commas.  Avoid duplicate keywords in the same record.  
 
   **Example** | `{"keyword":["vegetables","veggies","greens","leafy","spinach","kale","nutrition"]}`
 
@@ -948,7 +948,7 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This field is not intended for an agency's homepage (e.g. www.agency.gov), but rather if a dataset has a human-friendly hub or landing page that users can be directed to for all resources tied to the dataset.
+  **Usage Notes** | This field is not intended for an agency's homepage (e.g. www.agency.gov), but rather if a dataset has a human-friendly hub or landing page that users can be directed to for all resources tied to the dataset.  
 
   **Example** |  `{"landingPage":"http://www.agency.gov/vegetables"}`
 
@@ -967,7 +967,7 @@ details: >-
 
   **Usage Notes** | This should adhere to the [RFC 5646](http://tools.ietf.org/html/rfc5646) standard. This [language subtag lookup](http://rishida.net/utils/subtags/) provides a good tool for checking and verifying language codes. A language tag is comprised of either one or two parts, the language subtag (such as en for English, sp for Spanish, wo for Wolof) and the regional subtag (such as US for United States, GB for Great Britain, MX for Mexico), separated by a hyphen. Regional subtags should only be provided when needed to distinguish a language tag from another one (such as American vs. British English).
 
-  **Example** |  `{"language":["en-US"]}` or if multiple languages, `{"language":["es-MX","wo","nv","en-US"]}`
+  **Example** |  `{"language":["en-US"]}` or if multiple languages, `{"language":["es-MX","wo","nv","en-US"]}` 
 
 
   {: .table .table-schema #license}
@@ -1050,10 +1050,10 @@ details: >-
 
   **Accepted Values** | Object
 
-  **Usage Notes** | This is a container for a `publisher` object which groups together the fields: `name` and `subOrganization`. The `subOrganization` field can also contain a `publisher` object which allows one to describe an organization's hierarchy.  Where greater specificity is desired, include as many levels of publisher as is useful, in ascending order, using the below format.
+  **Usage Notes** | This is a container for a `publisher` object which groups together the fields: `name` and `subOrganization`. The `subOrganization` field can also contain a `publisher` object which allows one to describe an organization's hierarchy.  Where greater specificity is desired, include as many levels of publisher as is useful, in ascending order, using the below format. 
 
   **Example** | See below
-
+   
   ~~~
 
   "publisher": {
@@ -1105,7 +1105,7 @@ details: >-
 
   **Accepted Values** | String
 
-  **Usage Notes** | The plaintext name of the entity publishing this dataset.
+  **Usage Notes** | The plaintext name of the entity publishing this dataset.   
 
   **Example** |  `{"name": "U.S. Department of Commerce"}`
 
@@ -1122,7 +1122,7 @@ details: >-
 
   **Accepted Values** | `publisher` object
 
-  **Usage Notes** | A parent organizational entity described using the same `publisher` object fields.
+  **Usage Notes** | A parent organizational entity described using the same `publisher` object fields.  
 
   **Example** |  `"subOrganizationOf": {"name": "General Services Administration", "subOrganizationOf": {"name": "U.S. Government"}}`
 
@@ -1157,7 +1157,7 @@ details: >-
 
   **Accepted Values** | String
 
-  **Usage Notes** | This may include information regarding access or restrictions based on privacy, security, or other policies. This should also serve as an explanation for the selected “accessLevel” including instructions for how to access a restricted file, if applicable, or explanation for why a “non-public” or “restricted public” data asset is not “public,” if applicable. If the dataset can be made available through a website indirectly, use `accessURL` for the URL that provides such access.
+  **Usage Notes** | This may include information regarding access or restrictions based on privacy, security, or other policies. This should also serve as an explanation for the selected “accessLevel” including instructions for how to access a restricted file, if applicable, or explanation for why a “non-public” or “restricted public” data asset is not “public,” if applicable. If the dataset can be made available through a website indirectly, use `accessURL` for the URL that provides such access. 
 
   **Example** | `{"rights":"This dataset contains Personally Identifiable Information and could not be released for public access."}`
 
@@ -1192,7 +1192,7 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This field should a URL to the System of Records Notice (SORN) that relates to the dataset, specifically from FederalRegister.gov.
+  **Usage Notes** | This field should a URL to the System of Records Notice (SORN) that relates to the dataset, specifically from FederalRegister.gov.   
 
   **Example** |  `{"systemOfRecords":"https://www.federalregister.gov/articles/2002/04/08/02-7376/privacy-act-of-1974-publication-in-full-of-all-notices-of-systems-of-records-including-several-new#p-361"}`
 
@@ -1209,9 +1209,9 @@ details: >-
 
   **Accepted Values** | ISO 8601 Date
 
-  **Usage Notes** | This field should contain an interval of time defined by the start and end dates for which the dataset is applicable.  Dates should be formatted as pairs of {start datetime/end datetime} in the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) format. ISO 8601 specifies that datetimes can be formatted in a number of ways, including a simple four-digit year (eg. 2013) to a much more specific YYYY-MM-DDTHH:MM:SSZ, where the T specifies a seperator between the date and time and time is expressed in 24 hour notation in the UTC (Zulu) time zone. (e.g., 2011-02-14T12:00:00Z/2013-07-04T19:34:00Z). Use a solidus ("/") to separate start and end times.  If there is a need to define the start or end of applicability using a duration rather than a date, ISO 8601 formatting can account for this [with duration based intervals](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals).  For instance, applicability starting in January 2010 and continuing for one month could be represented as `2010-01/P1M` or `2010-01/2010-02`. However, when possible, full dates are preferred for both start and end times.
+  **Usage Notes** | This field should contain an interval of time defined by the start and end dates for which the dataset is applicable.  Dates should be formatted as pairs of {start datetime/end datetime} in the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) format. ISO 8601 specifies that datetimes can be formatted in a number of ways, including a simple four-digit year (eg. 2013) to a much more specific YYYY-MM-DDTHH:MM:SSZ, where the T specifies a seperator between the date and time and time is expressed in 24 hour notation in the UTC (Zulu) time zone. (e.g., 2011-02-14T12:00:00Z/2013-07-04T19:34:00Z). Use a solidus ("/") to separate start and end times.  If there is a need to define the start or end of applicability using a duration rather than a date, ISO 8601 formatting can account for this [with duration based intervals](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals).  For instance, applicability starting in January 2010 and continuing for one month could be represented as `2010-01/P1M` or `2010-01/2010-02`. However, when possible, full dates are preferred for both start and end times.  
 
-  **Example** |  `{"temporal":"2000-01-15T00:45:00Z/2010-01-15T00:06:00Z"}`  or `{"temporal":"2000-01-15T00:45:00Z/P1W"}`
+  **Example** |  `{"temporal":"2000-01-15T00:45:00Z/2010-01-15T00:06:00Z"}`  or `{"temporal":"2000-01-15T00:45:00Z/P1W"}` 
 
 
   {: .table .table-schema #theme}
@@ -1226,7 +1226,7 @@ details: >-
 
   **Accepted Values** | Array of strings
 
-  **Usage Notes** | Separate multiple categories with a comma. Could include [ISO Topic Categories](http://www.isotopicmaps.org/).
+  **Usage Notes** | Separate multiple categories with a comma. Could include [ISO Topic Categories](http://www.isotopicmaps.org/).  
 
   **Examples** |  `{"theme":["vegetables"]}` or if multiple categories, `{"theme":["vegetables","produce"]}`
 
@@ -1254,19 +1254,19 @@ details: >-
 
   ----------------------
 
-  <sup>USG</sup> &mdash; Fields specific to the U.S. Federal Government have been denoted with the <sup>USG</sup> superscript.
+  <sup>USG</sup> &mdash; Fields specific to the U.S. Federal Government have been denoted with the <sup>USG</sup> superscript. 
 
-  The Project Open Data schema has been developed as part of a U.S Federal Government open data policy. However, every attempt
+  The Project Open Data schema has been developed as part of a U.S Federal Government open data policy. However, every attempt 
 
-  has been made to align the schema with existing international standards and to provide opportunities for re-use and interoperability
+  has been made to align the schema with existing international standards and to provide opportunities for re-use and interoperability 
 
-  with state and local government as well as non-profits, academic institutions, and businesses. There are however some fields
+  with state and local government as well as non-profits, academic institutions, and businesses. There are however some fields 
 
-  that have been introduced specifically for use by the U.S. Federal Government and have special meaning in that context. These fields
+  that have been introduced specifically for use by the U.S. Federal Government and have special meaning in that context. These fields 
 
-  are: **bureauCode**, **programCode**, **dataQuality**, **primaryITInvestmentUII**, and **systemOfRecords**. Non-federal data
+  are: **bureauCode**, **programCode**, **dataQuality**, **primaryITInvestmentUII**, and **systemOfRecords**. Non-federal data 
 
-  publishers are encouraged to make use of this schema, but these fields should not be seen as required and may not be relevant for those entities.
+  publishers are encouraged to make use of this schema, but these fields should not be seen as required and may not be relevant for those entities. 
 
 
   Rationale for Metadata Nomenclature
