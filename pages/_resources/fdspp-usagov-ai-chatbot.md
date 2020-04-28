@@ -64,7 +64,7 @@ details: >-
   ### Maximize the technology you have
 
 
-  In the beginning, the team found a tool recommended by other government agencies and the private sector. The company decided not to go through the GSA approval process, however. Looking for easier-to-deploy options, the team learned that their marketing platform, HubSpot, offered chatbot building capability. With an already existing ATO[1](https://strategy.data.gov/proof-points/2019/06/07/usagov-uses-human-centered-design-to-roll-out-ai-chatbot/#fn:1)and a user-friendly tool that followed a simple if-then logic system, the team was able to create a test bot, which they deployed to the website in February 2019.
+  In the beginning, the team found a tool recommended by other government agencies and the private sector. The company decided not to go through the GSA approval process, however. Looking for easier-to-deploy options, the team learned that their marketing platform, HubSpot, offered chatbot building capability. With an already existing ATO[^1] and a user-friendly tool that followed a simple if-then logic system, the team was able to create a test bot, which they deployed to the website in February 2019.
 
 
   A month after launch, the chatbot had interacted with over 4,000 users. Seventy-eight percent of them successfully completed a task: asked a question and received a satisfactory answer.
@@ -105,10 +105,11 @@ details: >-
   Jessica Milcetich is the product owner of USA.gov and USA.gov en Español. To learn more about this project, check it out “[Breaking into Artificial Intelligence: Meet Our USAGov ChatBot!](https://blog.usa.gov/breaking-into-artificial-intelligence-meet-sam-the-chatbot)” or contact Jessica at [jessica.milcetich@gsa.gov](mailto:jessica.milcetich@gsa.gov).
 
 
+  {:.footnotes}
+
   #### Footnotes
 
-
-  1. ATO, or Authority To Operate, is the necessary security stamp of approval that a software must earn before agency users may work with it. [↩](https://strategy.data.gov/proof-points/2019/06/07/usagov-uses-human-centered-design-to-roll-out-ai-chatbot/#fnref:1)
+  [^1]: ATO, or Authority To Operate, is the necessary security stamp of approval that a software must earn before agency users may work with it.
 
 
   To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
