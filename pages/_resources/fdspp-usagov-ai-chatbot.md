@@ -121,4 +121,6 @@ details: >-
   The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 layout: resource
 toc: true
+examples: ""
+link: ""
 ---
