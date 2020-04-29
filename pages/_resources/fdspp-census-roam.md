@@ -52,7 +52,7 @@ details: >-
   Given the resources involved, it makes sense to target efforts towards those households that are less likely to self-respond. For the 2020 Census, the Census Bureau is doing just that. A metric called the Low Response Score (LRS) identifies what percentage of households in a given census tract is unlikely to self-respond—you can think of it like this—the higher the score, the harder to count.[^1]  The LRS is generated through regression analysis of 25 census tract-level statistics, such as the percentage of individuals in a certain age bracket.
 
 
-  ![LRS is credible)](https://strategy.data.gov/assets/img/posts/2019-07-14-image001.png "LRS is credible")\
+  ![LRS is credible)](https://strategy.data.gov/assets/img/posts/2019-07-14-image001.png "LRS is credible")
 
   *A comparison of Low Response Scores with actual 2010 Census return rates reveals the high credibility of the LRS as a predictor of census tracts with high levels of non-self-responding households. Washington DC census tracts are depicted here. ([Public Opinion Quarterly, Volume 81, Issue 1, 1 March 2017, Pages 144–156](https://doi.org/10.1093/poq/nfw040))*
 
@@ -72,7 +72,7 @@ details: >-
   Before the team could turn the prototype into a production-ready tool, however, they had to win the approval and enthusiasm of Census Bureau leadership. They quickly learned the importance of crafting a non-technical elevator speech, along with examples to help make the case. Without clear communication to leadership about the benefits of the project, it would have been impossible to secure the budget to procure hardware and complete the certification for the platform used to build ROAM. Showing a prototype tool wasn’t just about attracting the attention of senior level management. It was also useful to get the reaction of people whose work could directly benefit from the creation of this tool.
 
 
-  > “We spent a lot of time presenting and demonstrating the tool around the building, showing it to various smaller groups of people to get reactions. Some of these reactions served to better the tool, and others served to strengthen the argument for its creation.”\
+  > “We spent a lot of time presenting and demonstrating the tool around the building, showing it to various smaller groups of people to get reactions. Some of these reactions served to better the tool, and others served to strengthen the argument for its creation.”
 
   > — Suzanne McArdle (Cartographic Products and Services Branch, Census Bureau)
 
@@ -83,7 +83,9 @@ details: >-
   As soon as ROAM went live in February 2018, users inside and outside of the Census Bureau started gaining value from it. For example, ROAM helped Jamey Christy in Field Operations to better allocate his staff. He explained that part of his job is to hire 1,500 specialists to work with hard-to-count communities—homeless individuals, migrant farm workers, and others who might not otherwise prioritize responding to census forms. Typically, a manager would simply allocate the specialists proportionally according to the percentage of population dwelling in each census tract. Using ROAM, however, Christy is able to concentrate specialists in census tracts with a high LRS.
 
 
-  ![LRS of a tract on ROAM)](https://strategy.data.gov/assets/img/posts/2019-07-14-image002.png "LRS of a tract on ROAM")Selecting a census tract on the Response Outreach Area Mapper reveals its LRS, an indication of how likely any household is to not self-respond to a Census Bureau survey, along with socioeconomic and demographic characteristics within that census tract.
+  ![LRS of a tract on ROAM)](https://strategy.data.gov/assets/img/posts/2019-07-14-image002.png "LRS of a tract on ROAM")
+
+  *Selecting a census tract on the Response Outreach Area Mapper reveals its LRS, an indication of how likely any household is to not self-respond to a Census Bureau survey, along with socioeconomic and demographic characteristics within that census tract.*
 
 
   The LRS, as packaged in ROAM, has also become a data-based decision-making tool for non-federal organizations, providing them with objective data validated by the Census Bureau. Given the representation and financial ramifications—seats in Congress and hundreds of billions of federal dollars are allocated according to decennial census information—state governments and other organizations invest a lot of resources in getting their residents tallied properly. California, for instance, has “already allocated more than $100 million on efforts aimed at getting all its residents counted” in the upcoming census, with other states following suit.[^3]  ROAM helps these governments, especially those that lack the geospatial information programming capacity to work with raw PDB data, to allocate their census programs efficiently.
@@ -98,7 +100,7 @@ details: >-
   With each new user, the Census Bureau gains another perspective on how ROAM can be improved. At one conference, an advocate for young children highlighted four variables that could be included in the LRS regression to improve its accuracy, including the percentage of children without health insurance in a census tract and the percentage of three- and four-year-olds enrolled in school.
 
 
-  > “As we roll this out, we don’t just hear from users saying they are using ROAM to answer their questions, but also telling us what correlates they’d like added. We are being guided by our users as to how we can add value as we move along.”\
+  > “As we roll this out, we don’t just hear from users saying they are using ROAM to answer their questions, but also telling us what correlates they’d like added. We are being guided by our users as to how we can add value as we move along.”
 
   > — Kathleen Kephart (Center for Behavioral Science Methods, Census Bureau)
 
