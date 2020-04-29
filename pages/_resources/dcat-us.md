@@ -1,4 +1,19 @@
 ---
+name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
+slug: dcat-us
+description: How to use Project Open Data Metadata Schema guidelines to document
+  and list agency datasets and application programming interfaces (APIs) for
+  hosting at agency.gov/data and currently in use at data.gov
+source: data.gov
+category: Data management & governance
+tags:
+  - data schema
+  - open data
+  - DCAT
+  - Project Open Metadata Schema
+  - internal-todo
+policy_tags: ""
+format: ""
 details: >-
   {: .vertical-headings}
 
@@ -16,16 +31,15 @@ details: >-
   ---------------------------
 
 
-  ## Overview
+  ### Overview
 
 
   This section contains guidance to support the use of the Project Open Data metadata to list agency datasets and application programming interfaces (APIs) as hosted at agency.gov/data. Additional technical information about the schema can be found on the [Metadata Resources](../../schemas/dcat-us/v1.1/metadata-resources/) page. 
 
 
 
-  Standard Metadata Vocabulary
+  ### Standard Metadata Vocabulary
 
-  ----------------------------
 
   Metadata is structured information that describes, explains, locates, or otherwise makes it easier to retrieve, use, or manage an information resource (NISO 2004, ISBN: 1-880124-62-9).  The challenge is to define and name standard metadata fields so that a data consumer has sufficient information to process and understand the described data. The more information that can be conveyed in a standardized regular format, the more valuable data becomes. Metadata can range from basic to advanced, from allowing one to discover the mere fact that a certain data asset exists and is about a general subject all the way to providing detailed information documenting the structure, processing history, quality, relationships, and other properties of a dataset. Making metadata machine readable greatly increases its utility, but requires more detailed standardization, defining not only field names, but also how information is encoded in the metadata fields.
 
@@ -33,9 +47,7 @@ details: >-
   Establishing a common vocabulary is the key to communication. The **metadata schema** specified in this memorandum is based on [DCAT](http://www.w3.org/TR/vocab-dcat/), a hierarchical vocabulary specific to datasets. This specification defines three types of metadata elements: Required, Required-if (conditionally required), and Expanded fields.  These elements were selected to represent information that is most often looked for on the web. To assist users of other metadata standards, [field mappings](../../schemas/dcat-us/v1.1/metadata-resources/#field-mappings) to equivalent elements in other standards are provided.  
 
 
-  What to Document -- Datasets and Web APIs
-
-  -------------------------------------
+  ### What to Document -- Datasets and Web APIs
 
 
   A dataset is an identifiable collection of structured data objects unified by some criteria (authorship, subject, scope, spatial or temporal extent...). A catalog is a collection of descriptions of datasets; each description is a metadata record. The intention of a data catalog is to facilitate data access by users who are first interested in a particular kind of data, and upon finding a fit-for-purpose dataset, will next want to know how to get the data.
@@ -48,9 +60,7 @@ details: >-
 
 
 
-  Metadata File Format --  JSON
-
-  ---------------------------------------
+  ### Metadata File Format --  JSON
 
 
   The [Implementation Guidance](/implementation-guide/) available as a part of Project Open Data describes Agency requirements for the development of metadata as per the Open Data Policy.  A quick primer on the file format involved:
@@ -81,9 +91,8 @@ details: >-
 
 
 
-  Catalog Fields
+  ### Catalog Fields
 
-  -------------------------------------------------
 
   These fields describe the entire Public Data Listing catalog file. Publishers can also use the `describedBy` field to reference the default [JSON Schema](http://json-schema.org/) file used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.json*) or they may refer to their own JSON Schema file if they have extended the schema with additional schema definitions. Similarly, `@context` can be used to reference the default [JSON-LD](http://www.w3.org/TR/json-ld) Context used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld*) or publishers can refer to their own if they have extended the schema with additional linked data vocabularies. See the [Catalog section](#Catalog) under *Further Metadata Field Guidance* for more details. 
 
@@ -108,9 +117,8 @@ details: >-
 
 
 
-  Dataset Fields
+  ### Dataset Fields
 
-  -----------------------------
 
   See the *[Further Metadata Field Guidance](#further-metadata-field-guidance)* section to learn more about the use of each element, including the range of valid entries where appropriate. Consult the [field mappings](../../schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields. 
 
@@ -181,9 +189,8 @@ details: >-
 
 
 
-  Dataset Distribution Fields
+  ### Dataset Distribution Fields
 
-  -------------------------------------------
 
   Within a dataset, **distribution** is used to aggregate the metadata specific to a dataset's resources (**accessURL** and **downloadURL**), which may be described using the following fields.  Each distribution should contain one **accessURL** or **downloadURL**.  A **downloadURL** should always be accompanied by **mediaType**.  
 
@@ -215,17 +222,15 @@ details: >-
   [title](#distribution-title)                    | Title                 | Human-readable name of the distribution. | No
                                                                                                                         
 
-  Extending the Schema
+  ### Extending the Schema
 
-  ------------------------------------------
 
   "Extensional" and/or domain specific metadata can easily be added using other vocabularies even if it is not a term (entity/property) that will get indexed by the major search engines - it could still be indexed by other custom search engines and by Data.gov.  Publishers are encouraged to extend their metadata descriptions using elements from the "Expanded Fields" list shown below, or from any well-known vocabulary (including Dublin Core, Schema.org, FGDC, ISO 19115, and NIEM) as long as they are properly assigned. It's also recommended that these extensions be defined through the `describedBy` and `@context` fields at the top of the [Catalog metadata](#catalog-fields).
 
 
 
-  Further Metadata Field Guidance
+  ### Further Metadata Field Guidance
 
-  -------------------------------
 
   Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings](../../schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
 
@@ -295,9 +300,7 @@ details: >-
           * {: .field-required}[title](#title)
 
 
-  Catalog Fields {#Catalog}
-
-  -------------------------------
+  #### Catalog Fields
 
 
   {: .table .table-schema #context}
@@ -403,7 +406,7 @@ details: >-
 
 
 
-  Dataset Fields {#Dataset}
+  #### Dataset Fields
 
   -------------------------------
 
@@ -1250,9 +1253,7 @@ details: >-
 
 
 
-  Federal Government Fields {#USG-note}
-
-  ----------------------
+  #### Federal Government Fields
 
   <sup>USG</sup> &mdash; Fields specific to the U.S. Federal Government have been denoted with the <sup>USG</sup> superscript. 
 
@@ -1269,9 +1270,8 @@ details: >-
   publishers are encouraged to make use of this schema, but these fields should not be seen as required and may not be relevant for those entities. 
 
 
-  Rationale for Metadata Nomenclature
+  ### Rationale for Metadata Nomenclature
 
-  ----------------------
 
   We sought to be platform-independent and to align as much as possible with existing open standards.
 
@@ -1298,33 +1298,16 @@ details: >-
 
 
 
-  Additional Information
-
-  ----------------------
+  ### Additional Information
 
 
   * [Metadata Resources](../../schemas/dcat-us/v1.1/metadata-resources/) (including starter template and sample files)
 
   * [DCAT](http://www.w3.org/TR/vocab-dcat/)
-policy_tags: ""
-name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
-slug: dcat-us
-description: How to use Project Open Data Metadata Schema guidelines to document
-  and list agency datasets and application programming interfaces (APIs) for
-  hosting at agency.gov/data and currently in use at data.gov
-source: data.gov
-category: Data management & governance
-tags:
-  - data schema
-  - open data
-  - DCAT
-  - Project Open Metadata Schema
-  - internal-todo
-format: ""
-link to resource: ""
 examples: ""
+link: "[DCAT-US Schema v1.1](https://resources.data.gov/schemas/dcat-us/v1.1/)"
 layout: resource
 toc: true
+link to resource: ""
 publish: false
-link: "[DCAT-US Schema v1.1](https://resources.data.gov/schemas/dcat-us/v1.1/)"
 ---
