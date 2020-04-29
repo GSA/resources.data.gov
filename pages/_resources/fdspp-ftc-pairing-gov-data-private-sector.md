@@ -10,7 +10,6 @@ source: Federal Data Strategy / Federal Trade Commission
 category: Case studies & examples
 tags:
   - data cleaning
-  - collaboration
   - internal-todo
 policy_tags:
   - FDS Principle 05 Harness Existing Data

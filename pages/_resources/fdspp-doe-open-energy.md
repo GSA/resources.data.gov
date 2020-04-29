@@ -10,7 +10,6 @@ category: Case studies & examples
 tags:
   - open data
   - data sharing
-  - collaboration
   - internal-todo
 policy_tags:
   - FDS Principle 04 Ensure Relevance

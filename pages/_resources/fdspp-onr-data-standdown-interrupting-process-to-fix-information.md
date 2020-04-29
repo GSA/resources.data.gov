@@ -13,7 +13,6 @@ category: Case studies & examples
 tags:
   - data governance
   - data cleaning
-  - collaboration
   - process redesign
   - internal-todo
 policy_tags:

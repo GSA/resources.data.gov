@@ -10,7 +10,6 @@ description: "Federal agencies' response efforts to Hurricanes Irma and Maria in
 source: Federal Data Strategy
 category: Case studies & examples
 tags:
-  - collaboration
   - geospatial
   - internal-todo
 policy_tags:
@@ -56,10 +55,10 @@ details: >-
   ### Organizing for the Next Time
 
 
-  In responding to the storms, FEMA and other agencies adopted a number of strategies to get help where they needed it to be in spite of the limited quality address and location data. While local and national agencies work on assembling and standardizing better address data, a process likely to take several years, agency personnel have convened a number of times to share approaches to getting the most out of existing Puerto Rico data assets. 
+  In responding to the storms, FEMA and other agencies adopted a number of strategies to get help where they needed it to be in spite of the limited quality address and location data. While local and national agencies work on assembling and standardizing better address data, a process likely to take several years, agency personnel have convened a number of times to share approaches to getting the most out of existing Puerto Rico data assets.
 
 
-  The White House National Science and Technology Council’s Subcommittee on Disaster Reduction (SDR) hosted the Puerto Rico Address Data Workshop in October 2018, with 39 participants from 12 federal agencies. The workshop featured nine presentations by federal agencies on their data management methodologies and processes for Puerto Rico address data. The U.S. Census Bureau, U.S. Department of Agriculture (USDA), FEMA, Department of Housing and Urban Development (HUD), and the National Aeronautics and Space Administration (NASA) presented insights and lessons learned. Discussions focused on the challenges, successes, and proposed solutions for utilizing and managing Puerto Rico address data. Specific actions from this workshop identified the need to organize a dedicated working group for Puerto Rico address data.[^2]   
+  The White House National Science and Technology Council’s Subcommittee on Disaster Reduction (SDR) hosted the Puerto Rico Address Data Workshop in October 2018, with 39 participants from 12 federal agencies. The workshop featured nine presentations by federal agencies on their data management methodologies and processes for Puerto Rico address data. The U.S. Census Bureau, U.S. Department of Agriculture (USDA), FEMA, Department of Housing and Urban Development (HUD), and the National Aeronautics and Space Administration (NASA) presented insights and lessons learned. Discussions focused on the challenges, successes, and proposed solutions for utilizing and managing Puerto Rico address data. Specific actions from this workshop identified the need to organize a dedicated working group for Puerto Rico address data.[^2]
 
 
   The workshop provided the impetus for the organization in March 2019 of a formal working group, the Puerto Rico Address Data Working Group (PRADWG), led by the Census Bureau under the auspices of the Federal Geographic Data Committee’s Address Subcommittee. The PRADWG was charged with inventorying and documenting proven practices for managing Puerto Rico address data. The group met regularly over the course of 120 days to discuss and compare data assets, maintenance processes, address data use cases, and proven practices. The PRADWG report, Proven Practices for Puerto Rico Address Data Management, is a result of these efforts.
@@ -105,7 +104,7 @@ details: >-
 
   #### Footnotes
 
-  [^1]: “FEMA’s Disaster Recovery Efforts in Puerto Rico and the U.S. Virgin Islands.” GAO-19-662T: Published: Jul 11, 2019. Publicly Released: Jul 11, 2019.  
+  [^1]: “FEMA’s Disaster Recovery Efforts in Puerto Rico and the U.S. Virgin Islands.” GAO-19-662T: Published: Jul 11, 2019. Publicly Released: Jul 11, 2019.
 
   [^2]: The Puerto Rico Address Data Workshop Minutes and the 2019 Puerto Rico Address Data Inventory are available on the [Puerto Rico Address Data Working Group Community Page](https://communities.geoplatform.gov/ngda-address/puerto-rico-address-data-working-group/) on the GeoPlatform.
 
