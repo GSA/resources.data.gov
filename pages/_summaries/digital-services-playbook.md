@@ -1,17 +1,18 @@
 ---
-category: Data management & governance
-description: "The Digital Services Playbook is a resource of 13 key \u201Cplays\u201D\
-  \ drawn from successful practices from the private sector and government that, if\
-  \ followed together, will help government build effective digital services."
-format: ''
-layout: resource
-link: https://playbook.cio.gov/
-name: The Digital Services Playbook
-policy_tags: ''
-publish: true
-slug: digital-services-playbook
-source: CIO
-tags:
-- data management
+policy_tags: ""
 toc: true
+layout: resource
+name: The Digital Services Playbook
+slug: digital-services-playbook
+publish: true
+description: The Digital Services Playbook is a resource of 13 key “plays” drawn
+  from successful practices from the private sector and government that, if
+  followed together, will help government build effective digital services.
+source: U.S. Digital Service
+category: Data management & governance
+tags:
+  - data management
+format: ""
+link to resource summary: https://playbook.cio.gov/
+link: https://playbook.cio.gov/
 ---
