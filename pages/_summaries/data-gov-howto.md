@@ -7,7 +7,7 @@ slug: data-gov-howto
 publish: true
 description: Webinar guide to using data.gov, produced by DigitalGov University,
   an initiative of the General Services Administration
-source: DigitalGov
+source: Digitalgov
 category: Skills development
 tags:
   - open data
