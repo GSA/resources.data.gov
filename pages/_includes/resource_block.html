@@ -14,8 +14,6 @@
     <p>
       {% if resource.description %}
         {{ resource.description | default: "No description provided" }}
-      {% else if resource.shortdescription %}
-        {{ resource.shortdescription | default: "No short description provided" }}
       {% endif %}
     </p>
   </div>
