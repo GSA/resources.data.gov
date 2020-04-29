@@ -27,7 +27,6 @@ policy_tags:
   - FDS Practice 28 Align Quality with Intended Use
   - FDS Practice 30 Communicate Planned and Potential Uses of Data
   - FDS Practice 32 Harness Safe Data Linkage
-  - ""
 format: FDS Proof Point
 details: >-
   *Originally published May 10, 2019*
