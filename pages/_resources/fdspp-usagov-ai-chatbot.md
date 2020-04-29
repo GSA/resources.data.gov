@@ -47,7 +47,7 @@ details: >-
   The team started with research, aiming to understand the people who might be using their planned chatbot. They recruited 32 people who had previously contacted USA.gov staff about scams either on Facebook or through the call center. Participants were asked to share their experiences with scams, their emotions, and what made them decide to file a report.
 
 
-  ![The team generated ideas then grouped them into categories to help organize possible next steps.](https://strategy.data.gov/assets/img/posts/2019-06-07-image002.jpg "Photo of post-it notes with generated ideas that were grouped into categories to help organize possible next steps.")\
+  ![The team generated ideas then grouped them into categories to help organize possible next steps.](https://strategy.data.gov/assets/img/posts/2019-06-07-image002.jpg "Photo of post-it notes with generated ideas that were grouped into categories to help organize possible next steps.")
 
   *The team generated ideas then grouped them into categories to help organize possible next steps.*
 
@@ -82,7 +82,7 @@ details: >-
   By intentionally limiting the scope of the bot to preset topics within the scam remediation themes, the team had better control over users’ experience interacting with the bot.
 
 
-  ![The team mapped out different user scenarios.](https://strategy.data.gov/assets/img/posts/2019-06-07-image003.jpg "A sketch showing how the team mapped out different user scenarios.")\
+  ![The team mapped out different user scenarios.](https://strategy.data.gov/assets/img/posts/2019-06-07-image003.jpg "A sketch showing how the team mapped out different user scenarios.")
 
   *The team mapped out different user scenarios.*
 
