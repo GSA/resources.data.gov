@@ -18,9 +18,8 @@ tags:
 policy_tags: ""
 format: ""
 details: >-
-  *Originally published September 28, 2012*
-
-
+  *September 28, 2012*  
+  
   *Mike Pulsifer, U.S. Department of Labor*  
 
 

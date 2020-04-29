@@ -49,6 +49,8 @@ details: >-
 
   ### What to Document -- Datasets and Web APIs
 
+  -------------------------------------
+
 
   A dataset is an identifiable collection of structured data objects unified by some criteria (authorship, subject, scope, spatial or temporal extent...). A catalog is a collection of descriptions of datasets; each description is a metadata record. The intention of a data catalog is to facilitate data access by users who are first interested in a particular kind of data, and upon finding a fit-for-purpose dataset, will next want to know how to get the data.
 
@@ -59,11 +61,10 @@ details: >-
   The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files](../../schemas/dcat-us/v1.1/api/).  
 
 
-
   ### Metadata File Format --  JSON
 
 
-  The [Implementation Guidance](/implementation-guide/) available as a part of Project Open Data describes Agency requirements for the development of metadata as per the Open Data Policy.  A quick primer on the file format involved:
+  The [Implementation Guidance](../m-13-13-guidance/) available as a part of Project Open Data describes Agency requirements for the development of metadata as per the Open Data Policy.  A quick primer on the file format involved:
 
 
   [JSON](http://www.json.org) is a lightweight data-exchange format that is very easy to read, parse and generate.  Based on a subset of the JavaScript programming language, JSON is a text format that is optimized for data interchange.  JSON is built on two structures: (1) a collection of name/value pairs and (2) an ordered list of values.  
@@ -300,7 +301,9 @@ details: >-
           * {: .field-required}[title](#title)
 
 
-  #### Catalog Fields
+  ### Catalog Fields {#Catalog}
+
+  -------------------------------
 
 
   {: .table .table-schema #context}
@@ -406,7 +409,7 @@ details: >-
 
 
 
-  #### Dataset Fields
+  ### Dataset Fields {#Dataset}
 
   -------------------------------
 
@@ -1253,7 +1256,9 @@ details: >-
 
 
 
-  #### Federal Government Fields
+  ### Federal Government Fields {#USG-note}
+
+  ----------------------
 
   <sup>USG</sup> &mdash; Fields specific to the U.S. Federal Government have been denoted with the <sup>USG</sup> superscript. 
 
@@ -1299,6 +1304,8 @@ details: >-
 
 
   ### Additional Information
+
+  ----------------------
 
 
   * [Metadata Resources](../../schemas/dcat-us/v1.1/metadata-resources/) (including starter template and sample files)

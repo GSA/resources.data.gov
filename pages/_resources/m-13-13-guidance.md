@@ -2,14 +2,12 @@
 details: >
   {: .bgbox.success}
 
-  Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the [Office of Management and Budget Integrated Data Collection (IDC)](IDC/), the [Project Open Data Dashboard](http://labs.data.gov/dashboard/offices) and [Open Data Cross-Agency Priority (CAP) Goal](http://goals.performance.gov/opendata). Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources. 
-
+  Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the [Office of Management and Budget Integrated Data Collection (IDC)](../../PoD/IDC/), the [Project Open Data Dashboard](http://labs.data.gov/dashboard/offices) and [Open Data Cross-Agency Priority (CAP) Goal](http://goals.performance.gov/opendata). Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources. 
 
   ---------------------------
 
+  *Moved from Project Open Data to resources.data.gov. References to Project Open Data have been preserved as links have been updated.*  
 
-
-  ### Supplemental Guidance on the Implementation of M-13-13 "Open Data Policy – Managing Information as an Asset”
 
   *NOTE: Due to the government shutdown in the fall of 2013, OMB extended the previous Nov 1, 2013 deadlines in this document to Nov 30, 2013*
 
@@ -17,7 +15,7 @@ details: >
   ### I. Introduction
 
 
-  The purpose of this guidance is to provide additional clarification and detailed requirements to assist agencies in carrying out the objectives of [Executive Order 13642](https://obamawhitehouse.archives.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-) of May 9, 2013, *Making Open and Machine Readable the New Default for Government Information* and [OMB Memorandum M-13-13](/policy-memo) *Open Data Policy-Managing Information as an Asset*.  Specifically, this document focuses on near-term efforts agencies must take to meet the following five initial requirements of M-13-13, which are due November 30, 2013 (six months from publication of M-13-13):
+  The purpose of this guidance is to provide additional clarification and detailed requirements to assist agencies in carrying out the objectives of [Executive Order 13642](https://obamawhitehouse.archives.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-) of May 9, 2013, *Making Open and Machine Readable the New Default for Government Information* and [OMB Memorandum M-13-13](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf) *Open Data Policy-Managing Information as an Asset*.  Specifically, this document focuses on near-term efforts agencies must take to meet the following five initial requirements of M-13-13, which are due November 30, 2013 (six months from publication of M-13-13):
 
 
   1. Create and maintain an Enterprise Data Inventory (Inventory)
@@ -31,7 +29,7 @@ details: >
   5. Clarify roles and responsibilities for promoting efficient and effective data release
 
 
-  Agencies will establish an open data infrastructure by implementing this guidance and Memorandum [M-13-13](/policy-memo) and taking advantage of the resources provided on [Project Open Data](/). Once established, agencies will continue to evolve the infrastructure by identifying and adding new data assets<sup>[1](#footnote-1)</sup>, enriching the description of those data assets through improved metadata, and increasing the amount of data shared with other agencies and the public.
+  Agencies will establish an open data infrastructure by implementing this guidance and Memorandum [M-13-13](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf) and taking advantage of the resources provided on [Project Open Data](/). Once established, agencies will continue to evolve the infrastructure by identifying and adding new data assets<sup>[1](#footnote-1)</sup>, enriching the description of those data assets through improved metadata, and increasing the amount of data shared with other agencies and the public.
 
 
   At a minimum, a successful open data infrastructure must:
@@ -47,7 +45,7 @@ details: >
   The “access level” categories described in this document are intended to be used for organizational purposes within agencies and to reflect decisions already made in agencies about whether data assets can be made public; simply marking data assets “public” cannot substitute for the analysis necessary to ensure the data can be made public. Agencies are reminded that this underlying data from the inventory may only be released to the public after a full analysis of privacy, confidentiality, security, and other valid restrictions pertinent to law and policy.
 
 
-  This guidance seeks to balance the need to establish clear and meaningful expectations for agencies to meet, while allowing sufficient flexibility on the approach each agency may take to address their own unique needs. This guidance also includes references to other OMB memoranda that relate to the management of information.  Agencies should refer to the definitions included in the attachment in [OMB Memorandum M-13-13](/policy-memo) *Open Data Policy-Managing Information as an Asset*.
+  This guidance seeks to balance the need to establish clear and meaningful expectations for agencies to meet, while allowing sufficient flexibility on the approach each agency may take to address their own unique needs. This guidance also includes references to other OMB memoranda that relate to the management of information.  Agencies should refer to the definitions included in the attachment in [OMB Memorandum M-13-13](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf) *Open Data Policy-Managing Information as an Asset*.
 
 
   This guidance introduces an Enterprise Data Inventory framework to provide agencies with improved clarity on specific actions to be taken and minimum requirements to be met.  It also provides OMB with a rubric by which to evaluate compliance and progress toward the objectives laid out in the Open Data Policy. Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the Open Data Cross-Agency Priority (CAP) Goal. Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources.
@@ -61,7 +59,7 @@ details: >
 
   ##### Purpose
 
-  To develop a clear and comprehensive understanding of what data assets they possess, Federal Agencies are required to create an Enterprise Data Inventory (Inventory) that accounts for all data assets created or collected by the agency.  This includes, but is not limited to, data assets used in the agency’s information systems. The Inventory must be enterprise-wide, accounting for data assets across programs<sup>[2](#footnote-2)</sup>  and bureaus<sup>[3](#footnote-3)</sup>,  and must use the required [Project Open Data metadata schema](/v1.1/schema) available on Project Open Data.   After creating the Inventory, agencies should continually improve the usefulness of the Inventory by expanding, enriching, and opening the Inventory (concepts described in the framework below).
+  To develop a clear and comprehensive understanding of what data assets they possess, Federal Agencies are required to create an Enterprise Data Inventory (Inventory) that accounts for all data assets created or collected by the agency.  This includes, but is not limited to, data assets used in the agency’s information systems. The Inventory must be enterprise-wide, accounting for data assets across programs<sup>[2](#footnote-2)</sup>  and bureaus<sup>[3](#footnote-3)</sup>,  and must use the required [Project Open Data metadata schema](../dcat-us) available on Project Open Data.   After creating the Inventory, agencies should continually improve the usefulness of the Inventory by expanding, enriching, and opening the Inventory (concepts described in the framework below).
 
 
   The objectives of this activity are to:
@@ -73,7 +71,7 @@ details: >
 
   * Indicate if the data may be made publicly available and if currently available
 
-  * Describe the data with [Project Open Data metadata schema](/v1.1/schema) available on Project Open Data.
+  * Describe the data with [Project Open Data metadata schema](../dcat-us) available on Project Open Data.
 
 
   #### Framework to Create and Maintain the Enterprise Data Inventory: Expand, Enrich, Open
@@ -127,7 +125,7 @@ details: >
   **Open**: Agencies should implement tools and processes that will accelerate the opening of additional valuable data assets by making them public and machine-readable, while ensuring adequate policy, process, and technical safeguards are in place to prevent against the release of sensitive data.  Agencies are required to increase the number of public data assets included in the Public Data Listing (described in the next section) over time. Agencies should work toward increasing the ratio of data that are public and machine-readable to data that can be made public as measured in the Inventory.
 
 
-  > Example ways to evaluate “Open” maturity: How many releasable data assets have been released in the Public Data Listing? How have more data assets been released in accordance with the [“open data” principles](/principles) over time?\*
+  > Example ways to evaluate “Open” maturity: How many releasable data assets have been released in the Public Data Listing? How have more data assets been released in accordance with the [“open data” principles](../../PoD/principles/) over time?\*
 
 
   #### Minimum Requirements to Create and Maintain an Enterprise Data Inventory
@@ -559,5 +557,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://project-open-data.cio.gov/implementation-guide/
+link: ""
 ---

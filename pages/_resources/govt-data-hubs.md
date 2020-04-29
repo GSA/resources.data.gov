@@ -24,7 +24,7 @@ details: >+
 
   * [Economic Indicators](http://www.commerce.gov/economicindicators)
 
-  * [International Trade Administration](http://trade.gov/data.asp) 
+  * [International Trade Administration](https://www.trade.gov/trade-data-analysis) 
 
   * [Integrated Ocean Observing System - NOAA](http://www.ioos.noaa.gov/data/)
 
@@ -59,7 +59,7 @@ details: >+
 
   * [Oak Ridge National Laboratory - Computer Science and Mathematics Division](http://www.csm.ornl.gov/data/)
 
-  * [Office of Scientific and Technical Information](http://www.osti.gov/data/)
+  * [Office of Scientific and Technical Information](https://www.osti.gov/dataexplorer/)
 
   * [Pacific Northwest National Laboratory - Proteomics Research Resource for Integrative Biology](http://panomics.pnnl.gov/data/) 
 
@@ -85,7 +85,7 @@ details: >+
 
   * [National Cancer Insitute Surveillance, Epidemiology, and End Results Program Turning Cancer Data Into Discovery](http://seer.cancer.gov/data/)
 
-  * [Office of Childcare](https://childcare.gov/data-and-technology)
+  * [Office of Childcare](https://www.acf.hhs.gov/occ/data)
 
   * [Organ Procurement and Transplantation Network](http://optn.transplant.hrsa.gov/data/)
 
@@ -150,7 +150,7 @@ details: >+
 
   ### [Environmental Protection Agency](http://www.epa.gov/data)
 
-  * [Environmental Database Gateway](https://edg.epa.gov/metadata/catalog/main/home.page_
+  * [Environmental Database Gateway](https://edg.epa.gov/metadata/catalog/main/home.page)
 
   * [National Renewable Energy Laboratoryn - The Open PV Project](https://openpv.nrel.gov/login.php?dest=data)
 
@@ -247,5 +247,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://project-open-data.cio.gov/data-hubs/
+link: ""
 ---
