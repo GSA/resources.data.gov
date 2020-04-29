@@ -21,7 +21,11 @@ layout: toc
           {% assign column_length = "desktop:grid-col-4" %}
         {% endif %}
       {% else %}
-        {% assign column_length = "desktop:grid-col-3" %}
+        {% if page.link == "" %}
+          {% assign column_length = "desktop:grid-col-4" %}
+        {% else %}
+          {% assign column_length = "desktop:grid-col-3" %}
+        {% endif %}
       {% endif %}
 
       <div class="{{ column_length }}">
