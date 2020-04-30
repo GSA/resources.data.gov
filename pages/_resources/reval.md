@@ -1,7 +1,7 @@
 ---
-resource_name: ReVal (Reusable Validation Library)
+name: ReVal (Reusable Validation Library)
 slug: reval
-description: ReVAL (Reusable Validation & Aggregation Library) is a Django App
+description: ReVal (Reusable Validation & Aggregation Library) is a Django App
   for validating and aggregating data via API and web interface.
 source: General Services Administration
 category: Data tools
