@@ -111,7 +111,7 @@
   },
   {
     "term": "JSON-LD",
-    "definition": "JSON Based Serialization for Linked Data. THIS NEEDS A DESCRIPTION EDIT!!!",
+    "definition": "JSON Based Serialization for Linked Data. JSON-LD gives Schema.org data about your content to search engines.",
     "source": "https://www.w3.org/TR/json-ld/"
   },
   {
