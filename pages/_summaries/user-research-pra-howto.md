@@ -13,6 +13,5 @@ category: Skills development
 tags:
   - PRA
 format: Video (60 mins)
-link to resource summary: https://www.youtube.com/watch?v=_cqE4a8oAHU
 link: https://www.youtube.com/watch?v=_cqE4a8oAHU
 ---

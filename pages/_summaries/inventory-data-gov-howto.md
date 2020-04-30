@@ -15,6 +15,5 @@ tags:
   - data inventory
   - inventory.data.gov
 format: Video (53 mins)
-link to resource summary: https://www.youtube.com/watch?v=ciLYjDsF4lo
 link: https://www.youtube.com/watch?v=ciLYjDsF4lo
 ---

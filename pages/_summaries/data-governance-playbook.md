@@ -13,6 +13,5 @@ category: Data management & governance
 tags:
   - data governance
 format: PDF (14 pages)
-link to resource summary: https://resources.data.gov/assets/documents/fds-data-governance-playbook.pdf
 link: https://resources.data.gov/assets/documents/fds-data-governance-playbook.pdf
 ---

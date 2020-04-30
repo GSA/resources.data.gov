@@ -14,6 +14,5 @@ category: Data management & governance
 tags:
   - data standards
 format: ""
-link to resource summary: https://www.iso.org/standards-catalogue/browse-by-ics.html
 link: https://www.iso.org/standards-catalogue/browse-by-ics.html
 ---

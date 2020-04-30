@@ -9,5 +9,5 @@ source: OMB / GSA / Data.gov
 category: Communities
 tags:
   - open data
-link to resource summary: https://digital.gov/communities/open-data/
+link: https://digital.gov/communities/open-data/
 ---

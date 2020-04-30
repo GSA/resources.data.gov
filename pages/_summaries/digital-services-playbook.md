@@ -13,6 +13,5 @@ category: Data management & governance
 tags:
   - data management
 format: ""
-link to resource summary: https://playbook.cio.gov/
 link: https://playbook.cio.gov/
 ---

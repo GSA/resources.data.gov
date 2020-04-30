@@ -11,6 +11,5 @@ category: Data management & governance
 tags:
   - open data
 format: ""
-link to resource summary: <https://www.foia.gov/>
 link: https://www.foia.gov/
 ---

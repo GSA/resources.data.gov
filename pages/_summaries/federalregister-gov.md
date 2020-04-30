@@ -13,6 +13,5 @@ category: Case studies & examples
 tags:
   - API
 format: PDF (3 pages)
-link to resource summary: https://www.federalregister.gov/uploads/2012/11/FR2-API-Case-Study1.pdf
 link: https://www.federalregister.gov/uploads/2012/11/FR2-API-Case-Study1.pdf
 ---

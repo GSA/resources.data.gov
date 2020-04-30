@@ -13,6 +13,5 @@ category: Case studies & examples
 tags:
   - data management
 format: PDF (10 pages)
-link to resource summary: https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/ResearchGenInfo/Downloads/CMS-Data-and-Information-Products.pdf
 link: https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/ResearchGenInfo/Downloads/CMS-Data-and-Information-Products.pdf
 ---

@@ -12,6 +12,5 @@ category: Skills development
 tags:
   - open data
 format: Video (45 mins)
-link to resource summary: https://www.youtube.com/watch?v=hbxA5-GDvvU
 link: https://www.youtube.com/watch?v=hbxA5-GDvvU
 ---

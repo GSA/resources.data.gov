@@ -13,6 +13,5 @@ category: Data management & governance
 tags:
   - data management
 format: ""
-link to resource summary: https://participation.usa.gov/
 link: https://participation.usa.gov/
 ---

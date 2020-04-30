@@ -13,6 +13,5 @@ category: Case studies & examples
 tags:
   - data inventory
 format: PDF (5 pages)
-link to resource summary: https://www.transportation.gov/sites/dot.gov/files/docs/DOT%20-%20OpenData%20-%20Data%20Inventory%20Approach.pdf
 link: https://www.transportation.gov/sites/dot.gov/files/docs/DOT%20-%20OpenData%20-%20Data%20Inventory%20Approach.pdf
 ---

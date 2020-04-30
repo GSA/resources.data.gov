@@ -183,7 +183,7 @@ collections:
         required: false
 
       - label: "link"
-        name: "link to resource summary"
+        name: "link"
         widget: "markdown"
         hint: "link to the resource"
         required: true
