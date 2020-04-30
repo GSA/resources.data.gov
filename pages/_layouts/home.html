@@ -18,16 +18,24 @@ class: home
   </div>
 
   <div class="grid-row grid-gap">
-    <div class="desktop:grid-col-4">
-      <h1>Browse resources by category</h1>
+
+    <div class="desktop:grid-col-4 padding-205">
+      <div class="usa-layout__docs-sidenav margin-top-4 desktop:margin-top-0 padding-top-4 display-none desktop:padding-top-0 desktop:display-block desktop:order-first border-base border-top desktop:border-top-0">
+        <ul class="usa-sidenav">
+          <li class="usa-sidenav__item usa-h2"><a href="#browse-by-category">Browse resources by category</a></li>
+          <li class="usa-sidenav__item usa-h2"><a href="#browse-by-keyword">Browse resources by keyword</a></li>
+        </ul>
+      </div>
     </div>
+
     <div class="desktop:grid-col-8 padding-205">
+      <h1 id="browse-by-category" class="text-primary-vivid">Browse resources by category</h1>
       <!-- rely on site navigation to guide which resources show up -->
       {% assign resources = site.data.navigation | where: "text", "Resources" | first %}
       {% for resource in resources.children %}
         {% assign category = site.categories | where: "category_name", resource.text | first %}
         {% if category.show_on_front_page %}
-          <div class="display-flex flex-column padding-205 tablet:margin-bottom-0 {% if forloop.last == false %}border-bottom{% endif %}">
+          <div class="display-flex flex-column padding-left-0 padding-205 tablet:margin-bottom-0 border-bottom">
             <h2 class="margin-top-0">{{ category.category_name }}</h2>
             <p class="text-ink line-height-sans-4">{{ category.description }}</p>
             <a href="{{ category.url | relative_url }}">
@@ -39,11 +47,11 @@ class: home
     </div>
   </div>
 
-  <div class="grid-row grid-gap border-top">
+  <div class="grid-row grid-gap">
     <div class="desktop:grid-col-4">
-      <h1>Browse resources by keyword</h1>
     </div>
     <div class="desktop:grid-col-8 padding-top-205 display-flex flex-row flex-wrap">
+      <h1 id="browse-by-keyword" class="padding-bottom-205 text-primary-vivid">Browse resources by keyword</h1>
       {% for tag in site.keywords %}
         <div class="mobile-lg:grid-col-6 tablet:grid-col-6 desktop:grid-col-4">
           <div class="border-primary-vivid border-2px radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-05 display-flex flex-justify-center text-center">
