@@ -156,7 +156,7 @@
   },
   {
     "term": " RDFa Lite",
-    "definition": "Link added/moved from Models->Standards->Resources. Needs a good description written to distinguish from \"RDF\" above.",
+    "definition": "RDFa Lite is a minimal subset of RDFa, the Resource Description Framework in attributes, consisting of a few attributes that may be used to express machine-readable data in Web documents like HTML, SVG, and XML. While it is not a complete solution for advanced data markup tasks, it does work for most day-to-day needs and can be learned by most Web authors in a day.",
     "source": "https://www.w3.org/TR/rdfa-lite/"
   },
   {
