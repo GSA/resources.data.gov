@@ -1,5 +1,5 @@
 ---
-name: data management
+keyword_name: data management
 slug: data-management
 layout: keyword
 toc: true

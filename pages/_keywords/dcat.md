@@ -1,5 +1,5 @@
 ---
-name: DCAT
+keyword_name: DCAT
 slug: dcat
 layout: keyword
 toc: true

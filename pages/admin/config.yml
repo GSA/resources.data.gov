@@ -62,8 +62,8 @@ collections:
         collection: "keywords"
         multiple: true
         hint: "tags for this resource"
-        valueField: "name"
-        searchFields: ["name"]
+        valueField: "keyword_name"
+        searchFields: ["keyword_name"]
         required: true
 
       - label: "policy tags"
@@ -162,8 +162,8 @@ collections:
         collection: "keywords"
         multiple: true
         hint: "tags for this resource summary"
-        valueField: "name"
-        searchFields: ["name"]
+        valueField: "keyword_name"
+        searchFields: ["keyword_name"]
         required: true
 
       - label: "policy tags"
@@ -238,7 +238,7 @@ collections:
 
     fields:
       - label: "name"
-        name: "name"
+        name: "keyword_name"
         widget: "string"
         hint: "name of the keyword"
         required: true
@@ -274,7 +274,7 @@ collections:
       - label: "policy name"
         name: "policy_name"
         widget: "string"
-        hint: "name of the keyword"
+        hint: "name of the policy keyword"
         required: true
 
       - label: "slug"

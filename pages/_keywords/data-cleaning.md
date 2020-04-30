@@ -1,5 +1,5 @@
 ---
-name: data cleaning
+keyword_name: data cleaning
 slug: data-cleaning
 layout: keyword
 toc: true

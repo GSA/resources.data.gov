@@ -1,5 +1,5 @@
 ---
-name: data standards
+keyword_name: data standards
 slug: data-standards
 layout: keyword
 toc: true
