@@ -1,4 +1,23 @@
 ---
+name: Metadata Resources and Field Mappings under the Project Open Data Metadata
+  Schema (DCAT-US Schema v1.1)
+slug: podm-field-mapping
+description: Provides further background and resources to assist agencies in
+  implementing the Project Open Data Metadata Schema v1.1. Maps fields from the
+  current version of DCAT-US v1.1 to the previous version of the schema (v1.0),
+  as well as other schemas (CKAN API, DCAT, and Schema.org).
+source: resources.data.gov
+category: Data management & governance
+tags:
+  - open data
+  - data standards
+  - data schema
+  - DCAT
+  - Project Open Metadata Schema
+  - open data
+  - internal-todo
+policy_tags: ""
+format: ""
 details: >-
   This section provides further background and resources to assist agencies in
   implementing the [Project Open Data Metadata Schema v1.1](../dcat-us/).
@@ -295,7 +314,7 @@ details: >-
   distribution>mediaType | Media Type | required for download URL | No | insert POD default `application/http` |  | Insert default value `application/http` directly into POD record 
 
 
-  ISO 19115 to Project Open Data Metadata Schema v1.1 (POD v1.1) Crosswalk
+  ### ISO 19115 to Project Open Data Metadata Schema v1.1 (POD v1.1) Crosswalk
 
   -------------------------------------------
 
@@ -397,29 +416,9 @@ details: >-
   mediaType  | Media Type | if applicable | no | infer mime type from 'downloadURL' url | -- | --
 
   title  | Title | optional | no |  | 1. distribution url name with 'download' function  <br> 2. distributor url name with 'download' function | 1. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString` <br> 2. `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:function/gmd:CI_OnLineFunctionCode == download` + `//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor/gmd:MD_Distributor/gmd:distributorTransferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString`
-
-policy_tags: ""
-name: Metadata Resources and Field Mappings under the Project Open Data Metadata
-  Schema (DCAT-US Schema v1.1)
-slug: podm-field-mapping
-description: Provides further background and resources to assist agencies in
-  implementing the Project Open Data Metadata Schema v1.1. Maps fields from the
-  current version of DCAT-US v1.1 to the previous version of the schema (v1.0),
-  as well as other schemas (CKAN API, DCAT, and Schema.org).
-source: resources.data.gov
-category: Data management & governance
-tags:
-  - open data
-  - data standards
-  - data schema
-  - DCAT
-  - Project Open Metadata Schema
-  - open data
-  - internal-todo
-format: ""
 examples: ""
+link: ""
 layout: resource
 toc: true
 publish: false
-link: ""
 ---
