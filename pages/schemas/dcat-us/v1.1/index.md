@@ -1,39 +1,12 @@
 ---
 published: true
-layout: page
+layout: toc
+toc: true
 title: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
 permalink: /schemas/dcat-us/v1.1/
 filename: index.md
 id: schema v1.1
 primary_nav_section: Resources
-breadcrumb_nav:
-- url: "/standards/"
-  text: Schema Standards
-- url: ""
-  text: DCAT-US v1.1
-secondary_nav:
-- url: "#overview"
-  text: Overview
-- url: "./metadata-resources/"
-  text: Metadata Resources
-- url: "#standard-metadata-vocabulary"
-  text: Standard Metadata Vocabulary
-- url: "#what-to-document--datasets-and-web-apis"
-  text: What to Document
-- url: "#metadata-file-format---json"
-  text: Metadata File Format    
-- url: "#catalog-fields"
-  text: Catalog Fields
-- url: "#dataset-fields"
-  text: Dataset Fields  
-- url: "#dataset-distribution-fields"
-  text: Dataset Distribution Fields  
-- url: "#further-metadata-field-guidance"
-  text: Further Metadata Field Guidance
-- url: "#federal-government-fields"
-  text: Federal Government Fields
-- url: "#rationale-for-metadata-nomenclature"
-  text: Rationale for Metadata Nomenclature
 ---
 
 {: .vertical-headings}
