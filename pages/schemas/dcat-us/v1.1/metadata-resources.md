@@ -18,7 +18,7 @@ This section provides further background and resources to assist agencies in imp
 In addition to template and sample files we also produce Project Open Data Metadata schema in JSON schema format. [JSON schema](http://json-schema.org/) describes a JSON data format. It can be used to automatically validate Data.json files and to generate forms for creating JSON.
 
 ### Terms and Abbreviations ###
-* **POD** - [Project Open Data]({{ site.baseurl }}/schemas/dcat-us/v1.1/)
+* **POD** - [Project Open Data]()
 * **JSON** - [JavaScript Object Notation](http://json.org/)
 * **DCAT** - [Data Catalog Vocabulary](http://www.w3.org/TR/vocab-dcat/)
 * **CKAN** - [CKAN software](http://ckan.org/)
@@ -28,19 +28,19 @@ In addition to template and sample files we also produce Project Open Data Metad
 
 ### JSON Schema Files ###
 
-* [1.1 Schema]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/catalog.json) (Draft). The [Catalog]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/catalog.json) schema includes by reference the [Dataset]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/dataset.json), [Distribution]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/distribution.json), [Organization]({{ site.baseurl }}/schemas/v1.1/schema/organization.json), and [vCard]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/vcard.json) schemas. 
+* [1.1 Schema](../schema/catalog.json) (Draft). The [Catalog](../schema/catalog.json) schema includes by reference the [Dataset](../schema/dataset.json), [Distribution](../schema/distribution.json), [Organization](../schema/organization.json), and [vCard](../schema/vcard.json) schemas. 
 
 ### JSON-LD Context ###
 
-* [1.1 Schema]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema/catalog.jsonld) (Draft)
+* [1.1 Schema](../schema/catalog.jsonld) (Draft)
 
 
 ### Sample Data Files
 
-- [JSON - Minimum Requirements]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample.json)
-- [JSON - With Extended Fields]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample-extended.json)
-- [CSV - Minimum Requirements]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample.csv) *(limited to one distribution per dataset)*
-- [CSV - With Extended Fields]({{ site.baseurl }}/schemas/dcat-us/v1.1/examples/catalog-sample-extended.csv) *(limited to one distribution per dataset)*
+- [JSON - Minimum Requirements](../examples/catalog-sample.json)
+- [JSON - With Extended Fields](../examples/catalog-sample-extended.json)
+- [CSV - Minimum Requirements](../examples/catalog-sample.csv) *(limited to one distribution per dataset)*
+- [CSV - With Extended Fields](../examples/catalog-sample-extended.csv) *(limited to one distribution per dataset)*
 
 
 ### Use Cases  
@@ -62,7 +62,7 @@ In order to generate appropriately formatted JSON, simply import an appropriatel
 
 Schema Object Model Diagram
 -----------------------------
-![Schema Diagram]({{ site.baseurl }}/schemas/dcat-us/v1.1/schema-diagram.svg)
+![Schema Diagram](../schema-diagram.svg)
 
 
 ### Field Mappings ###

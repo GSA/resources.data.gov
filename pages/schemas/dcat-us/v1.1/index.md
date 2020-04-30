@@ -63,7 +63,7 @@ A dataset is an identifiable collection of structured data objects unified by so
 
 A Web API (**A**pplication **P**rogramming **I**nterface) allows computer programs to dynamically query a dataset using the World Wide Web. For example, a dataset of [farmers markets](http://catalog.data.gov/dataset/farmers-markets-geographic-data) may be made available for download as a single file (e.g., a CSV), or may be made available to developers through a Web API, such that a computer program could use a ZIP Code to retrieve a list of farmers markets in the ZIP Code area.
 
-The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files]({{ site.baseurl }}/schemas/dcat-us/v1.1/api/).  
+The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files](api/).  
 
 
 Metadata File Format --  JSON
@@ -84,7 +84,7 @@ The Project Open Data schema is case sensitive. The schema uses a camel case con
 > Incorrect: `contactpoint`  
 > incorrect: `CONTACTPOINT`  
 
-Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources]({{ site.baseurl }}/schemas/dcat-us/v1.1/metadata-resources/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
+Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources](metadata-resources/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
 
 
 Catalog Fields
@@ -104,7 +104,7 @@ Field                           | Label                 | Definition    | Requir
 
 Dataset Fields
 -----------------------------
-See the *[Further Metadata Field Guidance](#further-metadata-field-guidance)* section to learn more about the use of each element, including the range of valid entries where appropriate. Consult the [field mappings]({{ site.baseurl }}/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields. 
+See the *[Further Metadata Field Guidance](#further-metadata-field-guidance)* section to learn more about the use of each element, including the range of valid entries where appropriate. Consult the [field mappings](metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields. 
 
 {: .table .table-schema}
 Field                                                      | Label                     | Definition      | Required
@@ -118,8 +118,8 @@ Field                                                      | Label              
 [contactPoint](#contactPoint)                              | Contact Name and Email    | Contact person's name and email for the asset. | Always                                                                                                           
 [identifier](#identifier)                                  | Unique Identifier         | A unique identifier for the dataset or API as maintained within an Agency catalog or database. | Always                                                 
 [accessLevel](#accessLevel)                                | Public Access Level       | The degree to which this dataset **could** be made publicly-available, *regardless of whether it has been made available*. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public). | Always 
-[bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](pages/schemas/dcat-us/v1.1/omb_bureau_codes (1).csv) in the format of `015:11`. | Always  
-[programCode](#programCode)<sup>[USG](#USG-note)</sup>     | Program Code              | Federal agencies, list the primary program related to this data asset, from the [Federal Program Inventory](pages/schemas/dcat-us/v1.1/FederalProgramInventory_FY13_MachineReadable_091613.csv). Use the format of `015:001`. | Always                                                                                                                       
+[bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](omb_bureau_codes.csv) in the format of `015:11`. | Always  
+[programCode](#programCode)<sup>[USG](#USG-note)</sup>     | Program Code              | Federal agencies, list the primary program related to this data asset, from the [Federal Program Inventory](FederalProgramInventory_FY13_MachineReadable_091613.csv). Use the format of `015:001`. | Always                                                                                                                       
 [license](#license)                                        | License                   | The license or non-license (i.e. Public Domain) status with which the dataset or API has been published.  See [Open Licenses](/open-licenses/) for more information. | If-Applicable 
 [rights](#rights)                                          | Rights                    | This may include information regarding access or restrictions based on privacy, security, or other policies. This should also serve as an explanation for the selected “accessLevel” including instructions for how to access a restricted file, if applicable, or explanation for why a “non-public” or “restricted public” data asset is not “public,” if applicable. Text, 255 characters. | If-Applicable 
 [spatial](#spatial)                                        | Spatial                   | The range of spatial applicability of a dataset.  Could include a spatial region like a bounding box or a named place. | If-Applicable                        
@@ -166,7 +166,7 @@ Extending the Schema
 
 Further Metadata Field Guidance
 -------------------------------
-Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings]({{ site.baseurl }}/schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
+Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings](metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
 
 
 {: .schema-fields .requirements-key}
@@ -325,7 +325,7 @@ Dataset Fields {#Dataset}
 **Cardinality** | (0,n)
 **Required** | Yes, for United States Federal Government agencies
 **Accepted Values** | Array of Strings
-**Usage Notes** | Represent each bureau responsible for the dataset according to the codes found in OMB Circular A-11, Appendix C ([PDF](http://www.whitehouse.gov/sites/default/files/omb/assets/a11_current_year/app_c.pdf), [CSV](/data/omb_bureau_codes.csv)). Start with the agency code, then a colon, then the bureau code.
+**Usage Notes** | Represent each bureau responsible for the dataset according to the codes found in OMB Circular A-11, Appendix C ([PDF](http://www.whitehouse.gov/sites/default/files/omb/assets/a11_current_year/app_c.pdf), [CSV](omb_bureau_codes.csv)). Start with the agency code, then a colon, then the bureau code.
 **Example** |  The Office of the Solicitor (86) at the Department of the Interior (010) would be: `{"bureauCode":["010:86"]}`.  If a second bureau was also responsible, the format like this: `{"bureauCode":["010:86","010:04"]}`.
 
 
@@ -482,7 +482,7 @@ Dataset Fields {#Dataset}
 **Cardinality** | (0,1)
 **Required** | Yes, if the file is accessible indirectly, through means other than direct download.
 **Accepted Values** | String (URL)
-**Usage Notes** | This should be the URL for an indirect means of accessing the data, such as [API documentation](/v1.1/api/), a 'wizard' or other graphical interface which is used to generate a download, feed, or a request form for the data. When accessLevel is "restricted public" but the dataset is available online indirectly, this field should be the URL that provides indirect access. This should not be a **direct** download URL.  It is usually assumed that accessURL is an HTML webpage.  
+**Usage Notes** | This should be the URL for an indirect means of accessing the data, such as [API documentation](api/), a 'wizard' or other graphical interface which is used to generate a download, feed, or a request form for the data. When accessLevel is "restricted public" but the dataset is available online indirectly, this field should be the URL that provides indirect access. This should not be a **direct** download URL.  It is usually assumed that accessURL is an HTML webpage.  
 **Example** |  `{"accessURL":"http://www.agency.gov/api/vegetables/"}`
 
 {: .table .table-schema .child-field #distribution-conformsTo}
@@ -645,7 +645,7 @@ Dataset Fields {#Dataset}
 **Cardinality** | (0,n)
 **Required** | Yes, for United States Federal Government Agencies
 **Accepted Values** | Array of strings
-**Usage Notes** | Provide an array of programs related to this data asset, from the [Federal Program Inventory](/data/FederalProgramInventory_FY13_MachineReadable_091613.csv).
+**Usage Notes** | Provide an array of programs related to this data asset, from the [Federal Program Inventory](FederalProgramInventory_FY13_MachineReadable_091613.csv).
 **Example** |  `{"programCode":["015:001"]}` or if multiple programs, `{"programCode":["015:001","015:002"]}`
 
 {: .table .table-schema #publisher}
