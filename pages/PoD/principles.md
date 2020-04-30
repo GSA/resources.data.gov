@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Principles
 permalink: /PoD/principles/
 filename: principles.md
