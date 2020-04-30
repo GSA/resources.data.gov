@@ -1,5 +1,5 @@
 ---
-name: USA.gov Uses Human-Centered Design to Roll Out AI Chatbot
+resource_name: USA.gov Uses Human-Centered Design to Roll Out AI Chatbot
 slug: fdspp-usagov-ai-chatbot
 description: To improve customer service and give better answers to users of the
   USA.gov website, the Technology Transformation and Services team at General

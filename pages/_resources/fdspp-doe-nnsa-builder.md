@@ -1,5 +1,5 @@
 ---
-name: "BUILDER: A Science-Based Approach to Infrastructure Management"
+resource_name: "BUILDER: A Science-Based Approach to Infrastructure Management"
 slug: fdspp-doe-nnsa-builder
 description: The Department of Energy’s National Nuclear Security Administration
   (NNSA) adopted a data-driven, risk-informed strategy to better assess risks,

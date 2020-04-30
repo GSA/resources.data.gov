@@ -175,7 +175,7 @@ details: >-
 
   Once the harvester has been tested successfully, Data.gov will start automatically consuming information about your datasets and all the basic details of your datasets will be available on Data.gov with links to the source and your open data policy.
 policy_tags: ""
-name: How to get your Open Data on Data.gov
+resource_name: How to get your Open Data on Data.gov
 slug: data-gov-open-data-howto
 description: Data.gov is the central clearinghouse for open data from the United
   States federal government and also provides access to many local government

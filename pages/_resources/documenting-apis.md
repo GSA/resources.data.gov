@@ -69,7 +69,7 @@ details: >-
 
   ~~~~
 policy_tags: ""
-name: Documenting APIs
+resource_name: Documenting APIs
 slug: documenting-apis
 description: Further guidance on using the Project Open Data Metadata Schema
   guidelines to document application programming interfaces (APIs) in data.json

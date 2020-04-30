@@ -1,5 +1,5 @@
 ---
-name: How USDA Linked Federal and Commercial Data to Shed Light on the
+resource_name: How USDA Linked Federal and Commercial Data to Shed Light on the
   Nutritional Value of Retail Food Sales
 slug: fdspp-usda-linked-nutrition-data
 description: Purchase-to-Plate Crosswalk (PPC) links the more than 359,000 food

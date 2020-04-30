@@ -1,5 +1,5 @@
 ---
-name: "Data Standdown: Interrupting process to fix information"
+resource_name: "Data Standdown: Interrupting process to fix information"
 slug: fdspp-onr-data-standdown-interrupting-process-to-fix-information
 description: Although not a true pause in operations, ONR’s data standdown made
   data quality and data consolidation the top priority for the entire

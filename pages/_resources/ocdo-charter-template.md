@@ -1,5 +1,5 @@
 ---
-name: Office of the Chief Data Officer Charter Template
+resource_name: Office of the Chief Data Officer Charter Template
 slug: ocdo-charter-template
 description: "This is a test. "
 source: GSA

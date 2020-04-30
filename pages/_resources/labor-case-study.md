@@ -1,5 +1,5 @@
 ---
-name: "U.S. Department of Labor Case Study: Software Development Kits"
+resource_name: "U.S. Department of Labor Case Study: Software Development Kits"
 slug: labor-case-study
 description: The U.S. Department of Labor sought to go beyond merely making data
   available to developers and take ease of use of the data to the next level by

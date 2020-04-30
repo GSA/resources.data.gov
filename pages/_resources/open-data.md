@@ -1,5 +1,5 @@
 ---
-name: Business case for open data
+resource_name: Business case for open data
 slug: open-data
 description: Six reasons why making your agency's data open and accessible is a
   good business decision.

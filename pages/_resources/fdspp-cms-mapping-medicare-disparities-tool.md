@@ -1,5 +1,5 @@
 ---
-name: The Mapping Medicare Disparities Tool
+resource_name: The Mapping Medicare Disparities Tool
 slug: fdspp-cms-mapping-medicare-disparities-tool
 description: The Centers for Medicare & Medicaid Services’ Office of Minority
   Health (CMS OMH) Mapping Medicare Disparities Tool harnessed the power of

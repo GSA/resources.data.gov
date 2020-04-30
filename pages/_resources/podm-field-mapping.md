@@ -1,5 +1,5 @@
 ---
-name: Metadata Resources and Field Mappings under the Project Open Data Metadata
+resource_name: Metadata Resources and Field Mappings under the Project Open Data Metadata
   Schema (DCAT-US Schema v1.1)
 slug: podm-field-mapping
 description: Provides further background and resources to assist agencies in

@@ -1,5 +1,5 @@
 ---
-name: SBA’s Approach to Identifying Data, Using a Learning Agenda, and
+resource_name: SBA’s Approach to Identifying Data, Using a Learning Agenda, and
   Leveraging Partnerships to Build its Evidence Base
 slug: fdspp-sba-learning-agenda
 description: Through its Enterprise Learning Agenda, Small Business

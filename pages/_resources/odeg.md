@@ -1,5 +1,5 @@
 ---
-name: Open Data Engagement Guidance
+resource_name: Open Data Engagement Guidance
 slug: odeg
 description: Many federal agencies have held open data events to engage with the
   public, the private sector, non-profits, academia and others on open data

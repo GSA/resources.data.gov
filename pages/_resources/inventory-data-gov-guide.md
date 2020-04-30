@@ -412,7 +412,7 @@ details: >+
   When you are ready to export your agency’s datasets to data.json and hit the button on inventory.data.gov, you will be prompted to download a zip file containing the data.json. If there are errors, the zip file will also contain an error log containing information about the datasets with errors. We are working on improving validation within inventory.data.gov so that more errors are identified as you are adding and editing datasets, before you reach the export stage.
 
 policy_tags: ""
-name: Inventory.data.gov Guide
+resource_name: Inventory.data.gov Guide
 slug: inventory-data-gov-guide
 description: Details on how to get started with using inventory.data.gov, from
   creating a user account to using its features to mange datasets and export

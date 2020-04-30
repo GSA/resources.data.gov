@@ -1,5 +1,5 @@
 ---
-name: "Improving Data Access and Data Management: Artificial
+resource_name: "Improving Data Access and Data Management: Artificial
   Intelligence-Generated Metadata Tags at NASA"
 slug: fdspp-nasa-ai-metadata-tags
 description: NASA’s data scientists and research content managers recently built

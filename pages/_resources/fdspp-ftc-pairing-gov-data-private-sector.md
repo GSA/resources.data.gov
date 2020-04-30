@@ -1,5 +1,5 @@
 ---
-name: Pairing Government Data with Private-Sector Ingenuity to Take on Unwanted Calls
+resource_name: Pairing Government Data with Private-Sector Ingenuity to Take on Unwanted Calls
 slug: fdspp-ftc-pairing-gov-data-private-sector
 description: The Federal Trade Commission (FTC) releases data from millions of
   consumer complaints about unwanted calls to help fuel a myriad of

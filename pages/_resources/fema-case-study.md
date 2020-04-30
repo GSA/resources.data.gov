@@ -1,5 +1,5 @@
 ---
-name: "FEMA Case Study: Disaster Assistance Program Coordination"
+resource_name: "FEMA Case Study: Disaster Assistance Program Coordination"
 slug: fema-case-study
 description: "In 2008, the Disaster Assistance Improvement Program (DAIP), an
   E-Government initiative led by FEMA with support from 16 U.S. Government

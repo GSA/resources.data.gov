@@ -3,11 +3,11 @@
   <div class="desktop:grid-col-8">
     {% if resource.collection == "summaries" %}
       <a href="{{ resource.link }}" target="_blank">
-        <h2 id="{{ resource.name | slugify }}" class="margin-top-0">{{ resource.name }}<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
+        <h2 id="{{ resource.resource_name | slugify }}" class="margin-top-0">{{ resource.resource_name }}<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
       </a>
     {% else %}
       <a href="{{ "/resources/" | append: resource.slug | relative_url }}">
-        <h2 id="{{ resource.name | slugify }}" class="margin-top-0">{{ resource.name }}</h2>
+        <h2 id="{{ resource.resource_name | slugify }}" class="margin-top-0">{{ resource.resource_name }}</h2>
       </a>
     {% endif %}
 

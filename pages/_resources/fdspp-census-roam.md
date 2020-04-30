@@ -1,5 +1,5 @@
 ---
-name: The Census Bureau Uses Its Own Data to Increase Response Rates, Helps
+resource_name: The Census Bureau Uses Its Own Data to Increase Response Rates, Helps
   Communities and Other Stakeholders Do the Same
 slug: fdspp-census-roam
 description: The Census Bureau team produced a new interactive mapping tool in

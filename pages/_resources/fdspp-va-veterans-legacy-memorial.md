@@ -1,5 +1,5 @@
 ---
-name: The Veterans Legacy Memorial
+resource_name: The Veterans Legacy Memorial
 slug: fdspp-va-veterans-legacy-memorial
 description: The Veterans Legacy Memorial (VLM) is a digital platform to help
   families, survivors, and fellow veterans to take a leading role in honoring

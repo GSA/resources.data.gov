@@ -1,5 +1,5 @@
 ---
-name: Helping Baltimore Volunteers Find Where to Help
+resource_name: Helping Baltimore Volunteers Find Where to Help
 slug: fdspp-census-helping-baltimore-volunteers-find-where-to-help
 description: Bloomberg Government analysts put together a prototype through the
   Census Bureau’s Opportunity Project to better assess where volunteers should

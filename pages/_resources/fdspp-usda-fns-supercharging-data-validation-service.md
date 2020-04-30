@@ -1,5 +1,5 @@
 ---
-name: Supercharging Data through Validation as a Service
+resource_name: Supercharging Data through Validation as a Service
 slug: fdspp-usda-fns-supercharging-data-validation-service
 description: USDA's Food and Nutrition Service restructured its approach to data
   validation at the state level using an open-source, API-based validation

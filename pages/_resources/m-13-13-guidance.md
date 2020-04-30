@@ -1,5 +1,5 @@
 ---
-name: "Supplemental Guidance on the Implementation of M-13-13 “Open Data Policy
+resource_name: "Supplemental Guidance on the Implementation of M-13-13 “Open Data Policy
   – Managing Information as an Asset” "
 slug: m-13-13-guidance
 description: This document focuses on near-term efforts agencies must take to

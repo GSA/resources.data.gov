@@ -1,5 +1,5 @@
 ---
-name: Agencies Mobilize to Improve Emergency Response in Puerto Rico through
+resource_name: Agencies Mobilize to Improve Emergency Response in Puerto Rico through
   Better Data
 slug: fdspp-pr-emergency-response
 description: "Federal agencies' response efforts to Hurricanes Irma and Maria in

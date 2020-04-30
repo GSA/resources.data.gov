@@ -1,5 +1,5 @@
 ---
-name: "Department of Transportation Case Study: Enterprise Data Inventory"
+resource_name: "Department of Transportation Case Study: Enterprise Data Inventory"
 slug: dot-inventory
 description: In response to the Open Government Directive, DOT developed a
   strategic action plan to inventory and release high-value information through

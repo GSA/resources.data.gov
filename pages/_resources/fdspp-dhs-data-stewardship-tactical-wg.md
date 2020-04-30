@@ -1,5 +1,5 @@
 ---
-name: Investing in Learning with the Data Stewardship Tactical Working Group at DHS
+resource_name: Investing in Learning with the Data Stewardship Tactical Working Group at DHS
 slug: fdspp-dhs-data-stewardship-tactical-wg
 description: The Department of Homeland Security (DHS) experience forming the
   Data Stewardship Tactical Working Group (DSTWG) provides meaningful insights

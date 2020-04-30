@@ -1,5 +1,5 @@
 ---
-name: Leveraging AI for Business Process Automation at NIH
+resource_name: Leveraging AI for Business Process Automation at NIH
 slug: fdspp-nih-leveraging-ai-for-business-process-automation
 description: The National Institute of General Medical Sciences (NIGMS), one of
   the twenty-seven institutes and centers at the NIH, recently deployed Natural

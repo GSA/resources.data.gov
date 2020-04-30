@@ -23,7 +23,7 @@ collections:
 
     fields:
       - label: "name"
-        name: "name"
+        name: "resource_name"
         widget: "string"
         hint: "name of the resource"
         required: true

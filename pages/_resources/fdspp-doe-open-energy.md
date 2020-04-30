@@ -1,5 +1,5 @@
 ---
-name: Open Energy Data at DOE
+resource_name: Open Energy Data at DOE
 slug: fdspp-doe-open-energy
 description: This case study details the development of the renewable energy
   applications built on the Open Energy Information (OpenEI) platform, sponsored

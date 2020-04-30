@@ -233,7 +233,7 @@ details: >+
   * [VolunteeringInAmerica.gov](http://www.volunteeringinamerica.gov/data.cfm)
 
 policy_tags: ""
-name: Government Data Hubs
+resource_name: Government Data Hubs
 slug: govt-data-hubs
 description: A list of Federal agency open data hubs, including USDA, HHS, NASA,
   and many others.

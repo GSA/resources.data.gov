@@ -1,5 +1,5 @@
 ---
-name: "How to Blend Your Data: BEA and BLS Harness Big Data to Gain New Insights
+resource_name: "How to Blend Your Data: BEA and BLS Harness Big Data to Gain New Insights
   about Foreign Direct Investment in the U.S."
 slug: fdspp-bea-bls-data-blend-foreign-investment
 description: A recent collaboration between the Bureau of Economic Analysis

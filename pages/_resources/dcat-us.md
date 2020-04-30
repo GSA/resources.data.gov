@@ -1,5 +1,5 @@
 ---
-name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
+resource_name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
 slug: dcat-us
 description: How to use Project Open Data Metadata Schema guidelines to document
   and list agency datasets and application programming interfaces (APIs) for
@@ -16,7 +16,7 @@ format: ""
 details: >-
   {: .vertical-headings}
 
-  | Specification name: | DCAT-US Schema v1.1 (Project Open Data Metadata Schema) |
+  | Specification resource_name: | DCAT-US Schema v1.1 (Project Open Data Metadata Schema) |
 
   |---------------------|-----------------------------------|
 
