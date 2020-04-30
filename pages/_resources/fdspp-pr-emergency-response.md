@@ -34,10 +34,10 @@ details: >-
   ### A Devastating 2017 Hurricane Season
 
 
-  In early September 2017, Irma, a Category 5 hurricane, passed just north of Puerto Rico and the U.S. Virgin Islands, causing damage from wind and rain. Less than two weeks later, Hurricane Maria passed directly over the main island of Puerto Rico, severely impacting all of Puerto Rico. The storm caused a complete shut-down of the power grid, interruption of water supplies, and damage to structures. The resulting flooding and landslides also caused extensive damage to the transportation network, washing out bridges and closing roads all over the island. By the time the major storm and continuing rainfall were over, Puerto Rico had experienced over 42,000 landslides.  Repairs are estimated to cost $132 billion.[^1]  Almost 470,000 applications for individual assistance were approved by the Federal Emergency Management Agency (FEMA) following these hurricanes.
+  In early September 2017, Irma, a Category 5 hurricane, passed just north of Puerto Rico and the U.S. Virgin Islands, causing damage from wind and rain. Less than two weeks later, Hurricane Maria passed directly over the main island of Puerto Rico, severely impacting all of Puerto Rico. The storm caused a complete shut-down of the power grid, interruption of water supplies, and damage to structures. The resulting flooding and landslides also caused extensive damage to the transportation network, washing out bridges and closing roads all over the island. By the time the major storm and continuing rainfall were over, Puerto Rico had experienced over 42,000 landslides.  Repairs are estimated to cost $132 billion.\[^1]  Almost 470,000 applications for individual assistance were approved by the Federal Emergency Management Agency (FEMA) following these hurricanes.
 
 
-  ![Paths of Irma and Maria](https://strategy.data.gov/assets/img/posts/2019-07-28-image001.png "Paths of Irma and Maria")
+  ![Paths of Irma and Maria](/assets/media/2019-07-28-image001.png "Paths of Irma and Maria")
 
 
   ### Planning for Disaster, Lacking Data
@@ -58,23 +58,19 @@ details: >-
   In responding to the storms, FEMA and other agencies adopted a number of strategies to get help where they needed it to be in spite of the limited quality address and location data. While local and national agencies work on assembling and standardizing better address data, a process likely to take several years, agency personnel have convened a number of times to share approaches to getting the most out of existing Puerto Rico data assets.
 
 
-  The White House National Science and Technology Council’s Subcommittee on Disaster Reduction (SDR) hosted the Puerto Rico Address Data Workshop in October 2018, with 39 participants from 12 federal agencies. The workshop featured nine presentations by federal agencies on their data management methodologies and processes for Puerto Rico address data. The U.S. Census Bureau, U.S. Department of Agriculture (USDA), FEMA, Department of Housing and Urban Development (HUD), and the National Aeronautics and Space Administration (NASA) presented insights and lessons learned. Discussions focused on the challenges, successes, and proposed solutions for utilizing and managing Puerto Rico address data. Specific actions from this workshop identified the need to organize a dedicated working group for Puerto Rico address data.[^2]
+  The White House National Science and Technology Council’s Subcommittee on Disaster Reduction (SDR) hosted the Puerto Rico Address Data Workshop in October 2018, with 39 participants from 12 federal agencies. The workshop featured nine presentations by federal agencies on their data management methodologies and processes for Puerto Rico address data. The U.S. Census Bureau, U.S. Department of Agriculture (USDA), FEMA, Department of Housing and Urban Development (HUD), and the National Aeronautics and Space Administration (NASA) presented insights and lessons learned. Discussions focused on the challenges, successes, and proposed solutions for utilizing and managing Puerto Rico address data. Specific actions from this workshop identified the need to organize a dedicated working group for Puerto Rico address data.\[^2]
 
 
   The workshop provided the impetus for the organization in March 2019 of a formal working group, the Puerto Rico Address Data Working Group (PRADWG), led by the Census Bureau under the auspices of the Federal Geographic Data Committee’s Address Subcommittee. The PRADWG was charged with inventorying and documenting proven practices for managing Puerto Rico address data. The group met regularly over the course of 120 days to discuss and compare data assets, maintenance processes, address data use cases, and proven practices. The PRADWG report, Proven Practices for Puerto Rico Address Data Management, is a result of these efforts.
 
 
-  ![Matching addresses](https://strategy.data.gov/assets/img/posts/2019-07-28-image003.png "Matching addresses")
-
-  *A slide presented at the PRADWG’s kickoff meeting describes the Census Bureau’s approach to matching Puerto Rico addresses with known Census addresses.*
+  ![Matching addresses](https://strategy.data.gov/assets/img/posts/2019-07-28-image003.png "Matching addresses") *A slide presented at the PRADWG’s kickoff meeting describes the Census Bureau’s approach to matching Puerto Rico addresses with known Census addresses.*
 
 
   Through the Working Group and subsequent report, agencies like HUD, FEMA, the Census Bureau, U.S. Army Corps of Engineers (USACE), USDA and the U.S. Postal Service (USPS) shared agency solutions and potential opportunities for collaboration within the federal government to manage Puerto Rico address data challenges with existing systems and applications. FEMA, as noted earlier, makes use of local guides and phone calls to homeowners to help find physical locations when data alone does not get them to the right place. Through a series of cleaning and matching strategies, as well as validation against other agencies’ data, the Census Bureau successfully derives useable address locations from its existing Master Address File (MAF), or adds new addresses to the MAF. The USPS regularly updates its Address Management System by feeding in knowledge from mail carriers and its Address Change Service. HUD employs local subject matter experts from a Puerto Rico-based firm to help clean and validate its Puerto Rico address data.
 
 
-  ![Proven practices](https://strategy.data.gov/assets/img/posts/2019-07-28-image004.png "Proven practices")
-
-  *Federal Agencies’ Proven Practices for Address Data Collection and Management*
+  ![Proven practices](https://strategy.data.gov/assets/img/posts/2019-07-28-image004.png "Proven practices") *Federal Agencies’ Proven Practices for Address Data Collection and Management*
 
 
   Three proven practices were common to all the federal agencies that participated:
@@ -99,14 +95,13 @@ details: >-
   For more information on the PRADWG and their work read the [full report](https://communities.geoplatform.gov/ngda-address/puerto-rico-address-data-working-group/) or contact Lynda Liptrap at [Lynda.A.Liptrap@census.gov](mailto:Lynda.A.Liptrap@census.gov).
 
 
-
   {:.footnotes}
+
 
   #### Footnotes
 
-  [^1]: “FEMA’s Disaster Recovery Efforts in Puerto Rico and the U.S. Virgin Islands.” GAO-19-662T: Published: Jul 11, 2019. Publicly Released: Jul 11, 2019.
 
-  [^2]: The Puerto Rico Address Data Workshop Minutes and the 2019 Puerto Rico Address Data Inventory are available on the [Puerto Rico Address Data Working Group Community Page](https://communities.geoplatform.gov/ngda-address/puerto-rico-address-data-working-group/) on the GeoPlatform.
+  \[^1]: “FEMA’s Disaster Recovery Efforts in Puerto Rico and the U.S. Virgin Islands.” GAO-19-662T: Published: Jul 11, 2019. Publicly Released: Jul 11, 2019. \[^2]: The Puerto Rico Address Data Workshop Minutes and the 2019 Puerto Rico Address Data Inventory are available on the [Puerto Rico Address Data Working Group Community Page](https://communities.geoplatform.gov/ngda-address/puerto-rico-address-data-working-group/) on the GeoPlatform.
 
 
   To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
