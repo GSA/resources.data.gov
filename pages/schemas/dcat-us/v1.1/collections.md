@@ -5,8 +5,6 @@ title: Data Collections
 permalink: /schemas/dcat-us/v1.1/collections/
 filename: collections.md
 breadcrumb_nav:
-- url: "/standards/"
-  text: Schema Standards
 - url: "/schemas/dcat-us/v1.1/"
   text: DCAT-US v1.1
 - url: ""

@@ -5,8 +5,6 @@ title: Documenting APIs
 permalink: /schemas/dcat-us/v1.1/api/
 filename: api.md
 breadcrumb_nav:
-- url: "/standards/"
-  text: Schema Standards
 - url: "/schemas/dcat-us/v1.1/"
   text: DCAT-US v1.1
 - url: ""

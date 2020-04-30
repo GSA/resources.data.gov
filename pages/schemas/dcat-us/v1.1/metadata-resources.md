@@ -5,8 +5,6 @@ title: Metadata Resources for Schema v1.1
 permalink: "/schemas/dcat-us/v1.1/metadata-resources/"
 filename: "metadata-resources.md"
 breadcrumb_nav:
-- url: "/standards/"
-  text: Schema Standards
 - url: "/schemas/dcat-us/v1.1/"
   text: DCAT-US v1.1
 - url: ""
