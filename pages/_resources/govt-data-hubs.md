@@ -241,7 +241,6 @@ source: data.gov
 category: Case studies & examples
 tags:
   - open data
-  - internal-todo
 format: ""
 examples: ""
 layout: resource

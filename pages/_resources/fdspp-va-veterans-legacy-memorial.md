@@ -12,7 +12,6 @@ category: Case studies & examples
 tags:
   - data sharing
   - data visualization
-  - internal-todo
 policy_tags:
   - FDS Principle 01 Uphold Ethics
   - FDS Principle 04 Ensure Relevance

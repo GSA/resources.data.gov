@@ -13,7 +13,6 @@ category: Case studies & examples
 tags:
   - data sharing
   - workforce development
-  - internal-todo
   - process redesign
 policy_tags:
   - FDS Principle 03 Promote Transparency

@@ -10,7 +10,6 @@ category: Case studies & examples
 tags:
   - open data
   - data sharing
-  - internal-todo
 policy_tags:
   - FDS Principle 04 Ensure Relevance
   - FDS Principle 06 Anticipate Future Uses

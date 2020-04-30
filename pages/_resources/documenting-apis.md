@@ -81,7 +81,6 @@ tags:
   - DCAT
   - Project Open Metadata Schema
   - open data
-  - internal-todo
 format: ""
 examples: ""
 layout: resource

@@ -10,7 +10,6 @@ category: Case studies & examples
 tags:
   - data governance
   - data management
-  - internal-todo
 policy_tags:
   - FDS Principle 03 Promote Transparency
   - FDS Principle 08 Invest in Learning

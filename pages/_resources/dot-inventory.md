@@ -12,7 +12,6 @@ category: Case studies & examples
 tags:
   - data inventory
   - open data
-  - internal-todo
 policy_tags: ""
 format: ""
 details: >-

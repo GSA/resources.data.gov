@@ -9,7 +9,6 @@ source: "Federal Data Strategy / Centers for Medicare & Medicaid Services "
 category: Case studies & examples
 tags:
   - geospatial
-  - internal-todo
 policy_tags:
   - FDS Principle 01 Uphold Ethics
   - FDS Principle 03 Promote Transparency

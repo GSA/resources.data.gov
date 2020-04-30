@@ -186,7 +186,6 @@ source: data.gov
 category: Skills development
 tags:
   - open data
-  - internal-todo
 format: ""
 examples: ""
 layout: resource

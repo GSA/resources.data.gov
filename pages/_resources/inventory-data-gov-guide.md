@@ -424,7 +424,6 @@ tags:
   - data management
   - inventory.data.gov
   - open data
-  - internal-todo
 format: ""
 examples: ""
 layout: resource

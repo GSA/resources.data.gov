@@ -11,7 +11,6 @@ tags:
   - open data
   - DCAT
   - Project Open Metadata Schema
-  - internal-todo
 policy_tags: ""
 format: ""
 details: >-

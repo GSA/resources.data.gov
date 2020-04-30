@@ -14,7 +14,6 @@ category: Case studies & examples
 tags:
   - geospatial
   - data sharing
-  - internal-todo
 policy_tags:
   - FDS Principle 04 Ensure Relevance
   - FDS Principle 05 Harness Existing Data

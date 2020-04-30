@@ -14,7 +14,6 @@ category: Case studies & examples
 tags:
   - data sharing
   - process redesign
-  - internal-todo
 policy_tags:
   - FDS Principle 03 Promote Transparency
   - FDS Principle 05 Harness Existing Data

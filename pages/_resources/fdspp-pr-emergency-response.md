@@ -11,7 +11,6 @@ source: Federal Data Strategy
 category: Case studies & examples
 tags:
   - geospatial
-  - internal-todo
 policy_tags:
   - FDS Principle 07 Demonstrate Responsiveness
   - FDS Principle 10 Practice Accountability

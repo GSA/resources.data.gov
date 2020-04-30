@@ -9,7 +9,6 @@ source: resources.data.gov
 category: Data management & governance
 tags:
   - open data
-  - internal-todo
 policy_tags:
   - M-13-13
 format: ""
