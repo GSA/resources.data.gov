@@ -34,7 +34,7 @@ details: >-
   ### Overview
 
 
-  This section contains guidance to support the use of the Project Open Data metadata to list agency datasets and application programming interfaces (APIs) as hosted at agency.gov/data. Additional technical information about the schema can be found on the [Metadata Resources](../../schemas/dcat-us/v1.1/metadata-resources/) page. 
+  This section contains guidance to support the use of the Project Open Data metadata to list agency datasets and application programming interfaces (APIs) as hosted at agency.gov/data. Additional technical information about the schema can be found on the [Metadata Resources](../podm-field-mapping/) page. 
 
 
 
@@ -44,7 +44,7 @@ details: >-
   Metadata is structured information that describes, explains, locates, or otherwise makes it easier to retrieve, use, or manage an information resource (NISO 2004, ISBN: 1-880124-62-9).  The challenge is to define and name standard metadata fields so that a data consumer has sufficient information to process and understand the described data. The more information that can be conveyed in a standardized regular format, the more valuable data becomes. Metadata can range from basic to advanced, from allowing one to discover the mere fact that a certain data asset exists and is about a general subject all the way to providing detailed information documenting the structure, processing history, quality, relationships, and other properties of a dataset. Making metadata machine readable greatly increases its utility, but requires more detailed standardization, defining not only field names, but also how information is encoded in the metadata fields.
 
 
-  Establishing a common vocabulary is the key to communication. The **metadata schema** specified in this memorandum is based on [DCAT](http://www.w3.org/TR/vocab-dcat/), a hierarchical vocabulary specific to datasets. This specification defines three types of metadata elements: Required, Required-if (conditionally required), and Expanded fields.  These elements were selected to represent information that is most often looked for on the web. To assist users of other metadata standards, [field mappings](../../schemas/dcat-us/v1.1/metadata-resources/#field-mappings) to equivalent elements in other standards are provided.  
+  Establishing a common vocabulary is the key to communication. The **metadata schema** specified in this memorandum is based on [DCAT](http://www.w3.org/TR/vocab-dcat/), a hierarchical vocabulary specific to datasets. This specification defines three types of metadata elements: Required, Required-if (conditionally required), and Expanded fields.  These elements were selected to represent information that is most often looked for on the web. To assist users of other metadata standards, [field mappings](../podm-field-mapping/#field-mappings) to equivalent elements in other standards are provided.  
 
 
   ### What to Document -- Datasets and Web APIs
@@ -58,7 +58,7 @@ details: >-
   A Web API (**A**pplication **P**rogramming **I**nterface) allows computer programs to dynamically query a dataset using the World Wide Web. For example, a dataset of [farmers markets](http://catalog.data.gov/dataset/farmers-markets-geographic-data) may be made available for download as a single file (e.g., a CSV), or may be made available to developers through a Web API, such that a computer program could use a ZIP Code to retrieve a list of farmers markets in the ZIP Code area.
 
 
-  The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files](../../schemas/dcat-us/v1.1/api/).  
+  The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files](../documenting-apis/).  
 
 
   ### Metadata File Format --  JSON
@@ -88,7 +88,7 @@ details: >-
   > incorrect: `CONTACTPOINT`  
 
 
-  Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources](../../schemas/dcat-us/v1.1/metadata-resources/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
+  Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources](../podm-field-mapping/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
 
 
 
@@ -121,7 +121,7 @@ details: >-
   ### Dataset Fields
 
 
-  See the *[Further Metadata Field Guidance](#further-metadata-field-guidance)* section to learn more about the use of each element, including the range of valid entries where appropriate. Consult the [field mappings](../../schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields. 
+  See the *[Further Metadata Field Guidance](#further-metadata-field-guidance)* section to learn more about the use of each element, including the range of valid entries where appropriate. Consult the [field mappings](../podm-field-mapping/#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields. 
 
 
   {: .table .table-schema}
@@ -233,7 +233,7 @@ details: >-
   ### Further Metadata Field Guidance
 
 
-  Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings](../../schemas/dcat-us/v1.1/metadata-resources#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
+  Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings](../podm-field-mapping/#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
 
 
 
@@ -732,7 +732,7 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This should be the URL for an indirect means of accessing the data, such as [API documentation](../../schemas/dcat-us/v1.1/api/), a 'wizard' or other graphical interface which is used to generate a download, feed, or a request form for the data. When accessLevel is "restricted public" but the dataset is available online indirectly, this field should be the URL that provides indirect access. This should not be a **direct** download URL.  It is usually assumed that accessURL is an HTML webpage.  
+  **Usage Notes** | This should be the URL for an indirect means of accessing the data, such as [API documentation](../documenting-apis/), a 'wizard' or other graphical interface which is used to generate a download, feed, or a request form for the data. When accessLevel is "restricted public" but the dataset is available online indirectly, this field should be the URL that provides indirect access. This should not be a **direct** download URL.  It is usually assumed that accessURL is an HTML webpage.  
 
   **Example** |  `{"accessURL":"http://www.agency.gov/api/vegetables/"}`
 
@@ -1308,7 +1308,7 @@ details: >-
   ----------------------
 
 
-  * [Metadata Resources](../../schemas/dcat-us/v1.1/metadata-resources/) (including starter template and sample files)
+  * [Metadata Resources](../podm-field-mapping/) (including starter template and sample files)
 
   * [DCAT](http://www.w3.org/TR/vocab-dcat/)
 examples: ""

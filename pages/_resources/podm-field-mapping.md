@@ -28,7 +28,7 @@ details: >-
 
   ### Terms and Abbreviations 
 
-  * **POD** - [Project Open Data](../../schemas/dcat-us/v1.1/)
+  * **POD** - [Project Open Data](../dcat-us/)
 
   * **JSON** - [JavaScript Object Notation](http://json.org/)
 
