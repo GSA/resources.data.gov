@@ -99,6 +99,14 @@ collections:
         widget: "markdown"
         hint: "link to the resource"
         required: false
+        
+      - label: "file"
+        name: "file download"
+        widget: "file"
+        media_library:
+          config:
+            multiple: true
+        required: false
 
       - label: "layout"
         name: "layout"
