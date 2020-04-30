@@ -2,7 +2,7 @@ var Glossary = require("glossary-panel");
 var terms = require("../_data/glossary.json");
 
 var body = document.querySelectorAll(
-  ".usa-layout__docs-main.usa-prose p, .usa-layout__docs-main.usa-prose li"
+  ".usa-layout__docs-main p, .usa-layout__docs-main li"
 );
 
 if (body) {
