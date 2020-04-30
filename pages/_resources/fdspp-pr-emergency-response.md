@@ -37,7 +37,7 @@ details: >-
   In early September 2017, Irma, a Category 5 hurricane, passed just north of Puerto Rico and the U.S. Virgin Islands, causing damage from wind and rain. Less than two weeks later, Hurricane Maria passed directly over the main island of Puerto Rico, severely impacting all of Puerto Rico. The storm caused a complete shut-down of the power grid, interruption of water supplies, and damage to structures. The resulting flooding and landslides also caused extensive damage to the transportation network, washing out bridges and closing roads all over the island. By the time the major storm and continuing rainfall were over, Puerto Rico had experienced over 42,000 landslides.  Repairs are estimated to cost $132 billion.[^1]  Almost 470,000 applications for individual assistance were approved by the Federal Emergency Management Agency (FEMA) following these hurricanes.
 
 
-  ![Paths of Irma and Maria](/assets/media/2019-07-28-image001.png "Paths of Irma and Maria")
+  ![Paths of Irma and Maria](../../assets/media/2019-07-28-image001.png "Paths of Irma and Maria")
 
 
   ### Planning for Disaster, Lacking Data
