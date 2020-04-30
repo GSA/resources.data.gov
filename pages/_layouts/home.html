@@ -50,17 +50,19 @@ class: home
   <div class="grid-row grid-gap">
     <div class="desktop:grid-col-3">
     </div>
-    <div class="desktop:grid-col-9 padding-top-205 display-flex flex-row flex-wrap">
+    <div class="desktop:grid-col-9 padding-top-205">
       <h1 id="browse-by-keyword" class="padding-bottom-205 text-primary-vivid">Browse resources by keyword</h1>
-      {% for tag in site.keywords %}
-        <div class="mobile-lg:grid-col-6 tablet:grid-col-6 desktop:grid-col-3">
-          <div class="border-primary-vivid border-2px radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-05 display-flex flex-justify-center text-center">
-            <a href="{{ tag.url | relative_url }}" class="text-no-underline display-flex flex-align-center">
-              {{ tag.name }}
-            </a>
+      <div class="display-flex flex-row flex-wrap">
+        {% for tag in site.keywords %}
+          <div class="mobile-lg:grid-col-6 tablet:grid-col-6 desktop:grid-col-4">
+            <div class="border-primary-vivid border-2px radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-05 display-flex flex-justify-center text-center">
+              <a href="{{ tag.url | relative_url }}" class="text-no-underline display-flex flex-align-center">
+                {{ tag.name }}
+              </a>
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 
