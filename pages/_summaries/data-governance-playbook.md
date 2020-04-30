@@ -1,16 +1,18 @@
 ---
-category: Data management & governance
-description: The Data Governance Playbook supports the Federal Data Strategy by helping
-  agencies get started with prioritizing data governance and assessing maturity.
-format: ''
-layout: resource
-link: https://resources.data.gov/assets/documents/fds-data-governance-playbook.pdf
-name: The Data Governance Playbook
-policy_tags: ''
-publish: true
-slug: data-governance-playbook
-source: Federal Data Strategy
-tags:
-- data governance
+policy_tags: ""
 toc: true
+layout: resource
+name: The Data Governance Playbook
+slug: data-governance-playbook
+publish: true
+description: The Data Governance Playbook supports the Federal Data Strategy by
+  helping agencies get started with prioritizing data governance and assessing
+  maturity.
+source: Federal Data Strategy
+category: Data management & governance
+tags:
+  - data governance
+format: PDF (14 pages)
+link to resource summary: https://resources.data.gov/assets/documents/fds-data-governance-playbook.pdf
+link: https://resources.data.gov/assets/documents/fds-data-governance-playbook.pdf
 ---
