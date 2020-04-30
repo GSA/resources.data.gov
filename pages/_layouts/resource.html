@@ -95,7 +95,7 @@ layout: toc
         <h2 id="policy-references" class="margin-top-0 text-primary-dark">Policy references</h2>
         <div>
           <ul>
-            {% if policy_tags %}
+            {% if page.policy_tags %}
               {% assign policy_tags = page.policy_tags | sort %}
               {% for tag in policy_tags %}
                 {% assign slug_tag = tag | slugify %}
