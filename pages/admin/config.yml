@@ -101,7 +101,7 @@ collections:
         required: false
         
       - label: "file"
-        name: "file download"
+        name: "file"
         widget: "file"
         media_library:
           config:
