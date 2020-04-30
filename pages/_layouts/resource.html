@@ -38,17 +38,10 @@ layout: toc
       <div class="{{ column_length }}">
         <h3 class="margin-top-0 margin-bottom-0">Category</h3>
         <p class="margin-top-05 margin-bottom-205">
-          <!-- special case communities -->
-          {% if page.category == "Communities" %}
-            <a href="{{ page.category | slugify | relative_url }}">
-              {{ page.category }}
-            </a>
-          {% else %}
-            {% assign category_slug = page.category | slugify %}
-            <a href="{{ "/categories/" | append: category_slug | relative_url }}">
-              {{ page.category }}
-            </a>
-          {% endif %}
+          {% assign category_slug = page.category | slugify %}
+          <a href="{{ "/categories/" | append: category_slug | relative_url }}">
+            {{ page.category }}
+          </a>
         </p>
 
         <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
