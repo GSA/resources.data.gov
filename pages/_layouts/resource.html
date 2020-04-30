@@ -95,15 +95,17 @@ layout: toc
         <h2 id="policy-references" class="margin-top-0 text-primary-dark">Policy references</h2>
         <div>
           <ul>
-            {% assign policy_tags = page.policy_tags | sort %}
-            {% for tag in policy_tags %}
-              {% assign slug_tag = tag | slugify %}
-              <li>
-                <a href="{{ "/policy_tags/" | append: slug_tag | relative_url }}">
-                  {{ tag }}
-                </a>
-              </li>
-            {% endfor %}
+            {% if policy_tags %}
+              {% assign policy_tags = page.policy_tags | sort %}
+              {% for tag in policy_tags %}
+                {% assign slug_tag = tag | slugify %}
+                <li>
+                  <a href="{{ "/policy_tags/" | append: slug_tag | relative_url }}">
+                    {{ tag }}
+                  </a>
+                </li>
+              {% endfor %}
+            {% endif %}
           </ul>
         </div>
       </div>
