@@ -75,46 +75,52 @@ details: >+
 
 
   New users to inventory.data.gov should request an account by completing this form. If your agency does not permit access to the google [form](https://docs.google.com/forms/d/e/1FAIpQLSetStmwqrbMWDz_WIlh1trjhP0PFCjKXHzshsJveYmtIvlG2Q/viewform?usp=sf_link), contact[ datagov@gsa.gov](mailto:datagov@gsa.gov) to complete a Word version of the form. 
-
   Creating your inventory.data.gov account requires an initial login. Logins to use inventory.data.gov are integrated with [OMB MAX login](https://login.max.gov/cas/login?service=https%3A%2F%2Fmax.gov%2Fmaxportal%2Fsa%2Flogin.action%3Bjsessionid%3D994E6FE4CC968B89D599672C9F9DDAAE). You should log in to OMB MAX using your OMB MAX credentials on your first use of inventory.data.gov.
-
   Two-factor authentication (2FA) is now required, so enable 2FA through the instructions on the [OMB MAX login](https://login.max.gov/cas/login?service=https%3A%2F%2Fmax.gov%2Fmaxportal%2Fsa%2Flogin.action%3Bjsessionid%3D994E6FE4CC968B89D599672C9F9DDAAE) page. You can add a device by clicking on “Manage SMS 2-Factor Devices” under your profile settings. This is not necessary if you use your PIV/CAC card to log in to MAX; it is already considered 2FA.
 
+
   <img width="300" alt="maxlogingraphic" src="https://user-images.githubusercontent.com/49877323/66851405-aff0fa00-ef48-11e9-9ed8-fb29cc5af1db.png">
+
 
   After you have logged in to OMB MAX, email us at datagov@gsa.gov to let us know you have completed the initial login. We will then associate requested permissions to your account. On subsequent logins to inventory.data.gov (through OMB MAX), you should be able to use inventory.data.gov to manage metadata without further assistance.
 
 
-  ### Using inventory.data.gov to manage datasets(#using-inventory-data-gov-to-manage-datasets)
+  ### Using inventory.data.gov to manage datasets
 
   {:#using-inventory-data-gov-to-manage-datasets}
 
 
   Once you have an account as an Editor or Administrator for your agency (Organization), you can use inventory.data.gov to add or edit datasets for your Organization.
-
   Once you log in, you’ll see an activity page showing your recent activity on inventory.data.gov.
+
 
   ![inventorylogin](https://user-images.githubusercontent.com/49877323/66858334-0ebd7000-ef57-11e9-9f56-9c5bee4cc4d9.jpg)
 
+
   The main tabs you will be using are “Datasets” and “Organizations.”
+
 
   Datasets:
 
+
   ![datasets](https://user-images.githubusercontent.com/49877323/66859255-f189a100-ef58-11e9-92c2-50aa89e317fb.jpg)
+
 
   Organizations:
 
+
   ![orgs](https://user-images.githubusercontent.com/49877323/66859352-1b42c800-ef59-11e9-87ec-eac09c65aba2.jpg)
 
+
   When you click on the “Organizations” tab, you’ll go to the main Organizations page that lists all the Organizations in inventory.data.gov. To find your Organization, you can search for it in the search bar on the page.
-
   When you click on your Organization, all the datasets for the Organization will be displayed.
-
   There’s an Admin button on the upper right for Administrators. By clicking on it, you get the main information about the Organization, including a tab for “Members.”
 
   Clicking on “Members” brings up all the Members of the Organization who can add and edit datasets. Clicking on the Add Members button gives you the option of adding an existing user of inventory.data.gov to your Organization. Before you can add Members to your organization, the new Member has to complete initial log in on inventory.data.gov using the OMB MAX, 2FA or PIV authentication. In addition, agency users with Administrator access are requested to coordinate the addition of new members with the Data.gov PMO, so that the documentation requirements for additional accounts are met.
 
+
   ![members](https://user-images.githubusercontent.com/49877323/66859471-65c44480-ef59-11e9-9946-f612cc306800.jpg)
+  
 
   There are three levels of access. Member is read only access. Editor allows you to add and edit datasets. Admin can perform the same actions as an Editor and also add members to the Organization.
 
@@ -128,11 +134,12 @@ details: >+
 
   Then click on Add a Dataset. That takes you to the Create Dataset page.
 
-  The Create Dataset page features the metadata following the [Project Open Data](https://resources.data.gov/schemas/dcat-us/v1.1/)
+  The Create Dataset page features the metadata following the [Project Open Data metadata Schema Version 1.1.](../dcat-us/)
 
-  ![metadata](https://user-images.githubusercontent.com/49877323/66859801-f864e380-ef59-11e9-8395-adeef909a30f.jpg) metadata schema version 1.1.
+  ![metadata](https://user-images.githubusercontent.com/49877323/66859801-f864e380-ef59-11e9-8395-adeef909a30f.jpg) 
 
-  There are examples displayed in each field, and there is also pop-up help information for each field. Full details are on the [Resources.data.gov](https://resources.data.gov/schemas/dcat-us/v1.1/) page. Fields marked by the red asterisk are required.
+
+  There are examples displayed in each field, and there is also pop-up help information for each field. Full details are on the [Resources.data.gov](../dcat-us/) page. Fields marked by the red asterisk are required.
 
   There is validation for each field, so if you try to skip a required field or enter improper formats for a particular field, you’ll get an error message when you try to add the dataset.
 
@@ -156,13 +163,14 @@ details: >+
 
   See the [Redaction and Partial Redaction](https://github.com/GSA/data.gov/wiki/Intentory.data.gov-User-Guide-for-Redaction-and-Partial-Redaction-Feature) feature for more information.
 
-  **Bureau Code/Program Code**. These are required fields following specific formats. Your agency POC should have this information. See the [Resources.data.gov](https://resources.data.gov/schemas/dcat-us/v1.1/) page for more information about these fields.
+  **Bureau Code/Program Code**. These are required fields following specific formats. Your agency POC should have this information. See the [Resources.data.gov](../dcat-us/) page for more information about these fields.
 
   **Contact Name/Email**. Enter the name and email information for the contact for this dataset. Questions about this dataset will be referred to the contact listed.
 
   There are several Required If Applicable fields that are optional. Example text is provided in each field.
 
   ![required](https://user-images.githubusercontent.com/49877323/66860426-2d256a80-ef5b-11e9-9554-88d5116f4351.jpg)
+
 
   **Rights**. You have the option to enter a short explanation for why the value in the **Access Level** field was selected here.
 
@@ -202,6 +210,7 @@ details: >+
 
   ![parent](https://user-images.githubusercontent.com/49877323/66860903-00be1e00-ef5c-11e9-9ff2-9c1ff2709ab9.jpg)
 
+
   Note that once you make a dataset a “parent” dataset, it cannot be a “child” dataset, or part of another collection of datasets. After a dataset is selected as parent, this dataset will be available for the subsequent datasets in this organization to choose a parent dataset (for isPartOf)
 
   If you chose No and made the dataset a non-parent dataset, you would then be able to choose in the next field (**Parent dataset**) – the datasets that you want to make this dataset as part of a collection, note that this field is optional and can be left empty if you would like the dataset to be an independent dataset.
@@ -210,11 +219,13 @@ details: >+
 
   ![next](https://user-images.githubusercontent.com/49877323/66861055-4c70c780-ef5c-11e9-9cfb-bb80a2637542.jpg)
 
+
   You are then taken to another screen with more fields about accessing the dataset.
 
   For most inventory.data.gov users, the dataset is actually hosted on the agency.gov site, so you will hit the “Link to a file” radio button and provide the URL. If you would like to provide a link to API, choose the “Link to an API” radio button, provide the URL, and enter the value “API” in the format field, to provide a web page URL where dataset information is available user the radio button option “Access URL.”
 
   ![add](https://user-images.githubusercontent.com/49877323/66861127-6c07f000-ef5c-11e9-92dc-85c9917817ad.jpg)
+
 
   Provide a **description** of the dataset.
 
@@ -222,13 +233,13 @@ details: >+
 
   **Format**. Type in the format in this field. (API value for “Link to API” option)
 
-  ## Draft Feature
+  ### Draft Feature
 
   While creating datasets in [inventory.data.gov](http://inventory.data.gov/), users can set the “Publishing Status” value as “Draft,” which indicates that the dataset is still being worked on or reviewed. Any dataset saved with “Draft” status will not be included in the generated Redacted/Unredacted data.json files. The draft feature allows users to enter preliminary data and finalize the dataset at a later point by changing the “Publishing Status” value to “Published.”
 
   ![publishing](https://user-images.githubusercontent.com/49877323/66867732-eb4ff080-ef69-11e9-8bc6-802852ee6888.jpg)
 
-  ## Clone Feature
+  ### Clone Feature
 
   Users can create a clone of a particular dataset by clicking on the “Clone” button displayed on the top right of the dataset page. The Clone feature is useful if you are entering lots of datasets manually, and most of the metadata like Bureau Code, Program Code, Publisher Name, Contact Name etc. is the same for all of them.
 
@@ -245,40 +256,36 @@ details: >+
 
 
   Once you have finished entering and editing the metadata for your organization, you are ready to export the datasets to generate the data.json files which comply with Project Open Data Schema 1.1 version. This is done from the main Organization page, by clicking on your agency Organization icon on the left or by clicking on your agency Organization name on the top of the page.
-
   There are three choices at the top.
+
 
   ![helpguide](https://user-images.githubusercontent.com/49877323/66868022-8943bb00-ef6a-11e9-8f26-20e3ae89b9a9.jpg)
 
+
   The Redacted Inventory button (formerly labeled Public Data Listing) will give you the redacted inventory of all of the datasets from your organization. This is the listing that you will post on your agency.gov/data.json and will be harvested by the Data.gov catalog to populate your organization’s listing in Data.gov catalog.
-
   The Unredacted Inventory (formerly labeled Enterprise Data Inventory) button will give you a file of all of your organization’s datasets without any redactions. 
-
   The Export Drafts button will export all datasets that are currently in “draft” status to a file.
-
   The process for each is the same. Depending on your browser, clicking the button will either give you a prompt to open or save the file or it will be downloaded automatically.
+
 
   ![a1](https://user-images.githubusercontent.com/49877323/66868717-daa07a00-ef6b-11e9-8574-154e0acc79e0.jpg)
 
-  The file that is delivered is a zip file. It contains both the data.json and (if errors were found) an errorlog.txt and errors.json file.
 
+  The file that is delivered is a zip file. It contains both the data.json and (if errors were found) an errorlog.txt and errors.json file.
 
   It is very important to make sure that all datasets were successfully exported when downloading the Unredacted (EDI) or Redacted (PDL) data.json file. This can be done by checking to make sure that an errorlog.txt file was not included in the zip file. If there are errors in the errorlog.txt file, those need to be reviewed and resolved before posting the Redacted (PDL) data.json file in the agency.gov/data.json location. This is critical. Ignoring this step can potentially remove datasets from data.gov since they will no longer be present in the data.json file. Metadata that is directly entered into inventory.data.gov will be validated when the information is first entered, however some invalid metadata may have been imported directly into inventory.data.gov and will not be checked until this final export. The data.gov team is aware that this is not very user friendly or streamlined way of indicating which datasets need to be fixed and is in the process of improving inventory.data.gov so that these errors can be viewed directly on the inventory.data.gov website rather than as a separate log file. However, for now it is very important to review this file as explained earlier.
 
-
   The errorlog.txt will describe the datasets that did not validate against the Project Open Data Schema as needed to be included in the data.json file. If there were no errors encountered in creating the data.json, then errorlog.txt file will not appear in the zip file.
-
 
   ![errorlog](https://user-images.githubusercontent.com/49877323/66868873-323ee580-ef6c-11e9-9142-170ff5c3cba1.jpg)
 
-
   ![errorlog2](https://user-images.githubusercontent.com/49877323/66868918-4be02d00-ef6c-11e9-8314-c7b8625c7ede.jpg)
 
+
   The error log indicates the type of problem, the dataset ID, and the dataset title, so that you can find the problematic dataset in inventory.data.gov and fix the problem. Search for the dataset, choose Edit, and make the required changes.
-
   Once you fix the errors, go back to the Organization page and re-download the Redacted Inventory (PDL) or Unredacted Inventory (EDI) datasets, and you should get a zip file with just the data.json and no error log.
-
   The agency’s data.json will need to be posted on the agency’s website at agency.gov/data.json in order to be harvested by the Data.gov catalog. If the data.json is being posted on the agency.gov website for the first time, please contact the Data.gov team via email to set the harvest source on catalog.data.gov.
+
 
 
   ### Automating data.json downloads by agencies
@@ -292,29 +299,34 @@ details: >+
 
   **Redacted Inventory (PDL)**
 
-  `http -v POST https://inventory.data.gov/organization/[organization-id]/redacted.json
+  ```
+  http -v POST https://inventory.data.gov/organization/[organization-id]/redacted.json
 
   Authorization:xxx-your-api-key-xxx
 
   Content-Type:application/x-www-form-urlencoded
 
-  Cookie:auth_tkt=foo`
+  Cookie:auth_tkt=foo
+  ```
 
 
   **Unredacted Inventory (EDI)**
 
-  `http -v POST https://inventory.data.gov/organization/[organization-id]/unredacted.json
+  ```
+  http -v POST https://inventory.data.gov/organization/[organization-id]/unredacted.json
 
   Authorization:xxx-your-api-key-xxx
 
   Content-Type:application/x-www-form-urlencoded
 
-  Cookie:auth_tkt=foo`
+  Cookie:auth_tkt=foo
+  ```
 
 
-  You’d need to replace` xxx-your-api-key-xxx` with your actual API key which you can get in the bottom of the left sidebar of your user account, e.g. `https://inventory.data.gov/user/[username]`
+  You’d need to replace `xxx-your-api-key-xxx` with your actual API key which you can get in the bottom of the left sidebar of your user account, e.g. `https://inventory.data.gov/user/[username]`
 
   The above process downloads the Redacted.zip file containing the data.json and errorlog.txt. If there are any errors, you should review and correct them. When you reach a point where there is no errorlog.txt file, you can upload the data.json file to the agency.gov/data.json public data listing for data.gov catalog harvesting purposes. It is recommended that you manually review and upload the data.json file a few times, before completely automating the entire process to ensure there are no errors that might be excluding datasets from the data.json file (potentially removing existing datasets from data.gov).
+
 
   ![red](https://user-images.githubusercontent.com/49877323/66869292-12f48800-ef6d-11e9-8fa6-9473db1cc830.jpg)
 
@@ -370,7 +382,7 @@ details: >+
   Inventory.data.gov is a separate system from the Data.gov catalog, using the same technology as the catalog (CKAN) to provide a service that agencies can use to create and maintain data inventories that are ultimately harvested by the Data.gov catalog from agency.gov/data.json
 
 
-  7.Can we add custom core metadata fields?
+  7. Can we add custom core metadata fields?
 
   Yes, but not through the user interface on inventory.data.gov currently. Please contact the Data.gov team if you have this situation.
 
@@ -382,7 +394,7 @@ details: >+
 
   9. What is the difference between public and restricted-public?
 
-  See the “access level” field in [Resources.data.gov](https://resources.data.gov/schemas/dcat-us/v1.1/): The degree to which this dataset could be made publicly-available, regardless of whether it has been made available. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public).
+  See the “access level” field in [Resources.data.gov](../dcat-us/): The degree to which this dataset could be made publicly-available, regardless of whether it has been made available. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public).
 
 
   10. Can you clarify the difference between central and inventory CKAN? It seems like many datasets are using the datastore feature on inventory.data.gov – is this no longer the policy and inventory is mainly for creating data.json files?
@@ -418,5 +430,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://resources.data.gov/tools/inventory-data-gov-guide/
+link: ""
 ---

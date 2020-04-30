@@ -50,7 +50,7 @@ details: >-
   #### Federal Data with Project Open Data
 
 
-  Under the OPEN Government Data Act and the Open Data Policy, federal agencies are required to publish an enterprise data inventory, provided as a data.json file,using the standard [Project Open Data metadata schema](https://resources.data.gov/schemas/dcat-us/v1.1/).  The machine readable listing, as a standalone JSON file on the agency’s website at `agency.gov/data.json.` This `data.json` file is what gets harvested to the Data.gov catalog.
+  Under the OPEN Government Data Act and the Open Data Policy, federal agencies are required to publish an enterprise data inventory, provided as a data.json file,using the standard [Project Open Data metadata schema](../dcat-us/).  The machine readable listing, as a standalone JSON file on the agency’s website at `agency.gov/data.json.` This `data.json` file is what gets harvested to the Data.gov catalog.
 
 
   Federal agencies that do not have a platform to inventory their metadata can make use of a free service hosted by Data.gov called inventory.data.gov (see the separate guide). Contact the Data.gov team via email if you’re interested in using this service.
@@ -106,7 +106,7 @@ details: >-
 
   While a CSW endpoint and traditional geospatial metadata standards are needed for GeoPlatform.gov and Data.gov to consume the data, the Project Open Data (M-13-13) policy still requires metadata for the agency’s geospatial datasets to be provided within the Enterprise Data Inventory data.json file submitted to OMB with the Project Open Data metadata.
 
-  In order to facilitate these requirements, the FGDC and Data.gov have developed a [mapping of elements](https://resources.data.gov/schemas/dcat-us/v1.1/metadata-resources/) between the Project Open Data metadata schema v1.1 and the geospatial metadata standards including FGDC CSDGM, ISO 19115:2003, and ISO 19115-1:2014. This crosswalk enables federal agencies with geospatial data to more efficiently meet both metadata requirements.
+  In order to facilitate these requirements, the FGDC and Data.gov have developed a [mapping of elements](../podm-field-mapping/) between the Project Open Data metadata schema v1.1 and the geospatial metadata standards including FGDC CSDGM, ISO 19115:2003, and ISO 19115-1:2014. This crosswalk enables federal agencies with geospatial data to more efficiently meet both metadata requirements.
 
 
   For agencies that provide geospatial data to GeoPlatform.gov and Data.gov, the following harvest sources must be provided:
@@ -133,7 +133,7 @@ details: >-
   Data.gov incorporates data sources from state, local, and tribal governments. Non-federal sources are not covered by the Federal Open Data Policy or the OPEN Government Data Act, but can be included in the Data.gov catalog voluntarily. Depending on your local government open data platform, you may already have a harvest source that is Data.gov-ready, or it could take a little more work. Either way, the Data.gov team is available to answer questions about these requirements. For non-federal data to be connected to Data.gov, the following items are required:
 
 
-  1. **A Data Harvest Source:** Some open data catalog platforms already have a Data.gov harvest source built in (see these examples from [Socrata](https://nycopendata.socrata.com/data.json) and [ArcGIS Open Data](http://opendata.dc.gov/data.json)), but it is possible to set up a harvest source with any data management system (see [this CKAN example](https://www.opendataphilly.org/data.json)). The metadata required from non-federal sources does not include the [USG noted fields](https://resources.data.gov/schemas/dcat-us/v1.1/#federal-government-fields) and additional fields can be left out on a case-by-case basis. To learn more about metadata best practices and validators, check out the Resources and Tools below. **Required:** A Harvest Source at: `https://_______.gov/data.json`, e.g. `https://data.brla.gov/data.json`
+  1. **A Data Harvest Source:** Some open data catalog platforms already have a Data.gov harvest source built in (see these examples from [Socrata](https://nycopendata.socrata.com/data.json) and [ArcGIS Open Data](http://opendata.dc.gov/data.json)), but it is possible to set up a harvest source with any data management system (see [this CKAN example](https://www.opendataphilly.org/data.json)). The metadata required from non-federal sources does not include the [USG noted fields](../dcat-us/#federal-government-fields) and additional fields can be left out on a case-by-case basis. To learn more about metadata best practices and validators, check out the Resources and Tools below. **Required:** A Harvest Source at: `https://_______.gov/data.json`, e.g. `https://data.brla.gov/data.json`
 
   2. **A Terms of Use URL:** A publicly accessible Terms of Use (or Data Policy) URL or similar information in order to make it clear to Data.gov users when they are viewing datasets that are not covered by federal statutory and regulatory requirements. **Required:** A Terms of Use URL, e.g. https://data.brla.gov/terms-of-service
 
@@ -192,5 +192,5 @@ examples: ""
 layout: resource
 toc: true
 publish: false
-link: https://resources.data.gov/tools/how-to-get-your-open-data-on-datagov/
+link: ""
 ---
