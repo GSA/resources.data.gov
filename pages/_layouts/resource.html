@@ -74,15 +74,19 @@ layout: toc
       {% endif %}
     </div>
 
-    <div class="grid-row display-flex flex-column padding-top-205 padding-bottom-205 border-top border-bottom border-base">
+    <div class="grid-row padding-top-205 padding-bottom-205 border-top border-bottom border-base">
       <h2 id="details" class="margin-top-0 text-primary-dark">Details</h2>
-      {{ page.details | default: "No details provided." | markdownify }}
+      <div>
+        {{ page.details | default: "No details provided." | markdownify }}
+      </div>
     </div>
 
     {% if page.examples != "" %}
-      <div class="grid-row display-flex flex-column padding-top-205 padding-bottom-205 border-bottom border-base">
+      <div class="grid-row padding-top-205 padding-bottom-205 border-bottom border-base">
         <h2 id="examples" class="margin-top-0 text-primary-dark">Examples</h2>
-        {{ page.examples | markdownify }}
+        <div>
+          {{ page.examples | markdownify }}
+        </div>
       </div>
     {% endif %}
 
