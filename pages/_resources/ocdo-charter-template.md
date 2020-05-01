@@ -8,7 +8,7 @@ tags:
   - CDO
   - data governance
 format: Editable MS Word document
-details: TKTK
+details: "This is a test. "
 file: /assets/media/chief-data-officer-charter-template-.docx
 layout: resource
 toc: true
