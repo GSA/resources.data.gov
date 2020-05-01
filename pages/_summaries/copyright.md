@@ -6,7 +6,7 @@ description: Most U.S. government creative works such as writing or images are u
 format: ''
 layout: resource
 link: https://www.usa.gov/government-works
-name: How copyright applies to U.S. Government Works
+resource_name: How copyright applies to U.S. Government Works
 policy_tags: ''
 publish: true
 slug: copyright

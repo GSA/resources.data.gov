@@ -8,7 +8,7 @@ description: 'The World Wide Web Consortium (W3C) is an international community 
 format: ''
 layout: resource
 link: https://www.w3.org/
-name: 'The World Wide Web Consortium (W3C) '
+resource_name: 'The World Wide Web Consortium (W3C) '
 policy_tags: ''
 publish: true
 slug: w3c

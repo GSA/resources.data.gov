@@ -8,7 +8,7 @@ description: 'The InterNational Committee for Information Technology Standards (
 format: ''
 layout: resource
 link: http://www.incits.org/
-name: "INCITS \u2013 the InterNational Committee for Information Technology Standards "
+resource_name: "INCITS \u2013 the InterNational Committee for Information Technology Standards "
 policy_tags: ''
 publish: true
 slug: incits

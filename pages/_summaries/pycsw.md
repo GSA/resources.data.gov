@@ -5,7 +5,7 @@ description: 'pycsw allows for the publishing and discovery of geospatial metada
 format: ''
 layout: resource
 link: https://pycsw.org/
-name: pycsw
+resource_name: pycsw
 policy_tags: ''
 publish: true
 slug: pycsw

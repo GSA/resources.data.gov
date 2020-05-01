@@ -6,7 +6,7 @@ description: DCAT is an RDF vocabulary designed to facilitate interoperability b
 format: ''
 layout: resource
 link: https://www.w3.org/TR/vocab-dcat/
-name: Data Catalog Vocabulary (DCAT)
+resource_name: Data Catalog Vocabulary (DCAT)
 policy_tags: ''
 publish: true
 slug: dcat

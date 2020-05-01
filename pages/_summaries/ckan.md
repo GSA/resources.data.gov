@@ -9,7 +9,7 @@ description: Comprehensive Knowledge Archive Network (CKAN) is a powerful open s
 format: ''
 layout: resource
 link: https://ckan.org/
-name: CKAN
+resource_name: CKAN
 policy_tags: ''
 publish: true
 slug: ckan

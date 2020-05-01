@@ -10,7 +10,7 @@ description: 'The United Nations Economic Commission for Europe (UNECE) serves a
 format: ''
 layout: resource
 link: http://www.unece.org/cefact/about.html
-name: United Nations Economic Commission for Europe (UNECE)
+resource_name: United Nations Economic Commission for Europe (UNECE)
 policy_tags: ''
 publish: true
 slug: unece

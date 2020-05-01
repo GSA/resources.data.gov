@@ -5,7 +5,7 @@ description: The Data Visualization Wizard provides a fast way to get data visua
 format: ''
 layout: resource
 link: https://www.drupal.org/project/datavizwiz
-name: Data Visualization wizard
+resource_name: Data Visualization wizard
 policy_tags: ''
 publish: true
 slug: data-visualization-wizard

@@ -10,7 +10,7 @@ description: 'The Internet Engineering Task Force (IETF) is the premier Internet
 format: ''
 layout: resource
 link: https://www.ietf.org/
-name: Internet Engineering Task Force (IEFT)
+resource_name: Internet Engineering Task Force (IEFT)
 policy_tags: ''
 publish: true
 slug: ieft

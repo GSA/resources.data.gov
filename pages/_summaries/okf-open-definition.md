@@ -8,7 +8,7 @@ description: "Defines principles for the term \"open\" in regards to \"open data
 format: ''
 layout: resource
 link: https://opendefinition.org/od/2.1/en/
-name: Open Definition 2.1
+resource_name: Open Definition 2.1
 policy_tags: ''
 publish: true
 slug: okf-open-definition

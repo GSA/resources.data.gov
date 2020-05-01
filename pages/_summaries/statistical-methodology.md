@@ -8,7 +8,7 @@ description: The Federal Committee on Statistical Methodology (FCSM) is an inter
 format: ''
 layout: resource
 link: https://nces.ed.gov/FCSM/index.asp
-name: Federal Committee on Statistical Methodology
+resource_name: Federal Committee on Statistical Methodology
 policy_tags: ''
 publish: true
 slug: statistical-methodology

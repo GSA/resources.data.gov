@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-name: The U.S. Public Participation Playbook
+resource_name: The U.S. Public Participation Playbook
 slug: us-public-participation-playbook
 publish: true
 description: The U.S. Public Participation Playbook is a resource for government

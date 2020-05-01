@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-name: How to Get Your Agency’s Data on to Data.gov
+resource_name: How to Get Your Agency’s Data on to Data.gov
 slug: data-gov-howto
 publish: true
 description: Webinar guide to using data.gov, produced by DigitalGov University,

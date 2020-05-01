@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-name: FederalRegister.gov API Case Study
+resource_name: FederalRegister.gov API Case Study
 slug: federalregister-gov
 publish: true
 description: This case study describes the tenets behind an API that provides

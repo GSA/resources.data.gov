@@ -7,7 +7,7 @@ description: A list of FGDC-endorsed standards. Federal agencies that collect, u
 format: ''
 layout: resource
 link: https://www.fgdc.gov/standards
-name: Federal Geographic Data Committee Geospatial Standards
+resource_name: Federal Geographic Data Committee Geospatial Standards
 policy_tags: ''
 publish: true
 slug: fgdc-geospatial-standards

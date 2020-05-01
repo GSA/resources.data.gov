@@ -7,7 +7,7 @@ description: The Federal Geographic Data Committee (FGDC) provides executive, ma
 format: ''
 layout: resource
 link: https://www.fgdc.gov/
-name: Federal Geographic Data Committee
+resource_name: Federal Geographic Data Committee
 policy_tags: ''
 publish: true
 slug: geographic-data-commitee

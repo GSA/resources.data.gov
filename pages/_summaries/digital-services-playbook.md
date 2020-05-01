@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-name: The Digital Services Playbook
+resource_name: The Digital Services Playbook
 slug: digital-services-playbook
 publish: true
 description: The Digital Services Playbook is a resource of 13 key “plays” drawn

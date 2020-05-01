@@ -6,7 +6,7 @@ description: 'The CIO Council is a forum of Federal Chief Information Officers (
 format: ''
 layout: resource
 link: https://www.cio.gov/
-name: CIO Council
+resource_name: CIO Council
 policy_tags: ''
 publish: true
 slug: cio-council

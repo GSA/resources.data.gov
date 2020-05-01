@@ -6,7 +6,7 @@ description: 'Geoportal Server allows you to catalog the locations and descripti
 format: ''
 layout: resource
 link: https://github.com/Esri/geoportal-server/
-name: Geoportal Server
+resource_name: Geoportal Server
 policy_tags: ''
 publish: true
 slug: geoportal-server

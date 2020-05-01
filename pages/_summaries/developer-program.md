@@ -5,7 +5,7 @@ description: The /Developer program provides support to federal agencies engaged
 format: ''
 layout: resource
 link: https://18f.github.io/API-All-the-X/
-name: /Developer program
+resource_name: /Developer program
 policy_tags: ''
 publish: true
 slug: developer-program

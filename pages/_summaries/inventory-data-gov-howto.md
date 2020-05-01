@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-name: How to use Inventory.Data.Gov
+resource_name: How to use Inventory.Data.Gov
 slug: inventory-data-gov-howto
 publish: true
 description: Webinar guide to using inventory.data.gov that covers all you need

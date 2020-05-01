@@ -6,7 +6,7 @@ description: 'The Digital Analytics Program (DAP) provides a web analytics tool 
 format: ''
 layout: resource
 link: https://digital.gov/dap/
-name: 'The Digital Analytics Program (DAP) '
+resource_name: 'The Digital Analytics Program (DAP) '
 policy_tags: ''
 publish: true
 slug: dap

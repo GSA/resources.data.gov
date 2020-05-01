@@ -7,7 +7,7 @@ description: The Federal Data Strategy Principles serve as motivational guidelin
 format: ''
 layout: resource
 link: https://strategy.data.gov/principles/
-name: Federal Data Strategy Principles
+resource_name: Federal Data Strategy Principles
 policy_tags: ''
 publish: true
 slug: fds-principles

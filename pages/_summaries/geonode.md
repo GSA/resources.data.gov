@@ -7,7 +7,7 @@ description: GeoNode is a web-based application and platform for developing geos
 format: ''
 layout: resource
 link: http://geonode.org/
-name: 'GeoNode '
+resource_name: 'GeoNode '
 policy_tags: ''
 publish: true
 slug: geonode

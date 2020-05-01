@@ -5,7 +5,7 @@ description: This memo provides titling guidance to agency Human Resources Offic
 format: ''
 layout: resource
 link: https://www.chcoc.gov/content/data-scientist-titling-guidance
-name: Data Scientist Titling Guidance
+resource_name: Data Scientist Titling Guidance
 policy_tags: ''
 publish: true
 slug: ds-titling-guidance

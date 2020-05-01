@@ -5,7 +5,7 @@ description: DKAN a Drupal-based open data platform that gives organizations and
 format: ''
 layout: resource
 link: https://www.drupal.org/project/dkan
-name: DKAN
+resource_name: DKAN
 policy_tags: ''
 publish: true
 slug: dkan

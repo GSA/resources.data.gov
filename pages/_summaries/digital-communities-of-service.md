@@ -7,7 +7,7 @@ description: A subscription list of Federal community email listservs based arou
 format: ''
 layout: resource
 link: https://digital.gov/communities/
-name: Federal Digital Communities of Practice
+resource_name: Federal Digital Communities of Practice
 policy_tags: ''
 publish: true
 slug: digital-communities-of-service

@@ -5,7 +5,7 @@ description: qu is a data platform created to serve public data sets. This is a 
 format: ''
 layout: resource
 link: https://github.com/cfpb/qu
-name: qu
+resource_name: qu
 policy_tags: ''
 publish: true
 slug: qu

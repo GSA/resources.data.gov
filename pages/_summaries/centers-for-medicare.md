@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-name: Transitioning to a Data Driven Culture at CMS
+resource_name: Transitioning to a Data Driven Culture at CMS
 slug: centers-for-medicare
 publish: true
 description: This case study describes how CMS announced the creation of the

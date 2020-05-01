@@ -6,7 +6,7 @@ description: ESRI2Open is an ESRI toolbox and tool(s) that export ESRI Feature C
 format: ''
 layout: resource
 link: https://github.com/project-open-data/esri2open
-name: ESRI2Open
+resource_name: ESRI2Open
 policy_tags: ''
 publish: true
 slug: repository

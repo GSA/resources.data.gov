@@ -6,7 +6,7 @@ description: This describes the launch of the NREL Developer Network in October 
 format: ''
 layout: resource
 link: https://developer.nrel.gov/api-case-study/
-name: National Renewable Energy Laboratory API Case Study
+resource_name: National Renewable Energy Laboratory API Case Study
 policy_tags: ''
 publish: true
 slug: nrel-api-case-study

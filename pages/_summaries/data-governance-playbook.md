@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-name: The Data Governance Playbook
+resource_name: The Data Governance Playbook
 slug: data-governance-playbook
 publish: true
 description: The Data Governance Playbook supports the Federal Data Strategy by

@@ -5,7 +5,7 @@ description: Inventory.data.gov a tool for federal agencies to create and publis
 format: ''
 layout: resource
 link: https://inventory.data.gov/
-name: 'Inventory.data.gov '
+resource_name: 'Inventory.data.gov '
 policy_tags: ''
 publish: true
 slug: inventory-data-gov

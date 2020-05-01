@@ -4,7 +4,7 @@ description: ''
 format: ''
 layout: resource
 link: ''
-name: CDO Council
+resource_name: CDO Council
 policy_tags: ''
 publish: false
 slug: cdo-council

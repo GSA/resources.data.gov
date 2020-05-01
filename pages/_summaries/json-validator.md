@@ -7,7 +7,7 @@ description: "JSON Validator is used to check your agency\u2019s data.json again
 format: ''
 layout: resource
 link: https://labs.data.gov/dashboard/validate
-name: 'JSON Validator '
+resource_name: 'JSON Validator '
 policy_tags: ''
 publish: true
 slug: json-validator

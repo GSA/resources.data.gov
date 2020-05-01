@@ -5,7 +5,7 @@ description: Database to API turns a Database into a Secure, RESTful API. Provid
 format: ''
 layout: resource
 link: https://github.com/project-open-data/db-to-api
-name: Database to API
+resource_name: Database to API
 policy_tags: ''
 publish: true
 slug: db-to-api

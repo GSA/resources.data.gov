@@ -6,7 +6,7 @@ description: PDF copy of the Office of the Attorney General memo that issues gui
 format: PDF
 layout: resource
 link: https://www.justice.gov/sites/default/files/ag/legacy/2009/06/24/foia-memo-march2009.pdf
-name: 'Memorandum: Freedom of Information Act (FOIA)'
+resource_name: 'Memorandum: Freedom of Information Act (FOIA)'
 policy_tags: ''
 publish: true
 slug: foia-memo

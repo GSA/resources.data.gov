@@ -5,7 +5,7 @@ description: HMDA tools from the CFPB GitHub repository import and analyze mortg
 format: ''
 layout: resource
 link: https://github.com/cfpb/hmda-tools
-name: HMDA tools
+resource_name: HMDA tools
 policy_tags: ''
 publish: true
 slug: hmda-tools

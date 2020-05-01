@@ -5,7 +5,7 @@ description: This report outlines the Freedom of Information Act (FOIA) Advisory
 format: PDF
 layout: resource
 link: https://www.archives.gov/files/final-report-and-recommendations-of-2016-2018-foia-advisory-committee.pdf
-name: Final Report and Recommendations of the 2016-2018 FOIA Advisory Committee
+resource_name: Final Report and Recommendations of the 2016-2018 FOIA Advisory Committee
 policy_tags: ''
 publish: true
 slug: foia-commitee

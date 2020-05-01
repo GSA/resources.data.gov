@@ -6,7 +6,7 @@ description: 'Outlines 8 principles for best practices for government open data,
 format: ''
 layout: resource
 link: https://opengovdata.org/
-name: Annotated 8 Principles of Open Government Data
+resource_name: Annotated 8 Principles of Open Government Data
 policy_tags: ''
 publish: true
 slug: 8-principles-open-data

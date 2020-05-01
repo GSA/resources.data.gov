@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-name: International Organization for Standardization (ISO) standards catalog
+resource_name: International Organization for Standardization (ISO) standards catalog
 slug: iso-catalog
 publish: false
 description: ISO is an independent, non-governmental international organization

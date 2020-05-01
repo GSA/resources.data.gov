@@ -7,7 +7,7 @@ description: Through an open community process, schema.org creates, maintains, a
 format: ''
 layout: resource
 link: https://schema.org
-name: 'Schema.org '
+resource_name: 'Schema.org '
 policy_tags: ''
 publish: true
 slug: schema-dot-og

@@ -8,7 +8,7 @@ description: 'The National Information Exchange Model (NIEM) is a common vocabul
 format: ''
 layout: resource
 link: https://www.niem.gov/
-name: National Information Exchange Model (NIEM)
+resource_name: National Information Exchange Model (NIEM)
 policy_tags: ''
 publish: true
 slug: niem

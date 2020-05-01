@@ -7,7 +7,7 @@ description: "The Federal Data Strategy Practices represent aspirational, action
 format: ''
 layout: resource
 link: https://strategy.data.gov/practices/
-name: Federal Data Strategy Practices
+resource_name: Federal Data Strategy Practices
 policy_tags: ''
 publish: true
 slug: fds-practices

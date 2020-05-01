@@ -10,7 +10,7 @@ description: The Federal Data Strategy provides a common set of data principles 
 format: ''
 layout: resource
 link: https://strategy.data.gov/action-plan/
-name: Federal Data Strategy 2020 Action Plan
+resource_name: Federal Data Strategy 2020 Action Plan
 policy_tags: ''
 publish: true
 slug: fds-action-plan

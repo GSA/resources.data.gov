@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-name: Department of Transportation Model Data Inventory Approach
+resource_name: Department of Transportation Model Data Inventory Approach
 slug: dot-model-data
 publish: true
 description: This document from the Department of Transportation provides a

@@ -9,7 +9,7 @@ description: 'The American National Standards Institute (ANSI) is a private, not
 format: ''
 layout: resource
 link: https://www.ansi.org/
-name: American National Standards Institute
+resource_name: American National Standards Institute
 policy_tags: ''
 publish: true
 slug: ansi
