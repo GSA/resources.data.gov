@@ -1,18 +1,18 @@
 ---
-category: Data management & governance
-description: Through an open community process, schema.org creates, maintains, and
-  promotes schemas for structured data on the Internet. The schema.org vocabulary
-  is used along with the Microdata, RDFa, or JSON-LD formats to add information to
-  Web content.
-format: ''
-layout: resource
-link: https://schema.org
-resource_name: 'Schema.org '
-policy_tags: ''
-publish: true
-slug: schema-dot-og
-source: schema.org
-tags:
-- data schema
+policy_tags: ""
 toc: true
+layout: resource
+slug: schema-dot-og
+publish: true
+resource_name: "Schema.org "
+description: Through an open community process, schema.org creates, maintains,
+  and promotes schemas for structured data on the Internet. The schema.org
+  vocabulary is used along with the Microdata, RDFa, or JSON-LD formats to add
+  information to Web content.
+source: schema.org
+category: Data standards
+tags:
+  - data schema
+format: ""
+link: https://schema.org
 ---
