@@ -9,7 +9,8 @@ tags:
   - data governance
 format: Editable MS Word document
 details: TKTK
-file download: /assets/media/chief-data-officer-charter-template-.docx
+file: /assets/media/chief-data-officer-charter-template-.docx
 layout: resource
 toc: true
+file download: /assets/media/chief-data-officer-charter-template-.docx
 ---
