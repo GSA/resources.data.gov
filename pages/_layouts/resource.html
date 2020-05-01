@@ -10,6 +10,7 @@ layout: toc
       <div class="usa-prose">
         {{ page.description | default: "No description provided." | markdownify }}
       </div>
+
     </div>
 
     <div class="grid-row grid-gap display-flex margin-top-205 no_toc_section">
@@ -74,7 +75,18 @@ layout: toc
       {% endif %}
     </div>
 
-    <div class="grid-row padding-top-205 padding-bottom-205 border-top border-bottom border-base">
+{% if resource.file %}  
+  <div class="grid-row padding-top-205 padding-bottom-205 border-top border-bottom border-base">
+    <h2 id="files" class="text-primary-dark">Downloads</h2>
+        <div class="flex-row">
+          <p>
+            <a href="../../{{ page.file }}">{{ page.file }}</a> <i class="fa fa-file"></i>
+          </p>
+        </div>
+  </div>
+{% endif %}
+
+  <div class="grid-row padding-top-205 padding-bottom-205 border-top border-bottom border-base">
       <h2 id="details" class="margin-top-0 text-primary-dark">Details</h2>
       <div>
         {{ page.details | default: "No details provided." | markdownify }}
