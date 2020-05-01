@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: toc
+toc: true
 title: Governance
 primary_nav_section: About
 ---
