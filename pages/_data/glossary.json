@@ -45,8 +45,8 @@
     "source": "https://digital.gov/resources/how-to-get-your-open-data-on-data-gov/#federal-geospatial-data"
   },
   {
-    "term": "Data",
-    "definition": "A value or set of values representing a specific concept or concepts. Data become 'information' when analyzed and possibly combined with other data in order to extract meaning, and to provide context. The meaning of data can vary depending on its context. Data includes all data. It includes, but is not limited to, 1) geospatial data 2) unstructured data, 3) structured data, etc.",
+    "term": "Data vs. information",
+    "definition": "Data is defined as a value or set of values representing a specific concept or concepts. Data become 'information' when analyzed and possibly combined with other data in order to extract meaning, and to provide context. The meaning of data can vary depending on its context. 'Data' includes, but is not limited to, 1) geospatial data 2) unstructured data, 3) structured data, etc. Information, as defined in OMB Circular A-130, means any communication or representation of knowledge such as facts, data, or opinions in any medium or form, including textual, numerical, graphic, cartographic, narrative, or audiovisual forms.",
     "source": "http://www.data.gov/glossary"
   },
   {
@@ -83,11 +83,6 @@
     "term": "Hackathon",
     "definition": "An event in which computer programmers and others in the field of software development, like graphic designers, interface designers, project managers and computational philologists, collaborate intensively on software projects. Occasionally, there is a hardware component as well. Hackathons typically last between a day and a week in length. Some hackathons are intended simply for educational or social purposes, although in many cases the goal is to create usable software. Hackathons tend to have a specific focus, which can include the programming language used, the operating system, an application, an API, the subject, or the demographic group of the programmers. In other cases, there is no restriction on the type of software being created.",
     "source": "https://en.wikipedia.org/wiki/Hackathon"
-  },
-  {
-    "term": "Information",
-    "definition": "Information, as defined in OMB Circular A-130, means any communication or representation of knowledge such as facts, data, or opinions in any medium or form, including textual, numerical, graphic, cartographic, narrative, or audiovisual forms.",
-    "source": "https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf"
   },
   {
     "term": "Information Life Cycle",
