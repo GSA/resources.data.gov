@@ -29,7 +29,7 @@ class: home
     </div>
 
     <div class="desktop:grid-col-9 padding-205">
-      <h1 id="browse-by-category" class="text-primary-dark">Browse resources by category</h1>
+      <h1 id="browse-by-category" class="margin-top-0 padding-top-2 text-primary-dark">Browse resources by category</h1>
       <!-- rely on site navigation to guide which resources show up -->
       {% assign resources = site.data.navigation | where: "text", "Resources" | first %}
       {% for resource in resources.children %}
