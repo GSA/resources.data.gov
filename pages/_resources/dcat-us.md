@@ -5,12 +5,13 @@ description: How to use Project Open Data Metadata Schema guidelines to document
   and list agency datasets and application programming interfaces (APIs) for
   hosting at agency.gov/data and currently in use at data.gov
 source: data.gov
-category: Data management & governance
+category: Data standards
 tags:
   - data schema
   - open data
   - DCAT
   - Project Open Metadata Schema
+  - data standards
 policy_tags: ""
 format: ""
 details: >-
@@ -1311,9 +1312,9 @@ details: >-
 
   * [DCAT](http://www.w3.org/TR/vocab-dcat/)
 examples: ""
-link: "[DCAT-US Schema v1.1](https://resources.data.gov/schemas/dcat-us/v1.1/)"
 layout: resource
 toc: true
 link to resource: ""
 publish: false
+link: "[DCAT-US Schema v1.1](https://resources.data.gov/schemas/dcat-us/v1.1/)"
 ---
