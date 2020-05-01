@@ -2,15 +2,15 @@
 policy_tags: ""
 toc: true
 layout: resource
-resource_name: International Organization for Standardization (ISO) standards catalog
 slug: iso-catalog
 publish: false
+resource_name: International Organization for Standardization (ISO) standards catalog
 description: ISO is an independent, non-governmental international organization
   with a membership of 164 national standards bodies. The date field in The
   Project Open Data Metadata Schema (DCAT-US v1.1)  is one example of an ISO
   standard applied in government.
 source: ISO
-category: Data management & governance
+category: Data standards
 tags:
   - data standards
 format: ""
