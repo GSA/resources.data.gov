@@ -218,7 +218,7 @@ collections:
       - label: "navigation section"
         name: "primary_nav_section"
         widget: "select"
-        options: ["Resources", "Communities"]
+        options: ["Resources", "Communities", "Data standards"]
         default: "Resources"
         hint: "the navigation section this category belongs to"
         required: true
