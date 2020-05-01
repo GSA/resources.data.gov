@@ -1,13 +1,13 @@
 ---
-resource_name: Metadata Resources and Field Mappings under the Project Open Data Metadata
-  Schema (DCAT-US Schema v1.1)
+resource_name: Metadata Resources and Field Mappings under the Project Open Data
+  Metadata Schema (DCAT-US Schema v1.1)
 slug: podm-field-mapping
 description: Provides further background and resources to assist agencies in
   implementing the Project Open Data Metadata Schema v1.1. Maps fields from the
   current version of DCAT-US v1.1 to the previous version of the schema (v1.0),
   as well as other schemas (CKAN API, DCAT, and Schema.org).
 source: resources.data.gov
-category: Data management & governance
+category: Data standards
 tags:
   - open data
   - data standards
