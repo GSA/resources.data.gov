@@ -7,7 +7,7 @@ category: Data management & governance
 tags:
   - CDO
   - data governance
-format: Editable MS Word document
+format: MS Word document
 details: "This is a test. "
 file: /assets/media/chief-data-officer-charter-template-.docx
 layout: resource
