@@ -10,6 +10,10 @@ layout: toc
       <div class="usa-prose">
         {{ page.description | default: "No description provided." | markdownify }}
       </div>
+
+      <h2 id="files" class="text-primary-dark">Attached files</h2>
+      (This is a test)
+      <a href="../../assets/media/{{ page.file }}">{{ page.file }}</a> <i class="fa fa-file"></i>
     </div>
 
     <div class="grid-row grid-gap display-flex margin-top-205 no_toc_section">

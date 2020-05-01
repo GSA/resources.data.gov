@@ -99,7 +99,7 @@ collections:
         widget: "markdown"
         hint: "link to the resource"
         required: false
-        
+
       - label: "file"
         name: "file"
         widget: "file"
