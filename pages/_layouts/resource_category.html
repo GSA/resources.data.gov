@@ -29,7 +29,7 @@ layout: default
       {% include sidenav.html %}
       <div class="usa-layout__docs-main desktop:grid-col-12">
 
-        {% assign resources = site.resources | concat: site.summaries | where: "category", page.category_name | sort: "name" %}
+        {% assign resources = site.resources | concat: site.summaries | where: "category", page.category_name | sort: "resource_name" %}
 
         {% for resource in resources %}
           <div class="border-bottom border-base">

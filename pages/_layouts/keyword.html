@@ -6,7 +6,7 @@ show_resource: true
 <h1 class="margin-top-0 padding-bottom-205">Results for "{{ page.keyword_name }}"</h1>
 
 {% assign all_resources = site.resources | concat: site.summaries | where: "tags",
-page.keyword_name | sort: "keyword_name" | group_by: "category" | sort: "name" %}
+page.keyword_name | sort: "resource_name" | group_by: "category" | sort: "name" %}
 
 <div>
   {% for group in all_resources %}
