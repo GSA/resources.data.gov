@@ -1,11 +1,24 @@
 ---
+resource_name: Documenting APIs
+slug: documenting-apis
+description: Further guidance on using the Project Open Data Metadata Schema
+  guidelines to document application programming interfaces (APIs) in data.json
+  files for hosting at agency.gov/data.
+source: data.gov
+category: Data standards
+tags:
+  - API
+  - DCAT
+  - Project Open Metadata Schema
+  - open data
+policy_tags: ""
+format: ""
 details: >-
   Agencies should list private, internal, and public-facing web APIs as part of
   their Enterprise Data Inventory and Public Data Listing data.json files. The
   original v1.0 schema accommodated the listing of APIs with a separate
-  `webServices` field, but with the [v1.1
-  schema](../dcat-us/), APIs should now be
-  listed as a separate distribution within a dataset. Since an API provides
+  `webServices` field, but with the [v1.1 schema](../dcat-us/), APIs should now
+  be listed as a separate distribution within a dataset. Since an API provides
   indirect access to a dataset and the primary URL that a user needs in order to
   access the API is the API documentation, all web APIs should be referenced
   using the primary API documentation URL as an `accessURL` with the `format`
@@ -68,23 +81,9 @@ details: >-
   ]
 
   ~~~~
-policy_tags: ""
-resource_name: Documenting APIs
-slug: documenting-apis
-description: Further guidance on using the Project Open Data Metadata Schema
-  guidelines to document application programming interfaces (APIs) in data.json
-  files for hosting at agency.gov/data.
-source: data.gov
-category: Data management & governance
-tags:
-  - API
-  - DCAT
-  - Project Open Metadata Schema
-  - open data
-format: ""
 examples: ""
+link: ""
 layout: resource
 toc: true
 publish: false
-link: ""
 ---
