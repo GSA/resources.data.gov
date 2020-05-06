@@ -31,7 +31,7 @@ details: >-
   ---------------------------
 
 
-  ### Overview
+  ### Introduction
 
 
   This section contains guidance to support the use of the Project Open Data metadata to list agency datasets and application programming interfaces (APIs) as hosted at agency.gov/data. Additional technical information about the schema can be found on the [Metadata Resources](../podm-field-mapping/) page. 
@@ -223,7 +223,7 @@ details: >-
   [title](#distribution-title)                    | Title                 | Human-readable name of the distribution. | No
                                                                                                                         
 
-  ### Extending the Schema
+  #### Extending the Schema
 
 
   "Extensional" and/or domain specific metadata can easily be added using other vocabularies even if it is not a term (entity/property) that will get indexed by the major search engines - it could still be indexed by other custom search engines and by Data.gov.  Publishers are encouraged to extend their metadata descriptions using elements from the "Expanded Fields" list shown below, or from any well-known vocabulary (including Dublin Core, Schema.org, FGDC, ISO 19115, and NIEM) as long as they are properly assigned. It's also recommended that these extensions be defined through the `describedBy` and `@context` fields at the top of the [Catalog metadata](#catalog-fields).
@@ -301,7 +301,7 @@ details: >-
           * {: .field-required}[title](#title)
 
 
-  ### Catalog Fields {#Catalog}
+  #### Catalog Fields {#Catalog}
 
   -------------------------------
 
@@ -409,7 +409,7 @@ details: >-
 
 
 
-  ### Dataset Fields {#Dataset}
+  #### Dataset Fields {#Dataset}
 
   -------------------------------
 
@@ -1303,7 +1303,7 @@ details: >-
 
 
 
-  ### Additional Information
+  #### Additional Information
 
   ----------------------
 
@@ -1316,5 +1316,7 @@ layout: resource
 toc: true
 link to resource: ""
 publish: false
-link: "[DCAT-US Schema v1.1](https://resources.data.gov/schemas/dcat-us/v1.1/)"
+link: |-
+  * [Metadata Resources](../../podm-field-mapping/)
+  * [DCAT](http://www.w3.org/TR/vocab-dcat/)
 ---
