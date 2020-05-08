@@ -1,8 +1,8 @@
 ---
 resource_name: ReVal (Reusable Validation Library)
 slug: reval
-description: ReVAL (Reusable Validation & Aggregation Library) is a Django App
-  for validating and aggregating data via API and web interface.
+description: ReVal (Reusable Validation Library) is a customizable Django App
+  for validating data via API.
 source: General Services Administration
 category: Data tools
 tags:
@@ -64,7 +64,11 @@ details: >-
   * dj-database-url
 
   * requests
-examples: >-
+
+
+  ## Examples
+
+
   ### Use case: USDA Food & Nutrition Service
 
 
@@ -81,9 +85,11 @@ examples: >-
 
 
   The Department of Transportation uses ReVal to validate Work Zone Data by validating it against the Work Zone Data Exchange (WZDx) Specification.  The Work Zone Data Exchange (WZDx) Specification enables infrastructure owners and operators (IOOs) to make harmonized work zone data available for third party use. The intent is to make travel on public roads safer and more efficient through ubiquitous access to data on work zone activity. Specifically, the project aims to get data on work zones into vehicles to help automated driving systems (ADS) and human drivers navigate more safely.
-link: "[Source code on GitHub](https://github.com/18F/ReVAL)"
+examples: ""
 layout: resource
 toc: true
+name: ReVal (Reusable Validation Library)
 link to resource: "[Source code on GitHub](https://github.com/18F/ReVAL)"
 publish: true
+link: "[Source code on GitHub](https://github.com/18F/ReVAL)"
 ---
