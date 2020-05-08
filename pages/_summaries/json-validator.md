@@ -9,7 +9,7 @@ description: "JSON Validator is used to check your agency’s data.json against
   the required federal metadata schema. This web-based tool provides three ways
   you can validate data.json: by validating a public URL, uploading a json file,
   or pasting the raw JSON into the form."
-source: Project Open Data
+source: data.gov
 category: Data tools
 tags:
   - data validation
