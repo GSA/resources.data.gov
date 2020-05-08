@@ -10,7 +10,7 @@ description: The Federal Geographic Data Committee (FGDC) provides executive,
   initiatives across the Federal government. The organization provides
   resources, initatives, and planning for the National Spatial Data
   Infrastructure (NSDI).
-source: fgdc.gov
+source: Federal Geographic Data Committee
 category: Communities
 tags:
   - geospatial
