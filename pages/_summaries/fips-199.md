@@ -9,7 +9,7 @@ resource_name: 'FIPS 199: "Standards for Security Categorization of Federal
 description: "Federal Information Processing Standards publication by the
   National Institute of Standards and Technology (NIST) that contains standards
   for the categorization of federal information systems. "
-source: NIST
+source: National Institute of Standards and Technology
 category: Policy
 tags:
   - data standards
