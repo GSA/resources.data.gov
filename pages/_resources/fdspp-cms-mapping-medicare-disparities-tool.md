@@ -39,7 +39,7 @@ details: >-
   The MMD Tool is an interactive map identifying geographic areas of disparities between subgroups of Medicare beneficiaries. It also features downloadable maps, tables, and trending data.
 
 
-  ![A screenshot of the Population View of the MMD Tool](https://strategy.data.gov/assets/img/posts/2019-05-03-image001.png "A user pulls up the Population View of the MMD Tool to observe the difference in hospitalization rates, 9 per 1,000 people, between White Medicare beneficiaries and Black Medicare beneficiaries in Wayne County, Michigan.")\
+  ![A screenshot of the Population View of the MMD Tool](../../assets/media/2019-05-03-image001.png "A user pulls up the Population View of the MMD Tool to observe the difference in hospitalization rates, 9 per 1,000 people, between White Medicare beneficiaries and Black Medicare beneficiaries in Wayne County, Michigan.")\
 
   *A user pulls up the Population View of the MMD Tool to observe the difference in hospitalization rates, 9 per 1,000 people, between White Medicare beneficiaries and Black Medicare beneficiaries in Wayne County, Michigan.*
 
@@ -53,7 +53,7 @@ details: >-
   The MMD Tool allows users to identify health disparities so that they can evaluate them and prioritize improvements. The MMD Tool also empowers beneficiaries to understand and compare their own health outcomes to those of others in their communities. Researchers and state/local health representatives can identify disparities in Medicare to inform the design of targeted interventions. Hospitals can analyze their quality performance and compare themselves to other similar hospitals.
 
 
-  ![A screenshot of the MMD Tool with detailed information about Baltimore’s Northwest Hospital Center.](https://strategy.data.gov/assets/img/posts/2019-05-03-image002.png "A user looks into detailed information about Baltimore’s Northwest Hospital Center.") *A user looks into detailed information about Baltimore’s Northwest Hospital Center.*
+  ![A screenshot of the MMD Tool with detailed information about Baltimore’s Northwest Hospital Center.](../../assets/media/2019-05-03-image002.png "A user looks into detailed information about Baltimore’s Northwest Hospital Center.") *A user looks into detailed information about Baltimore’s Northwest Hospital Center.*
 
 
   ### Protecting privacy while gaining insights
