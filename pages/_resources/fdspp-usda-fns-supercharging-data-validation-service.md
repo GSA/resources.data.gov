@@ -4,7 +4,7 @@ slug: fdspp-usda-fns-supercharging-data-validation-service
 description: USDA's Food and Nutrition Service restructured its approach to data
   validation at the state level using an open-source, API-based validation
   service managed at the federal level.
-source: Federal Data Strategy / USDA Food & Nutrition Service
+source: Department of Agriculture
 category: Case studies & examples
 tags:
   - data cleaning
@@ -12,11 +12,12 @@ tags:
   - API
   - data sharing
   - process redesign
+  - Federal Data Strategy
 policy_tags:
   - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders
   - FDS Practice 28 Align Quality with Intended Use
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published May 17, 2019*
 
