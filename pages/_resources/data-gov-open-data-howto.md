@@ -1,4 +1,19 @@
 ---
+resource_name: How to get your Open Data on Data.gov
+slug: data-gov-open-data-howto
+description: Data.gov is the central clearinghouse for open data from the United
+  States federal government and also provides access to many local government
+  and non-federal open data resources. Find out below how federal, federal
+  geospatial, and non-federal data is funneled to Data.gov and how you can get
+  your data federated on Data.gov for greater discoverability and impact.
+source: data.gov
+category: Skills development
+tags:
+  - open data
+  - workforce development
+  - data sharing
+policy_tags: ""
+format: ""
 details: >-
   *This guide is primarily for the Open Data Points of Contact (POC) at each
   agency. If you would like to add data to Data.gov and you are not the POC for
@@ -174,22 +189,9 @@ details: >-
 
 
   Once the harvester has been tested successfully, Data.gov will start automatically consuming information about your datasets and all the basic details of your datasets will be available on Data.gov with links to the source and your open data policy.
-policy_tags: ""
-resource_name: How to get your Open Data on Data.gov
-slug: data-gov-open-data-howto
-description: Data.gov is the central clearinghouse for open data from the United
-  States federal government and also provides access to many local government
-  and non-federal open data resources. Find out below how federal, federal
-  geospatial, and non-federal data is funneled to Data.gov and how you can get
-  your data federated on Data.gov for greater discoverability and impact.
-source: data.gov
-category: Skills development
-tags:
-  - open data
-format: ""
 examples: ""
+link: ""
 layout: resource
 toc: true
 publish: false
-link: ""
 ---
