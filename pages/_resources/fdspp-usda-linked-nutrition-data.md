@@ -64,7 +64,7 @@ details: >-
   * *Text descriptions: *Both databases use different words or strings of words to mean the same thing. For example, “fresh” in the IRI data may describe a produce item, while the USDA data would use “raw.” The USDA data tends to begin text descriptions with major foods such as “broccoli,” “beef,” or “pepper, red,” while the IRI text descriptions typically begin with a brand name, put the words in the order we say them, and often includes include package sizes (e.g. “Fresh Farm Red Pepper, 3 pack”). The IRI data also has more data columns with product description information.
 
 
-  ![Diagram showing pruchase-to-plate relationship between dictionaries and databases](https://strategy.data.gov/assets/img/posts/2019-09-06-image001.png "Diagram of the files.")
+  ![Diagram showing pruchase-to-plate relationship between dictionaries and databases](../../assets/media/2019-09-06-image001.png "Diagram of the files.")
 
 
   ### Probabilistic and Semantic Matching
@@ -88,7 +88,7 @@ details: >-
   ### New Insights: Americans’ Store Food Purchases Are Not That Healthy
 
 
-  ![Bar chart showing the Healthy Eating Index (HEI-2015)](https://strategy.data.gov/assets/img/posts/2019-09-06-image002.png "Retail food sales in the United States do not align with Federal dietary recommendations.")
+  ![Bar chart showing the Healthy Eating Index (HEI-2015)](../../assets/media/2019-09-06-image002.png "Retail food sales in the United States do not align with Federal dietary recommendations.")
 
 
   ERS researchers scored nutritional quality using the Healthy Eating Index (HEI) developed by the National Cancer Institute and FNS-CNPP. This index summarizes how well a set of foods conforms to the recommendations in the Dietary Guidelines for Americans. The highest possible score is 100, indicating conformance to Federal recommendations for 13 dietary components.
