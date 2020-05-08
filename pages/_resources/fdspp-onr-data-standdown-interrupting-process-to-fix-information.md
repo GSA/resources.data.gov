@@ -40,7 +40,7 @@ details: >-
   ONR’s Data & Analytics Division provides analysis of the Naval Research Enterprise (NRE) portfolio in order to enhance mission effectiveness for U.S. Naval Forces. ONR supports more than 4,000 personnel across 23 locations, with more than 1,000 partners.
 
 
-  ![A slide with graphics representing the Naval Research Enterprise](https://strategy.data.gov/assets/img/posts/2019-05-10-image001.jpg "A slide with graphics representing the Naval Research Enterprise")
+  ![A slide with graphics representing the Naval Research Enterprise](../../assets/media/2019-05-10-image001.jpg "A slide with graphics representing the Naval Research Enterprise")
 
 
   Until recently, data for planning, programming, budgeting, and execution (PPBE) have been siloed. Information originating from these disparate systems and business processes were often inconsistent, with no easy way for users to conduct cross-functional analysis.
@@ -67,7 +67,7 @@ details: >-
   For ONR’s Data & Analytics team, success meant establishing an automated and repeatable solution for generating an end-to-end picture of the ONR R&D portfolio over time. With such an ambitious vision as their North Star, the team had to be careful to make each phase of work an achievable quantity.
 
 
-  ![A graphic depicting the Anlaytic Ecosystem](https://strategy.data.gov/assets/img/posts/2019-05-10-image002.jpg "A graphic depicting the Anlaytic Ecosystem")
+  ![A graphic depicting the Anlaytic Ecosystem](../../assets/media/2019-05-10-image002.jpg "A graphic depicting the Anlaytic Ecosystem")
 
 
   In Phase 1, the team focused on ONR’s Science and Technology (S&T) domain, assembling a five-year snapshot that would integrate departmental funding and individual research awards associated with the portfolio.
