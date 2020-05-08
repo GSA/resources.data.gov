@@ -11,13 +11,14 @@ description: The Census Bureau team produced a new interactive mapping tool in
   Bureau team’s experience communicating technical needs to non-technical
   executives, building analysis tools with widely-used software, and integrating
   efforts with stakeholders and users.
-source: Federal Data Strategy / Census Bureau
+source: Census Bureau
 category: Case studies & examples
 tags:
   - open data
   - data sharing
   - data management
   - data analysis
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 05 Harness Existing Data
   - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
@@ -31,7 +32,7 @@ policy_tags:
   - FDS Practice 33 Promote Wide Access
   - FDS Practice 34 Diversify Data Access Methods
   - FDS Practice 40 Support Non-Federal Stakeholders
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published July 14, 2019*
 
