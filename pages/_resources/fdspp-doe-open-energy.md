@@ -5,11 +5,12 @@ description: This case study details the development of the renewable energy
   applications built on the Open Energy Information (OpenEI) platform, sponsored
   by the Department of Energy (DOE) and implemented by the National Renewable
   Energy Laboratory (NREL).
-source: Federal Data Strategy / Department of Energy
+source: Department of Energy
 category: Case studies & examples
 tags:
   - open data
   - data sharing
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 04 Ensure Relevance
   - FDS Principle 06 Anticipate Future Uses
@@ -22,7 +23,7 @@ policy_tags:
   - FDS Practice 36 Leverage Partnerships
   - FDS Practice 38 Leverage Collaborative Computing Platforms
   - FDS Practice 40 Support Non-Federal Stakeholders
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published June 28, 2019*
 
