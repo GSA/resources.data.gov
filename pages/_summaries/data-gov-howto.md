@@ -11,6 +11,8 @@ source: digital.gov
 category: Skills development
 tags:
   - open data
+  - workforce development
+  - data sharing
 format: Video (45 mins)
 link: https://www.youtube.com/watch?v=hbxA5-GDvvU
 ---
