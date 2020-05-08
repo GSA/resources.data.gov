@@ -1,16 +1,16 @@
 ---
-category: Data management & governance
-description: 'Guide to applying the Paperwork Reduction Act (PRA) and resources to
-  help with its implemention. '
-format: ''
-layout: resource
-link: https://pra.digital.gov/
-resource_name: Implementation Guide to the Paperwork Reduction Act
-policy_tags: ''
-publish: true
-slug: paperwork-reduction-act
-source: digital.gov
-tags:
-- PRA
+policy_tags: ""
 toc: true
+layout: resource
+slug: pra-implementation
+publish: true
+resource_name: "Paperwork Reduction Act: Implementation Guide"
+description: "Website that provides guidance around the Paperwork Reduction Act
+  (PRA) and resources to help with its implementation. "
+source: digital.gov
+category: Data management & governance
+tags:
+  - PRA
+format: ""
+link: https://pra.digital.gov/
 ---
