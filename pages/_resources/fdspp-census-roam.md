@@ -51,7 +51,7 @@ details: >-
   Given the resources involved, it makes sense to target efforts towards those households that are less likely to self-respond. For the 2020 Census, the Census Bureau is doing just that. A metric called the Low Response Score (LRS) identifies what percentage of households in a given census tract is unlikely to self-respond—you can think of it like this—the higher the score, the harder to count.[^1]  The LRS is generated through regression analysis of 25 census tract-level statistics, such as the percentage of individuals in a certain age bracket.
 
 
-  ![LRS is credible)](../../assets/media/2019-07-14-image001.png "LRS is credible")
+  ![LRS is credible](../../assets/media/2019-07-14-image001.png "LRS is credible")
 
   *A comparison of Low Response Scores with actual 2010 Census return rates reveals the high credibility of the LRS as a predictor of census tracts with high levels of non-self-responding households. Washington DC census tracts are depicted here. ([Public Opinion Quarterly, Volume 81, Issue 1, 1 March 2017, Pages 144–156](https://doi.org/10.1093/poq/nfw040))*
 
