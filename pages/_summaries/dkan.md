@@ -8,7 +8,7 @@ resource_name: DKAN
 description: DKAN is community-driven, Drupal-based, free, and open source open
   data platform that gives organizations and individuals ultimate freedom to
   publish and consume structured information.
-source: DRUPAL
+source: drupal.org
 category: Data tools
 tags:
   - open data
