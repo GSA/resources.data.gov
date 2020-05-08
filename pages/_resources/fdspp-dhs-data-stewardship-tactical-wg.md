@@ -5,18 +5,19 @@ description: The Department of Homeland Security (DHS) experience forming the
   Data Stewardship Tactical Working Group (DSTWG) provides meaningful insights
   for those who want to address data-related challenges collaboratively and
   successfully in their own agencies.
-source: Federal Data Strategy / Department of Homeland Security
+source: Department of Homeland Security
 category: Case studies & examples
 tags:
   - data governance
   - data management
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 03 Promote Transparency
   - FDS Principle 08 Invest in Learning
   - FDS Principle 09 Develop Data Leaders
   - FDS Principle 10 Practice Accountability
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published April 12, 2019*
 
