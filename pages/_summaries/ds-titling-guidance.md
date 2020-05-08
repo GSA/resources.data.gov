@@ -1,20 +1,21 @@
 ---
-category: Data management & governance
-description: This memo provides titling guidance to agency Human Resources Offices
-  for use in classifying data science positions within agencies.
-format: ''
-layout: resource
-link: https://www.chcoc.gov/content/data-scientist-titling-guidance
-resource_name: Data Scientist Titling Guidance
-policy_tags: ''
-publish: true
-slug: ds-titling-guidance
-source: OPM
-tags:
-- position description
-- data analytics
-- data management
-- data visualization
-- data cleaning
+policy_tags: ""
 toc: true
+layout: resource
+slug: ds-titling-guidance
+publish: true
+resource_name: Data Scientist Titling Guidance
+description: This memo provides titling guidance to agency Human Resources
+  Offices for use in classifying data science positions within agencies.
+source: OPM
+category: Data management & governance
+tags:
+  - position description
+  - data analytics
+  - data management
+  - data visualization
+  - data cleaning
+  - workforce development
+format: ""
+link: https://www.chcoc.gov/content/data-scientist-titling-guidance
 ---
