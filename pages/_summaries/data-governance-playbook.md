@@ -4,7 +4,7 @@ toc: true
 layout: resource
 slug: data-governance-playbook
 publish: true
-resource_name: The Data Governance Playbook
+resource_name: Data Governance Playbook
 description: The Data Governance Playbook supports the Federal Data Strategy by
   helping agencies get started with prioritizing data governance and assessing
   maturity.
