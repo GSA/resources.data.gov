@@ -14,6 +14,7 @@ tags:
   - data management
   - data analysis
   - process redesign
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 08 Invest in Learning
   - FDS Principle 10 Practice Accountability
