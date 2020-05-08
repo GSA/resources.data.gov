@@ -77,7 +77,7 @@ details: >-
   ### National Do Not Call Registry® Complaints by Year
 
 
-  ![A graph of National Do Not Call Registry® Complaints by Year](https://strategy.data.gov/assets/img/posts/2019-06-21-image001.png "A graph of National Do Not Call Registry® Complaints by Year")
+  ![A graph of National Do Not Call Registry® Complaints by Year](../../assets/media/2019-06-21-image001.png "A graph of National Do Not Call Registry® Complaints by Year")
 
 
   In response to industry input, the FTC began releasing unwanted call data each weekday beginning in August 2017. This dramatic improvement in the data’s “speed to market” would not have been possible without tackling bottlenecks in FTC’s data release process. First, the agency granted blanket authority to release specific categories of data on a daily basis. Next, manual work was successfully automated using Python. The following tasks together can now be completed every 24 hours, taking only 20 seconds and requiring minimal human oversight:
