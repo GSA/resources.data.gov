@@ -8,7 +8,7 @@ description: The Department of Energy’s National Nuclear Security Administrati
   implementation, will help inform other federal data practitioners’ efforts to
   maintain facility-level information while enabling accurate and timely
   enterprise-wide infrastructure analysis.
-source: Federal Data Strategy / Department of Energy
+source: Department of Energy
 category: Case studies & examples
 tags:
   - data management
@@ -24,7 +24,7 @@ policy_tags:
   - FDS Practice 27 Increase Capacity for Data Management and Analysis
   - FDS Practice 36 Leverage Partnerships
   - FDS Practice 40 Support Non-Federal Stakeholders
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published July 19, 2019*
 
