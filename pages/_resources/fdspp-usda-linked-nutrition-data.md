@@ -9,11 +9,12 @@ description: Purchase-to-Plate Crosswalk (PPC) links the more than 359,000 food
   were no common identifiers between the two data structures, the team used
   probabilistic and semantic methods to reduce the manual effort required to
   link the data.
-source: Federal Data Strategy / USDA
+source: Department of Agriculture
 category: Case studies & examples
 tags:
   - data sharing
   - process redesign
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 03 Promote Transparency
   - FDS Principle 05 Harness Existing Data
@@ -23,7 +24,7 @@ policy_tags:
   - FDS Practice 06 Convey Insights from Data
   - FDS Practice 17 Recognize the Value of Data Assets
   - FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published September 6, 2019*
 
