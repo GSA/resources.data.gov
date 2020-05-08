@@ -6,10 +6,13 @@ description: The Federal Trade Commission (FTC) releases data from millions of
   private-sector solutions to tackle the problem. The FTC’s work serves as an
   example of how agencies can work with the private sector to encourage the
   innovative use of government data toward solutions that benefit the public.
-source: Federal Data Strategy / Federal Trade Commission
+source: Federal Trade Commission
 category: Case studies & examples
 tags:
   - data cleaning
+  - Federal Data Strategy
+  - open data
+  - data sharing
 policy_tags:
   - FDS Principle 05 Harness Existing Data
   - FDS Principle 07 Demonstrate Responsiveness
@@ -18,7 +21,7 @@ policy_tags:
   - FDS Practice 12 Govern Data to Protect Confidentiality and Privacy
   - FDS Practice 28 Align Quality with Intended Use
   - FDS Practice 29 Design Data for Use and Re-Use
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published June 21, 2019*
 
