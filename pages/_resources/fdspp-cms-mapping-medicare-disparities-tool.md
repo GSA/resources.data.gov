@@ -5,10 +5,12 @@ description: The Centers for Medicare & Medicaid Services’ Office of Minority
   Health (CMS OMH) Mapping Medicare Disparities Tool harnessed the power of
   millions of data records while protecting the privacy of individuals, creating
   an easy-to-use tool to better understand health disparities.
-source: "Federal Data Strategy / Centers for Medicare & Medicaid Services "
+source: "Centers for Medicare & Medicaid Services "
 category: Case studies & examples
 tags:
   - geospatial
+  - Federal Data Strategy
+  - open data
 policy_tags:
   - FDS Principle 01 Uphold Ethics
   - FDS Principle 03 Promote Transparency
@@ -16,7 +18,7 @@ policy_tags:
   - FDS Practice 04 Use Data to Guide Decision-Making
   - FDS Practice 06 Convey Insights from Data
   - FDS Practice 36 Leverage Partnerships
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published May 3, 2019*
 
