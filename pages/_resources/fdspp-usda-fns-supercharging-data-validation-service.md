@@ -45,7 +45,7 @@ details: >-
   Each year, school districts verify the eligibility for school meal programs of a sample of their participating households. Personnel enter data from this verification into a form, sometimes still on paper, provided by their state’s administering agency. Each state government collects and aggregates the data from districts, then sends the concatenated data up to the federal level. Sometimes, however, data are not formatted properly, contain obvious or more subtle errors, or are missing required fields. FNS catches many of these errors in a process of automated and manual review that the agency established years ago. The state agency receives immediate system-generated feedback at the point of data submission. FNS follows that up with additional feedback from a manual review of records. The entire data cleaning process, which requires the state to pass error messages back to school districts to remedy and resubmit up the chain, can take several months.
 
 
-  ![A picture of the paper-based version of the FNS-742 form](https://strategy.data.gov/assets/img/posts/2019-05-17-image001.png "A picture of the paper-based version of the FNS-742 form")\
+  ![A picture of the paper-based version of the FNS-742 form](../../assets/media/2019-05-17-image001.png "A picture of the paper-based version of the FNS-742 form")\
 
   *Figure 1. A picture of the paper-based version of the FNS-742 form. Section 4 (shown here) collects the number of students on applications approved for school meal benefits. There are on average 2 students per application reported by school districts, in line with the average number of kids per household in the US. Yet implausibly high student to application ratios are often reported, even as high as 50 in some instances – an obvious error. The additional checks FNS developed attempts to correct this and other errors.*
 
@@ -74,7 +74,7 @@ details: >-
   ### A solution within the existing system
 
 
-  ![A process flow diagram showing the way the API based data validation occurs](https://strategy.data.gov/assets/img/posts/2019-05-17-image002.png "A process flow diagram showing the way the API based data validation occurs")
+  ![A process flow diagram showing the way the API based data validation occurs](../../assets/media/2019-05-17-image002.png "A process flow diagram showing the way the API based data validation occurs")
 
 
   *Figure 2. A process flow diagram starting at the point of data entry by a school district into a state system, the system interfacing with the data validation service, and error messages being sent back to the school district official to correct in real time.*
