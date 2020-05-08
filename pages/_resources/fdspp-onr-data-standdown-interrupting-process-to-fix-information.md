@@ -8,12 +8,13 @@ description: Although not a true pause in operations, ONR’s data standdown mad
   transparency and effectiveness throughout its mission support functions. In
   addition, it demonstrated that getting top-level buy-in from management to
   prioritize data can truly advance a more data-driven culture.
-source: Federal Data Strategy / Office of Naval Research
+source: Office of Naval Research
 category: Case studies & examples
 tags:
   - data governance
   - data cleaning
   - process redesign
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 05 Harness Existing Data
   - FDS Principle 07 Demonstrate Responsiveness
@@ -26,7 +27,7 @@ policy_tags:
   - FDS Practice 28 Align Quality with Intended Use
   - FDS Practice 30 Communicate Planned and Potential Uses of Data
   - FDS Practice 32 Harness Safe Data Linkage
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published May 10, 2019*
 
