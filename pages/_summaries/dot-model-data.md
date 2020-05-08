@@ -1,13 +1,14 @@
 ---
-policy_tags: ""
+policy_tags:
+  - M-13-13
 toc: true
 layout: resource
-resource_name: Department of Transportation Model Data Inventory Approach
 slug: dot-model-data
 publish: true
+resource_name: Department of Transportation Model Data Inventory Approach
 description: This document from the Department of Transportation provides a
   model plan for conducting data inventory efforts required under OMB Memorandum
-  M-13-13, Open Data Policy – Managing Information as an Asset.
+  M-13-13.
 source: DOT
 category: Case studies & examples
 tags:
