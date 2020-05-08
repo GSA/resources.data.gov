@@ -10,7 +10,7 @@ tags:
   - data validation
 policy_tags: ""
 format: ""
-details: >-
+details: >+
   ReVal (Reusable Validation Library) is an open source Django App for
   validating data via an API and web interface.
 
@@ -65,10 +65,7 @@ details: >-
 
   * requests
 
-
-  ## Examples
-
-
+examples: >-
   ### Use case: USDA Food & Nutrition Service
 
 
@@ -85,7 +82,6 @@ details: >-
 
 
   The Department of Transportation uses ReVal to validate Work Zone Data by validating it against the Work Zone Data Exchange (WZDx) Specification.  The Work Zone Data Exchange (WZDx) Specification enables infrastructure owners and operators (IOOs) to make harmonized work zone data available for third party use. The intent is to make travel on public roads safer and more efficient through ubiquitous access to data on work zone activity. Specifically, the project aims to get data on work zones into vehicles to help automated driving systems (ADS) and human drivers navigate more safely.
-examples: ""
 layout: resource
 toc: true
 name: ReVal (Reusable Validation Library)
