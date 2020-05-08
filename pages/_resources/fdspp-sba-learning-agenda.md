@@ -8,10 +8,11 @@ description: Through its Enterprise Learning Agenda, Small Business
   insights. Other agencies can learn from the innovative ways SBA identifies
   data to answer agency strategic questions and adopt those aspects that work
   for their own needs.
-source: Federal Data Strategy / SBA
+source: Small Business Administration
 category: Case studies & examples
 tags:
   - process redesign
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 03 Promote Transparency
   - FDS Principle 05 Harness Existing Data
@@ -21,7 +22,7 @@ policy_tags:
   - FDS Practice 06 Convey Insights from Data
   - FDS Practice 17 Recognize the Value of Data Assets
   - FDS Practice 22 Identify Opportunities to Overcome Resource Obstacles
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published August 2, 2019*
 
