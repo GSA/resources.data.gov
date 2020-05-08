@@ -77,7 +77,7 @@ details: >-
   To meet this challenge NNSA began implementing the BUILDER Sustainment Management System, integrating each site’s existing processes into a standardized, enterprise-wide system. BUILDER is a software program that helps NNSA proactively respond to emerging infrastructure needs by recommending building component repairs and replacements at the most opportune time, thus ensuring the greatest return on investment and maximizing risk buy-down given limited resources. BUILDER provides the NNSA with a single, rules-based approach to assess infrastructure and inform renewal decisions based on current and predicted system conditions, functionality, mission priorities, and acceptable risk tolerance levels. Developed by the U.S. Army Corps of Engineers (USACE), BUILDER has been recognized by the National Academies of Science as a best‐in‐class practice for infrastructure management.
 
 
-  ![BUILDER Component Lifecyle Condition Curve](https://strategy.data.gov/assets/img/posts/2019-07-21-image001.png "BUILDER Component Lifecyle Condition Curve")\
+  ![BUILDER Component Lifecyle Condition Curve](../../assets/media/2019-07-21-image001.png "BUILDER Component Lifecyle Condition Curve")\
 
   *BUILDER Component Lifecyle Condition Curve.*
 
@@ -102,7 +102,7 @@ details: >-
   ### The Support to Overcome Challenges
 
 
-  ![BUILDER - CMMS Integration through SPIRE](https://strategy.data.gov/assets/img/posts/2019-07-21-image002.png "BUILDER - CMMS Integration through SPIRE")\
+  ![BUILDER - CMMS Integration through SPIRE](../../assets/media/2019-07-21-image002.png "BUILDER - CMMS Integration through SPIRE")\
 
   *BUILDER - CMMS Integration through SPIRE.*
 
