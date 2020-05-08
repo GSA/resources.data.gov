@@ -1,11 +1,11 @@
 ---
-resource_name: "Supplemental Guidance on the Implementation of M-13-13 “Open Data Policy
-  – Managing Information as an Asset” "
+resource_name: "Supplemental Guidance on the Implementation of M-13-13 “Open
+  Data Policy – Managing Information as an Asset” "
 slug: m-13-13-guidance
 description: This document focuses on near-term efforts agencies must take to
   meet the five initial requirements of M-13-13, which were due November 30,
   2013.
-source: resources.data.gov
+source: Office of Management and Budget / General Services Administration
 category: Data management & governance
 tags:
   - open data
@@ -17,6 +17,7 @@ details: >
 
   Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the [Office of Management and Budget Integrated Data Collection (IDC)](../../PoD/IDC/), the [Project Open Data Dashboard](http://labs.data.gov/dashboard/offices) and [Open Data Cross-Agency Priority (CAP) Goal](http://goals.performance.gov/opendata). Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources.  
    
+
 
    
   ---------------------------
