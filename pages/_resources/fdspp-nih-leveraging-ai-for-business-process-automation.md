@@ -49,17 +49,17 @@ details: >-
   The NIGMS AI team created a four-tiered algorithm corresponding to the NIGMS’ organizational structure, with each descending level (tier) more granular than the previous one. Tier 1 is the NIH Institute and Center level and determines if an application is relevant to the mission of NIGMS or not. Assuming an application is indeed relevant to the NIGMS mission, it is then referred to one of NIGMS’ three Scientific Divisions. Underlying these Divisions are eight Scientific Branches. Therefore, at the most granular level, each application is assigned to one of NIGMS’ Scientific Branches and specifically to a PM located therein.
 
 
-  ![Tier 2 maps applications to one of NIGMS’ three Scientific Divisions](https://strategy.data.gov/assets/img/posts/2019-06-14-image001.jpg "Tier 2 maps applications to one of NIGMS’ three Scientific Divisions")\
+  ![Tier 2 maps applications to one of NIGMS’ three Scientific Divisions](../../assets/media/2019-06-14-image001.jpg "Tier 2 maps applications to one of NIGMS’ three Scientific Divisions")\
 
   *Tier 2 maps applications to one of NIGMS’ three Scientific Divisions*
 
 
-  ![Tier 3 maps applications to one NIGMS’ eight Scientific Branches](https://strategy.data.gov/assets/img/posts/2019-06-14-image002.jpg "Tier 3 maps applications to one of NIGMS’ eight Scientific Branches")\
+  ![Tier 3 maps applications to one NIGMS’ eight Scientific Branches](../../assets/media/2019-06-14-image002.jpg "Tier 3 maps applications to one of NIGMS’ eight Scientific Branches")\
 
   *Tier 3 maps applications to one of NIGMS’ eight Scientific Branches*
 
 
-  ![Tier 4 maps applications to one of NIGMS’ forty Program Managers](https://strategy.data.gov/assets/img/posts/2019-06-14-image003.jpg "Tier 4 maps applications to one of NIGMS’ forty Program Managers")\
+  ![Tier 4 maps applications to one of NIGMS’ forty Program Managers](../../assets/media/2019-06-14-image003.jpg "Tier 4 maps applications to one of NIGMS’ forty Program Managers")\
 
   *Tier 4 maps applications to one of NIGMS’ forty Program Managers*
 
