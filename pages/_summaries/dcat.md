@@ -13,6 +13,7 @@ category: Data standards
 tags:
   - DCAT
   - data schema
+  - data standards
 format: ""
 link: https://www.w3.org/TR/vocab-dcat/
 ---
