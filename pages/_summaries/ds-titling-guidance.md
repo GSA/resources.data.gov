@@ -7,7 +7,7 @@ publish: true
 resource_name: Data Scientist Titling Guidance
 description: This memo provides titling guidance to agency Human Resources
   Offices for use in classifying data science positions within agencies.
-source: OPM
+source: Office of Personnel Management
 category: Data management & governance
 tags:
   - position description
