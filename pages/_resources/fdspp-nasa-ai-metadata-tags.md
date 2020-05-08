@@ -7,13 +7,14 @@ description: NASA’s data scientists and research content managers recently bui
   processing. This system serves as an example of how other agencies can use
   their own unstructured data to improve information accessibility and promote
   data reuse.
-source: Federal Data Strategy
+source: National Aeronautics and Space Administration
 category: Case studies & examples
 tags:
   - metadata
   - data management
   - data sharing
   - process redesign
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 03 Promote Transparency
   - FDS Principle 04 Ensure Relevance
@@ -21,7 +22,7 @@ policy_tags:
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders
   - FDS Practice 04 Use Data to Guide Decision-Making
   - FDS Practice 10 Provide Resources Explicitly to Leverage Data Assets
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published May 28, 2019*
 
