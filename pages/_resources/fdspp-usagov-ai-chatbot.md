@@ -5,17 +5,18 @@ description: To improve customer service and give better answers to users of the
   USA.gov website, the Technology Transformation and Services team at General
   Services Administration (GSA) created a chatbot using artificial intelligence
   (AI) and automation.
-source: Federal Data Strategy / General Services Administration
+source: General Services Administration
 category: Case studies & examples
 tags:
   - AI
+  - Federal Data Strategy
 policy_tags:
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders
   - FDS Practice 03 Champion Data Use
   - FDS Principle 02 Exercise Responsibility
   - FDS Principle 06 Anticipate Future Uses
   - FDS Principle 07 Demonstrate Responsiveness
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published June 7, 2019*
 
