@@ -1,6 +1,6 @@
 ---
-resource_name: "How to Blend Your Data: BEA and BLS Harness Big Data to Gain New Insights
-  about Foreign Direct Investment in the U.S."
+resource_name: "How to Blend Your Data: BEA and BLS Harness Big Data to Gain New
+  Insights about Foreign Direct Investment in the U.S."
 slug: fdspp-bea-bls-data-blend-foreign-investment
 description: A recent collaboration between the Bureau of Economic Analysis
   (BEA) and the Bureau of Labor Statistics (BLS) helps shed light on the segment
@@ -8,12 +8,13 @@ description: A recent collaboration between the Bureau of Economic Analysis
   case study shows the opportunities of cross-agency data collaboration, as well
   as some of the challenges of using big data and administrative data in the
   federal government.
-source: Federal Data Strategy
+source: Department of Labor / Department of Commerce
 category: Case studies & examples
 tags:
   - data sharing
   - workforce development
   - process redesign
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 03 Promote Transparency
   - FDS Principle 02 Exercise Responsibility
@@ -28,7 +29,7 @@ policy_tags:
   - FDS Practice 25 Coordinate Federal Data Assets
   - FDS Practice 26 Share Data Between State Local and Tribal Governments and
     Federal Agencies
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published August 9, 2019*
 
