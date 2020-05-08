@@ -64,7 +64,7 @@ collections:
         hint: "tags for this resource"
         valueField: "keyword_name"
         searchFields: ["keyword_name"]
-        required: true
+        required: false
 
       - label: "policy tags"
         name: "policy_tags"
@@ -172,7 +172,7 @@ collections:
         hint: "tags for this resource summary"
         valueField: "keyword_name"
         searchFields: ["keyword_name"]
-        required: true
+        required: false
 
       - label: "policy tags"
         name: "policy_tags"
