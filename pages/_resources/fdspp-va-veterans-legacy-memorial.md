@@ -7,11 +7,12 @@ description: The Veterans Legacy Memorial (VLM) is a digital platform to help
   Administration (NCA) records in a 25-year-old database, VLM is a powerful
   example of an agency harnessing the potential of a legacy system to provide a
   modernized service that better serves the public.
-source: Federal Data Strategy / National Cemetery Administration
+source: Veterans Administration
 category: Case studies & examples
 tags:
   - data sharing
   - data visualization
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 01 Uphold Ethics
   - FDS Principle 04 Ensure Relevance
@@ -19,7 +20,7 @@ policy_tags:
   - FDS Principle 06 Anticipate Future Uses
   - FDS Principle 10 Practice Accountability
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published on April 19, 2019*
 
