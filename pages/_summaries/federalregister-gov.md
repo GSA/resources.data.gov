@@ -2,13 +2,13 @@
 policy_tags: ""
 toc: true
 layout: resource
-resource_name: FederalRegister.gov API Case Study
 slug: federalregister-gov
 publish: true
+resource_name: FederalRegister.gov API Case Study
 description: This case study describes the tenets behind an API that provides
   access to all data found on FederalRegister.gov, including all Federal
   Register documents from 1994 to the present.
-source: NARA/GPO
+source: National Archives & Records Administration
 category: Case studies & examples
 tags:
   - API
