@@ -8,7 +8,7 @@ description: A recent collaboration between the Bureau of Economic Analysis
   case study shows the opportunities of cross-agency data collaboration, as well
   as some of the challenges of using big data and administrative data in the
   federal government.
-source: Department of Labor / Department of Commerce
+source: Bureau of Economic Analysis / Bureau of Labor Statistics
 category: Case studies & examples
 tags:
   - data sharing
