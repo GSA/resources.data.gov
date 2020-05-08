@@ -14,7 +14,7 @@ description: "The Internet Engineering Task Force (IETF) is the premier Internet
   standards organizations (or voluntary consensus standards bodies) that OMB
   Circular A-119 directs Federal agencies to utilize to develop and maintain
   agency data standards. "
-source: IEFT
+source: ietf.org
 category: Communities
 tags:
   - data standards
