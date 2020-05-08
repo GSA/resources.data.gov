@@ -12,7 +12,7 @@ description: The Federal Data Strategy provides a common set of data principles
   responsible entities. The plan identifies initial actions for agencies that
   are essential for establishing processes, building capacity, and aligning
   existing efforts to better leverage data as a strategic asset.
-source: Federal Data Strategy
+source: strategy.data.gov
 category: Policy
 tags:
   - Federal Data Strategy
