@@ -1,16 +1,17 @@
 ---
-category: Policy
-description: PDF copy of the Office of the Attorney General memo that issues guidelines
-  for the implementation of the Freedom of Information Act (FOIA). Dated March 19,
-  2009. (3 pages, 1.2 MB)
-format: PDF
-layout: resource
-link: https://www.justice.gov/sites/default/files/ag/legacy/2009/06/24/foia-memo-march2009.pdf
-resource_name: 'Memorandum: Freedom of Information Act (FOIA)'
-policy_tags: ''
-publish: true
-slug: foia-memo
-source: Office of the Attorney General
-tags: ''
+policy_tags: ""
 toc: true
+layout: resource
+slug: foia-memo
+publish: true
+resource_name: "Memorandum: Freedom of Information Act (FOIA)"
+description: "Office of the Attorney General memo that issues guidelines for the
+  implementation of the Freedom of Information Act (FOIA). Dated March 19, 2009.
+  "
+source: Department of Justice
+category: Policy
+tags:
+  - FOIA
+format: PDF (3 pages, 1.2 MB)
+link: https://www.justice.gov/sites/default/files/ag/legacy/2009/06/24/foia-memo-march2009.pdf
 ---
