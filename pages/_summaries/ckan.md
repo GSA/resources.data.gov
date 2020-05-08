@@ -11,7 +11,7 @@ description: Comprehensive Knowledge Archive Network (CKAN) is a powerful open
   is based on CKAN, a technology that powers many government open data sites.
   Inventory.data.gov is a separate instance of CKAN hosted at GSA on the same
   infrastructure as the Data.gov catalog.
-source: CKAN
+source: ckan.org
 category: Data tools
 tags:
   - data schema
