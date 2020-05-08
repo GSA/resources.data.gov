@@ -14,6 +14,7 @@ source: Consumer Financial Protection Bureau
 category: Data tools
 tags:
   - data analytics
+  - data analysis
 format: ""
 link: https://github.com/cfpb/hmda-tools
 ---
