@@ -9,7 +9,7 @@ resource_name: Department of Transportation Model Data Inventory Approach
 description: This document from the Department of Transportation provides a
   model plan for conducting data inventory efforts required under OMB Memorandum
   M-13-13.
-source: DOT
+source: Department of Transportation
 category: Case studies & examples
 tags:
   - data inventory
