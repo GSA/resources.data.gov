@@ -2,14 +2,15 @@
 policy_tags: ""
 toc: true
 layout: resource
-resource_name: FOIA.gov
 slug: foia
 publish: true
+resource_name: FOIA.gov
 description: The public-facing site for Freedom of Information Act (FOIA) requests.
-source: FOIA
-category: Data management & governance
+source: foia.gov
+category: Policy
 tags:
   - open data
+  - data management
 format: ""
 link: https://www.foia.gov/
 ---
