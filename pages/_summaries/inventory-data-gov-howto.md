@@ -15,6 +15,7 @@ tags:
   - data inventory
   - inventory.data.gov
   - open data
+  - workforce development
 format: Video (53 mins)
 link: https://www.youtube.com/watch?v=ciLYjDsF4lo
 ---
