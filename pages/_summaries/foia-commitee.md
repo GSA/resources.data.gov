@@ -8,7 +8,7 @@ resource_name: Final Report and Recommendations of the 2016-2018 FOIA Advisory C
 description: This report outlines the Freedom of Information Act (FOIA) Advisory
   Committee's recommendations and best practices for the administration of FOIA.
   Dated April 17, 2018.
-source: NARA
+source: National Archives and Records Administration
 category: Policy
 tags:
   - open data
