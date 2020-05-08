@@ -12,7 +12,7 @@ description: "The National Information Exchange Model (NIEM) is a common
   organizations (or voluntary consensus standards bodies) that OMB Circular
   A-119 directs Federal agencies to utilize to develop and maintain agency data
   standards. "
-source: NIEM
+source: National Information Exchange Model
 category: Communities
 tags:
   - data standards
