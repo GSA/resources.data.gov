@@ -26,7 +26,7 @@ details: >-
   To improve customer service and give better answers to users of the USA.gov website, the Technology Transformation and Services team at General Services Administration (GSA) created a chatbot using artificial intelligence (AI) and automation. As an addition to the USA.gov call center and its team of staff that answers questions from the public, this beta project holds great potential for the public to get the help they need with scams.
 
 
-  ![USA.gov’s chatbot initiates an interaction with a user.](https://strategy.data.gov/assets/img/posts/2019-06-07-image001.png "A screenshot showing how USA.gov’s chatbot initiates an interaction with a user.")
+  ![USA.gov’s chatbot initiates an interaction with a user.](../../assets/media/2019-06-07-image001.png "A screenshot showing how USA.gov’s chatbot initiates an interaction with a user.")
 
 
   *USA.gov’s chatbot initiates an interaction with a user.*
@@ -47,7 +47,7 @@ details: >-
   The team started with research, aiming to understand the people who might be using their planned chatbot. They recruited 32 people who had previously contacted USA.gov staff about scams either on Facebook or through the call center. Participants were asked to share their experiences with scams, their emotions, and what made them decide to file a report.
 
 
-  ![The team generated ideas then grouped them into categories to help organize possible next steps.](https://strategy.data.gov/assets/img/posts/2019-06-07-image002.jpg "Photo of post-it notes with generated ideas that were grouped into categories to help organize possible next steps.")
+  ![The team generated ideas then grouped them into categories to help organize possible next steps.](../../assets/media/2019-06-07-image002.jpg "Photo of post-it notes with generated ideas that were grouped into categories to help organize possible next steps.")
 
   *The team generated ideas then grouped them into categories to help organize possible next steps.*
 
@@ -82,7 +82,7 @@ details: >-
   By intentionally limiting the scope of the bot to preset topics within the scam remediation themes, the team had better control over users’ experience interacting with the bot.
 
 
-  ![The team mapped out different user scenarios.](https://strategy.data.gov/assets/img/posts/2019-06-07-image003.jpg "A sketch showing how the team mapped out different user scenarios.")
+  ![The team mapped out different user scenarios.](../../assets/media/2019-06-07-image003.jpg "A sketch showing how the team mapped out different user scenarios.")
 
   *The team mapped out different user scenarios.*
 
@@ -119,8 +119,8 @@ details: >-
 
 
   The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
-layout: resource
-toc: true
 examples: ""
 link: ""
+layout: resource
+toc: true
 ---
