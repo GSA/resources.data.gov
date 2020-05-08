@@ -1,16 +1,16 @@
 ---
-category: Data tools
-description: The Data Visualization Wizard provides a fast way to get data visualizations
-  online using Drupal
-format: ''
-layout: resource
-link: https://www.drupal.org/project/datavizwiz
-resource_name: Data Visualization wizard
-policy_tags: ''
-publish: true
-slug: data-visualization-wizard
-source: DRUPAL
-tags:
-- data visualization
+policy_tags: ""
 toc: true
+layout: resource
+slug: data-visualization-wizard
+publish: true
+resource_name: Data Visualization wizard
+description: "The Data Visualization Wizard provides a fast way to get data
+  visualizations online using Drupal and uploaded spreadsheets. "
+source: drupal.org
+category: Data tools
+tags:
+  - data visualization
+format: ""
+link: https://www.drupal.org/project/datavizwiz
 ---
