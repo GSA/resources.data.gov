@@ -9,18 +9,19 @@ description: Bloomberg Government analysts put together a prototype through the
   real-world problem that data can help solve, navigate across agencies to find
   and obtain the most useful data, and work within resource constraints to
   provide a tool to help address the problem.
-source: Federal Data Strategy / Census Bureau
+source: Census Bureau
 category: Case studies & examples
 tags:
   - geospatial
   - data sharing
+  - Federal Data Strategy
 policy_tags:
   - FDS Principle 04 Ensure Relevance
   - FDS Principle 05 Harness Existing Data
   - FDS Practice 33 Promote Wide Access
   - FDS Practice 36 Leverage Partnerships
   - FDS Practice 40 Support Non-Federal Stakeholders
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published April 26, 2019*
 
