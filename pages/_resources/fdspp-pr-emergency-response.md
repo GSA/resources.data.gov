@@ -1,6 +1,6 @@
 ---
-resource_name: Agencies Mobilize to Improve Emergency Response in Puerto Rico through
-  Better Data
+resource_name: Agencies Mobilize to Improve Emergency Response in Puerto Rico
+  through Better Data
 slug: fdspp-pr-emergency-response
 description: "Federal agencies' response efforts to Hurricanes Irma and Maria in
   Puerto Rico was hampered by imperfect address data for the island. In the
@@ -22,7 +22,7 @@ policy_tags:
   - FDS Practice 20 Leverage Data Standards
   - FDS Practice 25 Coordinate Federal Data Assets
   - FDS Practice 28 Align Quality with Intended Use
-format: FDS Proof Point
+format: ""
 details: >-
   *Originally published July 26, 2019*
 
