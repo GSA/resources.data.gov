@@ -13,6 +13,7 @@ source: schema.org
 category: Data standards
 tags:
   - data schema
+  - data standards
 format: ""
 link: https://schema.org
 ---
