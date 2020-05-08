@@ -1,16 +1,18 @@
 ---
-category: Communities
-description: 'The CIO Council is a forum of Federal Chief Information Officers (CIOs).
-  Their goal is to improve information techonology practices and information resources
-  across U.S. Government agencies. '
-format: ''
-layout: resource
-link: https://www.cio.gov/
-resource_name: CIO Council
-policy_tags: ''
-publish: true
-slug: cio-council
-source: cio.gov
-tags: ''
+policy_tags: ""
 toc: true
+layout: resource
+slug: cio-council
+publish: true
+resource_name: CIO Council
+description: "The CIO Council is a forum of Federal Chief Information Officers
+  (CIOs). Its goal is to improve information technology practices and
+  information resources across U.S. Government agencies. "
+source: cio.gov
+category: Communities
+tags:
+  - data management
+  - data governance
+format: ""
+link: https://www.cio.gov/
 ---
