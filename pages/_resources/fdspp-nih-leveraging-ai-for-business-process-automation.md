@@ -7,7 +7,7 @@ description: The National Institute of General Medical Sciences (NIGMS), one of
   which it receives and internally refers grant applications. This new approach
   ensures efficient and consistent grant application referral, and liberates
   Program Managers from the labor-intensive and monotonous referral process.
-source: Federal Data Strategy / National Institutes of Health
+source: National Institutes of Health
 category: Case studies & examples
 tags:
   - standards
