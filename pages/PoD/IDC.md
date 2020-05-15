@@ -19,7 +19,7 @@ Office of Management and Budget Integrated Data Collection (IDC) Requirements
 [agency].gov/data.json and include their data.json dataset with the title “Enterprise Data
 Inventory.” If necessary, agencies will coordinate with their Freedom of Information Act (FOIA)
 offices to redact specific metadata text for “non-public” datasets only if the text is subject to a
-FOIA exemption. Agencies shall use the instructions provided by OMB at [https://project-opendata.cio.gov/redactions/](https://project-opendata.cio.gov/redactions/)
+FOIA exemption. Agencies shall use the instructions provided by OMB at [https://project-open-data.cio.gov/redactions/](https://project-open-data.cio.gov/redactions/)
 to conduct these redactions. If redactions are present, Agencies must
 submit a non-redacted Enterprise Data Inventory JSON file to OMB in the appropriate agency
 folder here: [https://community.max.gov/x/8YamK](https://community.max.gov/x/8YamK).
