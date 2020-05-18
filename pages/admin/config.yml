@@ -37,13 +37,13 @@ collections:
       - label: "description"
         name: "description"
         widget: "text"
-        hint: "short description of the resource"
+        hint: "short description of the resource (max 100 words); if possible, include relevance of the resource to this repository"
         required: true
 
       - label: "source"
         name: "source"
         widget: "string"
-        hint: "who created the resource"
+        hint: "who created the resource (organization name or web entity; avoid acronyms"
         required: true
 
       - label: "category"
@@ -79,13 +79,13 @@ collections:
       - label: "format"
         name: "format"
         widget: "string"
-        hint: "format or type of resource"
+        hint: "format or type of resource, can include length — e.g. PDF (45 pages) or Video (21 mins)"
         required: false
 
       - label: "details"
         name: "details"
         widget: "markdown"
-        hint: "detailed description of the resource"
+        hint: "detailed description of the resource or the content of the resource itself"
         required: false
 
       - label: "examples"
@@ -97,7 +97,7 @@ collections:
       - label: "link"
         name: "link"
         widget: "markdown"
-        hint: "link to the resource"
+        hint: "link to related content that should be displayed prominently — e.g. link to source code"
         required: false
 
       - label: "file"
@@ -145,13 +145,13 @@ collections:
       - label: "description"
         name: "description"
         widget: "text"
-        hint: "short description of the resource summary"
+        hint: "short description of the resource (max 100 words); if possible, include relevance of the resource to this repository"
         required: true
 
       - label: "source"
         name: "source"
         widget: "string"
-        hint: "who created the resource summary"
+        hint: "who created the resource (organization name or web entity; avoid acronyms"
         required: true
 
       - label: "category"
@@ -187,13 +187,13 @@ collections:
       - label: "format"
         name: "format"
         widget: "string"
-        hint: "format or type of resource"
+        hint: "format or type of resource, can include length — e.g. PDF (45 pages) or Video (21 mins)"
         required: false
 
       - label: "link"
         name: "link"
         widget: "markdown"
-        hint: "link to the resource"
+        hint: "link to the resource on external page"
         required: true
 
   - name: "categories"
