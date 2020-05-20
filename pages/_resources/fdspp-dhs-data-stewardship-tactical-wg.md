@@ -63,6 +63,7 @@ details: >-
 
   ![A flier from a 2018 DSTWG training sessions shows topics and featured speaker.](../../assets/media/2018-12-13-image003.png "A flier from a 2018 DSTWG training sessions shows topics and featured speaker.")
 
+
   *A flier from a 2018 DSTWG training sessions shows topics and featured speaker.*
 
 
@@ -79,6 +80,7 @@ details: >-
 
 
   ![Snapshot of results from a DSTWG-administered survey to the broader data community.](../../assets/media/2018-12-13-image004.png "Snapshot of results from a DSTWG-administered survey to the broader data community.")
+
 
   *Snapshot of results from a DSTWG-administered survey to the broader data community.*
 
