@@ -8,7 +8,7 @@ resource_name: Data Governance Playbook
 description: The Data Governance Playbook supports the Federal Data Strategy by
   helping agencies get started with prioritizing data governance and assessing
   maturity.
-source: strategy.data.gov
+source: Federal Data Strategy
 category: Data management & governance
 tags:
   - data governance
