@@ -36,7 +36,7 @@ details: >-
   When organizations defer maintenance and repair of buildings and other infrastructure they usually incur additional costs and risks. To help address this issue, the Department of Energy’s National Nuclear Security Administration (NNSA) adopted a data-driven, risk-informed strategy to better assess risks, prioritize investments, and cost effectively modernize its aging nuclear infrastructure. NNSA’s new strategy, and lessons learned during its implementation, will help inform other federal data practitioners’ efforts to maintain facility-level information while enabling accurate and timely enterprise-wide infrastructure analysis.
 
 
-  > “Traditionally, infrastructure management was done by looking in the rearview mirror. With our new strategy, we are turning that around, to look out the front windshield. We see obstacles coming our way and proactively adjust to meet and overcome them.”\
+  > “Traditionally, infrastructure management was done by looking in the rearview mirror. With our new strategy, we are turning that around, to look out the front windshield. We see obstacles coming our way and proactively adjust to meet and overcome them.”
 
   > — Tyson Deschamp (Deputy Director, Office of Infrastructure Planning & Analysis)
 
@@ -53,7 +53,7 @@ details: >-
   Managing such a diverse portfolio can make prioritization of required maintenance a difficult task. Traditionally, each contractor uses unique computerized maintenance management systems customized to their site-specific needs. This method, while acceptable and successful at the site-level, makes it nearly impossible to credibly aggregate the total output into an NNSA-wide analysis of infrastructure maintenance needs in both the near- and long-term.
 
 
-  > “The short-term needs of today often take priority over the long-term needs of the future. This is a large challenge we face with infrastructure.”\
+  > “The short-term needs of today often take priority over the long-term needs of the future. This is a large challenge we face with infrastructure.”
 
   > — Jessica Kunkle (Director, NA-50 Program Management Office)
 
@@ -67,7 +67,7 @@ details: >-
   Each year, NNSA must make difficult decisions about which maintenance and repair investments should be executed and which can be safely deferred. These daily trade-offs that ultimately result in deferring certain maintenance activities were made at the site level and allowed each site to maximize risk buy-down. However, this compartmentalized process did not allow NNSA to optimize risk buy-down across the enterprise. Inevitably, questions arose that were difficult to answer at the enterprise level, such as, “How much enterprise risk would we be accepting in hypothetical scenario ‘X’?” Given the inconsistent systems used across the enterprise, NNSA could only estimate the enterprise risk under a specific funding scenario. With its aging infrastructure, NNSA knew it needed to implement a new approach to analyzing and prioritizing these investments.
 
 
-  > “Our sites operate as a network—as a supply chain. We need to make sure we evaluate the system as a whole, not just each site individually.” \
+  > “Our sites operate as a network—as a supply chain. We need to make sure we evaluate the system as a whole, not just each site individually.” 
 
   > — Jessica Kunkle (Director, NA-50 Program Management Office)
 
@@ -78,7 +78,7 @@ details: >-
   To meet this challenge NNSA began implementing the BUILDER Sustainment Management System, integrating each site’s existing processes into a standardized, enterprise-wide system. BUILDER is a software program that helps NNSA proactively respond to emerging infrastructure needs by recommending building component repairs and replacements at the most opportune time, thus ensuring the greatest return on investment and maximizing risk buy-down given limited resources. BUILDER provides the NNSA with a single, rules-based approach to assess infrastructure and inform renewal decisions based on current and predicted system conditions, functionality, mission priorities, and acceptable risk tolerance levels. Developed by the U.S. Army Corps of Engineers (USACE), BUILDER has been recognized by the National Academies of Science as a best‐in‐class practice for infrastructure management.
 
 
-  ![BUILDER Component Lifecyle Condition Curve](../../assets/media/2019-07-21-image001.png "BUILDER Component Lifecyle Condition Curve")\
+  ![BUILDER Component Lifecyle Condition Curve](../../assets/media/2019-07-21-image001.png "BUILDER Component Lifecyle Condition Curve")
 
   *BUILDER Component Lifecyle Condition Curve.*
 
@@ -86,7 +86,7 @@ details: >-
   In 2014, NNSA entered into a partnership with USACE, procuring the BUILDER software and Enterprise implementation support services. This program laid the foundation for the NNSA to accurately, repeatedly, and quickly provide enterprise-wide maintenance and repair forecasts, now and into the future, under any number of scenarios.
 
 
-  > “We compete for the same budget as other critical missions. Before we invested in BUILDER, we could tell executive leadership that cutting our budget will increase risk, but we couldn’t know specifics. Now, we can model investment scenarios to effectively and precisely quantify the risks and impacts.”\
+  > “We compete for the same budget as other critical missions. Before we invested in BUILDER, we could tell executive leadership that cutting our budget will increase risk, but we couldn’t know specifics. Now, we can model investment scenarios to effectively and precisely quantify the risks and impacts.”
 
   > — Tyson Deschamp (Deputy Director, Office of Infrastructure Planning & Analysis)
 
@@ -103,7 +103,7 @@ details: >-
   ### The Support to Overcome Challenges
 
 
-  ![BUILDER - CMMS Integration through SPIRE](../../assets/media/2019-07-21-image002.png "BUILDER - CMMS Integration through SPIRE")\
+  ![BUILDER - CMMS Integration through SPIRE](../../assets/media/2019-07-21-image002.png "BUILDER - CMMS Integration through SPIRE")
 
   *BUILDER - CMMS Integration through SPIRE.*
 
@@ -114,7 +114,7 @@ details: >-
   In order to sync each site’s individual CMMS program with BUILDER, translation software, like DIGON System’s Spire, had to be developed to ensure data was kept up-to-date and accurate. NA-50’s BUILDER team partnered with private companies to overcome such challenges. Software integration significantly reduced data input time and increased data integrity by simultaneously pushing data updates from one system to another, eliminating the need to duplicate changes in both systems.
 
 
-  > “It wasn’t like we had a cookbook that we could execute step by step from another agency—we were blazing a new trail as we went—the system integrations, new software extensions, and complex configurations, none of that was foreseen on day one.”\
+  > “It wasn’t like we had a cookbook that we could execute step by step from another agency—we were blazing a new trail as we went—the system integrations, new software extensions, and complex configurations, none of that was foreseen on day one.”
 
   > — Tyson Deschamp (Deputy Director, Office of Infrastructure Planning & Analysis)
 
@@ -125,7 +125,7 @@ details: >-
   NNSA’s innovative strategies lead the way in federal infrastructure management, and NA-50 welcomes collaborative knowledge-sharing sessions with other agencies to devise new ways to effectively arrest the decline of the nation’s aging, nuclear infrastructure. For those eager to implement their own enterprise-focused program, NA-50 recommends: establishing a clear vision for the use of the program; engaging all stakeholders early in the process from the field to the Hill; empowering field personnel to generate solutions; conducting regular training; hosting frequent team meetings/workshops; hiring experienced software support agents; maintaining an agile framework flexible to changing work requirements and mission needs; implementing stringent data standards and validation procedures; and ensuring transparent communications about the challenges faced with implementation and throughout the process.
 
 
-  > “It is critical that we work together to modernize infrastructure to safely meet twenty-first century challenges. Together, we will reverse the decline of our infrastructure and provide a secure future for science, technology, and innovation in the service of national security.\
+  > “It is critical that we work together to modernize infrastructure to safely meet twenty-first century challenges. Together, we will reverse the decline of our infrastructure and provide a secure future for science, technology, and innovation in the service of national security.
 
   > — James J. McConnell (Associate Administrator for Safety, Infrastructure, and Operations)
 
