@@ -14,28 +14,6 @@ tags:
 policy_tags: ""
 format: ""
 details: >+
-  
-  * [Introduction](#introduction) 
-
-  * [Features](#features)
-
-  * [Using Inventory.data.gov](#using-inventory-data-gov)
-
-  * [Creating a User Account](#creating-a-user-account)
-
-  * [Using inventory.data.gov to manage datasets](#using-inventory-data-gov-to-manage-datasets)
-
-  * [Adding a dataset](#adding-a-dataset)
-
-  * [Exporting data.json](#exporting-data-json)
-
-  * [Automating data.json downloads by agencies](#automating-data-json-downloads-by-agencies) 
-
-  * [Dataset hosting](#dataset-hosting)
-
-  * [Webinar on inventory.data.gov](#webinar-on-inventory-data-gov)
-
-
   ### Introduction
 
   {:#introduction}
