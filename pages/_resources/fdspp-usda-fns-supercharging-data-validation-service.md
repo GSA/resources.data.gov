@@ -46,7 +46,7 @@ details: >-
   Each year, school districts verify the eligibility for school meal programs of a sample of their participating households. Personnel enter data from this verification into a form, sometimes still on paper, provided by their state’s administering agency. Each state government collects and aggregates the data from districts, then sends the concatenated data up to the federal level. Sometimes, however, data are not formatted properly, contain obvious or more subtle errors, or are missing required fields. FNS catches many of these errors in a process of automated and manual review that the agency established years ago. The state agency receives immediate system-generated feedback at the point of data submission. FNS follows that up with additional feedback from a manual review of records. The entire data cleaning process, which requires the state to pass error messages back to school districts to remedy and resubmit up the chain, can take several months.
 
 
-  ![A picture of the paper-based version of the FNS-742 form](../../assets/media/2019-05-17-image001.png "A picture of the paper-based version of the FNS-742 form")\
+  ![A picture of the paper-based version of the FNS-742 form](../../assets/media/2019-05-17-image001.png "A picture of the paper-based version of the FNS-742 form")
 
   *Figure 1. A picture of the paper-based version of the FNS-742 form. Section 4 (shown here) collects the number of students on applications approved for school meal benefits. There are on average 2 students per application reported by school districts, in line with the average number of kids per household in the US. Yet implausibly high student to application ratios are often reported, even as high as 50 in some instances – an obvious error. The additional checks FNS developed attempts to correct this and other errors.*
 
@@ -90,7 +90,7 @@ details: >-
   Together, they built an API accessible over the web. Hooking up to this API, state systems can tap into a far more rigorous and always up-to-date set of checks to highlight erroneous entries to those at the school district level entering the data into the software. States do not need to change vendors, and vendors do not need to update their offerings to keep up with FNS validation changes. Meanwhile, the FNS team can update the central source of validation rules and be confident that these rules will immediately be accessible to the state-level software systems. Perhaps the most attractive aspect of this approach is that none of this restructuring alters the workflow for district-level personnel – there is no learning curve or new training needed.
 
 
-  > “We are piggybacking on the process they created, and we can add many more checks than they currently employ without adding burden.”\
+  > “We are piggybacking on the process they created, and we can add many more checks than they currently employ without adding burden.”
 
   > – Whitney Peters
 
