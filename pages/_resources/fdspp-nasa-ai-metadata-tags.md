@@ -66,7 +66,10 @@ details: >-
   Teams can use this response in myriad ways. For instance, the STI team requires rigorous organization and validation. They use the tagger to suggest possible keywords while the content managers validate the final selections. These suggestions help the content managers fill in potential blind spots.
 
 
-  ![A screenshot of the NASA OCIO STI Concept Tagging Service](../../assets/media/2019-05-28-image001.png "A screenshot of the NASA OCIO STI Concept Tagging Service")*In this example, two sentences of text are input into the tagger, which identifies multiple keywords that are likely to be relevant to the text; volcanology (84%), mars surface (77%), volcano (76%), and structural properties – geology (59%).*
+  ![A screenshot of the NASA OCIO STI Concept Tagging Service](../../assets/media/2019-05-28-image001.png "A screenshot of the NASA OCIO STI Concept Tagging Service")
+
+
+  *In this example, two sentences of text are input into the tagger, which identifies multiple keywords that are likely to be relevant to the text; volcanology (84%), mars surface (77%), volcano (76%), and structural properties – geology (59%).*
 
 
   This system does not replace the STI content managers; it gives them more time to focus on other work, like curating new keywords. In order to stay relevant, the model must evolve as NASA’s lexicon evolves. To do so, the model must learn new keywords by being retrained on data tagged with these keywords. Without the work of the content managers, new data would not be tagged with new keywords, and the model would lose relevance. This alliance of humans and AI creates the perfect solution for NASA’s big data labelling problems by packaging the content managers’ knowledge while they identify new terms and trends.
@@ -90,7 +93,10 @@ details: >-
   OI has also utilized the tagger API to increase the number tags on NASA’s Open Source Software website, [https://code.nasa.gov](https://code.nasa.gov/). Because the website’s search function relies on text string matching, it only works if the user’s search terms match words in the project description. Keywords represent higher-order concepts; using keywords, a user can more quickly skim, search, and iteratively explore the site. The faster a user can reach interesting information, the more likely they are to stay on the page and explore further. The increased tag coverage from the tagger API has made it is easier for NASA colleagues and the public to find and explore NASA code.
 
 
-  ![A search result on code.nasa.gov based on tags created by both humans and the AI tagger](../../assets/media/2019-05-28-image003.png "A search result on code.nasa.gov based on tags created by both humans and the AI tagger")*A search on [https://code.nasa.gov](https://code.nasa.gov/) yields code projects, like this one, based on tags created by both humans and the AI tagger.*
+  ![A search result on code.nasa.gov based on tags created by both humans and the AI tagger](../../assets/media/2019-05-28-image003.png "A search result on code.nasa.gov based on tags created by both humans and the AI tagger")
+
+
+  *A search on [https://code.nasa.gov](https://code.nasa.gov/) yields code projects, like this one, based on tags created by both humans and the AI tagger.*
 
 
   DAT and OI spent a nontrivial amount of time developing these two integrations (WordPress and [https://code.nasa.gov](https://code.nasa.gov/)) because they believe that building these extensions for common platforms (like WordPress) will ease integration of the tagger API into other IT systems. One may cleverly solve a problem using machine learning. They may even make an API to access their models. However, lacking any premade system integrations, the system may remain underused. The extra work of creating these integrations is well worth the effort; it gives a better return on investment for the more extensive work of creating the machine learning solution in the first place.
