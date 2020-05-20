@@ -130,6 +130,11 @@
     "source": "https://searchapparchitecture.techtarget.com/definition/OAuth"
   },
   {
+    "term": "OGC",
+    "definition": "Open Geospatial Consortium, a worldwide community committed to advancing geospatial location information and fostering a global conversation to create free and publicly available geospatial standards.",
+    "source": "https://www.ogc.org/"
+  },
+  {
     "term": "Open Source Software",
     "definition": "Computer software that is available in source code form: the source code and certain other rights normally reserved for copyright holders are provided under an open-source license that permits users to study, change, improve and at times also to distribute the software. Open source software is very often developed in a public, collaborative manner. Open source software is the most prominent example of open source development and often compared to (technically defined) user-generated content or (legally defined) open content movements.",
     "source": "https://en.wikipedia.org/wiki/Open-source_software"
