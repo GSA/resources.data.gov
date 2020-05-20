@@ -63,13 +63,19 @@ details: >-
   The workshop provided the impetus for the organization in March 2019 of a formal working group, the Puerto Rico Address Data Working Group (PRADWG), led by the Census Bureau under the auspices of the Federal Geographic Data Committee’s Address Subcommittee. The PRADWG was charged with inventorying and documenting proven practices for managing Puerto Rico address data. The group met regularly over the course of 120 days to discuss and compare data assets, maintenance processes, address data use cases, and proven practices. The PRADWG report, Proven Practices for Puerto Rico Address Data Management, is a result of these efforts.
 
 
-  ![Matching addresses](https://strategy.data.gov/assets/img/posts/2019-07-28-image003.png "Matching addresses") *A slide presented at the PRADWG’s kickoff meeting describes the Census Bureau’s approach to matching Puerto Rico addresses with known Census addresses.*
+  ![Matching addresses](https://strategy.data.gov/assets/img/posts/2019-07-28-image003.png "Matching addresses") 
+
+
+  *A slide presented at the PRADWG’s kickoff meeting describes the Census Bureau’s approach to matching Puerto Rico addresses with known Census addresses.*
 
 
   Through the Working Group and subsequent report, agencies like HUD, FEMA, the Census Bureau, U.S. Army Corps of Engineers (USACE), USDA and the U.S. Postal Service (USPS) shared agency solutions and potential opportunities for collaboration within the federal government to manage Puerto Rico address data challenges with existing systems and applications. FEMA, as noted earlier, makes use of local guides and phone calls to homeowners to help find physical locations when data alone does not get them to the right place. Through a series of cleaning and matching strategies, as well as validation against other agencies’ data, the Census Bureau successfully derives useable address locations from its existing Master Address File (MAF), or adds new addresses to the MAF. The USPS regularly updates its Address Management System by feeding in knowledge from mail carriers and its Address Change Service. HUD employs local subject matter experts from a Puerto Rico-based firm to help clean and validate its Puerto Rico address data.
 
 
-  ![Proven practices](https://strategy.data.gov/assets/img/posts/2019-07-28-image004.png "Proven practices") *Federal Agencies’ Proven Practices for Address Data Collection and Management*
+  ![Proven practices](https://strategy.data.gov/assets/img/posts/2019-07-28-image004.png "Proven practices") 
+
+
+  *Federal Agencies’ Proven Practices for Address Data Collection and Management*
 
 
   Three proven practices were common to all the federal agencies that participated:
