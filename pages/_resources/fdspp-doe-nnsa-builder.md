@@ -80,6 +80,7 @@ details: >-
 
   ![BUILDER Component Lifecyle Condition Curve](../../assets/media/2019-07-21-image001.png "BUILDER Component Lifecyle Condition Curve")
 
+
   *BUILDER Component Lifecyle Condition Curve.*
 
 
@@ -104,6 +105,7 @@ details: >-
 
 
   ![BUILDER - CMMS Integration through SPIRE](../../assets/media/2019-07-21-image002.png "BUILDER - CMMS Integration through SPIRE")
+
 
   *BUILDER - CMMS Integration through SPIRE.*
 
