@@ -48,6 +48,7 @@ details: >-
 
   ![A picture of the paper-based version of the FNS-742 form](../../assets/media/2019-05-17-image001.png "A picture of the paper-based version of the FNS-742 form")
 
+
   *Figure 1. A picture of the paper-based version of the FNS-742 form. Section 4 (shown here) collects the number of students on applications approved for school meal benefits. There are on average 2 students per application reported by school districts, in line with the average number of kids per household in the US. Yet implausibly high student to application ratios are often reported, even as high as 50 in some instances – an obvious error. The additional checks FNS developed attempts to correct this and other errors.*
 
 
