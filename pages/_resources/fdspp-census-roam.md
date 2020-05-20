@@ -54,6 +54,7 @@ details: >-
 
   ![LRS is credible](../../assets/media/2019-07-14-image001.png "LRS is credible")
 
+
   *A comparison of Low Response Scores with actual 2010 Census return rates reveals the high credibility of the LRS as a predictor of census tracts with high levels of non-self-responding households. Washington DC census tracts are depicted here. ([Public Opinion Quarterly, Volume 81, Issue 1, 1 March 2017, Pages 144–156](https://doi.org/10.1093/poq/nfw040))*
 
 
@@ -84,6 +85,7 @@ details: >-
 
 
   ![LRS of a tract on ROAM)](../../assets/media/2019-07-14-image002.png "LRS of a tract on ROAM")
+
 
   *Selecting a census tract on the Response Outreach Area Mapper reveals its LRS, an indication of how likely any household is to not self-respond to a Census Bureau survey, along with socioeconomic and demographic characteristics within that census tract.*
 
