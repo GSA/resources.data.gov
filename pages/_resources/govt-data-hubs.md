@@ -1,7 +1,17 @@
 ---
+resource_name: Government Data Hubs
+slug: govt-data-hubs
+description: A list of Federal agency open data hubs, including USDA, HHS, NASA,
+  and many others.
+source: data.gov
+category: Case studies & examples
+tags:
+  - open data
+policy_tags: ""
+format: ""
 details: >+
   
-  ### [Department of Agriculture](http://www.usda.gov/data/) ([2](http://www.usda.gov/wps/portal/usda/usdahome?navid=DATA_STATISTICS))
+  ### [Department of Agriculture](http://www.usda.gov/data/)
 
   * [Economic Research Service](http://www.ers.usda.gov/data-products.aspx)
 
@@ -232,19 +242,9 @@ details: >+
 
   * [VolunteeringInAmerica.gov](http://www.volunteeringinamerica.gov/data.cfm)
 
-policy_tags: ""
-resource_name: Government Data Hubs
-slug: govt-data-hubs
-description: A list of Federal agency open data hubs, including USDA, HHS, NASA,
-  and many others.
-source: data.gov
-category: Case studies & examples
-tags:
-  - open data
-format: ""
 examples: ""
+link: ""
 layout: resource
 toc: true
 publish: false
-link: ""
 ---
