@@ -49,8 +49,6 @@ details: >-
 
   ### What to Document -- Datasets and Web APIs
 
-  -------------------------------------
-
 
   A dataset is an identifiable collection of structured data objects unified by some criteria (authorship, subject, scope, spatial or temporal extent...). A catalog is a collection of descriptions of datasets; each description is a metadata record. The intention of a data catalog is to facilitate data access by users who are first interested in a particular kind of data, and upon finding a fit-for-purpose dataset, will next want to know how to get the data.
 
