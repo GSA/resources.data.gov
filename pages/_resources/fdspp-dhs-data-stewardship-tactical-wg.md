@@ -49,7 +49,7 @@ details: >-
   This approach–addressing surface-level problems by tracing them back to their process and accountability origins–became standard operating procedure for the DSTWG. The group went on to develop the DHS Standard Tables, data assets shared across DHS systems as a ‘single source of truth,’ which in turn proved helpful in identifying data practices not aligned at every level of the enterprise. The Department-wide nature of the DHS Standard Tables grabbed the attention of previously non-participating data practitioners, drawing them to the group and the coalescing ‘data community’ at DHS.
 
 
-  > “The initial goal was, and still is, to ensure everyone is speaking the same language (standards and glossaries), create data ownership (source and stewards), and to stop viewing data quality and integrity issues in a negative way, but rather as an opportunity to improve our information.” ~Jen Kish
+  > “The initial goal was, and still is, to ensure everyone is speaking the same language (standards and glossaries), create data ownership (source and stewards), and to stop viewing data quality and integrity issues in a negative way, but rather as an opportunity to improve our information.” — Jen Kish
 
 
   If the group’s name, which emphasized tactical work, was a commitment to address concrete issues, then its first projects represented an early down payment on that commitment. By solving concrete problems, the DSTWG earned trust and credibility with cross-Department stakeholders and attracted new initiative proposals in the process.
@@ -61,7 +61,7 @@ details: >-
   In the years since its founding, the DSTWG’s mandate has expanded. The group has built tools to help colleagues wrangle data, assemble data sharing agreements, and complete other tasks related to solving not just the technical, but also the legal and practical challenges involved in maximizing value from data. The group is currently moving these tools off of the Department intranet and into Collibra, software that will support various elements of Departmental data governance, such as data cataloging, metadata management, reference materials, policy documents, data usage monitoring, and data sharing.
 
 
-  ![A flier from a 2018 DSTWG training sessions shows topics and featured speaker.](../../assets/media/2018-12-13-image003.png "A flier from a 2018 DSTWG training sessions shows topics and featured speaker.")\
+  ![A flier from a 2018 DSTWG training sessions shows topics and featured speaker.](../../assets/media/2018-12-13-image003.png "A flier from a 2018 DSTWG training sessions shows topics and featured speaker.")
 
   *A flier from a 2018 DSTWG training sessions shows topics and featured speaker.*
 
@@ -78,7 +78,7 @@ details: >-
   The DSTWG’s work supports officials at every stage of the data lifecycle: the clerk capturing survey responses, the operator responsible for records management, the developer setting up an API call, and the people who need to share, report, or understand Department data. The DSTWG issues annual surveys to prioritize the needs of these diverse stakeholders and determine its high-level agenda for the subsequent year. Publishing the results of the survey is an important way to ‘close the loop,’ ensuring the community sees how the group is shaping its work in response to stakeholder requests.
 
 
-  ![Snapshot of results from a DSTWG-administered survey to the broader data community.](../../assets/media/2018-12-13-image004.png "Snapshot of results from a DSTWG-administered survey to the broader data community.")\
+  ![Snapshot of results from a DSTWG-administered survey to the broader data community.](../../assets/media/2018-12-13-image004.png "Snapshot of results from a DSTWG-administered survey to the broader data community.")
 
   *Snapshot of results from a DSTWG-administered survey to the broader data community.*
 
