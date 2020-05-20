@@ -52,7 +52,7 @@ details: >-
   ![A conceptual diagram of OpenEI showing Information Community, and Data supported with a Wiki, Linked Open Data, and Open Government Standards](../../assets/media/2019-06-28-image004.png "A conceptual diagram of OpenEI showing Information Community, and Data supported with a Wiki, Linked Open Data, and Open Government Standards.")
 
 
-  Users on OpenEI can view, edit, add, and download data for free. OpenEI has more than 1,700 datasets, both acquired and generated, across all major sectors, such as geothermal, wind, water, solar, biomass, hydrogen, buildings and smart grid. It also enables the development of derived data like the Utility Rate Database (URDB), contributed data, and data catalogs. More can be found at[openei.org/wiki/Data](https://openei.org/wiki/Data).
+  Users on OpenEI can view, edit, add, and download data for free. OpenEI has more than 1,700 datasets, both acquired and generated, across all major sectors, such as geothermal, wind, water, solar, biomass, hydrogen, buildings and smart grid. It also enables the development of derived data like the Utility Rate Database (URDB), contributed data, and data catalogs. More can be found at [openei.org/wiki/Data](https://openei.org/wiki/Data).
 
 
   OpenEI was created using open-source technology, like Semantic Media Wiki, as the base platform and employs a custom data access feature that provides access to the public and connects data with external platforms (like Data.gov). NREL calls this custom and reusable code “XDR” (aka. Customized Data Repository), which has similar functionality to CKAN, the powerful open source data portal platform. Thanks to this approach, many developers have been able to build applications on OpenEI (e.g, GDR, RAPID and the Map of U.S. Wind Farms, as mentioned above).
@@ -61,7 +61,7 @@ details: >-
   OpenEI became an internationally trusted source of energy data, especially for data related to renewable energy and energy efficiency. Over the period of May 2018 to April 2019, OpenEI has 2.46 million pageviews, referred in over 3,000 Facebook articles, over 21,500 downloads, and 831, 600 users from every single country on Earth.
 
 
-  > “OpenEI is at the vanguard of the Federal Government’s efforts to increase transparency, portability, and usability of information produced at the National Laboratories. The OpenEI team, at the National Renewable Energy Laboratory, is the best in class with exceptional knowledge, skills, and experience. They are my go-to team when I need to develop federated or distributable information solutions for customers across the Nation.”\
+  > “OpenEI is at the vanguard of the Federal Government’s efforts to increase transparency, portability, and usability of information produced at the National Laboratories. The OpenEI team, at the National Renewable Energy Laboratory, is the best in class with exceptional knowledge, skills, and experience. They are my go-to team when I need to develop federated or distributable information solutions for customers across the Nation.”
 
   > — Rob Bectel, Senior Program Analyst, the Office of Technology Transitions (OTT)
 
