@@ -49,17 +49,20 @@ details: >-
   The NIGMS AI team created a four-tiered algorithm corresponding to the NIGMS’ organizational structure, with each descending level (tier) more granular than the previous one. Tier 1 is the NIH Institute and Center level and determines if an application is relevant to the mission of NIGMS or not. Assuming an application is indeed relevant to the NIGMS mission, it is then referred to one of NIGMS’ three Scientific Divisions. Underlying these Divisions are eight Scientific Branches. Therefore, at the most granular level, each application is assigned to one of NIGMS’ Scientific Branches and specifically to a PM located therein.
 
 
-  ![Tier 2 maps applications to one of NIGMS’ three Scientific Divisions](../../assets/media/2019-06-14-image001.jpg "Tier 2 maps applications to one of NIGMS’ three Scientific Divisions")\
+  ![Tier 2 maps applications to one of NIGMS’ three Scientific Divisions](../../assets/media/2019-06-14-image001.jpg "Tier 2 maps applications to one of NIGMS’ three Scientific Divisions")
+
 
   *Tier 2 maps applications to one of NIGMS’ three Scientific Divisions*
 
 
-  ![Tier 3 maps applications to one NIGMS’ eight Scientific Branches](../../assets/media/2019-06-14-image002.jpg "Tier 3 maps applications to one of NIGMS’ eight Scientific Branches")\
+  ![Tier 3 maps applications to one NIGMS’ eight Scientific Branches](../../assets/media/2019-06-14-image002.jpg "Tier 3 maps applications to one of NIGMS’ eight Scientific Branches")
+
 
   *Tier 3 maps applications to one of NIGMS’ eight Scientific Branches*
 
 
-  ![Tier 4 maps applications to one of NIGMS’ forty Program Managers](../../assets/media/2019-06-14-image003.jpg "Tier 4 maps applications to one of NIGMS’ forty Program Managers")\
+  ![Tier 4 maps applications to one of NIGMS’ forty Program Managers](../../assets/media/2019-06-14-image003.jpg "Tier 4 maps applications to one of NIGMS’ forty Program Managers")
+
 
   *Tier 4 maps applications to one of NIGMS’ forty Program Managers*
 
@@ -79,7 +82,7 @@ details: >-
   Given these successes, the NLP ML algorithm is now functionally integrated with existing NIGMS grant application web-based systems and is run nightly to process new applications. Thanks to this integration, the average referral time for an application has been cut from 2-3 weeks to less than one day. Automating the initial application referral process also provides more standardized results, ensuring that institutional knowledge of grant referrals is maintained regardless of staffing changes while simultaneously allowing human experts to focus more of their time on high value work.
 
 
-  > The work Nate and his colleagues are doing using natural language processing and machine learning is amazing. It’s a great example of how taking the initiative to adapt cutting-edge technologies for our business processes can make government operations significantly more efficient and effective.\
+  > The work Nate and his colleagues are doing using natural language processing and machine learning is amazing. It’s a great example of how taking the initiative to adapt cutting-edge technologies for our business processes can make government operations significantly more efficient and effective.
 
   > — Dr. Jon Lorsch, NIGMS Director
 
@@ -119,7 +122,7 @@ details: >-
 
   The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
 examples: ""
-link: https://strategy.data.gov/proof-points/2019/06/14/leveraging-ai-for-business-process-automation-nih/
+link: ""
 layout: resource
 toc: true
 publish: false
