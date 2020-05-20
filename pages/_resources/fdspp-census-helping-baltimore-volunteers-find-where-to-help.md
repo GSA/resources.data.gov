@@ -31,6 +31,7 @@ details: >-
 
   ![A screenshot of the DEVOPL project](../../assets/media/2019-04-26-image001.png "DEVOPL jumps off from the realization that there is a mismatch between where litter is worst and where volunteer groups tend to visit") 
 
+
   *DEVOPL jumps off from the realization that there is a mismatch between where litter is worst and where volunteer groups tend to visit.*
 
 
@@ -65,6 +66,7 @@ details: >-
 
 
   ![A map of convenience store locations](../../assets/media/2019-04-26-image002.png "Convenience store locations are used to predict areas of prevalent litter") 
+
 
   *Convenience store locations are used to predict areas of prevalent litter*
 
