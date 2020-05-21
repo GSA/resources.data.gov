@@ -73,9 +73,9 @@ details: >-
   Before the team could turn the prototype into a production-ready tool, however, they had to win the approval and enthusiasm of Census Bureau leadership. They quickly learned the importance of crafting a non-technical elevator speech, along with examples to help make the case. Without clear communication to leadership about the benefits of the project, it would have been impossible to secure the budget to procure hardware and complete the certification for the platform used to build ROAM. Showing a prototype tool wasn’t just about attracting the attention of senior level management. It was also useful to get the reaction of people whose work could directly benefit from the creation of this tool.
 
 
-  > “We spent a lot of time presenting and demonstrating the tool around the building, showing it to various smaller groups of people to get reactions. Some of these reactions served to better the tool, and others served to strengthen the argument for its creation.”
+  > “We spent a lot of time presenting and demonstrating the tool around the building, showing it to various smaller groups of people to get reactions. Some of these reactions served to better the tool, and others served to strengthen the argument for its creation.”  
 
-  > — Suzanne McArdle (Cartographic Products and Services Branch, Census Bureau)
+  > *— Suzanne McArdle (Cartographic Products and Services Branch, Census Bureau)*
 
 
   ### ROAM empowers stakeholders, inside and outside of federal government
@@ -102,9 +102,9 @@ details: >-
   With each new user, the Census Bureau gains another perspective on how ROAM can be improved. At one conference, an advocate for young children highlighted four variables that could be included in the LRS regression to improve its accuracy, including the percentage of children without health insurance in a census tract and the percentage of three- and four-year-olds enrolled in school.
 
 
-  > “As we roll this out, we don’t just hear from users saying they are using ROAM to answer their questions, but also telling us what correlates they’d like added. We are being guided by our users as to how we can add value as we move along.”
+  > “As we roll this out, we don’t just hear from users saying they are using ROAM to answer their questions, but also telling us what correlates they’d like added. We are being guided by our users as to how we can add value as we move along.”  
 
-  > — Kathleen Kephart (Center for Behavioral Science Methods, Census Bureau)
+  > *— Kathleen Kephart (Center for Behavioral Science Methods, Census Bureau)*
 
 
   The LRS is also bound for updates. The 2020 Census will feature new response modes, including the internet, leading to challenges in adapting the LRS to that mode, but also creating opportunities for calibrating it further. The Census Bureau has also been looking into providing confidence intervals to the LRS, helping practitioners understand how strong its estimates are for any given census tract.
