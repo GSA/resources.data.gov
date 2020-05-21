@@ -38,9 +38,9 @@ details: >-
   But even as the Registry proved effective in stopping unwanted sales calls by compliant companies, the advance of new telecommunications technologies began to make it possible for scammers and illegal telemarketers to easily call people from anywhere in the world at very little cost. In the year following the Registry’s launch, the FTC received about 580,000 complaints about unwanted calls, and by 2012 that number had soared to 3.8 million.
 
 
-  > “Scammers have altered their randomization patterns to be faster…using more numbers with fewer calls for example. To combat this, the industry needs to use many data points to make decisions about call activity. As a component of analytics and machine learning, user feedback (complaints) can be very useful as hints as to what might be going on for a given phone number. However, that information has to be captured quickly and ingested into the various solutions as soon as possible to be effective. Moving from monthly to daily makes a big difference.”
+  > “Scammers have altered their randomization patterns to be faster…using more numbers with fewer calls for example. To combat this, the industry needs to use many data points to make decisions about call activity. As a component of analytics and machine learning, user feedback (complaints) can be very useful as hints as to what might be going on for a given phone number. However, that information has to be captured quickly and ingested into the various solutions as soon as possible to be effective. Moving from monthly to daily makes a big difference.”  
 
-  > — Kent Welch, Chief Data Officer - First Orion
+  > *— Kent Welch, Chief Data Officer - First Orion*
 
 
   ### Collaborating to find an innovative solution
@@ -61,9 +61,9 @@ details: >-
   In 2012, the FTC began making the caller ID numbers contained in millions of unwanted call complaints available for use by call-blockers. This was an unconventional move – the FTC collects complaints from the public primarily for investigation and enforcement purposes but did not typically release that information. But agency leadership saw that, just as technological advances were driving the problem of increased unwanted calls, technology would be a critical part of the solution for reducing unwanted calls.
 
 
-  > “We’ve leveraged the FTC’s daily complaint data to improve our TrueSpam scores which help identify robocallers, telemarketers, scammers, and other un-wanted calls. Specifically, as a relatively large independent data source, the FTC’s data has assisted us in validating new data sources, methods and algorithms, and helped us improve our real-time robocall detection methods.”
+  > “We’ve leveraged the FTC’s daily complaint data to improve our TrueSpam scores which help identify robocallers, telemarketers, scammers, and other un-wanted calls. Specifically, as a relatively large independent data source, the FTC’s data has assisted us in validating new data sources, methods and algorithms, and helped us improve our real-time robocall detection methods.”  
 
-  > — Greg Blumstein, Founder & CEO - TrueCNAM
+  > *— Greg Blumstein, Founder & CEO - TrueCNAM*
 
 
   ### Fine Tuning the Data Feed
@@ -72,9 +72,9 @@ details: >-
   Initially, unwanted call data was released every two weeks, and only the date of the unwanted call and the originating phone number was released. However, through continued dialogue with call-blocking companies, the agency learned that more data was needed and with much greater frequency. The FTC’s bi-weekly data releases became insufficient for call blockers to optimize their algorithms. Fraudsters had learned to evade call blocking by switching phone numbers frequently – using a number for just days or even just hours. Call blockers needed to match this pace but risked blocking legitimate numbers. With more information about the calls, they could become more aggressive in blocking calls without a corresponding increase in false positives.
 
 
-  > “DNC complaint data provides an important signal used in RoboKiller’s call blocking algorithm. The spammers continuously update their tactics, so any data the call blocking industry can integrate to improve accuracy is valuable. Complaint data tells a story from the end customers perspective that helps us understand and learn how the telemarketers evolve their methods and messages over time.”
+  > “DNC complaint data provides an important signal used in RoboKiller’s call blocking algorithm. The spammers continuously update their tactics, so any data the call blocking industry can integrate to improve accuracy is valuable. Complaint data tells a story from the end customers perspective that helps us understand and learn how the telemarketers evolve their methods and messages over time.”  
 
-  > — Ethan Garr, SVP of Strategic Growth - RoboKiller
+  > *— Ethan Garr, SVP of Strategic Growth - RoboKiller*
 
 
   ### National Do Not Call Registry® Complaints by Year
@@ -98,9 +98,9 @@ details: >-
   With the automated process, the agency also began releasing specific categories of data about each complaint to provide richer detail than before. The consumer’s city and state and an indicator of whether the call was a robocall were relatively simple additions to the data released. But call blockers also needed an entirely new field identifying the subject matter of the call. Adding a new field to a consumer-facing form generally requires potentially costly corresponding changes to the back end of a database. FTC’s data analysts experimented in a newly available analytics sandbox to arrive at a creative solution to collect and store this information without any changes to the back end. Their code, again written in Python, appends data collected in a new dropdown field in the complaint form to an existing general comments field in the back end of the database. The data are then automatically isolated and extracted as part of the daily data pull. This solution is estimated to have saved the agency tens of thousands of dollars.
 
 
-  > “The key to winning the war against robocalls is having fast, robust data. Having daily access to the FTC's DNC complaint data with no strings attached provides a huge benefit to the entire robocall blocking industry.”
+  > “The key to winning the war against robocalls is having fast, robust data. Having daily access to the FTC's DNC complaint data with no strings attached provides a huge benefit to the entire robocall blocking industry.”  
 
-  > — Aaron Foss, Founder - Nomorobo
+  > *— Aaron Foss, Founder - Nomorobo*
 
 
   Today, the FTC’s database of consumer complaints about unwanted calls is the most robust in the country. In 2018 alone, the FTC received 5.8 million complaints from consumers about unwanted calls, and about 65 percent were robocalls (defined under FTC rules as calls using prerecorded messages). Industry members have noted that FTC data are tremendously important in helping them to adapt their detection and blocking algorithms in real-time. By giving call-blockers the ability to rapidly incorporate these data into their solutions, the FTC has converted consumer complaints into fuel for industry solutions aimed at solving the problem. There are a multitude of call blocking apps, devices, and built-in services to block calls in the marketplace today. There is more work to be done, but public sector data paired with private sector ingenuity is working to stem the tide.
