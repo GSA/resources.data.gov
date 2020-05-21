@@ -84,7 +84,10 @@ details: >-
   The DAT team saw that the tagger model could be reused in other systems to alleviate these problems, facilitating more consistent tagging and data exploration. To enable this reuse and improve ease of access to the tagging models, they created a web service with a friendly user-interface and Application Programming Interface (API). The interface allows for quick and easy testing of the tagger while the API enables programmatic use of the tagger.
 
 
-  ![A diagram depicts the process for creating the approximately 7,000 keyword tagging models](../../assets/media/2019-05-28-image002.png "A diagram depicts the process for creating the approximately 7,000 keyword tagging models")*This diagram depicts the process for creating the approximately 7,000 keyword tagging models. The models are used to create a service which gives the end user (seen here as a laptop) access to the models’ predictions.*
+  ![A diagram depicts the process for creating the approximately 7,000 keyword tagging models](../../assets/media/2019-05-28-image002.png "A diagram depicts the process for creating the approximately 7,000 keyword tagging models")
+
+
+  *This diagram depicts the process for creating the approximately 7,000 keyword tagging models. The models are used to create a service which gives the end user (seen here as a laptop) access to the models’ predictions.*
 
 
   The tagger API was quickly applied to different text systems. For example, the NASA Open Innovation (OI) Program developed a WordPress plugin that uses the tagger API to automatically tag blog posts. The tagger expands the number of tags on blog posts over the typical number of human-generated tags, making posts easier to find and encouraging exploration of the site. After some refinements are made, OI plans to release this plugin to all NASA WordPress site administrators.
