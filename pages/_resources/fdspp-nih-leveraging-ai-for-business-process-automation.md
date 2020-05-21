@@ -82,9 +82,9 @@ details: >-
   Given these successes, the NLP ML algorithm is now functionally integrated with existing NIGMS grant application web-based systems and is run nightly to process new applications. Thanks to this integration, the average referral time for an application has been cut from 2-3 weeks to less than one day. Automating the initial application referral process also provides more standardized results, ensuring that institutional knowledge of grant referrals is maintained regardless of staffing changes while simultaneously allowing human experts to focus more of their time on high value work.
 
 
-  > The work Nate and his colleagues are doing using natural language processing and machine learning is amazing. It’s a great example of how taking the initiative to adapt cutting-edge technologies for our business processes can make government operations significantly more efficient and effective.
+  > The work Nate and his colleagues are doing using natural language processing and machine learning is amazing. It’s a great example of how taking the initiative to adapt cutting-edge technologies for our business processes can make government operations significantly more efficient and effective.  
 
-  > — Dr. Jon Lorsch, NIGMS Director
+  > *— Dr. Jon Lorsch, NIGMS Director*
 
 
   ### Next Steps and Lesson Learned
