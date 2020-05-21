@@ -66,11 +66,9 @@ details: >-
   The SBA’s FY 2019 update to the ELA recaps lessons learned through its FY 2018 evaluations and notes plans to build upon its work with the HUBZone program. In this way, the agency has pursued an agile approach to evaluating HUBZone and other programs; one that yields intermediate results and actionable insights.
 
 
-  > “Often, once an evaluation is completed, it leads to other, more in-depth questions, that need to be answered. We keep finding more pieces to the puzzle. The evidence becomes clearer and evaluations are used to support decisions.”
+  > “Often, once an evaluation is completed, it leads to other, more in-depth questions, that need to be answered. We keep finding more pieces to the puzzle. The evidence becomes clearer and evaluations are used to support decisions.”  
 
-  > — Jason Bossie (Director, Office of Program Performance, Analysis, and Evaluation)
-
-  >
+  > *— Jason Bossie (Director, Office of Program Performance, Analysis, and Evaluation)*
 
 
   ### Outside help
@@ -79,9 +77,9 @@ details: >-
   The HUBZone evaluation and similar efforts demonstrated that short-term, affordable evaluations can shed light on crucial evidence-related questions. There are, however, instances when questions linked with SBA’s strategic goals are unanswerable with limited internal resources. The SBA has built partnerships with stakeholders outside the agency to support its evaluations. Many research universities and other stakeholders with skill sets in research and evaluation can provide support. 
 
 
-  > “Leverage partnerships and identify groups and associations with an interest in your policies and programs. Many universities have specialized schools that focus on your policy areas. With these partnerships, data can be shared that benefits both organizations. Your agency can receive support to help answer key policy and programmatic questions while the researchers may be able to leverage an agency’s administrative data to answer key theoretical questions to support their research.”
+  > “Leverage partnerships and identify groups and associations with an interest in your policies and programs. Many universities have specialized schools that focus on your policy areas. With these partnerships, data can be shared that benefits both organizations. Your agency can receive support to help answer key policy and programmatic questions while the researchers may be able to leverage an agency’s administrative data to answer key theoretical questions to support their research.”  
 
-  > — Jason Bossie (Director, Office of Program Performance, Analysis, and Evaluation)
+  > *— Jason Bossie (Director, Office of Program Performance, Analysis, and Evaluation)*
 
 
   ### Completing the circle
