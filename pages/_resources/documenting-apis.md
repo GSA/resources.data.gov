@@ -31,15 +31,11 @@ details: >-
 
   ### Machine Readable API Documentation
 
-  --------------------------------------------------
-
 
   For APIs that also have machine readable documentation (like [Swagger](https://github.com/swagger-api/swagger-spec#readme), [RAML](http://raml.org/), [API Blueprint](https://apiblueprint.org/), [HAL](http://stateless.co/hal_specification.html), [Hydra](http://www.w3.org/ns/hydra/spec/latest/core/), etc) it can be specified with `describedBy` and `describedByType`. The URL for the machine readable documentation should be specified by `describedBy` and `describedByType` should be a media type that identifies the format of the machine readable documentation.
 
 
   ### Media Types for Machine Readable API Documentation
-
-  --------------------------------------------------
 
 
   These media types should be used for the `describedByType` field along with the URL to the machine readable documentation itself using the `describedBy` field. This should not be confused with the `format` field which should be "API" for an API and `mediaType` which should be blank for an API.
@@ -58,14 +54,12 @@ details: >-
 
   ### Reference Standardized API Specifications
 
-  --------------------------------------------------
 
   Some APIs may implement a common standard such as WMS, WFS, or Open311. If this is an established standard, use the canonical URI for the standard as the value for the `conformsTo` field in the same distribution object where the API is listed.
 
 
   ### Example of an API listing in a data.json file
 
-  --------------------------------------------------
 
   ~~~~
 
