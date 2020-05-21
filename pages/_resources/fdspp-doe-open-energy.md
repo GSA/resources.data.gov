@@ -61,9 +61,9 @@ details: >-
   OpenEI became an internationally trusted source of energy data, especially for data related to renewable energy and energy efficiency. Over the period of May 2018 to April 2019, OpenEI has 2.46 million pageviews, referred in over 3,000 Facebook articles, over 21,500 downloads, and 831, 600 users from every single country on Earth.
 
 
-  > “OpenEI is at the vanguard of the Federal Government’s efforts to increase transparency, portability, and usability of information produced at the National Laboratories. The OpenEI team, at the National Renewable Energy Laboratory, is the best in class with exceptional knowledge, skills, and experience. They are my go-to team when I need to develop federated or distributable information solutions for customers across the Nation.”
+  > “OpenEI is at the vanguard of the Federal Government’s efforts to increase transparency, portability, and usability of information produced at the National Laboratories. The OpenEI team, at the National Renewable Energy Laboratory, is the best in class with exceptional knowledge, skills, and experience. They are my go-to team when I need to develop federated or distributable information solutions for customers across the Nation.”  
 
-  > — Rob Bectel, Senior Program Analyst, the Office of Technology Transitions (OTT)
+  > *— Rob Bectel, Senior Program Analyst, the Office of Technology Transitions (OTT)*
 
 
   ### OEDI – Cutting Edge Open Data Initiative
