@@ -80,9 +80,9 @@ details: >-
   Bit by bit, the team organized data so that it could be funneled into a web tool facilitating search and retrieval of research award related documents. The tool represented an important wrung on the ladder to an all-encompassing PPBE view, but it also served another important function - it allowed the team to share its work with a much larger group of stakeholders, who could then pitch in to help highlight inconsistencies and errors.
 
 
-  > The data standdown played a critical role in focusing the entire command on the importance of clean and connected data to our R&D mission. Getting a better understanding of our data is critical to helping us achieve a holistic view of our portfolio. Modifying our business processes has enabled us to move toward a data-driven culture that supports ONR investments and priorities.
+  > The data standdown played a critical role in focusing the entire command on the importance of clean and connected data to our R&D mission. Getting a better understanding of our data is critical to helping us achieve a holistic view of our portfolio. Modifying our business processes has enabled us to move toward a data-driven culture that supports ONR investments and priorities.  
 
-  > — Dr. David E. Walker, Research and Development Portfolio Director, Office of Naval Research
+  > *— Dr. David E. Walker, Research and Development Portfolio Director, Office of Naval Research*
 
 
   ### Fix the present, but keep the future in mind
