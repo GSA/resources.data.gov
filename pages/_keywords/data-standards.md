@@ -8,7 +8,7 @@ header: >-
   **We are currently working to develop a data standards repository in response to [Action 20 of the Federal Data Strategy](https://strategy.data.gov/action-plan/#action-20-develop-a-data-standards-repository), which calls for a data standards repository to accelerate the creation and adoption of data standards across agencies.**  
   
   
-  Please join the conversation and provide your input on the following two questions:
+  Please join the conversation and provide your input on the following two questions:  
 
   1) [What types of content would you like to see included in this data standards repository?](https://github.com/GSA/resources.data.gov/issues/157)  
 
