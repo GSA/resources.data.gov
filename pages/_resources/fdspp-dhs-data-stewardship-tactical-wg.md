@@ -49,7 +49,9 @@ details: >-
   This approach–addressing surface-level problems by tracing them back to their process and accountability origins–became standard operating procedure for the DSTWG. The group went on to develop the DHS Standard Tables, data assets shared across DHS systems as a ‘single source of truth,’ which in turn proved helpful in identifying data practices not aligned at every level of the enterprise. The Department-wide nature of the DHS Standard Tables grabbed the attention of previously non-participating data practitioners, drawing them to the group and the coalescing ‘data community’ at DHS.
 
 
-  > “The initial goal was, and still is, to ensure everyone is speaking the same language (standards and glossaries), create data ownership (source and stewards), and to stop viewing data quality and integrity issues in a negative way, but rather as an opportunity to improve our information.” — Jen Kish
+  > “The initial goal was, and still is, to ensure everyone is speaking the same language (standards and glossaries), create data ownership (source and stewards), and to stop viewing data quality and integrity issues in a negative way, but rather as an opportunity to improve our information.”  
+
+  > *— Jen Kish*
 
 
   If the group’s name, which emphasized tactical work, was a commitment to address concrete issues, then its first projects represented an early down payment on that commitment. By solving concrete problems, the DSTWG earned trust and credibility with cross-Department stakeholders and attracted new initiative proposals in the process.
@@ -103,7 +105,9 @@ details: >-
   Your agency can learn from the DSTWG experience at DHS. There may be a data community already active at your agency and, if so, join! If not, try convening one yourself – and do not be afraid to start small! Make a commitment to unify, build trust, learn together, and support one another. Demonstrate responsiveness by surveying your colleagues about which tools and training would help their programs improve. Share those results and make sure you respond to them with concrete action aimed at serving your colleagues’ needs. While you help work through their challenges, you will have a great opportunity to demonstrate the finer points of good data management!
 
 
-  > “It is amazing to witness every other week what happens when you see people empowered and moving in sync, always willing to step up, and in, to support each other.” — Jen Kish
+  > “It is amazing to witness every other week what happens when you see people empowered and moving in sync, always willing to step up, and in, to support each other.”  
+
+  > *— Jen Kish*
 
 
   ### Postscript
