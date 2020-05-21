@@ -91,9 +91,9 @@ details: >-
   Together, they built an API accessible over the web. Hooking up to this API, state systems can tap into a far more rigorous and always up-to-date set of checks to highlight erroneous entries to those at the school district level entering the data into the software. States do not need to change vendors, and vendors do not need to update their offerings to keep up with FNS validation changes. Meanwhile, the FNS team can update the central source of validation rules and be confident that these rules will immediately be accessible to the state-level software systems. Perhaps the most attractive aspect of this approach is that none of this restructuring alters the workflow for district-level personnel – there is no learning curve or new training needed.
 
 
-  > “We are piggybacking on the process they created, and we can add many more checks than they currently employ without adding burden.”
+  > “We are piggybacking on the process they created, and we can add many more checks than they currently employ without adding burden.”  
 
-  > – Whitney Peters
+  > *– Whitney Peters*
 
 
   ### Next steps
