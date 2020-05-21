@@ -83,7 +83,9 @@ details: >-
   With their data-backed problem definition in hand, the team went to work building a custom-coded tool that would map out communities’ cleanup needs along with indicators of current service level. It wasn’t long, however, before Peter stepped back to reassess. Over the course of the preceding months, his team (volunteers themselves) had experienced some attrition, shrinking from ten to three, forcing the team to re-prioritize the work. They all had experience working with ESRI’s ArcGIS and, in fact, had done most of their initial problem mapping in the software. They made the decision to abandon a custom-built codebase and design the system on top of ArcGIS and Google Sheets. The result wasn’t as feature-rich as they initially planned, but it certainly got the job done in a more streamlined way. The tool would not only help volunteer groups better align their efforts with the level of predicted litter in communities, but it would improve over time, as it encouraged groups to log their activities with the tool and keep it up to date.
 
 
-  > “I often found the short timeline stressful, but it did force us to make the time-saving, use-what-you-have decisions so important in creating an MVP.” — Peter Brusoe
+  > “I often found the short timeline stressful, but it did force us to make the time-saving, use-what-you-have decisions so important in creating an MVP.”  
+
+  > *— Peter Brusoe*
 
 
   ### What’s next
