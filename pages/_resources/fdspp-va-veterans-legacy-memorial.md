@@ -67,7 +67,9 @@ details: >-
   As a sub-agency under the Department of Veterans Affairs (VA), NCA had no IT accounts of the size needed for this type of large project. And Departmental IT dollars for the year were already allocated to other efforts. The MVP proved an important demonstration tool for Dr. Carpenter and his small team to convince leadership to reprogram funding for the project, as the leaders were on board with the objective of repurposing existing NCA data to make veteran memorial information accessible to a much wider community. Once leadership provided the go-ahead, Dr. Carpenter was able to assemble a team of dedicated professionals, and the pace of development sped up considerably.
 
 
-  > “It’s a very aggressive timeline – but I think that’s a good thing, if it had been 5 years it would have turned out like any other government project – bloated and delayed. The short timeline, however, has forced us to inject clarity into the process and get a quick consensus to move forward. We have been hitting every benchmark in our dev timeline early.” — Dr. Carpenter
+  > “It’s a very aggressive timeline – but I think that’s a good thing, if it had been 5 years it would have turned out like any other government project – bloated and delayed. The short timeline, however, has forced us to inject clarity into the process and get a quick consensus to move forward. We have been hitting every benchmark in our dev timeline early.”  
+
+  > *— Dr. Carpenter*
 
 
   ### The challenge and opportunity of building on a legacy system
