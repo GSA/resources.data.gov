@@ -272,6 +272,18 @@ collections:
         hint: "autogenerate a table of contents"
         required: true
 
+      - label: "header"
+        name: "header"
+        widget: "markdown"
+        hint: "optional header, will display as warning blurb"
+        required: false
+
+      - label: "header_title"
+        name: "header_title"
+        widget: "string"
+        hint: "optional header title"
+        required: false
+
   - name: "policy_tags"
     label: "Policy Tags"
     create: true
