@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-slug: privacy-act-call-detail
+slug: memo-privacy-act-prwora
 publish: true
 resource_name: "OMB Memorandum: Privacy Act Responsibilities for Implementing
   the Personal Responsibility and Work Opportunity Reconciliation Act of 1996"
