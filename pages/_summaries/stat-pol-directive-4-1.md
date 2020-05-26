@@ -2,11 +2,11 @@
 policy_tags: ""
 toc: true
 layout: resource
-slug: stat-pol-directive-4
+slug: bulletin-17-01
 publish: true
-resource_name: OMB Bulletin No. 17-01, Revised Delineations of Metropolitan
+resource_name: "OMB Bulletin 17-01: Revised Delineations of Metropolitan
   Statistical Areas, Micropolitan Statistical Areas, and Combined Statistical
-  Areas, and Guidance on Uses of the Delineations of These Areas
+  Areas, and Guidance on Uses of the Delineations of These Areas"
 description: "This bulletin establishes revised delineations for the Nation's
   Metropolitan Statistical Areas, Micropolitan Statistical Areas, and Combined
   Statistical Areas. The bulletin also provides delineations of Metropolitan
