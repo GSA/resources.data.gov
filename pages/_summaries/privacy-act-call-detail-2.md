@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-slug: privacy-act-call-detail
+slug: privacy-act-computer-matching
 publish: true
 resource_name: Computer Matching and Privacy Protection Amendments of 1990 and
   the Privacy Act of 1974
