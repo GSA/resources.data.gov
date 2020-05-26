@@ -10,7 +10,7 @@ description: >-
   As part of an ongoing effort to improve the quality, objectivity, utility, and
   integrity of information collected
 
-  and disseminated by the Federal Government, OMB is issuing revised Standards and Guidelines for Statistical Surveys. Dated October 25, 2018. 
+  and disseminated by the Federal Government, OMB is issuing revised Standards and Guidelines for Statistical Surveys. Dated September 22, 2006. 
 source: Office of Management and Budget
 category: Policy
 tags:
