@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-slug: privacy-act-call-detail
+slug: privacy-protection-act-computer-matching
 publish: true
 resource_name: Interpreting the Provisions of the Computer Matching and Privacy
   Protection Act of 1988 — Final guidance
