@@ -12,7 +12,7 @@ description: >-
 
   statistical units in the design, collection, processing, editing, compilation, storage, analysis, release, and
 
-  dissemination of statistical information. Dated October 25, 2018. 
+  dissemination of statistical information. Dated December 2, 2014. 
 source: Office of Management and Budget
 category: Policy
 tags:
