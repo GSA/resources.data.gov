@@ -9,7 +9,7 @@ description: The text of H.R.4174 - Foundations for Evidence-Based Policymaking
   Act of 2018, known as the Evidence Act. Title II of the Evidence Act (OPEN
   Government Data Act) describes the requirements for CDOs, CDO Council, and
   this repository.
-source: congress.gov
+source: Public law
 category: Policy
 tags:
   - open data
