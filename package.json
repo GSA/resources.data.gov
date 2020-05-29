@@ -45,7 +45,7 @@
     "watch:sass": "gulp watch-sass",
     "snyk:protect": "snyk protect",
     "snyk:test": "snyk test",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk:protect"
   },
   "author": "Data.gov <datagovhelp@gsa.gov>",
   "license": "CC0-1.0",
