@@ -4,12 +4,13 @@
   a {
     @include u-padding-y("2");
     @include u-text("bold");
+    @include u-text("primary");
 
     &.usa-current {
       @include u-text("ink");
 
       &:after {
-        @include u-bg("secondary-light");
+        @include u-bg("primary");
       }
     }
 
@@ -17,6 +18,10 @@
       background-color: transparent;
       @include u-text("secondary");
     }
+  }
+
+  .usa-h2 > a {
+    padding-left: 0;
   }
 }
 
@@ -35,6 +40,8 @@
   a {
     @include u-padding-y("1");
     @include u-text("normal");
+    @include u-text("ink");
+    padding-left: 1rem;
   }
 
   .usa-sidenav__item {

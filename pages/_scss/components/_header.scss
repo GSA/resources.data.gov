@@ -1,12 +1,6 @@
 .usa-logo {
   img {
-    width: 252px;
-  }
-
-  @include at-media("mobile-lg") {
-    img {
-      width: auto;
-    }
+    width: 75%;
   }
 }
 
@@ -14,7 +8,7 @@
 .usa-header--extended .usa-nav__link:hover:after,
 .usa-header--extended [aria-expanded=true]:after {
   @include at-media($theme-navigation-width) {
-    @include u-bg("secondary-light");
+    background-color: #112F4E;
     bottom: -1px;
   }
 }
@@ -84,9 +78,6 @@
 }
 
 .usa-navbar {
-  @include at-media-max("desktop") {
-    border-color: color("base");
-  }
   @include u-height("10");
 }
 

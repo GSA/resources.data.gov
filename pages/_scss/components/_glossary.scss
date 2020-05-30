@@ -1,5 +1,6 @@
 #glossary {
   transition: right 0.2s;
+  background-color: #112f4e;
 
   &[aria-hidden="true"] {
     right: -20rem;
@@ -20,6 +21,10 @@
     @include u-line-height("sans", 6);
     @include u-margin-y(2);
     @include u-width("full");
+
+    a {
+      @include u-text('base-light');
+    }
   }
 
   .glossary__term {
@@ -44,7 +49,7 @@
 
 [data-term] {
   border-bottom: 1px dotted;
-  border-color: color("secondary-light");
+  border-color: color("primary-vivid");
   color: inherit;
   cursor: pointer;
   text-decoration: none;
@@ -55,5 +60,5 @@
 }
 
 [data-term]:hover {
-  @include u-bg("secondary-lightest");
+  background-color: #f7f9fa;
 }

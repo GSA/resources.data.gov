@@ -41,3 +41,7 @@ Sanity check the generated site.
 Check for broken links.
 
     $ npm run qa
+
+## Netlify
+
+This site uses Netlify to manage its editorial workflow. Content is added and edited in collections via the Netlify interface, which can be accessed by approved contributors at [resources.data.gov/admin](https://resources.data.gov/admin). Collections are managed via the config.yml file in pages/admin. 

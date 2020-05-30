@@ -8,7 +8,7 @@
     "accessible-autocomplete": "^1.6.2",
     "autoprefixer": "^9.5.1",
     "browserify": "^16.2.3",
-    "concurrently": "^4.1.0",
+    "concurrently": "^5.0.1",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "fuse.js": "^3.4.4",
@@ -25,9 +25,9 @@
     "lodash.assign": "^4.2.0",
     "path": "^0.12.7",
     "smooth-scroll": "^16.0.3",
-    "snyk": "^1.296.1",
+    "snyk": "^1.332.1",
     "uswds": "^2.0.1",
-    "uswds-gulp": "github:uswds/uswds-gulp",
+    "uswds-gulp": "github:uswds/uswds-gulp#5e32f1b99279a6e50ad875e66cc4cb77b456c390",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "watchify": "^3.11.1"
@@ -43,8 +43,9 @@
     "test": "bundle exec htmlproofer --check-html --disable-external _site",
     "watch:js": "gulp watch-js",
     "watch:sass": "gulp watch-sass",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "snyk:protect": "snyk protect",
+    "snyk:test": "snyk test",
+    "prepare": "npm run snyk:protect"
   },
   "author": "Data.gov <datagovhelp@gsa.gov>",
   "license": "CC0-1.0",

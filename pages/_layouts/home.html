@@ -3,25 +3,67 @@ layout: default
 class: home
 ---
 
-<div class="bg-primary text-white margin-bottom-3 tablet:margin-bottom-6" id="main-content">
+<div class="bg-primary text-white margin-bottom-1 tablet:margin-bottom-1" id="main-content">
   <div class="grid-container padding-y-3 tablet:padding-y-6">
-    <div class="measure-1 font-heading-md tablet:font-heading-xl line-height-serif-4 margin-bottom-4">
+    <div class="measure-1 font-heading-md tablet:font-heading-xl line-height-serif-4 margin-bottom-4 text-semibold">
       {{page.tagline}}
     </div>
-    <a href="{{page.button.href | relative_url}}" class="usa-button usa-button--secondary width-auto">{{page.button.text}}</a>
+    <a href="{{page.button.href | relative_url}}" class="usa-button usa-button--outline usa-button--inverse width-auto">{{page.button.text}}</a>
   </div>
 </div>
-<div class="grid-container  margin-bottom-3 tablet:margin-bottom-6 usa-layout__docs-main">
-  
-  <div class="grid-row grid-gap">
-  {% for card in page.cards %}
-    <div class="tablet:grid-col-4 display-flex margin-bottom-205 tablet:margin-bottom-0">
-      <a href="{{ card.href | relative_url}}" class="border border-base radius-sm padding-x-5 padding-y-3 tablet:padding-5 hover:bg-base-lightest hover:shadow-2 text-no-underline">
-        <h3 class="margin-top-0 text-primary-vivid icon-arrow font-heading-sm">{{ card.heading }}</h3>
-        <p class="text-ink margin-bottom-0 line-height-sans-4">{{ card.body }}</p>
-      </a>
-    </div>
-  {% endfor %}
+
+<div class="grid-container margin-bottom-3 tablet:margin-bottom-6 usa-layout__docs-main">
+  <div>
+    {{ content }}
   </div>
-  {{ content }}
+
+  <div class="grid-row grid-gap">
+
+    <div class="desktop:grid-col-3 padding-205">
+      <div class="usa-layout__docs-sidenav margin-top-4 desktop:margin-top-0 padding-top-4 display-none desktop:padding-top-0 desktop:display-block desktop:order-first border-base border-top desktop:border-top-0">
+        <ul class="usa-sidenav">
+          <li class="usa-sidenav__item usa-h2"><a href="#browse-by-category">Browse resources by category</a></li>
+          <li class="usa-sidenav__item usa-h2"><a href="#browse-by-keyword">Browse resources by keyword</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="desktop:grid-col-9 padding-205">
+      <h1 id="browse-by-category" class="margin-top-0 padding-top-2 text-primary-dark">Browse resources by category</h1>
+      <!-- rely on site navigation to guide which resources show up -->
+      {% assign resources = site.data.navigation | where: "text", "Resources" | first %}
+      {% for resource in resources.children %}
+        {% assign category = site.categories | where: "category_name", resource.text | first %}
+        {% if category.show_on_front_page %}
+          <div class="display-flex flex-column padding-left-0 padding-205 tablet:margin-bottom-0 border-bottom">
+            <h2 class="margin-top-0 margin-bottom-0">{{ category.category_name }}</h2>
+            <p class="text-ink line-height-sans-4">{{ category.description }}</p>
+            <a href="{{ category.url | relative_url }}">
+              Browse {{ category.category_name }} &gt;
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="grid-row grid-gap">
+    <div class="desktop:grid-col-3">
+    </div>
+    <div class="desktop:grid-col-9 padding-top-205">
+      <h1 id="browse-by-keyword" class="padding-bottom-205 text-primary-dark">Browse resources by keyword</h1>
+      <div class="display-flex flex-row flex-wrap">
+        {% for tag in site.keywords %}
+          <div class="mobile-lg:grid-col-6 tablet:grid-col-6 desktop:grid-col-4">
+            <div class="border-primary-vivid border-2px radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-05 display-flex flex-justify-center text-center">
+              <a href="{{ tag.url | relative_url }}" class="text-no-underline display-flex flex-align-center">
+                {{ tag.keyword_name }}
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
 </div>

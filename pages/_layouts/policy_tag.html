@@ -1,0 +1,30 @@
+---
+layout: toc
+show_resource: true
+---
+
+<h1 class="margin-top-0 padding-bottom-205">Results for "{{ page.policy_name }}"</h1>
+
+{% assign all_resources = site.resources | concat: site.summaries | where: "policy_tags",
+page.policy_name | sort: "resource_name" | group_by: "category" | sort: "name" %}
+
+<div>
+  {% for group in all_resources %}
+    {% if group.items %}
+      <h2 id="{{ group.name | slugify }}" class="resource-category margin-top-0 text-uppercase">
+        {{ group.name }}
+      </h2>
+      {% for resource in group.items %}
+        <div class="no_toc_section border-bottom border-base">
+          {% include resource_block.html resource=resource %}
+        </div>
+      {% endfor %}
+      <p class="padding-bottom-4">
+        {% assign category = site.categories | where: "category_name", group.name | first %}
+        <a href="{{ category.url | relative_url }}">
+          See all resources in {{ category.category_name }} &gt;
+        </a>
+      </p>
+    {% endif %}
+  {% endfor %}
+</div>

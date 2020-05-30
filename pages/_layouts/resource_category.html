@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% assign category = site.categories | where: "category_name", page.category_name | first %}
+
+<div class="category-introduction usa-layout-docs usa-section" id="main-content">
+
+  <div class="bg-primary text-white padding-bottom-4 padding-top-3">
+    <div class="grid-container">
+      <div class="grid-row">
+        <h1 class="margin-bottom-0">{{ page.category_name }}</h1>
+      </div>
+      <div class="grid-row">
+        <div class="grid-col-8">
+          <p class="usa-prose">
+            {{ category.description | default: "No introductory text provided for this category." }}
+          </p>
+        </div>
+        <div class="grid-col-4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    {% include breadcrumb.html %}
+    <div class="grid-row grid-gap">
+      {% include sidenav.html %}
+      <div class="usa-layout__docs-main desktop:grid-col-12">
+
+        {% assign resources = site.resources | concat: site.summaries | where: "category", page.category_name | sort: "resource_name" %}
+
+        {% for resource in resources %}
+          <div class="border-bottom border-base">
+            {% include resource_block.html resource=resource %}
+          </div>
+        {% else %}
+          <p>No categories match the category <code>{{ page.category }}</code>.</p>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>
