@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: 18F/resources.data.gov
+  repo: GSA/resources.data.gov
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
   preview_context: federalist/build
