@@ -2,7 +2,7 @@
 policy_tags: ""
 toc: true
 layout: resource
-slug: cipsea-2002-implementation-guidance
+slug: cipsea-implementation-guidance
 publish: true
 resource_name: Implementation Guidance for the Title V of the E-Government Act,
   Confidential Information Protection and Statistical Efficiency Act of 2002
