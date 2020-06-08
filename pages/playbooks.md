@@ -6,7 +6,7 @@ primary_nav_section: Resources
 
 There are a number of playbook relevant to federal management and use, including the following:
 
-The [Assessing Data Skills Playbook]({{ site.baseurl }}assets/documents/assessing-data-skills-playbook.pdf) supports the Federal Data Strategy by helping agencies get started with assessing data skills. 
+The [Assessing Data Skills Playbook]({{ site.baseurl }}/assets/documents/assessing-data-skills-playbook.pdf) supports the Federal Data Strategy by helping agencies get started with assessing data skills. 
 
 The [Data Governance Playbook]({{ site.baseurl }}/assets/documents/fds-data-governance-playbook.pdf) supports the Federal Data Strategy by helping agencies get started with prioritizing data governance and assessing maturity. 
 
