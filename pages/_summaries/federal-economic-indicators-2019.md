@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: federal-economic-indicators-2019
@@ -8,7 +8,7 @@ resource_name: Schedule of Release Dates for Principal Federal Economic Indicato
 description: Provides a schedule of release dates for principal Federal economic
   indicators for 2019.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (4 pages)

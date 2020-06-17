@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: foia-memo
@@ -9,7 +9,7 @@ description: "Office of the Attorney General memo that issues guidelines for the
   implementation of the Freedom of Information Act (FOIA). Dated March 19, 2009.
   "
 source: Department of Justice
-category: Policy
+category: Guidance
 tags:
   - FOIA
 format: PDF (3 pages, 1.2 MB)

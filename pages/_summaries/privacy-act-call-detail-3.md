@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: memo-privacy-act-prwora
@@ -14,7 +14,7 @@ description: The Personal Responsibility and Work Opportunity Reconciliation Act
   "routine use" will be added to the agency's Privacy Act system of records
   covering payroll information. Dated November 3, 1997.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - privacy
 format: PDF (3 pages)

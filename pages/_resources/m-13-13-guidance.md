@@ -9,7 +9,7 @@ source: Office of Management and Budget / General Services Administration
 category: Data management & governance
 tags:
   - open data
-policy_tags:
+guidance_tags:
   - M-13-13
 format: ""
 details: >

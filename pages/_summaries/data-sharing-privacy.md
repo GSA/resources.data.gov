@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: m-11-02-data-sharing-privacy
@@ -10,7 +10,7 @@ description: "Office of Management and Budget memo that encourages Federal
   complies with applicable privacy laws, regulations, and polices. Dated
   November 3, 2010. "
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - open data
   - data sharing

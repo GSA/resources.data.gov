@@ -15,7 +15,7 @@ tags:
   - data sharing
   - process redesign
   - Federal Data Strategy
-policy_tags:
+guidance_tags:
   - FDS Principle 03 Promote Transparency
   - FDS Principle 05 Harness Existing Data
   - FDS Principle 08 Invest in Learning

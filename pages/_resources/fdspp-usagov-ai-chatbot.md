@@ -10,7 +10,7 @@ category: Case studies & examples
 tags:
   - AI
   - Federal Data Strategy
-policy_tags:
+guidance_tags:
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders
   - FDS Practice 03 Champion Data Use
   - FDS Principle 02 Exercise Responsibility

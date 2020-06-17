@@ -13,7 +13,7 @@ tags:
   - data sharing
   - data visualization
   - Federal Data Strategy
-policy_tags:
+guidance_tags:
   - FDS Principle 01 Uphold Ethics
   - FDS Principle 04 Ensure Relevance
   - FDS Principle 05 Harness Existing Data

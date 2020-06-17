@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: stat-policy-directive-15
@@ -16,7 +16,7 @@ description: >-
 
   and ‘‘Native Hawaiian or Other Pacific Islander,’’ and (2) changing the term ‘‘Hispanic’’ to ‘‘Hispanic or Latino.’’ Dated October 30, 1997. 
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (9 pages)

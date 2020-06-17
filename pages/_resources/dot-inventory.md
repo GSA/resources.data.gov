@@ -12,7 +12,7 @@ category: Case studies & examples
 tags:
   - data inventory
   - open data
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >-
   *Originally published January 8, 2013*

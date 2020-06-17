@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: cipsea-2002-implementation-guidance
@@ -13,7 +13,7 @@ description: >-
 
   using CIPSEA and to clarify the circumstances under which CIPSEA can be used. Dated June 15, 2007. 
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (17 pages)

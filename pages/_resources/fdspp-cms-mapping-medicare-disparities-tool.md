@@ -11,7 +11,7 @@ tags:
   - geospatial
   - Federal Data Strategy
   - open data
-policy_tags:
+guidance_tags:
   - FDS Principle 01 Uphold Ethics
   - FDS Principle 03 Promote Transparency
   - FDS Principle 05 Harness Existing Data

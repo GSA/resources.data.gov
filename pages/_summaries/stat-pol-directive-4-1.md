@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: bulletin-17-01
@@ -13,7 +13,7 @@ description: "This bulletin establishes revised delineations for the Nation's
   Divisions as well as delineations of New England City and Town Areas. Dated
   August 15, 2017. "
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
   - geospatial

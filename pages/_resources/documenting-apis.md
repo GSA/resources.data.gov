@@ -11,7 +11,7 @@ tags:
   - DCAT
   - Project Open Metadata Schema
   - open data
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >-
   Agencies should list private, internal, and public-facing web APIs as part of

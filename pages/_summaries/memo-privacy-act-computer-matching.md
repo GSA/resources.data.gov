@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: memo-privacy-act-computer-matching
@@ -13,7 +13,7 @@ description: Every two years the President is required to submit a report
   memorandum is a reminder and provides instructions as to how to report. Dated
   June 1998.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - privacy
 format: PDF (8 pages)

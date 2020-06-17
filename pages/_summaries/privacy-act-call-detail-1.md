@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: privacy-protection-act-computer-matching
@@ -12,7 +12,7 @@ description: These guidelines implement the provisions of the Computer Matching
   in performing certain types of computerized matching programs. Dated June 19,
   1989.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - privacy
 format: PDF (12 pages)

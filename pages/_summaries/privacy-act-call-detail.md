@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: privacy-act-call-detail
@@ -11,7 +11,7 @@ description: Pursuant to its responsibilities under section 6 of the Privacy Act
   and use information relating to their employees use of long distance telephone
   systems. Dated April 20, 1987.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - privacy
 format: PDF (4 pages)

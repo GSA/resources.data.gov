@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>
-  {{ page.category_name | default: page.policy_name | default: page.keyword_name | default: page.resource_name | default: page.title }} | {{ site.title }}
+  {{ page.category_name | default: page.guidance_name | default: page.keyword_name | default: page.resource_name | default: page.title }} | {{ site.title }}
 </title>
 
 {% assign description = page.description | default: site.description %}

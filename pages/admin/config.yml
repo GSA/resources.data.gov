@@ -66,14 +66,14 @@ collections:
         searchFields: ["keyword_name"]
         required: false
 
-      - label: "policy tags"
-        name: "policy_tags"
+      - label: "guidance tags"
+        name: "guidance_tags"
         widget: "relation"
-        collection: "policy_tags"
+        collection: "guidance_tags"
         multiple: true
-        hint: "policy tags for this resource"
-        valueField: "policy_name"
-        searchFields: ["policy_name"]
+        hint: "guidance tags for this resource"
+        valueField: "guidance_name"
+        searchFields: ["guidance_name"]
         required: false
 
       - label: "format"
@@ -174,14 +174,14 @@ collections:
         searchFields: ["keyword_name"]
         required: false
 
-      - label: "policy tags"
-        name: "policy_tags"
+      - label: "guidance tags"
+        name: "guidance_tags"
         widget: "relation"
-        collection: "policy_tags"
+        collection: "guidance_tags"
         multiple: true
-        hint: "policy tags for this resource summary"
-        valueField: "policy_name"
-        searchFields: ["policy_name"]
+        hint: "guidance tags for this resource summary"
+        valueField: "guidance_name"
+        searchFields: ["guidance_name"]
         required: false
 
       - label: "format"
@@ -284,17 +284,17 @@ collections:
         hint: "optional header title"
         required: false
 
-  - name: "policy_tags"
-    label: "Policy Tags"
+  - name: "guidance_tags"
+    label: "Guidance Tags"
     create: true
-    folder: "pages/_policy_tags/"
+    folder: "pages/_guidance_tags/"
     slug: "{{fields.slug}}"
 
     fields:
-      - label: "policy name"
-        name: "policy_name"
+      - label: "guidance name"
+        name: "guidance_name"
         widget: "string"
-        hint: "name of the policy keyword"
+        hint: "name of the guidance keyword"
         required: true
 
       - label: "slug"
@@ -306,8 +306,8 @@ collections:
       - label: "layout"
         name: "layout"
         widget: "select"
-        options: ["policy_tag"]
-        default: "policy_tag"
+        options: ["guidance_tag"]
+        default: "guidance_tag"
         hint: "the layout template to use"
         required: true
 

@@ -1,5 +1,5 @@
 ---
-policy_tags:
+guidance_tags:
   - FDS Practice 03 Champion Data Use
   - FDS Practice 04 Use Data to Guide Decision-Making
   - FDS Practice 09 Connect Data Functions Across Agencies

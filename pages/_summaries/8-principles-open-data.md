@@ -1,5 +1,5 @@
 ---
-policy_tags:
+guidance_tags:
   - M-13-13
 toc: true
 layout: resource

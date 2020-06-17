@@ -19,7 +19,7 @@ tags:
   - data management
   - data analysis
   - Federal Data Strategy
-policy_tags:
+guidance_tags:
   - FDS Principle 05 Harness Existing Data
   - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions
   - FDS Practice 04 Use Data to Guide Decision-Making

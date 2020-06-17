@@ -11,7 +11,7 @@ tags:
   - data management
   - inventory.data.gov
   - open data
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >+
   ### Introduction

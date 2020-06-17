@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: cipsea-2002
@@ -12,7 +12,7 @@ description: >-
 
   processes by establishing a Federal Chief Information Officer within the Office of Management and Budget, and by establishing a broad framework of measures that require using Internet-based information technology to enhance citizen access to Government information and services, and for other purposes. Dated December 17, 2002. 
 source: Public law
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (72 pages)

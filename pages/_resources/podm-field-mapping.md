@@ -15,7 +15,7 @@ tags:
   - DCAT
   - Project Open Metadata Schema
   - open data
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >-
   This section provides further background and resources to assist agencies in

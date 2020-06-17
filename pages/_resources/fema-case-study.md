@@ -16,7 +16,7 @@ source: Federal Emergency Management Agency
 category: Case studies & examples
 tags:
   - data sharing
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >-
   *Originally published October 24, 2012*

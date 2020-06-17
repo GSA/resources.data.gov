@@ -102,17 +102,17 @@ layout: toc
       </div>
     {% endif %}
 
-    {% if page.policy_tags != "" %}
+    {% if page.guidance_tags != "" %}
       <div class="grid-row display-flex flex-column padding-top-205 padding-bottom-205 border-bottom border-base">
-        <h2 id="policy-references" class="margin-top-0 text-primary-dark">Policy references</h2>
+        <h2 id="guidance-references" class="margin-top-0 text-primary-dark">Guidance references</h2>
         <div>
           <ul>
-            {% if page.policy_tags %}
-              {% assign policy_tags = page.policy_tags | sort %}
-              {% for tag in policy_tags %}
+            {% if page.guidance_tags %}
+              {% assign guidance_tags = page.guidance_tags | sort %}
+              {% for tag in guidance_tags %}
                 {% assign slug_tag = tag | slugify %}
                 <li>
-                  <a href="{{ "/policy_tags/" | append: slug_tag | relative_url }}">
+                  <a href="{{ "/guidance_tags/" | append: slug_tag | relative_url }}">
                     {{ tag }}
                   </a>
                 </li>

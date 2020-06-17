@@ -8,7 +8,7 @@ source: data.gov
 category: Data management & governance
 tags:
   - open data
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >-
   On any given month, there are multiple events listed on

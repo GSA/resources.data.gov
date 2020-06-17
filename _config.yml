@@ -59,7 +59,7 @@ collections:
     output: true
   keywords:
     output: true
-  policy_tags:
+  guidance_tags:
     output: true
 
 page_gen:

@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: evidence-act
@@ -10,7 +10,7 @@ description: The text of H.R.4174 - Foundations for Evidence-Based Policymaking
   Government Data Act) describes the requirements for CDOs, CDO Council, and
   this repository.
 source: Public law
-category: Policy
+category: Guidance
 tags:
   - open data
   - FOIA

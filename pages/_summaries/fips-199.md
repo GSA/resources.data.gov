@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: fips-199
@@ -10,7 +10,7 @@ description: "Federal Information Processing Standards publication by the
   National Institute of Standards and Technology (NIST) that contains standards
   for the categorization of federal information systems. "
 source: National Institute of Standards and Technology
-category: Policy
+category: Guidance
 tags:
   - data standards
   - security

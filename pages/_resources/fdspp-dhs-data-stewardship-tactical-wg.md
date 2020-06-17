@@ -11,7 +11,7 @@ tags:
   - data governance
   - data management
   - Federal Data Strategy
-policy_tags:
+guidance_tags:
   - FDS Principle 03 Promote Transparency
   - FDS Principle 08 Invest in Learning
   - FDS Principle 09 Develop Data Leaders

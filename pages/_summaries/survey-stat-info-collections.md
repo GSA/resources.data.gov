@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: survey-stat-info-collections
@@ -13,7 +13,7 @@ description: "The Paperwork Reduction Act of 1995 (PRA) requires agencies to
   packages,” for surveys used for general purpose statistics or as part of
   program evaluations or research studies. Updated October 2016. "
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
   - PRA

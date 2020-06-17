@@ -8,7 +8,7 @@ category: Data tools
 tags:
   - API
   - data validation
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >+
   ReVal (Reusable Validation Library) is an open source Django App for
