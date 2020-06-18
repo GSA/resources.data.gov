@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: m-07-23-supplement-2
@@ -9,7 +9,7 @@ description: This data model is intended to be used in conjunction with the
   Section 1512 of American Recovery and Reinvestment Act. Provided for quarter
   ending September 30, 2009.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (23 pages, 211 KB)

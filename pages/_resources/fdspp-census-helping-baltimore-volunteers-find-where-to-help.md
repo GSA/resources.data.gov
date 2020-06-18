@@ -15,7 +15,7 @@ tags:
   - geospatial
   - data sharing
   - Federal Data Strategy
-policy_tags:
+guidance_tags:
   - FDS Principle 04 Ensure Relevance
   - FDS Principle 05 Harness Existing Data
   - FDS Practice 33 Promote Wide Access

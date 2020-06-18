@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: memo-biennial-reporting-requirements-privacy-act-computer-matching
@@ -10,7 +10,7 @@ description: Provides guidance on the biennial reporting requirements for
   Privacy Act Officers under the Privacy Act and the Computer Matching and
   Privacy Protection Act. Dated June 21, 2000.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - privacy
 format: PDF (2 pages)

@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: schema-dot-og

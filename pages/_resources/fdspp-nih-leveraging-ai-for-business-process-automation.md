@@ -14,7 +14,7 @@ tags:
   - data cleaning
   - process redesign
   - AI
-policy_tags:
+guidance_tags:
   - FDS Principle 05 Harness Existing Data
   - FDS Principle 07 Demonstrate Responsiveness
   - FDS Practice 02 Assess and Balance the Needs of Stakeholders

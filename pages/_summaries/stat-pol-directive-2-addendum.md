@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: stat-pol-directive-2-addendum
@@ -9,7 +9,7 @@ resource_name: "Statistical Policy Directive No. 2 — Addendum: Standards and
 description: "This Addendum provides Standards and Guidelines for Conducting
   Cognitive Interviews. Dated October 12, 2016. "
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (2 pages)

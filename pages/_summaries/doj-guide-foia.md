@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: doj-guide-foia
@@ -11,7 +11,7 @@ description: The United States Department of Justice Guide to the Freedom of
   exemptions, and litigation considerations. Each section contains a detailed
   analysis of the key judicial opinions issued on the FOIA.
 source: Department of Justice
-category: Policy
+category: Guidance
 tags:
   - FOIA
 format: ""

@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: foia-commitee
@@ -9,7 +9,7 @@ description: This report outlines the Freedom of Information Act (FOIA) Advisory
   Committee's recommendations and best practices for the administration of FOIA.
   Dated April 17, 2018.
 source: National Archives and Records Administration
-category: Policy
+category: Guidance
 tags:
   - open data
   - FOIA

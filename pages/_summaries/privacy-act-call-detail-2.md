@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: privacy-act-computer-matching
@@ -12,7 +12,7 @@ description: >-
 
   1990, which alter the due process provisions of the Computer Matching and Privacy Protection Act of 1988. The guidance also addresses another issue suggested by agencies in reporting to OMB their activities in implementing the Computer Matching and Privacy Protection Act. Dated April 23, 1991.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - privacy
 format: PDF (3 pages)

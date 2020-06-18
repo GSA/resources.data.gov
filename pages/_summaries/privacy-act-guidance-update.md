@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: privacy-act-guidance-update
@@ -14,7 +14,7 @@ description: "This memorandum calls attention to three areas and suggests
   relationship between the exemption provisions of the Privacy Act and those of
   the Freedom of Information Act. Dated May 24, 1985."
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - privacy
   - FOIA

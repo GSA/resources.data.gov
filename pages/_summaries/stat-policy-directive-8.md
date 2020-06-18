@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: stat-policy-directive-8
@@ -12,7 +12,7 @@ description: >-
 
   (individual business locations) by type of economic activity. This announces OMB's adoption of NAICS revisions. Dated August 8, 2016. 
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (2 pages)

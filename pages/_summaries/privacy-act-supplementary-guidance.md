@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: privacy-act-supplementary-guidance
@@ -9,7 +9,7 @@ description: This material is provided to address comments and questions of
   general interest raised in response to OMB's guidelines for implementing of
   section 3 of the Privacy Act of 1974. Dated November 21, 1975.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - privacy
 format: PDF (3 pages)

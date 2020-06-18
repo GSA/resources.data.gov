@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: stat-pol-directive-4
@@ -12,7 +12,7 @@ description: >-
 
   produced by Federal statistical agencies. Dated March 7, 2008. 
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (6 pages)

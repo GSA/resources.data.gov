@@ -15,7 +15,7 @@ tags:
   - data cleaning
   - process redesign
   - Federal Data Strategy
-policy_tags:
+guidance_tags:
   - FDS Principle 05 Harness Existing Data
   - FDS Principle 07 Demonstrate Responsiveness
   - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions

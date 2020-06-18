@@ -11,7 +11,7 @@ tags:
   - open data
   - data sharing
   - Federal Data Strategy
-policy_tags:
+guidance_tags:
   - FDS Principle 04 Ensure Relevance
   - FDS Principle 06 Anticipate Future Uses
   - FDS Practice 05 Prepare to Share
@@ -93,7 +93,7 @@ details: >-
 
   * The WIND Toolkit data include meteorological conditions and turbine power for more than 126,000 sites in the continental United States for the years 2007–2013.
 
-  * The Solar Radiation Database (NSRDB) is a serially complete collection of hourly and half-hourly values of the three most common measurements of solar radiation—global horizontal, direct normal, and diffuse horizontal irradiance—and meteorological data.
+  * The Solar Radiation Database (NSRDB) is a serially complete collection of hourly and half-hourly values of the three most common measurements of solar radiationglobal horizontal, direct normal, and diffuse horizontal irradiance—and meteorological data.
 
 
   ![Visualization of NSRDB and Wind Toolkit in the Cloud)](../../assets/media/2019-06-28-image006.png "Visualization of NSRDB and Wind Toolkit in the Cloud")

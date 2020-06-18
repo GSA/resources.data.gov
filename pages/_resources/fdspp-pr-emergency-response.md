@@ -11,7 +11,7 @@ source: Federal Data Strategy
 category: Case studies & examples
 tags:
   - geospatial
-policy_tags:
+guidance_tags:
   - FDS Principle 07 Demonstrate Responsiveness
   - FDS Principle 10 Practice Accountability
   - FDS Practice 01 Identify Data Needs to Answer Key Agency Questions

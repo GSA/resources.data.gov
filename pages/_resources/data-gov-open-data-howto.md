@@ -12,7 +12,7 @@ tags:
   - open data
   - workforce development
   - data sharing
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >-
   *This guide is primarily for the Open Data Points of Contact (POC) at each

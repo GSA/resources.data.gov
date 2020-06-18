@@ -14,7 +14,7 @@ category: Case studies & examples
 tags:
   - open data
   - API
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >-
   *September 28, 2012*  

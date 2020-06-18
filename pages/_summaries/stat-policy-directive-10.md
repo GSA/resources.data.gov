@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: stat-policy-directive-10
@@ -10,7 +10,7 @@ description: "Announces OMB's final decision for the 2018 revision of
   Statistical Policy Directive No. 10, Standard Occupational Classification
   (SOC).  Dated November 28, 2017. "
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (3 pages)

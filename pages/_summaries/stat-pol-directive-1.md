@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: stat-pol-directive-1
@@ -14,7 +14,7 @@ description: >-
 
   dissemination of statistical information. Dated December 2, 2014. 
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
 format: PDF (8 pages)

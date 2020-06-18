@@ -28,7 +28,7 @@ layout: default
       <div class="usa-layout__docs-sidenav desktop:grid-col-3 margin-top-4 desktop:margin-top-0 padding-top-4 display-none desktop:padding-top-0 desktop:display-block desktop:order-first border-base border-top desktop:border-top-0">
         {% if layout.show_resource %}
           <p class="margin-top-0">
-            Browse "{{ page.keyword_name | default: page.policy_name }}" resources by category:
+            Browse "{{ page.keyword_name | default: page.guidance_name }}" resources by category:
           </p>
         {% endif %}
         {{ content | toc_only }}

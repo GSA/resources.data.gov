@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: fds-action-plan
@@ -13,7 +13,7 @@ description: The Federal Data Strategy provides a common set of data principles
   are essential for establishing processes, building capacity, and aligning
   existing efforts to better leverage data as a strategic asset.
 source: strategy.data.gov
-category: Policy
+category: Guidance
 tags:
   - Federal Data Strategy
 format: ""

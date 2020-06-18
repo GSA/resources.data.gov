@@ -12,7 +12,7 @@ tags:
   - DCAT
   - Project Open Metadata Schema
   - data standards
-policy_tags: ""
+guidance_tags: ""
 format: ""
 details: >-
   {: .vertical-headings}

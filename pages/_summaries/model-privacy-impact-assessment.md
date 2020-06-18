@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: model-privacy-impact-assessment
@@ -12,7 +12,7 @@ description: >-
 
   before engaging the public through third-party websites and applications. The introduction to the model PIA provides additional context for agencies completing an adapted PIA. Dated December 29, 2011.
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - privacy
 format: PDF (14 pages)

@@ -1,5 +1,5 @@
 ---
-policy_tags: ""
+guidance_tags: ""
 toc: true
 layout: resource
 slug: stat-pol-directive-2
@@ -12,7 +12,7 @@ description: >-
 
   and disseminated by the Federal Government, OMB is issuing revised Standards and Guidelines for Statistical Surveys. Dated September 22, 2006. 
 source: Office of Management and Budget
-category: Policy
+category: Guidance
 tags:
   - data standards
   - access
