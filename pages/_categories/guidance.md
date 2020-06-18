@@ -1,8 +1,8 @@
 ---
 category_name: Guidance
-description: Legislation, official memos, regulations, and mandates related to
-  the governance, management, and use of data in the federal government
-primary_nav_section: Resources
+description: Guidance from the Office of Management and Budget on data issues,
+  and other memoranda applicable to federal agencies
 layout: resource_category
+primary_nav_section: Resources
 show_on_front_page: true
 ---
