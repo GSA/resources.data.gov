@@ -1315,6 +1315,6 @@ toc: true
 link to resource: ""
 publish: false
 link: |-
-  * [Metadata Resources](../../podm-field-mapping/)
+  * [Metadata Resources](../podm-field-mapping/)
   * [DCAT](http://www.w3.org/TR/vocab-dcat/)
 ---
