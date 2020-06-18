@@ -1,6 +1,6 @@
 ---
 category_name: Guidance
-description: Guidance from the Office of Management and Budget on data issues
+description: Guidance from the Office of Management and Budget on data issues,
   and other memoranda applicable to federal agencies
 layout: resource_category
 primary_nav_section: Resources
