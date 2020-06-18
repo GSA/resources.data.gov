@@ -123,7 +123,7 @@ details: >+
 
   The Create Dataset page features the metadata following the [Project Open Data metadata Schema Version 1.1.](../dcat-us/)
 
-  ![metadata](../../assets/media/66859801-f864e380-ef59-11e9-8395-adeef909a30f.jpg) 
+  ![metadata](../../assets/media/66859801-f864e380-ef59-11e9-8395-adeef909a30f.jpg)
 
 
   There are examples displayed in each field, and there is also pop-up help information for each field. Full details are on the [Resources.data.gov](../dcat-us/) page. Fields marked by the red asterisk are required.
@@ -150,7 +150,7 @@ details: >+
 
   See the [Redaction and Partial Redaction](https://github.com/GSA/data.gov/wiki/Intentory.data.gov-User-Guide-for-Redaction-and-Partial-Redaction-Feature) feature for more information.
 
-  **Bureau Code/Program Code**. These are required fields following specific formats. Your agency POC should have this information. See the [Resources.data.gov](../resources/dcat-us/) page for more information about these fields.
+  **Bureau Code/Program Code**. These are required fields following specific formats. Your agency POC should have this information. See the [Resources.data.gov](../dcat-us/) page for more information about these fields.
 
   **Contact Name/Email**. Enter the name and email information for the contact for this dataset. Questions about this dataset will be referred to the contact listed.
 
