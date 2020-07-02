@@ -1,4 +1,5 @@
 ---
+permalink: /schemas/dcat-us/v1.1/
 resource_name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
 slug: dcat-us
 description: How to use Project Open Data Metadata Schema guidelines to document
