@@ -1,0 +1,5 @@
+body:before {
+    content: "Please note that this pane does not show an actual site preview; instead, this pane is for previewing data only.";
+    font-size: 1.2em;
+    color: red;
+}

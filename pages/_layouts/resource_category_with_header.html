@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% assign category = site.categories | where: "category_name", page.category_name | first %}
+
+<div class="category-introduction usa-layout-docs usa-section" id="main-content">
+
+  <div class="grid-container">
+    {% include breadcrumb.html %}
+    <div class="grid-row grid-gap">
+      {% include sidenav.html %}
+      <div class="usa-layout__docs-main desktop:grid-col-12">
+
+        {% if category.header %}
+          <div class="margin-top-4 usa-alert usa-alert--warning">
+            <div class="usa-alert__body">
+              <h1 class="usa-alert__heading">{{ category.header_title }}</h1>
+              <p class="usa-alert__text">
+                {{ category.header | markdownify }}
+              </p>
+            </div>
+          </div>
+        {% endif %}
+
+        {% assign resources = site.resources | concat: site.summaries | where: "category", page.category_name | sort: "resource_name" %}
+
+        {% for resource in resources %}
+          <div class="border-bottom border-base">
+            {% include resource_block.html resource=resource %}
+          </div>
+        {% else %}
+          <p>No categories match the category <code>{{ page.category }}</code>.</p>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>

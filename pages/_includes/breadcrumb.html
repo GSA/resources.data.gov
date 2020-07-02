@@ -1,14 +1,14 @@
 {% if page.breadcrumb_nav %}
-
-    <div class="breadcrumb-nav">
-  {% for nav in page.breadcrumb_nav %}
-
-    {% if forloop.first == false %} &gt; {% endif %}
-   
-    {% if nav.url != "" %}<a href="{{ site.baseurl }}{{ nav.url }}">{% endif %}
+  <div class="breadcrumb-nav">
+    {% for nav in page.breadcrumb_nav %}
+      {% if forloop.first == false %} &gt; {% endif %}
+      {% if nav.url != "" %}
+        <a href="{{ site.baseurl }}{{ nav.url }}">
+      {% endif %}
       {{ nav.text | escape }}
-    {% if nav.url != "" %}</a>{% endif %}
-
-  {% endfor %}
-    </div>
+      {% if nav.url != "" %}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
 {% endif %}

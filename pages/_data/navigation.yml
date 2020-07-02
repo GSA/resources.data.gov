@@ -1,24 +1,22 @@
-- text: Strategy
-  url: /strategy/
-- text: Tools
-  url: /tools/
 - text: Resources
   children:
-    - text: Case studies
-      url: /case-studies/
-    - text: Playbooks
-      url: /playbooks/
+    - text: Data management & governance
+      url: /categories/data-management-governance
+    - text: Data tools
+      url: /categories/data-tools
+    - text: Skills development
+      url: /categories/skills-development
     - text: Guidance
-      url: /guidance/
-    - text: Skill builders
-      url: /skill-builders/
-    - text: Standards
-      url: /standards/
+      url: /categories/guidance
+    - text: Case studies & examples
+      url: /categories/case-studies-examples
+- text: Data standards
+  url: /keywords/data-standards
+- text: Communities
+  url: /categories/communities
 - text: About
   children:
-    - text: History
-      url: /history/
-    - text: Requirements
-      url: /requirements/
+    - text: About this repository
+      url: /about/about-this-repository/
     - text: Governance
-      url: /governance/
+      url: /about/governance/

@@ -1,0 +1,319 @@
+backend:
+  name: github
+  repo: GSA/resources.data.gov
+  base_url: https://federalistapp.18f.gov
+  auth_endpoint: external/auth/github
+  preview_context: federalist/build
+  branch: develop
+  use_graphql: true
+
+publish_mode: editorial_workflow
+show_preview_links: true
+
+media_folder: "pages/assets/media"
+public_folder: "/assets/media"
+
+collections:
+  - name: "resources"
+    preview_path: "resources/{{slug}}"
+    label: "Resources"
+    create: true
+    folder: "pages/_resources/"
+    slug: "{{fields.slug}}"
+
+    fields:
+      - label: "name"
+        name: "resource_name"
+        widget: "string"
+        hint: "name of the resource"
+        required: true
+
+      - label: "slug"
+        name: "slug"
+        widget: "string"
+        hint: "slug link (part that comes at the very end of a url)"
+        required: true
+
+      - label: "description"
+        name: "description"
+        widget: "text"
+        hint: "short description of the resource (max 100 words); if possible, include relevance of the resource to this repository"
+        required: true
+
+      - label: "source"
+        name: "source"
+        widget: "string"
+        hint: "who created the resource (organization name or web entity; avoid acronyms"
+        required: true
+
+      - label: "category"
+        name: "category"
+        widget: "relation"
+        valueField: "category_name"
+        searchFields: ["category_name"]
+        hint: "category of the resource"
+        collection: "categories"
+        multiple: false
+        required: true
+
+      - label: "tags"
+        name: "tags"
+        widget: "relation"
+        collection: "keywords"
+        multiple: true
+        hint: "tags for this resource"
+        valueField: "keyword_name"
+        searchFields: ["keyword_name"]
+        required: false
+
+      - label: "guidance tags"
+        name: "guidance_tags"
+        widget: "relation"
+        collection: "guidance_tags"
+        multiple: true
+        hint: "guidance tags for this resource"
+        valueField: "guidance_name"
+        searchFields: ["guidance_name"]
+        required: false
+
+      - label: "format"
+        name: "format"
+        widget: "string"
+        hint: "format or type of resource, can include length — e.g. PDF (45 pages) or Video (21 mins)"
+        required: false
+
+      - label: "details"
+        name: "details"
+        widget: "markdown"
+        hint: "detailed description of the resource or the content of the resource itself"
+        required: false
+
+      - label: "examples"
+        name: "examples"
+        widget: "markdown"
+        hint: "descriptions of or links to how this resource has been used"
+        required: false
+
+      - label: "link"
+        name: "link"
+        widget: "markdown"
+        hint: "link to related content that should be displayed prominently — e.g. link to source code"
+        required: false
+
+      - label: "file"
+        name: "file"
+        widget: "file"
+        media_library:
+          config:
+            multiple: true
+        required: false
+
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["resource"]
+        default: "resource"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "toc"
+        name: "toc"
+        widget: "boolean"
+        default: true
+        hint: "autogenerate a table of contents"
+        required: true
+
+  - name: "summaries"
+    label: "Summaries"
+    create: true
+    folder: "pages/_summaries/"
+    slug: "{{fields.slug}}"
+
+    fields:
+      - label: "name"
+        name: "resource_name"
+        widget: "string"
+        hint: "name of the resource summary"
+        required: true
+
+      - label: "slug"
+        name: "slug"
+        widget: "string"
+        hint: "slug link (part that comes at the very end of a url)"
+        required: true
+
+      - label: "description"
+        name: "description"
+        widget: "text"
+        hint: "short description of the resource (max 100 words); if possible, include relevance of the resource to this repository"
+        required: true
+
+      - label: "source"
+        name: "source"
+        widget: "string"
+        hint: "who created the resource (organization name or web entity; avoid acronyms"
+        required: true
+
+      - label: "category"
+        name: "category"
+        widget: "relation"
+        valueField: "category_name"
+        searchFields: ["category_name"]
+        hint: "category of the resource summary"
+        collection: "categories"
+        multiple: false
+        required: true
+
+      - label: "tags"
+        name: "tags"
+        widget: "relation"
+        collection: "keywords"
+        multiple: true
+        hint: "tags for this resource summary"
+        valueField: "keyword_name"
+        searchFields: ["keyword_name"]
+        required: false
+
+      - label: "guidance tags"
+        name: "guidance_tags"
+        widget: "relation"
+        collection: "guidance_tags"
+        multiple: true
+        hint: "guidance tags for this resource summary"
+        valueField: "guidance_name"
+        searchFields: ["guidance_name"]
+        required: false
+
+      - label: "format"
+        name: "format"
+        widget: "string"
+        hint: "format or type of resource, can include length — e.g. PDF (45 pages) or Video (21 mins)"
+        required: false
+
+      - label: "link"
+        name: "link"
+        widget: "markdown"
+        hint: "link to the resource on external page"
+        required: true
+
+  - name: "categories"
+    label: "Categories"
+    create: true
+    folder: "pages/_categories/"
+    identifier_field: "category_name"
+
+    fields:
+      - label: "name"
+        name: "category_name"
+        widget: "string"
+        hint: "name of the category"
+        required: true
+
+      - label: "description"
+        name: "description"
+        widget: "text"
+        hint: "short description of the category"
+        required: true
+
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["resource_category"]
+        default: "resource_category"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "navigation section"
+        name: "primary_nav_section"
+        widget: "select"
+        options: ["Resources", "Communities", "Data standards"]
+        default: "Resources"
+        hint: "the navigation section this category belongs to"
+        required: true
+
+      - label: "show on front page"
+        name: "show_on_front_page"
+        widget: "boolean"
+        default: true
+        hint: "show this category on the front page?"
+        required: true
+
+  - name: "keywords"
+    label: "Keywords"
+    create: true
+    folder: "pages/_keywords/"
+    slug: "{{fields.slug}}"
+
+    fields:
+      - label: "name"
+        name: "keyword_name"
+        widget: "string"
+        hint: "name of the keyword"
+        required: true
+
+      - label: "slug"
+        name: "slug"
+        widget: "string"
+        hint: "slug link (part that comes at the very end of a url)"
+        required: true
+
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["keyword"]
+        default: "keyword"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "toc"
+        name: "toc"
+        widget: "boolean"
+        default: true
+        hint: "autogenerate a table of contents"
+        required: true
+
+      - label: "header"
+        name: "header"
+        widget: "markdown"
+        hint: "optional header, will display as warning blurb"
+        required: false
+
+      - label: "header_title"
+        name: "header_title"
+        widget: "string"
+        hint: "optional header title"
+        required: false
+
+  - name: "guidance_tags"
+    label: "Guidance Tags"
+    create: true
+    folder: "pages/_guidance_tags/"
+    slug: "{{fields.slug}}"
+
+    fields:
+      - label: "guidance name"
+        name: "guidance_name"
+        widget: "string"
+        hint: "name of the guidance keyword"
+        required: true
+
+      - label: "slug"
+        name: "slug"
+        widget: "string"
+        hint: "slug link (part that comes at the very end of a url)"
+        required: true
+
+      - label: "layout"
+        name: "layout"
+        widget: "select"
+        options: ["guidance_tag"]
+        default: "guidance_tag"
+        hint: "the layout template to use"
+        required: true
+
+      - label: "toc"
+        name: "toc"
+        widget: "boolean"
+        default: true
+        hint: "autogenerate a table of contents"
+        required: true

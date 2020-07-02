@@ -1,0 +1,127 @@
+---
+layout: toc
+---
+<div class="padding-bottom-2">
+  <h1 class="margin-top-0 margin-bottom-0">{{ page.resource_name }}</h1>
+  <div>
+
+    <div class="grid-row display-flex flex-column margin-top-205 padding-bottom-205 border-bottom border-base">
+      <h2 id="overview" class="margin-top-0 text-primary-dark">Overview</h2>
+      <div class="usa-prose">
+        {{ page.description | default: "No description provided." | markdownify }}
+      </div>
+
+    </div>
+
+    <div class="grid-row grid-gap display-flex margin-top-205 no_toc_section">
+
+      {% if page.format == "" %}
+        {% if page.link == "" %}
+          {% assign column_length = "desktop:grid-col-6" %}
+        {% else %}
+          {% assign column_length = "desktop:grid-col-4" %}
+        {% endif %}
+      {% else %}
+        {% if page.link == "" %}
+          {% assign column_length = "desktop:grid-col-4" %}
+        {% else %}
+          {% assign column_length = "desktop:grid-col-3" %}
+        {% endif %}
+      {% endif %}
+
+      <div class="{{ column_length }}">
+        <h3 class="margin-top-0 margin-bottom-0">Source</h3>
+        <div class="resource-markdown-metadata">
+          {{ page.source | default: "No source provided." | markdownify }}
+        </div>
+      </div>
+
+      <div class="{{ column_length }}">
+        <h3 class="margin-top-0 margin-bottom-0">Category</h3>
+        <p class="margin-top-05 margin-bottom-205">
+          {% assign category_slug = page.category | slugify %}
+          <a href="{{ "/categories/" | append: category_slug | relative_url }}">
+            {{ page.category }}
+          </a>
+        </p>
+
+        <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
+        <div class="margin-top-05 margin-bottom-205">
+          {% for tag in page.tags %}
+            <div>
+              {% assign slug_tag = tag | slugify %}
+              <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last != true %},{% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if page.format != "" %}
+        <div class="{{ column_length }}">
+          <h3 class="margin-top-0 margin-bottom-0">Format</h3>
+          <p class="margin-top-05 margin-bottom-205">
+            {{ page.format }}
+          </p>
+        </div>
+      {% endif %}
+
+      {% if page.link != "" %}
+        <div class="{{ column_length }}">
+          <h3 class="margin-top-0 margin-bottom-0">Links</h3>
+          <div class="resource-markdown-metadata">
+            {{ page.link | markdownify }}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if page.file %}
+      <div class="grid-row padding-top-205 padding-bottom-205 border-top border-bottom border-base flex-column">
+        <h2 id="files" class="text-primary-dark">Downloads</h2>
+        <div class="flex-row">
+          <p>
+            <a href="../..{{ page.file }}">{{ page.file }}</a> <i class="fa fa-file"></i>
+          </p>
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="grid-row padding-top-205 padding-bottom-205 border-top border-bottom border-base">
+      <h2 id="details" class="margin-top-0 text-primary-dark">Details</h2>
+      <div>
+        {{ page.details | default: "No details provided." | markdownify }}
+      </div>
+    </div>
+
+    {% if page.examples != "" %}
+      <div class="grid-row padding-top-205 padding-bottom-205 border-bottom border-base">
+        <h2 id="examples" class="margin-top-0 text-primary-dark">Examples</h2>
+        <div>
+          {{ page.examples | markdownify }}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.guidance_tags != "" %}
+      <div class="grid-row display-flex flex-column padding-top-205 padding-bottom-205 border-bottom border-base">
+        <h2 id="guidance-references" class="margin-top-0 text-primary-dark">Guidance references</h2>
+        <div>
+          <ul>
+            {% if page.guidance_tags %}
+              {% assign guidance_tags = page.guidance_tags | sort %}
+              {% for tag in guidance_tags %}
+                {% assign slug_tag = tag | slugify %}
+                <li>
+                  <a href="{{ "/guidance_tags/" | append: slug_tag | relative_url }}">
+                    {{ tag }}
+                  </a>
+                </li>
+              {% endfor %}
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+</div>

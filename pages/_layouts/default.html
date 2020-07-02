@@ -7,20 +7,21 @@
 <html lang="en">
 <!-- <![endif] -->
 
-<head>
-{% include google-analytics.html %}
-{% include meta.html %} {% include styles.html %}
-</head>
+  <head>
+    {% include google-analytics.html %}
+    {% include meta.html %}
+    {% include styles.html %}
+  </head>
 
-<body class="{{ layout.class }} {{ page.class }}">
-  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-  {% include banner.html %}
-  {% include preview-banner.html %}
-  {% include header.html %}
-  {{ content }}
-  {% include footer.html %}
-  {% include glossary.html %}
-  {% include scripts.html %}
-</body>
+  <body class="{{ layout.class }} {{ page.class }}">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    {% include header.html %}
+    <div role="main">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+    {% include glossary.html %}
+    {% include scripts.html %}
+  </body>
 
 </html>

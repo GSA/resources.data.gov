@@ -39,11 +39,21 @@ i.e.
 	font-weight : normal;
 }
 
+.usa-prose {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
 .usa-prose table.vertical-headings th:nth-child(1),
-.usa-prose table.vertical-headings td:nth-child(1), 
+.usa-prose table.vertical-headings td:nth-child(1),
 .table-schema td:nth-child(1) {
-font-weight : bold;	
+font-weight : bold;
 background-color : color('gray-5');
+}
+
+table {
+  @extend .usa-table;
 }
 
 table tr td code {
@@ -135,4 +145,28 @@ ul.schema-fields li {
 
 .usa-section.breadcrumb-page .breadcrumb-nav {
   padding-bottom : 2rem;
+}
+
+nav {
+  background: #f0f0f0;
+}
+
+.fa-external-link-alt {
+  padding-left: .5rem;
+}
+
+.category-introduction {
+  padding-top: 0 !important;
+}
+
+.resource-category {
+  color: #5b616b;
+  border-top: .15rem solid #5b616b;
+  padding-top: .25rem;
+  @include u-font("sans", "md");
+}
+
+.resource-markdown-metadata p {
+  margin-bottom: 1.25rem;
+  margin-top: .25rem;
 }
