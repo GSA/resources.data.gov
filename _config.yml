@@ -27,6 +27,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-toc
+  - jekyll-redirect-from
 source: pages
 
 keep_files:
