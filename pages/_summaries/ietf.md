@@ -3,11 +3,11 @@ guidance_tags:
   - A-119
 toc: true
 layout: resource
-slug: ieft
+slug: ietf
 publish: true
-resource_name: Internet Engineering Task Force (IEFT)
+resource_name: Internet Engineering Task Force (IETF)
 description: "The Internet Engineering Task Force (IETF) is the premier Internet
-  standards body, developing open standards through open processes. IEFT is a
+  standards body, developing open standards through open processes. IETF is a
   large open international community of network designers, operators, vendors,
   and researchers concerned with the evolution of the Internet architecture and
   the smooth operation of the Internet. IETF is one example of the existing
