@@ -11,6 +11,6 @@ category: Data management & governance
 tags:
   - Federal Data Strategy
   - playbook
-format: PDF (14 pages)
+format: PDF (24 pages)
 link: https://resources.data.gov/assets/documents/data-innovation-event-playbook.pdf
 ---
