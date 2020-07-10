@@ -13,6 +13,7 @@ category: Data management & governance
 tags:
   - data governance
   - Federal Data Strategy
+  - playbook
 format: PDF (14 pages)
 link: https://resources.data.gov/assets/documents/fds-data-governance-playbook.pdf
 ---
