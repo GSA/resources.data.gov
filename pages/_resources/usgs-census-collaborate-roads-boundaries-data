@@ -1,0 +1,76 @@
+---
+resource_name: U.S. Geological Survey and U.S. Census Bureau collaborate on national roads and boundaries data
+slug: usgs-census-collaborate-roads-boundaries-data
+description: "It is a well-kept secret that the U.S. Geological Survey and the U.S. Census Bureau were the original two federal agencies to build the first national digital database of roads and boundaries in the United States. The agencies joined forces to develop homegrown computer software and state of the art technologies to convert existing USGS topographic maps of the nation to the points, lines, and polygons that fueled early GIS. Today, the USGS and Census Bureau have a longstanding goal to leverage and use roads and authoritative boundary datasets."
+source: U.S. Geological Survey and U.S. Census Bureau
+category: Case studies & examples
+tags:
+  - data cleaning
+  - data converter
+  - data management
+  - data sharing
+  - data standards
+  - data validation
+  - data visualization
+  - Federal Data Strategy
+  - geospatial
+  - open data
+  - quality
+
+guidance_tags:
+  - FDS Practice 03 Champion Data Use
+  - FDS Practice 05 Prepare to Share
+  - FDS Practice 10 Provide Resources Explicitly to Leverage Data Assets
+  - FDS Practice 17 Recognize the Value of Data Assets
+  - FDS Practice 25 Coordinate Federal Data Assets
+  - FDS Practice 26 Share Data Between State Local and Tribal Governments and Federal Agencies
+  - FDS Practice 33 Promote Wide Access
+  - FDS Practice 36 Leverage Partnerships
+  - FDS Practice 38 Leverage Collaborative Computing Platforms
+  - FDS Principle 05 Harness Existing Data
+
+format: ""
+details: >-
+  *Published July 13, 2020*
+
+
+  ![U.S. Geological Survey and U.S. Census Bureau](../../assets/media/usgs-census-logos.png "U.S. Geological Survey and U.S. Census Bureau")
+
+
+  It is a well-kept secret that the U.S. Geological Survey and the U.S. Census Bureau were the original two federal agencies to build the first national digital database of roads and boundaries in the United States. They did this in partnership, not knowing the full impact that this collaboration would have on Geographic Information System (GIS) industries. Roads and boundaries stored within the Census Bureau’s massive Topologically Integrated Geographic Encoding and Referencing ([TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html)) system originated on the digitizing tables of geographic specialists at the USGS’ and Census Bureau’s offices in the 1980’s. The agencies joined forces to develop homegrown computer software and state of the art technologies to convert existing USGS topographic maps of the nation to the points, lines, and polygons that fueled early GIS. Today, the USGS and Census Bureau have a longstanding goal to leverage and use [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html) roads and authoritative boundary datasets in *[The National Map](https://viewer.nationalmap.gov/advanced-viewer/)*. 
+
+
+  The [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html) system was the first of its kind—a nationwide digital seamless map of roads, boundaries, and hydrographic features—beginning with the 1990 Census, and produced in collaboration between the USGS and Census Bureau. [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html) was the first “big data” government solution to store every level of U.S. geography down to the census block for all states and territories. The system supports data collection and tabulation operations for the Decennial Census, as well as many other censuses and surveys. Today, over 7 million miles of roads are included annually in the Census Bureau’s publicly-available [TIGER/Line shapefile](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) product. The entire 25-terabyte database of geospatial information stretching from coast to coast is updated continuously through a regular infusion of data shared from tribal, state, and local government partnership programs. Cartographic and geographic experts in all industries can access [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html) road and boundary data 24/7, through public websites like [nationalmap.gov](https://www.usgs.gov/core-science-systems/national-geospatial-program/national-map), [census.gov](https://www.census.gov/), [data.gov](https://www.data.gov/), and [geoplatform.gov](https://www.geoplatform.gov/), for a multitude of geographic applications.
+
+
+  [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html) evolved through three decades of digital transformations to become the authoritative national source for roads and boundaries. Sweat equity brings the USGS and Census Bureau together again in close collaboration to improve and disseminate authoritative geospatial data through *[The National Map](https://viewer.nationalmap.gov/advanced-viewer/)*. The two agencies acknowledge that the secret to their success is a mutual and complementary focus on quality. The Census Bureau leverages its partnership data to keep the network accurate and up to date, and the USGS leverages [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html)’s feature layers and attributes to cartographically represent primary roads and boundaries in *[The National Map](https://viewer.nationalmap.gov/advanced-viewer/)* and [US Topo map products](https://www.usgs.gov/core-science-systems/national-geospatial-program/us-topo-maps-america?qt-science_support_page_related_con=0#qt-science_support_page_related_con).
+
+
+  The USGS’ and Census Bureau’s finely-tuned workflow adheres to production schedules surrounding ongoing Census programs and the USGS [National Geospatial Program](https://www.usgs.gov/core-science-systems/national-geospatial-program/us-topo-maps-america?qt-science_support_page_related_con=0). The Census Bureau’s partnership programs provide a steady stream of geospatial updates throughout the decade leading up to the Decennial Census. Each year, the USGS compares the accuracy and completeness of recently modified [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html) road data to transportation and imagery data from *[The National Map](https://viewer.nationalmap.gov/advanced-viewer/)*. After USGS cartographic analysts complete their review, feedback is logged in a tracking database and shared with the Census Bureau’s data production staff to incorporate in their geographic update workflow. The USGS further enhances *[The National Map](https://viewer.nationalmap.gov/advanced-viewer/)* products and services with the inclusion of geospatial data from additional federal partners like the U.S. Forest Service and U.S. National Park Service.
+
+
+  The USGS produces nationwide updated US Topo map products every three years and coordinates its workflow to coincide with the [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html)’s revision cycles. This coordination is critical because both agencies focus on accurate and current transportation data—roads and boundaries change continuously. Recently, adjustments to the feature classification codes for limited-access highways were made in the [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html) system to assure a seamless transfer and representation of data on the USGS cartographic products. Both agencies also maintain state of the art technology and methods for map production to support decision making, scientific missions, census taking, and countless other activities.
+
+
+  The historical and ongoing USGS and Census Bureau partnership for providing open and authoritative geospatial data exemplifies ground-breaking technology and innovation applied to critical geospatial data, map resources, and products. The need for easily accessible geospatial data couldn't be greater. Improvements in roads and boundaries in [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html) and *[The National Map](https://viewer.nationalmap.gov/advanced-viewer/)* is a win-win for these two geospatial agencies whose missions contribute to the National Spatial Data Infrastructure. As the USGS builds *[The National Map](https://viewer.nationalmap.gov/advanced-viewer/)* and the Census Bureau continues to maintain the 7-million-mile road network in [TIGER](https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html), this long-standing partnership is a model for future agency collaboration with tribal, state, local, and federal partners to deliver high quality, integrated geospatial information for the nation. 
+
+ 
+  *Example of road density and categories of roads with a [National Agricultural Image Program](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/) orthoimage, New Orleans, LA.*
+  ![Example of road density and categories of roads with a National Agricultural Image Program orthoimage, New Orleans, LA.](../../assets/media/usgs-census-map.png "Example of road density and categories of roads with a National Agricultural Image Program orthoimage, New Orleans, LA.")
+
+
+
+
+  To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
+
+
+  #### The Federal Data Strategy Incubator Project
+
+
+  The Incubator Project helps federal data practitioners think through how to improve government services, enabling the public to get the most out of federal data. This Proof Point and others will highlight the many successes and challenges data innovators face every day, revealing valuable lessons learned to share with data practitioners throughout government.
+examples: ""
+link: ""
+layout: resource
+toc: true
+publish: false
+---
