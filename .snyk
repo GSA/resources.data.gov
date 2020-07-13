@@ -7,108 +7,108 @@ ignore:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-535498:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-535502:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540956:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540958:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540964:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540974:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540978:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540980:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540990:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540992:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540994:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540996:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-540998:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-541000:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-NODESASS-541002:
     - gulp-sass > node-sass:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.076Z'
+        expires: '2020-08-28T15:03:04.076Z'
   SNYK-JS-YARGSPARSER-560381:
     - gulp > gulp-cli > yargs > yargs-parser:
         reason: >-
           No patch available. gulp and yargs are only used in builds which are
           done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.077Z'
+        expires: '2020-08-28T15:03:04.077Z'
     - gulp-sass > node-sass > sass-graph > yargs > yargs-parser:
         reason: >-
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
-        expires: '2020-06-28T15:03:04.077Z'
+        expires: '2020-08-28T15:03:04.077Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-TREEKILL-536781:
