@@ -98,17 +98,6 @@ ignore:
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
         expires: '2020-08-28T15:03:04.076Z'
-  SNYK-JS-YARGSPARSER-560381:
-    - gulp > gulp-cli > yargs > yargs-parser:
-        reason: >-
-          No patch available. gulp and yargs are only used in builds which are
-          done in trusted environments so risk is low.
-        expires: '2020-08-28T15:03:04.077Z'
-    - gulp-sass > node-sass > sass-graph > yargs > yargs-parser:
-        reason: >-
-          No patch available. gulp and node-sass are only used in builds which
-          are done in trusted environments so risk is low.
-        expires: '2020-08-28T15:03:04.077Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-TREEKILL-536781:
