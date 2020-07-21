@@ -1,5 +1,5 @@
 {
-  "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+  "conformsTo": "http://resources.data.gov/schemas/dcat-us/v1.1/schema",
   "dataset": [
     {
       "accessLevel": "public",

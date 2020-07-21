@@ -1,16 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://resources.data.gov/schemas/dcat-us/v1.1/schema/dataset.json#",
+  "id": "https://resources.data.gov/schemas/dcat-us/v1.1/schema/dataset-non-federal.json#",
   "title": "Project Open Data Dataset",
   "description": "The metadata format for all federal open data. Validates a single JSON object entry (as opposed to entire Data.json catalog).",
   "type": "object",
   "required": [
-    "bureauCode",
-    "programCode",
     "title",
     "description",
-    "keyword",
-    "modified",
     "publisher",
     "contactPoint",
     "identifier",
@@ -77,7 +73,7 @@
       "uniqueItems": true
     },
     "contactPoint": {
-      "$ref": "vcard.json"
+      "$ref": "#/definitions/vcard-non-federal"
     },
     "describedBy": {
       "title": "Data Dictionary",
@@ -143,7 +139,7 @@
         {
           "type": "array",
           "items": {
-            "$ref": "distribution.json",
+            "$ref": "#/definitions/distribution",
             "minItems": 1,
             "uniqueItems": true
           }
@@ -267,7 +263,7 @@
       "uniqueItems": true
     },
     "publisher": {
-      "$ref": "organization.json"
+      "$ref": "#/definitions/organization"
     },
     "references": {
       "title": "Related Documents",
@@ -365,8 +361,209 @@
     "title": {
       "title": "Title",
       "description": "Human-readable name of the asset. Should be in plain English and include sufficient detail to facilitate search and discovery.",
-      "type": "string", 
+      "type": "string",
       "minLength": 1
+    }
+  },
+  "definitions": {
+    "vcard-non-federal": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "id": "https://resources.data.gov/schemas/dcat-us/v1.1/schema/vcard.json#",
+      "title": "Project Open Data ContactPoint vCard",
+      "description": "A Dataset ContactPoint as a vCard object",
+      "type": "object",
+      "required": [
+        "fn"
+      ],
+      "properties": {
+        "@type": {
+          "title": "Metadata Context",
+          "description": "IRI for the JSON-LD data type. This should be vcard:Contact for contactPoint",
+          "enum": [
+            "vcard:Contact"
+          ]
+        },
+        "fn": {
+          "title": "Contact Name",
+          "description": "A full formatted name, eg Firstname Lastname",
+          "type": "string",
+          "minLength": 1
+        },
+        "hasEmail": {
+          "title": "Email",
+          "description": "Email address for the contact",
+          "pattern": "^mailto:[\\w\\_\\~\\!\\$\\&\\'\\(\\)\\*\\+\\,\\;\\=\\:.-]+@[\\w.-]+\\.[\\w.-]+?$",
+          "type": "string"
+        }
+      }
+    },
+    "distribution": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "id": "https://resources.data.gov/schemas/dcat-us/v1.0/schema/distribution.json#",
+      "title": "Project Open Data Distribution",
+      "description": "Validates an entire collection of common core metadata JSON objects. Agencies produce said collections in the form of Data.json files.",
+      "type": "object",
+      "dependencies": {
+        "downloadURL": {
+          "properties": {
+            "mediaType": {
+              "type": "string",
+              "pattern": "^[-\\w]+/[-\\w]+(\\.[-\\w]+)*([+][-\\w]+)?$"
+            }
+          },
+          "required": [
+            "mediaType"
+          ]
+        }
+      },
+      "properties": {
+        "@type": {
+          "title": "Metadata Context",
+          "description": "IRI for the JSON-LD data type. This should be dcat:Distribution for each Distribution",
+          "enum": [
+            "dcat:Distribution"
+          ]
+        },
+        "downloadURL": {
+          "title": "Download URL",
+          "description": "URL providing direct access to a downloadable file of a dataset",
+          "type": "string",
+          "format": "uri"
+        },
+        "mediaType": {
+          "title": "Media Type",
+          "description": "The machine-readable file format (IANA Media Type or MIME Type) of the distribution’s downloadURL",
+          "anyOf": [
+            {
+              "pattern": "^[-\\w]+/[-\\w]+(\\.[-\\w]+)*([+][-\\w]+)?$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "format": {
+          "title": "Format",
+          "description": "A human-readable description of the file format of a distribution",
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accessURL": {
+          "title": "Access URL",
+          "description": "URL providing indirect access to a dataset",
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "title": "Description",
+          "description": "Human-readable description of the distribution",
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "title": {
+          "title": "Title",
+          "description": "Human-readable name of the distribution",
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "conformsTo": {
+          "title": "Data Standard",
+          "description": "URL providing indirect access to a dataset",
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "describedBy": {
+          "title": "Data Dictionary",
+          "description": "URL to the data dictionary for the distribution found at the downloadURL",
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "describedByType": {
+          "title": "Data Dictionary Type",
+          "description": "The machine-readable file format (IANA Media Type or MIME Type) of the distribution’s describedBy URL",
+          "anyOf": [
+            {
+              "pattern": "^[-\\w]+/[-\\w]+(\\.[-\\w]+)*([+][-\\w]+)?$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "organization": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "id": "https://resources.data.gov/schemas/dcat-us/v1.0/schema/organization.json#",
+      "title": "Project Open Data Organization",
+      "description": "A Dataset Publisher Organization as a foaf:Agent object",
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "@type": {
+          "title": "Metadata Context",
+          "description": "IRI for the JSON-LD data type. This should be org:Organization for each publisher",
+          "enum": [
+            "org:Organization"
+          ]
+        },
+        "name": {
+          "title": "Publisher Name",
+          "description": "A full formatted name, eg Firstname Lastname",
+          "type": "string",
+          "minLength": 1
+        },
+        "subOrganizationOf": {
+          "title": "Parent Organization",
+          "$ref": "#"
+        }
+      }
     }
   }
 }
