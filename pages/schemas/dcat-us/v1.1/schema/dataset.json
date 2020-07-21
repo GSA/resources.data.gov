@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://project-open-data.cio.gov/v1.1/schema/dataset.json#",
+  "id": "https://resources.data.gov/schemas/dcat-us/v1.1/schema/dataset.json#",
   "title": "Project Open Data Dataset",
   "description": "The metadata format for all federal open data. Validates a single JSON object entry (as opposed to entire Data.json catalog).",
   "type": "object",

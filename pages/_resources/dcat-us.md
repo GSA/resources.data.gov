@@ -94,7 +94,7 @@ details: >-
   ### Catalog Fields
 
 
-  These fields describe the entire Public Data Listing catalog file. Publishers can also use the `describedBy` field to reference the default [JSON Schema](http://json-schema.org/) file used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.json*) or they may refer to their own JSON Schema file if they have extended the schema with additional schema definitions. Similarly, `@context` can be used to reference the default [JSON-LD](http://www.w3.org/TR/json-ld) Context used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld*) or publishers can refer to their own if they have extended the schema with additional linked data vocabularies. See the [Catalog section](#Catalog) under *Further Metadata Field Guidance* for more details. 
+  These fields describe the entire Public Data Listing catalog file. Publishers can also use the `describedBy` field to reference the default [JSON Schema](http://json-schema.org/) file used to define the schema (*https://resources.data.gov/schemas/dcat-us/v1.1/schema/catalog.json*) or they may refer to their own JSON Schema file if they have extended the schema with additional schema definitions. Similarly, `@context` can be used to reference the default [JSON-LD](http://www.w3.org/TR/json-ld) Context used to define the schema (*https://resources.data.gov/schemas/dcat-us/v1.1/schema/catalog.jsonld*) or publishers can refer to their own if they have extended the schema with additional linked data vocabularies. See the [Catalog section](#Catalog) under *Further Metadata Field Guidance* for more details. 
 
 
   {: .table .table-schema}
@@ -317,9 +317,9 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | The URL or JSON object for the [JSON-LD Context](http://www.w3.org/TR/json-ld/#the-context) that defines the schema used. The URL for version 1.1 of the schema is `https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld`
+  **Usage Notes** | The URL or JSON object for the [JSON-LD Context](http://www.w3.org/TR/json-ld/#the-context) that defines the schema used. The URL for version 1.1 of the schema is `https://resources.data.gov/schemas/dcat-us/v1.1/schema/catalog.jsonld`
 
-  **Example** | `{"@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld"}`
+  **Example** | `{"@context": "https://resources.data.gov/schemas/dcat-us/v1.1/schema/catalog.jsonld"}`
 
 
   {: .table .table-schema #id}
@@ -368,9 +368,9 @@ details: >-
 
   **Accepted Values** | String (URI)
 
-  **Usage Notes** | This is used to identify the schema version using a URI. The URI for version 1.1 of the schema is `https://project-open-data.cio.gov/v1.1/schema`
+  **Usage Notes** | This is used to identify the schema version using a URI. The URI for version 1.1 of the schema is `https://resources.data.gov/schemas/dcat-us/v1.1/schema`
 
-  **Example** | `{"conformsTo": "https://project-open-data.cio.gov/v1.1/schema"}`
+  **Example** | `{"conformsTo": "https://resources.data.gov/schemas/dcat-us/v1.1/schema"}`
 
 
   {: .table .table-schema #describedBy}
@@ -385,9 +385,9 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This is used to specify a [JSON Schema](http://json-schema.org/) file that defines all fields. By default, it is recommended that the canonical JSON Schema file is referenced (https://project-open-data.cio.gov/v1.1/schema/catalog.json) but if the schema had been extended, publishers may reference a file that defines those extensions. 
+  **Usage Notes** | This is used to specify a [JSON Schema](http://json-schema.org/) file that defines all fields. By default, it is recommended that the canonical JSON Schema file is referenced (https://resources.data.gov/schemas/dcat-us/v1.1/schema/catalog.json) but if the schema had been extended, publishers may reference a file that defines those extensions. 
 
-  **Example** | `{"describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json"}`
+  **Example** | `{"describedBy": "https://resources.data.gov/schemas/dcat-us/v1.1/schema/catalog.json"}`
 
 
   {: .table .table-schema #dataset}
