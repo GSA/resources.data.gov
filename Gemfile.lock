@@ -90,7 +90,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  html-proofer (>= 3.13.0)
+  html-proofer (>= 3.14.1)
   jekyll (~> 4.1.1)
   jekyll-feed (~> 0.6)
   jekyll-redirect-from
