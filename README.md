@@ -45,3 +45,8 @@ Check for broken links.
 ## Netlify
 
 This site uses Netlify to manage its editorial workflow. Content is added and edited in collections via the Netlify interface, which can be accessed by approved contributors at [resources.data.gov/admin](https://resources.data.gov/admin). Collections are managed via the config.yml file in pages/admin. 
+
+
+## Update Dependencies
+
+To update dependencies, you can run `bundle update {dependency}` after running `npm install`. Then follow all other development steps above to validate site is working as expected.
