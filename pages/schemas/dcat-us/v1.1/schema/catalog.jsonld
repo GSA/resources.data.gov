@@ -6,7 +6,7 @@
     "foaf": "http://xmlns.com/foaf/0.1/",
     "@vocab": "http://www.w3.org/ns/dcat#",
     "dc": "http://purl.org/dc/terms/",
-    "pod": "https://project-open-data.cio.gov/v1.1/schema#",
+    "pod": "https://resources.data.gov/schemas/dcat-us/v1.1/schema#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "describedBy": {
       "@id": "http://www.w3.org/2007/05/powder#describedby",
