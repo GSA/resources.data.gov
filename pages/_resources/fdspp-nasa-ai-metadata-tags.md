@@ -120,7 +120,9 @@ details: >-
   Anthony Buonomo, Justin Gosses, Andrew Adrian, and Brian Thomas work on the Data Analytics Team within the Transformation Data Division of NASA’s Office of the Chief Information Officer. Substantial software contributions were made by Anthony Buonomo, Brian Thomas, Yulan Lin and Justin Gosses.
 
 
-  If you’d like to learn more about this project, please contact [anthony.r.buonomo@nasa.gov](mailto:anthony.r.buonomo@nasa.gov) or [brian.a.thomas@nasa.gov](mailto:brian.a.thomas@nasa.gov). Visit [https://www.sti.nasa.gov](https://www.sti.nasa.gov/) to see a sample of the sort of data the tagger was trained on. At present, the code related to the project it not publicly available.
+  If you’d like to learn more about this project, please contact [anthony.r.buonomo@nasa.gov](mailto:anthony.r.buonomo@nasa.gov) or [brian.a.thomas@nasa.gov](mailto:brian.a.thomas@nasa.gov). Visit [https://www.sti.nasa.gov](https://www.sti.nasa.gov/) to see a sample of the sort of data the tagger was trained on. The code related to this project has been open sourced and is available as two GitHub repositories:
+[github.com/nasa/concept-tagging-api](github.com/nasa/concept-tagging-api)
+[github.com/nasa/concept-tagging-training](github.com/nasa/concept-tagging-training)
 
 
   #### The Federal Data Strategy Incubator Project
