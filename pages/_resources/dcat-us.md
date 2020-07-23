@@ -11,14 +11,14 @@ tags:
   - data schema
   - open data
   - DCAT
-  - Project Open Metadata Schema
+  - Project Open Data Metadata Schema
   - data standards
 guidance_tags: ""
 format: ""
 details: >-
   {: .vertical-headings}
 
-  | Specification resource_name: | DCAT-US Schema v1.1 (Project Open Data Metadata Schema) |
+  | Specification Name: | DCAT-US Schema v1.1 (Project Open Data Metadata Schema) |
 
   |---------------------|-----------------------------------|
 
