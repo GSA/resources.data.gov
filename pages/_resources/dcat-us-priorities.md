@@ -12,9 +12,6 @@ tags:
   - DCAT
   - Project Open Data Metadata Schema
   - data standards
-  - metadata tagging
-  - COVID-19
-  - Artificial Intelligence
 guidance_tags: ""
 format: ""
 details: >-
