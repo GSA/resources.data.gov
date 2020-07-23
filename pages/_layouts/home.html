@@ -17,6 +17,33 @@ class: home
     {{ content }}
   </div>
 
+
+  <div class="grid-row grid-gap" id="homepage-featured">
+
+    <div class="desktop:grid-col-3 padding-205">
+      <div>
+        <ul class="usa-sidenav">
+          <h3>Featured Resource</h3>
+        </ul>
+      </div>
+    </div>
+
+    <div class="desktop:grid-col-9 padding-205">
+
+        {% assign resources = site.resources | concat: site.summaries | where: "slug", page.featured %}
+
+        {% for resource in resources %}
+          <div class="border-bottom border-base">
+            {% include resource_block.html resource=resource %}
+          </div>
+        {% else %}
+          <p>No categories match the category <code>{{ category.category_name }}</code>.</p>
+        {% endfor %}
+
+
+    </div>
+  </div>
+
   <div class="grid-row grid-gap">
 
     <div class="desktop:grid-col-3 padding-205">
