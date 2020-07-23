@@ -121,8 +121,8 @@ details: >-
 
 
   If you’d like to learn more about this project, please contact [anthony.r.buonomo@nasa.gov](mailto:anthony.r.buonomo@nasa.gov) or [brian.a.thomas@nasa.gov](mailto:brian.a.thomas@nasa.gov). Visit [https://www.sti.nasa.gov](https://www.sti.nasa.gov/) to see a sample of the sort of data the tagger was trained on. The code related to this project has been open sourced and is available as two GitHub repositories:
-  [github.com/nasa/concept-tagging-api](github.com/nasa/concept-tagging-api)
-  [github.com/nasa/concept-tagging-training](github.com/nasa/concept-tagging-training)
+  [github.com/nasa/concept-tagging-api](https://github.com/nasa/concept-tagging-api)
+  [github.com/nasa/concept-tagging-training](https://github.com/nasa/concept-tagging-training)
 
 
   #### The Federal Data Strategy Incubator Project
