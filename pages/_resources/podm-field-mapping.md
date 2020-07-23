@@ -13,7 +13,7 @@ tags:
   - data standards
   - data schema
   - DCAT
-  - Project Open Metadata Schema
+  - Project Open Data Metadata Schema
   - open data
 guidance_tags: ""
 format: ""
