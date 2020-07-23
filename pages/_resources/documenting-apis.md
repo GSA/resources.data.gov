@@ -9,7 +9,7 @@ category: Data standards
 tags:
   - API
   - DCAT
-  - Project Open Metadata Schema
+  - Project Open Data Metadata Schema
   - open data
 guidance_tags: ""
 format: ""
