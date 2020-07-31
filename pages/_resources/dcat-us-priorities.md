@@ -17,19 +17,9 @@ format: ""
 details: >-
   {: .vertical-headings}
 
-  Currently all Federal Agencies are required to provide Comprehensive Data Inventories with standard metadata, consistent with Data Catalog Vocabulary (DCAT) and   schema.org standards for harvesting by and display on Data.gov .  These Comprehensive Data Inventories also enable commercial search engines and tools to index Federal   data sets for discovery. The DCAT and schema.org standards already require much of the information necessary for discovery and an initial assessment of usability by   private sector or researchers. To improve the discoverability, usability, and governance of these priority agency data assets agencies shall apply the documenting   techniques illustrated below. 
+  ### COVID-19 Response Related Data Assets 
 
-  ### COVID-19 Response Data Assets
-
-  Consistent with [M-20-16 Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19](https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-16.pdf), in places where the [Federal Data Strategy 2020 Action Plan](https://strategy.data.gov/action-plan/) calls for agencies to prioritize data assets and projects, agencies are required to include COVID-19 response data as their highest priority. Agency Chief Data Officers’ shall: 
-
-  1. Identify priority data assets related to COVID-19 response, based on: 
-      - Input from public feedback;
-      - Datasets that support the individual agency goals for COVID-19 response including:
-        - Healthcare
-        - Financial services
-        - Agency re-opening 
-  2.  Improve the standard metadata for priority data assets for COVID-19 response, based on: 
+  Consistent with [M-20-16 Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19](https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-16.pdf), in places where the [Federal Data Strategy 2020 Action Plan](https://strategy.data.gov/action-plan/) calls for agencies to prioritize data assets and projects, agencies are required to include COVID-19 response data as their highest priority.
 
 
   {: .table .table-schema}
@@ -49,21 +39,7 @@ details: >-
 
   ### AI R&D Data 
 
-  Executive Order 13859 Maintaining American Leadership in Artificial Intelligence requires agencies improve their Comprehensive Data Inventory documentation to enable discovery and usability of data for AI R&D. This requirement is also outlined in Action 9 of the Federal Data Strategy 2020 Action Plan. Agency Chief Data Officers’ shall: 
-
-  1. Identify priority data assets for AI R&D, based on: 
-      - Input from the non-Federal AI R&D community from both the Federal Registry Notice and subsequent feedback;
-      - Datasets that support the individual agency goals for AI R&D as well as those itemized on AI.gov:
-        1. Transportation
-        1. Healthcare
-        1. Manufacturing
-        1. Financial services
-        1. Agriculture
-        1. Weather forecasting
-        1. National security & defense
-      - Datasets and source code that address Fundamental R&D challenges in AI as discussed in The National Artificial Intelligence Strategic Plan: 2019 Update
-  2. Improve the standard metadata for priority data assets for AI R&D, based on: 
-
+  Consistent with [Executive Order on Maintaining American Leadership in Artificial Intelligence (EO 13859)](https://www.whitehouse.gov/presidential-actions/executive-order-maintaining-american-leadership-artificial-intelligence/), agencies are directed to improve data “inventory documentation to enable discovery and usability [in order to] prioritize improvements to access and quality of data … based on the AI research community’s user feedback.” 
 
   {: .table .table-schema}
 
