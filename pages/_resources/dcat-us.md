@@ -476,7 +476,7 @@ details: >-
 
   **Accepted Values** | Array of Strings
 
-  **Usage Notes** | Represent each bureau responsible for the dataset according to the codes found in OMB Circular A-11, Appendix C ([PDF](http://www.whitehouse.gov/sites/default/files/omb/assets/a11_current_year/app_c.pdf), [CSV](../../schemas/dcat-us/v1.1/omb_bureau_codes.csv)). Start with the agency code, then a colon, then the bureau code.
+  **Usage Notes** | Represent each bureau responsible for the dataset according to the codes found in OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](../../schemas/dcat-us/v1.1/omb_bureau_codes.csv)). Start with the agency code, then a colon, then the bureau code.
 
   **Example** |  The Office of the Solicitor (86) at the Department of the Interior (010) would be: `{"bureauCode":["010:86"]}`.  If a second bureau was also responsible, the format like this: `{"bureauCode":["010:86","010:04"]}`.
 
