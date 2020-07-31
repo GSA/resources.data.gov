@@ -36,10 +36,12 @@ details: >-
 
  
 
-
+  {: .margin-top-6}
+  
   ### AI R&D Data 
 
   Consistent with [Executive Order on Maintaining American Leadership in Artificial Intelligence (EO 13859)](https://www.whitehouse.gov/presidential-actions/executive-order-maintaining-american-leadership-artificial-intelligence/), agencies are directed to improve data “inventory documentation to enable discovery and usability [in order to] prioritize improvements to access and quality of data … based on the AI research community’s user feedback.” 
+
 
   {: .table .table-schema}
 
