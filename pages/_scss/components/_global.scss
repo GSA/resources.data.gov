@@ -7,6 +7,18 @@
   }
 }
 
+.home #featured-resources {
+  background-color : rgb(240, 240, 240);
+
+  .grid-container .featured-block {
+    border-bottom : 0;
+  }
+
+  .grid-row .grid-row {
+    padding-bottom : 0;
+  }
+}
+
 .separator {
   display: flex;
 
