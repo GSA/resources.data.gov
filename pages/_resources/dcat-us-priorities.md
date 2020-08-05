@@ -15,7 +15,13 @@ tags:
 guidance_tags: ""
 format: ""
 details: >-
-  {: .vertical-headings}
+  
+  {: .margin-top-0}
+
+  The requirements outlined here are meant to be used in conjunction with the documentation for the full [DCAT-US Schema v1.1](../dcat-us/) (Project Open Data Metadata Schema) 
+
+
+  {: .margin-top-6}
 
   ### COVID-19 Response Related Data Assets 
 
@@ -32,7 +38,7 @@ details: >-
 
   **Recommended** | Agencies are encouraged to further include keywords that would improve discoverability.  
 
-  **Example** | `{"keyword":["COVID-19","coronavirus”,“viral-testing”,“CARES-Act”,“CORD-19”]}`
+  **Example** | `{"keyword":["COVID-19","coronavirus”,“viral-testing”,“CARES-Act”,“CORD-19”,"SARS-CoV-2"]}`
 
  
 
@@ -49,11 +55,11 @@ details: >-
 
   ----- | -----
 
-  **Required** | Agencies must include the keywords `AI`, `artificial-intelligence`, and `AI-R&D`. 
+  **Required** | Agencies must include the keyword `usg-artificial-intelligence`. 
 
-  **Recommended** | Agencies are encouraged to further include keywords that would improve discoverability.  
+  **Recommended** | Agencies are encouraged to further include keywords that would improve discoverability. Datasets that specifically serve as training data for machine learning applications should additionally include a keyword of `usg-ai-training-data`
 
-  **Example** | `{"keyword":["AI","artificial-intelligence","AI-R&D",”natural-language-processing”,“machine-learning”,“research”,“COVID-19]}`
+  **Example** | `{"keyword":["usg-artificial-intelligence","AI","artificial-intelligence","AI-R&D",”natural-language-processing”,“machine-learning”,“research”,“COVID-19]}`
 
 
   {: .table .table-schema}
@@ -77,8 +83,6 @@ details: >-
 
   **Required** | While dataQuality is generally optional for comprehensive data inventory documentation it is required for all datasets identified for the purposes of AI R&D. 
 
-  **Recommended** | 
-
   **Example** | `{"dataQuality":true}`
 
 
@@ -89,8 +93,6 @@ details: >-
   ----- | -----
 
   **Required** | While references is generally optional for comprehensive data inventory documentation it is required if references, including model documentation that exist for data assets identified for the purposes of AI R&D. 
-
-  **Recommended** | 
 
   **Example** | `{"references":[" https://github.com/GSA/AI-Assistant-Pilot"]}`
 
