@@ -3,7 +3,7 @@ layout: default
 class: home
 ---
 
-<div class="bg-primary text-white margin-bottom-1 tablet:margin-bottom-1" id="main-content">
+<div class="bg-primary text-white" id="main-content">
   <div class="grid-container padding-y-3 tablet:padding-y-6">
     <div class="measure-1 font-heading-md tablet:font-heading-xl line-height-serif-4 margin-bottom-4 text-semibold">
       {{page.tagline}}
@@ -12,10 +12,43 @@ class: home
   </div>
 </div>
 
+<div id="featured-resources" class="border-bottom border-base">
+
+  <div class="grid-container usa-layout__docs-main">
+    <div class="grid-row grid-gap">
+
+      <div class="desktop:grid-col-3 padding-205">
+        <div>
+          <ul class="usa-sidenav">
+            <h3>Featured Resource</h3>
+          </ul>
+        </div>
+      </div>
+
+      <div class="desktop:grid-col-9 padding-205">
+
+          {% assign resources = site.resources | concat: site.summaries | where: "slug", page.featured %}
+
+          {% for resource in resources %}
+            <div class="border-bottom border-base featured-block">
+              {% include resource_block.html resource=resource %}
+            </div>
+          {% else %}
+            <p>No categories match the category <code>{{ category.category_name }}</code>.</p>
+          {% endfor %}
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <div class="grid-container margin-bottom-3 tablet:margin-bottom-6 usa-layout__docs-main">
   <div>
     {{ content }}
   </div>
+
 
   <div class="grid-row grid-gap">
 

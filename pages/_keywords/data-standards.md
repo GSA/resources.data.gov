@@ -15,5 +15,5 @@ header: >-
   2) [For any data standards in this repository, what information should be included?](https://github.com/GSA/resources.data.gov/issues/158)  
 
 
-  You can provide any additional feedback via [Github](https://github.com/GSA/resources.data.gov/issues) or by emailing [data-federation@gsa.gov](mailto:data-federation@gsa.gov)
+  You can provide any additional feedback via [Github](https://github.com/GSA/resources.data.gov/issues) or by emailing [datagov@gsa.gov](mailto:datagov@gsa.gov)
 ---

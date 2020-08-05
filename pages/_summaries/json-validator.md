@@ -14,7 +14,7 @@ category: Data tools
 tags:
   - data validation
   - metadata
-  - Project Open Metadata Schema
+  - Project Open Data Metadata Schema
   - data schema
   - data standards
 format: ""
