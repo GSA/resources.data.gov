@@ -9,7 +9,7 @@ description: The National Technical Information Service (NTIS) is part of the U.
 source: Department of Commerce
 category: Data incubator
 tags:
-  - public private partnerships
+  - public-private partnerships
   - security
   - data analytics
   - data analysis
