@@ -10,6 +10,7 @@ source: General Services Administration
 category: Data incubator
 tags:
   - crowdsourcing
+  - prize competitions
   - data analysis
   - data visualization
 format: ""
