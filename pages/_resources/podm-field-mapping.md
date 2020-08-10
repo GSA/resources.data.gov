@@ -15,6 +15,7 @@ tags:
   - DCAT
   - Project Open Data Metadata Schema
   - open data
+  - data inventory
 guidance_tags: ""
 format: ""
 details: >-
