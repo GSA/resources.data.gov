@@ -1,4 +1,5 @@
 ---
+redirect_from: /tools/how-to-get-your-open-data-on-datagov/
 resource_name: How to get your Open Data on Data.gov
 slug: data-gov-open-data-howto
 description: Data.gov is the central clearinghouse for open data from the United
