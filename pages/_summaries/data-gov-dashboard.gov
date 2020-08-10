@@ -1,0 +1,20 @@
+---
+guidance_tags:
+  - M-13-13
+toc: true
+layout: resource
+slug: open-data-dashboard
+publish: true
+resource_name: Data.gov Dashboard
+description: The Data.gov Dashboard is a website enabling Federal agencies, industry, and the general public and other stakeholders to view details on how Federal agencies are progressing on implementing the Federal Open Data Policy.
+source: General Services Administration
+category: Data management & governance
+tags:
+  - open data
+  - data inventory
+format: ""
+link: https://labs.data.gov/dashboard
+---
+
+
+
