@@ -13,6 +13,7 @@ tags:
   - open data
   - workforce development
   - data sharing
+  - data inventory
 format: Video (45 mins)
 link: https://www.youtube.com/watch?v=hbxA5-GDvvU
 ---
