@@ -9,7 +9,7 @@ description: The NOAA Big Data Project (BDP) was created to explore the potentia
 source: National Oceanic and Atmospheric Administration
 category: Data incubator
 tags:
-  - public private partnerships
+  - public-private partnerships
   - open data
 format: ""
 link: https://www.noaa.gov/big-data-project
