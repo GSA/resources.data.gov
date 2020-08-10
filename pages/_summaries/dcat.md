@@ -14,7 +14,6 @@ tags:
   - DCAT
   - data schema
   - data standards
-  - data inventory
 format: ""
 link: https://www.w3.org/TR/vocab-dcat/
 ---
