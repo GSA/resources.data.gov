@@ -9,6 +9,7 @@ source: Office of Management and Budget / General Services Administration
 category: Data management & governance
 tags:
   - open data
+  - data inventory
 guidance_tags:
   - M-13-13
 format: ""

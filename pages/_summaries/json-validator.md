@@ -17,6 +17,7 @@ tags:
   - Project Open Data Metadata Schema
   - data schema
   - data standards
+  - data inventory
 format: ""
 link: https://labs.data.gov/dashboard/validate
 ---
