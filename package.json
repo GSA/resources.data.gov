@@ -25,7 +25,7 @@
     "lodash.assign": "^4.2.0",
     "path": "^0.12.7",
     "smooth-scroll": "^16.0.3",
-    "snyk": "^1.362.0",
+    "snyk": "^1.364.0",
     "uswds": "^2.7.1",
     "uswds-gulp": "github:uswds/uswds-gulp#5e32f1b99279a6e50ad875e66cc4cb77b456c390",
     "vinyl-buffer": "^1.0.1",
