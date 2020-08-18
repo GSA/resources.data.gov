@@ -15,6 +15,7 @@ tags:
   - data management
   - data visualization
   - data cleaning
+  - workforce
   - workforce development
 format: ""
 link: https://www.chcoc.gov/content/data-scientist-titling-guidance
