@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "accessible-autocomplete": "^1.6.2",
-    "autoprefixer": "^9.8.5",
+    "autoprefixer": "^9.8.6",
     "browserify": "^16.5.1",
     "concurrently": "^5.2.0",
     "css-mqpacker": "^7.0.0",
