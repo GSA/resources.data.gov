@@ -7,7 +7,7 @@
   "dependencies": {
     "accessible-autocomplete": "^1.6.2",
     "autoprefixer": "^9.8.6",
-    "browserify": "^16.5.1",
+    "browserify": "^16.5.2",
     "concurrently": "^5.3.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
