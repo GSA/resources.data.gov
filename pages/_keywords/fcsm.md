@@ -1,6 +1,6 @@
 ---
-keyword_name: Federal Committee on Statistical Methodology
-slug: federal-committee-on-statistical-methodology
+keyword_name: FCSM
+slug: fcsm
 layout: keyword
 toc: true
 header_title: ""
