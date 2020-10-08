@@ -12,5 +12,5 @@ tags:
   - Federal Data Strategy
   - FCSM
 format: PDF (89 pages)
-link: https://resources.data.gov/assets/documents/data-innovation-event-playbook.pdf
+link: https://nces.ed.gov/FCSM/pdf/FCSM.20.04_A_Framework_for_Data_Quality.pdf
 ---
