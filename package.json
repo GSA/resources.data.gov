@@ -29,7 +29,8 @@
     "uswds-gulp": "github:uswds/uswds-gulp#5e32f1b99279a6e50ad875e66cc4cb77b456c390",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
-    "watchify": "^3.11.1"
+    "watchify": "^3.11.1",
+    "y18n": "^5.0.5"
   },
   "devDependencies": {},
   "scripts": {
