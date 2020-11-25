@@ -26,4 +26,4 @@ In general, open data will be consistent with the following principles:
 * [Open Definition](http://opendefinition.org/od/)
 * [Open Gov Data](http://opengovdata.org/)
 * [Sunlight Foundation's Ten Open Data Principles](http://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
-* [Sunlight Foundation's Guidelines to Guidelines](http://sunlightfoundation.com/blog/tag/guidelines-to-guidelines/)
+* [Sunlight Foundation's Open Data Policy Guidelines](https://sunlightfoundation.com/opendataguidelines/)
