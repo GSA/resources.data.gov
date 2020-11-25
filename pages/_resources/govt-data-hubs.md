@@ -36,7 +36,7 @@ details: >+
 
   * [International Trade Administration](https://www.trade.gov/trade-data-analysis) 
 
-  * [Integrated Ocean Observing System - NOAA](http://www.ioos.noaa.gov/data/)
+  * [Integrated Ocean Observing System - NOAA](https://ioos.noaa.gov/data/)
 
   * [Marine Cadastre - NOAA](http://marinecadastre.gov/DATA)
 
@@ -61,9 +61,9 @@ details: >+
 
   * [Atmospheric Radiation Measurement - Climate Research Facility](http://www.arm.gov/data)
 
-  * [Lawrence Berkeley National Laboratory - Institutes Office](http://institutes.lanl.gov/data/)
+  * [Lawrence Berkeley National Laboratory - Institutes Office](https://dst.lbl.gov/)
 
-  * [Lawrence Berkeley National Laboratory - Standby Data](http://standby.lbl.gov/data.html)
+  * [Lawrence Berkeley National Laboratory - Standby Data](https://standby.lbl.gov/)
 
   * [National Nuclear Data Center](http://www.nndc.bnl.gov/)
 
@@ -81,7 +81,7 @@ details: >+
 
   ### [Department of Health and Human Services](http://www.healthdata.gov)
 
-  * [Administration on Aging](http://www.data.aoa.gov/)
+  * [Administration on Aging](https://acl.gov/aging-and-disability-in-america/data-and-research)
 
   * [Agency for Healthcare Research and Quality Data Resources](http://www.ahrq.gov/research/data/index.html)
 
@@ -89,7 +89,7 @@ details: >+
 
   * [Centers for Medicare and Medicaid Services](http://data.cms.gov)
 
-  * [Health Resources and Services Administration](http://www.hrsa.gov/data-statistics) ([2](http://datawarehouse.hrsa.gov/))
+  * [Health Resources and Services Administration](https://data.hrsa.gov/) ([2](http://datawarehouse.hrsa.gov/))
 
   * [National Database for Autism Research](http://ndar.nih.gov/data_from_labs.html)
 
@@ -138,7 +138,7 @@ details: >+
   * [Bureau of Labor Statistics](http://www.bls.gov/data/)
 
 
-  ### [Department of State](http://www.state.gov/data)
+  ### [Department of State](https://www.state.gov/open-government-initiative/)
 
 
   ### [Department of Transportation](http://www.dot.gov/data)
@@ -179,11 +179,11 @@ details: >+
 
   * [Airborne Visible/Infrared Imaging Spectrometer](http://aviris.jpl.nasa.gov/data/)
 
-  * [Atmospheric Infrared Sounder](http://airs.jpl.nasa.gov/data/get_AIRS_data/)
+  * [Atmospheric Infrared Sounder](https://airs.jpl.nasa.gov/data/about-the-data/processing/)
 
   * [Earth Observing System](http://earthdata.nasa.gov/data)
 
-  * [Landsat Ecosystem Disturbance Adaptive Processing System](http://ledaps.nascom.nasa.gov/data/)
+  * [Landsat Ecosystem Disturbance Adaptive Processing System](https://landsat.gsfc.nasa.gov/data)
 
 
   ### [Nuclear Regulatory Commission](http://www.nrc.gov/data)
@@ -212,7 +212,7 @@ details: >+
   * [Federal Communications Commission](http://www.fcc.gov/data)
 
   * [Federal Elections Commission](http://www.fec.gov/data/)
-    * *see also:* [Federal Elections Commission Disclosure Data](http://www.fec.gov/disclosure.shtml)
+   
   * [Institute of Museum and Library Services](http://www.imls.gov/data/)
 
   * [Millenium Challenge Corporation](http://data.mcc.gov/)
@@ -224,8 +224,6 @@ details: >+
 
   ### Other Programs  
 
-  * [Advanced Manufacturing Portal](http://www.manufacturing.gov/data.html)
-
   * [Appalachian Regional Commission](http://www.arc.gov/data)
 
   * [Freedom of Information Act](http://www.foia.gov/data.html)
@@ -234,11 +232,11 @@ details: >+
 
   * [Joint Ecosystem Modeling](http://www.jem.gov/Data)
 
-  * [National Broadband Map](http://www.broadbandmap.gov/data-download)
+  * [National Broadband Map](https://broadbandmap.fcc.gov/#/)
 
   * [Networking and Information Technology Research and Development](http://www.nitrd.gov/data/)
 
-  * [USASpending.gov](http://www.usaspending.gov/data)
+  * [USASpending.gov](https://files.usaspending.gov/database_download/)
 
   * [VolunteeringInAmerica.gov](http://www.volunteeringinamerica.gov/data.cfm)
 
