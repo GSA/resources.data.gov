@@ -11,6 +11,6 @@ category: Skills development
 tags:
   - workforce
   - data skills
-format: "PDF"
+format: "PDF (34 pages)" 
 link: "/assets/documents/fds-data-skills-catalog.pdf"
 ---
