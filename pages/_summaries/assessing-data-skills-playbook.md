@@ -11,6 +11,7 @@ category: Data management & governance
 tags:
   - Federal Data Strategy
   - playbook
+  - data skills
 format: PDF (26 pages)
 link: https://resources.data.gov/assets/documents/assessing-data-skills-playbook.pdf
 ---
