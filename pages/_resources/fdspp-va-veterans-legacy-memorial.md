@@ -99,7 +99,7 @@ details: >-
   ### Postscript
 
 
-  If you’d like to learn more, please contact VLM at [VeteransLegacyProgram@va.gov](mailto:VeteransLegacyProgram@va.gov). You can also check out NCA’s [data.va.gov data story](https://www.data.va.gov/story/national-cemetery-administration) for more about its coverage, mission, and locations.
+  If you’d like to learn more, please contact VLM at [VeteransLegacyProgram@va.gov](mailto:VeteransLegacyProgram@va.gov). You can also check out NCA’s [data.va.gov data story](https://www.data.va.gov/stories/s/6yaj-dzgn) for more about its coverage, mission, and locations.
 
 
   To receive updates on activities related to the Federal Data Strategy, please [sign up for the newsletter](https://public.govdelivery.com/accounts/USGSA/subscribers/new?topic_id=USGSA_756).
