@@ -20,11 +20,6 @@
     "source": "https://swagger.io/docs/specification/authentication/basic-authentication/"
   },
   {
-    "term": "Catalog",
-    "definition": "A catalog is a collection of datasets or web services.",
-    "source": "https://www.data.gov/glossary"
-  },
-  {
     "term": "Code Library",
     "definition": "Working code samples in all the top programming languages are common place in the most successful APIs. Documentation will describe in a general way, how to use an API, but code samples will speak in the specific language of developers.",
     "source": "https://www.yourdictionary.com/code-library"

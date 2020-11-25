@@ -5,11 +5,13 @@ layout: resource
 slug: fds-data-ethics-framework
 publish: true
 resource_name: Data Ethics Framework
-description: Description placeholder text
+description: The Data Ethics Framework supports the Federal Data Strategy by helping federal leaders and data users make ethical decisions as they acquire, manage, and use data in support of their agencies’ missions. 
 source: Federal Data Strategy
 category: Data management & governance
 tags:
   - data ethics
-format: "PDF (29 pages)"
+  - framework
+  - Federal Data Strategy
+format: "PDF (28 pages)"
 link: "/assets/documents/fds-data-ethics-framework.pdf"
 ---
