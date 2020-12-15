@@ -14,6 +14,27 @@ ignore:
           No patch available. gulp and node-sass are only used in builds which
           are done in trusted environments so risk is low.
         expires: '2020-12-30T15:03:04.076Z'
+  SNYK-JS-INI-1048974:
+    - gulp > gulp-cli > liftoff > findup-sync > resolve-dir > global-modules > global-prefix > ini:
+        reason: Created issue to resolve in 30-days
+        expires: '2021-01-14T21:40:40.202Z'
+    - gulp > gulp-cli > matchdep > findup-sync > resolve-dir > global-modules > global-prefix > ini:
+        reason: Created issue to resolve in 30-days
+        expires: '2021-01-14T21:40:40.202Z'
+    - gulp > glob-watcher > chokidar > fsevents > node-pre-gyp > rc > ini:
+        reason: Created issue to resolve in 30-days
+        expires: '2021-01-14T21:40:40.202Z'
+    - watchify > chokidar > fsevents > node-pre-gyp > rc > ini:
+        reason: Created issue to resolve in 30-days
+        expires: '2021-01-14T21:40:40.202Z'
+  SNYK-JS-NODENOTIFIER-1035794:
+    - gulp-notify > node-notifier:
+        reason: Created issue to resolve in 30-days
+        expires: '2021-01-14T21:40:40.202Z'
+  SNYK-JS-Y18N-1021887:
+    - gulp > gulp-cli > yargs > y18n:
+        reason: Created issue to resolve in 30-days
+        expires: '2021-01-14T21:40:40.202Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-TREEKILL-536781:
