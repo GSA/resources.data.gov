@@ -62,6 +62,8 @@ collections:
     output: true
   guidance_tags:
     output: true
+  data_standards:
+    output: true
 
 page_gen:
   - index_files: false

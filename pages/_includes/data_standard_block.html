@@ -1,0 +1,97 @@
+<div class="grid-row grid-gap display-flex margin-top-2 padding-bottom-2 padding-top-2">
+
+  <div class="desktop:grid-col-8">
+    
+    {% if page.permalink == standard.permalink %}
+        <h2 id="{{ standard.name | slugify }}" class="margin-top-0">{{ standard.name }}</h2>
+    {% else %}  
+      <a href="{{ standard.permalink }}">
+        <h2 id="{{ standard.name | slugify }}" class="margin-top-0">{{ standard.name }}</h2>
+      </a>
+    {% endif %}
+
+    <p>
+      {% if standard.description %}
+        {{ standard.description | default: "No description provided" }}
+      {% endif %}
+    </p>
+  </div>
+
+  <div class="desktop:grid-col-4 no_toc_section">
+
+    {% if standard.type != "" %}
+      <h3 class="margin-top-0 margin-bottom-0">Type</h3>
+      <p class="margin-top-05 margin-bottom-205">
+        {{ standard.type }}
+      </p>
+    {% endif %}
+
+    {% if standard.website != "" %}
+      <h3><a href="{{ standard.website }}">Website</a></h3>        
+    {% endif %}    
+
+    {% if standard.documentation != "" %}
+      <h3><a href="{{ standard.documentation }}">Documentation</a></h3>        
+    {% endif %}       
+
+    <h3 class="margin-top-0 margin-bottom-0">Publisher</h3>
+    <p class="margin-top-05 margin-bottom-205">
+      {{ standard.publisher | default: "No publisher provided" }}
+    </p>
+
+    <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
+    <p class="margin-top-05 margin-bottom-205">
+      {% for tag in standard.tags %}
+        {% assign slug_tag = tag | slugify %}
+        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
+      {% else %}
+        This standard has no keywords.
+      {% endfor %}
+    </p>
+
+  </div>
+
+
+{% if page.permalink == standard.permalink %}
+  <div class="desktop:grid-col-12">
+
+      {% if standard.description %}
+      <h4 class="margin-bottom-0">Usage Notes</h4>
+      <p>{{ standard.usage_notes }}</p>
+      {% endif %}
+
+      {% if standard.policies_authorities %}
+      <h4 class="margin-bottom-0">Associated Policies & Authorities</h4>
+      <p>{{ standard.policies_authorities }}</p>
+      {% endif %}
+
+      {% if standard.date_published or standard.jurisdiction or standard.implementing_orgs or standard.level_of_use %}
+
+      <h4 class="margin-bottom-0">Additional Information</h4>
+
+      <table>
+        <tr>
+            <th>Date Published</th>
+            <td>{{ standard.date_published | date: "%B %u, %Y" | default: "No date provided" }}</td>
+        </tr>
+        <tr>
+            <th>Jurisdiction</th>
+            <td>{{ standard.jurisdiction | default: "No information provided" }}</td>
+        </tr>
+        <tr>
+            <th>Implementing Organizations</th>
+            <td>{{ standard.implementing_orgs | default: "No information provided" }}</td>
+        </tr>
+        <tr>
+            <th>Level of Use</th>
+            <td>{{ standard.level_of_use | default: "No information provided" }}</td>
+        </tr>
+      </table>
+
+      {% endif %}
+
+
+  </div>
+{% endif %}
+
+</div>
