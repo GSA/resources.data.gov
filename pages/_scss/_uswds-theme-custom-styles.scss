@@ -169,3 +169,59 @@ nav {
   margin-bottom: 1.25rem;
   margin-top: .25rem;
 }
+
+.usa-sidenav a:hover {
+  color : #4f97d1;
+}
+
+.data-standard-catalog {
+  margin-bottom: 2rem;
+}
+
+.data-standard-catalog .standard-type {
+  display : block;
+  background-color : #fff;
+  border : 1px solid #818181;
+  padding : 0;
+ }  
+
+.data-standard-catalog .standard-type h3 {
+  font-size : 1rem;
+  padding : .5rem;
+  background-color : #eeeeee;
+  border-right : 1px solid #818181;
+  width : 25%;
+  display : inline-block;
+}
+
+.data-standard-catalog .standard-type a {
+  display :inline-block;
+  margin : 0;
+  padding : .5rem .5rem .5rem .7rem;
+  width : 75%;
+  color : #273441 !important;
+  text-decoration : none;
+}
+
+.data-standard-catalog .standard-type a:hover {
+  background-color : #edf5fa;
+  color : #0b4778 !important;
+  cursor: pointer;
+}
+
+.data-standard-catalog .standard-type a span {
+  padding-left : .6rem;
+}
+
+.data-standard-catalog .standard-links {
+  margin : 1.5rem 0 2rem 0;
+}
+
+.data-standard-catalog .standard-links li i {
+  padding-right : .75rem;
+}
+
+.data-standard-catalog table th {
+  background-color : #eee;
+}
+

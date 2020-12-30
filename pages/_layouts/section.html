@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+{% assign category = site.categories | where: "category_name", page.category_name | first %}
+
+<div class="category-introduction usa-layout-docs usa-section breadcrumb-page" id="main-content">
+
+  <div class="bg-primary text-white padding-bottom-4 padding-top-3">
+    <div class="grid-container">
+      <div class="grid-row">
+        <h1 class="margin-bottom-0">{{ page.category_name | capitalize_all }}</h1>
+      </div>
+      <div class="grid-row">
+        <div>
+          <p class="usa-prose">
+            {{ category.description | default: "No introductory text provided for this category." }}
+          </p>
+        </div>
+        <div class="grid-col-4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container padding-top-4">
+
+    {% if category.header != "" %}
+      <div class="grid-row grid-gap">
+        <div class="margin-bottom-4 usa-alert usa-alert--warning">
+          <div class="usa-alert__body">
+            <div class="margin-left-4">
+              <h1 class="usa-alert__heading">{{ category.header_title }}</h1>
+              <p class="usa-alert__text">
+                {{ category.header | markdownify }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    
+
+    <div class="grid-row grid-gap">
+      {% if category.side_nav %}
+      <div class="usa-layout__docs-sidenav desktop:grid-col-3 margin-top-4 desktop:margin-top-0 padding-top-4 display-none desktop:padding-top-0 desktop:display-block desktop:order-first border-base border-top desktop:border-top-0">
+        {% assign side_nav = category.side_nav %}
+
+        <ul class="usa-sidenav">
+        {% for nav in side_nav %}
+          <li class="usa-sidenav__item usa-h2"><a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.text | escape }}</a></li>
+        {% endfor %}
+        </ul>
+
+      </div>
+      {% endif %}
+
+      <div class="usa-layout__docs-main desktop:grid-col-9">      
+        {{ content | inject_headers }}
+      </div>
+    </div>
+  </div>
+</div>

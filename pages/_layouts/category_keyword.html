@@ -1,0 +1,17 @@
+---
+layout: section
+show_resource: true
+---
+
+<h1 class="margin-top-0 padding-bottom-105">{{ page.category_filter }}</h1>
+
+{% assign all_resources = site.resources | concat: site.summaries | where: "tags",
+page.keyword_name | where: "category", page.category_filter | sort: "resource_name" | sort: "name" %}
+
+<div>
+      {% for resource in all_resources %}
+        <div class="no_toc_section border-bottom border-base">
+          {% include resource_block.html resource=resource %}
+        </div>
+      {% endfor %}
+</div>
