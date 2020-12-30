@@ -5,7 +5,7 @@
     {% if page.permalink == standard.permalink %}
         <h2 id="{{ standard.name | slugify }}" class="margin-top-0">{{ standard.name }}</h2>
     {% else %}  
-      <a href="{{ standard.permalink | prepend: site.base_url }}">
+      <a href="{{ standard.permalink | prepend: site.baseurl }}">
         <h2 id="{{ standard.name | slugify }}" class="margin-top-0">{{ standard.name }}</h2>
       </a>
     {% endif %}
@@ -28,7 +28,7 @@
       {% if standard.type == "framework" %} {% assign type-icon = "toolbox" %}{% assign type-link = "#data-standards-framework" %}{% endif %}
 
     <div class="standard-type">
-        <h3 class="margin-top-0 margin-bottom-0">Type</h3><a href="{{ site.base_url }}/standards/concepts/{{ type-link }}" class="margin-top-05 margin-bottom-205"><i class="fa fa-{{ type-icon }}"></i><span>{{ standard.type | capitalize }}</span></a>
+        <h3 class="margin-top-0 margin-bottom-0">Type</h3><a href="{{ site.baseurl }}/standards/concepts/{{ type-link }}" class="margin-top-05 margin-bottom-205"><i class="fa fa-{{ type-icon }}"></i><span>{{ standard.type | capitalize }}</span></a>
     </div>
     {% endif %}
 
