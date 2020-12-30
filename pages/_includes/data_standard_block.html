@@ -5,7 +5,7 @@
     {% if page.permalink == standard.permalink %}
         <h2 id="{{ standard.name | slugify }}" class="margin-top-0">{{ standard.name }}</h2>
     {% else %}  
-      <a href="{{ standard.permalink }}">
+      <a href="{{ standard.permalink | prepend: site.base_url }}">
         <h2 id="{{ standard.name | slugify }}" class="margin-top-0">{{ standard.name }}</h2>
       </a>
     {% endif %}
