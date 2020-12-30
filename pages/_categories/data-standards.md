@@ -20,5 +20,5 @@ side_nav:
     url: /standards/concepts    
 header_title: "This section is a work in progress; your input is requested!"
 header: >-
-  We are currently working to develop this data standards repository in response to [Action 20 of the Federal Data Strategy](https://strategy.data.gov/action-plan/#action-20-develop-a-data-standards-repository) and we welcome your feedback via [Github](https://github.com/GSA/resources.data.gov/issues/157) or by emailing [datagov@gsa.gov](mailto:datagov@gsa.gov)   
+  We are currently working to develop this data standards repository in response to [Action 20 of the Federal Data Strategy](https://strategy.data.gov/action-plan/#action-20-develop-a-data-standards-repository) and we welcome your feedback via [Github](https://github.com/GSA/resources.data.gov/issues/157) or by emailing [datagov@gsa.gov](mailto:datagov@gsa.gov).
 ---
