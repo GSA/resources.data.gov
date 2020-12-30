@@ -14,12 +14,12 @@ implementing_orgs: Federal agencies, State Governments, Local Governments
 level_of_use: Approximately 82 federal agencies, 29 states, 28 cities
 tags:
   - data catalog
-  - enterprise data
   - data inventory
   - data schema
   - open data
   - DCAT
-  - metadata  
+  - metadata
+  - Project Open Data Metadata Schema
 description: The DCAT-US schema is the standardized metadata specification for 
   describing all datasets and APIs within a government agency’s comprehensive 
   data inventory. It was formerly known as the Project Open Data Metadata 

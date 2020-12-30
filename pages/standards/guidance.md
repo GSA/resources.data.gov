@@ -1,11 +1,9 @@
 ---
 title: Data Standards - Policy & Guidance
-layout: section
+layout: category_keyword
 toc: true
 primary_nav_section: Data Standards
 category_name: Data standards 
+keyword_name: data standards
+category_filter: Guidance
 ---
-
-## Policy & Guidance
-
-Policy & Guidance info

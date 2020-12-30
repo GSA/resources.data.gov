@@ -1,4 +1,4 @@
-<div class="grid-row grid-gap display-flex margin-top-2 padding-bottom-2 padding-top-2">
+<div class="data-standard-entry grid-row grid-gap display-flex margin-top-2 padding-bottom-2">
 
   <div class="desktop:grid-col-8">
     
@@ -17,28 +17,38 @@
     </p>
   </div>
 
-  <div class="desktop:grid-col-4 no_toc_section">
+  <div class="desktop:grid-col-4 no_toc_section standard-sidebar">
 
     {% if standard.type != "" %}
-      <h3 class="margin-top-0 margin-bottom-0">Type</h3>
-      <p class="margin-top-05 margin-bottom-205">
-        {{ standard.type }}
-      </p>
+
+      {% assign type-icon = "" %}
+      {% assign type-link = "" %}
+      {% if standard.type == "package" %}   {% assign type-icon = "tools" %}  {% assign type-link = "#data-standards-package" %}  {% endif %}
+      {% if standard.type == "component" %} {% assign type-icon = "wrench" %} {% assign type-link = "#data-standards-component" %} {% endif %}
+      {% if standard.type == "framework" %} {% assign type-icon = "toolbox" %}{% assign type-link = "#data-standards-framework" %}{% endif %}
+
+    <div class="standard-type">
+        <h3 class="margin-top-0 margin-bottom-0">Type</h3><a href="{{ site.base_url }}/standards/concepts/{{ type-link }}" class="margin-top-05 margin-bottom-205"><i class="fa fa-{{ type-icon }}"></i><span>{{ standard.type | capitalize }}</span></a>
+    </div>
     {% endif %}
 
-    {% if standard.website != "" %}
-      <h3><a href="{{ standard.website }}">Website</a></h3>        
-    {% endif %}    
-
-    {% if standard.documentation != "" %}
-      <h3><a href="{{ standard.documentation }}">Documentation</a></h3>        
+    {% if standard.website != "" and standard.documentation != "" %}
+    <ul class="usa-sidenav standard-links">
+      <li class="usa-sidenav__item usa-h2 standard-website">
+        <a href="{{ standard.website }}"><i class="fa fa-desktop"></i>Website</a>
+      </li>
+      <li class="usa-sidenav__item usa-h2 standard-documentation">
+        <a href="{{ standard.documentation }}"><i class="fa fa-file-alt"></i>Documentation</a>
+      </li>
+    </ul>
     {% endif %}       
 
-    <h3 class="margin-top-0 margin-bottom-0">Publisher</h3>
+    <h3 class="margin-top-0 margin-bottom-0 standard-publisher">Publisher</h3>
     <p class="margin-top-05 margin-bottom-205">
       {{ standard.publisher | default: "No publisher provided" }}
     </p>
 
+    {% if page.permalink != standard.permalink %}
     <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
     <p class="margin-top-05 margin-bottom-205">
       {% for tag in standard.tags %}
@@ -48,6 +58,7 @@
         This standard has no keywords.
       {% endfor %}
     </p>
+    {% endif %} 
 
   </div>
 
@@ -55,12 +66,12 @@
 {% if page.permalink == standard.permalink %}
   <div class="desktop:grid-col-12">
 
-      {% if standard.description %}
+      {% if standard.usage_notes != "" and standard.usage_notes != null %}
       <h4 class="margin-bottom-0">Usage Notes</h4>
       <p>{{ standard.usage_notes }}</p>
       {% endif %}
 
-      {% if standard.policies_authorities %}
+      {% if standard.policies_authorities != "" and standard.policies_authorities != null %}
       <h4 class="margin-bottom-0">Associated Policies & Authorities</h4>
       <p>{{ standard.policies_authorities }}</p>
       {% endif %}
@@ -72,7 +83,7 @@
       <table>
         <tr>
             <th>Date Published</th>
-            <td>{{ standard.date_published | date: "%B %u, %Y" | default: "No date provided" }}</td>
+            <td>{{ standard.date_published | date: "%B %e, %Y" | default: "No date provided" }}</td>
         </tr>
         <tr>
             <th>Jurisdiction</th>
@@ -89,6 +100,16 @@
       </table>
 
       {% endif %}
+
+    <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
+    <p class="margin-top-05 margin-bottom-205">
+      {% for tag in standard.tags %}
+        {% assign slug_tag = tag | slugify %}
+        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
+      {% else %}
+        This standard has no keywords.
+      {% endfor %}
+    </p>      
 
 
   </div>

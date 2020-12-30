@@ -3,14 +3,12 @@ layout: section
 show_resource: true
 ---
 
-<h1 class="margin-top-0 padding-bottom-205">Catalog</h1>
-
-{% assign data_standards = site.data_standards %}
+<h1 class="margin-top-0 padding-bottom-105">Catalog</h1>
 
 <div>
-  {% for standard in data_standards %}
+  {% for standard in site.data_standards %}
 
-      <div class="no_toc_section border-bottom border-base">
+      <div class="data-standard-catalog no_toc_section border-bottom border-base">
         {% include data_standard_block.html standard=standard %}
       </div>
 
