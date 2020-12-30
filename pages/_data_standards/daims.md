@@ -10,7 +10,7 @@ documentation: https://fiscal.treasury.gov/files/data-transparency/daims-documen
 publisher: Bureau of the Fiscal Service, Department of Treasury
 date_published: 2020-07-13
 jurisdiction: United States Government
-implementing_orgs: Federal agencies, State Governments, Local Governments
+implementing_orgs: Federal agencies
 level_of_use:
 tags:
   - spending
