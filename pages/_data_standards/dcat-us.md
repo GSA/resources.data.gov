@@ -1,6 +1,6 @@
 ---
 name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
-permalink: /standards/catalog/dcat-us
+permalink: /standards/catalog/dcat-us/
 layout: catalog_data_standard
 primary_nav_section: Data Standards
 category_name: Data standards 

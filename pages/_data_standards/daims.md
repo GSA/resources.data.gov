@@ -1,6 +1,6 @@
 ---
 name: DATA Act Information Model Schema (DAIMS)
-permalink: /standards/catalog/daims
+permalink: /standards/catalog/daims/
 layout: catalog_data_standard
 primary_nav_section: Data Standards
 category_name: Data standards 
