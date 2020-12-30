@@ -1,0 +1,16 @@
+---
+layout: section
+show_resource: true
+---
+
+{% assign standard = site.data_standards | where: "name", page.name | first %}
+
+<h1 class="margin-top-0 padding-bottom-105">Catalog</h1>
+
+<div>
+
+      <div class="data-standard-catalog no_toc_section border-bottom border-base">
+        {% include data_standard_block.html standard=standard %}
+      </div>
+
+</div>
