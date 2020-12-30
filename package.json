@@ -21,7 +21,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulplog": "^1.0.0",
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^3.14.1",
     "lodash.assign": "^4.2.0",
     "path": "^0.12.7",
     "smooth-scroll": "^16.0.3",
