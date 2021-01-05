@@ -7,7 +7,7 @@ publish: true
 resource_name: Curated Data Skills Catalog
 description: The Curated Data Skills Catalog supports the Federal Data Strategy by providing a list of learning opportunities to help agencies develop competencies for managing data as a strategic asset and making data-driven decisions. 
 source: Federal Data Strategy
-category: skills-development
+category: Skills development
 tags:
   - workforce development
   - data skills
