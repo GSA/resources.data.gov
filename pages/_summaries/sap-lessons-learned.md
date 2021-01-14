@@ -14,5 +14,5 @@ tags:
   - icsp
   - process-redesign
 format: PDF (23 pages)
-link: 
+link: ../../assets/documents/SAP_Lessons_Learned.pdf
 ---
