@@ -3,7 +3,7 @@ version: v1.14.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   SNYK-JS-CACHEBASE-1054631:
-    - cache-base
+    - cache-base:
       reason: >-
         Snyk amendment: "This was deemed not a vulnerability."
       expires: '2021-04-19T15:03:04.076Z'
@@ -39,7 +39,7 @@ ignore:
   SNYK-JS-Y18N-1021887:
     - gulp > gulp-cli > yargs > y18n:
         reason:  No patch available in gulp. gulp only used in builds which are 
-        done in trusted environments so risk is low. y18n never called directly.
+          done in trusted environments so risk is low. y18n never called directly.
         expires: '2021-01-14T21:40:40.202Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
