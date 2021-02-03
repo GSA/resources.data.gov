@@ -4,9 +4,9 @@ version: v1.14.1
 ignore:
   SNYK-JS-CACHEBASE-1054631:
     - cache-base:
-      reason:
-        Snyk amendment: "This was deemed not a vulnerability."
-      expires: '2021-04-19T15:03:04.076Z'
+        reason:
+          Snyk amendment: "This was deemed not a vulnerability."
+        expires: '2021-04-19T15:03:04.076Z'
   SNYK-JS-NODESASS-541000:
     - gulp-sass > node-sass:
         reason: >-
