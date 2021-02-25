@@ -31,10 +31,6 @@ ignore:
     - watchify > chokidar > fsevents > node-pre-gyp > rc > ini:
         reason: Created issue to resolve in 30-days
         expires: '2021-01-14T21:40:40.202Z'
-  SNYK-JS-NODENOTIFIER-1035794:
-    - gulp-notify > node-notifier:
-        reason: Created issue to resolve in 90-days
-        expires: '2021-03-13T21:40:40.202Z'
   SNYK-JS-Y18N-1021887:
     - gulp > gulp-cli > yargs > y18n:
         reason: >-
