@@ -14,7 +14,6 @@
     "fuse.js": "^3.4.4",
     "glossary-panel": "^1.0.0",
     "gulp": "^4.0.2",
-    "gulp-notify": "^3.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
