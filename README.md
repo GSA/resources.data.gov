@@ -4,6 +4,34 @@
 
 Resources for open data and enterprise data inventory management.
 
+## Usage
+
+### Editing content
+
+This site uses Netlify to manage its editorial workflow. Content is added and
+edited in collections via the Netlify interface, which can be accessed by
+approved contributors at
+[resources.data.gov/admin](https://resources.data.gov/admin). Collections are
+managed via the config.yml file in pages/admin.
+
+
+## Branches and environments
+
+Environment | Branch | Description
+----------- | ------ | -----------
+resources.data.gov | `main` | The production instance of r.d.g.
+resources-staging.data.gov | `develop` | A preview site used for ad-hoc development or significant changes requiring partner review.
+\* | feature branches | Feature branches to preview a single change.
+
+Federalist builds all branches and creates previews for them. Two branches are
+special, `main` which is automatically deployed by Federalist to
+[resources.data.gov](https://resources.data.gov/) and `develop` which is used as
+a staging branch for significant changes.
+
+Deploying to staging is not required. It might be useful for previewing
+significant changes to the site that require partner review.
+
+
 ## Development
 
 ### Prerequisites
@@ -42,11 +70,9 @@ Check for broken links.
 
     $ npm run qa
 
-## Netlify
 
-This site uses Netlify to manage its editorial workflow. Content is added and edited in collections via the Netlify interface, which can be accessed by approved contributors at [resources.data.gov/admin](https://resources.data.gov/admin). Collections are managed via the config.yml file in pages/admin. 
+### Update dependencies
 
-
-## Update Dependencies
-
-To update dependencies, you can run `bundle update {dependency}` after running `npm install`. Then follow all other development steps above to validate site is working as expected.
+To update dependencies, you can run `bundle update {dependency}` after running
+`npm install`. Then follow all other development steps above to validate site is
+working as expected.
