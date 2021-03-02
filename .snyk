@@ -38,19 +38,3 @@ ignore:
     - uswds > del > globby > fast-glob > glob-parent:
         reason: Created issue to resolve in 90-days
         expires: '2021-04-12T21:40:40.202Z'
-# patches apply the minimum changes required to fix a vulnerability
-patch:
-  SNYK-JS-TREEKILL-536781:
-    - concurrently > tree-kill:
-        patched: '2019-12-12T04:39:43.086Z'
-  SNYK-JS-LODASH-567746:
-    - gulp-sass > node-sass > lodash:
-        patched: '2020-05-29T14:47:08.250Z'
-    - gulp-sass > node-sass > sass-graph > lodash:
-        patched: '2020-05-29T14:47:08.250Z'
-    - gulp-sass > node-sass > gaze > globule > lodash:
-        patched: '2020-05-29T14:47:08.250Z'
-    - gulp-sass > lodash:
-        patched: '2020-05-29T14:47:08.250Z'
-    - concurrently > lodash:
-        patched: '2020-05-29T14:47:08.250Z'
