@@ -76,7 +76,7 @@ h5,
     @include u-flex("align-center");
 
     span {
-      @include u-padding-right("7");
+      @include u-padding-right(7);
     }
 
     &:after {
