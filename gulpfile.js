@@ -1,5 +1,4 @@
 var autoprefixer = require("autoprefixer");
-// var autoprefixerOptions = require("./node_modules/uswds-gulp/config/browsers");
 const csso = require("postcss-csso");
 var gulp = require("gulp");
 var mqpacker = require("css-mqpacker");
