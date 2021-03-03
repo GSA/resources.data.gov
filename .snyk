@@ -6,18 +6,6 @@ ignore:
     - cache-base: null
     - reason: 'Snyk amendment: "This was deemed not a vulnerability."'
     - expires: '2021-04-19T15:03:04.076Z'
-  SNYK-JS-NODESASS-541000:
-    - gulp-sass > node-sass:
-        reason: >-
-          No patch available. gulp and node-sass are only used in builds which
-          are done in trusted environments so risk is low.
-        expires: '2021-03-02T15:03:04.076Z'
-  SNYK-JS-NODESASS-541002:
-    - gulp-sass > node-sass:
-        reason: >-
-          No patch available. gulp and node-sass are only used in builds which
-          are done in trusted environments so risk is low.
-        expires: '2021-05-02T15:03:04.076Z'
   SNYK-JS-INI-1048974:
     - gulp > gulp-cli > liftoff > findup-sync > resolve-dir > global-modules > global-prefix > ini:
         reason: Created issue to resolve in 30-days
@@ -31,10 +19,6 @@ ignore:
     - watchify > chokidar > fsevents > node-pre-gyp > rc > ini:
         reason: Created issue to resolve in 30-days
         expires: '2021-01-14T21:40:40.202Z'
-  SNYK-JS-NODENOTIFIER-1035794:
-    - gulp-notify > node-notifier:
-        reason: Created issue to resolve in 90-days
-        expires: '2021-03-13T21:40:40.202Z'
   SNYK-JS-Y18N-1021887:
     - gulp > gulp-cli > yargs > y18n:
         reason: >-
@@ -54,75 +38,3 @@ ignore:
     - uswds > del > globby > fast-glob > glob-parent:
         reason: Created issue to resolve in 90-days
         expires: '2021-04-12T21:40:40.202Z'
-  SNYK-JS-NODESASS-1059081:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-04-12T21:40:40.202Z'
-  SNYK-JS-NODESASS-535498:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-04-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-535500:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 30-days
-      expires: '2021-03-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-535502:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-05-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540956:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 30-days
-      expires: '2021-03-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540958:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-05-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540990:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-05-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540996:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 30-days
-      expires: '2021-03-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540998:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-05-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540992:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-05-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540994:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-05-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540964:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-05-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540978:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-05-14T21:40:40.202Z'
-  SNYK-JS-NODESASS-540980:
-    - gulp-sass > node-sass:
-      reason: Created issue to resolve in 90-days
-      expires: '2021-05-14T21:40:40.202Z'
-# patches apply the minimum changes required to fix a vulnerability
-patch:
-  SNYK-JS-TREEKILL-536781:
-    - concurrently > tree-kill:
-        patched: '2019-12-12T04:39:43.086Z'
-  SNYK-JS-LODASH-567746:
-    - gulp-sass > node-sass > lodash:
-        patched: '2020-05-29T14:47:08.250Z'
-    - gulp-sass > node-sass > sass-graph > lodash:
-        patched: '2020-05-29T14:47:08.250Z'
-    - gulp-sass > node-sass > gaze > globule > lodash:
-        patched: '2020-05-29T14:47:08.250Z'
-    - gulp-sass > lodash:
-        patched: '2020-05-29T14:47:08.250Z'
-    - concurrently > lodash:
-        patched: '2020-05-29T14:47:08.250Z'

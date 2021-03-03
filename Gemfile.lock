@@ -101,12 +101,12 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  html-proofer (>= 3.14.1)
+  html-proofer (>= 3.15.2)
   jekyll (~> 4.1.1)
   jekyll-feed (~> 0.6)
   jekyll-redirect-from
   jekyll-sitemap
-  jekyll-toc (~> 0.13)
+  jekyll-toc (~> 0.13, >= 0.13.1)
   tzinfo-data
 
 BUNDLED WITH

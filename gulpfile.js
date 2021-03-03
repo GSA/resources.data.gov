@@ -1,6 +1,5 @@
 var autoprefixer = require("autoprefixer");
-var autoprefixerOptions = require("./node_modules/uswds-gulp/config/browsers");
-var cssnano = require("cssnano");
+const csso = require("postcss-csso");
 var gulp = require("gulp");
 var mqpacker = require("css-mqpacker");
 var path = require("path");
@@ -8,7 +7,7 @@ var pkg = require("./node_modules/uswds/package.json");
 var postcss = require("gulp-postcss");
 var rename = require("gulp-rename");
 var replace = require("gulp-replace");
-var sass = require("gulp-sass");
+var sass = require("gulp-dart-sass");
 var sourcemaps = require("gulp-sourcemaps");
 var uswds = require("./node_modules/uswds-gulp/config/uswds");
 
@@ -60,9 +59,11 @@ gulp.task("copy-uswds-js", () => {
 
 gulp.task("build-sass", function(done) {
   var plugins = [
-    autoprefixer(autoprefixerOptions),
-    mqpacker({ sort: true }),
-    cssnano({ autoprefixer: { browsers: autoprefixerOptions } })
+    autoprefixer({
+      cascade: false,
+      grid: true
+    }),
+    csso({ forceMediaMerge: false })
   ];
   return gulp
     .src(`${PROJECT_SASS_SRC}/styles.scss`)
