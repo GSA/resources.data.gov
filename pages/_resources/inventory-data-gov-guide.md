@@ -143,6 +143,8 @@ details: >+
 
   **Access Level**:  Choose public, restricted public, or non-public. Please note that in the License field, if applicable, the URL for the license should be provided. Spatial. If the dataset is about a specific location, enter that information in this field. Temporal. If the dataset covers a specific date range, enter that information following the format provided.  Hit “Save and Continue” to get to the next screen. 
   
+    ![image2](../../assets/media/inventory image 2.png)
+  
    The second screen has additional metadata fields. 
 
   **Meets Agency Data Quality**. This field shows if the dataset meets your agency’s data quality standards if any apply.
@@ -233,7 +235,7 @@ details: >+
 
   {:#automating-data-json-downloads-by-agencies}
 
-  Rather than log in to inventory.data.gov and manually click the buttons to download the Redacted Inventory (PDL) and Unredacted Inventory (EDI) files, it is possible to use the API and your API key in order to automate the process of adding the data.json file to the agency website.
+  Rather than downloading data.json files, it is possible to use the API and your API key in order to automate the process of adding the data.json file to the agency website.
 
   Here’s what the request would look like using the curl-like tool[ httpie](http://www.httpie.org/)
 
