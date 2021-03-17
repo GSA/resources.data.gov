@@ -194,7 +194,7 @@ details: >+
 
   ### Draft Feature
 
-  While creating datasets in [inventory.data.gov](http://inventory.data.gov/), users can use the "Save as Draft" button, which indicates that the dataset is still being worked on or reviewed. Any dataset saved with “Draft” status will not be included in the generated Redacted/Unredacted data.json files.  If you have completed metadata entry for the dataset, hit the “Finish and Publish” button. 
+  While creating datasets in [inventory.data.gov](http://inventory.data.gov/), users can use the "Save as Draft" button, which indicates that the dataset is still being worked on or reviewed. Any dataset saved with “Draft” status will not be included in the data.json files.  If you have completed metadata entry for the dataset, hit the “Finish and Publish” button. 
 
   ![publishing](../../assets/media/66867732-eb4ff080-ef69-11e9-8bc6-802852ee6888.jpg)
 
