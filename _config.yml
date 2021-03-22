@@ -11,7 +11,7 @@ searchgov_affiliate: datagov-resources
 github:
   organization: GSA
   repository: resources.data.gov
-  default_branch: develop
+  default_branch: main
 
 scripts:
   - assets/uswds/js/uswds.min.js
