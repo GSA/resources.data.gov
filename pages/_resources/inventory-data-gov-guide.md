@@ -66,7 +66,7 @@ details: >+
   New users to inventory.data.gov should request an account by completing a New User Form. If your agency does not permit access to the google [form](https://docs.google.com/forms/d/e/1FAIpQLSetStmwqrbMWDz_WIlh1trjhP0PFCjKXHzshsJveYmtIvlG2Q/viewform?usp=sf_link), contact[ datagovhelp@gsa.gov](mailto:datagovhelp@gsa.gov) to complete a Word version of the form.  Creating your inventory.data.gov account requires an initial login. Logins to use inventory.data.gov are integrated with [login.gov](https://login.gov). You should log in to login.gov and follow the directions for associating your PIV/CAC card to your login.gov account. 
 
 
-  ![logingovgraphic](../../assets/media/login.gov image.png) 
+  ![logingovgraphic](../../assets/media/login.gov-image.png) 
 
 
   After you have logged in to inventory.data.gov using login.gov, email us at datagovhelp@gsa.gov to let us know you have completed the initial login. We will then associate requested permissions to your account. On subsequent logins to inventory.data.gov, you should be able to use inventory.data.gov to manage metadata without further assistance.
@@ -120,7 +120,7 @@ details: >+
 
   The Create Dataset page features the metadata following the [DCAT-US Version 1.1.](../dcat-us/)
 
-  ![metadata](../../assets/media/inventory image 1.png)
+  ![metadata](../../assets/media/inventory-image-1.png)
 
 
   There are examples displayed in each field, and there is also pop-up help information for each field. Full details are on the [Resources.data.gov](../dcat-us/) page. 
@@ -143,7 +143,7 @@ details: >+
 
   **Access Level**:  Choose public, restricted public, or non-public. Please note that in the License field, if applicable, the URL for the license should be provided. Spatial. If the dataset is about a specific location, enter that information in this field. Temporal. If the dataset covers a specific date range, enter that information following the format provided.  Hit “Save and Continue” to get to the next screen. 
   
-    ![image2](../../assets/media/inventory image 2.png)
+    ![image2](../../assets/media/inventory-image-2.png)
   
    The second screen has additional metadata fields. 
 
@@ -184,7 +184,7 @@ details: >+
  
   For most inventory.data.gov users, the dataset is actually hosted on the agency.gov site, so you will hit the “Link to a file” radio button and provide the URL. If you would like to provide a link to API, choose the “Link to an API” radio button.  If applicable, choose the “Access URL” button for datasets that are not directly downloadable.
 
- ![image3](../../assets/media/inventory image 3.png)
+ ![image3](../../assets/media/inventory-image-3.png)
  
    Provide a **description** of the dataset.
 
