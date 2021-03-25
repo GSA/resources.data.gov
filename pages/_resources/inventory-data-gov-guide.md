@@ -180,11 +180,11 @@ details: >+
   Once you are finished entering the metadata, hit **Save and Continue.** 
 
  
- The final screen is “Resource Upload” where you can provide information on how to access the dataset. 
+  The final screen is “Resource Upload” where you can provide information on how to access the dataset. 
  
   For most inventory.data.gov users, the dataset is actually hosted on the agency.gov site, so you will hit the “Link to a file” radio button and provide the URL. If you would like to provide a link to API, choose the “Link to an API” radio button.  If applicable, choose the “Access URL” button for datasets that are not directly downloadable.
 
- ![image3](../../assets/media/inventory-image-3.png)
+  ![image3](../../assets/media/inventory-image-3.png)
  
    Provide a **description** of the dataset.
 
@@ -200,7 +200,7 @@ details: >+
 
  
 
-### Exporting Data.json
+  ### Exporting Data.json
 
   {:#exporting-data-json}
 
