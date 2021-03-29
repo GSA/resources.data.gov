@@ -41,7 +41,7 @@ details: >+
 
   * A platform to manage public/non-public datasets: create new entries, modify existing ones, and delete any datasets as needed
 
-  * Unredacted Inventory / Enterprise Data Inventory (EDI) and Redacted Inventory / Public Data Listing (PDL) functionality exports the successfully validated datasets in the form of a data.json file complying to the POD Schema 1.1 version. Error records are provided in a log file for review and resolution by agency users.
+  * Unredacted Inventory / Enterprise Data Inventory (EDI) and Redacted Inventory / Public Data Listing (PDL) functionality exports the successfully validated datasets in the form of a data.json file complying to the DCAT-US 1.1 version. Error records are provided in a log file for review and resolution by agency users.
 
 
   ### Using Inventory.data.gov
@@ -139,7 +139,7 @@ details: >+
 
   Enter the **Tags** for the dataset. Your dataset will be included when a Data.gov user searches for those Tags.
 
-  For **Publisher**, start typing the name of the component within your agency, and the field will auto-populate. If your agency is not differentiating datasets by sub-agency, start typing your agency name in the Publisher field. If nothing auto-populates, it indicates we have not added the relevant information within inventory.data.gov. Please contact inventory-help@gsa.gov to have the information added to the system. Contact Name/Email. Enter the name and email information for the contact for this dataset. Questions about this dataset will be referred to the contact listed.
+  For **Publisher**, start typing the name of the component within your agency, and the field will auto-populate. If your agency is not differentiating datasets by sub-agency, start typing your agency name in the Publisher field. If nothing auto-populates, it indicates we have not added the relevant information within inventory.data.gov. Please contact inventory-help@gsa.gov to have the information added to the system. **Contact Name/Email.** Enter the name and email information for the contact for this dataset. Questions about this dataset will be referred to the contact listed.
 
   **Access Level**:  Choose public, restricted public, or non-public. Please note that in the License field, if applicable, the URL for the license should be provided. Spatial. If the dataset is about a specific location, enter that information in this field. Temporal. If the dataset covers a specific date range, enter that information following the format provided.  Hit “Save and Continue” to get to the next screen. 
   
@@ -195,9 +195,6 @@ details: >+
   ### Draft Feature
 
   While creating datasets in [inventory.data.gov](http://inventory.data.gov/), users can use the "Save as Draft" button, which indicates that the dataset is still being worked on or reviewed. Any dataset saved with “Draft” status will not be included in the data.json files.  If you have completed metadata entry for the dataset, hit the “Finish and Publish” button. 
-
-  ![publishing](../../assets/media/66867732-eb4ff080-ef69-11e9-8bc6-802852ee6888.jpg)
-
  
 
   ### Exporting Data.json
@@ -279,65 +276,6 @@ details: >+
 
   For the time being, the Data.gov PMO will continue to provide this hosting capability on inventory.data.gov while it remains small scale and does not require significant additional Data.gov resources.
 
-
-  1. Who do we email to request our organization be created?
-
-  Contact the DataGov team via email.
-
-
-  2. Who should I contact to get my organization approved/created?
-
-  When you contact the Data.gov team (see contact info above) about using inventory.data.gov, we can create the organization for you.
-
-
-  3. For the record to be identified as geospatial, does “geospatial” go in Theme (Category)
-
-  Yes. That designation also ensures that record is included in geoplatform.gov.
-
-
-  4. Is there a way to import an existing data.json into inventory.data.gov?
-
-  For importing existing data.json, please contact the Data.gov team and we will work with you to migrate into inventory.data.gov.
-
-
-  5. How do we know our agency POC?
-
-  For Data.gov/Open Data Policy purposes, if you don’t know your agency’s POC, contact the Data.gov team and we will connect you. 
-
-
-  6. How does this work with Data.gov?
-
-  Inventory.data.gov is a separate system from the Data.gov catalog, using the same technology as the catalog (CKAN) to provide a service that agencies can use to create and maintain data inventories that are ultimately harvested by the Data.gov catalog from agency.gov/data.json
-
-
-  7. Can we add custom core metadata fields?
-
-  Yes, but not through the user interface on inventory.data.gov currently. Please contact the Data.gov team if you have this situation.
-
-
-  8. Does search works only on dataset name and description or the actual content as well?
-
-  Search does not cover the actual content.
-
-
-  9. What is the difference between public and restricted-public?
-
-  See the “access level” field in [Resources.data.gov](../dcat-us/): The degree to which this dataset could be made publicly-available, regardless of whether it has been made available. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public).
-
-
-  10. Can you clarify the difference between central and inventory CKAN? It seems like many datasets are using the datastore feature on inventory.data.gov – is this no longer the policy and inventory is mainly for creating data.json files?
-
-  “Central CKAN” was a term used in 2014 to refer to what we call inventory.data.gov – it is one and the same. This webinar focused on the primary purpose of inventory.data.gov – to provide a dataset management system to help agencies create and maintain their data inventories and arrive at a data.json. We do use inventory.data.gov for a second purpose – to host a small number of datasets for agencies that needed a hosting capability at the conclusion of the Socrata platform contract that Data.gov had until July 2014.
-
-
-  11. If inventory.data.gov is not intended for geospatial metadata, what system is? Geoplatform.gov? If we have standards-compliant (ISO, FGDC, etc.) metadata already published, can we import these metadata fields? Or must we enter them manually?
-
-  Inventory.data.gov in its current form is not designed to handle geospatial metadata. As discussed in our harvesting documentation, Data.gov continues to harvest geospatial datasets directly from geospatial harvest sources. Agencies should have the remainder of their agencies in a “non-geospatial” data.json that the Data.gov catalog can harvest.
-
-
-  12. So the system does not push errors to you; you have to search for them?
-
-  When you are ready to export your agency’s datasets to data.json and hit the button on inventory.data.gov, you will be prompted to download a zip file containing the data.json. If there are errors, the zip file will also contain an error log containing information about the datasets with errors. We are working on improving validation within inventory.data.gov so that more errors are identified as you are adding and editing datasets, before you reach the export stage.
 
 examples: ""
 link: ""
