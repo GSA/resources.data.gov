@@ -38,3 +38,13 @@ ignore:
     - uswds > del > globby > fast-glob > glob-parent:
         reason: Created issue to resolve in 90-days
         expires: '2021-04-12T21:40:40.202Z'
+  SNYK-JS-ISSVG-1085627:
+    - '*':
+        reason: >-
+          Affected method `is-svg` never called directly.
+        expires: '2021-06-30T21:40:40.202Z'
+  SNYK-JS-HOSTEDGITINFO-1088355:
+    - '*':
+        reason: >-
+          Affected method `hosted-git-info` never called directly.
+        expires: '2021-06-30T21:40:40.202Z'
