@@ -26,7 +26,7 @@
     "node-notifier": "^8.0.1",
     "path": "^0.12.7",
     "postcss": "^8.2.6",
-    "postcss-csso": "^5.0.0",
+    "postcss-csso": "^5.0.1",
     "sass": "^1.32.8",
     "smooth-scroll": "^16.0.3",
     "uswds": "^2.10.1",
