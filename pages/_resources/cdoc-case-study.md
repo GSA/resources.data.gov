@@ -5,6 +5,10 @@ description: "This series was developed by the Chief Data Officer Council’s Da
 Workforce Development Working Group to provide support to agencies in 
 implementing the Federal Data Strategy’s Agency Action 4 gap-closing strategy 
 training component in FY21. "
+
+![CDOCcasestudy](../../assets/documents/CDOC_Case_Studies_Final_v2.pdf) 
+
+
 source: Federal Chief Data Officer's Council
 category: Case studies & examples
 tags:
