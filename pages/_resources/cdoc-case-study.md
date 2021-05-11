@@ -6,7 +6,7 @@ Workforce Development Working Group to provide support to agencies in
 implementing the Federal Data Strategy’s Agency Action 4 gap-closing strategy 
 training component in FY21. "
 
-file: /assets/documents/CDOC_Case_Studies_Final_v2.pdf
+file: /assets/documents/CDOC_Case_Studies_Final_v3.pdf
 
 
 source: Federal Chief Data Officer's Council
