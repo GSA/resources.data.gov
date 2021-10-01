@@ -35,11 +35,11 @@ ignore:
         reason: >-
           post-css already pinned above 8.3.8, not sure why this
           warning re-occurs.
-        expires: '2021-12-30T21:40:40.202Z'
+        expires: '2021-10-30T21:40:40.202Z'
   SNYK-JS-POSTCSS-1090595:
     - '*':
         reason: >-
           post-css already pinned above 8.3.8, not sure why this
           warning re-occurs.
-        expires: '2021-12-30T21:40:40.202Z'
+        expires: '2021-10-30T21:40:40.202Z'
   
