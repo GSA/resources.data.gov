@@ -21,13 +21,13 @@ jobs:
 
       - restore_cache:
           keys:
-            - v1-ruby-{{ checksum "Gemfile.lock" }}
-            - v1-ruby-
+            - v2-ruby-{{ checksum "Gemfile.lock" }}
+            - v2-ruby-
       - run:
           name: install ruby dependencies
           command: bundle install --path vendor/bundle
       - save_cache:
-          key: v1-ruby-{{ checksum "Gemfile.lock" }}
+          key: v2-ruby-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
 
@@ -49,8 +49,8 @@ jobs:
             - v2-node-
       - restore_cache:
           keys:
-            - v1-ruby-{{ checksum "Gemfile.lock" }}
-            - v1-ruby-
+            - v2-ruby-{{ checksum "Gemfile.lock" }}
+            - v2-ruby-
       - run:
           name: install node dependencies
           command: npm install
