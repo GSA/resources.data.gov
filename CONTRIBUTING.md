@@ -48,13 +48,9 @@ site.
 1. Each site owner must
    [approve](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-reviews)
    a pull request before it can be merged.
-1. Changes are merged to the `develop` branch where they are automatically
-   published to [resources-staging.data.gov](https://resources-staging.data.gov)
-   (staging) and can be previewed.
-1. As frequently as required but at least once a month, GSA should submit
-   a "release" pull request that will promote changes on `develop` to `master`.
-   Once merged, the content on `master` is automatically published to
-   [resources.data.gov](https://resources.data.gov/) (production).
+1. Changes are merged to the `main` branch where they are automatically
+   published to [resources.data.gov](https://resources.data.gov)
+   and the publishing is done.
 
 
 ## Branch previews
