@@ -109,7 +109,7 @@ details: >+
 
   ### [Department of the Interior](http://www.doi.gov/data) 
 
-  * [US Fish and Wildlife Service](http://www.fws.gov/data/)
+  * [US Fish and Wildlife Service](https://www.fws.gov/gis/data/national/)
 
   * [US Geological Survey](http://data.usgs.gov/)
 
@@ -130,7 +130,7 @@ details: >+
 
   * [Bureau of Justice Statistics](http://www.bjs.gov/index.cfm?ty=dca)
 
-  * [Uniform Crime Reporting - FBI](http://www.ucrdatatool.gov/)
+  * [Uniform Crime Reporting - FBI](https://crime-data-explorer.app.cloud.gov/pages/home)
 
 
   ### [Department of Labor](http://www.dol.gov/data)
@@ -162,7 +162,7 @@ details: >+
 
   * [Environmental Database Gateway](https://edg.epa.gov/metadata/catalog/main/home.page)
 
-  * [National Renewable Energy Laboratoryn - The Open PV Project](https://openpv.nrel.gov/login.php?dest=data)
+  * [National Renewable Energy Laboratoryn - The Open PV Project](https://www.nrel.gov/research/data-tools-alpha.html)
 
 
   ### [General Services Administration](http://www.gsa.gov/data)
@@ -219,7 +219,7 @@ details: >+
 
   * [National Transportation Safety Board](http://www.ntsb.gov/data)
 
-  * [Social Security Advisory Board](http://www.ssab.gov/DATA.aspx)
+  * [Social Security Advisory Board](https://www.ssab.gov/)
 
 
   ### Other Programs  
@@ -230,7 +230,7 @@ details: >+
 
   * [Geoplatform.gov](https://www.geoplatform.gov/data)
 
-  * [Joint Ecosystem Modeling](http://www.jem.gov/Data)
+  * [Joint Ecosystem Modeling](http://www.jem.gov/)
 
   * [National Broadband Map](https://broadbandmap.fcc.gov/#/)
 
@@ -238,7 +238,7 @@ details: >+
 
   * [USASpending.gov](https://files.usaspending.gov/database_download/)
 
-  * [VolunteeringInAmerica.gov](http://www.volunteeringinamerica.gov/data.cfm)
+  * [VolunteeringInAmerica.gov](https://data.americorps.gov/)
 
 examples: ""
 link: ""
