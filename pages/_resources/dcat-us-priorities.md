@@ -47,7 +47,7 @@ details: >-
   
   ### Data Assets to Fuel AI R&D 
 
-  Consistent with [Executive Order on Maintaining American Leadership in Artificial Intelligence (EO 13859)](https://www.whitehouse.gov/presidential-actions/executive-order-maintaining-american-leadership-artificial-intelligence/), agencies are directed to improve data “inventory documentation to enable discovery and usability [in order to] prioritize improvements to access and quality of data … based on the AI research community’s user feedback.” 
+  Consistent with [Executive Order on Maintaining American Leadership in Artificial Intelligence (EO 13859)](https://www.federalregister.gov/documents/2019/02/14/2019-02544/maintaining-american-leadership-in-artificial-intelligence), agencies are directed to improve data “inventory documentation to enable discovery and usability [in order to] prioritize improvements to access and quality of data … based on the AI research community’s user feedback.” 
 
 
   {: .table .table-schema}
