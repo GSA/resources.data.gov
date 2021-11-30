@@ -47,7 +47,7 @@ details: >
   ### Generate revenue and create new jobs in the private sector
 
 
-  McKinsey estimates that open health data alone adds over $300 billion to the economy each year. Entrepreneurs and non-profits integrate existing open government datasets in ways ranging from web apps that connect you with the nearest hospital in case of an emergency, with [information](https://healthdata.gov/node/86/revisions/131/view) from Health and Human Services, to matching prospective college students with the most appropriate schools, based on [IPEDS](http://nces.ed.gov/ipeds/) data maintained by the Department of Education. Making more of your agency data publicly available in standards-compliant, machine-readable formats makes it easier for private sector companies and entrepreneurs to create new innovations fueled by your agency's data.
+  McKinsey estimates that open health data alone adds over $300 billion to the economy each year. Entrepreneurs and non-profits integrate existing open government datasets in ways ranging from web apps that connect you with the nearest hospital in case of an emergency, with [information](https://findahealthcenter.hrsa.gov/) from Health and Human Services, to matching prospective college students with the most appropriate schools, based on [IPEDS](http://nces.ed.gov/ipeds/) data maintained by the Department of Education. Making more of your agency data publicly available in standards-compliant, machine-readable formats makes it easier for private sector companies and entrepreneurs to create new innovations fueled by your agency's data.
 examples: ""
 link: ""
 layout: resource
