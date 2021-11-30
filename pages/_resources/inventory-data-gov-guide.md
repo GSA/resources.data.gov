@@ -234,7 +234,7 @@ details: >+
 
   Rather than downloading data.json files, it is possible to use the API and your API key in order to automate the process of adding the data.json file to the agency website.
 
-  Here’s what the request would look like using the curl-like tool[ httpie](http://www.httpie.org/)
+  Here’s what the request would look like using the curl-like tool[ httpie](https://httpie.io/)
 
 
   **Redacted Inventory (PDL)**
