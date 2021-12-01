@@ -16,5 +16,5 @@ category: Guidance
 tags:
   - data standards
 format: PDF (2 pages)
-link: https://www.census.gov/eos/www/naics/federal_register_notices/notices/fr08au16.pdf
+link: https://www.federalregister.gov/documents/2021/07/02/2021-14249/north-american-industry-classification-system-naics-updates-for-2022-update-of-statistical-policy
 ---
