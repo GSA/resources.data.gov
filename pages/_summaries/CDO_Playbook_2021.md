@@ -15,5 +15,5 @@ tags:
   - data governance
   - 
 format: ""
-file: /assets/documents/CDO_Playbook_2021.pdf
+link: "/assets/documents/CDO_Playbook_2021.pdf"
 ---
