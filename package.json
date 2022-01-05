@@ -29,7 +29,7 @@
     "postcss-csso": "^5.0.1",
     "sass": "^1.44.0",
     "smooth-scroll": "^16.0.3",
-    "uswds": "^2.12.2",
+    "uswds": "^2.13.0",
     "uswds-gulp": "github:uswds/uswds-gulp",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
