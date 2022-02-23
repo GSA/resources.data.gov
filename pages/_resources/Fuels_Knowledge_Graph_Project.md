@@ -3,7 +3,7 @@ resource_name: "Fuels Knowledge Graph Project"
 slug: fuels-knowledge-graph-project
 description: "The Fuels Knowledge Graph Project (FKGP), funded through the Federal Chief Data Officers (CDO) Council, explored the use of knowledge graphs to achieve more consistent and reliable fuel management performance measures. The team hypothesized that better performance measures and an interoperable semantic framework could enhance the ability to understand wildfires and, ultimately, improve outcomes. To develop a more systematic and robust characterization of program outcomes, the FKGP team compiled, reviewed, and analyzed multiple agency glossaries and data sources. The team examined the relationships between them, while documenting the data management necessary for a successful fuels management program."
 
-file: /assets/documents/CDOC_Fire_Fuels_Report.pdf
+file: /assets/documents/CDOC_Fire_Fuels_REPORT_Final.pdf
 
 
 source: Federal Chief Data Officer's Council
