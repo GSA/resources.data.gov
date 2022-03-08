@@ -239,24 +239,16 @@ details: >+
 
   **Redacted Inventory (PDL)**
 
-  ``` http -v POST https://inventory.data.gov/organization/[organization-id]/redacted.json
+  ``` http https://inventory.data.gov/organization/[organization-id]/redacted.json
 
-  Authorization:xxx-your-api-key-xxx
-
-  Content-Type:application/x-www-form-urlencoded
-
-  Cookie:auth_tkt=foo ```
+  X-CKAN-API-Key:xxx-your-api-key-xxx ```
 
 
   **Unredacted Inventory (EDI)**
 
-  ``` http -v POST https://inventory.data.gov/organization/[organization-id]/unredacted.json
+  ``` http https://inventory.data.gov/organization/[organization-id]/unredacted.json
 
-  Authorization:xxx-your-api-key-xxx
-
-  Content-Type:application/x-www-form-urlencoded
-
-  Cookie:auth_tkt=foo ```
+  X-CKAN-API-Key:xxx-your-api-key-xxx ```
 
 
   You’d need to replace `xxx-your-api-key-xxx` with your actual API key which you can get in the bottom of the left sidebar of your user account, e.g. `https://inventory.data.gov/user/[username]`
