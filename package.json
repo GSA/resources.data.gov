@@ -8,7 +8,7 @@
     "accessible-autocomplete": "^1.6.2",
     "autoprefixer": "^10.4.0",
     "browserify": "^17.0.0",
-    "concurrently": "^6.3.0",
+    "concurrently": "^6.4.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^5.0.12",
     "fuse.js": "^3.4.4",
