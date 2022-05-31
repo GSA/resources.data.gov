@@ -14,5 +14,5 @@ tags:
   - data management
   - playbook
 format: ""
-link: https://participation.usa.gov/
+link: [https://participation.usa.gov/](https://digital.gov/guides/public-participation/)
 ---
