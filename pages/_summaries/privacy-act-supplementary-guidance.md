@@ -13,5 +13,5 @@ category: Guidance
 tags:
   - privacy
 format: PDF (3 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/OMB/inforeg/implementation1974.pdf
+link: https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/omb/inforeg/implementation1974.pdf
 ---
