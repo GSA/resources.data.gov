@@ -16,5 +16,5 @@ category: Guidance
 tags:
   - privacy
 format: PDF (14 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/info_policy/model-pia-agency-use-third-party-websites-and-applications.pdf
+link: https://www.osec.doc.gov/opog/privacy/Memorandums/model-pia-agency-use-third-party-websites-and-applications.pdf
 ---
