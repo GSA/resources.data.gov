@@ -13,5 +13,5 @@ category: Guidance
 tags:
   - data standards
 format: PDF (23 pages, 211 KB)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2009/m09-21-supp2.pdf
+link: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2009/m09-21-supp2.pdf
 ---
