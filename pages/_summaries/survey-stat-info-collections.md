@@ -18,5 +18,5 @@ tags:
   - data standards
   - PRA
 format: PDF (100 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/OMB/inforeg/pmc_survey_guidance_2006.pdf
+link: https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/omb/inforeg/pmc_survey_guidance_2006.pdf
 ---
