@@ -18,5 +18,5 @@ category: Guidance
 tags:
   - privacy
 format: PDF (3 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/OMB/inforeg/katzen_prwora.pdf
+link: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/assets/OMB/inforeg/katzen_prwora.pdf
 ---
