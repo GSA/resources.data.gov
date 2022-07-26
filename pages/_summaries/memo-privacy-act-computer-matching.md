@@ -17,5 +17,5 @@ category: Guidance
 tags:
   - privacy
 format: PDF (8 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/Datacall.pdf
+link: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/inforeg/inforeg/Datacall.pdf
 ---
