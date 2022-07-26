@@ -15,5 +15,5 @@ category: Guidance
 tags:
   - privacy
 format: PDF (4 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/OMB/inforeg/guidance_privacy_act.pdf
+link: https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/omb/inforeg/guidance_privacy_act.pdf
 ---

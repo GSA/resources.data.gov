@@ -16,5 +16,5 @@ category: Guidance
 tags:
   - quality
 format: PDF (10 pages, 162 KB)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/OMB/fedreg/reproducible2.pdf
+link: https://obamawhitehouse.archives.gov/omb/fedreg_final_information_quality_guidelines/
 ---
