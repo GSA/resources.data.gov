@@ -18,5 +18,5 @@ tags:
   - data standards
   - geospatial
 format: PDF (221 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/bulletins/2017/b-17-01.pdf
+link: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/bulletins/2017/b-17-01.pdf
 ---
