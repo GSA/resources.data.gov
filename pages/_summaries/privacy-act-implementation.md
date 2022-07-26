@@ -15,5 +15,5 @@ category: Guidance
 tags:
   - privacy
 format: PDF (32 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/OMB/inforeg/implementation_guidelines.pdf
+link: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/assets/OMB/inforeg/implementation_guidelines.pdf
 ---

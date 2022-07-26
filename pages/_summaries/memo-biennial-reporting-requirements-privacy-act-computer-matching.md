@@ -14,5 +14,5 @@ category: Guidance
 tags:
   - privacy
 format: PDF (2 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/OMB/inforeg/spotila62100.pdf
+link: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/assets/OMB/inforeg/spotila62100.pdf
 ---
