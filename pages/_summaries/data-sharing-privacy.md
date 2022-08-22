@@ -16,5 +16,5 @@ tags:
   - data sharing
   - privacy
 format: PDF (4 pages, 70 KB)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2011/m11-02.pdf
+link: [https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2011/m11-02.pdf](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2011/m11-02.pdf)
 ---

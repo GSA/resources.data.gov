@@ -14,5 +14,5 @@ category: Guidance
 tags:
   - data standards
 format: PDF (3 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/OMB/inforeg/statpolicy/dir_3_fr_09251985.pdf
+link: https://www.whitehouse.gov/omb/information-regulatory-affairs/statistical-programs-standards/
 ---
