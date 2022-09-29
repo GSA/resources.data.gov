@@ -225,3 +225,9 @@ nav {
   background-color : #eee;
 }
 
+/* USA IDENTIFIER */
+.usa-identifier {
+  & nav {
+    background: inherit;
+  }
+}
