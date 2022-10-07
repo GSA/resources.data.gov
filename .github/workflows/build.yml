@@ -12,7 +12,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: Install node
-        run: apt update && apt install npm
+        run: apt update && apt install -y npm
       - name: Install ruby dependencies
         run: bundle install --path vendor/bundle
       - name: Build
