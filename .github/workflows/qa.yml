@@ -1,0 +1,26 @@
+name: QA
+
+on:
+  schedule:
+    - cron: '0 15 * * 1'
+
+jobs:
+  build:
+    name: QA Job
+    runs-on: ubuntu-latest
+    container:
+      image: ruby:3.1
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Install node
+        run: apt update && apt install npm
+      - name: Install node dependencies
+        run: npm install
+      - name: Install ruby dependencies
+        run: bundle install --path vendor/bundle
+      - name: Build
+        run: npm run build
+      - name: QA
+        run: npm run qa
+
