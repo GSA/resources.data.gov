@@ -1,4 +1,5 @@
-[![CircleCI](https://circleci.com/gh/GSA/resources.data.gov.svg?style=svg)](https://circleci.com/gh/GSA/resources.data.gov)
+[![GitHub Actions](https://github.com/GSA/resources.data.gov/actions/workflows/build.yml/badge.svg)](https://github.com/GSA/resources.data.gov/actions/workflows/build.yml)
+[![GitHub Actions](https://github.com/GSA/resources.data.gov/actions/workflows/qa.yml/badge.svg)](https://github.com/GSA/resources.data.gov/actions/workflows/qa.yml)
 
 # resources.data.gov
 
