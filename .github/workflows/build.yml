@@ -1,0 +1,24 @@
+name: Build + Test
+
+on: [push]
+
+jobs:
+  build:
+    name: Build + Test Job
+    runs-on: ubuntu-latest
+    container:
+      image: ruby:3.1
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Install node
+        run: apt update && apt install -y npm
+      - name: Install node dependencies
+        run: npm install
+      - name: Install ruby dependencies
+        run: bundle install --path vendor/bundle
+      - name: Build
+        run: npm run build
+      - name: Test
+        run: npm test
+
