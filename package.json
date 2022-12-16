@@ -38,7 +38,7 @@
   "scripts": {
     "build": "npm run gulp && npm run jekyll",
     "federalist": "npm run gulp",
-    "gulp": "gulp init",
+    "gulp": "gulp",
     "jekyll": "bundle exec jekyll build",
     "prestart": "npm run gulp",
     "qa": "bundle exec htmlproofer --check-html _site",
