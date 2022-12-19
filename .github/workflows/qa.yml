@@ -6,22 +6,6 @@ on:
     - cron: '0 15 * * 1'
 
 jobs:
-  build:
-    name: QA Job
-    runs-on: ubuntu-latest
-    container:
-      image: ruby:3.1
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: Install node
-        run: apt update && apt install -y npm
-      - name: Install node dependencies
-        run: npm install
-      - name: Install ruby dependencies
-        run: bundle install --path vendor/bundle
-      - name: Build
-        run: npm run build
-      - name: QA
-        run: npm run qa
-
+  qa:
+    name: Test HTML Links
+    uses: gsa/data.gov/.github/workflows/static-site-qa-template.yml@main
