@@ -1,8 +1,8 @@
 ---
-keyword_name: icsp
-slug: icsp
+keyword_name: ICSP
+slug: ICSP
 layout: keyword
 toc: true
 header_title: ""
-header: ""
+header: "Interagency Council on Statistical Policy (ICSP)"
 ---
