@@ -41,7 +41,7 @@
     "gulp": "gulp",
     "jekyll": "bundle exec jekyll build",
     "prestart": "npm run gulp",
-    "qa": "bundle exec htmlproofer --check-html _site",
+    "qa": "bundle exec htmlproofer --check-html --http-status-ignore 429 _site",
     "setup": "bundle install",
     "start": "concurrently \"npm run watch:*\" \"bundle exec jekyll serve\"",
     "test": "bundle exec htmlproofer --check-html --disable-external _site",

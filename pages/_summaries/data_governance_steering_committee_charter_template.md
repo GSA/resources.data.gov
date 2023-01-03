@@ -5,8 +5,7 @@ layout: resource
 slug: data-governance-steering-committee-charter-template
 publish: true
 resource_name: Data Governance Steering Committee Charter Template
-description: This template was created by the Data and Analytics CoE to help agencies build a Data 
-Governance Steering Committee Charter.  
+description: This template was created by the Data and Analytics CoE to help agencies build a Data Governance Steering Committee Charter.  
 source: Data Governance Steering Committee
 category: Data management & governance
 tags:
