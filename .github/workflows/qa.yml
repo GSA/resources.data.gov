@@ -8,4 +8,4 @@ on:
 jobs:
   qa:
     name: Test HTML Links
-    uses: gsa/data.gov/.github/workflows/static-site-qa-template.yml@main
+    uses: gsa/data.gov/.github/workflows/static-site-qa-template.yml@static-site-npm
