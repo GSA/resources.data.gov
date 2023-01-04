@@ -37,9 +37,9 @@
   },
   "scripts": {
     "build": "npm run gulp && npm run jekyll",
-    "federalist": "npm run gulp",
     "gulp": "gulp",
     "jekyll": "bundle exec jekyll build",
+    "pages": "npm run gulp",
     "prestart": "npm run gulp",
     "qa": "bundle exec htmlproofer --check-html --http-status-ignore 429 _site",
     "setup": "bundle install",
