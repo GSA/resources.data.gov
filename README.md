@@ -65,7 +65,7 @@ Run the server
 
 Open your web browser to [localhost:4000](http://localhost:4000/).
 
-Sanity check the generated site.
+Test the generated site.
 
     $ npm test
 

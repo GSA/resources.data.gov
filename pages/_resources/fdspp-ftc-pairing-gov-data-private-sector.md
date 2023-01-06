@@ -55,7 +55,7 @@ details: >-
   ### Putting Complaint Data to Work
 
 
-  Like the winners of the Robocall Challenge, many call-blockers rely on carefully calibrated algorithms to make sure people get the calls they want and not the ones they don’t. They use “blacklists” – databases of telephone numbers that have received significant consumer complaints – as a way to determine which calls should be blocked or flagged before they reach consumers’ phones.
+  Like the winners of the Robocall Challenge, many call-blockers rely on carefully calibrated algorithms to make sure people get the calls they want and not the ones they don’t. They use “denylists” – databases of telephone numbers that have received significant consumer complaints – as a way to determine which calls should be blocked or flagged before they reach consumers’ phones.
 
 
   In 2012, the FTC began making the caller ID numbers contained in millions of unwanted call complaints available for use by call-blockers. This was an unconventional move – the FTC collects complaints from the public primarily for investigation and enforcement purposes but did not typically release that information. But agency leadership saw that, just as technological advances were driving the problem of increased unwanted calls, technology would be a critical part of the solution for reducing unwanted calls.
