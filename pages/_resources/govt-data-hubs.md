@@ -17,7 +17,7 @@ details: >+
 
   * [Food and Nutrition Service](http://www.fns.usda.gov/data-and-statistics)
 
-  * [Foreign Agricultural Service](http://www.fas.usda.gov/data)
+  * [Foreign Agricultural Service](https://www.fas.usda.gov/data)
 
   * [National Agricultural Library](https://data.nal.usda.gov/)
 
@@ -50,7 +50,7 @@ details: >+
 
   ### [Department of Education](http://www.ed.gov/data)
 
-  * [Federal Student Aid Data Center](http://studentaid.ed.gov/data-center)
+  * [Federal Student Aid Data Center](https://studentaid.gov/data-center)
 
   * [Office of Civil Rights](http://ocrdata.ed.gov/)
 
@@ -67,7 +67,7 @@ details: >+
 
   * [National Nuclear Data Center](http://www.nndc.bnl.gov/)
 
-  * [Oak Ridge National Laboratory - Computer Science and Mathematics Division](http://www.csm.ornl.gov/data/)
+  * [Oak Ridge National Laboratory - Computer Science and Mathematics Division](https://data.ornl.gov/)
 
   * [Office of Scientific and Technical Information](https://www.osti.gov/dataexplorer/)
 
@@ -109,7 +109,7 @@ details: >+
 
   ### [Department of the Interior](http://www.doi.gov/data) 
 
-  * [US Fish and Wildlife Service](https://www.fws.gov/gis/data/national/)
+  * [US Fish and Wildlife Service](https://gis-fws.opendata.arcgis.com/)
 
   * [US Geological Survey](http://data.usgs.gov/)
 
