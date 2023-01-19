@@ -31,7 +31,7 @@ govern it.
 [resources.data.gov](https://resources.data.gov/) is a collaborative, open
 source project hosted on [GitHub](https://github.com/). Both federal employees
 and members of the public are strongly encouraged to improve the project by
-contributing. Please see our [CONTRIBUTING](https://github.com/GSA/resources.data.gov/blob/develop/CONTRIBUTING.md)
+contributing. Please see our [CONTRIBUTING](https://github.com/GSA/resources.data.gov/blob/main/CONTRIBUTING.md)
 guide for more information on how to participate.
 
 
