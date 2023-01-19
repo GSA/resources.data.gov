@@ -39,7 +39,7 @@ details: >-
   * Solidify the connection between the Department’s services and individual citizens, business, governmental bodies, universities, and other non-government organizations.
 
 
-  In response to the [Open Government Directive](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2010/m10-06.pdf), DOT developed a strategic action plan to inventory and release high-value information through the [Data.gov](http://www.data.gov/) portal. In the winter of 2010, the DOT Associate Chief Information Officer for IT Policy Oversight, serving as the Senior Accountable Official for Open Government, convened a wide-ranging group of stakeholders from around the Department to develop the required strategic action plan. The plan was detailed in DOT’s Open Government Plan, version 1.2 (released on June 25, 2010), and included three tracks:
+  In response to the [Open Government Directive](https://www.transportation.gov/sites/dot.gov/files/docs/OMB%20M-10-06.pdf), DOT developed a strategic action plan to inventory and release high-value information through the [Data.gov](http://www.data.gov/) portal. In the winter of 2010, the DOT Associate Chief Information Officer for IT Policy Oversight, serving as the Senior Accountable Official for Open Government, convened a wide-ranging group of stakeholders from around the Department to develop the required strategic action plan. The plan was detailed in DOT’s Open Government Plan, version 1.2 (released on June 25, 2010), and included three tracks:
 
 
   * **Strategy**: In the near-term, transform DOT’s data release posture and in the long-term, sustain openness.
