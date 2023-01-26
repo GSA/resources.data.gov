@@ -5,11 +5,7 @@ layout: page
 
 A community listserv and working group that unites 900 open data leads at federal agencies, data stewards, and all others in government interested in open data, enterprise data inventory, civic tech, and data-driven government issues.
 
-<div
-  class="usa-summary-box"
-  role="region"
-  aria-labelledby="summary-box-key-information"
->
+<div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information">
   <div class="usa-summary-box__body">
     <h3 class="usa-summary-box__heading" id="summary-box-key-information">
       Connect with us
