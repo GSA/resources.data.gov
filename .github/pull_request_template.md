@@ -14,5 +14,7 @@ Related to [LINK TO ISSUE]
 - [ ] Tests written and passed.
 - [ ] Any changes to docs?
 - [ ] Any new
-      [requirements versions](https://github.com/GSA/inventory-app/blob/main/requirements.in.txt)
-      to pull in?
+      [Gemfile](https://github.com/GSA/resources.data.gov/blob/main/Gemfile)
+      or
+      [package.json](https://github.com/GSA/resources.data.gov/blob/main/package.json)
+      updates to pull in?
