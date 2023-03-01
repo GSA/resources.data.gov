@@ -46,7 +46,7 @@ details: >
   5. Clarify roles and responsibilities for promoting efficient and effective data release
 
 
-  Agencies will establish an open data infrastructure by implementing this guidance and Memorandum [M-13-13](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf) and taking advantage of the resources provided on [Project Open Data](/). Once established, agencies will continue to evolve the infrastructure by identifying and adding new data assets<sup>[1](#footnote-1)</sup>, enriching the description of those data assets through improved metadata, and increasing the amount of data shared with other agencies and the public.
+  Agencies will establish an open data infrastructure by implementing this guidance and Memorandum [M-13-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf) and taking advantage of the resources provided on [Project Open Data](/). Once established, agencies will continue to evolve the infrastructure by identifying and adding new data assets<sup>[1](#footnote-1)</sup>, enriching the description of those data assets through improved metadata, and increasing the amount of data shared with other agencies and the public.
 
 
   At a minimum, a successful open data infrastructure must:
