@@ -41,7 +41,7 @@ details: >
   ### Positive attention from the public, media, and other agencies
 
 
-  In recent years, [entire events](http://energy.gov/articles/energy-datapalooza-unleashing-power-open-data-advance-our-energy-future) celebrating the release and use of open government data -- many hosted by the White House -- have taken place, with corresponding media coverage and international attention. The more data your agency makes available in easy-to-consume formats, the more opportunities for positive coverage of the availability and impact of those data and your agency's efforts.
+  In recent years, [entire events](https://obamawhitehouse.archives.gov/blog/2012/10/01/energy-datapalooza-unleashing-power-open-data-advance-our-energy-future) celebrating the release and use of open government data -- many hosted by the White House -- have taken place, with corresponding media coverage and international attention. The more data your agency makes available in easy-to-consume formats, the more opportunities for positive coverage of the availability and impact of those data and your agency's efforts.
 
 
   ### Generate revenue and create new jobs in the private sector
