@@ -167,7 +167,7 @@ details: >+
 
   ### [General Services Administration](http://www.gsa.gov/data)
 
-  * [pulse.cio.gov](https://pulse.cio.gov/data/)
+  * [pulse.cio.gov](https://www.cio.gov/)
 
   * [analytics.usa.gov](https://analytics.usa.gov/data/)
 
@@ -198,7 +198,7 @@ details: >+
   ### [Social Security Administration](http://www.ssa.gov/data/)
 
 
-  ### [United States Agency for International Development](http://www.usaid.gov/data)
+  ### [United States Agency for International Development](https://data.usaid.gov/)
 
 
   ### Other Agencies
