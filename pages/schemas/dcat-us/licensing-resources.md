@@ -29,7 +29,7 @@ An open letter on licensing best practices developed by a collaboration of civil
 *The U.S. Government*
 
 Commitments that the U.S. Government has made to advance Open Data, and selected examples of expansions, enhancements, and upcoming releases of data sets in categories of the Open Data Charter. The license for each forthcoming data release are detailed; the listed data sets are primarily 1) in the public domain, 2) to be released into the public domain through a “CC0” or Creative Commons Zero public domain dedication, or 3) to be released under a “CC-BY” or Creative Commons Attribution license that permits any form of reuse otherwise regulated by copyright provided that downstream users give appropriate credit as directed by the licensor.
-* [U.S. Open Data Action Plan - High Value Datasets Appendix](http://www.whitehouse.gov/sites/default/files/docs/us_open_data_action_plan_high_value_datasets.csv)
+
 
 
 ### [Model Terms of Service for Open Data APIs](https://github.com/GSA/API-Resources/blob/master/developer_tos/vanilla_tos.md)
