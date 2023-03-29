@@ -88,7 +88,7 @@ details: >-
   > incorrect: `CONTACTPOINT`  
 
 
-  Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources](../podm-field-mapping/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
+  Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources](../podm-field-mapping/).  Agencies can validate their metadata using this [validator](https://catalog.data.gov/dcat-us/validator).
 
 
 
