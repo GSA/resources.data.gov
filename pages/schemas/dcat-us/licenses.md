@@ -49,6 +49,6 @@ When agencies purchase data or content from third-party vendors, care must be ta
 * [GNU Free Documentation License](http://www.gnu.org/licenses/fdl-1.3.en.html), e.g. `"license":"http://www.gnu.org/licenses/fdl-1.3.en.html"`
 
 ## More Information
-* *[Copyright and Other Rights Pertaining to U.S. Government Works](http://www.usa.gov/copyright.shtml)*
+* *[Copyright and Other Rights Pertaining to U.S. Government Works](https://www.usa.gov/copyrighted-government-works)*
 * *[Licensing Policies, Principles, and Resources: Examples of how government has addressed open licensing questions]({{ site.baseurl }}/licensing-resources/)*
 * *[Extended list of conformant licenses](http://opendefinition.org/licenses/)*
