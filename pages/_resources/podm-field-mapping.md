@@ -73,7 +73,7 @@ details: >-
     
   #### Starting from a spreadsheet
 
-  Some agencies may initially build or maintain data catalogs through large spreadsheets.  In order to then generate a data.json file from this, simply import the spreadsheet (in the form of a CSV file) into the [CSV Converter](http://labs.data.gov/dashboard/datagov/csv_to_json), translate the metadata as needed, and then generate an appropriately formatted JSON file.
+  Some agencies may initially build or maintain data catalogs through large spreadsheets.  In order to then generate a data.json file from this, simply import the spreadsheet (in the form of a CSV file) into the [CSV Converter](https://catalog.data.gov/report/metrics-dashboard), translate the metadata as needed, and then generate an appropriately formatted JSON file.
 
 
   #### Utilizing CKAN
@@ -88,12 +88,12 @@ details: >-
 
   #### Manual translating a data file from another system
 
-  Agencies may also manage their data catalogs through various database solutions such as Access, an asset management system, document management system, geoportal, or assorted proprietary systems.  Regardless of which system an agency employs, it should include a fundamental export option which allows the catalog to be exported as a CSV file, which can then be imported into the [CSV Converter](http://labs.data.gov/dashboard/datagov/csv_to_json) for conversation to an appropriately formatted JSON file.  Depending on the solutions' varied further functionality, some of them may also provide APIs which can then be configured to maintain the data.json file.  If not, they may instead support XML and JSON exports, which can then be converted to the proper format.
+  Agencies may also manage their data catalogs through various database solutions such as Access, an asset management system, document management system, geoportal, or assorted proprietary systems.  Regardless of which system an agency employs, it should include a fundamental export option which allows the catalog to be exported as a CSV file, which can then be imported into the [CSV Converter](https://catalog.data.gov/report/metrics-dashboard) for conversation to an appropriately formatted JSON file.  Depending on the solutions' varied further functionality, some of them may also provide APIs which can then be configured to maintain the data.json file.  If not, they may instead support XML and JSON exports, which can then be converted to the proper format.
 
 
   #### Convert from CSV to JSON
 
-  In order to generate appropriately formatted JSON, simply import an appropriately formatted CSV into the [CSV Converter](http://labs.data.gov/dashboard/datagov/csv_to_json), ensure that the metadata fields line up, and re-export the file.
+  In order to generate appropriately formatted JSON, simply import an appropriately formatted CSV into the [CSV Converter](https://catalog.data.gov/report/metrics-dashboard), ensure that the metadata fields line up, and re-export the file.
 
 
   ### Schema Object Model Diagram
