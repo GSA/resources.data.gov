@@ -14,7 +14,7 @@ Office of Management and Budget Integrated Data Collection (IDC) Requirements
 
 **Status: Updated**
 
-> * Agencies will continue to be assessed on their Open Data Policy progress through the Project Open Data Dashboard available at: [http://labs.data.gov/dashboard/offices](http://labs.data.gov/dashboard/offices).
+> * Agencies will continue to be assessed on their Open Data Policy progress. The Reports Metrics Dashboard can be found here: [https://catalog.data.gov/report/metrics-dashboard](https://catalog.data.gov/report/metrics-dashboard).
 * Agencies will continue to provide a public version of their Enterprise Data Inventory at
 [agency].gov/data.json and include their data.json dataset with the title “Enterprise Data
 Inventory.” If necessary, agencies will coordinate with their Freedom of Information Act (FOIA)
