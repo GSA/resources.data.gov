@@ -8,7 +8,7 @@ filename: licenses.md
 
 The [Federal Open Data Policy](https://project-open-data.cio.gov/policy-memo/#c-ensure-information-stewardship-through-the-use-of-open-licenses) states: *"Agencies must apply open licenses, in consultation with the best practices found in Project Open Data, to information as it is collected or created so that if data are made public there are no restrictions on copying, publishing, distributing, transmitting, adapting, or otherwise using the information for non-commercial or for commercial purposes."*
 
-As described below, works created by U.S. Government employees within the scope of their employment default to U.S. Public Domain. However, works produced by outside parties which are created or obtained for use by the U.S. Government may need open licenses applied to them: *"When information is acquired or accessed by an agency through performance of a contract, appropriate existing clauses <sup>[22](https://acquisition.gov/far/current/html/Subpart%2027_4.html)</sup> shall be utilized to meet these objectives"*
+As described below, works created by U.S. Government employees within the scope of their employment default to U.S. Public Domain. However, works produced by outside parties which are created or obtained for use by the U.S. Government may need open licenses applied to them: *"When information is acquired or accessed by an agency through performance of a contract, appropriate existing clauses <sup>[22](https://www.acquisition.gov/far/subpart-27.4)</sup> shall be utilized to meet these objectives"*
 
 The [Project Open Data Metadata Schema]({{ site.baseurl }}/resources/dcat-us/) provides a `license` field which is defined as *"the license or non-license (i.e. Public Domain) status with which the dataset or API has been published"* and [must be provided as a URL]({{ site.baseurl }}/resources/dcat-us/#license). Guidance and example URLs can be found below for properly documenting the license or non-license of your agency's data in accordance with the open data policy.
 
@@ -49,6 +49,6 @@ When agencies purchase data or content from third-party vendors, care must be ta
 * [GNU Free Documentation License](http://www.gnu.org/licenses/fdl-1.3.en.html), e.g. `"license":"http://www.gnu.org/licenses/fdl-1.3.en.html"`
 
 ## More Information
-* *[Copyright and Other Rights Pertaining to U.S. Government Works](http://www.usa.gov/copyright.shtml)*
+* *[Copyright and Other Rights Pertaining to U.S. Government Works](https://www.usa.gov/copyrighted-government-works)*
 * *[Licensing Policies, Principles, and Resources: Examples of how government has addressed open licensing questions]({{ site.baseurl }}/licensing-resources/)*
 * *[Extended list of conformant licenses](http://opendefinition.org/licenses/)*

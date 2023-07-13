@@ -55,7 +55,7 @@ details: >-
   A dataset is an identifiable collection of structured data objects unified by some criteria (authorship, subject, scope, spatial or temporal extent...). A catalog is a collection of descriptions of datasets; each description is a metadata record. The intention of a data catalog is to facilitate data access by users who are first interested in a particular kind of data, and upon finding a fit-for-purpose dataset, will next want to know how to get the data.
 
 
-  A Web API (**A**pplication **P**rogramming **I**nterface) allows computer programs to dynamically query a dataset using the World Wide Web. For example, a dataset of [farmers markets](https://catalog.data.gov/dataset/farmers-markets-locations) may be made available for download as a single file (e.g., a CSV), or may be made available to developers through a Web API, such that a computer program could use a ZIP Code to retrieve a list of farmers markets in the ZIP Code area.
+  A Web API (**A**pplication **P**rogramming **I**nterface) allows computer programs to dynamically query a dataset using the World Wide Web. For example, a dataset of [farmers markets](https://catalog.data.gov/dataset/farmers-markets-directory-and-geographic-data) may be made available for download as a single file (e.g., a CSV), or may be made available to developers through a Web API, such that a computer program could use a ZIP Code to retrieve a list of farmers markets in the ZIP Code area.
 
 
   The catalog file for each agency should list all of the agency's datasets that can be made public, regardless of whether they are distributed by a file download or a Web API. Please also see the extended guidance on [documenting Web APIs in your data.json files](../documenting-apis/).  
@@ -88,7 +88,7 @@ details: >-
   > incorrect: `CONTACTPOINT`  
 
 
-  Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources](../podm-field-mapping/).  Tools to help agencies produce and maintain their data inventories are available on [Labs.Data.gov](http://labs.data.gov).
+  Links to downloadable examples of metadata files developed in this and other formats are in the [metadata resources](../podm-field-mapping/).  Agencies can validate their metadata using this [validator](https://catalog.data.gov/dcat-us/validator).
 
 
 
@@ -148,7 +148,7 @@ details: >-
 
   [accessLevel](#accessLevel)                                | Public Access Level       | The degree to which this dataset **could** be made publicly-available, *regardless of whether it has been made available*. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public). | Always 
 
-  [bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](../../schemas/dcat-us/v1.1/omb_bureau_codes.csv) in the format of `015:11`. | Always  
+  [bureauCode](#bureauCode)<sup>[USG](#USG-note)</sup>       | Bureau Code               | Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C ([PDF](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/a11_current_year/app_c.pdf), [CSV](../../schemas/dcat-us/v1.1/omb_bureau_codes.csv) in the format of `015:11`. | Always  
 
   [programCode](#programCode)<sup>[USG](#USG-note)</sup>     | Program Code              | Federal agencies, list the primary program related to this data asset, from the [Federal Program Inventory](../../schemas/dcat-us/v1.1/FederalProgramInventory_FY13_MachineReadable_091613.csv). Use the format of `015:001`. | Always                                                                                                                       
 
@@ -477,7 +477,7 @@ details: >-
 
   **Accepted Values** | Array of Strings
 
-  **Usage Notes** | Represent each bureau responsible for the dataset according to the codes found in OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/a11_current_year/a11_2017/app_c.pdf), [CSV](../../schemas/dcat-us/v1.1/omb_bureau_codes.csv)). Start with the agency code, then a colon, then the bureau code.
+  **Usage Notes** | Represent each bureau responsible for the dataset according to the codes found in OMB Circular A-11, Appendix C ([PDF](https://www.whitehouse.gov/wp-content/uploads/2018/06/a11.pdf), [CSV](../../schemas/dcat-us/v1.1/omb_bureau_codes.csv)). Start with the agency code, then a colon, then the bureau code.
 
   **Example** |  The Office of the Solicitor (86) at the Department of the Interior (010) would be: `{"bureauCode":["010:86"]}`.  If a second bureau was also responsible, the format like this: `{"bureauCode":["010:86","010:04"]}`.
 

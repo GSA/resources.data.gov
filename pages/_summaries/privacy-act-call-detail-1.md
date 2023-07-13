@@ -16,5 +16,5 @@ category: Guidance
 tags:
   - privacy
 format: PDF (12 pages)
-link: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/final_guidance_pl100-503.pdf
+link: https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/omb/inforeg/final_guidance_pl100-503.pdf
 ---

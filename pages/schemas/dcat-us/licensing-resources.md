@@ -25,11 +25,11 @@ Federal Register notice inviting applications and putting applicants on notice t
 
 An open letter on licensing best practices developed by a collaboration of civil society groups — GovTrack.us, Creative Commons, the Sunlight Foundation, the Open Knowledge Foundation, the Electronic Frontier Foundation, and Public Knowledge — inspired by the Open Data Policy. It includes model clauses from across the government, to address a range of works and situations: e.g. US government works, contractor-created works, click-through agreements, and software. The letter is hosted at http://theunitedstates.io which is not an organization, but a shared commons of data and tools for the United States - made by the public, used by the public. It is managed through GitHub, and intended to be regularly updated.
 
-### [U.S. Open Data Action Plan](http://www.whitehouse.gov/sites/default/files/microsites/ostp/us_open_data_action_plan.pdf)
+### [U.S. Open Data Action Plan](https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/us_open_data_action_plan.pdf)
 *The U.S. Government*
 
 Commitments that the U.S. Government has made to advance Open Data, and selected examples of expansions, enhancements, and upcoming releases of data sets in categories of the Open Data Charter. The license for each forthcoming data release are detailed; the listed data sets are primarily 1) in the public domain, 2) to be released into the public domain through a “CC0” or Creative Commons Zero public domain dedication, or 3) to be released under a “CC-BY” or Creative Commons Attribution license that permits any form of reuse otherwise regulated by copyright provided that downstream users give appropriate credit as directed by the licensor.
-* [U.S. Open Data Action Plan - High Value Datasets Appendix](http://www.whitehouse.gov/sites/default/files/docs/us_open_data_action_plan_high_value_datasets.csv)
+
 
 
 ### [Model Terms of Service for Open Data APIs](https://github.com/GSA/API-Resources/blob/master/developer_tos/vanilla_tos.md)

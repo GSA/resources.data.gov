@@ -22,7 +22,7 @@
   {
     "term": "Code Library",
     "definition": "Working code samples in all the top programming languages are common place in the most successful APIs. Documentation will describe in a general way, how to use an API, but code samples will speak in the specific language of developers.",
-    "source": "https://www.yourdictionary.com/code-library"
+    "source": "https://www.pcmag.com/encyclopedia/term/code-library"
   },
   {
     "term": "Content API",
@@ -47,12 +47,12 @@
   {
     "term": "Data Asset",
     "definition": "A collection of data elements or datasets that make sense to group together. Each community of interest identifies the Data Assets specific to supporting the needs of their respective mission or business functions. Notably, a Data Asset is a deliberately abstract concept. A given Data Asset may represent an entire database consisting of multiple distinct entity classes, or may represent a single entity class.",
-    "source": "https://csrc.nist.gov/glossary/term/data-asset"
+    "source": "https://csrc.nist.gov/glossary/term/data_asset"
   },
   {
     "term": "Dataset",
     "definition": "A dataset is an organized collection of data. The most basic representation of a dataset is data elements presented in tabular form. Each column represents a particular variable. Each row corresponds to a given value of that column’s variable. A dataset may also present information in a variety of non-tabular formats, such as an extensible mark-up language (XML) file, a geospatial data file, or an image file, etc.",
-    "source": "http://www.data.gov/glossary"
+    "source": "https://en.wikipedia.org/wiki/Data_set"
   },
   {
     "term": "Database",
@@ -67,7 +67,7 @@
   {
     "term": "Error Response Code",
     "definition": "Errors are an inevitable part of API integration, and providing not only a robust set of clear and meaningful API error response codes, but a clear listing of these codes for developers to follow and learn from is essential. API errors are directly related to frustration during developer integration, the more friendlier and meaningful they are, the greater the chance a developer will move forward after encountering an error. Put a lot of consideration into your error responses and the documentation that educates developers.",
-    "source": "https://csrc.nist.gov/glossary/term/error-detection-code"
+    "source": "https://csrc.nist.gov/glossary/term/error_detection_code"
   },
   {
     "term": "Github",
@@ -137,7 +137,7 @@
   {
     "term": "Open Standard",
     "definition": "A standard developed or adopted by voluntary consensus standards bodies, both domestic and international. These standards include provisions requiring that owners of relevant intellectual property have agreed to make that intellectual property available on a non-discriminatory, royalty-free or reasonable royalty basis to all interested parties.",
-    "source": "https://www.dni.gov/index.php/who-we-are/organizations/national-security-partnerships/ise/ise-resources/ise-glossary?highlight=WyJvcGVuIiwib3BlbmVkIiwib3BlbnMiLCJvcGVuaW5nIiwib3BlbmluZ3MiLCJvcGVubmVzcyIsInN0YW5kYXJkIiwic3RhbmRhcmRzIiwic3RhbmRhcmRpemVzIiwic3RhbmRhcmRpemVkIiwic3RhbmRhcmRpemF0aW9uIiwic3RhbmRhcmRpemUiLCJzdGFuZGFyZGl6aW5nIiwic3RhbmRhcmRzJyIsInN0YW5kYXJkaXphdGlvbnMiLCJzdGFuZGFyZCdzIiwib3BlbiBzdGFuZGFyZCJd"
+    "source": "https://dictionary.cambridge.org/us/dictionary/english/open-standard"
   },
   {
     "term": "Parameter",
@@ -207,12 +207,12 @@
   {
     "term": "Web Service",
     "definition": "A Web service is a software system designed to support interoperable machine-to-machine interaction over a network. It has an interface described in a machine-processable format (specifically WSDL). Other systems interact with the Web service in a manner prescribed by its description using SOAP messages, typically conveyed using HTTP with an XML serialization in conjunction with other Web-related standards.",
-    "source": "https://csrc.nist.gov/glossary/term/Web-Service"
+    "source": "https://csrc.nist.gov/glossary/term/web_service"
   },
   {
     "term": "WSDL",
     "definition": "An XML-based language (Web Services Description Language) used to describe the services a business offers and to provide a way for individuals and other businesses to access those services electronically.",
-    "source": "https://csrc.nist.gov/glossary/term/Web-Services-Description-Language"
+    "source": "https://csrc.nist.gov/glossary/term/web_services_description_language"
   },
   {
     "term": "XML",
