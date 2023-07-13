@@ -6,7 +6,7 @@ slug: json-validator
 publish: true
 resource_name: "JSON Validator "
 description: "JSON Validator is used to check your agency’s data.json against
-  the required federal metadata schema."
+the required federal metadata schema."
 source: General Services Administration
 category: Data tools
 tags:
@@ -17,5 +17,5 @@ tags:
   - data standards
   - data inventory
 format: ""
-link: https://catalog.data.gov/report/metrics-dashboard
+link: https://catalog.data.gov/dcat-us/validator
 ---
