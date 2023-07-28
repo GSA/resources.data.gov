@@ -1,22 +1,22 @@
 ---
-resource_name: "Profiles in Data Sharing-National Electronic Injury Surveillance System"
-slug: profiles-in-data-sharing-NEISS
-description: "The Federal Chief Data Officers Council's Data Sharing Working Group highlights the success of the National Electronic Injury Surveillance System – All Injury Program (NEISS-AIP). The NEISS-AIP expands the U.S. Consumer Product Safety Commission National Electronic Injury Surveillance System (NEISS) from consumer-related injuries to include all types and causes of injuries, enabling the calculation of national estimates of injuries treated in emergency departments."
+resource_name: "Profiles in Data Sharing - U.S. Citizenship and Immigration Service"
+slug: profiles-in-data-sharing
+description: "The Federal CDO Council’s Data Sharing Working Group highlights successful data sharing activities to recognize mature data sharing practices as well as to incentivize and inspire others to take part in similar collaborations. This Profile in Data Sharing focuses on how the U.S. Citizenship and Immigration Service (USCIS) collaborated with the Centers for Disease Control to notify state, local, tribal, and territorial public health authorities so they can connect with individuals in their communities about their potential exposure."
 
-file: /assets/documents/Profiles_in_Data_Sharing_NEISS.pdf
+file: /assets/documents/Profiles_in_Data_Sharing_USCIS_508.pdf
 
 
 source: Federal Chief Data Officer's Council
 category: Case studies & examples
 tags:
   - data sharing
-
+ 
 guidance_tags: ""
 format: ""
 details: |
-  - Originally published 2022
-  - Profiles in Data Sharing-National Electronic Injury Surveillance System
-  - U. S. Consumer Product Safety Commission
+  - Originally published 2023
+  - Data Sharing Working Group
+
 examples: ""
 
 
