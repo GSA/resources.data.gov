@@ -27,7 +27,7 @@
         "path": "^0.12.7",
         "postcss": "^8.4.26",
         "postcss-csso": "^5.0.1",
-        "sass": "^1.64.0",
+        "sass": "^1.64.2",
         "smooth-scroll": "^16.0.3",
         "uswds": "^2.14.0",
         "uswds-gulp": "github:uswds/uswds-gulp",
