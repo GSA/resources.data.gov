@@ -20,3 +20,9 @@ details: |
   - HRSA Bureau of Health Workforce
 
 examples: ""
+link: ""
+layout: resource
+toc: true
+publish: false
+---
+
