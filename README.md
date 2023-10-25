@@ -37,12 +37,12 @@ significant changes to the site that require partner review.
 
 ### Prerequisites
 
-- [Ruby 2.6](https://www.ruby-lang.org/)
+- [Ruby 3.2.1](https://www.ruby-lang.org/)
 - [Bundler 1.17.x](https://bundler.io/) (we use an older version for Federalist
   compatibility)
     - install via `gem install bundler -v 1.17.3`
     - use version by `bundle _1.17.3_ ...`
-- [Node.js 10](https://nodejs.org/)
+- [Node.js 20](https://nodejs.org/)
 
 
 ### Setup
@@ -51,7 +51,7 @@ Install Node.js dependencies.
 
     $ npm install
 
-Install Ruby dependencies.
+Install Ruby dependencies ( !WARNING! If you use a mac ensure you install a version manager for ruby to avoid messing up your system ruby installation ).
 
     $ npm run setup
 
