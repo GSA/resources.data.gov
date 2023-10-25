@@ -17,3 +17,5 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "nokogiri", "~> 1.14"
 gem "html-proofer", "~> 3.19", ">= 3.19.2"
 gem "jekyll-sitemap", ">= 1.4.0"
+
+gem 'liquid', '~> 4.0', '>= 4.0.4'
