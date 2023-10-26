@@ -37,7 +37,7 @@ significant changes to the site that require partner review.
 
 ### Prerequisites
 
-- [Ruby 3.2.1](https://www.ruby-lang.org/)
+- [Ruby 3.1.4](https://www.ruby-lang.org/)
 - [Bundler 1.17.x](https://bundler.io/) (we use an older version for Federalist
   compatibility)
     - install via `gem install bundler -v 1.17.3`
