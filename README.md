@@ -61,13 +61,13 @@ Run the build.
 
 Run the server
 
-    $ npm start
+    $ npm run start
 
 Open your web browser to [localhost:4000](http://localhost:4000/).
 
 Test the generated site.
 
-    $ npm test
+    $ npm run test
 
 Check for broken links.
 
