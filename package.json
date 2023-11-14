@@ -8,6 +8,7 @@
     "node": ">=20.0.0 <21.0.0"
   },
   "dependencies": {
+    "@uswds/uswds": "^3.7.0",
     "accessible-autocomplete": "^1.6.2",
     "autoprefixer": "^10.4.16",
     "browserify": "^17.0.0",
@@ -32,7 +33,6 @@
     "postcss-csso": "^5.0.1",
     "sass": "^1.64.2",
     "smooth-scroll": "^16.0.3",
-    "uswds": "^2.14.0",
     "uswds-gulp": "github:uswds/uswds-gulp",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
