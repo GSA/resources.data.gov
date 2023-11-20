@@ -25,7 +25,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulplog": "^2.0.1",
     "ini": "^4.1.1",
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^4.1.0",
     "lodash.assign": "^4.2.0",
     "node-notifier": "^10.0.1",
     "path": "^0.12.7",
