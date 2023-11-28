@@ -7,27 +7,20 @@ ignore:
         reason: >-
           ansi-regex input is from trusted sources so a ReDoS attack is not a
           concern. Not able to be upgraded at this time.
-        expires: 2023-06-30T00:00:00.000Z
+        expires: 2024-03-30T00:00:00.000Z
         created: 2022-12-05T19:21:40.652Z
   SNYK-JS-GLOBPARENT-1016905:
     - '*':
         reason: >-
           glob-parent input is from trusted sources so a ReDoS attack is not a
           concern. Not able to be upgraded at this time.
-        expires: 2023-06-30T00:00:00.000Z
+        expires: 2024-03-30T00:00:00.000Z
         created: 2022-12-05T19:21:40.652Z
   SNYK-JS-UNSETVALUE-2400660:
     - '*':
         reason: >-
           unset function is from trusted sources so a Prototype Pollution is
           not a concern. Not able to be upgraded at this time.
-        expires: 2023-06-30T00:00:00.000Z
+        expires: 2024-03-30T00:00:00.000Z
         created: 2022-12-05T19:21:40.652Z
-  SNYK-RUBY-NOKOGIRI-3164751:
-    - '*':
-        reason: >-
-          native platform version contains fix as well
-          https://github.com/sparklemotion/nokogiri/releases/tag/v1.13.10
-        expires: 2023-06-30T00:00:00.000Z
-        created: 2023-01-04T00:00:00.000Z
 patch: {}
