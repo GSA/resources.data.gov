@@ -31,7 +31,7 @@
     "path": "^0.12.7",
     "postcss": "^8.4.31",
     "postcss-csso": "^5.0.1",
-    "sass": "^1.65.1",
+    "sass": "^1.69.5",
     "smooth-scroll": "^16.0.3",
     "uswds-gulp": "github:uswds/uswds-gulp",
     "vinyl-buffer": "^1.0.1",
