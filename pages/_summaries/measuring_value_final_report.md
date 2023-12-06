@@ -12,6 +12,6 @@ tags:
   - Federal Data Strategy
   - data management
 format: PDF (17 pages)
-link: https://resources.data.gov/assets/documents/measuring-value-final-report.pdf
+link: https://resources.data.gov/assets/documents/Measuring_Value_Final_Report_GSA79CDO_21_508_Compliance.pdf
 ---
 
