@@ -13,5 +13,5 @@ tags:
   - data management
   - analytics
 format: PDF (31 pages)
-link: https://resources.data.gov/assets/documents/enterprise-analytics-report-508-final.pdf
+link: https://resources.data.gov/assets/documents/Enterprise-Analytics-Report-508-FINAL.pdf
 ---
