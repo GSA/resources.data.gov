@@ -4,7 +4,7 @@ toc: true
 layout: resource
 slug: office-of-the-chief-data-officer-template
 publish: true
-resource_name: Assessing Data Skills Playbook
+resource_name: Office of the Chief Data Officer Template
 description: This template was created by the Data and Analytics CoE to help agencies build an Office of the Chief Data Officer Charter.  
 source: Office of the Chief Data Officer
 category: Data management & governance
