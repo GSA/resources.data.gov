@@ -3,10 +3,10 @@ redirect_from: /tools/how-to-get-your-open-data-on-datagov/
 resource_name: How to get your Open Data on Data.gov
 slug: data-gov-open-data-howto
 description: Data.gov is the central clearinghouse for open data from the United
-  States federal government and also provides access to many local government
-  and non-federal open data resources. Find out below how federal, federal
-  geospatial, and non-federal data is funneled to Data.gov and how you can get
-  your data federated on Data.gov for greater discoverability and impact.
+States federal government and also provides access to many state and local
+(non-federal) open data resources. Find out below how federal, federal geospatial,
+and non-federal data is funneled to Data.gov and how you can get your data
+federated on Data.gov for greater discoverability and impact.
 source: data.gov
 category: Skills development
 tags:
@@ -25,9 +25,12 @@ details: >-
 
   ### Introduction
 
+  Data.gov is primarily a federal open government data site. However, state, local, and tribal governments can also publish metadata describing their open data resources on Data.gov for greater discoverability. Data.gov does not host data directly (with a few exceptions), but rather aggregates metadata about open data assets in one centralized location. Once an agency creates an open data source with the necessary format and metadata requirements, the Data.gov team can harvest the metadata directly, synchronizing that source’s metadata on Data.gov as often as every 24 hours.
 
-  Data.gov is primarily a federal open government data site. However, state, local, and tribal governments can also publish metadata describing their open data resources on Data.gov for greater discoverability. Data.gov does not host data directly (with a few exceptions), but rather aggregates metadata about open data resources in one centralized location. Once an open data source meets the necessary format and metadata requirements, the Data.gov team can harvest the metadata directly, synchronizing that source’s metadata on Data.gov as often as every 24 hours.
 
+  #### Overview Diagram
+
+  ![opendatagraphic](https://private-user-images.githubusercontent.com/26980513/292049125-53a648b0-054a-4b96-a751-421a036969b7.png)
 
   #### Background
 
