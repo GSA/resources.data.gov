@@ -47,7 +47,7 @@ details: >-
   #### Federated Metadata Harvest Architecture
 
 
-  ![opendatagraphic](https://user-images.githubusercontent.com/49877323/66601676-78640580-eb76-11e9-9388-69ec9ee9952b.png)
+  ![opendatagraphic](../../assets/img/data-harvest-diagram.png)
 
 
   ### Step 1: Organize your open data for the Data.gov Pipeline
