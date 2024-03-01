@@ -44,11 +44,11 @@ details: >-
 
   #### DCAT-US (JSON)
 
-  Previously known as the Project Open Data standard, the [DCAT-US standard](https://resources.data.gov/resources/dcat-us/) is based on the commonly used [DCAT](https://www.w3.org/TR/vocab-dcat-3/) standard from the [W3C](https://www.w3.org/). This format is expected to be implemented in a JSON file type. Please note that Data.gov only harvests “catalogs” of information, a single JSON file that has a list of all datasets. For common examples, see our [github tests](https://github.com/GSA/ckanext-datajson/tree/main/ckanext/datajson/tests/datajson-samples).
+  Previously known as the Project Open Data standard, the [DCAT-US standard](https://resources.data.gov/resources/dcat-us/) is based on the commonly used [DCAT](https://www.w3.org/TR/vocab-dcat-1/) standard from the [W3C](https://www.w3.org/). This format is expected to be implemented in a JSON file type. Please note that Data.gov only harvests “catalogs” of information, a single JSON file that has a list of all datasets. For common examples, see our [github tests](https://github.com/GSA/ckanext-datajson/tree/main/ckanext/datajson/tests/datajson-samples).
 
-  #### ISO19115 (XML)
+  #### ISO 19115 (XML)
 
-  The FGDC recommends using the ISO-19115 metadata standard for geospatial metadata. See [ISO 19115:2003 Geographic Information – Metadata](http://www.fgdc.gov/metadata/geospatial-metadata-standards).
+  The FGDC recommends using the ISO 19115 metadata standard for geospatial metadata. See [ISO 19115:2003 Geographic Information – Metadata](http://www.fgdc.gov/metadata/geospatial-metadata-standards).
 
   #### CSDGM (XML)
 
