@@ -24,7 +24,7 @@
     "gulp-replace": "^1.1.4",
     "gulp-sourcemaps": "^3.0.0",
     "gulplog": "^2.1.0",
-    "ini": "^4.1.1",
+    "ini": "^4.1.2",
     "js-yaml": "^4.1.0",
     "lodash.assign": "^4.2.0",
     "node-notifier": "^10.0.1",
