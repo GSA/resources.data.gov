@@ -2,7 +2,7 @@
 resource_name: Inventory.data.gov Guide
 slug: inventory-data-gov-guide
 description: Details on how to get started with using inventory.data.gov, from
-  creating a user account to using its features to mange datasets and export
+  creating a user account to using its features to manage datasets and export
   data.json.
 source: inventory.data.gov
 category: Skills development
@@ -19,10 +19,10 @@ details: >+
   {:#introduction}
 
 
-  [Inventory.data.gov](http://inventory.data.gov/) is a data management tool established in 2013 by the Data.gov Program Management Office (PMO) in what is now the Technology Transformation Services of the U.S. General Services Administration (GSA). Inventory.data.gov supports the implementation of the OPEN Government Data Act, which is Title II of the [Foundations for Evidence Based Policymaking Act](https://www.congress.gov/bill/115th-congress/house-bill/4174/text), by providing all of the relevant metadata fields and export formats required for agencies to have their data harvested by Data.gov and to comply with the OPEN Government Data Act. Inventory.data.gov is not required to be used by all agencies, but rather offered in order to assist agencies that do not have another solution for creating and maintaining data inventories.
+  [Inventory.data.gov](http://inventory.data.gov/) is a data management tool established in 2013 by the Data.gov Program Management Office (PMO) in what is now the Technology Transformation Services of the U.S. General Services Administration (GSA). Inventory.data.gov supports the implementation of the OPEN Government Data Act, which is Title II of the [Foundations for Evidence Based Policymaking Act](https://www.congress.gov/bill/115th-congress/house-bill/4174/text), by providing all of the relevant metadata fields and export formats required for agencies to have their data harvested by Data.gov. Inventory.data.gov is not required to be used by all agencies, but rather offered in order to assist agencies that do not have another solution for creating and maintaining data inventories.
 
 
-  [The Data.gov catalog](http://catalog.data.gov/) is based on [CKAN](http://ckan.org/) (Comprehensive Knowledge Archive Network), an open source technology that powers many government open data sites. [Inventory.data.gov](http://inventory.data.gov/) is a separate instance of CKAN hosted at GSA on the same infrastructure as the Data.gov catalog. To avoid confusion, neither site should simply be referred to as the “CKAN site”, but instead by the full URL.
+  [The Data.gov catalog](http://catalog.data.gov/) is based on [CKAN](http://ckan.org/) (Comprehensive Knowledge Archive Network), an open source technology that powers many government open data sites. [Inventory.data.gov](http://inventory.data.gov/) is a separate instance of CKAN hosted at GSA on the same infrastructure as the Data.gov catalog. 
 
 
   Inventory.data.gov as a dataset management system requires a user account and is not publicly accessible (with the exception of a few datasets that are hosted on inventory.data.gov, discussed in more detail below). Inventory.data.gov allows the registered users to manage the datasets for their agency only.
@@ -41,7 +41,7 @@ details: >+
 
   * A platform to manage public/non-public datasets: create new entries, modify existing ones, and delete any datasets as needed
 
-  * Unredacted Inventory / Enterprise Data Inventory (EDI) and Redacted Inventory / Public Data Listing (PDL) functionality exports the successfully validated datasets in the form of a data.json file complying to the DCAT-US 1.1 version. Error records are provided in a log file for review and resolution by agency users.
+  * Unredacted Inventory / Enterprise Data Inventory (EDI) and Redacted Inventory / Public Data Listing (PDL) functionality exports the successfully validated datasets in the form of a data.json file complying to the DCAT-US 1.1 [version.](https://resources.data.gov/resources/dcat-us/)  Error records are provided in a log file for review and resolution by agency users.
 
 
   ### Using Inventory.data.gov
@@ -55,7 +55,7 @@ details: >+
   1. Setting up an “organization” on inventory.data.gov. First, the agency should decide how they want to present their structure within inventory.data.gov. An agency could make the “organization” the entire agency (for example, make the entire Department of Veterans Affairs one “organization). In that case, everyone with a user account associated with the VA on inventory.data.gov would be able to view, add, edit or delete datasets for all of VA within inventory.data.gov. An agency could create an “organization” for sub-agencies, for instance creating an organization for the Farm Service Agency and all the other units of the Department of Agriculture. In that scenario, a user account for Farm Service Agency could view, add, edit or delete datasets for the Farm Service Agency only. The Data.gov PMO will set up organizations in the manner requested by the agency.
 
 
-  2. Creating user accounts for the agency representatives who will be using inventory.data.gov to manage the agency datasets. Inventory.data.gov, for dataset management purposes, is not publicly accessible. Users must have accounts on the system. There are three levels of accounts for any “organization” on inventory.data.gov: Administrator, Editor, and Member. For dataset management, agency users will, in most cases, have an Editor account. Administrators can add additional members from that agency (organization), but in most cases adding additional members will be handled by the Data.gov team due to documentation requirements for adding new users. All other functions for managing metadata can be accomplished with an Editor account.
+  2. Creating user accounts for the agency representatives who will be using inventory.data.gov to manage the agency datasets. Inventory.data.gov, for dataset management purposes, is not publicly accessible. Users must have accounts on the system as Editor for their organization. 
 
 
   ### Creating a User Account 
@@ -63,13 +63,13 @@ details: >+
   {:#creating-a-user-account}
 
 
-  New users to inventory.data.gov should request an account by completing a New User Form. If your agency does not permit access to the google [form](https://docs.google.com/forms/d/e/1FAIpQLSetStmwqrbMWDz_WIlh1trjhP0PFCjKXHzshsJveYmtIvlG2Q/viewform?usp=sf_link), contact[ datagovhelp@gsa.gov](mailto:datagovhelp@gsa.gov) to complete a Word version of the form.  Creating your inventory.data.gov account requires an initial login. Logins to use inventory.data.gov are integrated with [login.gov](https://login.gov). You should log in to login.gov and follow the directions for associating your PIV/CAC card to your login.gov account. 
+  New users to inventory.data.gov should request an account by completing a New User Form. If your agency does not permit access to the google [form](https://docs.google.com/forms/d/e/1FAIpQLSetStmwqrbMWDz_WIlh1trjhP0PFCjKXHzshsJveYmtIvlG2Q/viewform?usp=sf_link), contact[ datagov@gsa.gov](mailto:datagov@gsa.gov) to complete a Word version of the form.  Creating your inventory.data.gov account requires an initial login. Logins to use inventory.data.gov are integrated with [login.gov](https://login.gov). You should log in to login.gov and follow the directions for associating your PIV/CAC card to your login.gov account. 
 
 
   ![logingovgraphic](../../assets/media/login.gov-image.png) 
 
 
-  After you have logged in to inventory.data.gov using login.gov, email us at datagovhelp@gsa.gov to let us know you have completed the initial login. We will then associate requested permissions to your account. On subsequent logins to inventory.data.gov, you should be able to use inventory.data.gov to manage metadata without further assistance.
+  After you have logged in to inventory.data.gov using login.gov, email us at datagov@gsa.gov to let us know you have completed the initial login. We will then associate requested permissions to your account. On subsequent logins to inventory.data.gov, you should be able to use inventory.data.gov to manage metadata without further assistance.
 
 
   ### Using inventory.data.gov to manage datasets
@@ -77,13 +77,10 @@ details: >+
   {:#using-inventory-data-gov-to-manage-datasets}
 
 
-  Once you have an account as an Editor for your agency (Organization), you can use inventory.data.gov to add or edit datasets for your Organization. Once you log in, you’ll see an activity page showing your recent activity on inventory.data.gov.
+  Once you have an account as an Editor for your agency (Organization), you can use inventory.data.gov to add or edit datasets for your Organization. 
 
 
-  ![inventorylogin](../../assets/media/66858334-0ebd7000-ef57-11e9-9f56-9c5bee4cc4d9.jpg)
-
-
-  The main tabs you will be using are “Datasets” and “Organizations.”
+    The main tabs you will be using are “Datasets” and “Organizations.”
 
 
   Datasets:
@@ -98,17 +95,10 @@ details: >+
   ![orgs](../../assets/media/66859352-1b42c800-ef59-11e9-87ec-eac09c65aba2.jpg)
 
 
-  When you click on the “Organizations” tab, you’ll go to the main Organizations page that lists all the Organizations in inventory.data.gov. To find your Organization, you can search for it in the search bar on the page. When you click on your Organization, all the datasets for the Organization will be displayed. There’s an Admin button on the upper right for Administrators. By clicking on it, you get the main information about the Organization, including a tab for “Members.”
+  When you click on the “Organizations” tab, you’ll go to the main Organizations page that lists all the Organizations in inventory.data.gov. To find your Organization, you can search for it in the search bar on the page. When you click on your Organization, all the datasets for the Organization will be displayed. 
 
-  Clicking on “Members” brings up all the Members of the Organization who can add and edit datasets. Clicking on the Add Members button gives you the option of adding an existing user of inventory.data.gov to your Organization. Before you can add Members to your organization, the new Member has to complete initial log in on inventory.data.gov using login.gov. In addition, agency users with Administrator access are requested to coordinate the addition of new members with the Data.gov PMO, so that the documentation requirements for additional accounts are met.
-
-
-  ![members](../../assets/media/66859471-65c44480-ef59-11e9-9946-f612cc306800.jpg)
-
-
-  There are three levels of access. Member is read only access. Editor allows you to add and edit datasets. Admin can perform the same actions as an Editor and also add members to the Organization.
-
-
+  
+  
   ### Adding a Dataset
 
   {:#adding-a-dataset}
@@ -149,7 +139,7 @@ details: >+
 
   **Meets Agency Data Quality**. This field shows if the dataset meets your agency’s data quality standards if any apply.
   
-  The next field asks whether the dataset is a geospatial dataset. Selecting “My dataset is a geospatial dataset” will result in the metadata being included in {geoplatform.gov.}(https://www.geoplatform.gov/)
+  The next field asks whether the dataset is a geospatial dataset. If you have a dataset in your DCAT-US 1.1 inventory that needs to be feautred on [geoplatform.gov](https://www.geoplatform.gov/), follow these additional [directions.](https://github.com/GSA/ckanext-datajson/tree/main/ckanext/datajson/tests/datajson-samples#datajson-examples) 
 
   **Data Dictionary**. If there is a data dictionary or schema for the dataset, provide the URL here.
 
@@ -264,9 +254,9 @@ details: >+
   {:#dataset-hosting}
 
 
-  The primary use of [inventory.data.gov](https://inventory.data.gov/dataset) is to provide a dataset management system for agencies that need a tool to meet the requirements of the Open Data Policy.Data.gov uses inventory.data.gov for a second purpose. From 2011-2014, Data.gov featured data hosting using the Socrata platform. About a dozen agencies used the platform to host their datasets directly on Data.gov. At the conclusion of the Socrata contract in 2014, several agencies indicated a continuing need for hosting capability for these datasets (approximately 100). To accommodate these agencies, the Data.gov PMO migrated the datasets previously hosted at the platform to a hosting capability using the CKAN [DataStore](https://docs.ckan.org/en/2.9/maintaining/datastore.html) extension, on the CKAN instance at inventory.data.gov. As a result, the access URLs for this small number of datasets begin with inventory.data.gov and are publicly accessible without needing a user account.
+  The primary use of [inventory.data.gov](https://inventory.data.gov/dataset) is to provide a dataset management system for agencies that need a tool to meet the requirements of the Open Government Data Act. From 2011-2014, Data.gov featured data hosting using the Socrata platform. About a dozen agencies used the platform to host their datasets directly on Data.gov. At the conclusion of the Socrata contract in 2014, several agencies indicated a continuing need for hosting capability for these datasets. To accommodate these agencies, the Data.gov PMO migrated the datasets previously hosted at the platform to a hosting capability using the CKAN [DataStore](https://docs.ckan.org/en/2.9/maintaining/datastore.html) extension, on the CKAN instance at inventory.data.gov. As a result, the access URLs for a small number of datasets begin with inventory.data.gov and are publicly accessible without needing a user account.
 
-  For the time being, the Data.gov PMO will continue to provide this hosting capability on inventory.data.gov while it remains small scale and does not require significant additional Data.gov resources.
+  The Data.gov PMO will continue to provide this hosting capability on inventory.data.gov while it remains small scale and does not require significant additional Data.gov resources.
 
 
 examples: ""
