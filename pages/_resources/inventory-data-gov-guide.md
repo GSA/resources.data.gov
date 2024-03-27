@@ -118,56 +118,97 @@ details: >+
   There is validation for each field, so if you try to skip a required field or enter improper formats for a particular field, you’ll get an error message when you try to add the dataset.
 
 
-  **Entering Metadata**
+**Entering Metadata**
+
+The first screen in the metadata entry form consists of Required Metadata. 
+
+* **Title:** Enter the Title for the dataset, as you would like the Title to be displayed. The URL for the dataset will be generated automatically based on the Title.
+  
+* **Description:** Enter the Description for the dataset as a summary about the dataset.
+  
+* **Tags:** Enter the Tags for the dataset. Your dataset will be included when a Data.gov user searches for those Tags.
 
 
-  The first screen in the metadata entry form consists of Required Metadata. Enter the **Title** for the dataset, as you would like the Title to be displayed.
+* **Publisher:** Start typing the name of the component within your agency, and the field will auto-populate. If your agency is not differentiating datasets by sub-agency, start typing your agency name in the Publisher field. If nothing auto-populates, it indicates we have not added the relevant information within inventory.data.gov. Please contact inventory-help@gsa.gov to have the information added to the system.
 
-  The URL for the dataset will be generated automatically based on the Title.
+   
+* **Contact Name/Email:** Enter the name and email information for the contact for this dataset. Questions about this dataset will be referred to the contact listed.
+  
+* **Access Level:** Choose public, restricted public, or non-public.
 
-  Enter the **Description** for the dataset as a summary about the dataset.
+  
+* **License:** Please note that in the License field, if applicable, the URL for the license should be provided.
 
-  Enter the **Tags** for the dataset. Your dataset will be included when a Data.gov user searches for those Tags.
+  
+* **Spatial:** If the dataset is about a specific location, enter that information in this field.
 
-  For **Publisher**, start typing the name of the component within your agency, and the field will auto-populate. If your agency is not differentiating datasets by sub-agency, start typing your agency name in the Publisher field. If nothing auto-populates, it indicates we have not added the relevant information within inventory.data.gov. Please contact inventory-help@gsa.gov to have the information added to the system. **Contact Name/Email.** Enter the name and email information for the contact for this dataset. Questions about this dataset will be referred to the contact listed.
+  
+* **Temporal:** If the dataset covers a specific date range, enter that information following the format provided.
 
-  **Access Level**:  Choose public, restricted public, or non-public. Please note that in the License field, if applicable, the URL for the license should be provided. Spatial. If the dataset is about a specific location, enter that information in this field. Temporal. If the dataset covers a specific date range, enter that information following the format provided.  Hit “Save and Continue” to get to the next screen. 
+  
+* Hit **“Save and Continue”** to get to the next screen.
+
+  
   
     ![image2](../../assets/media/inventory-image-2.png)
   
    The second screen has additional metadata fields. 
 
-  **Meets Agency Data Quality**. This field shows if the dataset meets your agency’s data quality standards if any apply.
+  * **Meets Agency Data Quality:** This field shows if the dataset meets your agency’s data quality standards if any apply.
   
-  The next field asks whether the dataset is a geospatial dataset. If you have a dataset in your DCAT-US 1.1 inventory that needs to be feautred on [geoplatform.gov](https://www.geoplatform.gov/), follow these additional [directions.](https://github.com/GSA/ckanext-datajson/tree/main/ckanext/datajson/tests/datajson-samples#datajson-examples) 
+  * **Geospatial:** The next field asks whether the dataset is a geospatial dataset. If you have a dataset in your DCAT-US 1.1 inventory that needs to be feautred on [geoplatform.gov](https://www.geoplatform.gov/), follow these additional [directions.](https://github.com/GSA/ckanext-datajson/tree/main/ckanext/datajson/tests/datajson-samples#datajson-examples)
+ 
+    
 
-  **Data Dictionary**. If there is a data dictionary or schema for the dataset, provide the URL here.
+  * **Data Dictionary:** If there is a data dictionary or schema for the dataset, provide the URL here.
+ 
+    
 
-  **Described by Type**. Choose the data dictionary type from the formats listed.
+  * **Described by Type:** Choose the data dictionary type from the formats listed.
+ 
+    
 
-  **Data Publishing Frequency**. Choose the frequency from the options listed.
+  * **Data Publishing Frequency:** Choose the frequency from the options listed.
+ 
+    
 
-  **Landing Page (Homepage URL)**. If there is a landing page/home page associated with the dataset, enter the URL here.
+  * **Landing Page (Homepage URL):** If there is a landing page/home page associated with the dataset, enter the URL here.
+ 
+    
 
-  **Language**. The default language for datasets is English. If the dataset is presented in another language, select it here.
+  * **Language:** The default language for datasets is English. If the dataset is presented in another language, select it here.
+ 
+    
 
-  **Primary IT Investment UII**. If there is an IT Unique Investment Identifier associated with the dataset, enter it here.
+  * **Primary IT Investment UII:** If there is an IT Unique Investment Identifier associated with the dataset, enter it here.
+ 
+    
 
-  **References (Related Documents)**. URLs for additional related resources can be entered here. 
+  * **References (Related Documents):** URLs for additional related resources can be entered here.
+ 
+    
 
-  **Release Date**. Enter the release date in the date format provided.
+  * **Release Date:** Enter the release date in the date format provided.
+ 
+    
 
-  **System of Records**. If there is a Privacy Act System of Records Notice (SORN) associated with the dataset, enter the URL for the published SORN here.
+  * **System of Records:** If there is a Privacy Act System of Records Notice (SORN) associated with the dataset, enter the URL for the published SORN here.
+ 
+    
 
-  The last two fields are to indicate if this dataset is part of a collection or if you want to designate this dataset as the “parent” of a collection.
+  * The last two fields are to indicate if this dataset is part of a collection or if you want to designate this dataset as the “parent” of a collection.
+ 
+    
 
-  **Is parent**. Yes or No. If you want to make this dataset the “parent” of a collection, choose yes. Otherwise choose no.
+    * **Is parent:** Yes or No. If you want to make this dataset the “parent” of a collection, choose "yes". Otherwise choose "no".
 
-  Note that once you make a dataset a “parent” dataset, it cannot be a “child” dataset, or part of another collection of datasets. After a dataset is selected as parent, this dataset will be available for the subsequent datasets in this organization to choose a parent dataset (for isPartOf)
+  Note that once you make a dataset a “parent” dataset, it cannot be a “child” dataset, or part of another collection of datasets. After a dataset is selected as parent, this dataset will be available for the subsequent datasets in this organization to choose a parent dataset (for isPartOf).
 
-  If you chose No and made the dataset a non-parent dataset, you would then be able to choose in the next field (**Parent dataset**) – the datasets that you want to make this dataset as part of a collection, note that this field is optional and can be left empty if you would like the dataset to be an independent dataset.
+  If you chose "No" and made the dataset a non-parent dataset, you would then be able to choose in the next field (**Parent dataset**) – the datasets that you want to make this dataset as part of a collection, note that this field is optional and can be left empty if you would like the dataset to be an independent dataset.
 
-  Once you are finished entering the metadata, hit **Save and Continue.** 
+  
+
+  * Once you are finished entering the metadata, hit **"Save and Continue"**.
 
  
   The final screen is “Resource Upload” where you can provide information on how to access the dataset. 
@@ -176,11 +217,13 @@ details: >+
 
   ![image3](../../assets/media/inventory-image-3.png)
  
-   Provide a **description** of the dataset.
+  * **Description:** Provide a description of the dataset.
 
-  **Media type**. Choose the relevant format.
+  * **Media type:** Choose the relevant format.
 
-  **Format**. Type in the format in this field. (API value for “Link to API” option)
+  
+
+  * **Format:** Type in the format in this field. (API value for “Link to API” option)
 
   ### Draft Feature
 
