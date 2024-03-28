@@ -120,7 +120,7 @@ details: >+
 
   **Entering Metadata**
 
-  The first screen in the metadata entry form consists of Required Metadata. 
+The first screen in the metadata entry form consists of Required Metadata. 
 
   * **Title:** Enter the Title for the dataset, as you would like the Title to be displayed. The URL for the dataset will be generated automatically based on the Title.
 
@@ -266,19 +266,19 @@ details: >+
 
   Rather than downloading data.json files, it is possible to use the API and your API key in order to automate the process of adding the data.json file to the agency website.
 
-  Here’s what the request would look like using the curl-like tool[ httpie](https://httpie.io/)
+  Here’s what the request would look like using the curl-like tool [httpie](https://httpie.io/)
 
 
-  **Redacted Inventory (PDL)**
+  **Redacted Inventory (PDL)** ``` http --download ```
 
-  ``` http https://inventory.data.gov/organization/[organization-id]/redacted.json
+  ``` https://inventory.data.gov/organization/[organization-id]/redacted.json
 
   X-CKAN-API-Key:xxx-your-api-key-xxx ```
 
 
-  **Unredacted Inventory (EDI)**
+  **Unredacted Inventory (EDI)** ``` http --download ```
 
-  ``` http https://inventory.data.gov/organization/[organization-id]/unredacted.json
+  ``` https://inventory.data.gov/organization/[organization-id]/unredacted.json
 
   X-CKAN-API-Key:xxx-your-api-key-xxx ```
 
