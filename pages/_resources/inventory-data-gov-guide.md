@@ -120,7 +120,7 @@ details: >+
 
   **Entering Metadata**
 
-The first screen in the metadata entry form consists of Required Metadata. 
+  The first screen in the metadata entry form consists of Required Metadata. 
 
   * **Title:** Enter the Title for the dataset, as you would like the Title to be displayed. The URL for the dataset will be generated automatically based on the Title.
 
