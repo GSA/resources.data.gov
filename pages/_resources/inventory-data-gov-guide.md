@@ -118,37 +118,36 @@ details: >+
   There is validation for each field, so if you try to skip a required field or enter improper formats for a particular field, you’ll get an error message when you try to add the dataset.
 
 
-**Entering Metadata**
+  **Entering Metadata**
 
-The first screen in the metadata entry form consists of Required Metadata. 
+  The first screen in the metadata entry form consists of Required Metadata. 
 
-* **Title:** Enter the Title for the dataset, as you would like the Title to be displayed. The URL for the dataset will be generated automatically based on the Title.
-  
-* **Description:** Enter the Description for the dataset as a summary about the dataset.
-  
-* **Tags:** Enter the Tags for the dataset. Your dataset will be included when a Data.gov user searches for those Tags.
+  * **Title:** Enter the Title for the dataset, as you would like the Title to be displayed. The URL for the dataset will be generated automatically based on the Title.
+
+  * **Description:** Enter the Description for the dataset as a summary about the dataset.
+
+  * **Tags:** Enter the Tags for the dataset. Your dataset will be included when a Data.gov user searches for those Tags.
 
 
-* **Publisher:** Start typing the name of the component within your agency, and the field will auto-populate. If your agency is not differentiating datasets by sub-agency, start typing your agency name in the Publisher field. If nothing auto-populates, it indicates we have not added the relevant information within inventory.data.gov. Please contact inventory-help@gsa.gov to have the information added to the system.
+  * **Publisher:** Start typing the name of the component within your agency, and the field will auto-populate. If your agency is not differentiating datasets by sub-agency, start typing your agency name in the Publisher field. If nothing auto-populates, it indicates we have not added the relevant information within inventory.data.gov. Please contact inventory-help@gsa.gov to have the information added to the system.
 
-   
-* **Contact Name/Email:** Enter the name and email information for the contact for this dataset. Questions about this dataset will be referred to the contact listed.
-  
-* **Access Level:** Choose public, restricted public, or non-public.
+ 
+  * **Contact Name/Email:** Enter the name and email information for the contact for this dataset. Questions about this dataset will be referred to the contact listed.
 
-  
-* **License:** Please note that in the License field, if applicable, the URL for the license should be provided.
+  * **Access Level:** Choose public, restricted public, or non-public.
 
-  
-* **Spatial:** If the dataset is about a specific location, enter that information in this field.
 
-  
-* **Temporal:** If the dataset covers a specific date range, enter that information following the format provided.
+  * **License:** Please note that in the License field, if applicable, the URL for the license should be provided.
 
-  
-* Hit **“Save and Continue”** to get to the next screen.
 
-  
+  * **Spatial:** If the dataset is about a specific location, enter that information in this field.
+
+
+  * **Temporal:** If the dataset covers a specific date range, enter that information following the format provided.
+
+
+  * Hit **“Save and Continue”** to get to the next screen.
+
   
     ![image2](../../assets/media/inventory-image-2.png)
   
