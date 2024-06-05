@@ -14,7 +14,7 @@
     "browserify": "^17.0.0",
     "concurrently": "^8.2.2",
     "css-mqpacker": "^7.0.0",
-    "cssnano": "^6.1.1",
+    "cssnano": "^6.1.2",
     "fuse.js": "^7.0.0",
     "glossary-panel": "^1.0.0",
     "gulp": "^4.0.2",
