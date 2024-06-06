@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@uswds/uswds": "^3.8.0",
-    "accessible-autocomplete": "^2.0.4",
+    "accessible-autocomplete": "^3.0.0",
     "autoprefixer": "^10.4.19",
     "browserify": "^17.0.0",
     "concurrently": "^8.2.2",
