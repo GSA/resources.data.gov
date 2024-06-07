@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.1"
+gem "jekyll", "~> 4.3.2"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15", ">= 0.15.1"
-  gem "jekyll-toc", "~> 0.17", ">= 0.17.1"
+  gem "jekyll-toc", "~> 0.18", ">= 0.18.0"
   gem 'jekyll-redirect-from', '>= 0.16.0'
 end
 
