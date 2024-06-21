@@ -20,6 +20,9 @@ i.e.
 ----------------------------------------
 */
 
+@use "uswds-core" as *;
+
+
 @import "components/banner";
 @import "components/buttons";
 @import "components/contacts";
@@ -52,7 +55,7 @@ background-color : color('gray-5');
 }
 
 table {
-  @extend .usa-table;
+  @extend .usa-table !optional;
 }
 
 table tr td code {

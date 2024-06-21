@@ -10,32 +10,19 @@
   "dependencies": {
     "@uswds/uswds": "^3.8.1",
     "accessible-autocomplete": "^3.0.0",
-    "autoprefixer": "^10.4.19",
-    "browserify": "^17.0.0",
     "concurrently": "^8.2.2",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^7.0.1",
     "fuse.js": "^7.0.0",
     "glossary-panel": "^1.0.0",
-    "gulp": "^4.0.2",
-    "gulp-dart-sass": "^1.1.0",
-    "gulp-postcss": "^9.1.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-replace": "^1.1.4",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulplog": "^2.2.0",
     "ini": "^4.1.3",
     "js-yaml": "^4.1.0",
     "lodash.assign": "^4.2.0",
     "node-notifier": "^10.0.1",
     "path": "^0.12.7",
     "postcss": "^8.4.38",
-    "postcss-csso": "^5.0.1",
     "sass": "^1.77.5",
     "smooth-scroll": "^16.0.3",
-    "uswds-gulp": "github:uswds/uswds-gulp",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0",
     "watchify": "^4.0.0"
   },
   "scripts": {
@@ -43,14 +30,25 @@
     "gulp": "gulp",
     "jekyll": "bundle exec jekyll build",
     "pages": "npm run gulp",
-    "prestart": "npm run gulp",
     "qa": "bundle exec htmlproofer --http-status-ignore \"301,302,401,403,429\" --check-html _site",
     "setup": "bundle install",
-    "start": "concurrently \"npm run watch:*\" \"bundle exec jekyll serve\"",
+    "start": "concurrently \"npm run watch\" \"bundle exec jekyll serve\"",
     "test": "bundle exec htmlproofer --check-html --disable-external _site",
-    "watch:js": "gulp watch-js",
-    "watch:sass": "gulp watch-sass"
+    "watch": "gulp watch"
   },
   "author": "Data.gov <datagovhelp@gsa.gov>",
-  "license": "CC0-1.0"
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@uswds/compile": "^1.1.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
+    "browserify": "^17.0.0",
+    "gulp": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser-js": "^5.2.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
 }

@@ -14,7 +14,6 @@ github:
   default_branch: main
 
 scripts:
-  - assets/uswds/js/uswds.min.js
   - assets/js/bundle.js
 
 styles:
