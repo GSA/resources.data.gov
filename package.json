@@ -12,7 +12,7 @@
     "accessible-autocomplete": "^3.0.0",
     "concurrently": "^8.2.2",
     "css-mqpacker": "^7.0.0",
-    "cssnano": "^7.0.1",
+    "cssnano": "^7.0.3",
     "fuse.js": "^7.0.0",
     "glossary-panel": "^1.0.0",
     "ini": "^4.1.3",
