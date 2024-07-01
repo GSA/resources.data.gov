@@ -2,38 +2,17 @@
 version: v1.25.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
-  SNYK-JS-ANSIREGEX-1583908:
-    - '*':
-        reason: >-
-          ansi-regex input is from trusted sources so a ReDoS attack is not a
-          concern. Not able to be upgraded at this time.
-        expires: 2024-03-30T00:00:00.000Z
-        created: 2022-12-05T19:21:40.652Z
-  SNYK-JS-GLOBPARENT-1016905:
-    - '*':
-        reason: >-
-          glob-parent input is from trusted sources so a ReDoS attack is not a
-          concern. Not able to be upgraded at this time.
-        expires: 2024-03-30T00:00:00.000Z
-        created: 2022-12-05T19:21:40.652Z
-  SNYK-JS-UNSETVALUE-2400660:
-    - '*':
-        reason: >-
-          unset function is from trusted sources so a Prototype Pollution is
-          not a concern. Not able to be upgraded at this time.
-        expires: 2024-03-30T00:00:00.000Z
-        created: 2022-12-05T19:21:40.652Z
   SNYK-JS-INFLIGHT-6095116:
     - '*':
         reason: >-
           this one should not affect the static site.
-        expires: 2024-03-30T21:09:27.109Z
+        expires: 2024-09-30T21:09:27.109Z
         created: 2023-11-30T21:09:27.114Z
   SNYK-JS-POSTCSS-5926692:
     - '*':
         reason: >-
           the recommond version 8.4.31 is already in the package.json file,
           so just wait for fixes from css-mqpacker and gulp-sourcemaps. 
-        expires: 2024-01-30T21:10:57.140Z
+        expires: 2024-09-30T21:10:57.140Z
         created: 2023-11-30T21:10:57.144Z
 patch: {}
