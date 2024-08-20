@@ -4,9 +4,16 @@ resource_name:
 slug: us-data-federation
 description: >-
 
-  **NOTE: This project is no longer active. This page serves as an archive of the work performed in the past.**
+  <div class="usa-alert usa-alert--info">
+    <div class="usa-alert__body">
+      <h4 class="usa-alert__heading">Project No Longer Active</h4>
+      <p class="usa-alert__text">
+        This page serves as an archive of the work performed in the past.
+      </p>
+    </div>
+  </div>
 
-    The United States Data Federation is dedicated to making it easier to collect, combine, and exchange data across government through reusable tools and repeatable processes.
+  The United States Data Federation is dedicated to making it easier to collect, combine, and exchange data across government through reusable tools and repeatable processes.
 
 source: data.gov
 category: Data Management & Governance
