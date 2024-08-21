@@ -1,7 +1,7 @@
 ---
 guidance_tags: ""
 toc: true
-layout: resource0-
+layout: resource
 slug: m-23-22-delivering-a-digital-first-public-experience
 publish: true
 resource_name: "OMB M23-22 Delivering a Digital First Public Experience, otherwise known as 21st Century IDEA, was a bipartisan act signed into law in December 2018.
