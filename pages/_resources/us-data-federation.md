@@ -1,6 +1,6 @@
 ---
 redirect_from: /data-federation/
-resource_name: US Data Federation
+resource_name: U.S. Data Federation
 slug: us-data-federation
 description: >-
 
