@@ -4,15 +4,6 @@ resource_name:
 slug: us-data-federation
 description: >-
 
-  <div class="usa-alert usa-alert--info">
-    <div class="usa-alert__body">
-      <h4 class="usa-alert__heading">Project No Longer Active</h4>
-      <p class="usa-alert__text">
-        This page serves as an archive of the work performed in the past.
-      </p>
-    </div>
-  </div>
-
   The United States Data Federation is dedicated to making it easier to collect, combine, and exchange data across government through reusable tools and repeatable processes.
 
 source: data.gov
@@ -23,6 +14,13 @@ tags:
 guidance_tags: ""
 format: ""
 details: >-
+
+  <div class="usa-alert usa-alert--info">
+    <div class="usa-alert__body">
+      <h4 class="usa-alert__heading">Project No Longer Active</h4>
+      <p class="usa-alert__text">This page serves as an archive of the work performed in the past.</p>
+    </div>
+  </div>
 
   #### Getting good, reliable data is hard. Getting data from different sources makes this even harder.
 
