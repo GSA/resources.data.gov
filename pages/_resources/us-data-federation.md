@@ -1,13 +1,13 @@
 ---
 redirect_from: /data-federation/
-resource_name:
+resource_name: US Data Federation
 slug: us-data-federation
 description: >-
 
   The United States Data Federation is dedicated to making it easier to collect, combine, and exchange data across government through reusable tools and repeatable processes.
 
 source: data.gov
-category: Data Management & Governance
+category: Data management & governance
 tags:
   - Federal Data Strategy
   - open data
