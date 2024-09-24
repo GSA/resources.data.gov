@@ -10,7 +10,7 @@
   "dependencies": {
     "@uswds/uswds": "^3.8.2",
     "accessible-autocomplete": "^3.0.0",
-    "concurrently": "^8.2.2",
+    "concurrently": "^9.0.1",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^7.0.6",
     "fuse.js": "^7.0.0",
