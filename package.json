@@ -39,7 +39,7 @@
   "author": "Data.gov <datagovhelp@gsa.gov>",
   "license": "CC0-1.0",
   "devDependencies": {
-    "@uswds/compile": "^1.1.0",
+    "@uswds/compile": "^1.2.0",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
