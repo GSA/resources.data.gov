@@ -21,7 +21,7 @@
     "node-notifier": "^10.0.1",
     "path": "^0.12.7",
     "postcss": "^8.4.42",
-    "sass": "^1.77.8",
+    "sass": "^1.79.3",
     "smooth-scroll": "^16.0.3",
     "watchify": "^4.0.0"
   },
