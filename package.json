@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@uswds/uswds": "^3.8.2",
-    "accessible-autocomplete": "^3.0.0",
+    "accessible-autocomplete": "^3.0.1",
     "concurrently": "^9.0.1",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^7.0.6",
