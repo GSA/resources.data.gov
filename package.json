@@ -21,7 +21,7 @@
     "node-notifier": "^10.0.1",
     "path": "^0.12.7",
     "postcss": "^8.4.47",
-    "sass": "^1.79.3",
+    "sass": "^1.79.4",
     "smooth-scroll": "^16.0.3",
     "watchify": "^4.0.0"
   },
@@ -39,12 +39,12 @@
   "author": "Data.gov <datagovhelp@gsa.gov>",
   "license": "CC0-1.0",
   "devDependencies": {
-    "@uswds/compile": "^1.1.0",
+    "@uswds/compile": "^1.2.0",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babelify": "^8.0.0",
-    "browserify": "^17.0.0",
+    "browserify": "^17.0.1",
     "gulp": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser-js": "^5.2.2",
