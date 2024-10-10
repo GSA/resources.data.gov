@@ -17,8 +17,8 @@ const paths = {
 function jsTask() {
     return browserify(`${paths.js.src}`, { debug: true })
         .transform('babelify', {
-            presets: ['babel-preset-env'],
-            plugins: ['babel-plugin-transform-runtime']
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-transform-runtime']
         })
         .bundle()
         .pipe(source(paths.js.dest))
