@@ -29,7 +29,7 @@
     "build": "npm run gulp && npm run jekyll",
     "gulp": "gulp",
     "jekyll": "bundle exec jekyll build",
-    "pages": "npm run gulp",
+    "pages": "npm install && npm run gulp",
     "qa": "bundle exec htmlproofer --http-status-ignore \"301,302,401,403,429\" --check-html _site",
     "setup": "bundle install",
     "start": "concurrently \"npm run watch\" \"bundle exec jekyll serve\"",
