@@ -8,7 +8,7 @@
     "node": ">=20.0.0 <21.0.0"
   },
   "dependencies": {
-    "@uswds/uswds": "^3.8.2",
+    "@uswds/uswds": "^3.9.0",
     "accessible-autocomplete": "^3.0.1",
     "concurrently": "^9.0.1",
     "css-mqpacker": "^7.0.0",
@@ -22,14 +22,15 @@
     "path": "^0.12.7",
     "postcss": "^8.4.47",
     "sass": "^1.79.4",
-    "smooth-scroll": "^16.0.3",
-    "watchify": "^4.0.0"
+    "smooth-scroll": "^16.1.3",
+    "watchify": "^4.0.0",
+    "x64": "^1.0.0"
   },
   "scripts": {
     "build": "npm run gulp && npm run jekyll",
     "gulp": "gulp",
     "jekyll": "bundle exec jekyll build",
-    "pages": "npm run gulp",
+    "pages": "npm i && npm run gulp",
     "qa": "bundle exec htmlproofer --http-status-ignore \"301,302,401,403,429\" --check-html _site",
     "setup": "bundle install",
     "start": "concurrently \"npm run watch\" \"bundle exec jekyll serve\"",
@@ -39,11 +40,11 @@
   "author": "Data.gov <datagovhelp@gsa.gov>",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/plugin-transform-runtime": "^7.25.7",
+    "@babel/preset-env": "^7.25.8",
     "@uswds/compile": "^1.2.0",
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babelify": "^8.0.0",
+    "babelify": "^10.0.0",
     "browserify": "^17.0.1",
     "gulp": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
