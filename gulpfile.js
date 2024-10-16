@@ -3,8 +3,12 @@ const uswds = require("@uswds/compile");
 
 var browserify = require('browserify');
 var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify')
+var gulpif = require('gulp-if');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+
+const isProd = process.env.NODE_ENV == 'production';
 
 // file path vars
 const paths = {
@@ -15,7 +19,7 @@ const paths = {
 }
 
 function jsTask() {
-    return browserify(`${paths.js.src}`, { debug: true })
+    return browserify(`${paths.js.src}`)
         .transform('babelify', {
             presets: ['@babel/preset-env'],
             plugins: ['@babel/plugin-transform-runtime']
@@ -23,8 +27,9 @@ function jsTask() {
         .bundle()
         .pipe(source(paths.js.dest))
         .pipe(buffer())
-        .pipe(sourcemaps.init({ loadMaps: true }))
-        .pipe(sourcemaps.write('.'))
+        .pipe(gulpif(isProd, uglify()))
+        .pipe(gulpif(!isProd, sourcemaps.init({ loadMaps: true })))
+        .pipe(gulpif(!isProd, sourcemaps.write('.')))
         .pipe(dest("_site"));
 };
 

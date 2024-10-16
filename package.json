@@ -47,8 +47,10 @@
     "babelify": "^10.0.0",
     "browserify": "^17.0.1",
     "gulp": "^5.0.0",
+    "gulp-if": "^3.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser-js": "^5.2.2",
+    "gulp-uglify": "^3.0.2",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   }
