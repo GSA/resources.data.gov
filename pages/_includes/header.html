@@ -11,7 +11,7 @@
   </div>
 
   <nav role="navigation" class="usa-nav">
-    <div class="usa-nav__inner"><button class="usa-nav__close"><img src="{{ '/assets/uswds/img/close.svg' | relative_url }}" alt="close" /></button>
+    <div class="usa-nav__inner"><button class="usa-nav__close"><img src="{{ '/assets/uswds/img/usa-icons/close.svg' | relative_url }}" alt="close" /></button>
 
       {% assign primary_links = site.data.navigation %} {% if primary_links %}
       <ul class="usa-nav__primary usa-accordion">
@@ -53,7 +53,9 @@
         <div role="search">
           <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
           <input class="usa-input usagov-search-autocomplete" id="extended-search-field-small" type="search" name="query" autocomplete="off">
-          <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
+          <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span>
+            <img src="{{ '/assets/uswds/img/usa-icons-bg/search--white.svg' | relative_url}}" class="usa-search__submit-icon" alt="Search">
+          </button>
         </div>
       </form>
       {% endif %}
