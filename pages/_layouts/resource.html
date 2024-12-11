@@ -38,20 +38,20 @@ layout: toc
 
       <div class="{{ column_length }}">
         <h3 class="margin-top-0 margin-bottom-0">Category</h3>
-        <p class="margin-top-05 margin-bottom-205">
+        <div class="margin-top-05 margin-bottom-205">
           {% for category in page.category %}
             {% assign category_slug = category | slugify %}
             <div>
               <a href="{{ "/categories/" | append: category_slug | relative_url }}">{{ category }}</a>{% if forloop.last != true %},{% endif %}
             </div>
             {% endfor %}
-        </p>
+          </div>
 
         <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
         <div class="margin-top-05 margin-bottom-205">
           {% for tag in page.tags %}
+            {% assign slug_tag = tag | slugify %}
             <div>
-              {% assign slug_tag = tag | slugify %}
               <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last != true %},{% endif %}
             </div>
           {% endfor %}
