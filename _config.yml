@@ -8,6 +8,8 @@ github_username: GSA
 dap_agency: GSA
 searchgov_affiliate: datagov-resources
 
+federal_shutdown_mode: false
+
 github:
   organization: GSA
   repository: resources.data.gov
