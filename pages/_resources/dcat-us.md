@@ -1198,7 +1198,7 @@ details: >-
 
   **Accepted Values** | String (URL)
 
-  **Usage Notes** | This field should a URL to the System of Records Notice (SORN) that relates to the dataset, specifically from FederalRegister.gov.   
+  **Usage Notes** | This field should contain a URL to the System of Records Notice (SORN) that relates to the dataset, specifically from FederalRegister.gov.   
 
   **Example** |  `{"systemOfRecords":"https://www.federalregister.gov/articles/2002/04/08/02-7376/privacy-act-of-1974-publication-in-full-of-all-notices-of-systems-of-records-including-several-new#p-361"}`
 
