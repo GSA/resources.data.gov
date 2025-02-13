@@ -12,3 +12,8 @@ updates:
     ignore:
       - dependency-name: "gulp"
         update-types: ["version-update:semver-major"]
+    groups:
+      # Group all npm updates together
+      npm-packages:
+        patterns:
+          - "*"
