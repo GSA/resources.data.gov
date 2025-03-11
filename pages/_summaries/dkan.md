@@ -13,5 +13,5 @@ category: Data tools
 tags:
   - open data
 format: ""
-link: https://www.drupal.org/project/dkan
+link: https://getdkan.org/
 ---
