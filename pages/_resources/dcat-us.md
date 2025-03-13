@@ -1181,9 +1181,9 @@ details: >-
 
   **Accepted Values** | See Usage Notes
 
-  **Usage Notes** | This field should contain one of the following types of content: (1) a bounding coordinate box for the dataset represented in latitude / longitude pairs where the coordinates are specified in decimal degrees and in the order of: minimum longitude, minimum latitude, maximum longitude, maximum latitude; (2) a latitude / longitude pair (in decimal degrees) representing a point where the dataset is relevant; (3) a geographic feature expressed in [Geography Markup Language using the Simple Features Profile](http://www.ogc.org/standards/gml); or (4) a geographic feature from the [GeoNames database](http://www.geonames.org).
+  **Usage Notes** | This field should contain one of the following types of content: (1) a bounding coordinate box for the dataset represented in latitude / longitude pairs where the coordinates are specified in decimal degrees and in the order of: minimum longitude, minimum latitude, maximum longitude, maximum latitude; (2) a latitude / longitude pair (in decimal degrees) representing a point where the dataset is relevant; (3) a geographic feature from the [GeoNames database](http://www.geonames.org). *Note: Currently we do not support geographic features expressed in [Geography Markup Language using the Simple Features Profile](http://www.ogc.org/standards/gml)*
 
-  **Example** |  `{"spatial":"Lincoln, Nebraska"}`
+  **Example** | `{"spatial": "[[-14.601813, -179.231086], [71.441059, 179.859681]]}"` or `{"spatial": "-14.601813, -179.231086,71.441059,179.859681}"` or `{"spatial":"Lincoln, Nebraska"}`
 
 
   {: .table .table-schema #systemOfRecords}
