@@ -1184,8 +1184,9 @@ details: >-
   **Usage Notes** | This field supports either Strings or GeoJSON Objects. As a string; This field should contain one of the following types of content: (1) a bounding coordinate box for the dataset represented in latitude / longitude pairs where the coordinates are specified in decimal degrees and in the order of: minimum longitude, minimum latitude, maximum longitude, maximum latitude; (2) a latitude / longitude pair (in decimal degrees) representing a point where the dataset is relevant; (3) a geographic feature from the [GeoNames database](http://www.geonames.org). As GeoJSON Objects we support the following `"types"`: `"Polygon"` or `"Point"`. (4) For a `"Polygon"` type, the `"coordinates"` field must be an array of arrays, of points, where the array defines the outer boundary of the `"Polygon"`. This array should contain at least four [longitude, latitude] points (as numbers, either integers or floating-point numbers), and the first and last points must be the same to close the shape.;  or (5)`"Point"` objects where the `"coordinates"` field is an array [longitude, latitude] expressed (as numbers, either integers or floating-point numbers). (6) We also support GeoJSON if it is also expressed as a string. *Currently we do not support geographic features expressed in [Geography Markup Language using the Simple Features Profile](http://www.ogc.org/standards/gml). Other GeoJson types may also be accepted, such as `"envelope"` however they may not be fully supported within the application.*
 
   **Example** | See Below
-  
-  ~~~json
+
+
+  ~~~
 
   (1) {"spatial": "137.5488,3.8128,163.3647,10.2284"}  
   (2) {"spatial": "-88.9718,36.52033"
