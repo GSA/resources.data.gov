@@ -5,31 +5,31 @@ ignore:
   SNYK-JS-USERAGENT-174737:
     - '*':
         reason: >-
-          this one should not affect the static site.
-        expires: 2025-04-30T00:00:00.000Z
+          not vulnerable due to it being a static site and a dev dependency
+        expires: 2026-03-31T00:00:00.000Z
         created: 2025-03-31T00:00:00.000Z
   SNYK-JS-ANSIREGEX-1583908:
     - '*':
         reason: >-
-          this one should not affect the static site.
-        expires: 2025-04-30T00:00:00.000Z
+          not vulnerable due to it being a static site and a dev dependency
+        expires: 2026-03-31T00:00:00.000Z
         created: 2025-03-31T00:00:00.000Z
   SNYK-JS-USERAGENT-8309369:
     - '*':
         reason: >-
-          this one should not affect the static site.
-        expires: 2025-05-31T00:00:00.000Z
+          not vulnerable due to it being a static site and a dev dependency
+        expires: 2026-03-31T00:00:00.000Z
         created: 2025-03-31T00:00:00.000Z
   SNYK-JS-TOUGHCOOKIE-5672873:
     - '*':
         reason: >-
-          this one should not affect the static site.
-        expires: 2025-05-31T00:00:00.000Z
+          not vulnerable due to it being a static site and a dev dependency
+        expires: 2026-03-31T00:00:00.000Z
         created: 2025-03-31T00:00:00.000Z
   SNYK-JS-ROBOTSTXTGUARD-3226605:
     - '*':
         reason: >-
-          this one should not affect the static site.
-        expires: 2025-06-30T00:00:00.000Z
+          not vulnerable due to it being a static site and a dev dependency
+        expires: 2026-03-31T00:00:00.000Z
         created: 2025-03-31T00:00:00.000Z
 patch: {}
