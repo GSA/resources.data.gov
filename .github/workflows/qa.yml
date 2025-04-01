@@ -7,5 +7,7 @@ on:
 
 jobs:
   qa:
-    name: Test HTML Links
-    uses: gsa/data.gov/.github/workflows/static-site-qa-template.yml@main
+    uses: gsa/data.gov/.github/workflows/static-site-qa-template.yml@update-qa-template
+    with:
+      site_url: https://resources.data.gov
+      issue_number: 811
