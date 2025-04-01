@@ -74,6 +74,18 @@ Check for broken links.
     $ npm run qa
 
 
+### Broken Links
+
+We run a [weekly QA cron job](https://github.com/GSA/resources.data.gov/actions/workflows/qa.yml) to test for broken links.
+
+Any errors the QA job finds will be added to the [📌 Link Checker Report](https://github.com/GSA/resources.data.gov/issues/811).
+
+False positives, or URLs you wish to ignore can be put in the `.lycheeignore` file. This supports regex matching as well.
+
+This job can also be run locally. Install instructions here: https://lychee.cli.rs/installation/
+
+Then run with args: `lychee --base=https://resources.data.gov .`
+
 ### Update dependencies
 
 To update dependencies, you can run `bundle update {dependency}` after running
