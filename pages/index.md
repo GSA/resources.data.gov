@@ -1,3 +1,4 @@
+# Index
 ---
 title: Home
 layout: home
