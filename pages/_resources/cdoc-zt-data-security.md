@@ -5,7 +5,7 @@ description: "On October 31st, the CDO Council and the CISO Councilreleased the 
 
 More than 30 Federal agencies and departments answered the call to author the Federal Zero Trust Data Security Guide. The Guide and companion document will assist practitioners in operationalizing data security using a ZT framework."
 
-file: pages/assets/documents/Zero-Trust-Data-Security-Guide_Oct24.pdf
+file: /assets/documents/Zero-Trust-Data-Security-Guide_Oct24.pdf
 
 
 source: Federal Chief Data Officer's Council
