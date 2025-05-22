@@ -13,5 +13,5 @@ tags:
   - framework
   - Federal Data Strategy
 format: "PDF (28 pages)"
-link: "/assets/documents/fds-data-ethics-framework.pdf"
+link: "https://resources.data.gov/assets/documents/fds-data-ethics-framework.pdf"
 ---
