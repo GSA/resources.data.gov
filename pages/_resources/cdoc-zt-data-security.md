@@ -17,7 +17,7 @@ tags:
   - zero trust
  
 guidance_tags: ""
-format: ""
+format: "PDF (70 pages)"
 details: |
   - Originally published 2024
   - Federal CDO Council
