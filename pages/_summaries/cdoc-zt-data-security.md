@@ -17,7 +17,7 @@ tags:
     - data tagging
     - federal data strategy
     - zero trust
-    
+
 format: PDF (70 pages)
 link: https://resources.data.gov/assets/documents/Zero-Trust-Data-Security-Guide_Oct24.pdf
 ---
