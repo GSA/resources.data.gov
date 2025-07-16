@@ -2,17 +2,6 @@
 version: v1.25.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
-  SNYK-JS-INFLIGHT-6095116:
-    - '*':
-        reason: >-
-          this one should not affect the static site.
-        expires: 2024-09-30T21:09:27.109Z
-        created: 2023-11-30T21:09:27.114Z
-  SNYK-JS-POSTCSS-5926692:
-    - '*':
-        reason: >-
-          the recommond version 8.4.31 is already in the package.json file,
-          so just wait for fixes from css-mqpacker and gulp-sourcemaps. 
-        expires: 2024-09-30T21:10:57.140Z
-        created: 2023-11-30T21:10:57.144Z
+
+
 patch: {}
