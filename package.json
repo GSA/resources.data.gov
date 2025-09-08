@@ -11,7 +11,7 @@
     "@uswds/uswds": "^3.13.0",
     "accessible-autocomplete": "^3.0.1",
     "concurrently": "^9.2.0",
-    "cssnano": "^7.0.7",
+    "cssnano": "^7.1.0",
     "fuse.js": "^7.1.0",
     "glossary-panel": "^1.0.0",
     "ini": "^5.0.0",
