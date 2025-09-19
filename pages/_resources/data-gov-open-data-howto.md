@@ -52,7 +52,7 @@ details: >-
 
   #### CSDGM (XML)
 
-  While the CSDGM standard was created by the FGDC (and is sometimes referred to as FGDC metadata), [it is no longer recommended](https://www.fgdc.gov/metadata/geospatial-metadata-standards). A known problem with using CSDGM is that there is no unique identifier in the metadata itself. This makes it difficult to track dataset changes and can cause datasets to be removed and re-created in Data.gov unnecessarily due to URL changes, title changes, etc. The main result of this known deficiency is that the URL of the dataset page on the Data.gov catalog may change (since it wasn’t registered as a change but a new dataset), and anyone linking to the previous URL (such as agency pages, data consumers, and other federal sites like [Geoplatform](https://www.geoplatform.gov/)) can lose track of the URL for the metadata on the [Data.gov catalog](https://catalog.data.gov/dataset).
+  While the CSDGM standard was created by the FGDC (and is sometimes referred to as FGDC metadata), [it is no longer recommended](https://www.fgdc.gov/metadata/geospatial-metadata-standards). A known problem with using CSDGM is that there is no unique identifier in the metadata itself. This makes it difficult to track dataset changes and can cause datasets to be removed and re-created in Data.gov unnecessarily due to URL changes, title changes, etc. The main result of this known deficiency is that the URL of the dataset page on the Data.gov catalog may change (since it wasn’t registered as a change but a new dataset), and anyone linking to the previous URL (such as agency pages, data consumers, and other federal sites can lose track of the URL for the metadata on the [Data.gov catalog](https://catalog.data.gov/dataset).
 
   ### 1b: Create and gather metadata across your organization
 
@@ -67,7 +67,7 @@ details: >-
 
   #### DCAT-US Catalog
 
-  If you are providing a DCAT-US catalog, Data.gov requires the metadata as a JSON file at a public URL in order to harvest. For example, GSA’s metadata can be found at [gsa.gov/data.json](https://gsa.gov/data.json).
+  If you are providing a DCAT-US catalog, Data.gov requires the metadata as a JSON file at a public URL in order to harvest. For example, GSA’s metadata can be found at [open.gsa.gov/data.json](https://open.gsa.gov/data.json).
 
   #### Web Accessible Folder
 
@@ -82,13 +82,12 @@ details: >-
 
   Contact the Data.gov team via email at [datagov@gsa.gov](mailto:datagov@gsa.gov) to let them know you’d like to get started. Please include a link to your publicly available metadata (see step 1c above). Please also include information about how often the information is updated (and when, if applicable) so that Data.gov can set up the right cadence for refreshing the catalog from your source.
 
-  ### Harvest Setup
+  ### Harvest Setup and Report
 
-  The Data.gov team will create a new harvest source that will automatically collect information about your datasets and update Data.gov on a regular schedule. Depending on the number of datasets and/or the complexity of the organization, Data.gov may elect to test harvest on a dev/test system in order to verify things will work properly before “going live” with the production system. Agencies can provide email addresses to receive a harvest report describing the results of each harvest job, such as number of datasets added, deleted, or updated, and lists of any errors that prevented metadata for a particular dataset from being added to the Data.gov catalog.
+  The Data.gov team will create a new harvest source on [harvest.data.gov](https://harvest.data.gov) that will automatically collect information about your datasets and update Data.gov on a regular schedule. Depending on the number of datasets and/or the complexity of the organization, Data.gov may elect to test harvest on a dev/test system in order to verify things will work properly before “going live” with the production system.
 
-  ## Geoplatform Overlap
 
-  The [Geospatial Data Act](https://www.fgdc.gov/gda) is in many ways a companion of the OPEN Data Act. The Geospatial Data Act was enacted first, and the two laws do not reference each other. At a high level, the Geospatial Data Act codifies existing authorities of the Federal Geographic Data Committee regarding geospatial data, and requires the existence of the geospatial data site at [geoplatform.gov](https://www.geoplatform.gov/). In practice, Geoplatform uses Data.gov as the source of its metadata (filtering on geospatial metadata like [this](https://catalog.data.gov/dataset/?metadata_type=geospatial)). The Data.gov and Geoplatform.gov teams collaborate on overlapping issues such as harvesting, metadata standards, API’s and links between the two systems.
+  The harvest source configuration and harvesting job history, including metrics, are publicly available on the site. Each harvest job includes a detailed report showing the number of datasets added, updated, or deleted, along with any errors that prevented certain datasets from being added to the Data.gov catalog. Agencies can also provide email addresses to receive these harvest reports automatically.
 
   ## Term Definitions
 
