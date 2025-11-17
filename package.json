@@ -15,7 +15,7 @@
     "fuse.js": "^7.1.0",
     "glossary-panel": "^1.0.0",
     "ini": "^6.0.0",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.1.1",
     "lodash.assign": "^4.2.0",
     "node-notifier": "^10.0.1",
     "path": "^0.12.7",
