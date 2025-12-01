@@ -497,7 +497,7 @@ Retrieve the transformed DCAT payload from a harvest record.
 ### Example URL
 
 ```
-/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/transformed
+/harvest_record/000c4ce7-90c6-405c-8ed7-3ae06c45005c/transformed
 ```
 
 ### Response
@@ -507,10 +507,72 @@ Retrieve the transformed DCAT payload from a harvest record.
 **Content-Type:** `application/json`
 
 **Success Response Body:**
-Example: `/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/transformed
-Response:
 ```json
-{}
+{
+  "@type": "dcat:Dataset",
+  "title": "SeaBASS Bio-optical and pigment data collected from 1979-08-22 to 2011-12-14 (NCEI Accession 0086308)",
+  "issued": "2016-05-20T00:00:00.000+00:00",
+  "rights": "otherRestrictions",
+  "keyword": [
+    "0086308",
+    "ABSORPTION - SCATTERING - ATTENUATION COEFFICIENTS",
+    "CHLOROPHYLL",
+    "CHLOROPHYLL A",
+    "CHLOROPHYLL B",
+    "CHLOROPHYLL C",
+    "OCEAN \u003E INDIAN OCEAN \u003E BAY OF BENGAL",
+    "OCEAN \u003E PACIFIC OCEAN \u003E CENTRAL PACIFIC OCEAN \u003E HAWAIIAN ISLANDS",
+    "OCEAN \u003E PACIFIC OCEAN \u003E NORTH PACIFIC OCEAN",
+    "OCEAN \u003E PACIFIC OCEAN \u003E NORTH PACIFIC OCEAN \u003E BERING SEA",
+    "OCEAN \u003E PACIFIC OCEAN \u003E SOUTH PACIFIC OCEAN",
+    "OCEAN \u003E SOUTHERN OCEAN"
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "spatial": "95.0278,-70.0006,134.096,79.69",
+  "language": [],
+  "modified": "2016-05-20T00:00:00.000+00:00",
+  "temporal": "1979-08-22T00:00:00+00:00/2011-12-14T00:00:00+00:00",
+  "publisher": {
+    "name": "NOAA National Centers for Environmental Information",
+    "@type": "org:Organization"
+  },
+  "identifier": "gov.noaa.nodc:0086308",
+  "references": [
+    "http://seabass.gsfc.nasa.gov/",
+    "https://doi.org/10.1175/1520-0426(2003)20\u003C563:anmftm\u003E2.0.co;2",
+    "https://doi.org/10.1016/j.rse.2007.06.015",
+    "http://seabass.gsfc.nasa.gov/archive/NURC/sortie1/documents/SORTIE1_2007_Data_Report_WET-DN-00509.pdf",
+    "http://seabass.gsfc.nasa.gov/archive/NURC/sortie2/documents/SORTIE2_2008_Data_Report_WET-DN-00519.pdf",
+    "https://doi.org/10.1080/01431160310001618086"
+  ],
+  "accessLevel": "non-public",
+  "description": "This dataset contains SeaWiFS Bio-optical Archive and Storage System (SeaBASS) bio-optical, pigment, and other data collected from 1979-08-22 to 2011-12-14. Archived data include measurements of apparent and inherent optical properties, phytoplankton pigment concentrations, and other related oceanographic and atmospheric data, such as water temperature, salinity, stimulated fluorescence, and aerosol optical thickness. Data were collected using a number of different instrument packages, such as profilers, buoys, and hand-held instruments, and manufacturers on a variety of platforms, including ships and moorings.",
+  "landingPage": "https://www.ncei.noaa.gov/contact",
+  "contactPoint": {
+    "fn": "NOAA National Centers for Environmental Information",
+    "@type": "vcard:Contact",
+    "hasEmail": "mailto:ncei.info@noaa.gov"
+  },
+  "distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "title": "GCMD Keyword Forum Page",
+      "mediaType": "placeholder/value",
+      "description": "Global Change Master Directory (GCMD). 2025. GCMD Keywords, Version 21. Greenbelt, MD: Earth Science Data and Information System, Earth Science Projects Division, Goddard Space Flight Center (GSFC), National Aeronautics and Space Administration (NASA). URL (GCMD Keyword Forum Page): https://forum.earthdata.nasa.gov/app.php/tag/GCMD+Keywords",
+      "downloadURL": "https://forum.earthdata.nasa.gov/app.php/tag/GCMD%2BKeywords",
+      "describedByType": "application/octet-steam"
+    },
+    {
+      "@type": "dcat:Distribution",
+      "title": "NCEI Contact Information",
+      "mediaType": "placeholder/value",
+      "description": "Information for contacts at NCEI.",
+      "downloadURL": "https://www.ncei.noaa.gov/contact",
+      "describedByType": "application/octet-steam"
+    }
+  ],
+  "describedByType": "application/octet-steam"
+}
 ```
 
 **Error Response Body:**
