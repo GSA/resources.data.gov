@@ -26,18 +26,89 @@ Search for datasets in the catalog.
 
 ### Query Parameters
 
-| Parameter | Type | Required | Default | Description |
-|-----------|------|----------|---------|-------------|
-| `q` | string | No | `""` | Search query string |
-| `per_page` | integer | No | 10 | Number of results per page |
-| `results` | integer | No | 0 | Results hint for pagination |
-| `from_hint` | string | No | - | Encoded hint for returning to search context |
-| `org_id` | string | No | - | Filter by organization ID |
-| `org_type` | array | No | - | Filter by organization type(s) |
-| `keyword` | array | No | - | Filter by keyword(s) - exact match |
-| `after` | string | No | - | Pagination cursor for next page |
-| `spatial_filter` | string | No | - | Filter by spatial data: `"geospatial"` or `"non-geospatial"` |
-| `sort` | string | No | `"relevance"` | Sort order: `"relevance"` or `"popularity"` |
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>q</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td><code>""</code></td>
+      <td>Search query string</td>
+    </tr>
+    <tr>
+      <td><code>per_page</code></td>
+      <td>integer</td>
+      <td>No</td>
+      <td>10</td>
+      <td>Number of results per page</td>
+    </tr>
+    <tr>
+      <td><code>results</code></td>
+      <td>integer</td>
+      <td>No</td>
+      <td>0</td>
+      <td>Results hint for pagination</td>
+    </tr>
+    <tr>
+      <td><code>from_hint</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>-</td>
+      <td>Encoded hint for returning to search context</td>
+    </tr>
+    <tr>
+      <td><code>org_id</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>-</td>
+      <td>Filter by organization ID</td>
+    </tr>
+    <tr>
+      <td><code>org_type</code></td>
+      <td>array</td>
+      <td>No</td>
+      <td>-</td>
+      <td>Filter by organization type(s)</td>
+    </tr>
+    <tr>
+      <td><code>keyword</code></td>
+      <td>array</td>
+      <td>No</td>
+      <td>-</td>
+      <td>Filter by keyword(s) - exact match</td>
+    </tr>
+    <tr>
+      <td><code>after</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>-</td>
+      <td>Pagination cursor for next page</td>
+    </tr>
+    <tr>
+      <td><code>spatial_filter</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>-</td>
+      <td>Filter by spatial data: <code>"geospatial"</code> or <code>"non-geospatial"</code></td>
+    </tr>
+    <tr>
+      <td><code>sort</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td><code>"relevance"</code></td>
+      <td>Sort order: <code>"relevance"</code> or <code>"popularity"</code></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Example URLs
 
@@ -182,9 +253,24 @@ Retrieve a harvest record by ID.
 
 ### Path Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `record_id` | string (UUID4) | Yes | The harvest record ID |
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>record_id</code></td>
+      <td>string (UUID4)</td>
+      <td>Yes</td>
+      <td>The harvest record ID</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Example URL
 
@@ -283,9 +369,24 @@ Retrieve the raw source payload from a harvest record.
 
 ### Path Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `record_id` | string (UUID4) | Yes | The harvest record ID |
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>record_id</code></td>
+      <td>string (UUID4)</td>
+      <td>Yes</td>
+      <td>The harvest record ID</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Example URL
 
@@ -374,9 +475,24 @@ Retrieve the transformed DCAT payload from a harvest record.
 
 ### Path Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `record_id` | string (UUID4) | Yes | The harvest record ID |
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>record_id</code></td>
+      <td>string (UUID4)</td>
+      <td>Yes</td>
+      <td>The harvest record ID</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Example URL
 
@@ -421,10 +537,36 @@ Retrieve unique keywords from all datasets with their document counts.
 
 ### Query Parameters
 
-| Parameter | Type | Required | Default | Valid Range | Description |
-|-----------|------|----------|---------|-------------|-------------|
-| `size` | integer | No | 100 | 1-1000 | Maximum number of keywords to return |
-| `min_count` | integer | No | 1 | ≥1 | Minimum document count for keywords |
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Default</th>
+      <th>Valid Range</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>size</code></td>
+      <td>integer</td>
+      <td>No</td>
+      <td>100</td>
+      <td>1-1000</td>
+      <td>Maximum number of keywords to return</td>
+    </tr>
+    <tr>
+      <td><code>min_count</code></td>
+      <td>integer</td>
+      <td>No</td>
+      <td>1</td>
+      <td>≥1</td>
+      <td>Minimum document count for keywords</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Example URLs
 
@@ -484,11 +626,28 @@ Response:
 
 ## Common Response Codes
 
-| Status Code | Description |
-|-------------|-------------|
-| `200 OK` | Request successful |
-| `404 Not Found` | Resource not found or invalid UUID format |
-| `500 Internal Server Error` | Server error occurred |
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Status Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>200 OK</td>
+      <td>Request successful</td>
+    </tr>
+    <tr>
+      <td>404 Not Found</td>
+      <td>Resource not found or invalid UUID format</td>
+    </tr>
+    <tr>
+      <td>500 Internal Server Error</td>
+      <td>Server error occurred</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Error Response Format
 
