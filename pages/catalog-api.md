@@ -1,11 +1,6 @@
 ---
 title: Catalog API
 layout: page
-category: Guidance
-tags:
-  - API
-  - data catalog
-  - open data
 ---
 
 This documentation covers the JSON API endpoints available in the catalog application.
