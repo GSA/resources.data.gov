@@ -7,7 +7,7 @@ publish: true
 resource_name: Catalog API
 description: JSON API documentation for searching datasets, accessing harvest records, and retrieving keywords from the Data.gov catalog.
 source: Data.gov
-category: Guidance
+category: Data tools
 tags:
   - API
   - data catalog
