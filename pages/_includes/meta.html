@@ -1,6 +1,17 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <!-- 'unsafe-eval' is required by the latest released 1.0.0 version of glossary.js -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none';
+    font-src 'self' https://use.fontawesome.com;
+    script-src 'self' https://dap.digitalgov.gov 'unsafe-eval';
+    connect-src 'self';
+    img-src 'self' data:;
+    style-src-elem 'self' https://use.fontawesome.com;
+    style-src-attr 'self';
+    base-uri 'self';form-action 'self'">
+
+
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
