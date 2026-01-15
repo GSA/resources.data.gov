@@ -1,6 +1,22 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <!-- 'unsafe-eval' is required by the latest released 1.0.0 version of glossary.js -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none';
+    font-src 'self' https://use.fontawesome.com;
+    frame-src youtube.com www.youtube.com;
+    script-src 'self' https://dap.digitalgov.gov 'unsafe-eval'
+      'sha256-YA7FKxq4SsPjpF6nCIXnPuHXV/cbo/DEFJDHdjwDoAU=';
+    connect-src 'self';
+    img-src 'self' data:  https://strategy.data.gov;
+    style-src-elem 'self' https://use.fontawesome.com;
+    style-src-attr 'self' 'unsafe-hashes'
+      'sha256-6l+tpow5lGPV0MHWZlDv8nD7HrL77FGFldqQ7zc5gxY='
+      'sha256-i0JPB0qmRu5AViJTxOIzqXnfGoiWFw+oNAm4uJd7ZQk='
+      'sha256-Y9v1MZrln1N8aPBY5lmpxYKwFkcp/nyBMMEnn7WFjuw=';
+    base-uri 'self';form-action 'self'">
+
+
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
