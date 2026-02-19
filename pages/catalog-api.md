@@ -235,12 +235,20 @@ Response:
       "publisher": "National Center for Education Statistics (NCES)",
       "slug": "national-household-education-surveys-program-2005-adult-education-survey",
       "theme": [],
+      "harvest_record": "http://0.0.0.0:8080/harvest_record/e8b2ef79-8dbe-4d2e-9fe8-dc6766c0b5ab",
+      "harvest_record_raw": "http://0.0.0.0:8080/harvest_record/e8b2ef79-8dbe-4d2e-9fe8-dc6766c0b5ab/raw",
+      "harvest_record_transformed": "http://0.0.0.0:8080/harvest_record/e8b2ef79-8dbe-4d2e-9fe8-dc6766c0b5ab/transformed",
       "title": "National Household Education Surveys Program, 2005 Adult Education Survey"
     }
   ],
   "sort": "relevance"
 }
 ```
+
+### Notes
+
+- Search results include `harvest_record` and `harvest_record_raw` URLs for datasets with harvest records
+- `harvest_record_transformed` is included only when the harvest record has a non-empty transformed payload (`source_transform`)
 
 ---
 
