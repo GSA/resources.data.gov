@@ -21,7 +21,7 @@ This documentation covers the JSON API endpoints available in the catalog applic
 
 Search for datasets in the catalog.
 
-**Endpoint:** `/search`  
+**Endpoint:** `/search`
 **Method:** `GET`
 
 ### Query Parameters
@@ -235,6 +235,9 @@ Response:
       "publisher": "National Center for Education Statistics (NCES)",
       "slug": "national-household-education-surveys-program-2005-adult-education-survey",
       "theme": [],
+      "harvest_record": "https://catalog.data.gov/harvest_record/e8b2ef79-8dbe-4d2e-9fe8-dc6766c0b5ab",
+      "harvest_record_raw": "https://catalog.data.gov/harvest_record/e8b2ef79-8dbe-4d2e-9fe8-dc6766c0b5ab/raw",
+      "harvest_record_transformed": "https://catalog.data.gov/harvest_record/e8b2ef79-8dbe-4d2e-9fe8-dc6766c0b5ab/transformed",
       "title": "National Household Education Surveys Program, 2005 Adult Education Survey"
     }
   ],
@@ -242,13 +245,18 @@ Response:
 }
 ```
 
+### Notes
+
+- Search results include `harvest_record` and `harvest_record_raw` URLs for datasets with harvest records
+- `harvest_record_transformed` is included only when the harvest record has a non-empty transformed payload (`source_transform`)
+
 ---
 
 ## Get Harvest Record
 
 Retrieve a harvest record by ID.
 
-**Endpoint:** `/harvest_record/<record_id>`  
+**Endpoint:** `/harvest_record/<record_id>`
 **Method:** `GET`
 
 ### Path Parameters
@@ -364,7 +372,7 @@ Retrieve a harvest record by ID.
 
 Retrieve the raw source payload from a harvest record.
 
-**Endpoint:** `/harvest_record/<record_id>/raw`  
+**Endpoint:** `/harvest_record/<record_id>/raw`
 **Method:** `GET`
 
 ### Path Parameters
@@ -398,7 +406,7 @@ Retrieve the raw source payload from a harvest record.
 
 **Status Code:** `200 OK` or `404 Not Found`
 
-**Content-Type:** 
+**Content-Type:**
 - `application/json` - if payload is valid JSON
 - `application/xml` - if payload is valid XML
 - `text/plain` - for all other content
@@ -470,7 +478,7 @@ Retrieve the raw source payload from a harvest record.
 
 Retrieve the transformed DCAT payload from a harvest record.
 
-**Endpoint:** `/harvest_record/<record_id>/transformed`  
+**Endpoint:** `/harvest_record/<record_id>/transformed`
 **Method:** `GET`
 
 ### Path Parameters
@@ -594,7 +602,7 @@ Retrieve the transformed DCAT payload from a harvest record.
 
 Retrieve unique keywords from all datasets with their document counts.
 
-**Endpoint:** `/api/keywords`  
+**Endpoint:** `/api/keywords`
 **Method:** `GET`
 
 ### Query Parameters
