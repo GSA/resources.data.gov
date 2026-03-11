@@ -4,15 +4,20 @@ As a U.S. Government agency, the General Services Administration (GSA) takes
 seriously our responsibility to protect the public's information, including
 financial and personal information, from unwarranted disclosure.
 
-Software developed by the U.S. General Services Administration (GSA)
-is subject to the [GSA Vulnerability Disclosure Policy <gsa.gov/vulnerability-disclosure-policy>](gsa.gov/vulnerability-disclosure-policy).
+## Reporting a Vulnerability
 
-Please consult our policy for:
+Services operated by the U.S. General Services Administration (GSA)
+are covered by the **GSA Vulnerability Disclosure Program (VDP)**.
+
+See the [GSA Vulnerability Disclosure Policy](https://www.gsa.gov/vulnerability-disclosure-policy)
+at <https://www.gsa.gov/vulnerability-disclosure-policy> for details including:
+
 * How to submit a report if you believe you have discovered a vulnerability.
+* Bug bounty scope.
 * GSA's coordinated disclosure policy.
 * Information on how you may conduct security research on GSA developed
   software and systems.
-* Important legal and policy guidelines.
+* Important legal and policy guidance.
 
 ## Supported Versions
 
