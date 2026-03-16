@@ -37,10 +37,10 @@ details: >-
   ### 1a: Choose your metadata standard
 
 
-  There are three accepted metadata standards currently handled by Data.gov. Data.gov was originally created with DCAT-US as the standard, and agencies were expected to provide metadata in this format according to the [M-13-13 policy](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2013/m-13-13.pdf) issued in 2013 (note that Project Open Data was the previous name for the DCAT-US standard). The other two have roots in the geospatial data community (ISO and CSDGM, described in more detail below). All three are currently supported by Data.gov.
+  There are two accepted metadata standards currently handled by Data.gov. Data.gov was originally created with DCAT-US as the standard, and agencies were expected to provide metadata in this format according to the [M-13-13 policy](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2013/m-13-13.pdf) issued in 2013 (note that Project Open Data was the previous name for the DCAT-US standard). The other one is ISO, rooted in the geospatial data community.
 
 
-  Please note that we defer to the Federal Geographic Data Committee ([FGDC](https://www.fgdc.gov/metadata)) on geospatial data, as it has the authority to do so under the [Geospatial Data Act](https://www.fgdc.gov/gda) and [Executive Order 12906](http://www.archives.gov/federal-register/executive-orders/pdf/12906.pdf). Please see their website above for the latest information, and note that [current FGDC guidance](https://www.fgdc.gov/metadata/geospatial-metadata-standards) is to transition to ISO standard (and not use CSDGM).
+  Please note that we defer to the Federal Geographic Data Committee ([FGDC](https://www.fgdc.gov/metadata)) on geospatial data, as it has the authority to do so under the [Geospatial Data Act](https://www.fgdc.gov/gda) and [Executive Order 12906](http://www.archives.gov/federal-register/executive-orders/pdf/12906.pdf). Please see their website above for the latest information, and note that we have dropped support for CSDGM since [it is no longer recommended](https://www.fgdc.gov/metadata/geospatial-metadata-standards).
 
   #### DCAT-US (JSON)
 
@@ -50,9 +50,6 @@ details: >-
 
   The FGDC recommends using the ISO 19115 metadata standard for geospatial metadata. See [ISO 19115:2003 Geographic Information – Metadata](http://www.fgdc.gov/metadata/geospatial-metadata-standards).
 
-  #### CSDGM (XML)
-
-  While the CSDGM standard was created by the FGDC (and is sometimes referred to as FGDC metadata), [it is no longer recommended](https://www.fgdc.gov/metadata/geospatial-metadata-standards). A known problem with using CSDGM is that there is no unique identifier in the metadata itself. This makes it difficult to track dataset changes and can cause datasets to be removed and re-created in Data.gov unnecessarily due to URL changes, title changes, etc. The main result of this known deficiency is that the URL of the dataset page on the Data.gov catalog may change (since it wasn’t registered as a change but a new dataset), and anyone linking to the previous URL (such as agency pages, data consumers, and other federal sites like [Geoplatform](https://www.geoplatform.gov/)) can lose track of the URL for the metadata on the [Data.gov catalog](https://catalog.data.gov/dataset).
 
   ### 1b: Create and gather metadata across your organization
 
@@ -67,11 +64,11 @@ details: >-
 
   #### DCAT-US Catalog
 
-  If you are providing a DCAT-US catalog, Data.gov requires the metadata as a JSON file at a public URL in order to harvest. For example, GSA’s metadata can be found at [gsa.gov/data.json](https://gsa.gov/data.json).
+  If you are providing a DCAT-US catalog, Data.gov requires the metadata as a JSON file at a public URL in order to harvest. For example, GSA’s metadata can be found at [open.gsa.gov/data.json](https://open.gsa.gov/data.json).
 
   #### Web Accessible Folder
 
-  Currently Data.gov supports scanning a WAF (web accessible folder) and harvesting all XML files in the WAF. It can scan a nested folder structure and assumes any XML files are metadata files to be harvested. These files can be CSDGM or ISO standard, but we recommend making separate folders/WAF’s for the different standards if you use both. A good example can be seen [here](https://data.noaa.gov/waf/NOAA/nos/onms/iso/xml/).
+  Currently Data.gov supports scanning a WAF (web accessible folder) and harvesting all XML files of ISO standard in the WAF. It can scan a nested folder structure and assumes any XML files are metadata files to be harvested. A good example can be seen [here](https://data.noaa.gov/waf/NOAA/nos/onms/iso/xml/).
   
   
   It should be noted that Data.gov expects the file timestamp to be included on the page with the file link, and to only be updated if and when file content changes; this helps Data.gov target only the files that were changed since the last harvest. The absence or inaccurate update of file timestamps can lead to a number of inefficiencies. Data.gov may need to harvest this source less frequently, among other mitigations.
@@ -82,13 +79,12 @@ details: >-
 
   Contact the Data.gov team via email at [datagov@gsa.gov](mailto:datagov@gsa.gov) to let them know you’d like to get started. Please include a link to your publicly available metadata (see step 1c above). Please also include information about how often the information is updated (and when, if applicable) so that Data.gov can set up the right cadence for refreshing the catalog from your source.
 
-  ### Harvest Setup
+  ### Harvest Setup and Report
 
-  The Data.gov team will create a new harvest source that will automatically collect information about your datasets and update Data.gov on a regular schedule. Depending on the number of datasets and/or the complexity of the organization, Data.gov may elect to test harvest on a dev/test system in order to verify things will work properly before “going live” with the production system. Agencies can provide email addresses to receive a harvest report describing the results of each harvest job, such as number of datasets added, deleted, or updated, and lists of any errors that prevented metadata for a particular dataset from being added to the Data.gov catalog.
+  The Data.gov team will create a new harvest source on [harvest.data.gov](https://harvest.data.gov) that will automatically collect information about your datasets and update Data.gov on a regular schedule. Depending on the number of datasets and/or the complexity of the organization, Data.gov may elect to test harvest on a dev/test system in order to verify things will work properly before “going live” with the production system.
 
-  ## Geoplatform Overlap
 
-  The [Geospatial Data Act](https://www.fgdc.gov/gda) is in many ways a companion of the OPEN Data Act. The Geospatial Data Act was enacted first, and the two laws do not reference each other. At a high level, the Geospatial Data Act codifies existing authorities of the Federal Geographic Data Committee regarding geospatial data, and requires the existence of the geospatial data site at [geoplatform.gov](https://www.geoplatform.gov/). In practice, Geoplatform uses Data.gov as the source of its metadata (filtering on geospatial metadata like [this](https://catalog.data.gov/dataset/?metadata_type=geospatial)). The Data.gov and Geoplatform.gov teams collaborate on overlapping issues such as harvesting, metadata standards, API’s and links between the two systems.
+  The harvest source configuration and harvesting job history, including metrics, are publicly available on the site. Each harvest job includes a detailed report showing the number of datasets added, updated, or deleted, along with any errors that prevented certain datasets from being added to the Data.gov catalog. Agencies can also provide email addresses to receive these harvest reports automatically.
 
   ## Term Definitions
 
@@ -98,7 +94,7 @@ details: >-
 
   - **Harvest Source:** A public URL where Data.gov can gather metadata for a department, bureau, organization, or other entity. See step 1c.
 
-  - **Metadata:** the information describing the data that is available. Following one of the three supported metadata standards: DCAT-US, CSDGM, and ISO. Elements such as title, description, keywords, location, source links, etc.
+  - **Metadata:** the information describing the data that is available. Following one of the two supported metadata standards: DCAT-US and ISO. Elements such as title, description, keywords, location, source links, etc.
 examples: ""
 link: ""
 layout: resource
