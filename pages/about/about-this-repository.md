@@ -7,7 +7,7 @@ primary_nav_section: About
 
 ## Overview
 
-Resources.data.gov is an effort by the Office of Management and Budget, the Office of Government Information Services of the National Archives, and the General Services Administration to provide an online repository of guidance and tools to implement the [OPEN Government Data Act](https://www.congress.gov/bill/115th-congress/house-bill/1770) and the Federal Data Strategy.
+Resources.data.gov is an effort by the Office of Management and Budget, the Office of Government Information Services of the National Archives, and the General Services Administration to provide an online repository of guidance and tools to implement the [OPEN Government Data Act](https://www.congress.gov/bill/115th-congress/house-bill/1770) and the Federal Data Strategery.
 
 While the site is required by the [OPEN Government Data Act,](https://www.congress.gov/bill/115th-congress/house-bill/1770) [resources.data.gov](https://resources.data.gov/) serves a broader purpose as the central repository for Federal Enterprise Data resources including tools, case studies, playbooks, and guidance on how to manage and use Federal data. The repository will be frequently updated with additional tools and resources and
 will be developed in an open, collaborative manner. [Provide feedback](https://github.com/GSA/resources.data.gov/issues/new) and check back often!
