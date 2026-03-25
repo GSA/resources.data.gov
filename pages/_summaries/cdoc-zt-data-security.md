@@ -13,7 +13,9 @@ description: "In May 2025, the CDO Council and the CISO Council released the
   data and security experts to develop a data security guide for Federal
   agencies. More than 30 Federal agencies and departments answered the call to
   author this guide to assist practitioners in operationalizing data security
-  using a ZT framework."
+  using a ZT framework.
+
+  See also the <a href=\"https://resources.data.gov/assets/documents/Zero-Trust-DataSecurityGuide_Oct24-Appendices.pdf\">Zero Trust Data Security Guide: Appendices</a>"
 source: Federal Chief Data Officer's Council
 category: Data management & governance
 tags:
