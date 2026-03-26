@@ -1,16 +1,18 @@
 ---
 redirect_from: /schemas/dcat-us/v1.1/
-resource_name: DCAT-US Schema v1.1 (Project Open Data Metadata Schema)
+resource_name: "DCAT-US Schema (Project Open Data Metadata Schema)"
 slug: dcat-us
-description: How to use Project Open Data Metadata Schema guidelines to document
-  and list agency datasets and application programming interfaces (APIs) for
-  hosting at agency.gov/data and currently in use at data.gov
+description: >-
+  Guidance on the federal metadata standard for documenting and publishing
+  agency datasets and APIs. Currently DCAT-US v1.1 with DCAT-US 3.0
+  implementation guidance forthcoming per OMB Memorandum M-25-05.
 source: data.gov
 category: Data standards
 tags:
   - data schema
   - open data
   - DCAT
+  - DCAT-US
   - Project Open Data Metadata Schema
   - data standards
   - data inventory
@@ -23,15 +25,27 @@ details: >-
 
   |---------------------|-----------------------------------|
 
-  | This version:       | 1.1                               |
+  | Current version:    | 1.1                               |
 
-  | Latest version:     | This version                      |
+  | Latest version:     | 3.0 (forthcoming)                 |
 
   | Publication date:   | November 6th 2014                 |
 
+  | Policy authority:   | OMB Memorandum M-25-05 (January 2025) |
 
-  ---------------------------
+---
 
+### DCAT-US 3.0 Update in Progress
+
+OMB Memorandum [M-25-05](https://bidenwhitehouse.archives.gov/wp-content/uploads/2025/01/M-25-05-Phase-2-Implementation-of-the-Foundations-for-Evidence-Based-Policymaking-Act-of-2018-Open-Government-Data-Access-and-Management-Guidance.pdf) (January 2025) designates DCAT-US 3.0 as the OMB-approved metadata schema for federal agency data inventories. Agencies will be required to update their comprehensive data inventories to conform with DCAT-US 3.0 within one year of the schema's official publication.
+
+GSA is currently working with the CDO Council to finalize the DCAT-US 3.0 standard and update the tools agencies use to publish and manage their metadata. Full implementation guidance, including field-level documentation and migration resources, will be published on this page.
+
+In the meantime, agencies should continue using DCAT-US v1.1 as documented below. Agencies implementing DCAT-US 3.0 early or seeking to follow the standard's development can visit the [DCAT-US GitHub repository](https://github.com/GSA/dcat-us).
+
+Questions can be directed to the Data.gov team at [datagovhelp@gsa.gov](mailto:datagovhelp@gsa.gov).
+
+---
 
   ### Introduction
 
