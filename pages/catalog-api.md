@@ -3,23 +3,113 @@ title: Catalog API
 layout: page
 ---
 
-This documentation covers the JSON API endpoints available in the catalog application.
+The Data.gov Catalog API provides access to metadata about datasets published by federal, state, local, and tribal governments. You can use it to search for datasets, filter by organization or topic, and retrieve detailed information about individual records.
+
+**Base URL:** `https://catalog.data.gov`
+
+No API key is required. All endpoints are publicly accessible and return JSON.
+
+> **Note:** This API replaces the previous CKAN-based API. The prior endpoint remains available in a read-only state for existing integrations, but new development should use this API.
+---
+
+## Getting Started
+
+Here is a complete working example that walks through finding NASA climate datasets step by step.
+
+### Step 1: Find the organization slug for NASA
+
+To filter results by organization, you first need the organization's slug. Fetch the full list of organizations and find the one you want.
+
+**Request:**
+```
+GET https://catalog.data.gov/api/organizations
+```
+
+**Look for NASA in the response:**
+```json
+{
+  "organizations": [
+    {
+      "id": "f4ca4614-8901-409b-8553-2e994ad10023",
+      "name": "National Aeronautics and Space Administration",
+      "slug": "nasa",
+      "organization_type": "Federal Government",
+      "dataset_count": 27040
+    }
+  ]
+}
+```
+
+The slug is `nasa`. You will use this to filter search results.
+
+### Step 2: Search for climate datasets from NASA
+
+Use the `q` parameter for your keyword and `org_slug` to filter by organization.
+
+**Request:**
+```
+GET https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3
+```
+
+**Response:**
+```json
+{
+  "sort": "relevance",
+  "after": "WzY5LjM0NDY5NiwwLCJiYmRhZGNmYi00NDM1LTQzZWUtYjhlMy0yMzZiZjBlZDEwODIiXQ==",
+  "results": [
+    {
+      "title": "Amazon Web Services: Downscaled Climate Projections (NEX-DCP30)",
+      "publisher": "AWS NEX",
+      "accessLevel": "public",
+      "keyword": ["amazon-web-services", "aws", "climate", "earth-science"],
+      "last_harvested_date": "2025-08-04T13:35:12.398986",
+      "landingPage": "https://aws.amazon.com/nasa/nex/"
+    },
+    {
+      "title": "Mirador - Climate Variability and Change",
+      "publisher": "National Aeronautics and Space Administration",
+      "accessLevel": "public",
+      "keyword": ["aerosols", "atmospheric-height", "atmospheric-radiation"],
+      "last_harvested_date": "2025-08-03T15:49:47.819080"
+    }
+  ]
+}
+```
+
+The response includes an `after` value, which means there are more results available.
+
+### Step 3: Get the next page
+
+Pass the `after` value from the previous response to retrieve the next page. Keep all other parameters the same.
+
+**Request:**
+```
+GET https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3&after=WzY5LjM0NDY5NiwwLCJiYmRhZGNmYi00NDM1LTQzZWUtYjhlMy0yMzZiZjBlZDEwODIiXQ==
+```
+
+Continue repeating this step until the response no longer includes an `after` field, which means you have reached the last page.
+
 
 ---
 
 ## Table of Contents
 
 1. [Search Datasets](#search-datasets)
-2. [Get Harvest Record](#get-harvest-record)
-3. [Get Harvest Record Raw](#get-harvest-record-raw)
-4. [Get Harvest Record Transformed](#get-harvest-record-transformed)
-5. [Get Keywords](#get-keywords)
+2. [Get Keywords](#get-keywords)
+3. [Search Locations](#search-locations)
+4. [Get Location Geometry](#get-location-geometry)
+5. [Get Organizations](#get-organizations)
+6. [Get Harvest Record](#get-harvest-record)
+7. [Get Harvest Record Raw](#get-harvest-record-raw)
+8. [Get Harvest Record Transformed](#get-harvest-record-transformed)
+9. [Pagination](#pagination)
+10. [Response Codes and Errors](#response-codes-and-errors)
 
 ---
 
 ## Search Datasets
 
-Search for datasets in the catalog.
+Search the catalog for datasets using keywords, filters, and sorting options.
 
 **Endpoint:** `/search`
 **Method:** `GET`
@@ -42,565 +132,471 @@ Search for datasets in the catalog.
       <td>string</td>
       <td>No</td>
       <td><code>""</code></td>
-      <td>Search query string</td>
+      <td>Full-text search query</td>
+    </tr>
+        <tr>
+      <td><code>sort</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td><code>relevance</code></td>
+      <td>Sort order: <code>relevance</code>, <code>popularity</code>, <code>distance</code>, or <code>last_harvested_date</code></td>
     </tr>
     <tr>
       <td><code>per_page</code></td>
       <td>integer</td>
       <td>No</td>
       <td>10</td>
-      <td>Number of results per page</td>
+      <td>Number of results to return per page (minimum: 1)</td>
     </tr>
     <tr>
-      <td><code>results</code></td>
-      <td>integer</td>
-      <td>No</td>
-      <td>0</td>
-      <td>Results hint for pagination</td>
-    </tr>
-    <tr>
-      <td><code>from_hint</code></td>
+      <td><code>org_slug</code></td>
       <td>string</td>
       <td>No</td>
       <td>-</td>
-      <td>Encoded hint for returning to search context</td>
-    </tr>
-    <tr>
-      <td><code>org_id</code></td>
-      <td>string</td>
-      <td>No</td>
-      <td>-</td>
-      <td>Filter by organization ID</td>
+      <td>Filter by organization slug (e.g., <code>nasa</code>). Use the <a href="#get-organizations">Get Organizations</a> endpoint to find valid slugs.</td>
     </tr>
     <tr>
       <td><code>org_type</code></td>
-      <td>array</td>
+      <td>string</td>
       <td>No</td>
       <td>-</td>
-      <td>Filter by organization type(s)</td>
+      <td>Filter by organization type. Valid values: <code>Federal Government</code>, <code>City Government</code>, <code>State Government</code>, <code>County Government</code>, <code>University</code>, <code>Tribal</code>, <code>Non-Profit</code></td>
     </tr>
     <tr>
       <td><code>keyword</code></td>
       <td>array</td>
       <td>No</td>
       <td>-</td>
-      <td>Filter by keyword(s) - exact match</td>
-    </tr>
-    <tr>
-      <td><code>after</code></td>
-      <td>string</td>
-      <td>No</td>
-      <td>-</td>
-      <td>Pagination cursor for next page</td>
+      <td>Filter by one or more keywords (exact match). Repeat the parameter for multiple values.</td>
     </tr>
     <tr>
       <td><code>spatial_filter</code></td>
       <td>string</td>
       <td>No</td>
       <td>-</td>
-      <td>Filter by spatial data: <code>"geospatial"</code> or <code>"non-geospatial"</code></td>
+      <td>Limit results to datasets with or without spatial data: <code>geospatial</code> or <code>non-geospatial</code></td>
     </tr>
     <tr>
-      <td><code>sort</code></td>
+      <td><code>spatial_within</code></td>
+      <td>boolean</td>
+      <td>No</td>
+      <td>-</td>
+      <td>When <code>true</code>, limits results to datasets whose spatial extent falls within the specified location</td>
+    </tr>
+
+    <!-- ENGINEER REVIEW NEEDED: spatial_within has not been tested. It is unclear how a location is
+         specified in conjunction with this parameter.  Does it require a location ID from
+         /api/locations/search? A bounding box? Something else? Please clarify and update this
+         description and the example requests before publishing. -->
+    
+    <tr>
+      <td><code>after</code></td>
       <td>string</td>
       <td>No</td>
-      <td><code>"relevance"</code></td>
-      <td>Sort order: <code>"relevance"</code> or <code>"popularity"</code></td>
+      <td>-</td>
+      <td>Pagination cursor returned from a previous response. See <a href="#pagination">Pagination</a>.</td>
     </tr>
   </tbody>
 </table>
 
-### Example URLs
+### Example Requests
 
 ```
-/search?q=health
-/search?q=climate&sort=popularity
-/search?q=education&per_page=1
-/search?keyword=health&keyword=medical
-/search?org_id=1&q=data
-/search?spatial_filter=geospatial
-/search?q=environment&after=<cursor>
+GET https://catalog.data.gov/search?q=water+quality
+GET https://catalog.data.gov/search?q=climate&sort=popularity&per_page=25
+GET https://catalog.data.gov/search?org_slug=nasa&per_page=10
+GET https://catalog.data.gov/search?org_type=Federal+Government&spatial_filter=geospatial
+GET https://catalog.data.gov/search?q=education&after=WzEwMC4wNjEzNiwwLCJiMWEzOTY3YzJhMTExZjE2NzgxN2IwMTI0YzUyYjBhYyJd
 ```
 
 ### Response
 
 **Status Code:** `200 OK`
 
-**Response Body:**
-
-Example: `/search?q=education&per_page=1`
-
-Response:
 ```json
 {
   "after": "WzEwMC4wNjEzNiwwLCJiMWEzOTY3YzJhMTExZjE2NzgxN2IwMTI0YzUyYjBhYyJd",
+  "sort": "relevance",
   "results": [
     {
-      "_score": 100.06136,
-      "_sort": [100.06136, 0, "b1a3967c2a111f167817b0124c52b0ac"
+      "title": "National Household Education Surveys Program, 2012 Parent and Family Involvement in Education Survey",
+      "description": "A cross-sectional survey collecting data from households on educational issues...",
+      "identifier": "bdf82c61-0027-4d50-9505-44fc57f2fd12",
+      "slug": "national-household-education-surveys-program-2012-parent-and-family-involvement-in-educati",
+      "publisher": "National Center for Education Statistics (NCES)",
+      "keyword": ["education", "homeschooling", "households", "parental-involvement-in-education"],
+      "has_spatial": true,
+      "popularity": 2,
+      "last_harvested_date": "2025-08-02T21:17:47.154806",
+      "distribution_titles": [
+        "National Household Education Surveys Program (NHES):2012 Restricted-Use Data Files",
+        "2012PFIascii.zip"
       ],
+      "theme": [],
+      "spatial_centroid": null,
+      "spatial_shape": null,
+      "organization": {
+        "id": "217e855b-cd64-4ebc-958b-abbbb0f57ac2",
+        "name": "Department of Education",
+        "slug": "ed",
+        "organization_type": "Federal Government",
+        "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/ed.png",
+        "aliases": ["dept"],
+        "description": null
+      },
       "dcat": {
         "@type": "dcat:Dataset",
-        "accessLevel": "public",
+        "title": "National Household Education Surveys Program, 2012...",
+        "description": "...",
+        "accessLevel": "restricted public",
         "accrualPeriodicity": "irregular",
-        "bureauCode": [
-          "018:50"
-        ],
+        "bureauCode": ["018:50"],
         "contactPoint": {
           "@type": "vcard:Contact",
           "fn": "Sarah Grady",
           "hasEmail": "mailto:sarah.grady@ed.gov"
         },
         "dataQuality": true,
-        "description": "The National Household Education Survey, 2005 Adult Education (AE-NHES:2005), is a study that is part of the National Household Education Survey (NHES) program. AE-NHES:2005 (https://nces.ed.gov/nhes/) is a cross-sectional survey that collects data directly from households on educational issues. This study was conducted using address based sample, self-administered questionnaires of households. Households in 2005 were sampled. The study's response rate was 67.5 percent. Key statistics produced from AE-NHES:2005 are participation in adult and continuing education and lifelong learning.",
-        "distribution": [
-          {
-            "@type": "dcat:Distribution",
-            "describedBy": "https://nces.ed.gov/nhes/pdf/userman/NHES_2005_AE_Codebook.pdf",
-            "describedByType": "application/pdf",
-            "description": "National Household Education Surveys Program, 2005 Adult Education Survey, data as a zipped ASCII data file",
-            "downloadURL": "https://nces.ed.gov/nhes/data/ae05asc.zip",
-            "format": "Zipped DAT",
-            "mediaType": "application/zip",
-            "title": "ae05asc.zip"
-          }
-        ],
-        "identifier": "1661d277-822b-4e38-aa67-fd1a56343402",
-        "issued": "2006-05-31",
-        "keyword": [
-          "0ee4621b-38be-46bb-8360-219726022a58",
-          "adult-education",
-          "continuing-education",
-          "lifelong-learning"
-        ],
-        "language": [
-          "en-US"
-        ],
+        "distribution": ["..."],
+        "identifier": "bdf82c61-0027-4d50-9505-44fc57f2fd12",
+        "issued": "2014-05-21",
+        "keyword": ["education", "homeschooling"],
+        "language": ["en-US"],
         "license": "https://creativecommons.org/publicdomain/zero/1.0/",
         "modified": "2023-06-22T20:25:39.652070",
-        "programCode": [
-          "018:000"
-        ],
+        "programCode": ["018:000"],
         "publisher": {
           "@type": "org:Organization",
-          "name": "National Center for Education Statistics (NCES)",
-          "subOrganizationOf": {
-            "@type": "org:Organization",
-            "name": "Institute of Education Sciences (IES)",
-            "subOrganizationOf": {
-              "@type": "org:Organization",
-              "name": "Office of the Secretary (OS)",
-              "subOrganizationOf": {
-                "@type": "org:Organization",
-                "name": "U.S. Department of Education",
-                "subOrganizationOf": {
-                  "@type": "org:Organization",
-                  "name": "U.S. Government"
-                }
-              }
-            }
-          }
+          "name": "National Center for Education Statistics (NCES)"
         },
-        "references": [
-          "https://nces.ed.gov/nhes/pdf/adulted/2005_ae.pdf",
-          "https://nces.ed.gov/nhes/pdf/userman/NHES_2005_Vol_I.pdf",
-          "https://nces.ed.gov/nhes/pdf/userman/NHES_2005_Vol_IV_AE.pdf"
-        ],
+        "rights": "This dataset has restricted access.",
         "spatial": "United States",
         "systemOfRecords": "https://www2.ed.gov/notices/pai/pai-18-13-01.pdf",
-        "temporal": "2004/2005",
-        "title": "National Household Education Surveys Program, 2005 Adult Education Survey"
+        "temporal": "2012/2012"
       },
-      "description": "The National Household Education Survey, 2005 Adult Education (AE-NHES:2005), is a study that is part of the National Household Education Survey (NHES) program. AE-NHES:2005 (https://nces.ed.gov/nhes/) is a cross-sectional survey that collects data directly from households on educational issues. This study was conducted using address based sample, self-administered questionnaires of households. Households in 2005 were sampled. The study's response rate was 67.5 percent. Key statistics produced from AE-NHES:2005 are participation in adult and continuing education and lifelong learning.",
-      "has_spatial": true,
-      "identifier": "1661d277-822b-4e38-aa67-fd1a56343402",
-      "keyword": [
-        "0ee4621b-38be-46bb-8360-219726022a58",
-        "adult-education",
-        "continuing-education",
-        "lifelong-learning"
-      ],
-      "organization": {
-        "aliases": [
-          "dept"
-        ],
-        "description": null,
-        "id": "217e855b-cd64-4ebc-958b-abbbb0f57ac2",
-        "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/ed.png",
-        "name": "Department of Education",
-        "organization_type": "Federal Government",
-        "slug": "ed"
-      },
-      "popularity": 0,
-      "publisher": "National Center for Education Statistics (NCES)",
-      "slug": "national-household-education-surveys-program-2005-adult-education-survey",
-      "theme": [],
-      "harvest_record": "https://catalog.data.gov/harvest_record/e8b2ef79-8dbe-4d2e-9fe8-dc6766c0b5ab",
-      "harvest_record_raw": "https://catalog.data.gov/harvest_record/e8b2ef79-8dbe-4d2e-9fe8-dc6766c0b5ab/raw",
-      "harvest_record_transformed": "https://catalog.data.gov/harvest_record/e8b2ef79-8dbe-4d2e-9fe8-dc6766c0b5ab/transformed",
-      "title": "National Household Education Surveys Program, 2005 Adult Education Survey"
+      "harvest_record": "https://catalog.data.gov/harvest_record/0be6d0c0-8383-4966-acd1-38b0d7baea3c",
+      "harvest_record_raw": "https://catalog.data.gov/harvest_record/0be6d0c0-8383-4966-acd1-38b0d7baea3c/raw"
     }
-  ],
-  "sort": "relevance"
+  ]
 }
 ```
 
-### Notes
-
-- Search results include `harvest_record` and `harvest_record_raw` URLs for datasets with harvest records
-- `harvest_record_transformed` is included only when the harvest record has a non-empty transformed payload (`source_transform`)
-
----
-
-## Get Harvest Record
-
-Retrieve a harvest record by ID.
-
-**Endpoint:** `/harvest_record/<record_id>`
-**Method:** `GET`
-
-### Path Parameters
+### Response Fields
 
 <table class="usa-table">
   <thead>
     <tr>
-      <th>Parameter</th>
+      <th>Field</th>
       <th>Type</th>
-      <th>Required</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>record_id</code></td>
-      <td>string (UUID4)</td>
-      <td>Yes</td>
-      <td>The harvest record ID</td>
+      <td><code>results</code></td>
+      <td>array</td>
+      <td>List of matching datasets</td>
+    </tr>
+    <tr>
+      <td><code>sort</code></td>
+      <td>string</td>
+      <td>The sort order applied to this response</td>
+    </tr>
+    <tr>
+      <td><code>after</code></td>
+      <td>string</td>
+      <td>Cursor for retrieving the next page of results. Absent if there are no more results.</td>
+    </tr>
+    <tr>
+      <td><code>results[].title</code></td>
+      <td>string</td>
+      <td>Dataset title</td>
+    </tr>
+    <tr>
+      <td><code>results[].description</code></td>
+      <td>string</td>
+      <td>Dataset description</td>
+    </tr>
+    <tr>
+      <td><code>results[].identifier</code></td>
+      <td>string (UUID)</td>
+      <td>Unique dataset identifier</td>
+    </tr>
+    <tr>
+      <td><code>results[].slug</code></td>
+      <td>string</td>
+      <td>URL-friendly identifier for the dataset</td>
+    </tr>
+    <tr>
+      <td><code>results[].publisher</code></td>
+      <td>string</td>
+      <td>Name of the publishing organization</td>
+    </tr>
+    <tr>
+      <td><code>results[].keyword</code></td>
+      <td>array</td>
+      <td>List of keywords associated with the dataset</td>
+    </tr>
+    <tr>
+      <td><code>results[].theme</code></td>
+      <td>array</td>
+      <td>List of themes associated with the dataset</td>
+    </tr>
+    <tr>
+      <td><code>results[].has_spatial</code></td>
+      <td>boolean</td>
+      <td>Whether the dataset has a spatial component</td>
+    </tr>
+    <tr>
+      <td><code>results[].spatial_centroid</code></td>
+      <td>object or null</td>
+      <td>Geographic center point of the dataset's spatial coverage, if available</td>
+    </tr>
+    <tr>
+      <td><code>results[].spatial_shape</code></td>
+      <td>object or null</td>
+      <td>GeoJSON shape representing the dataset's spatial coverage, if available</td>
+    </tr>
+    <tr>
+      <td><code>results[].popularity</code></td>
+      <td>integer</td>
+      <td>Relative popularity score for the dataset</td>
+    </tr>
+    <tr>
+      <td><code>results[].last_harvested_date</code></td>
+      <td>string (ISO 8601)</td>
+      <td>Date and time the dataset was last ingested into the catalog</td>
+    </tr>
+    <tr>
+      <td><code>results[].distribution_titles</code></td>
+      <td>array</td>
+      <td>Titles of the dataset's available distributions (downloads, APIs, etc.)</td>
+    </tr>
+    <tr>
+      <td><code>results[].organization</code></td>
+      <td>object</td>
+      <td>Information about the publishing organization. See <a href="#get-organizations">Get Organizations</a> for field definitions.</td>
+    </tr>
+    <tr>
+      <td><code>results[].dcat</code></td>
+      <td>object</td>
+      <td>Full DCAT-US metadata for the dataset. See <a href="#dcat-object-fields">DCAT Object Fields</a> below.</td>
+    </tr>
+    <tr>
+      <td><code>results[].harvest_record</code></td>
+      <td>string (URL)</td>
+      <td>Link to the harvest record for this dataset, if available</td>
+    </tr>
+    <tr>
+      <td><code>results[].harvest_record_raw</code></td>
+      <td>string (URL)</td>
+      <td>Link to the raw source payload for this dataset's harvest record, if available</td>
     </tr>
   </tbody>
 </table>
 
-### Example URL
+### DCAT Object Fields
 
-```
-/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8
-```
-
-### Response
-
-**Status Code:** `200 OK` or `404 Not Found`
-
-**Success Response Body:**
-```json
-{
-  "action": "create",
-  "ckan_id": null,
-  "ckan_name": null,
-  "date_created": "2025-11-26T07:46:13.673655",
-  "date_finished": null,
-  "harvest_job_id": "de2010f9-d9ec-4211-9690-5b3bbc9fe1f3",
-  "harvest_source_id": "14348973-07a5-4661-8341-02230f2f6cbb",
-  "id": "d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8",
-  "identifier": "http://datainventory.doi.gov/id/dataset/bsee-0000000070",
-  "parent_identifier": null,
-  "source_hash": "47ca2dd5471e659e4cd1c83d79adb0b0c2c8c013a1e03d629d56b0541e307267",
-  "source_raw": {
-    "accessLevel": "public",
-    "bureauCode": [
-      "010:22"
-    ],
-    "contactPoint": {
-      "@type": "vcard:Contact",
-      "fn": "Bureau of Safety and Environmental Enforcement (BSEE)",
-      "hasEmail": "mailto:bseewebmaster@bsee.gov"
-    },
-    "description": "This data set contains Gulf of America Region Pipeline Locations (2000-Present)",
-    "distribution": [
-      {
-        "@type": "dcat:Distribution",
-        "accessURL": "https://www.bsee.gov/",
-        "title": "Web Resource"
-      },
-      {
-        "@type": "dcat:Distribution",
-        "accessURL": "https://www.data.bsee.gov/Pipeline/Files/Pipeline-Locations-Present.pdf",
-        "description": "Pipeline-Locations-Present.pdf",
-        "title": "Gulf of America Region Pipeline Locations (2000-Present)"
-      }
-    ],
-    "identifier": "http://datainventory.doi.gov/id/dataset/bsee-0000000070",
-    "keyword": [
-      "BSEE",
-      "Segment",
-      "asbuilt",
-      "gulf of america region",
-      "location",
-      "pipeline",
-      "segment number"
-    ],
-    "publisher": {
-      "@type": "org:Organization",
-      "name": "Bureau of Safety and Environmental Enforcement"
-    },
-    "spatial": "-180.0,-90.0,180.0,90.0",
-    "theme": [
-      "geospatial"
-    ],
-    "title": "BSEE Data Center - Gulf of America Region Pipeline Locations (2000-Present)"
-  },
-  "source_transform": null,
-  "status": "error"
-}
-```
-
-**Error Response Body:**
-```json
-{
-  "error": "Not Found"
-}
-```
-
-### Notes
-
-- The `record_id` must be a valid UUID4 format
-- DateTime fields are returned in ISO 8601 format
-- The `source_raw` field is parsed as JSON if possible
-
----
-
-## Get Harvest Record Raw
-
-Retrieve the raw source payload from a harvest record.
-
-**Endpoint:** `/harvest_record/<record_id>/raw`
-**Method:** `GET`
-
-### Path Parameters
+The `dcat` object contains the full DCAT-US metadata as submitted by the publishing organization. Not all fields are present for every dataset. Fields marked as **always present** appear in virtually every result; others are optional and vary by publisher.
 
 <table class="usa-table">
   <thead>
     <tr>
-      <th>Parameter</th>
+      <th>Field</th>
       <th>Type</th>
-      <th>Required</th>
+      <th>Always Present</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>record_id</code></td>
-      <td>string (UUID4)</td>
+      <td><code>@type</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>Always <code>dcat:Dataset</code> when present</td>
+    </tr>
+    <tr>
+      <td><code>title</code></td>
+      <td>string</td>
       <td>Yes</td>
-      <td>The harvest record ID</td>
+      <td>Dataset title</td>
+    </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>string</td>
+      <td>Yes</td>
+      <td>Full dataset description</td>
+    </tr>
+    <tr>
+      <td><code>identifier</code></td>
+      <td>string</td>
+      <td>Yes</td>
+      <td>Unique dataset identifier as assigned by the source system</td>
+    </tr>
+    <tr>
+      <td><code>accessLevel</code></td>
+      <td>string</td>
+      <td>Yes</td>
+      <td>One of: <code>public</code>, <code>restricted public</code>, or <code>non-public</code></td>
+    </tr>
+    <tr>
+      <td><code>modified</code></td>
+      <td>string</td>
+      <td>Yes</td>
+      <td>Date the dataset was last modified (ISO 8601)</td>
+    </tr>
+    <tr>
+      <td><code>publisher</code></td>
+      <td>object</td>
+      <td>Yes</td>
+      <td>Publishing organization. Contains <code>@type</code> (<code>org:Organization</code>) and <code>name</code></td>
+    </tr>
+    <tr>
+      <td><code>contactPoint</code></td>
+      <td>object</td>
+      <td>Yes</td>
+      <td>Contact information. Contains <code>@type</code> (<code>vcard:Contact</code>), <code>fn</code> (name), and <code>hasEmail</code></td>
+    </tr>
+    <tr>
+      <td><code>keyword</code></td>
+      <td>array</td>
+      <td>Yes</td>
+      <td>List of keywords describing the dataset</td>
+    </tr>
+    <tr>
+      <td><code>distribution</code></td>
+      <td>array</td>
+      <td>No</td>
+      <td>Available downloads and access methods, each following the <code>dcat:Distribution</code> structure</td>
+    </tr>
+    <tr>
+      <td><code>landingPage</code></td>
+      <td>string (URL)</td>
+      <td>No</td>
+      <td>URL of the dataset's home page</td>
+    </tr>
+    <tr>
+      <td><code>license</code></td>
+      <td>string (URL)</td>
+      <td>No</td>
+      <td>URL of the license under which the dataset is published</td>
+    </tr>
+    <tr>
+      <td><code>bureauCode</code></td>
+      <td>array</td>
+      <td>No</td>
+      <td>Federal bureau code(s) in <code>DDD:XX</code> format. Present on federal datasets.</td>
+    </tr>
+    <tr>
+      <td><code>programCode</code></td>
+      <td>array</td>
+      <td>No</td>
+      <td>Federal program code(s). Present on federal datasets.</td>
+    </tr>
+    <tr>
+      <td><code>issued</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>Date the dataset was first published (ISO 8601)</td>
+    </tr>
+    <tr>
+      <td><code>theme</code></td>
+      <td>array</td>
+      <td>No</td>
+      <td>Thematic categories for the dataset (e.g., <code>Transportation</code>, <code>Health</code>)</td>
+    </tr>
+    <tr>
+      <td><code>spatial</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>Geographic coverage of the dataset (e.g., <code>United States</code> or a bounding box)</td>
+    </tr>
+    <tr>
+      <td><code>temporal</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>Time period covered by the dataset (e.g., <code>2018-01-01/2018-09-28</code>)</td>
+    </tr>
+    <tr>
+      <td><code>accrualPeriodicity</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>How frequently the dataset is updated, using ISO 8601 duration format (e.g., <code>R/P1Y</code> for annual, <code>R/P1D</code> for daily)</td>
+    </tr>
+    <tr>
+      <td><code>language</code></td>
+      <td>array</td>
+      <td>No</td>
+      <td>Language(s) the dataset is available in (e.g., <code>en-US</code>)</td>
+    </tr>
+    <tr>
+      <td><code>rights</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>Description of any access restrictions or rights statement</td>
+    </tr>
+    <tr>
+      <td><code>describedBy</code></td>
+      <td>string (URL)</td>
+      <td>No</td>
+      <td>URL of a data dictionary or schema describing the dataset</td>
+    </tr>
+    <tr>
+      <td><code>describedByType</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>MIME type of the resource at <code>describedBy</code> (e.g., <code>application/pdf</code>)</td>
+    </tr>
+    <tr>
+      <td><code>references</code></td>
+      <td>array</td>
+      <td>No</td>
+      <td>URLs of related documents or resources</td>
+    </tr>
+    <tr>
+      <td><code>isPartOf</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>Identifier of a parent dataset that this dataset belongs to</td>
+    </tr>
+    <tr>
+      <td><code>dataQuality</code></td>
+      <td>boolean</td>
+      <td>No</td>
+      <td>Whether the dataset meets the publisher's data quality guidelines</td>
+    </tr>
+    <tr>
+      <td><code>conformsTo</code></td>
+      <td>string (URL)</td>
+      <td>No</td>
+      <td>URL of a standard or specification the dataset conforms to</td>
+    </tr>
+    <tr>
+      <td><code>primaryITInvestmentUII</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>Federal IT investment identifier in <code>DDD-XXXXXXXXX</code> format</td>
+    </tr>
+    <tr>
+      <td><code>systemOfRecords</code></td>
+      <td>string (URL)</td>
+      <td>No</td>
+      <td>URL of the Privacy Act System of Records Notice, if applicable</td>
+    </tr>
+    <tr>
+      <td><code>phone</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>Contact phone number for the dataset</td>
     </tr>
   </tbody>
 </table>
-
-### Example URL
-
-```
-/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/raw
-```
-
-### Response
-
-**Status Code:** `200 OK` or `404 Not Found`
-
-**Content-Type:**
-- `application/json` - if payload is valid JSON
-- `application/xml` - if payload is valid XML
-- `text/plain` - for all other content
-
-**Success Response Body:**
-```json
-{
-  "accessLevel": "public",
-  "bureauCode": [
-    "010:22"
-  ],
-  "contactPoint": {
-    "@type": "vcard:Contact",
-    "fn": "Bureau of Safety and Environmental Enforcement (BSEE)",
-    "hasEmail": "mailto:bseewebmaster@bsee.gov"
-  },
-  "description": "This data set contains Gulf of America Region Pipeline Locations (2000-Present)",
-  "distribution": [
-    {
-      "@type": "dcat:Distribution",
-      "accessURL": "https://www.bsee.gov/",
-      "title": "Web Resource"
-    },
-    {
-      "@type": "dcat:Distribution",
-      "accessURL": "https://www.data.bsee.gov/Pipeline/Files/Pipeline-Locations-Present.pdf",
-      "description": "Pipeline-Locations-Present.pdf",
-      "title": "Gulf of America Region Pipeline Locations (2000-Present)"
-    }
-  ],
-  "identifier": "http://datainventory.doi.gov/id/dataset/bsee-0000000070",
-  "keyword": [
-    "BSEE",
-    "Segment",
-    "asbuilt",
-    "gulf of america region",
-    "location",
-    "pipeline",
-    "segment number"
-  ],
-  "publisher": {
-    "@type": "org:Organization",
-    "name": "Bureau of Safety and Environmental Enforcement"
-  },
-  "spatial": "-180.0,-90.0,180.0,90.0",
-  "theme": [
-    "geospatial"
-  ],
-  "title": "BSEE Data Center - Gulf of America Region Pipeline Locations (2000-Present)"
-}
-```
-
-**Error Response Body:**
-```json
-{
-  "error": "Not Found"
-}
-```
-
-### Notes
-
-- Returns the raw harvest source payload as stored
-- Content-Type is automatically detected based on payload format
-- Returns 404 if record doesn't exist or has no source_raw data
-
----
-
-## Get Harvest Record Transformed
-
-Retrieve the transformed DCAT payload from a harvest record.
-
-**Endpoint:** `/harvest_record/<record_id>/transformed`
-**Method:** `GET`
-
-### Path Parameters
-
-<table class="usa-table">
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Type</th>
-      <th>Required</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>record_id</code></td>
-      <td>string (UUID4)</td>
-      <td>Yes</td>
-      <td>The harvest record ID</td>
-    </tr>
-  </tbody>
-</table>
-
-### Example URL
-
-```
-/harvest_record/000c4ce7-90c6-405c-8ed7-3ae06c45005c/transformed
-```
-
-### Response
-
-**Status Code:** `200 OK` or `404 Not Found`
-
-**Content-Type:** `application/json`
-
-**Success Response Body:**
-```json
-{
-  "@type": "dcat:Dataset",
-  "title": "SeaBASS Bio-optical and pigment data collected from 1979-08-22 to 2011-12-14 (NCEI Accession 0086308)",
-  "issued": "2016-05-20T00:00:00.000+00:00",
-  "rights": "otherRestrictions",
-  "keyword": [
-    "0086308",
-    "ABSORPTION - SCATTERING - ATTENUATION COEFFICIENTS",
-    "CHLOROPHYLL",
-    "CHLOROPHYLL A",
-    "CHLOROPHYLL B",
-    "CHLOROPHYLL C",
-    "OCEAN \u003E INDIAN OCEAN \u003E BAY OF BENGAL",
-    "OCEAN \u003E PACIFIC OCEAN \u003E CENTRAL PACIFIC OCEAN \u003E HAWAIIAN ISLANDS",
-    "OCEAN \u003E PACIFIC OCEAN \u003E NORTH PACIFIC OCEAN",
-    "OCEAN \u003E PACIFIC OCEAN \u003E NORTH PACIFIC OCEAN \u003E BERING SEA",
-    "OCEAN \u003E PACIFIC OCEAN \u003E SOUTH PACIFIC OCEAN",
-    "OCEAN \u003E SOUTHERN OCEAN"
-  ],
-  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "spatial": "95.0278,-70.0006,134.096,79.69",
-  "language": [],
-  "modified": "2016-05-20T00:00:00.000+00:00",
-  "temporal": "1979-08-22T00:00:00+00:00/2011-12-14T00:00:00+00:00",
-  "publisher": {
-    "name": "NOAA National Centers for Environmental Information",
-    "@type": "org:Organization"
-  },
-  "identifier": "gov.noaa.nodc:0086308",
-  "references": [
-    "http://seabass.gsfc.nasa.gov/",
-    "https://doi.org/10.1175/1520-0426(2003)20\u003C563:anmftm\u003E2.0.co;2",
-    "https://doi.org/10.1016/j.rse.2007.06.015",
-    "http://seabass.gsfc.nasa.gov/archive/NURC/sortie1/documents/SORTIE1_2007_Data_Report_WET-DN-00509.pdf",
-    "http://seabass.gsfc.nasa.gov/archive/NURC/sortie2/documents/SORTIE2_2008_Data_Report_WET-DN-00519.pdf",
-    "https://doi.org/10.1080/01431160310001618086"
-  ],
-  "accessLevel": "non-public",
-  "description": "This dataset contains SeaWiFS Bio-optical Archive and Storage System (SeaBASS) bio-optical, pigment, and other data collected from 1979-08-22 to 2011-12-14. Archived data include measurements of apparent and inherent optical properties, phytoplankton pigment concentrations, and other related oceanographic and atmospheric data, such as water temperature, salinity, stimulated fluorescence, and aerosol optical thickness. Data were collected using a number of different instrument packages, such as profilers, buoys, and hand-held instruments, and manufacturers on a variety of platforms, including ships and moorings.",
-  "landingPage": "https://www.ncei.noaa.gov/contact",
-  "contactPoint": {
-    "fn": "NOAA National Centers for Environmental Information",
-    "@type": "vcard:Contact",
-    "hasEmail": "mailto:ncei.info@noaa.gov"
-  },
-  "distribution": [
-    {
-      "@type": "dcat:Distribution",
-      "title": "GCMD Keyword Forum Page",
-      "mediaType": "placeholder/value",
-      "description": "Global Change Master Directory (GCMD). 2025. GCMD Keywords, Version 21. Greenbelt, MD: Earth Science Data and Information System, Earth Science Projects Division, Goddard Space Flight Center (GSFC), National Aeronautics and Space Administration (NASA). URL (GCMD Keyword Forum Page): https://forum.earthdata.nasa.gov/app.php/tag/GCMD+Keywords",
-      "downloadURL": "https://forum.earthdata.nasa.gov/app.php/tag/GCMD%2BKeywords",
-      "describedByType": "application/octet-steam"
-    },
-    {
-      "@type": "dcat:Distribution",
-      "title": "NCEI Contact Information",
-      "mediaType": "placeholder/value",
-      "description": "Information for contacts at NCEI.",
-      "downloadURL": "https://www.ncei.noaa.gov/contact",
-      "describedByType": "application/octet-steam"
-    }
-  ],
-  "describedByType": "application/octet-steam"
-}
-```
-
-**Error Response Body:**
-```json
-{
-  "error": "Not Found"
-}
-```
-
-### Notes
-
-- Returns the transformed source_transform payload
-- Always returns JSON format
-- Returns 404 if record doesn't exist or has no transformed data
 
 ---
 
 ## Get Keywords
 
-Retrieve unique keywords from all datasets with their document counts.
+Retrieve a list of the most commonly used keywords across all datasets, along with how many datasets use each one.
 
 **Endpoint:** `/api/keywords`
 **Method:** `GET`
@@ -633,124 +629,473 @@ Retrieve unique keywords from all datasets with their document counts.
       <td>No</td>
       <td>1</td>
       <td>≥1</td>
-      <td>Minimum document count for keywords</td>
+      <td>Only return keywords used by at least this many datasets</td>
     </tr>
   </tbody>
 </table>
 
-### Example URLs
+### Example Requests
 
 ```
-/api/keywords
-/api/keywords?size=50
-/api/keywords?size=200&min_count=5
-/api/keywords?min_count=10
+GET https://catalog.data.gov/api/keywords
+GET https://catalog.data.gov/api/keywords?size=50&min_count=100
 ```
 
 ### Response
 
-**Status Code:** `200 OK` or `500 Internal Server Error`
+**Status Code:** `200 OK`
 
-**Success Response Body:**
-Example:
-`/api/keywords?size=3&min_count=1`
-Response:
 ```json
 {
   "keywords": [
-    {
-      "count": 90507,
-      "keyword": "County or Equivalent Entity"
-    },
-    {
-      "count": 71154,
-      "keyword": "County or equivalent entity"
-    },
-    {
-      "count": 48578,
-      "keyword": "State FIPS Code"
-    }
+    { "keyword": "County or Equivalent Entity", "count": 90507 },
+    { "keyword": "State FIPS Code", "count": 48578 }
   ],
+  "size": 2,
   "min_count": 1,
-  "size": 3,
-  "total": 3
+  "total": 2
 }
 ```
 
-**Error Response Body:**
-```json
-{
-  "error": "Failed to fetch keywords",
-  "message": "<error details>"
-}
-```
-
-### Notes
-
-- Keywords are returned sorted by document count (descending)
-- The `size` parameter is clamped between 1 and 1000
-- The `min_count` parameter must be at least 1
-- Used for keyword autocomplete and filtering functionality
+Keywords are sorted by count, highest first.
 
 ---
 
-## Common Response Codes
+## Search Locations
+
+Search for location names to use with spatial filtering. This endpoint is designed for autocomplete — pass a partial place name and receive matching location IDs.
+
+**Endpoint:** `/api/locations/search`
+**Method:** `GET`
+
+### Query Parameters
 
 <table class="usa-table">
   <thead>
     <tr>
-      <th>Status Code</th>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>200 OK</td>
-      <td>Request successful</td>
+      <td><code>q</code></td>
+      <td>string</td>
+      <td>No</td>
+      <td>-</td>
+      <td>Partial or full location name to search for</td>
     </tr>
     <tr>
-      <td>404 Not Found</td>
-      <td>Resource not found or invalid UUID format</td>
-    </tr>
-    <tr>
-      <td>500 Internal Server Error</td>
-      <td>Server error occurred</td>
+      <td><code>size</code></td>
+      <td>integer</td>
+      <td>No</td>
+      <td>-</td>
+      <td>Maximum number of results to return</td>
     </tr>
   </tbody>
 </table>
 
-## Error Response Format
+### Example Request
 
-All error responses follow this JSON structure:
+```
+GET https://catalog.data.gov/api/locations/search?q=Colorado&size=5
+```
+
+### Response
+
+**Status Code:** `200 OK`
 
 ```json
 {
-  "error": "Error message description"
+  "locations": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "display_name": "Colorado, United States"
+    }
+  ],
+  "size": 1,
+  "total": 1
 }
 ```
 
-For the `/api/keywords` endpoint specifically:
+Use the `id` value from this response with the [Get Location Geometry](#get-location-geometry) endpoint.
+
+---
+
+## Get Location Geometry
+
+Retrieve the geographic boundary (GeoJSON geometry) for a specific location by its ID.
+
+**Endpoint:** `/api/location/{location_id}`
+**Method:** `GET`
+
+### Path Parameters
+
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>location_id</code></td>
+      <td>string (UUID)</td>
+      <td>Yes</td>
+      <td>The location ID returned from <code>/api/locations/search</code></td>
+    </tr>
+  </tbody>
+</table>
+
+### Example Request
+
+```
+GET https://catalog.data.gov/api/location/a1b2c3d4-e5f6-7890-abcd-ef1234567890
+```
+
+### Response
+
+**Status Code:** `200 OK` or `404 Not Found`
 
 ```json
 {
-  "error": "Failed to fetch keywords",
-  "message": "Detailed error message"
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[[...]]]
+  }
 }
 ```
 
 ---
 
-## Notes on Pagination
+## Get Organizations
 
-The `/search` endpoint uses cursor-based pagination with the `after` parameter:
+Retrieve the complete list of organizations that publish datasets in the catalog.
 
-1. First request returns results with an `after` value (if more results exist)
-2. Subsequent requests include the `after` value to get the next page
-3. The `after` value is an encoded cursor that maintains sort order
-4. When no `after` value is returned, there are no more results
+**Endpoint:** `/api/organizations`
+**Method:** `GET`
+
+No query parameters. Returns all organizations.
+
+### Example Request
+
+```
+GET https://catalog.data.gov/api/organizations
+```
+
+### Response
+
+**Status Code:** `200 OK`
+
+```json
+{
+  "organizations": [
+    {
+      "id": "f4ca4614-8901-409b-8553-2e994ad10023",
+      "name": "National Aeronautics and Space Administration",
+      "slug": "nasa",
+      "organization_type": "Federal Government",
+      "aliases": [""],
+      "dataset_count": 27040
+    }
+  ],
+  "total": 312
+}
+```
+
+### Response Fields
+
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>id</code></td>
+      <td>string (UUID)</td>
+      <td>Unique organization identifier</td>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td>string</td>
+      <td>Organization display name</td>
+    </tr>
+    <tr>
+      <td><code>slug</code></td>
+      <td>string</td>
+      <td>URL-friendly identifier, usable as <code>org_slug</code> in search</td>
+    </tr>
+    <tr>
+      <td><code>organization_type</code></td>
+      <td>string</td>
+      <td>Type of organization: <code>Federal Government</code>, <code>State Government</code>, <code>City Government</code>, <code>County Government</code>, <code>University</code>, <code>Tribal</code>, or <code>Non-Profit</code></td>
+    </tr>
+    <tr>
+      <td><code>aliases</code></td>
+      <td>array</td>
+      <td>Alternative names or abbreviations for the organization</td>
+    </tr>
+    <tr>
+      <td><code>dataset_count</code></td>
+      <td>integer</td>
+      <td>Number of datasets published by this organization</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-## Authentication
+<!-- ENGINEER REVIEW NEEDED: The three harvest record endpoints below (/harvest_record/{id},
+     /harvest_record/{id}/raw, /harvest_record/{id}/transformed) need a decision before
+     this page goes live. Are these intentionally public-facing endpoints, or are they
+     internal plumbing used by the catalog UI? If internal, they should be removed from
+     this documentation entirely. Please confirm with the product team. -->
 
-Currently, these API endpoints do not require authentication.
+## Get Harvest Record
+
+Retrieve metadata about a specific harvest record by its ID. Harvest records track how individual datasets were ingested into the catalog.
+
+**Endpoint:** `/harvest_record/{record_id}`
+**Method:** `GET`
+
+### Path Parameters
+
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>record_id</code></td>
+      <td>string (UUID)</td>
+      <td>Yes</td>
+      <td>The harvest record ID</td>
+    </tr>
+  </tbody>
+</table>
+
+### Example Request
+
+```
+GET https://catalog.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8
+```
+
+### Response
+
+**Status Code:** `200 OK` or `404 Not Found`
+
+```json
+{
+  "id": "d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8",
+  "identifier": "http://datainventory.doi.gov/id/dataset/bsee-0000000070",
+  "status": "error",
+  "action": "create",
+  "date_created": "2025-11-26T07:46:13.673655",
+  "date_finished": null,
+  "harvest_job_id": "de2010f9-d9ec-4211-9690-5b3bbc9fe1f3",
+  "harvest_source_id": "14348973-07a5-4661-8341-02230f2f6cbb",
+  "source_hash": "47ca2dd5471e659e4cd1c83d79adb0b0c2c8c013a1e03d629d56b0541e307267",
+  "source_raw": { },
+  "source_transform": null,
+  "ckan_id": null,
+  "ckan_name": null,
+  "parent_identifier": null
+}
+```
+
+### Notes
+
+- `record_id` must be a valid UUID format
+- Date fields are returned in ISO 8601 format
+- `source_raw` is parsed as JSON when possible
+
+**Error Response:**
+
+```json
+{ "error": "Not Found" }
+```
+
+---
+
+## Get Harvest Record Raw
+
+Retrieve the original, unmodified source payload from a harvest record exactly as it was received.
+
+**Endpoint:** `/harvest_record/{record_id}/raw`
+**Method:** `GET`
+
+### Path Parameters
+
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>record_id</code></td>
+      <td>string (UUID)</td>
+      <td>Yes</td>
+      <td>The harvest record ID</td>
+    </tr>
+  </tbody>
+</table>
+
+### Example Request
+
+```
+GET https://catalog.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/raw
+```
+
+### Response
+
+**Status Code:** `200 OK` or `404 Not Found`
+
+The `Content-Type` of the response is detected automatically based on the payload:
+
+- `application/json` for JSON payloads
+- `application/xml` for XML payloads
+- `text/plain` for all other content
+
+Returns `404` if the record does not exist or has no raw source data.
+
+---
+
+## Get Harvest Record Transformed
+
+Retrieve the transformed DCAT-US payload for a harvest record. This is the version of the metadata after any source-specific transformations have been applied.
+
+**Endpoint:** `/harvest_record/{record_id}/transformed`
+**Method:** `GET`
+
+### Path Parameters
+
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>record_id</code></td>
+      <td>string (UUID)</td>
+      <td>Yes</td>
+      <td>The harvest record ID</td>
+    </tr>
+  </tbody>
+</table>
+
+### Example Request
+
+```
+GET https://catalog.data.gov/harvest_record/000c4ce7-90c6-405c-8ed7-3ae06c45005c/transformed
+```
+
+### Response
+
+**Status Code:** `200 OK` or `404 Not Found`
+**Content-Type:** `application/json`
+
+Returns `404` if the record does not exist or has no transformed data.
+
+---
+
+## Pagination
+
+The `/search` endpoint uses cursor-based pagination. This approach is more reliable than page-number pagination for large result sets because it maintains consistent ordering even as the catalog changes.
+
+**How it works:**
+
+1. Make a request to `/search`. If more results exist beyond what was returned, the response will include an `after` field.
+2. To get the next page, add `after=<value>` to your next request using the value from the previous response.
+3. Continue until the response no longer includes an `after` field, which means you have reached the last page.
+
+**Example:**
+
+```
+# First request
+GET https://catalog.data.gov/search?q=water&per_page=10
+
+# Response includes: "after": "WzEwMC4wNjEzNiwwLCJiMWEz..."
+
+# Second request
+GET https://catalog.data.gov/search?q=water&per_page=10&after=WzEwMC4wNjEzNiwwLCJiMWEz...
+```
+
+Keep all other parameters the same across pages. Changing `q`, `sort`, or filter parameters while paginating will return inconsistent results.
+
+---
+
+## Response Codes and Errors
+
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Status Code</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>200 OK</td>
+      <td>Request was successful</td>
+    </tr>
+    <tr>
+      <td>404 Not Found</td>
+      <td>The requested resource does not exist, or the ID provided is not valid</td>
+    </tr>
+    <tr>
+      <td>422 Unprocessable Entity</td>
+      <td>The request was understood but contains invalid parameter values</td>
+    </tr>
+    <tr>
+      <td>500 Internal Server Error</td>
+      <td>An unexpected error occurred on the server</td>
+    </tr>
+  </tbody>
+</table>
+
+All error responses use this JSON format:
+
+```json
+{
+  "error": "A description of what went wrong"
+}
+```
+
+For validation errors (422), additional detail is provided:
+
+```json
+{
+  "message": "Validation error",
+  "detail": {
+    "<location>": {
+      "<field_name>": ["error message"]
+    }
+  }
+}
+```
