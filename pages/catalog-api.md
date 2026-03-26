@@ -9,7 +9,8 @@ The Data.gov Catalog API provides access to metadata about datasets published by
 
 No API key is required. All endpoints are publicly accessible and return JSON.
 
-> **Note:** This API replaces the previous CKAN-based API. The prior endpoint remains available in a read-only state for existing integrations, but new development should use this API.
+Note: This API replaces the previous CKAN-based API. The prior endpoint remains available in a read-only state for existing integrations, but new development should use this API.
+
 ---
 
 ## Getting Started
