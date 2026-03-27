@@ -12,7 +12,6 @@ tags:
   - data schema
   - open data
   - DCAT
-  - DCAT-US
   - Project Open Data Metadata Schema
   - data standards
   - data inventory
@@ -106,7 +105,7 @@ Questions can be directed to the Data.gov team at [datagovhelp@gsa.gov](mailto:d
 
 
 
-  ### Catalog Fields
+  ### Catalog Fields <a name="catalog-fields"></a>
 
 
   These fields describe the entire Public Data Listing catalog file. Publishers can also use the `describedBy` field to reference the default [JSON Schema](http://json-schema.org/) file used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.json*) or they may refer to their own JSON Schema file if they have extended the schema with additional schema definitions. Similarly, `@context` can be used to reference the default [JSON-LD](http://www.w3.org/TR/json-ld) Context used to define the schema (*https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld*) or publishers can refer to their own if they have extended the schema with additional linked data vocabularies. See the [Catalog section](#Catalog) under *Further Metadata Field Guidance* for more details. 
@@ -204,7 +203,7 @@ Questions can be directed to the Data.gov team at [datagovhelp@gsa.gov](mailto:d
 
 
 
-  ### Dataset Distribution Fields
+  ### Dataset Distribution Fields <a name="dataset-distribution-fields"></a>
 
 
   Within a dataset, **distribution** is used to aggregate the metadata specific to a dataset's resources (**accessURL** and **downloadURL**), which may be described using the following fields.  Each distribution should contain one **accessURL** or **downloadURL**.  A **downloadURL** should always be accompanied by **mediaType**.  
@@ -244,7 +243,7 @@ Questions can be directed to the Data.gov team at [datagovhelp@gsa.gov](mailto:d
 
 
 
-  ### Further Metadata Field Guidance
+  ### Further Metadata Field Guidance <a name="further-metadata-field-guidance"></a>
 
 
   Additional details for each field are provided here broken down into sections for the overarching [Catalog](#Catalog), each [dataset](#dataset), and each dataset's [distribution](#distribution). Consult the [field mappings](../podm-field-mapping/#field-mappings) to find the equivalent v1.0, DCAT, Schema.org, and CKAN fields.
@@ -315,7 +314,7 @@ Questions can be directed to the Data.gov team at [datagovhelp@gsa.gov](mailto:d
           * {: .field-required}[title](#title)
 
 
-  #### Catalog Fields {#Catalog}
+  #### Catalog Fields <a name="Catalog"></a>
 
   -------------------------------
 
@@ -423,7 +422,7 @@ Questions can be directed to the Data.gov team at [datagovhelp@gsa.gov](mailto:d
 
 
 
-  #### Dataset Fields {#Dataset}
+  #### Dataset Fields <a name="Dataset"></a>
 
   -------------------------------
 
@@ -1021,7 +1020,7 @@ Questions can be directed to the Data.gov team at [datagovhelp@gsa.gov](mailto:d
 
   **Usage Notes** | Dates should be [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) of highest resolution. In other words, as much of YYYY-MM-DDThh:mm:ss.sTZD as is relevant to this dataset. If there is a need to reflect that the dataset is continually updated, ISO 8601 formatting can account for this [with repeating intervals](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals). For instance, `R/P1D` for daily, `R/P2W` for every two weeks, and `R/PT5M` for every five minutes.
 
-  +**Example** | `{"modified":"2012-01-15"}` or `{"modified":"R/P1D"}`
+  **Example** | `{"modified":"2012-01-15"}` or `{"modified":"R/P1D"}`
 
 
   {: .table .table-schema #primaryITInvestmentUII}
@@ -1288,7 +1287,7 @@ Questions can be directed to the Data.gov team at [datagovhelp@gsa.gov](mailto:d
 
 
 
-  ### Federal Government Fields {#USG-note}
+  ### Federal Government Fields <a name="USG-note"></a>
 
   ----------------------
 
