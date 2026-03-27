@@ -88,8 +88,7 @@ Pass the `after` value from the previous response to retrieve the next page. Kee
 GET https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3&after=WzY5LjM0NDY5NiwwLCJiYmRhZGNmYi00NDM1LTQzZWUtYjhlMy0yMzZiZjBlZDEwODIiXQ==
 ```
 
-Continue repeating this step until the response no longer includes an `after` field, which means you have reached the last page.
-
+Continue repeating this step until the response no longer includes an `after` field, which means you have reached the last page. For more details see [Pagination](#pagination) below.
 
 ---
 
@@ -178,18 +177,19 @@ Search the catalog for datasets using keywords, filters, and sorting options.
       <td>Limit results to datasets with or without spatial data: <code>geospatial</code> or <code>non-geospatial</code></td>
     </tr>
     <tr>
+      <td><code>spatial_geometry</code></td>
+      <td>string (GeoJSON)</td>
+      <td>No</td>
+      <td>-</td>
+      <td>A GeoJSON geometry object defining a geographic shape to filter by. Use with <code>spatial_within</code> to control how datasets are matched against the shape.</td>
+    </tr>
+    <tr>
       <td><code>spatial_within</code></td>
       <td>boolean</td>
       <td>No</td>
-      <td>-</td>
-      <td>When <code>true</code>, limits results to datasets whose spatial extent falls within the specified location</td>
-    </tr>
-
-    <!-- ENGINEER REVIEW NEEDED: spatial_within has not been tested. It is unclear how a location is
-         specified in conjunction with this parameter.  Does it require a location ID from
-         /api/locations/search? A bounding box? Something else? Please clarify and update this
-         description and the example requests before publishing. -->
-    
+      <td>false</td>
+      <td>Controls how datasets are matched against <code>spatial_geometry</code>. When <code>false</code> (default), returns datasets whose spatial extent <em>intersects</em> the shape. When <code>true</code>, returns only datasets whose spatial extent falls <em>completely within</em> the shape.</td>
+    </tr>    
     <tr>
       <td><code>after</code></td>
       <td>string</td>
@@ -208,6 +208,8 @@ GET https://catalog.data.gov/search?q=climate&sort=popularity&per_page=25
 GET https://catalog.data.gov/search?org_slug=nasa&per_page=10
 GET https://catalog.data.gov/search?org_type=Federal+Government&spatial_filter=geospatial
 GET https://catalog.data.gov/search?q=education&after=WzEwMC4wNjEzNiwwLCJiMWEzOTY3YzJhMTExZjE2NzgxN2IwMTI0YzUyYjBhYyJd
+GET https://catalog.data.gov/search?spatial_geometry={"type":"Polygon","coordinates":[[[-109.05,37.0],[-102.05,37.0],[-102.05,41.0],[-109.05,41.0],[-109.05,37.0]]]}&spatial_within=true
+
 ```
 
 ### Response
@@ -856,12 +858,6 @@ GET https://catalog.data.gov/api/organizations
 </table>
 
 ---
-
-<!-- ENGINEER REVIEW NEEDED: The three harvest record endpoints below (/harvest_record/{id},
-     /harvest_record/{id}/raw, /harvest_record/{id}/transformed) need a decision before
-     this page goes live. Are these intentionally public-facing endpoints, or are they
-     internal plumbing used by the catalog UI? If internal, they should be removed from
-     this documentation entirely. Please confirm with the product team. -->
 
 ## Get Harvest Record
 
