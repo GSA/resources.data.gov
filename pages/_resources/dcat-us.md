@@ -330,10 +330,8 @@ Additional details for each field are provided here broken down into sections fo
 **Usage Notes** | This is used to identify a standardized specification the dataset conforms to. If this is a technical specification associated with a particular serialization of a distribution, this should be specified with [conformsTo](#distribution-conformsTo) at the distribution level. It's recommended that this be a URI that serves as a unique identifier for the standard.
 **Example** | `{"conformsTo": "http://www.agency.gov/common-vegetable-analysis-model/"}`
 
-<a name="contactPoint"></a>
-
 {: .table .table-schema #contactPoint}
-**Field [#](#contactPoint){: .permalink}** | **contactPoint**
+**Field [#](#contactPoint){: .permalink}** | **contactPoint**<a name="contactPoint"></a>
 ----- | -----
 **Cardinality** | (1,1)
 **Required** | Yes, always
@@ -376,10 +374,8 @@ Additional details for each field are provided here broken down into sections fo
 **Usage Notes** | This should be formatted per vCard specifications and included with `fn` as part of a record's `contactPoint`.
 **Example** | `{"hasEmail": "mailto:jane.doe@agency.gov"}`
 
-<a name="dataQuality"></a>
-
 {: .table .table-schema #dataQuality}
-**Field [#](#dataQuality){: .permalink}** | **dataQuality**
+**Field [#](#dataQuality){: .permalink}** | **dataQuality**<a name="dataQuality"></a>
 ----- | -----
 **Cardinality** | (0,1)
 **Required** | No
@@ -560,10 +556,8 @@ Additional details for each field are provided here broken down into sections fo
 **Usage Notes** | Dates should be [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) of least resolution.
 **Example** | `{"issued":"2001-01-15"}`
 
-<a name="keyword"></a>
-
 {: .table .table-schema #keyword}
-**Field [#](#keyword){: .permalink}** | **keyword**
+**Field [#](#keyword){: .permalink}** | **keyword**<a name="keyword"></a>
 ----- | -----
 **Cardinality** | (1,n)
 **Required** | Yes, always
@@ -589,10 +583,8 @@ Additional details for each field are provided here broken down into sections fo
 **Usage Notes** | This should adhere to the [RFC 5646](http://tools.ietf.org/html/rfc5646) standard. A language tag is comprised of either one or two parts, the language subtag (such as en for English) and the regional subtag (such as US for United States), separated by a hyphen.
 **Example** | `{"language":["en-US"]}` or if multiple languages, `{"language":["es-MX","wo","nv","en-US"]}`
 
-<a name="license"></a>
-
 {: .table .table-schema #license}
-**Field [#](#license){: .permalink}** | **license**
+**Field [#](#license){: .permalink}** | **license**<a name="license"></a>
 ----- | -----
 **Cardinality** | (0,1)
 **Required** | Yes, if applicable
@@ -678,10 +670,8 @@ Additional details for each field are provided here broken down into sections fo
 **Usage Notes** | A parent organizational entity described using the same `publisher` object fields.
 **Example** | `"subOrganizationOf": {"name": "General Services Administration", "subOrganizationOf": {"name": "U.S. Government"}}`
 
-<a name="references"></a>
-
 {: .table .table-schema #references}
-**Field [#](#references){: .permalink}** | **references**
+**Field [#](#references){: .permalink}** | **references**<a name="references"></a>
 ----- | -----
 **Cardinality** | (0,n)
 **Required** | No
