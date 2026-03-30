@@ -19,20 +19,18 @@ details: >+
   {:#introduction}
   
   # Welcome to the Inventory.data.gov User Guide!
-  
-  ## Quick Start Overview
-  
+   
   This guide is your friendly companion for everything you need to know about using Inventory.data.gov. We've organized it into two main parts:
   
-  *   **Part 1: About Inventory.data.gov** will help you understand what the platform is, its purpose, and its key features.<br>
+  **Part 1: About Inventory.data.gov** will help you understand what the platform is, its purpose, and its key features.
 
-  *   **Part 2: How to Use Inventory.data.gov** provides step-by-step instructions for getting started, managing datasets, and exporting your `data.json` files.
+  **Part 2: How to Use Inventory.data.gov** provides step-by-step instructions for getting started, managing datasets, and exporting your `data.json` files.
   
   Let's get started on making your agency's data more accessible and discoverable!
 
-  # Part 1: About Inventory.data.gov
+# Part 1: About Inventory.data.gov
   
-  ### 1. What is Inventory.data.gov?
+### What is Inventory.data.gov?
   
   Inventory.data.gov is a specialized tool designed to help federal agencies create and manage the **legally required metadata** for their datasets when they do not have a different means of doing so. Its primary purpose is to generate **properly formatted JSON files** that comply with current metadata standards, fulfilling requirements under the **OPEN Government Data Act**.  Most large agencies use a different metadata creation tool instead of inventory.data.gov, however this one is available if needed.  
   
