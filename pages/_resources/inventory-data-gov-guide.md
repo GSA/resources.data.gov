@@ -14,17 +14,19 @@ tags:
 guidance_tags: ""
 format: ""
 details: >+
-  ### Introduction
-
-  {:#introduction}
   
   # Welcome to the Inventory.data.gov User Guide!
+
+    {:#introduction}
    
   This guide is your friendly companion for everything you need to know about using Inventory.data.gov. We've organized it into two main parts:
   
+  
   **Part 1: About Inventory.data.gov** will help you understand what the platform is, its purpose, and its key features.
+  
 
   **Part 2: How to Use Inventory.data.gov** provides step-by-step instructions for getting started, managing datasets, and exporting your `data.json` files.
+  
   
   Let's get started on making your agency's data more accessible and discoverable!
 
@@ -40,27 +42,38 @@ details: >+
 
   *   **Inventory.data.gov focuses solely on metadata.** It does not allow you to edit your actual dataset content.
 
+
   *   **It is not a data storage platform.** Your datasets remain hosted by your agency.
 
+
   *   Once the compliant JSON file is created, you will **download it** and **post it on your agency’s own public-facing webpage**.
+
    
   **Why is this important?**
+
   
   The OPEN Government Data Act requires agencies to make their data publicly available and easily discoverable. Inventory.data.gov simplifies this process by:
   
   *   **Providing all the necessary fields** to describe your datasets.
 
+
   *   **Ensuring your metadata is formatted correctly** so it can be easily found and "harvested" by Data.gov – the nation's main catalog for federal open data.
+
+
   
   **Is it mandatory?**
   
   No, Inventory.data.gov isn't required! It's a helpful resource offered by GSA for agencies that need a straightforward way to create and maintain their data inventories, especially if they don't have their own internal solutions.
+
    
   **Important Note on Access:**
+
   
   Inventory.data.gov is a secure, internal system. You'll need a user account to access and manage your agency's datasets. It's not publicly accessible, ensuring that only authorized individuals can make changes.
 
+
   **What are "Organizations" in Inventory.data.gov?** 
+
   
   In Inventory.data.gov, an "organization" is how your agency's datasets are grouped and managed. Think of it as your agency's dedicated workspace within the platform.
   
