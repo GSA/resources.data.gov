@@ -19,7 +19,7 @@ details: >+
   {:#introduction}
 
 
-  [Inventory.data.gov](http://inventory.data.gov/) is a data management tool established in 2013 by the Data.gov Program Management Office (PMO) in what is now the Technology Transformation Services of the U.S. General Services Administration (GSA). Inventory.data.gov supports the implementation of the OPEN Government Data Act, which is Title II of the [Foundations for Evidence Based Policymaking Act](https://www.congress.gov/bill/115th-congress/house-bill/4174/text), by providing all of the relevant metadata fields and export formats required for agencies to have their data harvested by Data.gov. Inventory.data.gov is not required to be used by agencies, but rather offered in order to assist agencies that do not have another solution for creating and maintaining data inventories.
+  [Inventory.data.gov](http://inventory.data.gov/) supports the implementation of the OPEN Government Data Act, which is Title II of the [Foundations for Evidence Based Policymaking Act](https://www.congress.gov/bill/115th-congress/house-bill/4174/text), by providing all of the relevant metadata fields and export formats required for agencies to have their data harvested by Data.gov. Inventory.data.gov is not required to be used by agencies, but rather offered in order to assist agencies that do not have another solution for creating and maintaining data inventories.
 
 
   [The Data.gov catalog](http://catalog.data.gov/) is based on [CKAN](http://ckan.org/) (Comprehensive Knowledge Archive Network), an open source technology that powers many government open data sites. [Inventory.data.gov](http://inventory.data.gov/) is a separate instance of CKAN hosted at GSA on the same infrastructure as the Data.gov catalog. 
