@@ -32,7 +32,9 @@ details: >+
   
   ### What is Inventory.data.gov?
   
-  Inventory.data.gov is a specialized tool designed to help federal agencies create and manage the **legally required metadata** for their datasets when they do not have a different means of doing so. Its primary purpose is to generate **properly formatted JSON files** that comply with current metadata standards, fulfilling requirements under the **OPEN Government Data Act**.  Most large agencies use a different metadata creation tool instead of inventory.data.gov, however this one is available if needed.  
+  Inventory.data.gov is a specialized tool designed to help federal agencies create and manage the **legally required metadata** for their datasets when they do not have a different means of doing so. Its primary purpose is to generate **properly formatted JSON files** that comply with current metadata standards, fulfilling requirements under the **OPEN Government Data Act**.  Most large agencies use a different metadata creation tool instead of inventory.data.gov, however this one is available if needed.
+  
+
   
   **Important to understand:**
 
