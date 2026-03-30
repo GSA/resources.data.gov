@@ -24,7 +24,7 @@ details: >+
   
   This guide is your friendly companion for everything you need to know about using Inventory.data.gov. We've organized it into two main parts:
   
-  *   **Part 1: About Inventory.data.gov** will help you understand what the platform is, its purpose, and its key features.
+  *   **Part 1: About Inventory.data.gov** will help you understand what the platform is, its purpose, and its key features.<br>
 
   *   **Part 2: How to Use Inventory.data.gov** provides step-by-step instructions for getting started, managing datasets, and exporting your `data.json` files.
   
