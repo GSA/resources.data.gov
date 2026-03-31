@@ -5,5 +5,5 @@ description: Articles, use cases, and proof points describing projects
   government
 layout: resource_category
 primary_nav_section: Resources
-show_on_front_page: true
+show_on_front_page: false
 ---
