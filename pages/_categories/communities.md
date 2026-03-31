@@ -5,5 +5,5 @@ description: Official bodies, communities of practice, working groups, and other
   government
 layout: resource_category
 primary_nav_section: Communities
-show_on_front_page: true
+show_on_front_page: false
 ---
