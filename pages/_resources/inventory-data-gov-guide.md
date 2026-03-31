@@ -29,6 +29,7 @@ details: >+
   
   
   Let's get started on making your agency's data more accessible and discoverable!
+  
 
   See an error in this page? Have a suggestion? We'd love to hear it! Email us at datagovhelp@gsa.gov 
 
@@ -223,7 +224,7 @@ details: >+
 
   **Entering Additional Metadata (Step 2 of 3):**
   
-      After completing the required fields, you'll land on the "Additional Metadata" screen. You'll see a confirmation: "Dataset saved successfully".  Please note that the additional metadata you upload will help public users better find and use this dataset. Not all of these criteria will apply to every dataset, so feel free to only answer what applies. For more detailed information on these form fields, consult the DCAT-US Schema.
+    After completing the required fields, you'll land on the "Additional Metadata" screen. You'll see a confirmation: "Dataset saved successfully".  Please note that the additional metadata you upload will help public users better find and use this dataset. Not all of these criteria will apply to every dataset, so feel free to only answer what applies. For more detailed information on these form fields, consult the DCAT-US Schema.
 
 
     Here are the fields on this screen:
