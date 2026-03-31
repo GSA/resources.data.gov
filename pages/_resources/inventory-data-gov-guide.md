@@ -30,6 +30,8 @@ details: >+
   
   Let's get started on making your agency's data more accessible and discoverable!
 
+  See an error in this page? Have a suggestion? We'd love to hear it! Email us at datagovhelp@gsa.gov 
+
   # Part 1: About Inventory.data.gov
   
   ### What is Inventory.data.gov?
