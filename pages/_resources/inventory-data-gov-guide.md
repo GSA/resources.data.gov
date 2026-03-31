@@ -94,19 +94,14 @@ details: >+
 
   **For New Users: Complete the New User / Validation Form.**
 
-      This form is your first step for requesting a new account. (Existing users also use this form for regular access validation.)
+  *   **Access the Form:** Fill out the online form directly here: **https://touchpoints.app.cloud.gov/touchpoints/9145dd7e**
 
+  *   **Information You'll Need to Provide:** Name, Government Email, Phone Number, For which government department and/or agency do you need access to in inventory.data.gov?, Agreement to GSA IT Rules of Behavior: You'll need to agree to the GSA IT Rules of Behavior (linked on the form: `https://www.gsa.gov/directives-library/gsa-information-technology-it-general-rules-of-behavior-4`). 
 
-      *   **Access the Form:** Fill out the online form directly here: **https://touchpoints.app.cloud.gov/touchpoints/9145dd7e**
- 
-      *   **Information You'll Need to Provide:** Name, Government Email, Phone Number, For which government department and/or agency do you need access to in inventory.data.gov?, Agreement to GSA IT Rules of Behavior: You'll need to agree to the GSA IT Rules of Behavior (linked on the form: `https://www.gsa.gov/directives-library/gsa-information-technology-it-general-rules-of-behavior-4`). 
-
-
-  ### Using inventory.data.gov to manage datasets
-
-  {:#using-inventory-data-gov-to-manage-datasets}
 
   ## Navigating Inventory.data.gov and Finding Your Organization
+
+    {:#using-inventory-data-gov-to-manage-datasets}
 
   Once you've successfully logged in and have your Editor permissions, you'll be able to access your agency's datasets.
   
@@ -117,20 +112,15 @@ details: >+
       *   **"Datasets"**: This tab will show you all datasets you have access to.
 
       *   **"Organizations"**: This tab is where you'll find your agency's specific workspace.
+
   
-  3.  **Go to the "Organizations" Tab:**
+  3.  **Go to the "Organizations" Tab:**  Click on the **"Organizations"** tab. This will take you to a page listing all the organizations within Inventory.data.gov.
 
-      Click on the **"Organizations"** tab. This will take you to a page listing all the organizations within Inventory.data.gov.
   
-  5.  **Find Your Agency's Organization:**
+  4.  **Find Your Agency's Organization:**  You can use the **search bar** on the "Organizations" page to quickly find your agency. Type in your agency's name (e.g., "Department of Labor," "Farm Service Agency").  Once you see your organization listed, **click on its name or icon**.
 
-      *   You can use the **search bar** on the "Organizations" page to quickly find your agency. Type in your agency's name (e.g., "Department of Labor," "Farm Service Agency").
-
-      *   Once you see your organization listed, **click on its name or icon**.
   
-  7.  **View Your Datasets:**
-
-      After clicking on your organization, you'll be taken to its dedicated page. Here, you'll see a list of all the datasets currently associated with your agency. This is your starting point for adding new datasets or editing existing ones!
+  5.  **View Your Datasets:**  After clicking on your organization, you'll be taken to its dedicated page. Here, you'll see a list of all the datasets currently associated with your agency. This is your starting point for adding new datasets or editing existing ones!
 
 
   
@@ -140,21 +130,19 @@ details: >+
 
   Now that you've found your organization's page, you're ready to add a new dataset! Inventory.data.gov guides you through entering all the necessary metadata to make your data discoverable and compliant with **DCAT-US standards**.
   
-  1.  **Start the "Add Dataset" Process:**
+  **Start the "Add Dataset" Process:**
   
-      *   First, click on the **"Datasets"** tab. **[CONFUSION ALERT: User notes there may be multiple "Datasets" tabs. Needs clarification on how to identify the correct one, e.g., "the main 'Datasets' tab in the top navigation bar," or ideally, a screenshot.]**
+    *   First, click on the **"Datasets"** tab then, look for and click the **blue "Add Dataset" button**.
 
-      *   Then, look for and click the **blue "Add Dataset" button**.
-
-      *   This will take you to the **"Create Dataset"** page, where you'll see three steps: **Required Metadata**, **Additional Metadata**, and **Resource Upload**. You can also click **"Back to dashboard"** at any time.
+    *   This will take you to the **"Create Dataset"** page, where you'll see three steps: **Required Metadata**, **Additional Metadata**, and **Resource Upload**. You can also click **"Back to dashboard"** at any time.
   
-  3.  **General Tips for Entering Metadata:**
+  **General Tips for Entering Metadata:**
 
-      *   **DCAT-US Standard:** The fields you see are designed to capture information according to the **DCAT-US metadata standard**, ensuring your data is properly described for Data.gov. For more detailed information on specific fields, you can consult the DCAT-US Schema.
+    *   **DCAT-US Standard:** The fields you see are designed to capture information according to the **DCAT-US metadata standard**, ensuring your data is properly described for Data.gov. For more detailed information on specific fields, you can consult the DCAT-US Schema.
 
-      *   **Examples & Pop-up Help:** Many fields have helpful examples displayed directly in the input box, and you can often find additional information by hovering over or clicking on help icons.
+    *   **Examples & Pop-up Help:** Many fields have helpful examples displayed directly in the input box, and you can often find additional information by hovering over or clicking on help icons.
 
-      *   **Validation is Your Friend:** The system will validate your entries as you go. If you miss a required field or enter information in an incorrect format, you'll see an error message when you try to save. This helps ensure your metadata is accurate and complete.
+    *   **Validation is Your Friend:** The system will validate your entries as you go. If you miss a required field or enter information in an incorrect format, you'll see an error message when you try to save. This helps ensure your metadata is accurate and complete.
   
   5.  **Entering Required Metadata (Step 1 of 3):**
 
