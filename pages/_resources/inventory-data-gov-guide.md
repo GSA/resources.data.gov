@@ -219,9 +219,9 @@ details: >+
       *   Click **"Save and Continue"** to save your progress and move to the next screen (Additional Metadata).
   
 
-**Entering Additional Metadata (Step 2 of 3):**
-
-      After completing the required fields, you'll land on the "Additional Metadata" screen. You'll see a confirmation: "Dataset saved successfully".  Please note that the additional metadata you upload will help public users better find and use this dataset. Not all of these criteria will apply to every dataset, so feel free to only answer what applies. For more detailed information on these form fields, consult the DCAT-US Schema.
+  **Entering Additional Metadata (Step 2 of 3):**
+  
+        After completing the required fields, you'll land on the "Additional Metadata" screen. You'll see a confirmation: "Dataset saved successfully".  Please note that the additional metadata you upload will help public users better find and use this dataset. Not all of these criteria will apply to every dataset, so feel free to only answer what applies. For more detailed information on these form fields, consult the DCAT-US Schema.
   
 
       Here are the fields on this screen:
