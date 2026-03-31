@@ -4,18 +4,28 @@
       url: /categories/data-management-governance
     - text: Data tools
       url: /categories/data-tools
-    - text: Data incubator
-      url: /categories/data-incubator
-    - text: Skills development
-      url: /categories/skills-development
     - text: Guidance
       url: /categories/guidance
-    - text: Case studies & examples
-      url: /categories/case-studies-examples
 - text: Data Standards
-  url: /standards
-- text: Communities
-  url: /categories/communities
+  children:
+    - text: DCAT-US 3
+      url: /standards/catalog/dcat-us/
+- text: API Documentation
+  children:
+    - text: General Information
+      url: /resources/documenting-apis/
+    - text: Catalog API
+      url: /catalog-api/
+    - text: API.Data.Gov
+      url: https://api.data.gov/
+- text: Agency Links
+  children:
+    - text: Catalog.Data.Gov
+      url: https://catalog.data.gov/dataset/
+    - text: Harvest.Data.gov
+      url: https://harvest.data.gov/organization_list/
+    - text: Inventory.data.gov
+      url: https://inventory.data.gov/
 - text: About
   children:
     - text: About this repository
