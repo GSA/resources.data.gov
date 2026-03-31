@@ -162,183 +162,183 @@ details: >+
     *   **Select Publisher:** Start typing the name of the specific component or sub-agency within your selected Organization that is publishing this dataset (e.g., "Farm Service Agency"). The field should auto-populate with matching options.  *If your Publisher isn't listed:* Please contact **`datagovhelp@gsa.gov`** for assistance in having it added to the system.
 
 
-      *   **Contact Name:** Enter the name of the person who can answer questions about this specific dataset.
+    *   **Contact Name:** Enter the name of the person who can answer questions about this specific dataset.
 
 
-      *   **Contact Email:** Enter the email address for the dataset contact.
+    *   **Contact Email:** Enter the email address for the dataset contact.
 
 
-      *   **Unique ID:** Every dataset must have an ID number that is unique within your agency.
+    *   **Unique ID:** Every dataset must have an ID number that is unique within your agency.
 
 
-      *   **Public Access level:** Choose the general access level for this dataset from the dropdown:
-      
-          *   `Public`: This dataset can be made publicly available to all without restrictions.
+    *   **Public Access level:** Choose the general access level for this dataset from the dropdown:
+    
+        *   `Public`: This dataset can be made publicly available to all without restrictions.
 
-          *   `Restricted Public`: This dataset is available to the public under certain use restrictions.
+        *   `Restricted Public`: This dataset is available to the public under certain use restrictions.
 
-          *   `Non-Public`: This dataset is not available to members of the public.
-
-
-      *   **License:** Select the applicable license from the dropdown (e.g., MIT, CC0).
-      
-          *   *If you select "Other":* Please specify the name of your License in URL format, including "https://" at the beginning.
+        *   `Non-Public`: This dataset is not available to members of the public.
 
 
-      *   **Rights:** This section further clarifies access. Choose:
-
-          *   `My dataset is public`
-
-          *   `My dataset is not public`
-
-          *   *If "My dataset is not public" is selected:* Add an explanation of rights, any restrictions, or instructions on how to access a restricted file (maximum 255 characters).
+    *   **License:** Select the applicable license from the dropdown (e.g., MIT, CC0).
+    
+        *   *If you select "Other":* Please specify the name of your License in URL format, including "https://" at the beginning.
 
 
-      *   **Relevant Location (Spatial):** Indicate if your dataset has a geographic component.
-      
-          *   `My dataset does not have a spatial component`
+    *   **Rights:** This section further clarifies access. Choose:
 
-          *   `My dataset does have a spatial component`
+        *   `My dataset is public`
 
-          *   *If "My dataset does have a spatial component" is selected:* Provide location information such as place names or latitude/longitude pairs.
+        *   `My dataset is not public`
+
+        *   *If "My dataset is not public" is selected:* Add an explanation of rights, any restrictions, or instructions on how to access a restricted file (maximum 255 characters).
 
 
-      *   **Temporal:** Indicate if your dataset covers a specific time period.
+    *   **Relevant Location (Spatial):** Indicate if your dataset has a geographic component.
+    
+        *   `My dataset does not have a spatial component`
 
-          *   `My dataset does not have a start and end date for the applicability of data`
+        *   `My dataset does have a spatial component`
 
-          *   `My dataset has a start and end date for the applicability of data`
+        *   *If "My dataset does have a spatial component" is selected:* Provide location information such as place names or latitude/longitude pairs.
 
-          *   *If "My dataset has a start and end date..." is selected:* Provide the start date and end date for the applicability of data using the MM/DD/YYYY format.
 
-  
-      Once you've filled out all the required fields on this screen, you have two options:
+    *   **Temporal:** Indicate if your dataset covers a specific time period.
 
-      *   Click **"Save draft"** to save your progress without publishing.
+        *   `My dataset does not have a start and end date for the applicability of data`
 
-      *   Click **"Save and Continue"** to save your progress and move to the next screen (Additional Metadata).
-  
+        *   `My dataset has a start and end date for the applicability of data`
+
+        *   *If "My dataset has a start and end date..." is selected:* Provide the start date and end date for the applicability of data using the MM/DD/YYYY format.
+
+
+    Once you've filled out all the required fields on this screen, you have two options:
+
+    *   Click **"Save draft"** to save your progress without publishing.
+
+    *   Click **"Save and Continue"** to save your progress and move to the next screen (Additional Metadata).
+
 
   **Entering Additional Metadata (Step 2 of 3):**
   
-        After completing the required fields, you'll land on the "Additional Metadata" screen. You'll see a confirmation: "Dataset saved successfully".  Please note that the additional metadata you upload will help public users better find and use this dataset. Not all of these criteria will apply to every dataset, so feel free to only answer what applies. For more detailed information on these form fields, consult the DCAT-US Schema.
-  
-
-      Here are the fields on this screen:
-  
-
-      *   **Meets Agency Data Quality:** Select "Yes" or "No" from the dropdown to indicate whether this dataset meets your agency’s internal data quality standards (if your agency has defined them).
+      After completing the required fields, you'll land on the "Additional Metadata" screen. You'll see a confirmation: "Dataset saved successfully".  Please note that the additional metadata you upload will help public users better find and use this dataset. Not all of these criteria will apply to every dataset, so feel free to only answer what applies. For more detailed information on these form fields, consult the DCAT-US Schema.
 
 
-      *   **Geospatial:** This section clarifies if your dataset contains geographic information.
-      
-          *   Choose "My dataset is a geospatial dataset" or "My dataset is not a geospatial dataset."
-
-          *   *Note:* Geospatial datasets are typically included in `geoplatform.gov`. If your **DCAT-US geospatial dataset** needs to be featured there, you'll need to follow additional specific directions. You can find full details on the Resources.data.gov page.
+    Here are the fields on this screen:
 
 
-      *   **Data Dictionary URL:** If your dataset has an accompanying data dictionary (which explains what each piece of data means) or a schema (which describes its structure), provide the **URL** to it here. Please include "https://" at the beginning of your URL.
+    *   **Meets Agency Data Quality:** Select "Yes" or "No" from the dropdown to indicate whether this dataset meets your agency’s internal data quality standards (if your agency has defined them).
 
 
-      *   **Data Dictionary Type:** If you provided a Data Dictionary URL, choose the format or type of that dictionary from the extensive dropdown list (e.g., "CSV," "JSON," "XML").
-      
-          *   *If your type isn't listed:* Select "Other" and specify your Data Dictionary Type in the field that appears.
+    *   **Geospatial:** This section clarifies if your dataset contains geographic information.
+    
+        *   Choose "My dataset is a geospatial dataset" or "My dataset is not a geospatial dataset."
+
+        *   *Note:* Geospatial datasets are typically included in `geoplatform.gov`. If your **DCAT-US geospatial dataset** needs to be featured there, you'll need to follow additional specific directions. You can find full details on the Resources.data.gov page.
 
 
-      *   **Data Publishing Frequency:** Select how often this dataset is updated from the dropdown (e.g., "Irregular/As needed," "Daily," "Monthly," "Annually").
-
-          *   *If your frequency isn't listed:* Select "Other" and specify a valid ISO 8601 timestamp in the field that appears.
+    *   **Data Dictionary URL:** If your dataset has an accompanying data dictionary (which explains what each piece of data means) or a schema (which describes its structure), provide the **URL** to it here. Please include "https://" at the beginning of your URL.
 
 
-      *   **Dataset Landing Page URL:** If your dataset has a specific landing page or a dedicated homepage on your agency's website, enter its **URL** here. Please include "https://" at the beginning of your URL.
+    *   **Data Dictionary Type:** If you provided a Data Dictionary URL, choose the format or type of that dictionary from the extensive dropdown list (e.g., "CSV," "JSON," "XML").
+    
+        *   *If your type isn't listed:* Select "Other" and specify your Data Dictionary Type in the field that appears.
 
 
-      *   **Language - Language Subtag:** Select the primary language of your dataset from the dropdown list (e.g., "English," "Spanish," "Chinese").
+    *   **Data Publishing Frequency:** Select how often this dataset is updated from the dropdown (e.g., "Irregular/As needed," "Daily," "Monthly," "Annually").
+
+        *   *If your frequency isn't listed:* Select "Other" and specify a valid ISO 8601 timestamp in the field that appears.
 
 
-      *   **Language - Regional Subtag:** If applicable, select a regional subtag for the language (e.g., "United States," "Canada," "United Kingdom").
+    *   **Dataset Landing Page URL:** If your dataset has a specific landing page or a dedicated homepage on your agency's website, enter its **URL** here. Please include "https://" at the beginning of your URL.
 
 
-      *   **Dataset's IT Unique Investment Identifier:** If this dataset is part of a larger IT investment, enter its Unique Investment Identifier here.
+    *   **Language - Language Subtag:** Select the primary language of your dataset from the dropdown list (e.g., "English," "Spanish," "Chinese").
 
 
-      *   **Related Documents:** You can enter **URLs** for any additional related resources or documents that provide further context or information about your dataset.
+    *   **Language - Regional Subtag:** If applicable, select a regional subtag for the language (e.g., "United States," "Canada," "United Kingdom").
 
 
-      *   **Release Date:** Enter the official release date of the dataset. **Date Format: MM/DD/YYYY**.
+    *   **Dataset's IT Unique Investment Identifier:** If this dataset is part of a larger IT investment, enter its Unique Investment Identifier here.
 
 
-      *   **System of Records Notice URL:** If a Privacy Act System of Records Notice (SORN) applies to this dataset, enter the **URL** for the published SORN here.
+    *   **Related Documents:** You can enter **URLs** for any additional related resources or documents that provide further context or information about your dataset.
 
 
-      *   **Collection Designation (Parent/Child Datasets):** These fields are for linking datasets together if they are part of a larger series or collection.  
-      
-          *   **Is parent:** Select "Yes" or "No" from the dropdown to indicate if *this specific dataset* is intended to be the "parent" (the main, overarching dataset) of a collection. Choose "No" otherwise.  *Important:* A dataset designated as a "parent" cannot also be a "child" (meaning it cannot be part of another collection). If you choose "Yes" for "Is parent," this dataset will then become an option for other datasets in your organization to select as their parent.  If you chose "No" for "Is parent," you will then be able to use the **"Select Parent Dataset"** field. Here, you can select an existing "parent" dataset from your organization to make this dataset a "child" within that collection. Start typing the title of the parent dataset to see matching options. This field is optional; if left empty, your dataset will be independent.
-  
-      Once you've completed all the relevant fields on this screen, you can click **"Save draft"** to save your progress without publishing, or click **"Back to previous page"** to return to the "Required Metadata" screen, or click **"Save and Continue"** to save and proceed to the final step.
+    *   **Release Date:** Enter the official release date of the dataset. **Date Format: MM/DD/YYYY**.
+
+
+    *   **System of Records Notice URL:** If a Privacy Act System of Records Notice (SORN) applies to this dataset, enter the **URL** for the published SORN here.
+
+
+    *   **Collection Designation (Parent/Child Datasets):** These fields are for linking datasets together if they are part of a larger series or collection.  
+    
+        *   **Is parent:** Select "Yes" or "No" from the dropdown to indicate if *this specific dataset* is intended to be the "parent" (the main, overarching dataset) of a collection. Choose "No" otherwise.  *Important:* A dataset designated as a "parent" cannot also be a "child" (meaning it cannot be part of another collection). If you choose "Yes" for "Is parent," this dataset will then become an option for other datasets in your organization to select as their parent.  If you chose "No" for "Is parent," you will then be able to use the **"Select Parent Dataset"** field. Here, you can select an existing "parent" dataset from your organization to make this dataset a "child" within that collection. Start typing the title of the parent dataset to see matching options. This field is optional; if left empty, your dataset will be independent.
+
+    Once you've completed all the relevant fields on this screen, you can click **"Save draft"** to save your progress without publishing, or click **"Back to previous page"** to return to the "Required Metadata" screen, or click **"Save and Continue"** to save and proceed to the final step.
   
   **Uploading Resources (Step 3 of 3):**
 
-      After completing the "Additional Metadata" screen, you'll land on the "Resource Upload" screen, with a "Dataset saved successfully" confirmation. This final step is where you provide information on *how to access* the actual dataset, or related files like a data dictionary.  You can add the URL of the dataset where it is available on your agency's website. If you are *uploading* the dataset itself, please notify the Data.gov team at **`datagovhelp@gsa.gov`**. You can also add a URL or file of information related to the dataset, such as a data dictionary.
-  
-
-      **To add a resource, first choose one of the following options:**
-  
-  
-      *   **Link to a file:** Choose this if your dataset is directly downloadable (e.g., a CSV, Excel, or PDF file) from a **URL**. Provide a direct download link to the file.
-
-      *   **Upload a file:** Choose this if you want to upload a file directly from your computer. **Important:** If you use this option to upload the dataset itself, please notify the Data.gov team at **`datagovhelp@gsa.gov`**.
-
-      *   **Link to an API:** Choose this if you're providing access to your dataset via an Application Programming Interface. Provide a link to access the dataset via API.
+    After completing the "Additional Metadata" screen, you'll land on the "Resource Upload" screen, with a "Dataset saved successfully" confirmation. This final step is where you provide information on *how to access* the actual dataset, or related files like a data dictionary.  You can add the URL of the dataset where it is available on your agency's website. If you are *uploading* the dataset itself, please notify the Data.gov team at **`datagovhelp@gsa.gov`**. You can also add a URL or file of information related to the dataset, such as a data dictionary.
 
 
-      *   **Access URL:** Choose this if the dataset isn't directly downloadable or an API, but has an access point (e.g., an HTML website with more information, or a web application where users can interact with the data). Provide the URL.
-
-  
-
-      **Once you've chosen a resource option, fill in the following details:**
-  
-
-      *   **Name:** Give this specific resource a clear, descriptive name (e.g., "Annual Report 2023 CSV," "Real-time API Endpoint," "Interactive Map Application").
+    **To add a resource, first choose one of the following options:**
 
 
-      *   **Description:** Provide a brief description of this resource. You can use **Markdown Formatting** here.
+    *   **Link to a file:** Choose this if your dataset is directly downloadable (e.g., a CSV, Excel, or PDF file) from a **URL**. Provide a direct download link to the file.
+
+    *   **Upload a file:** Choose this if you want to upload a file directly from your computer. **Important:** If you use this option to upload the dataset itself, please notify the Data.gov team at **`datagovhelp@gsa.gov`**.
+
+    *   **Link to an API:** Choose this if you're providing access to your dataset via an Application Programming Interface. Provide a link to access the dataset via API.
 
 
-      *   **Media Type:** Select the relevant standard media type (MIME type) for your resource from the extensive dropdown list (e.g., `text/csv`, `application/json`, `application/xml`, `image/jpeg`).
+    *   **Access URL:** Choose this if the dataset isn't directly downloadable or an API, but has an access point (e.g., an HTML website with more information, or a web application where users can interact with the data). Provide the URL.
 
 
-      *   **Conforms To:** If this resource conforms to a specific standard or schema, provide a resolvable **URL** to that standard here.
+
+    **Once you've chosen a resource option, fill in the following details:**
 
 
-      *   **Format:** Type in the specific format of the resource (e.g., `CSV`, `JSON`, `API`, `PDF`). This field will often be guessed automatically, so you can leave it blank if you wish.
-
-  
-      **After adding your resource(s):**
-
-      *   **"Save and add another resource"**: Click this if your dataset has multiple files, APIs, or access points, and you want to add more.
-      
-          *   **Heads Up: Patience is Key for Uploads!** After clicking this button, especially for files larger than a few kilobytes, the page might appear frozen or unresponsive with a message like "Your submission is in progress, this may take a few minutes for large dataset files."
-
-          *   **What's Happening:** The system is actively processing your submission in the background. It's not frozen, just busy! Even files up to 75KB can take a minute or more to process.
-
-          *   **What to Do:** Please **do not navigate away from the page, refresh your browser, or click the button again.** Doing so could interrupt the upload and lead to data loss or errors. Wait for the page to update and confirm the resource has been added.
-
-          *   **Best Practice for Large Files:** For very large files (e.g., hundreds of megabytes or gigabytes), it is generally more efficient and reliable to **host the file on your agency's website** and use the **"Link to a file"** option instead of direct upload.
+    *   **Name:** Give this specific resource a clear, descriptive name (e.g., "Annual Report 2023 CSV," "Real-time API Endpoint," "Interactive Map Application").
 
 
-      *   **"Save draft"**: Click this to save your progress without publishing.
+    *   **Description:** Provide a brief description of this resource. You can use **Markdown Formatting** here.
 
 
-      *   **"Back to previous page"**: Click this to return to the "Additional Metadata" screen.
+    *   **Media Type:** Select the relevant standard media type (MIME type) for your resource from the extensive dropdown list (e.g., `text/csv`, `application/json`, `application/xml`, `image/jpeg`).
 
 
-      *   **"Finish and publish"**: Click this to save your dataset and make it available for inclusion in your agency's `data.json` file.
-  
-      *Note:* The system will automatically display a "Draft saved" message with a timestamp (e.g., `[13:32, 03-30-26]`) when you save.
+    *   **Conforms To:** If this resource conforms to a specific standard or schema, provide a resolvable **URL** to that standard here.
 
-  
-      **Troubleshooting Tip: If You Get Logged Out During Resource Upload**  If you are logged out of the system due to a `login.gov` timeout while a resource submission is in progress, **your metadata should have been saved as a draft**, but the **resource file itself may not have completed its upload.** **To recover:**  Log back into Inventory.data.gov. Navigate to the **"My Datasets"** tab on your user dashboard.  Click on the title of the dataset you were working on to reopen it for editing.  Return to the "Resource Upload" section and re-attempt the upload of the resource file.
+
+    *   **Format:** Type in the specific format of the resource (e.g., `CSV`, `JSON`, `API`, `PDF`). This field will often be guessed automatically, so you can leave it blank if you wish.
+
+
+    **After adding your resource(s):**
+
+    *   **"Save and add another resource"**: Click this if your dataset has multiple files, APIs, or access points, and you want to add more.
+    
+        *   **Heads Up: Patience is Key for Uploads!** After clicking this button, especially for files larger than a few kilobytes, the page might appear frozen or unresponsive with a message like "Your submission is in progress, this may take a few minutes for large dataset files."
+
+        *   **What's Happening:** The system is actively processing your submission in the background. It's not frozen, just busy! Even files up to 75KB can take a minute or more to process.
+
+        *   **What to Do:** Please **do not navigate away from the page, refresh your browser, or click the button again.** Doing so could interrupt the upload and lead to data loss or errors. Wait for the page to update and confirm the resource has been added.
+
+        *   **Best Practice for Large Files:** For very large files (e.g., hundreds of megabytes or gigabytes), it is generally more efficient and reliable to **host the file on your agency's website** and use the **"Link to a file"** option instead of direct upload.
+
+
+    *   **"Save draft"**: Click this to save your progress without publishing.
+
+
+    *   **"Back to previous page"**: Click this to return to the "Additional Metadata" screen.
+
+
+    *   **"Finish and publish"**: Click this to save your dataset and make it available for inclusion in your agency's `data.json` file.
+
+    *Note:* The system will automatically display a "Draft saved" message with a timestamp (e.g., `[13:32, 03-30-26]`) when you save.
+
+
+    **Troubleshooting Tip: If You Get Logged Out During Resource Upload**  If you are logged out of the system due to a `login.gov` timeout while a resource submission is in progress, **your metadata should have been saved as a draft**, but the **resource file itself may not have completed its upload.** **To recover:**  Log back into Inventory.data.gov. Navigate to the **"My Datasets"** tab on your user dashboard.  Click on the title of the dataset you were working on to reopen it for editing.  Return to the "Resource Upload" section and re-attempt the upload of the resource file.
 
   
   ### Understanding Dataset Status: Draft vs. Published
@@ -383,51 +383,51 @@ details: >+
   
   **Choose Your Export Option:**
   
-      On your Organization page, look for the buttons at the top of the page. You'll typically see:
-  
+    On your Organization page, look for the buttons at the top of the page. You'll typically see:
 
-      *   **"Add Dataset"**: (This button is for creating new datasets, as we discussed in Section 3.)
 
-      *   **"Export data.json"**: Click this button to generate and download your agency's official `data.json` file. This file will contain all your **"Published"** datasets, formatted for Data.gov.    te:* Clicking "Export data.json" will prompt you to download a file typically named `unredacted.zip`.
+    *   **"Add Dataset"**: (This button is for creating new datasets, as we discussed in Section 3.)
 
-      *   **"Export Drafts"**:  Clicking this button will export all datasets that are currently in **"Draft"** status to a separate file. This is useful for review purposes. When you click it, your browser will prompt you to download a file typically named `draft.zip`. These datasets will **not** be included in your official `data.json` for Data.gov.
+    *   **"Export data.json"**: Click this button to generate and download your agency's official `data.json` file. This file will contain all your **"Published"** datasets, formatted for Data.gov.    te:* Clicking "Export data.json" will prompt you to download a file typically named `unredacted.zip`.
+
+    *   **"Export Drafts"**:  Clicking this button will export all datasets that are currently in **"Draft"** status to a separate file. This is useful for review purposes. When you click it, your browser will prompt you to download a file typically named `draft.zip`. These datasets will **not** be included in your official `data.json` for Data.gov.
   
 
   **Download the Export File:**
 
-      *   Clicking **"Export data.json"** or **"Export Drafts"** will initiate a download. Your browser will prompt you to "Save As" a file (e.g., `unredacted.zip` or `draft.zip`). Depending on your browser settings, it might download automatically.
+    *   Clicking **"Export data.json"** or **"Export Drafts"** will initiate a download. Your browser will prompt you to "Save As" a file (e.g., `unredacted.zip` or `draft.zip`). Depending on your browser settings, it might download automatically.
   
 
   **Understand the Downloaded Zip File:**
 
-      The file you receive will be a **`.zip` archive**. Inside, you'll find:
- 
-      *   **`data.json`**: This is the primary file containing your agency's metadata, formatted for Data.gov. (Note: The `draft.zip` will contain a `data.json` file with draft datasets, not for official submission).
+    The file you receive will be a **`.zip` archive**. Inside, you'll find:
 
-      *   **`errorlog.txt` and `errors.json` (if errors were found)**: These files will only be present if some of your datasets failed validation against the DCAT-US Schema.
+    *   **`data.json`**: This is the primary file containing your agency's metadata, formatted for Data.gov. (Note: The `draft.zip` will contain a `data.json` file with draft datasets, not for official submission).
+
+    *   **`errorlog.txt` and `errors.json` (if errors were found)**: These files will only be present if some of your datasets failed validation against the DCAT-US Schema.
 
   
   
   **CRITICAL: Check for Errors in `errorlog.txt`!**
 
 
-      *   It is **extremely important** to verify that all your datasets were successfully exported. The best way to do this is to check if an `errorlog.txt` file was included in the `.zip` archive.
+    *   It is **extremely important** to verify that all your datasets were successfully exported. The best way to do this is to check if an `errorlog.txt` file was included in the `.zip` archive.
 
-      *   **If `errorlog.txt` is present:** This means some of your datasets did not validate correctly and **will not be included** in the `data.json` file. You **must** review and resolve these errors before posting your `data.json` file.
+    *   **If `errorlog.txt` is present:** This means some of your datasets did not validate correctly and **will not be included** in the `data.json` file. You **must** review and resolve these errors before posting your `data.json` file.
 
-      *   **Consequence of Ignoring Errors:** Posting a `data.json` file with unaddressed errors could lead to datasets *disappearing* from Data.gov, as they won't be present in the new, incomplete file.
+    *   **Consequence of Ignoring Errors:** Posting a `data.json` file with unaddressed errors could lead to datasets *disappearing* from Data.gov, as they won't be present in the new, incomplete file.
 
-      *   **If `errorlog.txt` is NOT present:** Congratulations! No errors were encountered, and your `data.json` file is ready.
+    *   **If `errorlog.txt` is NOT present:** Congratulations! No errors were encountered, and your `data.json` file is ready.
 
   
   
   **Resolve Any Errors (If Needed):**
  
-      *   If you found an `errorlog.txt` file, open it. It will describe the type of problem, the dataset ID, and the dataset title for each problematic entry.
+    *   If you found an `errorlog.txt` file, open it. It will describe the type of problem, the dataset ID, and the dataset title for each problematic entry.
 
-      *   Go back to Inventory.data.gov, search for the identified dataset, click **"Edit"**, and make the necessary changes.
+    *   Go back to Inventory.data.gov, search for the identified dataset, click **"Edit"**, and make the necessary changes.
 
-      *   Once you've fixed the errors, return to your Organization page and **re-download the inventory**. Continue this process until you get a `.zip` file that contains *only* the `data.json` and no `errorlog.txt` or `errors.json` files.
+    *   Once you've fixed the errors, return to your Organization page and **re-download the inventory**. Continue this process until you get a `.zip` file that contains *only* the `data.json` and no `errorlog.txt` or `errors.json` files.
 
   
   
