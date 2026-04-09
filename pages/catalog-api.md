@@ -5,6 +5,8 @@ layout: page
 
 The Data.gov Catalog API provides access to metadata about datasets published by federal, state, local, and tribal governments. You can use it to search for datasets, filter by organization or topic, and retrieve detailed information about individual records.
 
+**4/9/2026: Note on upcoming changes:** The base URL for the data.gov APIs will change when Data.gov routes its APIs through api.data.gov.  This is expected to occur soon.  If you're building a new integration, avoid hard-coding the base URL and check this page for updates before going to production.  Email us with any questions at datagovhelp@gsa.gov
+
 **Base URL:** `https://catalog.data.gov`
 
 No API key is required. All endpoints are publicly accessible and return JSON.
