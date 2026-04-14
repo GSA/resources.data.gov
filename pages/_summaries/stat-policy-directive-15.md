@@ -19,6 +19,6 @@ source: Office of Management and Budget
 category: Guidance
 tags:
   - data standards
-format: PDF (9 pages)
-link: https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf
+format: HTML
+link: https://www.bls.gov/bls/statistical-policy-directives.htm
 ---
