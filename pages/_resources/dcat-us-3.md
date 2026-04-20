@@ -16,8 +16,7 @@ tags:
   - data standards
 guidance_tags: ""
 format: ""
-details: ""
----
+details: >+
 
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
   
