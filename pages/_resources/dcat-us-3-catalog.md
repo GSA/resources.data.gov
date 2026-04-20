@@ -1,6 +1,6 @@
 ---
 resource_name: DCAT-US Schema v3.0 — Catalog fields
-slug: dcat-us-3/catalog
+slug: dcat-us-3-catalog
 description: >-
   Field-level reference for the DCAT-US v3.0 Catalog class. A Catalog is the
   top-level container for an agency's data inventory.
@@ -21,7 +21,7 @@ publish: true
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/Catalog.json -->
 <!-- GENERATED DOCS: https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md -->
 
-[← DCAT-US v3.0 overview]({{ site.baseurl }}/resources/dcat-us-3/)
+[← DCAT-US v3.0 overview](https://resources.data.gov/standards/catalog/dcat-us-3/)
 
 ### Catalog fields
 
@@ -38,27 +38,27 @@ The Catalog class is the top-level container for an agency's data inventory. You
 {: .field-table}
 | Field | Required | Type | Description |
 |-------|----------|------|-------------|
-| `dataset` | Required | array of Dataset objects | The list of datasets in this catalog. See [Dataset fields]({{ site.baseurl }}/resources/dcat-us-3/dataset/). |
+| `dataset` | Required | array of Dataset objects | The list of datasets in this catalog. See [Dataset fields](https://resources.data.gov/standards/catalog/dcat-us-3-dataset/). |
 | `@id` | Optional | string (IRI) | A unique identifier for the Catalog. Recommended: use the URL of the `data.json` file itself. Example: `https://www.agency.gov/data.json`. |
 | `@type` | Optional | string | Should be `dcat:Catalog`. |
 | `@context` | Optional | string (URL) or object | The JSON-LD context URL or object that defines the schema. |
-| `conformsTo` | Optional | string (URI) | The URI identifying the version of the DCAT-US schema the catalog conforms to. For v3.0, use `https://resources.data.gov/dcat-us/3.0.0`. |
+| `conformsTo` | Optional | string (URI) | The URI identifying the version of the DCAT-US schema the catalog conforms to. For v3.0, use `https://resources.data.gov/standards/catalog/dcat-us-3/`. |
 | `describedBy` | Optional | string (URL) | URL to the JSON Schema file that defines the schema. Use the canonical schema at `https://github.com/GSA/dcat-us/blob/main/jsonschema/Catalog.json` or a URL to your own extended schema. |
 | `title` | Optional | string | A human-readable title for the catalog. |
 | `description` | Optional | string | A human-readable description of the catalog and its contents. |
 | `issued` | Optional | string (ISO 8601) | Date the catalog was formally issued. |
 | `modified` | Optional | string (ISO 8601) | Most recent date the catalog was modified. |
 | `language` | Optional | array of strings | Language(s) of the catalog. Use RFC 5646 tags (e.g., `en-US`). |
-| `license` | Optional | string (URL) | License for the catalog as a whole. See [Open Licenses]({{ site.baseurl }}/resources/open-licenses/). |
+| `license` | Optional | string (URL) | License for the catalog as a whole.  |
 | `rights` | Optional | string | Rights information for the catalog. |
-| `spatial` | Optional | object | Spatial coverage of the catalog. References the [Location class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#location). |
-| `contactPoint` | Optional | array | Contact points for the catalog. References the [Kind class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#kind). |
+| `spatial` | Optional | object | Spatial coverage of the catalog. References the [Location class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
+| `contactPoint` | Optional | array | Contact points for the catalog. References the [Kind class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 | `keyword` | Optional | array of strings | Keywords or tags describing the catalog. |
-| `publisher` | Optional | object | The publishing entity for this catalog. References the [Agent class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#agent). |
+| `publisher` | Optional | object | The publishing entity for this catalog. References the [Agent class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 | `catalog` | Optional | array | Related catalogs linked from this one — for example, sub-agency catalogs within a department-level catalog. |
-| `service` | Optional | array of DataService objects | DataService resources accessible through this catalog. New in v3.0. See [DataService fields]({{ site.baseurl }}/resources/dcat-us-3/data-service/). |
-| `record` | Optional | array of CatalogRecord objects | Metadata about individual catalog entries. References the [CatalogRecord class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#catalogrecord). |
-| `themeTaxonomy` | Optional | array | A knowledge organization system used to classify the catalog's datasets. References the [ConceptScheme class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#conceptscheme). |
+| `service` | Optional | array of DataService objects | DataService resources accessible through this catalog. New in v3.0. See [DataService fields](https://resources.data.gov/standards/catalog/dcat-us-3-data-service/). |
+| `record` | Optional | array of CatalogRecord objects | Metadata about individual catalog entries. References the [CatalogRecord class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
+| `themeTaxonomy` | Optional | array | A knowledge organization system used to classify the catalog's datasets. References the [ConceptScheme class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 
 ---
 
