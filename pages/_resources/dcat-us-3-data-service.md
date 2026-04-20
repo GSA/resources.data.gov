@@ -173,8 +173,7 @@ details: >+
 
   ### Example
 
-  ```
-  {
+    <pre><code>{
     "@type": "DataService",
     "title": "Agency Open Data REST API",
     "description": "A REST API providing queryable access to agency datasets in JSON and CSV formats.",
@@ -192,7 +191,7 @@ details: >+
       "name": "Example Federal Agency"
     }
   }
-  ```
+  </code></pre>
 
   ---
 
