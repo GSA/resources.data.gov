@@ -420,14 +420,13 @@ details: >+
     </tbody>
   </table>
 
-  ---
-
-  ### Example
-
-  A minimal Dataset record meeting the v3.0 required fields:
-
-  ```
-  {
+    ---
+  
+    ### Example
+  
+    A minimal Dataset record meeting the v3.0 required fields:
+  
+    <pre><code>{
     "@type": "Dataset",
     "title": "Agency Travel Data FY2024",
     "description": "Records of official travel expenditures by agency employees during fiscal year 2024, including destination, purpose, and cost.",
@@ -445,9 +444,9 @@ details: >+
       "hasEmail": "mailto:jane.smith@agency.gov"
     }
   }
-  ```
-
-  ---
+  </code></pre>
+  
+    ---
 
   Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Dataset.json">jsonschema/definitions/Dataset.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Dataset.md">jsonschema/docs/Dataset.md</a>
 
