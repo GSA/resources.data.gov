@@ -159,4 +159,4 @@ Validate your metadata against the v3.0 schema:
 
 ### Still using DCAT-US v1.1?
 
-The [DCAT-US v1.1 reference]([{{ site.baseurl }}/resources/dcat-us/](https://resources.data.gov/standards/catalog/dcat-us/)) remains available.
+The [DCAT-US v1.1 reference](https://resources.data.gov/standards/catalog/dcat-us/) remains available.
