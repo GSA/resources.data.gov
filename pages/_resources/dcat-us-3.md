@@ -64,6 +64,7 @@ details: >+
   **Two new classes** can appear alongside Dataset in the Catalog:
   
   - **DataService:** describes an API or other programmatic interface that provides access to data. In v1.1, APIs were documented only as Distributions inside a Dataset. In v3.0, a DataService can be listed at the Catalog level as its own resource, which is useful for services that serve many datasets or are not tied to a single one.
+
   - **DatasetSeries:** groups related datasets published over time (annual releases, recurring surveys, versioned reference data) under a single series record. Individual Dataset records point back to the series using the `inSeries` field.
   
   **Supporting classes** provide structured definitions for information that was unstructured in v1.1, such as geographic location, temporal coverage, contact information, attribution, and quality measurements. These classes are referenced from Dataset, Distribution, and the new classes above. Most agencies will encounter them indirectly, through a field that points to one of these structures.
@@ -103,7 +104,9 @@ details: >+
   
   Add these values when data exists
   - [Catalog fields](https://resources.data.gov/standards/catalog/dcat-us-3-catalog/) — the top-level container; your `data.json` is a Catalog
+    
   - [Dataset fields](https://resources.data.gov/standards/catalog/dcat-us-3-dataset/) — the primary inventory unit; one record per dataset
+    
   - [Distribution fields](https://resources.data.gov/standards/catalog/dcat-us-3-distribution/) — a specific file or access point for a dataset
   
   
@@ -113,6 +116,7 @@ details: >+
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
   
   - [DataService fields](https://resources.data.gov/standards/catalog/dcat-us-3-data-service/) — APIs and query endpoints
+  
   - [DatasetSeries fields](https://resources.data.gov/standards/catalog/dcat-us-3-data-series/) — recurring or versioned dataset releases
   
   
@@ -123,15 +127,52 @@ details: >+
   
   Supporting classes are referenced from the core classes above. The [supporting classes reference](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/) covers all of them in one place, grouped by function.
   
-  | Group | Classes | Referenced from |
-  |-------|---------|-----------------|
-  | Agents | Agent, Organization, Kind, Address | `publisher`, `contactPoint`, `creator` on Dataset and DataService |
-  | Location and time | Location, PeriodOfTime | `spatial`, `temporal` on Dataset, DataService, DatasetSeries |
-  | Controlled vocabularies | Concept, ConceptScheme | `status`, `theme`, `representationTechnique` and others |
-  | Quality and provenance | QualityMeasurement, Metric, Activity | `hasQualityMeasurement`, `wasGeneratedBy` on Dataset |
-  | Identifiers and integrity | Identifier, Checksum, Standard, Document | `otherIdentifier`, `checksum`, `conformsTo`, `page` |
-  | Relationships | Attribution, Relationship, CatalogRecord | `qualifiedAttribution`, `qualifiedRelation`, `record` |
-  | Restrictions | AccessRestriction, CUIRestriction, UseRestriction | `accessRights` and related fields |
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Group</th>
+        <th>Classes</th>
+        <th>Referenced from</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Agents</td>
+        <td>Agent, Organization, Kind, Address</td>
+        <td><code>publisher</code>, <code>contactPoint</code>, <code>creator</code> on Dataset and DataService</td>
+      </tr>
+      <tr>
+        <td>Location and time</td>
+        <td>Location, PeriodOfTime</td>
+        <td><code>spatial</code>, <code>temporal</code> on Dataset, DataService, DatasetSeries</td>
+      </tr>
+      <tr>
+        <td>Controlled vocabularies</td>
+        <td>Concept, ConceptScheme</td>
+        <td><code>status</code>, <code>theme</code>, <code>representationTechnique</code> and others</td>
+      </tr>
+      <tr>
+        <td>Quality and provenance</td>
+        <td>QualityMeasurement, Metric, Activity</td>
+        <td><code>hasQualityMeasurement</code>, <code>wasGeneratedBy</code> on Dataset</td>
+      </tr>
+      <tr>
+        <td>Identifiers and integrity</td>
+        <td>Identifier, Checksum, Standard, Document</td>
+        <td><code>otherIdentifier</code>, <code>checksum</code>, <code>conformsTo</code>, <code>page</code></td>
+      </tr>
+      <tr>
+        <td>Relationships</td>
+        <td>Attribution, Relationship, CatalogRecord</td>
+        <td><code>qualifiedAttribution</code>, <code>qualifiedRelation</code>, <code>record</code></td>
+      </tr>
+      <tr>
+        <td>Restrictions</td>
+        <td>AccessRestriction, CUIRestriction, UseRestriction</td>
+        <td><code>accessRights</code> and related fields</td>
+      </tr>
+    </tbody>
+  </table>
   
   ---
   
@@ -149,9 +190,11 @@ details: >+
   
   Validate your metadata against the v3.0 schema:
   
-  - JSON Schema file: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json)
-  - Validation script: [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py)
-  - Instructions: [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema)
+  JSON Schema file: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json)
+  
+  Validation script: [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py)
+  
+  Instructions: [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema)
   
   ---
   
