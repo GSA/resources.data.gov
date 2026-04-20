@@ -171,29 +171,31 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  #### Example
 
   
+  ```
+  #### Example
+  
   A minimal Catalog with one Dataset:
+  
   ```json
   {
-    "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
-    "@id": "https://www.agency.gov/data.json",
-    "@type": "dcat:Catalog",
+    "context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+    "id": "https://www.agency.gov/data.json",
+    "type": "dcat:Catalog",
     "conformsTo": "https://resources.data.gov/dcat-us/3.0.0",
     "describedBy": "https://github.com/GSA/dcat-us/blob/main/jsonschema/Catalog.json",
     "dataset": [
       {
-        "@type": "Dataset",
+        "type": "Dataset",
         "title": "Agency Travel Data FY2024",
         "description": "Records of official travel expenditures during fiscal year 2024.",
         "publisher": {
-          "@type": "org:Organization",
+          "type": "org:Organization",
           "name": "Example Federal Agency"
         },
         "contactPoint": {
-          "@type": "vcard:Contact",
+          "type": "vcard:Contact",
           "fn": "Jane Smith",
           "hasEmail": "mailto:jane.smith@agency.gov"
         }
