@@ -73,19 +73,25 @@ details: >+
 
   - **DatasetSeries:** groups related datasets published over time (annual releases, recurring surveys, versioned reference data) under a single series record. Individual Dataset records point back to the series using the `inSeries` field.
   
+  
   **Supporting classes** provide structured definitions for information that was unstructured in v1.1, such as geographic location, temporal coverage, contact information, attribution, and quality measurements. These classes are referenced from Dataset, Distribution, and the new classes above. Most agencies will encounter them indirectly, through a field that points to one of these structures.
   
+  
   **JSON Schema validation.** DCAT-US v3.0 is a valid JSON Schema (2020-12). Agencies can programmatically validate their metadata files against the schema. See [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema) for tooling.
+  
   
   **Requirement levels.** Fields are now explicitly labeled Mandatory, Recommended, or Optional throughout the schema and in this reference.
   
   ---
+
   
   ### Class hierarchy
   
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/ -->
   
   The diagram below shows how the classes relate to each other. The three core classes of Catalog, Dataset, and Distribution form the primary spine, exactly as in v1.1. DataService and DatasetSeries extend what a Catalog can describe. Supporting classes are referenced from the core classes as needed.
+
+  
   
   {% comment %}
   Static SVG diagram — regenerate if class structure changes.
@@ -109,6 +115,7 @@ details: >+
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
   
   Add these values when data exists
+  
   - [Catalog fields](https://resources.data.gov/standards/catalog/dcat-us-3-catalog/) — the top-level container; your `data.json` is a Catalog
     
   - [Dataset fields](https://resources.data.gov/standards/catalog/dcat-us-3-dataset/) — the primary inventory unit; one record per dataset
