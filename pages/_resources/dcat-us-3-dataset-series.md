@@ -22,7 +22,7 @@ publish: true
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
 <!-- GENERATED DOCS: https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DatasetSeries.md -->
 
-[← DCAT-US v3.0 overview]({{ site.baseurl }}/resources/dcat-us-3/)
+[← DCAT-US v3.0 overview](https://resources.data.gov/standards/catalog/dcat-us-3)
 
 ### DatasetSeries fields
 
