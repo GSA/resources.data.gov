@@ -199,22 +199,20 @@ details: >+
 
   In each Dataset record that belongs to the series, use the <code>inSeries</code> field to reference the series:
 
-  ```
-  {
+    <pre><code>{
     "@type": "Dataset",
     "title": "Federal IT Dashboard Annual Data - FY2024",
     "inSeries": {
       "@id": "https://www.agency.gov/data/it-dashboard-series"
     }
   }
-  ```
+  </code></pre>
 
   ---
 
   ### Example series record
 
-  ```
-  {
+    <pre><code>{
     "@type": "DatasetSeries",
     "@id": "https://www.agency.gov/data/it-dashboard-series",
     "title": "Federal IT Dashboard Annual Data",
@@ -237,7 +235,7 @@ details: >+
     ],
     "issued": "2010-01-01"
   }
-  ```
+  </code></pre>
 
   ---
 
