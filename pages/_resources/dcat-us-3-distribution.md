@@ -13,111 +13,234 @@ tags:
   - DCAT-US
   - metadata standard
   - data inventory
+guidance_tags: ""
 format: ""
-details: ""
+details: >+
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
+
+  ---
+
+  See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
+
+  ---
+
+  ### Overview
+
+  A Distribution represents a specific way of accessing or obtaining a dataset — a downloadable CSV, a ZIP package, a REST API endpoint, or any other form of access. A single dataset can have multiple distributions.
+
+  <strong>Required fields in v3.0:</strong> None. However, each distribution should contain at least one of <code>accessURL</code> or <code>downloadURL</code>.
+
+  ---
+
+  ### Access fields
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>accessURL</code></td>
+        <td>Conditional</td>
+        <td>string (URL)</td>
+        <td>URL providing indirect access to the dataset, such as an API or graphical interface. Use this when the data is not available as a direct download. Should not be a direct download URL.</td>
+      </tr>
+      <tr>
+        <td><code>downloadURL</code></td>
+        <td>Conditional</td>
+        <td>string (URL)</td>
+        <td>URL providing direct access to a downloadable file. Always accompany with <code>mediaType</code>.</td>
+      </tr>
+      <tr>
+        <td><code>mediaType</code></td>
+        <td>Conditional</td>
+        <td>string (IANA Media Type)</td>
+        <td>The MIME type of the file at <code>downloadURL</code>. Required when <code>downloadURL</code> is provided. Example: <code>text/csv</code>, <code>application/zip</code>.</td>
+      </tr>
+      <tr>
+        <td><code>format</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>Human-readable description of the file format. Use <code>API</code> for web APIs. Example: <code>CSV</code>, <code>XML</code>, <code>Zipped CSV</code>.</td>
+      </tr>
+      <tr>
+        <td><code>byteSize</code></td>
+        <td>Optional</td>
+        <td>number</td>
+        <td>The size of the distribution in bytes.</td>
+      </tr>
+      <tr>
+        <td><code>checksum</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>A checksum for verifying data integrity. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Checksum class</a>. New in v3.0.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ---
+
+  ### Descriptive fields
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>title</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>A human-readable title for the distribution. Example: <code>FY2024 Travel Data (CSV)</code>.</td>
+      </tr>
+      <tr>
+        <td><code>description</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>A human-readable description of this distribution.</td>
+      </tr>
+      <tr>
+        <td><code>conformsTo</code></td>
+        <td>Optional</td>
+        <td>string (URI)</td>
+        <td>A standard or specification this distribution conforms to.</td>
+      </tr>
+      <tr>
+        <td><code>describedBy</code></td>
+        <td>Optional</td>
+        <td>string (URL)</td>
+        <td>URL to the data dictionary or schema for this distribution.</td>
+      </tr>
+      <tr>
+        <td><code>describedByType</code></td>
+        <td>Optional</td>
+        <td>string (IANA Media Type)</td>
+        <td>The MIME type of the file at <code>describedBy</code>. Example: <code>application/schema+json</code>.</td>
+      </tr>
+      <tr>
+        <td><code>license</code></td>
+        <td>Optional</td>
+        <td>string (URL)</td>
+        <td>The license or public domain dedication for this distribution. See <a href="https://resources.data.gov/open-licenses/">Open Licenses</a>.</td>
+      </tr>
+      <tr>
+        <td><code>rights</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>Rights information for this specific distribution.</td>
+      </tr>
+      <tr>
+        <td><code>language</code></td>
+        <td>Optional</td>
+        <td>array of strings</td>
+        <td>Language(s) of this distribution. Use RFC 5646 tags (e.g., <code>en-US</code>).</td>
+      </tr>
+      <tr>
+        <td><code>page</code></td>
+        <td>Optional</td>
+        <td>array</td>
+        <td>Documentation pages for this distribution. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Document class</a>.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ---
+
+  ### New in v3.0
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>representationTechnique</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Concept class</a>.</td>
+      </tr>
+      <tr>
+        <td><code>status</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>The lifecycle status of this distribution. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Concept class</a>.</td>
+      </tr>
+      <tr>
+        <td><code>characterEncoding</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>The character encoding of the distribution. Example: <code>UTF-8</code>.</td>
+      </tr>
+      <tr>
+        <td><code>spatialResolutionInMeters</code></td>
+        <td>Optional</td>
+        <td>number</td>
+        <td>Minimum spatial separation resolvable in this distribution, in meters.</td>
+      </tr>
+      <tr>
+        <td><code>temporalResolution</code></td>
+        <td>Optional</td>
+        <td>string (ISO 8601 duration)</td>
+        <td>Minimum time period resolvable in this distribution.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ---
+
+  ### Example
+
+  A dataset with two distributions — a CSV download and a REST API:
+
+  ```
+  "distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "title": "FY2024 Travel Data (CSV)",
+      "description": "Full travel records as a comma-separated values file.",
+      "downloadURL": "https://www.agency.gov/data/travel-fy2024.csv",
+      "mediaType": "text/csv",
+      "format": "CSV"
+    },
+    {
+      "@type": "dcat:Distribution",
+      "title": "Travel Data REST API",
+      "description": "A fully queryable REST API returning JSON or XML.",
+      "accessURL": "https://api.agency.gov/travel/",
+      "format": "API"
+    }
+  ]
+  ```
+
+  ---
+
+  Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json">jsonschema/definitions/Distribution.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Distribution.md">jsonschema/docs/Distribution.md</a>
+
+examples: ""
+link: ""
+layout: resource
+toc: true
 publish: true
 ---
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
-<!-- GENERATED DOCS: https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Distribution.md -->
-
-[← DCAT-US v3.0 overview](https://resources.data.gov/standards/catalog/dcat-us-3/)
-
-### Distribution fields
-
-A Distribution represents a specific way of accessing or obtaining a dataset — a downloadable CSV, a ZIP package, a REST API endpoint, or any other form of access. A single dataset can have multiple distributions.
-
-**Required fields in v3.0:** None. However, each distribution should contain at least one of `accessURL` or `downloadURL`.
-
----
-
-#### Access fields
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `accessURL` | Conditional | string (URL) | URL providing indirect access to the dataset, such as an API, a graphical interface, or a web form. Use this when the data is not available as a direct download. Should not be a direct download URL. |
-| `downloadURL` | Conditional | string (URL) | URL providing direct access to a downloadable file. Always accompany with `mediaType`. |
-| `mediaType` | Conditional | string (IANA Media Type) | The MIME type of the file at `downloadURL`. Required when `downloadURL` is provided. Example: `text/csv`, `application/zip`. |
-| `format` | Optional | string | Human-readable description of the file format. Use `API` for web APIs. Example: `CSV`, `XML`, `Zipped CSV`. |
-| `byteSize` | Optional | number | The size of the distribution in bytes. |
-| `checksum` | Optional | object | A checksum for verifying data integrity. References the [Checksum class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). New in v3.0. |
-
----
-
-#### Descriptive fields
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `title` | Optional | string | A human-readable title for the distribution. Example: `FY2024 Travel Data (CSV)`. |
-| `description` | Optional | string | A human-readable description of this distribution. |
-| `conformsTo` | Optional | string (URI) | A standard or specification this distribution conforms to. |
-| `describedBy` | Optional | string (URL) | URL to the data dictionary or schema for this distribution. |
-| `describedByType` | Optional | string (IANA Media Type) | The MIME type of the file at `describedBy`. Example: `application/schema+json`. |
-| `license` | Optional | string (URL) | The license or public domain dedication for this distribution. |
-| `rights` | Optional | string | Rights information for this specific distribution. |
-| `language` | Optional | array of strings | Language(s) of this distribution. Use RFC 5646 tags (e.g., `en-US`). |
-| `page` | Optional | array | Documentation pages for this distribution. References the [Document class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-
----
-
-#### New in v3.0
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `representationTechnique` | Optional | object | The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the [Concept class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `status` | Optional | object | The lifecycle status of this distribution. References the [Concept class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `characterEncoding` | Optional | string | The character encoding of the distribution. Example: `UTF-8`. |
-| `spatialResolutionInMeters` | Optional | number | Minimum spatial separation resolvable in this distribution, in meters. |
-| `temporalResolution` | Optional | string (ISO 8601 duration) | Minimum time period resolvable in this distribution. |
-| `hasPolicy` | Optional | object | A policy under which the distribution is made available. |
-
----
-
-#### Identifiers
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `@id` | Optional | string (IRI) | A globally unique identifier for this Distribution as a JSON-LD node. |
-| `@type` | Optional | string | Should be `Distribution`. |
-
----
-
-#### Example
-
-A dataset with two distributions — a CSV download and a REST API:
-
-```json
-"distribution": [
-  {
-    "@type": "dcat:Distribution",
-    "title": "FY2024 Travel Data (CSV)",
-    "description": "Full travel records as a comma-separated values file.",
-    "downloadURL": "https://www.agency.gov/data/travel-fy2024.csv",
-    "mediaType": "text/csv",
-    "format": "CSV"
-  },
-  {
-    "@type": "dcat:Distribution",
-    "title": "Travel Data REST API",
-    "description": "A fully queryable REST API returning JSON or XML.",
-    "accessURL": "https://api.agency.gov/travel/",
-    "format": "API"
-  }
-]
-```
-
----
-
-*Source: [jsonschema/definitions/Distribution.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json) · Generated reference: [jsonschema/docs/Distribution.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Distribution.md)*
