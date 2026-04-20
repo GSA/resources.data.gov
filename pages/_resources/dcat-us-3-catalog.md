@@ -181,8 +181,7 @@ details: >+
 
   A minimal Catalog with one Dataset:
 
-  ```
-  {
+      <pre><code>{
     "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
     "@id": "https://www.agency.gov/data.json",
     "@type": "dcat:Catalog",
@@ -205,7 +204,7 @@ details: >+
       }
     ]
   }
-  ```
+  </code></pre>
 
   ---
 
