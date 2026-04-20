@@ -15,109 +15,192 @@ tags:
   - metadata standard
   - data inventory
   - API
+guidance_tags: ""
 format: ""
-details: ""
+details: >+
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
+
+  ---
+
+  See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
+
+  ---
+
+  ### Overview
+
+  <strong>New in v3.0.</strong> DataService describes a collection of operations accessible through an interface — such as a REST API, a SPARQL endpoint, or an OGC web service — that provides access to one or more datasets.
+
+  In v1.1, APIs were documented as Distributions within a Dataset record. In v3.0, a DataService can be documented at the Catalog level as a first-class resource, separate from any individual dataset's distribution list. This is particularly useful for services that provide access to many datasets, or for services that are not tied to a single dataset.
+
+  <strong>Required fields in v3.0:</strong> <code>endpointURL</code>, <code>contactPoint</code>
+
+  ---
+
+  ### Core fields
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>endpointURL</code></td>
+        <td>Mandatory</td>
+        <td>array of strings (IRI)</td>
+        <td>The root location or primary endpoint URL(s) of the service. Must be web-resolvable IRIs.</td>
+      </tr>
+      <tr>
+        <td><code>contactPoint</code></td>
+        <td>Mandatory</td>
+        <td>array</td>
+        <td>Contact information for the service. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
+      </tr>
+      <tr>
+        <td><code>title</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>A human-readable name for the service.</td>
+      </tr>
+      <tr>
+        <td><code>description</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>A human-readable description of the service and what data it provides access to.</td>
+      </tr>
+      <tr>
+        <td><code>endpointDescription</code></td>
+        <td>Optional</td>
+        <td>array of strings</td>
+        <td>A description of the service endpoint, such as a URL to an OpenAPI specification or WSDL document.</td>
+      </tr>
+      <tr>
+        <td><code>keyword</code></td>
+        <td>Optional</td>
+        <td>array of strings</td>
+        <td>Tags describing the service.</td>
+      </tr>
+      <tr>
+        <td><code>landingPage</code></td>
+        <td>Optional</td>
+        <td>string (URL)</td>
+        <td>A web page that provides information about the service.</td>
+      </tr>
+      <tr>
+        <td><code>license</code></td>
+        <td>Optional</td>
+        <td>string (URL)</td>
+        <td>The license under which the service is made available.</td>
+      </tr>
+      <tr>
+        <td><code>rights</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>Rights information for the service.</td>
+      </tr>
+      <tr>
+        <td><code>accessRights</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>Information about who can access the service and under what conditions.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ---
+
+  ### Coverage and scope
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>servesDataset</code></td>
+        <td>Optional</td>
+        <td>array</td>
+        <td>The datasets accessible through this service. Reference each by identifier or Dataset object.</td>
+      </tr>
+      <tr>
+        <td><code>spatial</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>Geographic coverage of the data accessible through the service. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Location class</a>.</td>
+      </tr>
+      <tr>
+        <td><code>temporal</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>Temporal coverage of the data accessible through the service. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>.</td>
+      </tr>
+      <tr>
+        <td><code>theme</code></td>
+        <td>Optional</td>
+        <td>array</td>
+        <td>Thematic category of the service.</td>
+      </tr>
+      <tr>
+        <td><code>language</code></td>
+        <td>Optional</td>
+        <td>array of strings</td>
+        <td>Language(s) supported by the service. Use RFC 5646 tags.</td>
+      </tr>
+      <tr>
+        <td><code>publisher</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>The publishing entity for the service. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ---
+
+  ### Example
+
+  ```
+  {
+    "@type": "DataService",
+    "title": "Agency Open Data REST API",
+    "description": "A REST API providing queryable access to agency datasets in JSON and CSV formats.",
+    "endpointURL": ["https://api.agency.gov/v1/"],
+    "endpointDescription": ["https://api.agency.gov/v1/openapi.json"],
+    "contactPoint": [
+      {
+        "@type": "vcard:Contact",
+        "fn": "API Support Team",
+        "hasEmail": "mailto:api-support@agency.gov"
+      }
+    ],
+    "publisher": {
+      "@type": "org:Organization",
+      "name": "Example Federal Agency"
+    }
+  }
+  ```
+
+  ---
+
+  Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json">jsonschema/definitions/DataService.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DataService.md">jsonschema/docs/DataService.md</a>
+
+examples: ""
+link: ""
+layout: resource
+toc: true
 publish: true
 ---
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
-<!-- GENERATED DOCS: https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DataService.md -->
-
-[← DCAT-US v3.0 overview](https://resources.data.gov/standards/catalog/dcat-us-3/)
-
-### DataService fields
-
-**New in v3.0.** DataService describes a collection of operations accessible through an interface — such as a REST API, a SPARQL endpoint, or an OGC web service — that provides access to one or more datasets.
-
-In v1.1, APIs were documented as Distributions within a Dataset record. In v3.0, a DataService can be documented at the Catalog level as a first-class resource, separate from any individual dataset's distribution list. This is particularly useful for services that provide access to many datasets, or for services that are not tied to a single dataset.
-
-**Required fields in v3.0:** `endpointURL`, `contactPoint`
-
----
-
-#### Core fields
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `endpointURL` | Required | array of strings (IRI) | The root location or primary endpoint URL(s) of the service. Must be web-resolvable IRIs. |
-| `contactPoint` | Required | array | Contact information for the service. References the [Kind class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `title` | Optional | string | A human-readable name for the service. |
-| `description` | Optional | string | A human-readable description of the service and what data it provides access to. |
-| `endpointDescription` | Optional | array of strings | A description of the service endpoint, such as a URL to an OpenAPI specification or WSDL document. |
-| `keyword` | Optional | array of strings | Tags describing the service. |
-| `landingPage` | Optional | string (URL) | A web page that provides information about the service. |
-| `license` | Optional | string (URL) | The license under which the service is made available. |
-| `rights` | Optional | string | Rights information for the service. |
-| `accessRights` | Optional | string | Information about who can access the service and under what conditions. |
-
----
-
-#### Coverage and scope
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `servesDataset` | Optional | array | The datasets accessible through this service. Reference each by identifier or Dataset object. |
-| `spatial` | Optional | object | Geographic coverage of the data accessible through the service. References the [Location class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `temporal` | Optional | object | Temporal coverage of the data accessible through the service. References the [PeriodOfTime class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `theme` | Optional | array | Thematic category of the service. |
-| `language` | Optional | array of strings | Language(s) supported by the service. Use RFC 5646 tags. |
-
----
-
-#### Attribution
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `publisher` | Optional | object | The publishing entity for the service. References the [Agent class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `creator` | Optional | array | The entity or entities that created the service. |
-
----
-
-#### Identifiers
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `@id` | Optional | string (IRI) | A globally unique identifier for this DataService. |
-| `@type` | Optional | string | Should be `DataService`. |
-| `identifier` | Optional | string | A unique identifier for the service within the agency catalog. |
-
----
-
-#### Example
-
-```json
-{
-  "@type": "DataService",
-  "title": "Agency Open Data REST API",
-  "description": "A REST API providing queryable access to agency datasets in JSON and CSV formats.",
-  "endpointURL": ["https://api.agency.gov/v1/"],
-  "endpointDescription": ["https://api.agency.gov/v1/openapi.json"],
-  "contactPoint": [
-    {
-      "@type": "vcard:Contact",
-      "fn": "API Support Team",
-      "hasEmail": "mailto:api-support@agency.gov"
-    }
-  ],
-  "publisher": {
-    "@type": "org:Organization",
-    "name": "Example Federal Agency"
-  }
-}
-```
-
----
-
-*Source: [jsonschema/definitions/DataService.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json) · Generated reference: [jsonschema/docs/DataService.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DataService.md)*
