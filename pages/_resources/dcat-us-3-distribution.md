@@ -1,6 +1,6 @@
 ---
 resource_name: DCAT-US Schema v3.0 — Distribution fields
-slug: dcat-us-3/distribution
+slug: dcat-us-3-distribution
 description: >-
   Field-level reference for the DCAT-US v3.0 Distribution class. A Distribution
   describes a specific file or access point for a dataset.
@@ -43,7 +43,7 @@ A Distribution represents a specific way of accessing or obtaining a dataset —
 | `mediaType` | Conditional | string (IANA Media Type) | The MIME type of the file at `downloadURL`. Required when `downloadURL` is provided. Example: `text/csv`, `application/zip`. |
 | `format` | Optional | string | Human-readable description of the file format. Use `API` for web APIs. Example: `CSV`, `XML`, `Zipped CSV`. |
 | `byteSize` | Optional | number | The size of the distribution in bytes. |
-| `checksum` | Optional | object | A checksum for verifying data integrity. References the [Checksum class](https://resources.data.gov/standards/catalog/dcat-us-3/supporting-classes/). New in v3.0. |
+| `checksum` | Optional | object | A checksum for verifying data integrity. References the [Checksum class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). New in v3.0. |
 
 ---
 
@@ -62,7 +62,7 @@ A Distribution represents a specific way of accessing or obtaining a dataset —
 | `license` | Optional | string (URL) | The license or public domain dedication for this distribution. |
 | `rights` | Optional | string | Rights information for this specific distribution. |
 | `language` | Optional | array of strings | Language(s) of this distribution. Use RFC 5646 tags (e.g., `en-US`). |
-| `page` | Optional | array | Documentation pages for this distribution. References the [Document class](https://resources.data.gov/standards/catalog/dcat-us-3/supporting-classes/). |
+| `page` | Optional | array | Documentation pages for this distribution. References the [Document class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 
 ---
 
@@ -73,8 +73,8 @@ A Distribution represents a specific way of accessing or obtaining a dataset —
 {: .field-table}
 | Field | Required | Type | Description |
 |-------|----------|------|-------------|
-| `representationTechnique` | Optional | object | The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the [Concept class](https://resources.data.gov/standards/catalog/dcat-us-3/supporting-classes/). |
-| `status` | Optional | object | The lifecycle status of this distribution. References the [Concept class](https://resources.data.gov/standards/catalog/dcat-us-3/supporting-classes/). |
+| `representationTechnique` | Optional | object | The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the [Concept class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
+| `status` | Optional | object | The lifecycle status of this distribution. References the [Concept class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 | `characterEncoding` | Optional | string | The character encoding of the distribution. Example: `UTF-8`. |
 | `spatialResolutionInMeters` | Optional | number | Minimum spatial separation resolvable in this distribution, in meters. |
 | `temporalResolution` | Optional | string (ISO 8601 duration) | Minimum time period resolvable in this distribution. |
