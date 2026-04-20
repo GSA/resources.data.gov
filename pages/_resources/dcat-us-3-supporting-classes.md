@@ -22,7 +22,7 @@ publish: true
 <!-- SOURCE: https://github.com/GSA/dcat-us/tree/main/jsonschema/definitions -->
 <!-- GENERATED DOCS: https://github.com/GSA/dcat-us/tree/main/jsonschema/docs -->
 
-[← DCAT-US v3.0 overview]({{ site.baseurl }}/resources/dcat-us-3/)
+[← DCAT-US v3.0 overview](https://resources.data.gov/standards/catalog/dcat-us-3/)
 
 ### Supporting classes
 
