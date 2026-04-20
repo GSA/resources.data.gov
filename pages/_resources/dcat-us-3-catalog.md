@@ -16,25 +16,27 @@ guidance_tags: ""
 format: ""
 details: >+
 
-  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/Catalog.json -->
-  <!-- GENERATED DOCS: https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md -->
-  
-  [← DCAT-US v3.0 overview](https://resources.data.gov/standards/catalog/dcat-us-3/)
-  
-  ### Catalog fields
-  
-  The Catalog class is the top-level container for an agency's data inventory. Your agency's `data.json` file is an instance of a DCAT-US Catalog. It holds the collection of Dataset records and, in v3.0, can also reference DataService records.
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json -->
 
-  
-  **Required fields in v3.0:** `dataset`
-  
   ---
-  
-  #### Catalog fields
-  
-  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/Catalog.json -->
-  
-  <table class="usa-table field-table">
+
+  See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
+
+  ---
+
+  ### Overview
+
+  The Catalog class is the top-level container for an agency's data inventory. Your agency's <code>data.json</code> file is an instance of a DCAT-US Catalog. It holds the array of Dataset records and, in v3.0, can also reference DataService records.
+
+  <strong>Required field in v3.0:</strong> <code>dataset</code>. A Catalog must contain at least one Dataset.
+
+  ---
+
+  ### Catalog fields
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json -->
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -46,7 +48,7 @@ details: >+
     <tbody>
       <tr>
         <td><code>dataset</code></td>
-        <td>Required</td>
+        <td>Mandatory</td>
         <td>array of Dataset objects</td>
         <td>The list of datasets in this catalog. See <a href="https://resources.data.gov/standards/catalog/dcat-us-3-dataset/">Dataset fields</a>.</td>
       </tr>
@@ -72,13 +74,13 @@ details: >+
         <td><code>conformsTo</code></td>
         <td>Optional</td>
         <td>string (URI)</td>
-        <td>The URI identifying the version of the DCAT-US schema the catalog conforms to. For v3.0, use <code>https://resources.data.gov/standards/catalog/dcat-us-3/</code>.</td>
+        <td>The URI identifying the version of the DCAT-US schema the catalog conforms to. For v3.0, use <code>https://resources.data.gov/dcat-us/3.0.0</code>.</td>
       </tr>
       <tr>
         <td><code>describedBy</code></td>
         <td>Optional</td>
         <td>string (URL)</td>
-        <td>URL to the JSON Schema file that defines the schema. Use the canonical schema at <code>https://github.com/GSA/dcat-us/blob/main/jsonschema/Catalog.json</code> or a URL to your own extended schema.</td>
+        <td>URL to the JSON Schema file that defines the schema. Use the canonical schema at <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json">jsonschema/definitions/Catalog.json</a> or a URL to your own extended schema.</td>
       </tr>
       <tr>
         <td><code>title</code></td>
@@ -114,7 +116,7 @@ details: >+
         <td><code>license</code></td>
         <td>Optional</td>
         <td>string (URL)</td>
-        <td>License for the catalog as a whole.</td>
+        <td>License for the catalog as a whole. See <a href="https://resources.data.gov/open-licenses/">Open Licenses</a>.</td>
       </tr>
       <tr>
         <td><code>rights</code></td>
@@ -173,31 +175,30 @@ details: >+
     </tbody>
   </table>
 
-  
+  ---
 
+  ### Example
 
-  #### Example
-  
   A minimal Catalog with one Dataset:
-  
-  ```json
+
+  ```
   {
-    "context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
-    "id": "https://www.agency.gov/data.json",
-    "type": "dcat:Catalog",
+    "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+    "@id": "https://www.agency.gov/data.json",
+    "@type": "dcat:Catalog",
     "conformsTo": "https://resources.data.gov/dcat-us/3.0.0",
-    "describedBy": "https://github.com/GSA/dcat-us/blob/main/jsonschema/Catalog.json",
+    "describedBy": "https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json",
     "dataset": [
       {
-        "type": "Dataset",
+        "@type": "Dataset",
         "title": "Agency Travel Data FY2024",
         "description": "Records of official travel expenditures during fiscal year 2024.",
         "publisher": {
-          "type": "org:Organization",
+          "@type": "org:Organization",
           "name": "Example Federal Agency"
         },
         "contactPoint": {
-          "type": "vcard:Contact",
+          "@type": "vcard:Contact",
           "fn": "Jane Smith",
           "hasEmail": "mailto:jane.smith@agency.gov"
         }
@@ -205,15 +206,10 @@ details: >+
     ]
   }
   ```
-  
-  
-  Source: [jsonschema/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/Catalog.json) · Generated reference: [jsonschema/docs/Catalog.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md)*
-  
-  ### Still using DCAT-US v1.1?
-    
-  The [DCAT-US v1.1 reference](https://resources.data.gov/standards/catalog/dcat-us/) remains available.
 
- 
+  ---
+
+  Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json">jsonschema/definitions/Catalog.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md">jsonschema/docs/Catalog.md</a>
 
 examples: ""
 link: ""
