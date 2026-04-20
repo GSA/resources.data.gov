@@ -46,14 +46,20 @@ details: >+
   DCAT-US v3.0 continues the same three-tier structure that agencies have used since v1.1: a **Catalog** holds **Datasets**, and each Dataset describes its **Distributions**.
   
   ```
+
   Catalog
+
   └── Dataset (one or more)
+
       └── Distribution (one or more)
+
   ```
   
   Your `data.json` file is a Catalog. Each entry in its `dataset` array is a Dataset. Each Dataset's `distribution` array contains one or more Distribution records describing how to access or download the data.
   
+  
   This is the same flow as v1.1. Agencies already implementing v1.1 can continue using this structure; v3.0 adds optional fields and new classes on top of it, but does not change the core pattern.
+  
   
   ---
   
