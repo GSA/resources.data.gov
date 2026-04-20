@@ -14,146 +14,238 @@ tags:
   - DCAT-US
   - metadata standard
   - data inventory
+guidance_tags: ""
 format: ""
-details: ""
+details: >+
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
+
+  ---
+
+  See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
+
+  ---
+
+  ### Overview
+
+  <strong>New in v3.0.</strong> DatasetSeries groups related datasets that are published in an ordered sequence — such as annual budget data, recurring survey releases, or versioned reference datasets — under a single series record.
+
+  The series record describes the collection as a whole. Each edition within the series is its own Dataset record that points back to the series using the Dataset's <code>inSeries</code> field.
+
+  <strong>Required fields in v3.0:</strong> None. A useful series record should at minimum include <code>title</code>, <code>description</code>, and <code>publisher</code>.
+
+  ---
+
+  ### Core fields
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>title</code></td>
+        <td>Recommended</td>
+        <td>string</td>
+        <td>A human-readable name for the series. Example: <code>Federal IT Dashboard Annual Data</code>.</td>
+      </tr>
+      <tr>
+        <td><code>description</code></td>
+        <td>Recommended</td>
+        <td>string</td>
+        <td>A human-readable description of the series — what it covers, how often it is published, and what each edition contains.</td>
+      </tr>
+      <tr>
+        <td><code>publisher</code></td>
+        <td>Recommended</td>
+        <td>object</td>
+        <td>The publishing entity for the series. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+      </tr>
+      <tr>
+        <td><code>contactPoint</code></td>
+        <td>Optional</td>
+        <td>array</td>
+        <td>Contact information for the series. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
+      </tr>
+      <tr>
+        <td><code>identifier</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>A unique identifier for this series. A persistent URI is recommended.</td>
+      </tr>
+      <tr>
+        <td><code>keyword</code></td>
+        <td>Optional</td>
+        <td>array of strings</td>
+        <td>Tags describing the series.</td>
+      </tr>
+      <tr>
+        <td><code>accrualPeriodicity</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>The frequency at which new editions of the series are published. Use ISO 8601 repeating duration format (e.g., <code>R/P1Y</code> for annual) or an ISO 19115 Maintenance Frequency code.</td>
+      </tr>
+      <tr>
+        <td><code>issued</code></td>
+        <td>Optional</td>
+        <td>string (ISO 8601)</td>
+        <td>Date the series was first issued.</td>
+      </tr>
+      <tr>
+        <td><code>modified</code></td>
+        <td>Optional</td>
+        <td>string (ISO 8601)</td>
+        <td>Most recent date any aspect of the series was changed.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ---
+
+  ### Series structure
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>seriesMember</code></td>
+        <td>Optional</td>
+        <td>array</td>
+        <td>The Dataset records that are members of this series.</td>
+      </tr>
+      <tr>
+        <td><code>first</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>The first Dataset in the series.</td>
+      </tr>
+      <tr>
+        <td><code>last</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>The most recent or final Dataset in the series.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ---
+
+  ### Coverage and rights
+
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>spatial</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>Geographic coverage of the series. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Location class</a>.</td>
+      </tr>
+      <tr>
+        <td><code>temporal</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>Temporal coverage of the series as a whole — typically from the first edition to the most recent. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>.</td>
+      </tr>
+      <tr>
+        <td><code>license</code></td>
+        <td>Optional</td>
+        <td>string (URL)</td>
+        <td>License applying to the series as a whole. See <a href="https://resources.data.gov/open-licenses/">Open Licenses</a>.</td>
+      </tr>
+      <tr>
+        <td><code>rights</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>Rights information for the series.</td>
+      </tr>
+      <tr>
+        <td><code>accessRights</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>Access restrictions for the series.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ---
+
+  ### How to link datasets to a series
+
+  In each Dataset record that belongs to the series, use the <code>inSeries</code> field to reference the series:
+
+  ```
+  {
+    "@type": "Dataset",
+    "title": "Federal IT Dashboard Annual Data - FY2024",
+    "inSeries": {
+      "@id": "https://www.agency.gov/data/it-dashboard-series"
+    }
+  }
+  ```
+
+  ---
+
+  ### Example series record
+
+  ```
+  {
+    "@type": "DatasetSeries",
+    "@id": "https://www.agency.gov/data/it-dashboard-series",
+    "title": "Federal IT Dashboard Annual Data",
+    "description": "Annual releases of federal IT investment data from the IT Dashboard, published each fiscal year.",
+    "accrualPeriodicity": "R/P1Y",
+    "publisher": {
+      "@type": "org:Organization",
+      "name": "Office of the Chief Information Officer",
+      "subOrganizationOf": {
+        "@type": "org:Organization",
+        "name": "Example Federal Agency"
+      }
+    },
+    "contactPoint": [
+      {
+        "@type": "vcard:Contact",
+        "fn": "IT Dashboard Team",
+        "hasEmail": "mailto:itdashboard@agency.gov"
+      }
+    ],
+    "issued": "2010-01-01"
+  }
+  ```
+
+  ---
+
+  Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json">jsonschema/definitions/DatasetSeries.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DatasetSeries.md">jsonschema/docs/DatasetSeries.md</a>
+
+examples: ""
+link: ""
+layout: resource
+toc: true
 publish: true
 ---
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
-<!-- GENERATED DOCS: https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DatasetSeries.md -->
-
-[← DCAT-US v3.0 overview](https://resources.data.gov/standards/catalog/dcat-us-3)
-
-### DatasetSeries fields
-
-**New in v3.0.** DatasetSeries groups related datasets that are published in an ordered sequence — such as annual budget data, recurring survey releases, or versioned reference datasets — under a single series record.
-
-The series record describes the collection as a whole. Each edition within the series is its own Dataset record that points back to the series using the Dataset's `inSeries` field.
-
-**Required fields in v3.0:** None. However, a useful series record should at minimum include `title`, `description`, and `publisher`.
-
----
-
-#### Core fields
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `title` | Optional | string | A human-readable name for the series. Example: `Federal IT Dashboard Annual Data`. |
-| `description` | Optional | string | A human-readable description of the series — what it covers, how often it is published, and what each edition contains. |
-| `publisher` | Optional | object | The publishing entity for the series. References the [Agent class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `contactPoint` | Optional | array | Contact information for the series. References the [Kind class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `identifier` | Optional | string | A unique identifier for this series. A persistent URI is recommended. |
-| `keyword` | Optional | array of strings | Tags describing the series. |
-| `accrualPeriodicity` | Optional | string | The frequency at which new editions of the series are published. Use ISO 8601 repeating duration format (e.g., `R/P1Y` for annual) or an ISO 19115 Maintenance Frequency code. |
-| `issued` | Optional | string (ISO 8601) | Date the series was first issued. |
-| `modified` | Optional | string (ISO 8601) | Most recent date any aspect of the series was changed. |
-
----
-
-#### Series structure
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `seriesMember` | Optional | array | The Dataset records that are members of this series. |
-| `first` | Optional | object | The first Dataset in the series. |
-| `last` | Optional | object | The most recent or final Dataset in the series. |
-
----
-
-#### Coverage and scope
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `contactPoint` | Optional | array | Contact information for the series. References the [Kind class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `spatial` | Optional | object | Geographic coverage of the series. References the [Location class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `temporal` | Optional | object | Temporal coverage of the series as a whole — typically from the first edition to the most recent. References the [PeriodOfTime class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
-| `theme` | Optional | array | Thematic category or categories of the series. |
-| `language` | Optional | array of strings | Language(s) of the series. Use RFC 5646 tags (e.g., `en-US`). |
-
----
-
-#### Rights and access
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `license` | Optional | string (URL) | License applying to the series as a whole.  |
-| `rights` | Optional | string | Rights information for the series. |
-| `accessRights` | Optional | string | Access restrictions for the series. |
-
----
-
-#### Identifiers
-
-<!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
-
-{: .field-table}
-| Field | Required | Type | Description |
-|-------|----------|------|-------------|
-| `@id` | Optional | string (IRI) | A globally unique identifier for this DatasetSeries. |
-| `@type` | Optional | string | Should be `DatasetSeries`. |
-
----
-
-#### How to link datasets to a series
-
-In each Dataset record that belongs to the series, use the `inSeries` field to reference the series:
-
-```json
-{
-  "@type": "Dataset",
-  "title": "Federal IT Dashboard Annual Data — FY2024",
-  "inSeries": {
-    "@id": "https://www.agency.gov/data/it-dashboard-series"
-  },
-  ...
-}
-```
-
----
-
-#### Example series record
-
-```json
-{
-  "@type": "DatasetSeries",
-  "@id": "https://www.agency.gov/data/it-dashboard-series",
-  "title": "Federal IT Dashboard Annual Data",
-  "description": "Annual releases of federal IT investment data from the IT Dashboard, published each fiscal year.",
-  "accrualPeriodicity": "R/P1Y",
-  "publisher": {
-    "@type": "org:Organization",
-    "name": "Office of the Chief Information Officer",
-    "subOrganizationOf": {
-      "@type": "org:Organization",
-      "name": "Example Federal Agency"
-    }
-  },
-  "contactPoint": [
-    {
-      "@type": "vcard:Contact",
-      "fn": "IT Dashboard Team",
-      "hasEmail": "mailto:itdashboard@agency.gov"
-    }
-  ],
-  "issued": "2010-01-01",
-  "temporal": {
-    "startDate": "2010-01-01"
-  }
-}
-```
-
----
-
-*Source: [jsonschema/definitions/DatasetSeries.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json) · Generated reference: [jsonschema/docs/DatasetSeries.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DatasetSeries.md)*
