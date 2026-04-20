@@ -1,6 +1,6 @@
 ---
 resource_name: DCAT-US Schema v3.0 — DataService fields
-slug: dcat-us-3/data-service
+slug: dcat-us-3-data-service
 description: >-
   Field-level reference for the DCAT-US v3.0 DataService class. DataService is
   new in v3.0 and describes an API or other service that provides programmatic
@@ -23,7 +23,7 @@ publish: true
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
 <!-- GENERATED DOCS: https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DataService.md -->
 
-[← DCAT-US v3.0 overview]({{ site.baseurl }}/resources/dcat-us-3/)
+[← DCAT-US v3.0 overview](https://resources.data.gov/standards/catalog/dcat-us-3/)
 
 ### DataService fields
 
@@ -43,7 +43,7 @@ In v1.1, APIs were documented as Distributions within a Dataset record. In v3.0,
 | Field | Required | Type | Description |
 |-------|----------|------|-------------|
 | `endpointURL` | Required | array of strings (IRI) | The root location or primary endpoint URL(s) of the service. Must be web-resolvable IRIs. |
-| `contactPoint` | Required | array | Contact information for the service. References the [Kind class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#kind). |
+| `contactPoint` | Required | array | Contact information for the service. References the [Kind class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 | `title` | Optional | string | A human-readable name for the service. |
 | `description` | Optional | string | A human-readable description of the service and what data it provides access to. |
 | `endpointDescription` | Optional | array of strings | A description of the service endpoint, such as a URL to an OpenAPI specification or WSDL document. |
@@ -63,8 +63,8 @@ In v1.1, APIs were documented as Distributions within a Dataset record. In v3.0,
 | Field | Required | Type | Description |
 |-------|----------|------|-------------|
 | `servesDataset` | Optional | array | The datasets accessible through this service. Reference each by identifier or Dataset object. |
-| `spatial` | Optional | object | Geographic coverage of the data accessible through the service. References the [Location class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#location). |
-| `temporal` | Optional | object | Temporal coverage of the data accessible through the service. References the [PeriodOfTime class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#periodoftime). |
+| `spatial` | Optional | object | Geographic coverage of the data accessible through the service. References the [Location class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
+| `temporal` | Optional | object | Temporal coverage of the data accessible through the service. References the [PeriodOfTime class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 | `theme` | Optional | array | Thematic category of the service. |
 | `language` | Optional | array of strings | Language(s) supported by the service. Use RFC 5646 tags. |
 
@@ -77,7 +77,7 @@ In v1.1, APIs were documented as Distributions within a Dataset record. In v3.0,
 {: .field-table}
 | Field | Required | Type | Description |
 |-------|----------|------|-------------|
-| `publisher` | Optional | object | The publishing entity for the service. References the [Agent class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#agent). |
+| `publisher` | Optional | object | The publishing entity for the service. References the [Agent class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 | `creator` | Optional | array | The entity or entities that created the service. |
 
 ---
