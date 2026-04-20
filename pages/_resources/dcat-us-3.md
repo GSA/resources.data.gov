@@ -26,7 +26,7 @@ publish: true
 | Specification name: | DCAT-US Schema v3.0 |
 |---------------------|---------------------|
 | This version:       | 3.0                 |
-| Previous version:   | [DCAT-US v1.1 (Project Open Data Metadata Schema)]({{ site.baseurl }}/resources/dcat-us/) |
+| Previous version:   | [DCAT-US v1.1 (Project Open Data Metadata Schema)](https://resources.data.gov/standards/catalog/dcat-us/) |
 | Schema repository:  | [github.com/GSA/dcat-us](https://github.com/GSA/dcat-us) |
 | JSON Schema:        | [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json) |
 
@@ -87,9 +87,7 @@ Static SVG diagram — regenerate if class structure changes.
 Source: GSA/dcat-us jsonschema/definitions/
 {% endcomment %}
 
-![DCAT-US v3.0 class hierarchy showing Catalog at top, connecting to Dataset and DataService, with Dataset connecting to Distribution and DatasetSeries, and supporting classes grouped below a dividing line.]({{ site.baseurl }}/assets/img/dcat-us-3-hierarchy.svg)
 
-*Teal = core classes (Catalog, Dataset, Distribution), continued from v1.1. Gray = new in v3.0. Supporting classes appear below the line.*
 
 ---
 
@@ -105,23 +103,27 @@ These three pages cover the fields most agencies interact with directly.
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Dataset.json -->
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
 
-- [Catalog fields]({{ site.baseurl }}/resources/dcat-us-3/catalog/) — the top-level container; your `data.json` is a Catalog
-- [Dataset fields]({{ site.baseurl }}/resources/dcat-us-3/dataset/) — the primary inventory unit; one record per dataset
-- [Distribution fields]({{ site.baseurl }}/resources/dcat-us-3/distribution/) — a specific file or access point for a dataset
+Add these values when data exists
+- [Catalog fields](https://resources.data.gov/standards/catalog/dcat-us-3-catalog/) — the top-level container; your `data.json` is a Catalog
+- [Dataset fields](https://resources.data.gov/standards/catalog/dcat-us-3-dataset/) — the primary inventory unit; one record per dataset
+- [Distribution fields](https://resources.data.gov/standards/catalog/dcat-us-3-distribution/) — a specific file or access point for a dataset
+
 
 #### Additional classes (new in v3.0)
 
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
 
-- [DataService fields]({{ site.baseurl }}/resources/dcat-us-3/data-service/) — APIs and query endpoints
-- [DatasetSeries fields]({{ site.baseurl }}/resources/dcat-us-3/dataset-series/) — recurring or versioned dataset releases
+- [DataService fields](https://resources.data.gov/standards/catalog/dcat-us-3-data-service/) — APIs and query endpoints
+- [DatasetSeries fields](https://resources.data.gov/standards/catalog/dcat-us-3-data-series/) — recurring or versioned dataset releases
+
+
 
 #### Supporting classes
 
 <!-- SOURCE: https://github.com/GSA/dcat-us/tree/main/jsonschema/definitions/ -->
 
-Supporting classes are referenced from the core classes above. The [supporting classes reference]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/) covers all of them in one place, grouped by function.
+Supporting classes are referenced from the core classes above. The [supporting classes reference](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/) covers all of them in one place, grouped by function.
 
 | Group | Classes | Referenced from |
 |-------|---------|-----------------|
@@ -157,4 +159,4 @@ Validate your metadata against the v3.0 schema:
 
 ### Still using DCAT-US v1.1?
 
-The [DCAT-US v1.1 reference]({{ site.baseurl }}/resources/dcat-us/) remains available. DCAT-US v3.0 is backward compatible with v1.1 for all existing metadata elements.
+The [DCAT-US v1.1 reference]([{{ site.baseurl }}/resources/dcat-us/](https://resources.data.gov/standards/catalog/dcat-us/)) remains available.
