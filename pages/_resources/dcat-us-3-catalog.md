@@ -173,9 +173,9 @@ details: >+
     </table>
     
     #### Example
+
     
     A minimal Catalog with one Dataset:
-    
     ```json
     {
       "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
