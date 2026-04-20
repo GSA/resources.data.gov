@@ -50,7 +50,6 @@ details: >+
   Catalog
 
   └── Dataset (one or more)
-
       └── Distribution (one or more)
 
   ```
@@ -82,7 +81,7 @@ details: >+
   
   **Requirement levels.** Fields are now explicitly labeled Mandatory, Recommended, or Optional throughout the schema and in this reference.
   
-  ---
+  
 
   
   ### Class hierarchy
