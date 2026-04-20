@@ -24,6 +24,7 @@ details: >+
   ### Catalog fields
   
   The Catalog class is the top-level container for an agency's data inventory. Your agency's `data.json` file is an instance of a DCAT-US Catalog. It holds the collection of Dataset records and, in v3.0, can also reference DataService records.
+
   
   **Required fields in v3.0:** `dataset`
   
