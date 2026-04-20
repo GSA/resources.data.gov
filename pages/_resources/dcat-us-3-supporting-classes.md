@@ -1,6 +1,6 @@
 ---
 resource_name: DCAT-US Schema v3.0 — Supporting classes
-slug: dcat-us-3/supporting-classes
+slug: dcat-us-3-supporting-classes
 description: >-
   Reference for the DCAT-US v3.0 supporting classes. These classes are
   referenced from Dataset, Distribution, Catalog, DataService, and
