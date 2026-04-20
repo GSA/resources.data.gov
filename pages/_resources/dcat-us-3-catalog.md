@@ -173,7 +173,8 @@ details: >+
   </table>
 
   
-  ```
+
+
   #### Example
   
   A minimal Catalog with one Dataset:
