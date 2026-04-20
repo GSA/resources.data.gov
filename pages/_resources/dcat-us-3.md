@@ -31,12 +31,13 @@ publish: true
 | JSON Schema:        | [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json) |
 
 ---
+See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov 
 
 ### What is DCAT-US v3.0?
 
-DCAT-US v3.0 is the federal data catalog metadata standard, updated to improve the FAIRness — Findability, Accessibility, Interoperability, and Reusability — of federal data. It is a U.S. profile of the [W3C Data Catalog Vocabulary (DCAT)](https://www.w3.org/TR/vocab-dcat/), not a new or separate standard.
+DCAT-US v3.0 is the federal data catalog metadata standard, updated to improve the Findability, Accessibility, Interoperability, and Reusability (FAIRness) of federal data. It is a U.S. profile of the [W3C Data Catalog Vocabulary (DCAT)](https://www.w3.org/TR/vocab-dcat/), not a new or separate standard.
 
-Version 3.0 builds on more than ten years of implementation experience with the Project Open Data Metadata Schema (DCAT-US v1.1), and introduces a single metadata standard that can support business, technical, statistical, and geospatial data consistently. Existing v1.1 metadata is preserved — no major changes were made to fields already in use.
+Version 3.0 builds on more than ten years of implementation experience with the Project Open Data Metadata Schema (DCAT-US v1.1) and introduces a single metadata standard that consistently supports business, technical, statistical, and geospatial data. 
 
 ---
 
@@ -52,9 +53,9 @@ Catalog
     └── Distribution (one or more)
 ```
 
-Your agency's `data.json` file is a Catalog. Each entry in its `dataset` array is a Dataset. Each Dataset's `distribution` array contains one or more Distribution records describing how to access or download the data.
+Your `data.json` file is a Catalog. Each entry in its `dataset` array is a Dataset. Each Dataset's `distribution` array contains one or more Distribution records describing how to access or download the data.
 
-This is the same flow as v1.1. Agencies already implementing v1.1 can continue using this structure — v3.0 adds new optional fields and new classes on top of it, but does not change the core pattern.
+This is the same flow as v1.1. Agencies already implementing v1.1 can continue using this structure; v3.0 adds optional fields and new classes on top of it, but does not change the core pattern.
 
 ---
 
@@ -64,10 +65,10 @@ This is the same flow as v1.1. Agencies already implementing v1.1 can continue u
 
 **Two new classes** can appear alongside Dataset in the Catalog:
 
-- **DataService** — describes an API or other programmatic interface that provides access to data. In v1.1, APIs were documented only as Distributions inside a Dataset. In v3.0, a DataService can be listed at the Catalog level as its own resource, which is useful for services that serve many datasets or are not tied to a single one.
-- **DatasetSeries** — groups related datasets published over time (annual releases, recurring surveys, versioned reference data) under a single series record. Individual Dataset records point back to the series using the `inSeries` field.
+- **DataService:** describes an API or other programmatic interface that provides access to data. In v1.1, APIs were documented only as Distributions inside a Dataset. In v3.0, a DataService can be listed at the Catalog level as its own resource, which is useful for services that serve many datasets or are not tied to a single one.
+- **DatasetSeries:** groups related datasets published over time (annual releases, recurring surveys, versioned reference data) under a single series record. Individual Dataset records point back to the series using the `inSeries` field.
 
-**Supporting classes** provide structured definitions for information that was unstructured in v1.1 — things like geographic location, temporal coverage, contact information, attribution, and quality measurements. These classes are referenced from Dataset, Distribution, and the new classes above. Most agencies will encounter them indirectly, through a field that points to one of these structures.
+**Supporting classes** provide structured definitions for information that was unstructured in v1.1, such as geographic location, temporal coverage, contact information, attribution, and quality measurements. These classes are referenced from Dataset, Distribution, and the new classes above. Most agencies will encounter them indirectly, through a field that points to one of these structures.
 
 **JSON Schema validation.** DCAT-US v3.0 is a valid JSON Schema (2020-12). Agencies can programmatically validate their metadata files against the schema. See [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema) for tooling.
 
@@ -79,7 +80,7 @@ This is the same flow as v1.1. Agencies already implementing v1.1 can continue u
 
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/ -->
 
-The diagram below shows how the classes relate to each other. The three core classes — Catalog, Dataset, and Distribution — form the primary spine, exactly as in v1.1. DataService and DatasetSeries extend what a Catalog can describe. Supporting classes are referenced from the core classes as needed.
+The diagram below shows how the classes relate to each other. The three core classes of Catalog, Dataset, and Distribution form the primary spine, exactly as in v1.1. DataService and DatasetSeries extend what a Catalog can describe. Supporting classes are referenced from the core classes as needed.
 
 {% comment %}
 Static SVG diagram — regenerate if class structure changes.
@@ -134,19 +135,9 @@ Supporting classes are referenced from the core classes above. The [supporting c
 
 ---
 
-### Changes from v1.1
+### Changes from v1.1 (This section is not complete as of 4/20/2026)
 
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
-
-Agencies migrating from v1.1 should note the following.
-
-**Required fields changed.** The schema-level required fields in v3.0 are `title`, `description`, `publisher`, and `contactPoint`. Fields that were required in v1.1 — including `keyword`, `modified`, `identifier`, `accessLevel`, `bureauCode`, and `programCode` — are no longer required at the schema level, though they carry a Recommended or Mandatory requirement level as documented on each field's reference page. Consult current OMB guidance for any fields that remain required by policy.
-
-**`spatial` is now structured.** In v1.1, the `spatial` field was a freeform string. In v3.0, it references the Location class, which supports GeoJSON geometry and bounding box formats.
-
-**New fields for geospatial data.** `spatialResolutionInMeters` and `temporalResolution` have been added to Dataset and Distribution. These replace the need for a separate federal geospatial metadata standard.
-
-**Backward compatibility.** All v1.1 field names are preserved. A v1.1-compliant `data.json` will not break under v3.0 — new fields are additive.
 
 For a full comparison, see the repository: [GSA/dcat-us](https://github.com/GSA/dcat-us).
 
