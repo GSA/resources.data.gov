@@ -1,6 +1,6 @@
 ---
 resource_name: DCAT-US Schema v3.0 — DatasetSeries fields
-slug: dcat-us-3/dataset-series
+slug: dcat-us-3-dataset-series
 description: >-
   Field-level reference for the DCAT-US v3.0 DatasetSeries class. DatasetSeries
   is new in v3.0 and groups related datasets published over time or across
@@ -43,8 +43,8 @@ The series record describes the collection as a whole. Each edition within the s
 |-------|----------|------|-------------|
 | `title` | Optional | string | A human-readable name for the series. Example: `Federal IT Dashboard Annual Data`. |
 | `description` | Optional | string | A human-readable description of the series — what it covers, how often it is published, and what each edition contains. |
-| `publisher` | Optional | object | The publishing entity for the series. References the [Agent class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#agent). |
-| `contactPoint` | Optional | array | Contact information for the series. References the [Kind class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#kind). |
+| `publisher` | Optional | object | The publishing entity for the series. References the [Agent class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
+| `contactPoint` | Optional | array | Contact information for the series. References the [Kind class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 | `identifier` | Optional | string | A unique identifier for this series. A persistent URI is recommended. |
 | `keyword` | Optional | array of strings | Tags describing the series. |
 | `accrualPeriodicity` | Optional | string | The frequency at which new editions of the series are published. Use ISO 8601 repeating duration format (e.g., `R/P1Y` for annual) or an ISO 19115 Maintenance Frequency code. |
@@ -73,8 +73,9 @@ The series record describes the collection as a whole. Each edition within the s
 {: .field-table}
 | Field | Required | Type | Description |
 |-------|----------|------|-------------|
-| `spatial` | Optional | object | Geographic coverage of the series. References the [Location class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#location). |
-| `temporal` | Optional | object | Temporal coverage of the series as a whole — typically from the first edition to the most recent. References the [PeriodOfTime class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#periodoftime). |
+| `contactPoint` | Optional | array | Contact information for the series. References the [Kind class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
+| `spatial` | Optional | object | Geographic coverage of the series. References the [Location class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
+| `temporal` | Optional | object | Temporal coverage of the series as a whole — typically from the first edition to the most recent. References the [PeriodOfTime class](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/). |
 | `theme` | Optional | array | Thematic category or categories of the series. |
 | `language` | Optional | array of strings | Language(s) of the series. Use RFC 5646 tags (e.g., `en-US`). |
 
@@ -87,7 +88,7 @@ The series record describes the collection as a whole. Each edition within the s
 {: .field-table}
 | Field | Required | Type | Description |
 |-------|----------|------|-------------|
-| `license` | Optional | string (URL) | License applying to the series as a whole. See [Open Licenses]({{ site.baseurl }}/resources/open-licenses/). |
+| `license` | Optional | string (URL) | License applying to the series as a whole.  |
 | `rights` | Optional | string | Rights information for the series. |
 | `accessRights` | Optional | string | Access restrictions for the series. |
 
