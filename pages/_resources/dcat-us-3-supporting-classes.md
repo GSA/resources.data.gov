@@ -1,5 +1,5 @@
 ---
-resource_name: DCAT-US Schema v3.0: Supporting classes
+resource_name: DCAT-US Schema v3.0 — Supporting classes
 slug: dcat-us-3/supporting-classes
 description: >-
   Reference for the DCAT-US v3.0 supporting classes. These classes are
@@ -26,7 +26,7 @@ publish: true
 
 ### Supporting classes
 
-These classes are referenced from Dataset, Distribution, Catalog, DataService, and DatasetSeries. Most agencies will encounter them indirectly, through a field that points to one of these structures. Where applicable, the context in which each class appears is noted.
+These classes are referenced from Dataset, Distribution, Catalog, DataService, and DatasetSeries. Most agencies will encounter them indirectly — through a field that points to one of these structures. Where applicable, the context in which each class appears is noted.
 
 ---
 
@@ -180,7 +180,7 @@ An identifier paired with an identifying scheme. Referenced by the `otherIdentif
 {: #checksum}
 ##### Checksum
 
-A checksum for verifying the data integrity of a Distribution. New in v3.0.
+A checksum for verifying data integrity of a Distribution. New in v3.0.
 
 {: .field-table}
 | Field | Required | Type | Description |
