@@ -20,13 +20,30 @@ details: >+
 
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
   
-  {: .vertical-headings}
-  | Specification name: | DCAT-US Schema v3.0 |
-  |---------------------|---------------------|
-  | This version:       | 3.0                 |
-  | Previous version:   | [DCAT-US v1.1 (Project Open Data Metadata Schema)](https://resources.data.gov/standards/catalog/dcat-us/) |
-  | Schema repository:  | [github.com/GSA/dcat-us](https://github.com/GSA/dcat-us) |
-  | JSON Schema:        | [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json) |
+  <table class="usa-table vertical-headings">
+    <tbody>
+      <tr>
+        <th>Specification name:</th>
+        <td>DCAT-US Schema v3.0</td>
+      </tr>
+      <tr>
+        <th>This version:</th>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <th>Previous version:</th>
+        <td><a href="https://resources.data.gov/standards/catalog/dcat-us/">DCAT-US v1.1 (Project Open Data Metadata Schema)</a></td>
+      </tr>
+      <tr>
+        <th>Schema repository:</th>
+        <td><a href="https://github.com/GSA/dcat-us">github.com/GSA/dcat-us</a></td>
+      </tr>
+      <tr>
+        <th>JSON Schema:</th>
+        <td><a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json">jsonschema/definitions/Catalog.json</a></td>
+      </tr>
+    </tbody>
+  </table>
   
   ---
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov 
