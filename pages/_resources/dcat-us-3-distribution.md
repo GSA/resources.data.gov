@@ -21,7 +21,7 @@ publish: true
 <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
 <!-- GENERATED DOCS: https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Distribution.md -->
 
-[← DCAT-US v3.0 overview]({{ site.baseurl }}/resources/dcat-us-3/)
+[← DCAT-US v3.0 overview](https://resources.data.gov/standards/catalog/dcat-us-3/)
 
 ### Distribution fields
 
@@ -43,7 +43,7 @@ A Distribution represents a specific way of accessing or obtaining a dataset —
 | `mediaType` | Conditional | string (IANA Media Type) | The MIME type of the file at `downloadURL`. Required when `downloadURL` is provided. Example: `text/csv`, `application/zip`. |
 | `format` | Optional | string | Human-readable description of the file format. Use `API` for web APIs. Example: `CSV`, `XML`, `Zipped CSV`. |
 | `byteSize` | Optional | number | The size of the distribution in bytes. |
-| `checksum` | Optional | object | A checksum for verifying data integrity. References the [Checksum class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#checksum). New in v3.0. |
+| `checksum` | Optional | object | A checksum for verifying data integrity. References the [Checksum class](https://resources.data.gov/standards/catalog/dcat-us-3/supporting-classes/). New in v3.0. |
 
 ---
 
@@ -59,10 +59,10 @@ A Distribution represents a specific way of accessing or obtaining a dataset —
 | `conformsTo` | Optional | string (URI) | A standard or specification this distribution conforms to. |
 | `describedBy` | Optional | string (URL) | URL to the data dictionary or schema for this distribution. |
 | `describedByType` | Optional | string (IANA Media Type) | The MIME type of the file at `describedBy`. Example: `application/schema+json`. |
-| `license` | Optional | string (URL) | The license or public domain dedication for this distribution. See [Open Licenses]({{ site.baseurl }}/resources/open-licenses/). |
+| `license` | Optional | string (URL) | The license or public domain dedication for this distribution. |
 | `rights` | Optional | string | Rights information for this specific distribution. |
 | `language` | Optional | array of strings | Language(s) of this distribution. Use RFC 5646 tags (e.g., `en-US`). |
-| `page` | Optional | array | Documentation pages for this distribution. References the [Document class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#document). |
+| `page` | Optional | array | Documentation pages for this distribution. References the [Document class](https://resources.data.gov/standards/catalog/dcat-us-3/supporting-classes/). |
 
 ---
 
@@ -73,8 +73,8 @@ A Distribution represents a specific way of accessing or obtaining a dataset —
 {: .field-table}
 | Field | Required | Type | Description |
 |-------|----------|------|-------------|
-| `representationTechnique` | Optional | object | The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the [Concept class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#concept). |
-| `status` | Optional | object | The lifecycle status of this distribution. References the [Concept class]({{ site.baseurl }}/resources/dcat-us-3/supporting-classes/#concept). |
+| `representationTechnique` | Optional | object | The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the [Concept class](https://resources.data.gov/standards/catalog/dcat-us-3/supporting-classes/). |
+| `status` | Optional | object | The lifecycle status of this distribution. References the [Concept class](https://resources.data.gov/standards/catalog/dcat-us-3/supporting-classes/). |
 | `characterEncoding` | Optional | string | The character encoding of the distribution. Example: `UTF-8`. |
 | `spatialResolutionInMeters` | Optional | number | Minimum spatial separation resolvable in this distribution, in meters. |
 | `temporalResolution` | Optional | string (ISO 8601 duration) | Minimum time period resolvable in this distribution. |
