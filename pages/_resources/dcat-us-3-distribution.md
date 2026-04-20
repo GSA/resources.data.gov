@@ -214,8 +214,7 @@ details: >+
 
   A dataset with two distributions — a CSV download and a REST API:
 
-  ```
-  "distribution": [
+      <pre><code>"distribution": [
     {
       "@type": "dcat:Distribution",
       "title": "FY2024 Travel Data (CSV)",
@@ -232,7 +231,7 @@ details: >+
       "format": "API"
     }
   ]
-  ```
+  </code></pre>
 
   ---
 
