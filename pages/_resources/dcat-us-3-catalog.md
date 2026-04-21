@@ -24,7 +24,7 @@ details: >+
 
   ---
 
-  ### DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3/">Index Page</a>
+  ## DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3/">Index Page</a>
 
   
   ### Overview
@@ -32,7 +32,7 @@ details: >+
   The Catalog class is the top-level container for an agency's data inventory. Your agency's <code>data.json</code> file is an instance of a DCAT-US Catalog. It holds the array of Dataset records and, in v3.0, can also reference DataService records.
 
 
-  Required field in v3.0: <code>dataset</code>. A Catalog must contain at least one Dataset.
+  Required field in v3.0: A Catalog must contain at least one Dataset.
 
   ---
 
