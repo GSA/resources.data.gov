@@ -1,5 +1,5 @@
 ---
-resource_name: DCAT-US Schema v3.0: Catalog fields
+resource_name: DCAT-US Schema v3.0 Catalog fields
 slug: dcat-us-3-catalog
 description: Field-level reference for the DCAT-US v3.0 Catalog class. A Catalog is the
   top-level container for an agency's data inventory.
@@ -23,8 +23,8 @@ details: >+
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
   ---
-  ### DCAT US 3 <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Index Page</a>
-  
+
+  ### DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3/">Index Page</a>
 
   
   ### Overview
@@ -54,7 +54,7 @@ details: >+
         <td><code>dataset</code></td>
         <td>Mandatory</td>
         <td>array of Dataset objects</td>
-        <td>The list of datasets in this catalog. See <a href="https://resources.data.gov/standards/catalog/dcat-us-3-dataset/">Dataset fields</a>.</td>
+        <td>The list of datasets in this catalog. See <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset fields</a>.</td>
       </tr>
       <tr>
         <td><code>@id</code></td>
@@ -132,13 +132,13 @@ details: >+
         <td><code>spatial</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>Spatial coverage of the catalog. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Location class</a>.</td>
+        <td>Spatial coverage of the catalog. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Location class</a>.</td>
       </tr>
       <tr>
         <td><code>contactPoint</code></td>
         <td>Optional</td>
         <td>array</td>
-        <td>Contact points for the catalog. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
+        <td>Contact points for the catalog. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
       </tr>
       <tr>
         <td><code>keyword</code></td>
@@ -150,7 +150,7 @@ details: >+
         <td><code>publisher</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>The publishing entity for this catalog. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+        <td>The publishing entity for this catalog. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
       </tr>
       <tr>
         <td><code>catalog</code></td>
@@ -162,19 +162,19 @@ details: >+
         <td><code>service</code></td>
         <td>Optional</td>
         <td>array of DataService objects</td>
-        <td>DataService resources accessible through this catalog. New in v3.0. See <a href="https://resources.data.gov/standards/catalog/dcat-us-3-data-service/">DataService fields</a>.</td>
+        <td>DataService resources accessible through this catalog. New in v3.0. See <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">DataService fields</a>.</td>
       </tr>
       <tr>
         <td><code>record</code></td>
         <td>Optional</td>
         <td>array of CatalogRecord objects</td>
-        <td>Metadata about individual catalog entries. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">CatalogRecord class</a>.</td>
+        <td>Metadata about individual catalog entries. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">CatalogRecord class</a>.</td>
       </tr>
       <tr>
         <td><code>themeTaxonomy</code></td>
         <td>Optional</td>
         <td>array</td>
-        <td>A knowledge organization system used to classify the catalog's datasets. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">ConceptScheme class</a>.</td>
+        <td>A knowledge organization system used to classify the catalog's datasets. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">ConceptScheme class</a>.</td>
       </tr>
     </tbody>
   </table>
