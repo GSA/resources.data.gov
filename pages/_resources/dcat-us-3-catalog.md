@@ -28,6 +28,7 @@ details: >+
 
   The Catalog class is the top-level container for an agency's data inventory. Your agency's <code>data.json</code> file is an instance of a DCAT-US Catalog. It holds the array of Dataset records and, in v3.0, can also reference DataService records.
 
+
   <strong>Required field in v3.0:</strong> <code>dataset</code>. A Catalog must contain at least one Dataset.
 
   ---
@@ -181,32 +182,33 @@ details: >+
 
   A minimal Catalog with one Dataset:
 
-      <pre><code>{
-    "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
-    "@id": "https://www.agency.gov/data.json",
-    "@type": "dcat:Catalog",
-    "conformsTo": "https://resources.data.gov/dcat-us/3.0.0",
-    "describedBy": "https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json",
-    "dataset": [
-      {
-        "@type": "Dataset",
-        "title": "Agency Travel Data FY2024",
-        "description": "Records of official travel expenditures during fiscal year 2024.",
-        "publisher": {
-          "@type": "org:Organization",
-          "name": "Example Federal Agency"
-        },
-        "contactPoint": {
-          "@type": "vcard:Contact",
-          "fn": "Jane Smith",
-          "hasEmail": "mailto:jane.smith@agency.gov"
+    <pre><code>{
+      "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+      "@id": "https://www.agency.gov/data.json",
+      "@type": "dcat:Catalog",
+      "conformsTo": "https://resources.data.gov/dcat-us/3.0.0",
+      "describedBy": "https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json",
+      "dataset": [
+        {
+          "@type": "Dataset",
+          "title": "Agency Travel Data FY2024",
+          "description": "Records of official travel expenditures during fiscal year 2024.",
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Example Federal Agency"
+          },
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Jane Smith",
+            "hasEmail": "mailto:jane.smith@agency.gov"
+          }
         }
-      }
-    ]
-  }
-  </code></pre>
+      ]
+    }
+    </code></pre>
 
   ---
+
 
   Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json">jsonschema/definitions/Catalog.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md">jsonschema/docs/Catalog.md</a>
 
