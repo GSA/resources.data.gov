@@ -1,5 +1,5 @@
 ---
-resource_name: DCAT-US Schema v3.0 — Catalog fields
+resource_name: DCAT-US Schema v3.0: Catalog fields
 slug: dcat-us-3-catalog
 description: Field-level reference for the DCAT-US v3.0 Catalog class. A Catalog is the
   top-level container for an agency's data inventory.
@@ -23,13 +23,16 @@ details: >+
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
   ---
+  ### DCAT US 3 <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Index Page</a>
+  
 
+  
   ### Overview
 
   The Catalog class is the top-level container for an agency's data inventory. Your agency's <code>data.json</code> file is an instance of a DCAT-US Catalog. It holds the array of Dataset records and, in v3.0, can also reference DataService records.
 
 
-  <strong>Required field in v3.0:</strong> <code>dataset</code>. A Catalog must contain at least one Dataset.
+  Required field in v3.0: <code>dataset</code>. A Catalog must contain at least one Dataset.
 
   ---
 
