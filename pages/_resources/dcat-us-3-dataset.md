@@ -28,7 +28,7 @@ details: >+
 
   The Dataset class describes an individual dataset or API. Most agency data inventory work happens at this level.
 
-  <strong>Required fields in v3.0:</strong> <code>title</code>, <code>description</code>, <code>publisher</code>, <code>contactPoint</code>
+  <strong>Required fields in v3.0:</strong> <code>title</code>, <code>description</code>, <code>publisher</code>, <code>contactPoint</code>, <code>identifier</code>
 
   All other fields are Optional unless noted. Fields that were required in v1.1 but are no longer schema-required in v3.0 are noted below. Agencies should consult current OMB policy guidance for any fields that remain required by policy.
 
@@ -74,9 +74,9 @@ details: >+
       </tr>
       <tr>
         <td><code>identifier</code></td>
-        <td>Optional</td>
+        <td>Mandatory</td>
         <td>string</td>
-        <td>A unique identifier maintained within the agency catalog. A persistent URI is strongly recommended.</td>
+        <td>A unique identifier for the dataset. Must be unique across the agency's catalog and remain fixed over time. Use a persistent URI where possible.</td>
       </tr>
       <tr>
         <td><code>keyword</code></td>
@@ -88,7 +88,7 @@ details: >+
         <td><code>modified</code></td>
         <td>Recommended</td>
         <td>string (ISO 8601)</td>
-        <td>Most recent date the dataset was changed or updated. (Required in v1.1)</td>
+        <td>Most recent date the dataset was changed or updated. (Required in v1.1).  Note for agencies upgrading from v1.1: If you currently use a repeating interval like R/P1D or R/P1Y in this field, that format is no longer valid in v3.0. Set modified to the actual date the data last changed (e.g., 2024-06-01) and use accrualPeriodicity to express update frequency.</td>
       </tr>
       <tr>
         <td><code>issued</code></td>
@@ -100,45 +100,39 @@ details: >+
         <td><code>language</code></td>
         <td>Optional</td>
         <td>array of strings</td>
-        <td>Language(s) of the dataset. Use RFC 5646 tags (e.g., <code>en-US</code>).</td>
+        <td>ISO 639-1 two-letter language codes (e.g., en, es, fr). Note: v1.1 used RFC 5646 tags like en-US — v3.0 simplifies to two-letter codes only.</td>
       </tr>
       <tr>
         <td><code>landingPage</code></td>
         <td>Optional</td>
-        <td>string (URL)</td>
-        <td>A human-friendly hub or landing page for all resources tied to the dataset. Not intended for an agency's homepage.</td>
+        <td>object</td>
+        <td>A Document object with a title and accessURL pointing to a human-friendly hub or landing page for all resources tied to the dataset. Example: {"@type": "Document", "title": "Dataset Homepage", "accessURL": "https://agency.gov/dataset"}</td>
       </tr>
       <tr>
         <td><code>theme</code></td>
         <td>Optional</td>
-        <td>array of strings</td>
-        <td>Main thematic category or categories of the dataset.</td>
+        <td>array of Concept objects</td>
+        <td>Each Concept requires a prefLabel. Example: [{"prefLabel": "Climate Science"}]. Can reference a ConceptScheme for controlled vocabulary linkage.</td>
       </tr>
       <tr>
         <td><code>accrualPeriodicity</code></td>
         <td>Optional</td>
         <td>string</td>
-        <td>The frequency with which the dataset is published. Use ISO 8601 repeating duration format (e.g., <code>R/P1Y</code> for annual, <code>R/P1D</code> for daily) or <code>irregular</code>.</td>
+        <td>Accepts plain-language codes (e.g., daily, weekly, monthly, quarterly, annually, irregular), ISO 8601 repeating duration format (e.g., R/P1Y), or Dublin Core frequency terms. Plain-language codes are preferred.</td>
       </tr>
       <tr>
         <td><code>conformsTo</code></td>
         <td>Optional</td>
-        <td>string (URI)</td>
-        <td>A standard the dataset conforms to. Use a URI that uniquely identifies the standard.</td>
+        <td>array of Standard objects</td>
+        <td>Each Standard should include a title and optionally an identifier and issued date. Example: [{"@type": "Standard", "title": "ISO 19115", "identifier": "https://www.iso.org/standard/53798.html"}]. A dataset can conform to multiple standards.</td>
       </tr>
       <tr>
         <td><code>describedBy</code></td>
         <td>Optional</td>
-        <td>string (URL)</td>
-        <td>URL to the data dictionary for the dataset.</td>
+        <td>object</td>
+        <td>A Distribution object describing the data dictionary. Example: {"@type": "Distribution", "title": "Data Dictionary", "downloadURL": "https://agency.gov/dict.pdf", "mediaType": "application/pdf"}. The describedByType field from v1.1 is no longer needed; express the format as mediaType within this Distribution object.</td>
       </tr>
-      <tr>
-        <td><code>isPartOf</code></td>
-        <td>Optional</td>
-        <td>string</td>
-        <td>The identifier of a parent dataset, for grouping datasets into a collection.</td>
-      </tr>
-    </tbody>
+      </tbody>
   </table>
 
   ---
@@ -192,7 +186,7 @@ details: >+
         <td><code>accessRights</code></td>
         <td>Optional</td>
         <td>string</td>
-        <td>Information about who can access the dataset and under what conditions.</td>
+        <td>Information about who can access the dataset and under what conditions.  Note: In v1.1 this was the accessLevel field with three fixed values (public, restricted public, non-public). In v3.0 accessRights is a free-text string. The value public remains valid. For restricted datasets write a plain-language explanation of the restriction and how to request access.</td>
       </tr>
       <tr>
         <td><code>rights</code></td>
@@ -210,7 +204,7 @@ details: >+
         <td><code>license</code></td>
         <td>Optional</td>
         <td>string (URL)</td>
-        <td>The license or public domain dedication status of the dataset. Provide as a URL. See <a href="https://resources.data.gov/open-licenses/">Open Licenses</a>.</td>
+        <td>The license or public domain dedication status of the dataset. Provide as a URL. See <a href="https://resources.data.gov/open-licenses/">Open Licenses</a>.  In v3.0, license is more correctly expressed at the Distribution level per W3C DCAT. Including it here at the dataset level is supported, but agencies are encouraged to move license to each Distribution object.</td>
       </tr>
     </tbody>
   </table>
@@ -235,19 +229,19 @@ details: >+
         <td><code>spatial</code></td>
         <td>Conditional</td>
         <td>object</td>
-        <td>Spatial coverage of the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Location class</a>. Required if the dataset has a spatial dimension. (Was a string in v1.1; now uses the Location class.)</td>
+        <td>Spatial coverage of the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Location class</a>. Required if the dataset has a spatial dimension. (Was a string in v1.1; now uses the Location class.).  Minimum upgrade: {"@type": "Location", "prefLabel": "United States"}. For geospatial precision, add a bbox as a WKT string: "POLYGON((-125 24, -66 24, -66 50, -125 50, -125 24))" or as a GeoJSON Polygon object.</td>
       </tr>
       <tr>
         <td><code>temporal</code></td>
         <td>Conditional</td>
         <td>object</td>
-        <td>Temporal coverage of the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>.</td>
+        <td>Temporal coverage of the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>.  Note for agencies upgrading from v1.1: The v1.1 string format (e.g., 2000-01-15T00:00:00Z/2010-01-15T00:00:00Z) is no longer valid. Use a PeriodOfTime object: {"@type": "PeriodOfTime", "startDate": "2000-01-15", "endDate": "2010-01-15"}. Open-ended periods are valid; you can omit either startDate or endDate.</td>
       </tr>
       <tr>
         <td><code>spatialResolutionInMeters</code></td>
         <td>Optional</td>
-        <td>number</td>
-        <td>Minimum spatial separation resolvable in the dataset, in meters. New in v3.0.</td>
+        <td>string</td>
+        <td>A numeric value expressed as a string (e.g., "1000" for 1 kilometer resolution).</td>
       </tr>
       <tr>
         <td><code>temporalResolution</code></td>
@@ -314,7 +308,7 @@ details: >+
         <td><code>inSeries</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>A DatasetSeries to which this dataset belongs. See <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">DatasetSeries fields</a>.</td>
+        <td>A DatasetSeries to which this dataset belongs. See <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">DatasetSeries fields</a>.  Note: In v1.1, isPartOf was used to group datasets into a collection. In v3.0, use inSeries for temporal series membership, or document collection membership at the parent dataset level using hasPart."</td>
       </tr>
     </tbody>
   </table>
@@ -366,7 +360,7 @@ details: >+
 
   ### Federal government fields
 
-  These fields were introduced in DCAT-US v1.1 for federal agency use and are preserved in v3.0. They are not required at the schema level but may be required by OMB policy guidance.
+  These fields were introduced in DCAT-US v1.1 for federal agency use and are preserved in v3.0. They are not required at the schema level but may be required by OMB policy guidance.  These fields are not defined in the v3.0 core schema. They are documented here for continuity because agencies are currently required to include them under existing OMB policy (M-13-13 and the OPEN Government Data Act). Agencies should continue populating these fields until updated OMB guidance is issued. The v3.0 schema will not reject records that include them.
 
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Dataset.json -->
 
@@ -445,6 +439,88 @@ details: >+
     }
   }
   </code></pre>
+
+
+
+  <pre><code>{
+  "@type": "Dataset",
+  "title": "Agency Travel Data FY2024",
+  "description": "Records of official travel expenditures...",
+  "identifier": "https://www.agency.gov/data/travel-fy2024",
+  "publisher": {"name": "Example Federal Agency"},
+  "contactPoint": {"fn": "Jane Smith", "hasEmail": "mailto:jane@agency.gov"},
+  "keyword": ["travel", "expenditure", "fiscal year"],
+  "modified": "2024-10-01",
+  "accrualPeriodicity": "annually",
+  "accessRights": "public",
+  "temporal": [{"@type": "PeriodOfTime", "startDate": "2024-10-01", "endDate": "2025-09-30"}],
+  "spatial": [{"@type": "Location", "prefLabel": "United States"}],
+  "distribution": [{"title": "FY2024 Travel Data CSV", "downloadURL": "https://agency.gov/data/travel-fy2024.csv", "mediaType": "text/csv", "license": "https://creativecommons.org/publicdomain/zero/1.0/"}]
+  }
+  </code></pre>
+
+
+  <table>
+  <thead>
+    <tr>
+      <th>v1.1 Field</th>
+      <th>Status in v3.0</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>accessLevel</code></td>
+      <td>Replaced by <code>accessRights</code></td>
+      <td>Use a free-text string. The value <code>public</code> remains valid. For restricted datasets write a plain-language explanation.</td>
+    </tr>
+    <tr>
+      <td><code>modified</code> with repeating intervals (e.g., <code>R/P1D</code>)</td>
+      <td>Format no longer valid</td>
+      <td>Set to the actual date the data last changed (e.g., <code>2024-06-01</code>). Use <code>accrualPeriodicity</code> for update frequency.</td>
+    </tr>
+    <tr>
+      <td><code>temporal</code> as an ISO 8601 string</td>
+      <td>Format no longer valid</td>
+      <td>Use a PeriodOfTime object: <code>{"@type": "PeriodOfTime", "startDate": "2000-01-15", "endDate": "2010-01-15"}</code></td>
+    </tr>
+    <tr>
+      <td><code>spatial</code> as a plain string or ad-hoc GeoJSON</td>
+      <td>Format no longer valid</td>
+      <td>Use a Location object: <code>{"@type": "Location", "prefLabel": "United States"}</code></td>
+    </tr>
+    <tr>
+      <td><code>language</code> with RFC 5646 tags (e.g., <code>en-US</code>)</td>
+      <td>Format no longer valid</td>
+      <td>Use two-letter ISO 639-1 codes only (e.g., <code>en</code>, <code>es</code>).</td>
+    </tr>
+    <tr>
+      <td><code>isPartOf</code></td>
+      <td>Replaced</td>
+      <td>Use <code>inSeries</code> for temporal series membership or <code>hasPart</code> at the parent dataset level for generic collections.</td>
+    </tr>
+    <tr>
+      <td><code>describedByType</code></td>
+      <td>Absorbed into <code>describedBy</code></td>
+      <td>Express the format as <code>mediaType</code> within the <code>describedBy</code> Distribution object. No separate field needed.</td>
+    </tr>
+    <tr>
+      <td><code>bureauCode</code></td>
+      <td>Not in v3.0 core schema</td>
+      <td>Continue populating per existing OMB policy guidance until updated guidance is issued.</td>
+    </tr>
+    <tr>
+      <td><code>programCode</code></td>
+      <td>Not in v3.0 core schema</td>
+      <td>Continue populating per existing OMB policy guidance until updated guidance is issued.</td>
+    </tr>
+    <tr>
+      <td><code>dataQuality</code></td>
+      <td>Not in v3.0 core schema</td>
+      <td>Use <code>hasQualityMeasurement</code> for structured quality reporting, or note conformance in <code>scopeNote</code>.</td>
+    </tr>
+  </tbody>
+  </table>
   
     ---
 
