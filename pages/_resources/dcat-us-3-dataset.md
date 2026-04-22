@@ -23,8 +23,7 @@ details: >+
 
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
-  ---
-
+ 
   ### Overview
 
   The Dataset class describes an individual dataset or API. Most agency data inventory work happens at this level.
@@ -65,13 +64,13 @@ details: >+
         <td><code>publisher</code></td>
         <td>Mandatory</td>
         <td>object</td>
-        <td>The publishing entity and optionally its parent organization(s). References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+        <td>The publishing entity and optionally its parent organization(s). References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
       </tr>
       <tr>
         <td><code>contactPoint</code></td>
         <td>Mandatory</td>
         <td>object</td>
-        <td>Contact person's name and email for the dataset. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
+        <td>Contact person's name and email for the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
       </tr>
       <tr>
         <td><code>identifier</code></td>
@@ -162,7 +161,7 @@ details: >+
         <td><code>distribution</code></td>
         <td>Conditional</td>
         <td>array of objects</td>
-        <td>A container for one or more Distribution objects describing how the dataset can be accessed or downloaded. Required if the dataset has an <code>accessURL</code> or <code>downloadURL</code>. See <a href="https://resources.data.gov/standards/catalog/dcat-us-3-distribution/">Distribution fields</a>.</td>
+        <td>A container for one or more Distribution objects describing how the dataset can be accessed or downloaded. Required if the dataset has an <code>accessURL</code> or <code>downloadURL</code>. See <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution fields</a>.</td>
       </tr>
       <tr>
         <td><code>sample</code></td>
@@ -205,7 +204,7 @@ details: >+
         <td><code>rightsHolder</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>An agent owning or managing rights over the dataset. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+        <td>An agent owning or managing rights over the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
       </tr>
       <tr>
         <td><code>license</code></td>
@@ -236,13 +235,13 @@ details: >+
         <td><code>spatial</code></td>
         <td>Conditional</td>
         <td>object</td>
-        <td>Spatial coverage of the dataset. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Location class</a>. Required if the dataset has a spatial dimension. (Was a string in v1.1; now uses the Location class.)</td>
+        <td>Spatial coverage of the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Location class</a>. Required if the dataset has a spatial dimension. (Was a string in v1.1; now uses the Location class.)</td>
       </tr>
       <tr>
         <td><code>temporal</code></td>
         <td>Conditional</td>
         <td>object</td>
-        <td>Temporal coverage of the dataset. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>.</td>
+        <td>Temporal coverage of the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>.</td>
       </tr>
       <tr>
         <td><code>spatialResolutionInMeters</code></td>
@@ -315,7 +314,7 @@ details: >+
         <td><code>inSeries</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>A DatasetSeries to which this dataset belongs. See <a href="https://resources.data.gov/standards/catalog/dcat-us-3-dataset-series/">DatasetSeries fields</a>.</td>
+        <td>A DatasetSeries to which this dataset belongs. See <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">DatasetSeries fields</a>.</td>
       </tr>
     </tbody>
   </table>
@@ -352,13 +351,13 @@ details: >+
         <td><code>wasGeneratedBy</code></td>
         <td>Optional</td>
         <td>array</td>
-        <td>Activities that generated this dataset. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Activity class</a>.</td>
+        <td>Activities that generated this dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Activity class</a>.</td>
       </tr>
       <tr>
         <td><code>hasQualityMeasurement</code></td>
         <td>Optional</td>
         <td>array</td>
-        <td>Quality measurements associated with the dataset. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">QualityMeasurement class</a>.</td>
+        <td>Quality measurements associated with the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">QualityMeasurement class</a>.</td>
       </tr>
     </tbody>
   </table>
@@ -450,6 +449,38 @@ details: >+
     ---
 
   Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Dataset.json">jsonschema/definitions/Dataset.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Dataset.md">jsonschema/docs/Dataset.md</a>
+  
+
+  ## DCAT US Pages
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
+
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  
+  
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
+
+
 
 examples: ""
 link: ""
