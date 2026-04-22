@@ -27,7 +27,7 @@ details: >-
   
   ---
   
-  ##COVID-19 Response Related Data Assets
+  <h2>COVID-19 Response Related Data Assets</h2>
   
   <h3>Policy background</h3>
   
@@ -65,7 +65,7 @@ details: >-
   
   ---
   
-  ##Data Assets to Fuel AI Research and Development
+  <h2>Data Assets to Fuel AI Research and Development</h2>
   
   <h3>Policy background</h3>
   
@@ -174,7 +174,7 @@ details: >-
   
   ---
   
-  ##Summary: field changes for priority datasets
+  <h2>Summary: field changes for priority datasets</h2>
   
   <p>The table below summarizes how the v1.1 fields used in priority dataset documentation map to v3.0.</p>
   
@@ -213,7 +213,7 @@ details: >-
 
 
 
-  ## DCAT US Pages
+  <h2>DCAT US Pages</h2>
   
 
   ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
