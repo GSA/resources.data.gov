@@ -47,12 +47,63 @@ details: >+
   
  
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov 
+  ### Overview
+
+    <h2>What is DCAT-US v3.0?</h2>
   
-  ### What is DCAT-US v3.0?
+  <p>DCAT-US v3.0 is the federal data catalog metadata standard, updated to improve the Findability, Accessibility, Interoperability, and Reusability (FAIRness) of federal data. It is a U.S. application profile of the <a href="https://www.w3.org/TR/vocab-dcat-3/">W3C Data Catalog Vocabulary (DCAT) version 3</a> — not a new or separate standard. This means most DCAT-US v3.0 metadata is valid W3C DCAT 3 metadata, making it easier to share federal data with international catalogs and platforms that understand the W3C standard.</p>
   
-  DCAT-US v3.0 is the federal data catalog metadata standard, updated to improve the Findability, Accessibility, Interoperability, and Reusability (FAIRness) of federal data. It is a U.S. profile of the [W3C Data Catalog Vocabulary (DCAT)](https://www.w3.org/TR/vocab-dcat/), not a new or separate standard.
+  <p>DCAT-US v3.0 was developed collaboratively by the Federal Chief Data Officers Council, the Federal Committee on Statistical Methodology, and the Data.gov team at GSA, drawing on more than a decade of implementation experience with v1.1 and feedback from agencies, data providers, and data users across government. The schema is maintained in a <a href="https://github.com/GSA/dcat-us">public GitHub repository</a> and governed through a CDO Tiger Team review process to ensure ongoing accuracy and responsiveness to agency needs.</p>
   
-  Version 3.0 builds on more than ten years of implementation experience with the Project Open Data Metadata Schema (DCAT-US v1.1) and introduces a single metadata standard that consistently supports business, technical, statistical, and geospatial data. 
+  <h2>Why v3.0?</h2>
+  
+  <p>DCAT-US v1.1 was published in 2014 and served federal agencies well for over a decade. But the data landscape changed significantly. Agencies increasingly publish APIs alongside downloadable files, with no standard way to describe them at the catalog level. Geospatial data required a separate metadata standard. Datasets published in recurring series — annual surveys, quarterly reports, versioned reference data — had no standard way to express their relationship to each other. And the international open data community moved forward with W3C DCAT 2 and DCAT 3, leaving v1.1 increasingly out of step with global practice.</p>
+  
+  <p>DCAT-US v3.0 addresses these gaps while preserving the core investment agencies have made in their existing metadata. It aligns the U.S. federal standard with W3C DCAT 3, introduces structured support for APIs, geospatial data, dataset series, and data quality, and brings a consistent requirement level framework — Mandatory, Recommended, or Optional — that tells agencies exactly which fields matter most.</p>
+  
+  <h2>What stays the same</h2>
+  
+  <p>For most agencies the core structure of your data.json file carries forward unchanged. Your Catalog still holds an array of Datasets. Each Dataset still describes its Distributions. The fields you have been required to populate — title, description, publisher, contactPoint, keyword, modified, bureauCode, programCode, accessLevel — are all still present and recognized in v3.0.</p>
+  
+  <p>The upgrade work is real but manageable. Most of it involves converting a handful of fields from plain strings to structured objects, and updating a small number of field formats that are no longer valid. See the <a href="#changes-from-v11">Changes from v1.1</a> section below for the full list.</p>
+  
+  <h2>Who needs to act and when</h2>
+  
+  <p><strong>For agencies currently implementing v1.1:</strong> Continue operating your existing data.json files as-is until you are ready to migrate. v1.1 continues to be harvested by Data.gov during the transition period. When you are ready to migrate, start with the breaking changes listed in the Changes from v1.1 section — particularly <code>modified</code>, <code>temporal</code>, <code>spatial</code>, and <code>language</code> — since these are the fields most likely to fail v3.0 validation.</p>
+  
+  <p><strong>For agencies building new implementations:</strong> Use v3.0 from the start. The <a href="../dcat-us/">v1.1 reference</a> remains available but new implementations should not be built against it.</p>
+  
+  <p><strong>For system and tool developers:</strong> The schema has moved from JSON Schema Draft-04 to JSON Schema 2020-12. Update your validators accordingly. See <a href="https://github.com/GSA/dcat-us/tree/main/jsonschema">jsonschema/README.md</a> for tooling guidance.</p>
+  
+  <h2>How the schema is organized</h2>
+  
+  <p>DCAT-US v3.0 continues the same three-tier structure that agencies have used since v1.1: a Catalog holds Datasets, and each Dataset describes its Distributions.</p>
+  
+  <pre><code>Catalog
+  └── Dataset (one or more)
+      └── Distribution (one or more)
+  </code></pre>
+  
+  <p>Your data.json file is a Catalog. Each entry in its <code>dataset</code> array is a Dataset. Each Dataset's <code>distribution</code> array contains one or more Distribution records describing how to access or download the data. This is the same flow as v1.1.</p>
+  
+  <p>However, v3.0 introduces several field-level changes that affect existing records. See the <a href="#changes-from-v11">Changes from v1.1</a> section before migrating.</p>
+  
+  <h2>What's new in v3.0</h2>
+  
+  <p><strong>Requirement levels.</strong> For the first time, every field is explicitly labeled Mandatory, Recommended, or Optional. Mandatory fields must be present for a record to be valid. Recommended fields are not required by the schema validator but should be populated whenever the information exists — they improve discoverability and interoperability. Optional fields are available but not expected in most records.</p>
+  
+  <p><strong>Two new classes</strong> can appear alongside Dataset in the Catalog:</p>
+  
+  <ul>
+    <li><strong>DataService:</strong> describes an API or other programmatic interface that provides access to data. In v1.1, APIs were documented only as Distributions inside a Dataset. In v3.0, a DataService can be listed at the Catalog level as its own resource, which is useful for services that serve many datasets or are not tied to a single one. See <a href="../dcat-us-3-data-service/">DataService fields</a>.</li>
+    <li><strong>DatasetSeries:</strong> groups related datasets published over time — annual releases, recurring surveys, versioned reference data — under a single series record. Individual Dataset records point back to the series using the <code>inSeries</code> field. See <a href="../dcat-us-3-dataset-series/">DatasetSeries fields</a>.</li>
+  </ul>
+  
+  <p><strong>Supporting classes</strong> provide structured definitions for information that was unstructured in v1.1, such as geographic location, temporal coverage, contact information, attribution, quality measurements, and access restrictions. These classes are referenced from Dataset, Distribution, and the new classes above. Most agencies will encounter them indirectly, through a field that points to one of these structures. See <a href="../dcat-us-3-supporting-classes/">Supporting classes</a>.</p>
+  
+  <p><strong>JSON Schema validation.</strong> DCAT-US v3.0 is a valid JSON Schema (2020-12). Agencies can programmatically validate their metadata files against the schema. See <a href="https://github.com/GSA/dcat-us/tree/main/jsonschema">jsonschema/README.md</a> for tooling.</p>
+  
+  <p><strong>Federal access and use restrictions.</strong> Three new structured classes — AccessRestriction, UseRestriction, and CUIRestriction — replace the v1.1 pattern of expressing restrictions as free text in <code>rights</code> or using the three-value <code>accessLevel</code> field. These are documented on the <a href="../dcat-us-3-distribution/">Distribution fields</a> page.</p>
   
   ---
   
@@ -60,14 +111,8 @@ details: >+
   
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/ -->
   
-  DCAT-US v3.0 continues the same three-tier structure that agencies have used since v1.1: a **Catalog** holds **Datasets**, and each Dataset describes its **Distributions**.
-  
-  ```
+  Agencies already implementing v1.1 will find the core structure familiar. However, v3.0 introduces several field-level changes that affect existing records. See the Changes from v1.1 section below before migrating.
 
-  Catalog
-
-  └── Dataset (one or more)
-      └── Distribution (one or more)
 
   ```
   
@@ -82,6 +127,9 @@ details: >+
   ### What's new in v3.0
   
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
+
+  Requirement levels. For the first time, every field is explicitly labeled Mandatory, Recommended, or Optional. Mandatory fields must be present for a record to be valid. Recommended fields are not required by the schema validator but should be populated whenever the information exists; they improve discoverability and interoperability. Optional fields are available but not expected in most records.
+
   
   **Two new classes** can appear alongside Dataset in the Catalog:
   
@@ -206,12 +254,199 @@ details: >+
   ---
   
   
-  ### Changes from v1.1 (This section is not complete as of 4/20/2026)
+  ### Changes from v1.1 
   
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
   
   For a full comparison, see the repository: [GSA/dcat-us](https://github.com/GSA/dcat-us).
+
+  <h2>Changes from v1.1</h2>
   
+  <p>The table below summarizes the most significant changes from DCAT-US v1.1 to v3.0. For a complete field-by-field comparison, see the <a href="https://github.com/GSA/dcat-us">schema repository</a>. For field-level detail see the individual reference pages for <a href="../dcat-us-3-catalog/">Catalog</a>, <a href="../dcat-us-3-dataset/">Dataset</a>, and <a href="../dcat-us-3-distribution/">Distribution</a>.</p>
+  
+  <h3>Breaking changes</h3>
+  
+  <p>These are changes where existing v1.1 field values will fail v3.0 schema validation and must be updated.</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>What changed</th>
+        <th>Action required</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>modified</code> with repeating intervals</td>
+        <td>v1.1 accepted repeating duration formats like <code>R/P1D</code> or <code>R/P1Y</code> to indicate continually updated datasets. v3.0 requires a plain ISO 8601 date.</td>
+        <td>Set <code>modified</code> to the actual date the data last changed (e.g., <code>"2024-06-01"</code>). Use <code>accrualPeriodicity</code> to express update frequency.</td>
+      </tr>
+      <tr>
+        <td><code>temporal</code> as an ISO 8601 string</td>
+        <td>v1.1 used a plain interval string (e.g., <code>"2000-01-15T00:00:00Z/2010-01-15T00:00:00Z"</code>). v3.0 uses a structured PeriodOfTime object.</td>
+        <td>Convert to a PeriodOfTime object: <code>[{"@type": "PeriodOfTime", "startDate": "2000-01-15", "endDate": "2010-01-15"}]</code>. Open-ended periods are valid — you can omit either <code>startDate</code> or <code>endDate</code>.</td>
+      </tr>
+      <tr>
+        <td><code>spatial</code> as a plain string</td>
+        <td>v1.1 accepted plain strings like <code>"United States"</code> or bounding box coordinate strings. v3.0 uses a structured Location object.</td>
+        <td>Convert to a Location object: <code>[{"@type": "Location", "prefLabel": "United States"}]</code>. Add a <code>bbox</code> for geospatial precision.</td>
+      </tr>
+      <tr>
+        <td><code>language</code> with RFC 5646 tags</td>
+        <td>v1.1 used RFC 5646 language tags like <code>en-US</code>. v3.0 uses two-letter ISO 639-1 codes only, with a maximum length of two characters.</td>
+        <td>Simplify to two-letter codes: change <code>en-US</code> to <code>en</code>, <code>es-MX</code> to <code>es</code>, etc.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h3>Fields replaced or removed</h3>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>v1.1 Field</th>
+        <th>Status in v3.0</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>accessLevel</code></td>
+        <td>Replaced by <code>accessRights</code> on Dataset</td>
+        <td>Use <code>accessRights</code> as a free-text string. The value <code>"public"</code> remains valid. For restricted datasets write a plain-language explanation of the restriction.</td>
+      </tr>
+      <tr>
+        <td><code>isPartOf</code></td>
+        <td>Replaced by <code>inSeries</code> and <code>hasPart</code></td>
+        <td>Use <code>inSeries</code> for datasets that belong to a recurring temporal series. Use <code>hasPart</code> at the parent dataset level for generic collections.</td>
+      </tr>
+      <tr>
+        <td><code>describedByType</code></td>
+        <td>Absorbed into <code>describedBy</code></td>
+        <td>Express the format as <code>mediaType</code> within the <code>describedBy</code> Distribution object. No separate field needed.</td>
+      </tr>
+      <tr>
+        <td><code>license</code> at Dataset level</td>
+        <td>Now at Distribution level</td>
+        <td>Move <code>license</code> from each Dataset to each Distribution object. If all distributions share the same license add it to each one individually.</td>
+      </tr>
+      <tr>
+        <td><code>@context</code> at Catalog level</td>
+        <td>Removed</td>
+        <td>Remove from your catalog file.</td>
+      </tr>
+      <tr>
+        <td><code>describedBy</code> at Catalog level</td>
+        <td>Removed — replaced by <code>conformsTo</code> Standard object</td>
+        <td>Remove from your catalog file. Use a Standard object in <code>conformsTo</code> instead.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h3>Fields not in the v3.0 core schema</h3>
+  
+  <p>The following fields were introduced in v1.1 specifically for U.S. federal agencies. They are not defined in the v3.0 core schema but agencies should continue populating them until updated OMB policy guidance is issued. The v3.0 schema will not reject records that include them.</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>bureauCode</code></td>
+        <td>Required by existing OMB policy (M-13-13). Continue populating per current guidance.</td>
+      </tr>
+      <tr>
+        <td><code>programCode</code></td>
+        <td>Required by existing OMB policy (M-13-13). Continue populating per current guidance.</td>
+      </tr>
+      <tr>
+        <td><code>accessLevel</code></td>
+        <td>Required by existing OMB policy. Use alongside the new <code>accessRights</code> field until updated guidance is issued.</td>
+      </tr>
+      <tr>
+        <td><code>dataQuality</code></td>
+        <td>Not in v3.0 schema. Use <code>hasQualityMeasurement</code> for structured quality reporting going forward.</td>
+      </tr>
+      <tr>
+        <td><code>primaryITInvestmentUII</code></td>
+        <td>Not in v3.0 schema. Can be preserved in <code>otherIdentifier</code> if needed.</td>
+      </tr>
+      <tr>
+        <td><code>systemOfRecords</code></td>
+        <td>Not in v3.0 schema. Reference the SORN URL in <code>accessRights</code> or <code>rights</code> until formal guidance is issued.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h3>Structural changes</h3>
+  
+  <p>The following fields changed type or structure between v1.1 and v3.0. Existing string values in these fields will not validate against the v3.0 schema and must be converted to the new object format.</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>v1.1 type</th>
+        <th>v3.0 type</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>landingPage</code></td>
+        <td>string (URL)</td>
+        <td>Document object</td>
+        <td>Wrap in a Document object with <code>title</code> and <code>accessURL</code>.</td>
+      </tr>
+      <tr>
+        <td><code>theme</code></td>
+        <td>array of strings</td>
+        <td>array of Concept objects</td>
+        <td>Each Concept requires a <code>prefLabel</code>. Plain string values are no longer valid.</td>
+      </tr>
+      <tr>
+        <td><code>describedBy</code> on Dataset and Distribution</td>
+        <td>string (URL)</td>
+        <td>Distribution object</td>
+        <td>Wrap in a Distribution object with <code>title</code>, <code>downloadURL</code> or <code>accessURL</code>, and <code>mediaType</code>.</td>
+      </tr>
+      <tr>
+        <td><code>conformsTo</code> on Dataset and Distribution</td>
+        <td>string (URI)</td>
+        <td>array of Standard objects</td>
+        <td>Wrap in an array of Standard objects. Each Standard should include <code>title</code> and <code>identifier</code>.</td>
+      </tr>
+      <tr>
+        <td><code>conformsTo</code> on Catalog</td>
+        <td>string (URI)</td>
+        <td>Standard object</td>
+        <td>Use <code>{"@type": "Standard", "title": "DCAT-US 3.0", "identifier": "https://resources.data.gov/dcat-us/3.0.0"}</code></td>
+      </tr>
+      <tr>
+        <td><code>rights</code></td>
+        <td>string — max 255 characters</td>
+        <td>array of strings — no character limit</td>
+        <td>Convert to an array. The 255-character limit no longer applies.</td>
+      </tr>
+      <tr>
+        <td><code>byteSize</code> on Distribution</td>
+        <td>number</td>
+        <td>string</td>
+        <td>Express as a numeric string, e.g. <code>"52428800"</code>.</td>
+      </tr>
+      <tr>
+        <td><code>publisher.subOrganizationOf</code></td>
+        <td>single Organization object</td>
+        <td>array of Organization objects</td>
+        <td>Wrap in an array if you have parent organization hierarchy.</td>
+      </tr>
+    </tbody>
+  </table>
 
   
   
@@ -219,6 +454,9 @@ details: >+
   
   <!-- SOURCE: https://github.com/GSA/dcat-us/tree/main/jsonschema -->
   
+  Note: the generated reference documentation in jsonschema/docs/ currently shows all fields as Optional regardless of their actual requirement level. This is a known issue. Trust the requirement levels documented on the reference pages and in the JSON schema files directly.
+
+
   Validate your metadata against the v3.0 schema:
   
   
