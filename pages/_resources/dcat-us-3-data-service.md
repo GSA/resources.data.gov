@@ -1,5 +1,5 @@
 ---
-resource_name: DCAT-US Schema v3.0 — DataService fields
+resource_name: DCAT-US Schema v3.0 DataService fields
 slug: dcat-us-3-data-service
 description: >-
   Field-level reference for the DCAT-US v3.0 DataService class. DataService is
@@ -25,7 +25,7 @@ details: >+
 
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
-  ---
+  
 
   ### Overview
 
@@ -61,7 +61,7 @@ details: >+
         <td><code>contactPoint</code></td>
         <td>Mandatory</td>
         <td>array</td>
-        <td>Contact information for the service. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
+        <td>Contact information for the service. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
       </tr>
       <tr>
         <td><code>title</code></td>
@@ -140,13 +140,13 @@ details: >+
         <td><code>spatial</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>Geographic coverage of the data accessible through the service. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Location class</a>.</td>
+        <td>Geographic coverage of the data accessible through the service. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Location class</a>.</td>
       </tr>
       <tr>
         <td><code>temporal</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>Temporal coverage of the data accessible through the service. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>.</td>
+        <td>Temporal coverage of the data accessible through the service. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>.</td>
       </tr>
       <tr>
         <td><code>theme</code></td>
@@ -164,7 +164,7 @@ details: >+
         <td><code>publisher</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>The publishing entity for the service. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+        <td>The publishing entity for the service. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
       </tr>
     </tbody>
   </table>
@@ -196,6 +196,37 @@ details: >+
   ---
 
   Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json">jsonschema/definitions/DataService.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DataService.md">jsonschema/docs/DataService.md</a>
+
+  ## DCAT US Pages
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
+
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  
+  
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
+
+
 
 examples: ""
 link: ""
