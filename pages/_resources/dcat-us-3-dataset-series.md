@@ -27,19 +27,19 @@ details: >+
   
   ### Overview
 
-  <strong>New in v3.0.</strong> DatasetSeries groups related datasets that are published in an ordered sequence such as annual budget data, recurring survey releases, or versioned reference datasets are under a single series record.
-
-  The series record describes the collection as a whole. Each edition within the series is its own Dataset record that points back to the series using the Dataset's <code>inSeries</code> field.
-
-  <strong>Required fields in v3.0:</strong> None. A useful series record should at minimum include <code>title</code>, <code>description</code>, and <code>publisher</code>.
-
+  <p>New in v3.0. DatasetSeries groups related datasets that are published in an ordered sequence — such as annual budget data, recurring survey releases, or versioned reference datasets — under a single series record. The series record describes the collection as a whole. Each edition within the series is its own Dataset record that points back to the series using the Dataset's <code>inSeries</code> field.</p>
+  
+  <p>DatasetSeries is a subclass of Dataset. This means a DatasetSeries record can be included directly in the <code>dataset</code> array of a Catalog alongside individual Dataset records.</p>
+  
+  <p>Required fields in v3.0: <code>title</code>, <code>description</code></p>
+  
+  <p><strong>Important date distinctions:</strong> <code>issued</code> is the date the series was <em>established</em> — not the publication date of the oldest dataset in the series. <code>modified</code> is the date the series <em>description</em> changed — not the modified date of the newest dataset. Keep these distinct from the <code>issued</code> and <code>modified</code> fields on the individual Dataset records within the series.</p>
+  
   ---
-
-  ### Core fields
-
-  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
-
-  <table class="usa-table">
+  
+  <h2>Core fields</h2>
+  
+  <table>
     <thead>
       <tr>
         <th>Field</th>
@@ -51,68 +51,70 @@ details: >+
     <tbody>
       <tr>
         <td><code>title</code></td>
-        <td>Recommended</td>
+        <td>Mandatory</td>
         <td>string</td>
-        <td>A human-readable name for the series. Example: <code>Federal IT Dashboard Annual Data</code>.</td>
+        <td>A human-readable name for the series. Example: <code>"Federal IT Dashboard Annual Data"</code></td>
       </tr>
       <tr>
         <td><code>description</code></td>
-        <td>Recommended</td>
+        <td>Mandatory</td>
         <td>string</td>
-        <td>A human-readable description of the series — what it covers, how often it is published, and what each edition contains.</td>
+        <td>A human-readable description of the series — what it covers, how often it is published, and what each edition contains. Example: <code>"Annual releases of federal IT investment data from the IT Dashboard, published each fiscal year."</code></td>
       </tr>
       <tr>
         <td><code>publisher</code></td>
         <td>Recommended</td>
-        <td>object</td>
-        <td>The publishing entity for the series. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+        <td>Agent object</td>
+        <td>
+          The organization responsible for maintaining the series as a coherent collection. May differ from the publishers of individual datasets within the series. References the <a href="../dcat-us-3-supporting-classes/#agent">Agent class</a>.
+          <br><br>
+          Example: <code>{"name": "Office of the Chief Information Officer"}</code>
+        </td>
       </tr>
       <tr>
         <td><code>contactPoint</code></td>
-        <td>Optional</td>
-        <td>array</td>
-        <td>Contact information for the series. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
-      </tr>
-      <tr>
-        <td><code>identifier</code></td>
-        <td>Optional</td>
-        <td>string</td>
-        <td>A unique identifier for this series. A persistent URI is recommended.</td>
-      </tr>
-      <tr>
-        <td><code>keyword</code></td>
-        <td>Optional</td>
-        <td>array of strings</td>
-        <td>Tags describing the series.</td>
+        <td>Recommended</td>
+        <td>array of Kind objects</td>
+        <td>Contact information for questions about the series as a whole. References the <a href="../dcat-us-3-supporting-classes/#kind">Kind class</a>. Example: <code>[{"fn": "IT Dashboard Team", "hasEmail": "mailto:itdashboard@agency.gov"}]</code></td>
       </tr>
       <tr>
         <td><code>accrualPeriodicity</code></td>
         <td>Optional</td>
         <td>string</td>
-        <td>The frequency at which new editions of the series are published. Use ISO 8601 repeating duration format (e.g., <code>R/P1Y</code> for annual) or an ISO 19115 Maintenance Frequency code.</td>
+        <td>
+          The frequency at which new editions of the series are published. Accepts plain-language codes (e.g., <code>"annually"</code>, <code>"quarterly"</code>, <code>"monthly"</code>), ISO 8601 repeating duration format (e.g., <code>"R/P1Y"</code>), or Dublin Core frequency vocabulary terms. Plain-language codes are preferred.
+          <br><br>
+          Example: <code>"annually"</code>
+        </td>
       </tr>
       <tr>
         <td><code>issued</code></td>
         <td>Optional</td>
         <td>string (ISO 8601)</td>
-        <td>Date the series was first issued.</td>
+        <td>
+          The date the series was formally established — not the publication date of the oldest dataset in the series. Accepts date, datetime, year (YYYY), or year-month (YYYY-MM).
+          <br><br>
+          Example: <code>"2010-01-01"</code>
+        </td>
       </tr>
       <tr>
         <td><code>modified</code></td>
-        <td>Optional</td>
+        <td>Recommended</td>
         <td>string (ISO 8601)</td>
-        <td>Most recent date any aspect of the series was changed.</td>
+        <td>
+          The most recent date the series description or metadata changed — not the modified date of the newest dataset in the series. Accepts date, datetime, year (YYYY), or year-month (YYYY-MM).
+          <br><br>
+          Example: <code>"2024-12-01"</code>
+        </td>
       </tr>
     </tbody>
   </table>
-
+  
   ---
-
-  ### Series structure
-
-  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
-
-  <table class="usa-table">
+  
+  <h2>Series structure</h2>
+  
+  <table>
     <thead>
       <tr>
         <th>Field</th>
@@ -123,33 +125,43 @@ details: >+
     </thead>
     <tbody>
       <tr>
-        <td><code>seriesMember</code></td>
-        <td>Optional</td>
-        <td>array</td>
-        <td>The Dataset records that are members of this series.</td>
-      </tr>
-      <tr>
         <td><code>first</code></td>
-        <td>Optional</td>
-        <td>object</td>
-        <td>The first Dataset in the series.</td>
+        <td>Recommended</td>
+        <td>Dataset object</td>
+        <td>
+          The first Dataset in the series — the earliest or founding edition. Providing <code>first</code> and <code>last</code> together gives users a quick sense of the series' temporal span without needing to retrieve all members.
+          <br><br>
+          The Dataset object must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>.
+        </td>
       </tr>
       <tr>
         <td><code>last</code></td>
-        <td>Optional</td>
-        <td>object</td>
-        <td>The most recent or final Dataset in the series.</td>
+        <td>Recommended</td>
+        <td>Dataset object</td>
+        <td>
+          The most recent or final Dataset in the series. Update this field whenever a new edition is published.
+          <br><br>
+          The Dataset object must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>.
+        </td>
+      </tr>
+      <tr>
+        <td><code>seriesMember</code></td>
+        <td>Recommended</td>
+        <td>array of Dataset objects</td>
+        <td>
+          The Dataset records that are members of this series. You do not need to list every member here — it is sufficient for each individual Dataset to reference the series via its own <code>inSeries</code> field. However listing key members here improves discoverability and allows catalog browsers to navigate between editions directly.
+          <br><br>
+          Each Dataset object must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>.
+        </td>
       </tr>
     </tbody>
   </table>
-
+  
   ---
-
-  ### Coverage and rights
-
-  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
-
-  <table class="usa-table">
+  
+  <h2>Coverage</h2>
+  
+  <table>
     <thead>
       <tr>
         <th>Field</th>
@@ -161,86 +173,149 @@ details: >+
     <tbody>
       <tr>
         <td><code>spatial</code></td>
-        <td>Optional</td>
-        <td>object</td>
-        <td>Geographic coverage of the series. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Location class</a>.</td>
+        <td>Recommended</td>
+        <td>array of Location objects</td>
+        <td>
+          Geographic region(s) covered by the series as a whole. References the <a href="../dcat-us-3-supporting-classes/#location">Location class</a>.
+          <br><br>
+          Example: <code>[{"@type": "Location", "prefLabel": "United States"}]</code>
+        </td>
       </tr>
       <tr>
         <td><code>temporal</code></td>
-        <td>Optional</td>
-        <td>object</td>
-        <td>Temporal coverage of the series as a whole — typically from the first edition to the most recent. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>.</td>
-      </tr>
-      <tr>
-        <td><code>license</code></td>
-        <td>Optional</td>
-        <td>string (URL)</td>
-        <td>License applying to the series as a whole. See <a href="https://resources.data.gov/open-licenses/">Open Licenses</a>.</td>
-      </tr>
-      <tr>
-        <td><code>rights</code></td>
-        <td>Optional</td>
-        <td>string</td>
-        <td>Rights information for the series.</td>
-      </tr>
-      <tr>
-        <td><code>accessRights</code></td>
-        <td>Optional</td>
-        <td>string</td>
-        <td>Access restrictions for the series.</td>
+        <td>Recommended</td>
+        <td>array of PeriodOfTime objects</td>
+        <td>
+          Temporal coverage of the series as a whole — typically from the first edition to the most recent. References the <a href="../dcat-us-3-supporting-classes/#periodoftime">PeriodOfTime class</a>. Update <code>endDate</code> whenever a new edition is published, or omit it for an ongoing series.
+          <br><br>
+          Ongoing series: <code>[{"@type": "PeriodOfTime", "startDate": "2010-01-01"}]</code>
+          <br><br>
+          Completed series: <code>[{"@type": "PeriodOfTime", "startDate": "2010-01-01", "endDate": "2024-12-31"}]</code>
+        </td>
       </tr>
     </tbody>
   </table>
-
+  
   ---
-
-  ### How to link datasets to a series
-
-  In each Dataset record that belongs to the series, use the <code>inSeries</code> field to reference the series:
-
-    <pre><code>{
+  
+  <h2>How to link datasets to a series</h2>
+  
+  <p>In each Dataset record that belongs to the series, use the <code>inSeries</code> field to reference the series. <code>inSeries</code> is an array of DatasetSeries objects — include at minimum the series <code>@id</code> so the link can be resolved.</p>
+  
+  <pre><code>{
     "@type": "Dataset",
     "title": "Federal IT Dashboard Annual Data - FY2024",
-    "inSeries": {
-      "@id": "https://www.agency.gov/data/it-dashboard-series"
-    }
+    "description": "Federal IT investment data for fiscal year 2024.",
+    "identifier": "https://www.agency.gov/data/it-dashboard-fy2024",
+    "publisher": {"name": "Office of the Chief Information Officer"},
+    "contactPoint": {"fn": "IT Dashboard Team", "hasEmail": "mailto:itdashboard@agency.gov"},
+    "inSeries": [
+      {
+        "@id": "https://www.agency.gov/data/it-dashboard-series",
+        "@type": "DatasetSeries",
+        "title": "Federal IT Dashboard Annual Data"
+      }
+    ]
   }
   </code></pre>
-
+  
   ---
-
-  ### Example series record
-
-    <pre><code>{
+  
+  <h2>Example</h2>
+  
+  <p>A minimal DatasetSeries record meeting all v3.0 required fields:</p>
+  
+  <pre><code>{
+    "@type": "DatasetSeries",
+    "title": "Federal IT Dashboard Annual Data",
+    "description": "Annual releases of federal IT investment data from the IT Dashboard, published each fiscal year."
+  }
+  </code></pre>
+  
+  <p>A more complete record showing recommended fields:</p>
+  
+  <pre><code>{
     "@type": "DatasetSeries",
     "@id": "https://www.agency.gov/data/it-dashboard-series",
     "title": "Federal IT Dashboard Annual Data",
-    "description": "Annual releases of federal IT investment data from the IT Dashboard, published each fiscal year.",
-    "accrualPeriodicity": "R/P1Y",
+    "description": "Annual releases of federal IT investment data from the IT Dashboard, published each fiscal year. Each edition covers one fiscal year of IT investment activity across all federal agencies.",
     "publisher": {
-      "@type": "org:Organization",
+      "@type": "Organization",
       "name": "Office of the Chief Information Officer",
-      "subOrganizationOf": {
-        "@type": "org:Organization",
-        "name": "Example Federal Agency"
-      }
+      "subOrganizationOf": [
+        {
+          "@type": "Organization",
+          "name": "Example Federal Agency"
+        }
+      ]
     },
     "contactPoint": [
       {
-        "@type": "vcard:Contact",
+        "@type": "Kind",
         "fn": "IT Dashboard Team",
         "hasEmail": "mailto:itdashboard@agency.gov"
       }
     ],
-    "issued": "2010-01-01"
+    "accrualPeriodicity": "annually",
+    "issued": "2010-01-01",
+    "modified": "2024-12-01",
+    "spatial": [
+      {
+        "@type": "Location",
+        "prefLabel": "United States"
+      }
+    ],
+    "temporal": [
+      {
+        "@type": "PeriodOfTime",
+        "startDate": "2010-10-01"
+      }
+    ],
+    "first": {
+      "@type": "Dataset",
+      "title": "Federal IT Dashboard Annual Data - FY2010",
+      "description": "Federal IT investment data for fiscal year 2010.",
+      "identifier": "https://www.agency.gov/data/it-dashboard-fy2010",
+      "publisher": {"name": "Office of the Chief Information Officer"},
+      "contactPoint": {"fn": "IT Dashboard Team", "hasEmail": "mailto:itdashboard@agency.gov"}
+    },
+    "last": {
+      "@type": "Dataset",
+      "title": "Federal IT Dashboard Annual Data - FY2024",
+      "description": "Federal IT investment data for fiscal year 2024.",
+      "identifier": "https://www.agency.gov/data/it-dashboard-fy2024",
+      "publisher": {"name": "Office of the Chief Information Officer"},
+      "contactPoint": {"fn": "IT Dashboard Team", "hasEmail": "mailto:itdashboard@agency.gov"}
+    },
+    "seriesMember": [
+      {
+        "@type": "Dataset",
+        "title": "Federal IT Dashboard Annual Data - FY2022",
+        "description": "Federal IT investment data for fiscal year 2022.",
+        "identifier": "https://www.agency.gov/data/it-dashboard-fy2022",
+        "publisher": {"name": "Office of the Chief Information Officer"},
+        "contactPoint": {"fn": "IT Dashboard Team", "hasEmail": "mailto:itdashboard@agency.gov"}
+      },
+      {
+        "@type": "Dataset",
+        "title": "Federal IT Dashboard Annual Data - FY2023",
+        "description": "Federal IT investment data for fiscal year 2023.",
+        "identifier": "https://www.agency.gov/data/it-dashboard-fy2023",
+        "publisher": {"name": "Office of the Chief Information Officer"},
+        "contactPoint": {"fn": "IT Dashboard Team", "hasEmail": "mailto:itdashboard@agency.gov"}
+      },
+      {
+        "@type": "Dataset",
+        "title": "Federal IT Dashboard Annual Data - FY2024",
+        "description": "Federal IT investment data for fiscal year 2024.",
+        "identifier": "https://www.agency.gov/data/it-dashboard-fy2024",
+        "publisher": {"name": "Office of the Chief Information Officer"},
+        "contactPoint": {"fn": "IT Dashboard Team", "hasEmail": "mailto:itdashboard@agency.gov"}
+      }
+    ]
   }
   </code></pre>
-
-  ---
-
-  Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json">jsonschema/definitions/DatasetSeries.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DatasetSeries.md">jsonschema/docs/DatasetSeries.md</a>
-
-
+   
 
   ## DCAT US Pages
   
