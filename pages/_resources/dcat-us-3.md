@@ -47,7 +47,7 @@ details: >+
   
  
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov 
-  ### Overview
+ 
 
     <h2>What is DCAT-US v3.0?</h2>
   
@@ -80,7 +80,9 @@ details: >+
   <p>DCAT-US v3.0 continues the same three-tier structure that agencies have used since v1.1: a Catalog holds Datasets, and each Dataset describes its Distributions.</p>
   
   <pre><code>Catalog
+    
   └── Dataset (one or more)
+    
       └── Distribution (one or more)
   </code></pre>
   
@@ -107,47 +109,6 @@ details: >+
   
   ---
   
-  ### How the schema is organized
-  
-  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/ -->
-  
-  Agencies already implementing v1.1 will find the core structure familiar. However, v3.0 introduces several field-level changes that affect existing records. See the Changes from v1.1 section below before migrating.
-
-
-  ```
-  
-  Your `data.json` file is a Catalog. Each entry in its `dataset` array is a Dataset. Each Dataset's `distribution` array contains one or more Distribution records describing how to access or download the data.
-  
-  
-  This is the same flow as v1.1. Agencies already implementing v1.1 can continue using this structure; v3.0 adds optional fields and new classes on top of it, but does not change the core pattern.
-  
-  
-  ---
-  
-  ### What's new in v3.0
-  
-  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
-
-  Requirement levels. For the first time, every field is explicitly labeled Mandatory, Recommended, or Optional. Mandatory fields must be present for a record to be valid. Recommended fields are not required by the schema validator but should be populated whenever the information exists; they improve discoverability and interoperability. Optional fields are available but not expected in most records.
-
-  
-  **Two new classes** can appear alongside Dataset in the Catalog:
-  
-  - **DataService:** describes an API or other programmatic interface that provides access to data. In v1.1, APIs were documented only as Distributions inside a Dataset. In v3.0, a DataService can be listed at the Catalog level as its own resource, which is useful for services that serve many datasets or are not tied to a single one.
-
-  - **DatasetSeries:** groups related datasets published over time (annual releases, recurring surveys, versioned reference data) under a single series record. Individual Dataset records point back to the series using the `inSeries` field.
-  
-  
-  **Supporting classes** provide structured definitions for information that was unstructured in v1.1, such as geographic location, temporal coverage, contact information, attribution, and quality measurements. These classes are referenced from Dataset, Distribution, and the new classes above. Most agencies will encounter them indirectly, through a field that points to one of these structures.
-  
-  
-  **JSON Schema validation.** DCAT-US v3.0 is a valid JSON Schema (2020-12). Agencies can programmatically validate their metadata files against the schema. See [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema) for tooling.
-  
-  
-  **Requirement levels.** Fields are now explicitly labeled Mandatory, Recommended, or Optional throughout the schema and in this reference.
-  
-  
-
   
   ### Class hierarchy
   
@@ -254,12 +215,6 @@ details: >+
   ---
   
   
-  ### Changes from v1.1 
-  
-  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
-  
-  For a full comparison, see the repository: [GSA/dcat-us](https://github.com/GSA/dcat-us).
-
   <h2>Changes from v1.1</h2>
   
   <p>The table below summarizes the most significant changes from DCAT-US v1.1 to v3.0. For a complete field-by-field comparison, see the <a href="https://github.com/GSA/dcat-us">schema repository</a>. For field-level detail see the individual reference pages for <a href="../dcat-us-3-catalog/">Catalog</a>, <a href="../dcat-us-3-dataset/">Dataset</a>, and <a href="../dcat-us-3-distribution/">Distribution</a>.</p>
