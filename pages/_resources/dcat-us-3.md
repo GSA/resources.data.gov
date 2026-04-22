@@ -32,7 +32,7 @@ details: >+
       </tr>
       <tr>
         <th>Previous version:</th>
-        <td><a href="https://resources.data.gov/standards/catalog/dcat-us/">DCAT-US v1.1 (Project Open Data Metadata Schema)</a></td>
+        <td><a href="https://resources.data.gov/catalog/dcat-us/">DCAT-US v1.1 (Project Open Data Metadata Schema)</a></td>
       </tr>
       <tr>
         <th>Schema repository:</th>
@@ -132,11 +132,11 @@ details: >+
   
   Add these values when data exists
   
-  - [Catalog fields](https://resources.data.gov/standards/catalog/dcat-us-3-catalog/) — the top-level container; your `data.json` is a Catalog
+  - [Catalog fields](https://resources.data.gov/catalog/dcat-us-3-catalog/) — the top-level container; your `data.json` is a Catalog
     
-  - [Dataset fields](https://resources.data.gov/standards/catalog/dcat-us-3-dataset/) — the primary inventory unit; one record per dataset
+  - [Dataset fields](https://resources.data.gov/catalog/dcat-us-3-dataset/) — the primary inventory unit; one record per dataset
     
-  - [Distribution fields](https://resources.data.gov/standards/catalog/dcat-us-3-distribution/) — a specific file or access point for a dataset
+  - [Distribution fields](https://resources.data.gov/catalog/dcat-us-3-distribution/) — a specific file or access point for a dataset
   
   
   #### Additional classes (new in v3.0)
@@ -144,9 +144,9 @@ details: >+
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json -->
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json -->
   
-  - [DataService fields](https://resources.data.gov/standards/catalog/dcat-us-3-data-service/) — APIs and query endpoints
+  - [DataService fields](https://resources.data.gov/catalog/dcat-us-3-data-service/) — APIs and query endpoints
   
-  - [DatasetSeries fields](https://resources.data.gov/standards/catalog/dcat-us-3-data-series/) — recurring or versioned dataset releases
+  - [DatasetSeries fields](https://resources.data.gov/catalog/dcat-us-3-data-series/) — recurring or versioned dataset releases
   
   
   
@@ -154,7 +154,7 @@ details: >+
   
   <!-- SOURCE: https://github.com/GSA/dcat-us/tree/main/jsonschema/definitions/ -->
   
-  Supporting classes are referenced from the core classes above. The [supporting classes reference](https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/) covers all of them in one place, grouped by function.
+  Supporting classes are referenced from the core classes above. The [supporting classes reference](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/) covers all of them in one place, grouped by function.
   
   <table class="usa-table">
     <thead>
@@ -205,13 +205,15 @@ details: >+
   
   ---
   
+  
   ### Changes from v1.1 (This section is not complete as of 4/20/2026)
   
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
   
   For a full comparison, see the repository: [GSA/dcat-us](https://github.com/GSA/dcat-us).
   
-  ---
+
+  
   
   ### Validation
   
@@ -219,9 +221,12 @@ details: >+
   
   Validate your metadata against the v3.0 schema:
   
+  
   JSON Schema file: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json)
   
+  
   Validation script: [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py)
+  
   
   Instructions: [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema)
   
@@ -229,7 +234,39 @@ details: >+
   
   ### Still using DCAT-US v1.1?
   
-  The [DCAT-US v1.1 reference](https://resources.data.gov/standards/catalog/dcat-us/) remains available.
+  The [DCAT-US v1.1 reference](https://resources.data.gov/catalog/dcat-us/) remains available.
+
+
+  ## DCAT US Pages
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
+
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  
+  
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
+
+
 
  
 
