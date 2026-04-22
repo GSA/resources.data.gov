@@ -26,7 +26,7 @@ details: >+
 
   ### Overview
 
-  A Distribution represents a specific way of accessing or obtaining a dataset — a downloadable CSV, a ZIP package, a REST API endpoint, or any other form of access. A single dataset can have multiple distributions.
+  A Distribution represents a specific way of accessing or obtaining a dataset: a downloadable CSV, a ZIP package, a REST API endpoint, or any other form of access. A single dataset can have multiple distributions.
 
   <strong>Required fields in v3.0:</strong> None. However, each distribution should contain at least one of <code>accessURL</code> or <code>downloadURL</code>.
 
