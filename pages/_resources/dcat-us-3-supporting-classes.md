@@ -1,5 +1,5 @@
 ---
-resource_name: DCAT-US Schema v3.0 — Supporting classes
+resource_name: DCAT-US Schema v3.0 Supporting classes
 slug: dcat-us-3-supporting-classes
 description: >-
   Reference for the DCAT-US v3.0 supporting classes. These classes are
@@ -24,7 +24,6 @@ details: >+
 
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
-  ---
 
   ### Overview
 
@@ -389,6 +388,38 @@ details: >+
   ---
 
   Source: <a href="https://github.com/GSA/dcat-us/tree/main/jsonschema/definitions">jsonschema/definitions/</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/tree/main/jsonschema/docs">jsonschema/docs/</a>
+
+
+  ## DCAT US Pages
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
+
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  
+  
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
+
+
 
 examples: ""
 link: ""
