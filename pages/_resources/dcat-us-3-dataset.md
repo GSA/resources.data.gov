@@ -421,7 +421,6 @@ details: >+
 
     ---
 
-  
     ### Example
   
     A minimal Dataset record meeting the v3.0 required fields:
