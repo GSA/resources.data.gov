@@ -30,9 +30,61 @@ details: >+
 
   <strong>Required fields in v3.0:</strong> <code>title</code>, <code>description</code>, <code>publisher</code>, <code>contactPoint</code>, <code>identifier</code>
 
-  All other fields are Optional unless noted. Fields that were required in v1.1 but are no longer schema-required in v3.0 are noted below. Agencies should consult current OMB policy guidance for any fields that remain required by policy.
+  All other fields are Optional unless noted. Fields that were required in v1.1 but are no longer schema-required in v3.0 are noted below. Agencies should consult the current OMB policy guidance for any fields that remain required.
 
-  ---
+
+  ### Transition From DCAT US 1.1 to DCAT US 3
+
+  If your agency is upgrading from v1.1, most of your existing dataset records will carry forward with minimal changes. The required fields are largely the same. The main things to be aware of are: modified no longer accepts repeating intervals; temporal and spatial now use structured objects instead of strings; accessLevel is replaced by accessRights; and license should move to the Distribution level. The table at the bottom of this page summarizes all field-level changes from v1.1.
+
+
+  ### Discovery and Context
+  
+  These fields are new in v3.0 and help users understand what a dataset is for, what it covers, and any limitations on its use. They are all optional but strongly encouraged for publicly visible datasets.
+
+  <table>
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>purpose</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>The purpose of the dataset — why it was created and what problem it addresses. Example: <code>"To provide comprehensive climate observations for research, planning, and decision-making."</code></td>
+      </tr>
+      <tr>
+        <td><code>liabilityStatement</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>A statement clarifying limitations of responsibility, qualifications on accuracy or completeness, or absence of endorsement by the publisher. Example: <code>"This dataset is provided as-is without warranty. Users are responsible for determining fitness for their intended use."</code></td>
+      </tr>
+      <tr>
+        <td><code>scopeNote</code></td>
+        <td>Optional</td>
+        <td>string</td>
+        <td>A usage note clarifying what the dataset includes and excludes, or guidance on how it should be interpreted. Example: <code>"This dataset contains raw observational data. For derived products such as monthly averages see related datasets."</code></td>
+      </tr>
+      <tr>
+        <td><code>creator</code></td>
+        <td>Optional</td>
+        <td>object</td>
+        <td>The person or organization that created the dataset, if different from the publisher. References the Agent class. Example: <code>{"name": "National Climate Data Center"}</code></td>
+      </tr>
+      <tr>
+        <td><code>provenance</code></td>
+        <td>Optional</td>
+        <td>array of strings</td>
+        <td>Plain-language statements about the lineage of the dataset — how the data was collected, processed, and quality-controlled. Example: <code>["Data collected from automated weather stations at 2,500 locations.", "Quality control applied per WMO guidelines."]</code></td>
+      </tr>
+    </tbody>
+  </table>
+  
 
   ### Core fields
 
@@ -64,13 +116,13 @@ details: >+
         <td><code>publisher</code></td>
         <td>Mandatory</td>
         <td>object</td>
-        <td>The publishing entity and optionally its parent organization(s). References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+        <td>The publishing entity and optionally its parent organization(s). References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Agent class</a>.  References the Organization class. At a minimum, provide the name. Example: {"name": "Office of the Chief Financial Officer", "subOrganizationOf": {"name": "Example Federal Agency"}}. Optionally add prefLabel (preferred legal name) and altLabel (acronym).</td>
       </tr>
       <tr>
         <td><code>contactPoint</code></td>
         <td>Mandatory</td>
         <td>object</td>
-        <td>Contact person's name and email for the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
+        <td>Contact person's name and email for the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Kind class</a>.  References the Kind class. Must include fn (full name) and hasEmail (formatted as mailto:name@agency.gov). Can be a single object or an array for multiple contacts. Optionally add tel and organization-name.</td>
       </tr>
       <tr>
         <td><code>identifier</code></td>
@@ -155,7 +207,7 @@ details: >+
         <td><code>distribution</code></td>
         <td>Conditional</td>
         <td>array of objects</td>
-        <td>A container for one or more Distribution objects describing how the dataset can be accessed or downloaded. Required if the dataset has an <code>accessURL</code> or <code>downloadURL</code>. See <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution fields</a>.</td>
+        <td>A container for one or more Distribution objects describing how the dataset can be accessed or downloaded. Required if the dataset has an <code>accessURL</code> or <code>downloadURL</code>. See <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution fields</a>.  In v3.0, the license should be included on each Distribution object rather than at the Dataset level. If all distributions share the same license, add it to each one.</td>
       </tr>
       <tr>
         <td><code>sample</code></td>
@@ -186,13 +238,13 @@ details: >+
         <td><code>accessRights</code></td>
         <td>Optional</td>
         <td>string</td>
-        <td>Information about who can access the dataset and under what conditions.  Note: In v1.1 this was the accessLevel field with three fixed values (public, restricted public, non-public). In v3.0 accessRights is a free-text string. The value public remains valid. For restricted datasets write a plain-language explanation of the restriction and how to request access.</td>
+        <td>Information about who can access the dataset and under what conditions.  Note: In v1.1 this was the accessLevel field with three fixed values (public, restricted public, non-public). In v3.0 accessRights is a free-text string. The value public remains valid. For restricted datasets, write a plain-language explanation of the restriction and how to request access.</td>
       </tr>
       <tr>
         <td><code>rights</code></td>
         <td>Optional</td>
         <td>string</td>
-        <td>Rights information, including any restrictions based on privacy, security, or other policies.</td>
+        <td>Rights information, including any restrictions based on privacy, security, or other policies.  Statements about rights not already covered by license or accessRights.  For example, copyright statements, attribution requirements, or policy restrictions on use. Provide as an array of strings. Example: ["Data is in the public domain under 17 USC 105.", "Please cite the National Climate Data Center when using this data."] In v1.1 this was a single string with a 255-character limit. In v3.0 it is an array with no character limit.</td>
       </tr>
       <tr>
         <td><code>rightsHolder</code></td>
@@ -313,6 +365,17 @@ details: >+
     </tbody>
   </table>
 
+
+  #### When to use which versioning field
+
+  - Use **`inSeries`** when your dataset is one edition in a recurring sequence — for example, the FY2024 edition of an annual survey. Create a DatasetSeries record for the series as a whole and reference it here. See [DatasetSeries fields](../dcat-us-3-dataset-series/).
+  - Use **`version`** when you are publishing a corrected or updated version of the same dataset — for example, version 2.1 of a reference file. Pair it with `versionNotes` to describe what changed.
+  - Use **`hasVersion`** to link a dataset record to all its known versions, and **`hasCurrentVersion`** to point users to the latest one.
+  - Use **`replaces`** when a dataset supersedes one or more previous datasets entirely — not just an update, but a replacement.
+  
+  These fields can be used together. A dataset can belong to a series via `inSeries` and also carry a `version` number and `versionNotes`.
+  
+  
   ---
 
   ### Provenance and quality
@@ -419,45 +482,93 @@ details: >+
     ### Example
   
     A minimal Dataset record meeting the v3.0 required fields:
-  
+
     <pre><code>{
-    "@type": "Dataset",
-    "title": "Agency Travel Data FY2024",
-    "description": "Records of official travel expenditures by agency employees during fiscal year 2024, including destination, purpose, and cost.",
-    "publisher": {
-      "@type": "org:Organization",
-      "name": "Office of the Chief Financial Officer",
-      "subOrganizationOf": {
+      "@type": "Dataset",
+      "title": "Agency Travel Data FY2024",
+      "description": "Records of official travel expenditures by agency employees during fiscal year 2024, including destination, purpose, and cost.",
+      "identifier": "https://www.agency.gov/data/travel-fy2024",
+      "publisher": {
         "@type": "org:Organization",
-        "name": "Example Federal Agency"
+        "name": "Office of the Chief Financial Officer",
+        "subOrganizationOf": {
+          "@type": "org:Organization",
+          "name": "Example Federal Agency"
+        }
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Jane Smith",
+        "hasEmail": "mailto:jane.smith@agency.gov"
       }
-    },
-    "contactPoint": {
-      "@type": "vcard:Contact",
-      "fn": "Jane Smith",
-      "hasEmail": "mailto:jane.smith@agency.gov"
     }
-  }
-  </code></pre>
-
-
-
-  <pre><code>{
-  "@type": "Dataset",
-  "title": "Agency Travel Data FY2024",
-  "description": "Records of official travel expenditures...",
-  "identifier": "https://www.agency.gov/data/travel-fy2024",
-  "publisher": {"name": "Example Federal Agency"},
-  "contactPoint": {"fn": "Jane Smith", "hasEmail": "mailto:jane@agency.gov"},
-  "keyword": ["travel", "expenditure", "fiscal year"],
-  "modified": "2024-10-01",
-  "accrualPeriodicity": "annually",
-  "accessRights": "public",
-  "temporal": [{"@type": "PeriodOfTime", "startDate": "2024-10-01", "endDate": "2025-09-30"}],
-  "spatial": [{"@type": "Location", "prefLabel": "United States"}],
-  "distribution": [{"title": "FY2024 Travel Data CSV", "downloadURL": "https://agency.gov/data/travel-fy2024.csv", "mediaType": "text/csv", "license": "https://creativecommons.org/publicdomain/zero/1.0/"}]
-  }
-  </code></pre>
+    </code></pre>
+    
+    <p>A more complete record showing commonly used fields:</p>
+    
+    <pre><code>{
+      "@type": "Dataset",
+      "title": "Agency Travel Data FY2024",
+      "description": "Records of official travel expenditures by agency employees during fiscal year 2024, including destination, purpose, and cost.",
+      "identifier": "https://www.agency.gov/data/travel-fy2024",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Office of the Chief Financial Officer",
+        "subOrganizationOf": {
+          "@type": "org:Organization",
+          "name": "Example Federal Agency"
+        }
+      },
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Jane Smith",
+        "hasEmail": "mailto:jane.smith@agency.gov",
+        "tel": "+1-202-555-0100",
+        "organization-name": "Office of the Chief Financial Officer"
+      },
+      "keyword": ["travel", "expenditure", "fiscal year", "FY2024"],
+      "modified": "2024-10-15",
+      "accrualPeriodicity": "annually",
+      "accessRights": "public",
+      "purpose": "To provide transparency into federal employee travel expenditures.",
+      "temporal": [
+        {
+          "@type": "PeriodOfTime",
+          "startDate": "2023-10-01",
+          "endDate": "2024-09-30"
+        }
+      ],
+      "spatial": [
+        {
+          "@type": "Location",
+          "prefLabel": "United States"
+        }
+      ],
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "title": "FY2024 Travel Data (CSV)",
+          "description": "Full travel records as a comma-separated values file.",
+          "downloadURL": "https://www.agency.gov/data/travel-fy2024.csv",
+          "mediaType": "text/csv",
+          "format": "CSV",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "title": "Travel Data REST API",
+          "description": "A fully queryable REST API returning JSON.",
+          "accessURL": "https://api.agency.gov/travel/",
+          "format": "API"
+        }
+      ],
+      "bureauCode": ["015:11"],
+      "programCode": ["015:001"],
+      "accessLevel": "public"
+    }
+    </code></pre>
+    
+    
 
 
   <table>
