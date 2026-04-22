@@ -1,5 +1,5 @@
 ---
-resource_name: DCAT-US Schema v3.0 — Distribution fields
+resource_name: DCAT-US Schema v3.0 Distribution fields
 slug: dcat-us-3-distribution
 description: >-
   Field-level reference for the DCAT-US v3.0 Distribution class. A Distribution
@@ -23,7 +23,6 @@ details: >+
 
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
-  ---
 
   ### Overview
 
@@ -81,7 +80,7 @@ details: >+
         <td><code>checksum</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>A checksum for verifying data integrity. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Checksum class</a>. New in v3.0.</td>
+        <td>A checksum for verifying data integrity. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Checksum class</a>. New in v3.0.</td>
       </tr>
     </tbody>
   </table>
@@ -154,7 +153,7 @@ details: >+
         <td><code>page</code></td>
         <td>Optional</td>
         <td>array</td>
-        <td>Documentation pages for this distribution. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Document class</a>.</td>
+        <td>Documentation pages for this distribution. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Document class</a>.</td>
       </tr>
     </tbody>
   </table>
@@ -179,13 +178,13 @@ details: >+
         <td><code>representationTechnique</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Concept class</a>.</td>
+        <td>The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Concept class</a>.</td>
       </tr>
       <tr>
         <td><code>status</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>The lifecycle status of this distribution. References the <a href="https://resources.data.gov/standards/catalog/dcat-us-3-supporting-classes/">Concept class</a>.</td>
+        <td>The lifecycle status of this distribution. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Concept class</a>.</td>
       </tr>
       <tr>
         <td><code>characterEncoding</code></td>
@@ -236,6 +235,38 @@ details: >+
   ---
 
   Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json">jsonschema/definitions/Distribution.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Distribution.md">jsonschema/docs/Distribution.md</a>
+
+
+  ## DCAT US Pages
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
+
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  
+  
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
+
+
 
 examples: ""
 link: ""
