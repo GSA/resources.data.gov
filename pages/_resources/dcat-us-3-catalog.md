@@ -210,31 +210,34 @@ details: >+
   Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json">jsonschema/definitions/Catalog.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md">jsonschema/docs/Catalog.md</a>
 
 
-  ## DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3/">Index Page</a>
-
-
-  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  ## DCAT US Pages
   
 
-  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
-  
-  
-  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
+
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
   
 
-  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  
+  
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
   
 
-  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
   
 
-  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
   
 
-  ### Link to <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  ### <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
   
 
-  ### Link to <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
+  ### <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  
+
+  ### <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
 
 
 examples: ""
