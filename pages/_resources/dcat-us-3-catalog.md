@@ -24,9 +24,6 @@ details: >+
 
   ---
 
-  ## DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3/">Index Page</a>
-
-  
   ### Overview
 
   The Catalog class is the top-level container for an agency's data inventory. Your agency's <code>data.json</code> file is an instance of a DCAT-US Catalog. It holds the array of Dataset records and, in v3.0, can also reference DataService records.   Required field in v3.0: A Catalog must contain at least one Dataset.
@@ -211,6 +208,34 @@ details: >+
 
 
   Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json">jsonschema/definitions/Catalog.json</a> · Generated reference: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md">jsonschema/docs/Catalog.md</a>
+
+
+  ## DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3/">Index Page</a>
+
+
+  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  
+
+  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  
+  
+  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  
+
+  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  
+
+  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  
+
+  ### Link to DCAT US 3 <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  
+
+  ### Link to <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  
+
+  ### Link to <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
+
 
 examples: ""
 link: ""
