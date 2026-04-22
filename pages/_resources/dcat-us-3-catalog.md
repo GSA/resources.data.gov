@@ -20,7 +20,7 @@ details: >+
 
   ---
 
-  See an error on this page or have other feedback? [Email us](datagovhelp@gsa.gov)
+  See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
 
 
