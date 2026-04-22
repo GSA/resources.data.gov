@@ -45,7 +45,7 @@ details: >+
     </tbody>
   </table>
   
-  ---
+ 
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov 
   
   ### What is DCAT-US v3.0?
@@ -230,7 +230,8 @@ details: >+
   
   Instructions: [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema)
   
-  ---
+
+
   
   ### Still using DCAT-US v1.1?
   
