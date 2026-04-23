@@ -1,5 +1,4 @@
 ---
----
 resource_name: DCAT-US Schema v3.0 Distribution fields
 slug: dcat-us-3-distribution
 description: >-
@@ -17,6 +16,7 @@ tags:
 guidance_tags: ""
 format: ""
 details: >+
+
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
 
   ---
