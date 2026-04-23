@@ -3,8 +3,7 @@ resource_name: DCAT-US Schema v3.0 Supporting classes
 slug: dcat-us-3-supporting-classes
 description: >-
   Reference for the DCAT-US v3.0 supporting classes. These classes are
-  referenced from Dataset, Distribution, Catalog, DataService, and
-  DatasetSeries.
+  referenced from Dataset, Distribution, Catalog, DataService, and DatasetSeries.
 source: data.gov
 category: Data standards
 tags:
@@ -24,26 +23,25 @@ details: >+
 
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
-
   ### Overview
 
-  <p>Supporting classes are referenced from Dataset, Distribution, Catalog, DataService, and DatasetSeries. Most agencies will encounter them indirectly — through a field that points to one of these structures. The sections below cover the classes agencies are most likely to work with directly. The full class index at the bottom of this page lists all supporting classes with links to their source files.</p>
+  Supporting classes are referenced from Dataset, Distribution, Catalog, DataService, and DatasetSeries. Most agencies will encounter them indirectly — through a field that points to one of these structures. The sections below cover the classes agencies are most likely to work with directly. The full class index at the bottom of this page lists all supporting classes with links to their source files.
 
-  <p>Most supporting class objects also accept an optional <code>@id</code> field — a URI that uniquely identifies the specific instance of that object. This is useful for linked data implementations but is not required for standard federal data inventory use.</p>
-  
+  Most supporting class objects also accept an optional `@id` field — a URI that uniquely identifies the specific instance of that object. This is useful for linked data implementations but is not required for standard federal data inventory use.
+
   ---
-  
-  <h2>Agents and organizations</h2>
-  
-  <p>Three classes handle people and organizations in DCAT-US v3.0: <strong>Agent</strong> (an abstract entity — person, organization, or system), <strong>Organization</strong> (a named organizational entity with hierarchy support), and <strong>Kind</strong> (contact information modeled on vCard). A fourth class, <strong>Address</strong>, is used within Kind to express physical addresses.</p>
 
-    <p>As a general rule: use <strong>Organization</strong> for <code>publisher</code> on Dataset — it supports preferred labels, abbreviations, and parent hierarchy. Use <strong>Agent</strong> for <code>publisher</code> on Catalog and DataService, and for <code>creator</code>,     <code>contributor</code>, and <code>wasAttributedTo</code> on Dataset and DataService — it is a simpler class intended for any type of entity. Use <strong>Kind</strong> for all <code>contactPoint</code> fields.</p>
-  
-  <h3>Agent</h3>
-  
-  <p>An entity responsible for a resource, a person, organization, software agent, or other entity. Referenced by <code>creator</code>, <code>contributor</code>, and <code>wasAttributedTo</code> on Dataset and DataService. Also used by <code>publisher</code> on Catalog and DataService.</p>
-  
-  <table>
+  ### Agents and organizations
+
+  Three classes handle people and organizations in DCAT-US v3.0: **Agent** (an abstract entity — person, organization, or system), **Organization** (a named organizational entity with hierarchy support), and **Kind** (contact information modeled on vCard). A fourth class, **Address**, is used within Kind to express physical addresses.
+
+  As a general rule: use **Organization** for `publisher` on Dataset — it supports preferred labels, abbreviations, and parent hierarchy. Use **Agent** for `publisher` on Catalog and DataService, and for `creator`, `contributor`, and `wasAttributedTo` on Dataset and DataService — it is a simpler class intended for any type of entity. Use **Kind** for all `contactPoint` fields.
+
+  #### Agent
+
+  An entity responsible for a resource — a person, organization, software agent, or other entity. Referenced by `creator`, `contributor`, and `wasAttributedTo` on Dataset and DataService. Also used by `publisher` on Catalog and DataService.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -69,18 +67,18 @@ details: >+
         <td><code>category</code></td>
         <td>Optional</td>
         <td>array of Concept objects</td>
-        <td>The type of agent, for example, a federal agency, contractor, or research institution.</td>
+        <td>The type of agent — for example, a federal agency, contractor, or research institution.</td>
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Agent.json">Agent.json</a></p>
-  
-  <h3>Organization</h3>
-  
-  <p>A named organizational entity, typically used for <code>publisher</code> on Dataset. Extends Agent with support for preferred labels, alternative names, abbreviations, and hierarchical parent organizations.</p>
-  
-  <table>
+
+  Source: [Agent.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Agent.json)
+
+  #### Organization
+
+  A named organizational entity, typically used for `publisher` on Dataset. Extends Agent with support for preferred labels, alternative names, abbreviations, and hierarchical parent organizations.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -124,13 +122,13 @@ details: >+
         <td><code>subOrganizationOf</code></td>
         <td>Optional</td>
         <td>array of Organization objects</td>
-        <td>Parent organization(s). Can be nested to express full hierarchy, bureau within agency within U.S. Government. In v3.0 this is an array; in v1.1 it was a single object.</td>
+        <td>Parent organization(s). Can be nested to express full hierarchy — bureau within agency within U.S. Government. In v3.0 this is an array; in v1.1 it was a single object.</td>
       </tr>
     </tbody>
   </table>
-  
-  <p>Example:</p>
-  
+
+  Example:
+
   <pre><code>{
     "@type": "Organization",
     "name": "U.S. Census Bureau",
@@ -145,14 +143,14 @@ details: >+
     ]
   }
   </code></pre>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Organization.json">Organization.json</a></p>
-  
-  <h3>Kind</h3>
-  
-  <p>Contact information modeled on vCard. Referenced by <code>contactPoint</code> on Dataset, DataService, Catalog, and DatasetSeries. Can be a single object or an array of objects when multiple contacts are needed.</p>
-  
-  <table>
+
+  Source: [Organization.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Organization.json)
+
+  #### Kind
+
+  Contact information modeled on vCard. Referenced by `contactPoint` on Dataset, DataService, Catalog, and DatasetSeries. Can be a single object or an array of objects when multiple contacts are needed.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -219,8 +217,8 @@ details: >+
     </tbody>
   </table>
 
-    <p>Example:</p>
-  
+  Example:
+
   <pre><code>{
     "@type": "Kind",
     "fn": "Climate Data Support Team",
@@ -230,14 +228,14 @@ details: >+
     "title": "Data Steward"
   }
   </code></pre>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Kind.json">Kind.json</a></p>
-  
-  <h3>Address</h3>
-  
-  <p>A physical or mailing address. Referenced by <code>address</code> on Kind. No fields are required, include what is available.</p>
-  
-  <table>
+
+  Source: [Kind.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Kind.json)
+
+  #### Address
+
+  A physical or mailing address. Referenced by `address` on Kind. No fields are required — include what is available.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -279,18 +277,18 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Address.json">Address.json</a></p>
-  
+
+  Source: [Address.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Address.json)
+
   ---
-  
-  <h2>Location and time</h2>
-  
-  <h3>Location</h3>
-  
-  <p>A named place or geographic area. Referenced by <code>spatial</code> on Dataset, DataService, and DatasetSeries. No fields are required, use what is available. At minimum provide a <code>prefLabel</code>. For geospatial precision add a <code>bbox</code>.</p>
-  
-  <table>
+
+  ### Location and time
+
+  #### Location
+
+  A named place or geographic area. Referenced by `spatial` on Dataset, DataService, and DatasetSeries. No fields are required — use what is available. At minimum provide a `prefLabel`. For geospatial precision add a `bbox`.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -310,13 +308,11 @@ details: >+
         <td><code>bbox</code></td>
         <td>Recommended</td>
         <td>string (WKT) or GeoJSON Polygon object</td>
-        <td>
-          Bounding box for the location. Accepts either a WKT string or a GeoJSON Polygon object.
+        <td>Bounding box for the location. Accepts either a WKT string or a GeoJSON Polygon object.
           <br><br>
           WKT example: <code>"POLYGON((-125 24, -66 24, -66 50, -125 50, -125 24))"</code>
           <br><br>
-          GeoJSON example: <code>{"type": "Polygon", "coordinates": [[[-125.0, 24.0], [-66.0, 24.0], [-66.0, 50.0], [-125.0, 50.0], [-125.0, 24.0]]]}</code>
-        </td>
+          GeoJSON example: <code>{"type": "Polygon", "coordinates": [[[-125.0, 24.0], [-66.0, 24.0], [-66.0, 50.0], [-125.0, 50.0], [-125.0, 24.0]]]}</code></td>
       </tr>
       <tr>
         <td><code>centroid</code></td>
@@ -350,23 +346,23 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Example:</p>
-  
+
+  Example:
+
   <pre><code>{
     "@type": "Location",
     "prefLabel": "Continental United States",
     "bbox": "POLYGON((-125 24, -66 24, -66 50, -125 50, -125 24))"
   }
   </code></pre>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Location.json">Location.json</a></p>
-  
-  <h3>PeriodOfTime</h3>
-  
-  <p>A temporal interval defined by a start date and/or end date. Referenced by <code>temporal</code> on Dataset, DataService, and DatasetSeries. At least one of <code>startDate</code> or <code>endDate</code> must be present. Open-ended periods are valid, you can omit either date.</p>
-  
-  <table>
+
+  Source: [Location.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Location.json)
+
+  #### PeriodOfTime
+
+  A temporal interval defined by a start date and/or end date. Referenced by `temporal` on Dataset, DataService, and DatasetSeries. At least one of `startDate` or `endDate` must be present. Open-ended periods are valid — you can omit either date.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -377,15 +373,13 @@ details: >+
     </thead>
     <tbody>
       <tr>
-      <td><code>startDate</code></td>
-      <td>Recommended</td>
-      <td>string (ISO 8601)</td>
-      <td>
-        The start date of the period. Accepts date, datetime, year (YYYY), or year-month (YYYY-MM). Example: <code>"2020-01-01"</code>
-        <br><br>
-        <strong>Upgrading from v1.1?</strong> The v1.1 plain interval string format (e.g., <code>"2000-01-15T00:00:00Z/2010-01-15T00:00:00Z"</code>) is no longer valid. Convert to a PeriodOfTime object with explicit <code>startDate</code> and <code>endDate</code> fields.
-      </td>
-    </tr>
+        <td><code>startDate</code></td>
+        <td>Recommended</td>
+        <td>string (ISO 8601)</td>
+        <td>The start date of the period. Accepts date, datetime, year (YYYY), or year-month (YYYY-MM). Example: <code>"2020-01-01"</code>
+          <br><br>
+          <strong>Upgrading from v1.1?</strong> The v1.1 plain interval string format (e.g., <code>"2000-01-15T00:00:00Z/2010-01-15T00:00:00Z"</code>) is no longer valid. Convert to a PeriodOfTime object with explicit <code>startDate</code> and <code>endDate</code> fields.</td>
+      </tr>
       <tr>
         <td><code>endDate</code></td>
         <td>Recommended</td>
@@ -400,37 +394,37 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Examples:</p>
-  
+
+  Examples:
+
   <pre><code>{
     "@type": "PeriodOfTime",
     "startDate": "2020-01-01",
     "endDate": "2024-12-31"
   }
   </code></pre>
-  
+
   <pre><code>{
     "@type": "PeriodOfTime",
     "startDate": "2020-01-01"
   }
   </code></pre>
-  
-  <p>Note: In v1.1 <code>temporal</code> was a plain ISO 8601 interval string (e.g., <code>"2000-01-15T00:00:00Z/2010-01-15T00:00:00Z"</code>). That format is no longer valid in v3.0.</p>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/PeriodOfTime.json">PeriodOfTime.json</a></p>
-  
+
+  Note: In v1.1 `temporal` was a plain ISO 8601 interval string (e.g., `"2000-01-15T00:00:00Z/2010-01-15T00:00:00Z"`). That format is no longer valid in v3.0.
+
+  Source: [PeriodOfTime.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/PeriodOfTime.json)
+
   ---
-  
-  <h2>Controlled vocabularies</h2>
-  
-  <h3>Concept</h3>
-  
-  <p>A controlled term or label, optionally drawn from a concept scheme (controlled vocabulary). Used throughout the schema in fields like <code>theme</code>, <code>status</code>, <code>category</code>, <code>accrualPeriodicity</code>, and <code>accessRestriction.restrictionStatus</code>.</p>
-  
-  <p>Concept is flexible, it can be a <strong>plain string</strong> for simple cases, or a <strong>full object</strong> with vocabulary linkage for richer implementations.</p>
-  
-  <table>
+
+  ### Controlled vocabularies
+
+  #### Concept
+
+  A controlled term or label, optionally drawn from a concept scheme (controlled vocabulary). Used throughout the schema in fields like `theme`, `status`, `category`, `accrualPeriodicity`, and `accessRestriction.restrictionStatus`.
+
+  Concept is flexible — it can be a **plain string** for simple cases, or a **full object** with vocabulary linkage for richer implementations.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Form</th>
@@ -456,10 +450,10 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Full Concept object fields:</p>
-  
-  <table>
+
+  Full Concept object fields:
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -502,18 +496,18 @@ details: >+
     </tbody>
   </table>
 
-  <p>Examples showing all three forms:</p>
+  Examples showing all three forms:
 
   <pre><code>"theme": ["Climate Science"]
   </code></pre>
-  
+
   <pre><code>"theme": [
     {
       "prefLabel": "Climate Science"
     }
   ]
   </code></pre>
-  
+
   <pre><code>"theme": [
     {
       "prefLabel": "Climate Science",
@@ -525,14 +519,14 @@ details: >+
     }
   ]
   </code></pre>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Concept.json">Concept.json</a></p>
-  
-  <h3>ConceptScheme</h3>
-  
-  <p>A controlled vocabulary, taxonomy, or other list of approved terms. Referenced by <code>themeTaxonomy</code> on Catalog and by <code>inScheme</code> on Concept and Location.</p>
-  
-  <table>
+
+  Source: [Concept.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Concept.json)
+
+  #### ConceptScheme
+
+  A controlled vocabulary, taxonomy, or other list of approved terms. Referenced by `themeTaxonomy` on Catalog and by `inScheme` on Concept and Location.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -574,20 +568,20 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/ConceptScheme.json">ConceptScheme.json</a></p>
-  
+
+  Source: [ConceptScheme.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/ConceptScheme.json)
+
   ---
-  
-  <h2>Identifiers and integrity</h2>
-  
-  <h3>Identifier</h3>
-  
-  <p>A unique identifier and optionally its scheme and other relevant information. Referenced by <code>identifier</code> and <code>otherIdentifier</code> on Dataset, Distribution, DataService, and other classes.</p>
-  
-  <p>Like Concept, Identifier is flexible, it can be a <strong>plain string</strong> or a <strong>full object</strong>.</p>
-  
-  <table>
+
+  ### Identifiers and integrity
+
+  #### Identifier
+
+  A unique identifier and optionally its scheme and other relevant information. Referenced by `identifier` and `otherIdentifier` on Dataset, Distribution, DataService, and other classes.
+
+  Like Concept, Identifier is flexible — it can be a **plain string** or a **full object**.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -630,36 +624,26 @@ details: >+
     </tbody>
   </table>
 
-    // As a plain string
-  "identifier": "https://doi.org/10.7927/H45X26V8"
-  
-  // As a structured object
-  "identifier": {
+  Identifier is flexible — it can be a plain string or a structured object:
+
+  <pre><code>"identifier": "https://doi.org/10.7927/H45X26V8"
+  </code></pre>
+
+  <pre><code>"identifier": {
     "@type": "Identifier",
     "notation": "10.7927/H45X26V8",
-    "schemaAgency": "DOI Foundation"
+    "schemaAgency": "DOI Foundation",
+    "issued": "2018-03-01"
   }
+  </code></pre>
 
-      <p>Identifier is flexible — it can be a plain string or a structured object:</p>
-    
-    <pre><code>"identifier": "https://doi.org/10.7927/H45X26V8"
-    </code></pre>
-    
-    <pre><code>"identifier": {
-      "@type": "Identifier",
-      "notation": "10.7927/H45X26V8",
-      "schemaAgency": "DOI Foundation",
-      "issued": "2018-03-01"
-    }
-    </code></pre>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Identifier.json">Identifier.json</a></p>
-  
-  <h3>Checksum</h3>
-  
-  <p>A mechanism for verifying that the contents of a Distribution have not changed. Referenced by <code>checksum</code> on Distribution. New in v3.0.</p>
-  
-  <table>
+  Source: [Identifier.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Identifier.json)
+
+  #### Checksum
+
+  A mechanism for verifying that the contents of a Distribution have not changed. Referenced by `checksum` on Distribution. New in v3.0.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -683,23 +667,23 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Example:</p>
-  
+
+  Example:
+
   <pre><code>{
     "@type": "Checksum",
     "algorithm": "SHA-256",
     "checksumValue": "a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456"
   }
   </code></pre>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Checksum.json">Checksum.json</a></p>
-  
-  <h3>Standard</h3>
-  
-  <p>A standard or specification that another resource conforms to. Referenced by <code>conformsTo</code> on Dataset, Distribution, DataService, and Catalog. No fields are required, include what is available.</p>
-  
-  <table>
+
+  Source: [Checksum.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Checksum.json)
+
+  #### Standard
+
+  A standard or specification that another resource conforms to. Referenced by `conformsTo` on Dataset, Distribution, DataService, and Catalog. No fields are required — include what is available.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -753,9 +737,9 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Example:</p>
-  
+
+  Example:
+
   <pre><code>{
     "@type": "Standard",
     "title": "DCAT-US 3.0",
@@ -763,14 +747,14 @@ details: >+
     "issued": "2025-05-01"
   }
   </code></pre>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Standard.json">Standard.json</a></p>
-  
-  <h3>Document</h3>
-  
-  <p>A publication or other document related to a resource. Referenced by <code>page</code> on Dataset and Distribution, and by <code>landingPage</code> and <code>homepage</code> on Dataset and Catalog respectively.</p>
-  
-  <table>
+
+  Source: [Standard.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Standard.json)
+
+  #### Document
+
+  A publication or other document related to a resource. Referenced by `page` on Dataset and Distribution, and by `landingPage` and `homepage` on Dataset and Catalog respectively.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -790,7 +774,7 @@ details: >+
         <td><code>accessURL</code></td>
         <td>Optional</td>
         <td>string (IRI)</td>
-        <td>A URL that gives access to the document, typically an HTML page.</td>
+        <td>A URL that gives access to the document — typically an HTML page.</td>
       </tr>
       <tr>
         <td><code>downloadURL</code></td>
@@ -811,16 +795,16 @@ details: >+
         <td>Plain-language summary of the document.</td>
       </tr>
       <tr>
-      <td><code>creator</code></td>
-      <td>Optional</td>
-      <td>array of Kind objects</td>
-      <td>The individual person(s) responsible for creating the document. Uses Kind objects — the same class as contactPoint. Use this for named individuals.</td>
+        <td><code>creator</code></td>
+        <td>Optional</td>
+        <td>array of Kind objects</td>
+        <td>The individual person(s) responsible for creating the document. Uses Kind objects — the same class as contactPoint. Use this for named individuals.</td>
       </tr>
       <tr>
-      <td><code>corporateCreator</code></td>
-      <td>Optional</td>
-      <td>array of Organization objects</td>
-      <td>The corporate organization(s) responsible for creating the document. Uses Organization objects. Use this for institutional authorship. Example: <code>[{"name": "National Climate Data Center"}]</code></td>
+        <td><code>corporateCreator</code></td>
+        <td>Optional</td>
+        <td>array of Organization objects</td>
+        <td>The corporate organization(s) responsible for creating the document. Uses Organization objects. Use this for institutional authorship. Example: <code>[{"name": "National Climate Data Center"}]</code></td>
       </tr>
       <tr>
         <td><code>bibliographicCitation</code></td>
@@ -848,18 +832,18 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Document.json">Document.json</a></p>
-  
+
+  Source: [Document.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Document.json)
+
   ---
-  
-  <h2>Quality and provenance</h2>
-  
-  <h3>QualityMeasurement</h3>
-  
-  <p>A measurement of a resource against a specific quality metric. Referenced by <code>hasQualityMeasurement</code> on Dataset, Distribution, and DataService. New in v3.0. Replaces the boolean <code>dataQuality</code> field from v1.1.</p>
-  
-  <table>
+
+  ### Quality and provenance
+
+  #### QualityMeasurement
+
+  A measurement of a resource against a specific quality metric. Referenced by `hasQualityMeasurement` on Dataset, Distribution, and DataService. New in v3.0. Replaces the boolean `dataQuality` field from v1.1.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -889,12 +873,12 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <h3>Metric</h3>
-  
-  <p>A standard used to measure one aspect of data quality. Used within QualityMeasurement as the <code>isMeasurementOf</code> field.</p>
-  
-  <table>
+
+  #### Metric
+
+  A standard used to measure one aspect of data quality. Used within QualityMeasurement as the `isMeasurementOf` field.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -924,9 +908,9 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Example of a complete quality measurement:</p>
-  
+
+  Example of a complete quality measurement:
+
   <pre><code>{
     "@type": "QualityMeasurement",
     "isMeasurementOf": {
@@ -939,14 +923,14 @@ details: >+
     "unitMeasure": "percent"
   }
   </code></pre>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/QualityMeasurement.json">QualityMeasurement.json</a> · <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Metric.json">Metric.json</a></p>
-  
-  <h3>Activity</h3>
-  
-  <p>An activity related to creating, changing, or using a resource. Referenced by <code>wasGeneratedBy</code> and <code>wasUsedBy</code> on Dataset and DataService.</p>
-  
-  <table>
+
+  Source: [QualityMeasurement.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/QualityMeasurement.json) · [Metric.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Metric.json)
+
+  #### Activity
+
+  An activity related to creating, changing, or using a resource. Referenced by `wasGeneratedBy` and `wasUsedBy` on Dataset and DataService.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -970,18 +954,18 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Activity.json">Activity.json</a></p>
-  
+
+  Source: [Activity.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Activity.json)
+
   ---
-  
-  <h2>Relationships</h2>
-  
-  <h3>Attribution</h3>
-  
-  <p>A responsibility that an agent has for a resource. Referenced by <code>qualifiedAttribution</code> on Dataset, Catalog, and DataService. Useful when you need to distinguish specific roles, data collector, quality reviewer, data steward, beyond what <code>creator</code> or <code>publisher</code> can express.</p>
-  
-  <table>
+
+  ### Relationships
+
+  #### Attribution
+
+  A responsibility that an agent has for a resource. Referenced by `qualifiedAttribution` on Dataset, Catalog, and DataService. Useful when you need to distinguish specific roles — data collector, quality reviewer, data steward — beyond what `creator` or `publisher` can express.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -1005,14 +989,14 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Attribution.json">Attribution.json</a></p>
-  
-  <h3>Relationship</h3>
-  
-  <p>Additional information about how one resource is related to another, including the named role of that relationship. Referenced by <code>qualifiedRelation</code> on Dataset. Use this when <code>isReferencedBy</code> or <code>relation</code> are not specific enough about the nature of the relationship.</p>
-  
-  <table>
+
+  Source: [Attribution.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Attribution.json)
+
+  #### Relationship
+
+  Additional information about how one resource is related to another, including the named role of that relationship. Referenced by `qualifiedRelation` on Dataset. Use this when `isReferencedBy` or `relation` are not specific enough about the nature of the relationship.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -1036,14 +1020,14 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Relationship.json">Relationship.json</a></p>
-  
-  <h3>CatalogRecord</h3>
-  
-  <p>A record describing when and how a single resource was registered in a catalog. Referenced by <code>record</code> on Catalog. Useful for tracking catalog provenance, when a dataset was added, by whom, and under what schema.</p>
-  
-  <table>
+
+  Source: [Relationship.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Relationship.json)
+
+  #### CatalogRecord
+
+  A record describing when and how a single resource was registered in a catalog. Referenced by `record` on Catalog. Useful for tracking catalog provenance — when a dataset was added, by whom, and under what schema.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -1081,11 +1065,9 @@ details: >+
         <td><code>description</code></td>
         <td>Optional</td>
         <td>array of strings</td>
-        <td>
-          One or more plain-language descriptions of the catalog record. Note: unlike most other classes where <code>description</code> is a single string, CatalogRecord accepts an array of strings.
+        <td>One or more plain-language descriptions of the catalog record. Note: unlike most other classes where <code>description</code> is a single string, CatalogRecord accepts an array of strings.
           <br><br>
-          Example: <code>["This catalog record describes the registration of the Climate Data 2024 dataset.", "Added to catalog January 2025."]</code>
-        </td>
+          Example: <code>["This catalog record describes the registration of the Climate Data 2024 dataset.", "Added to catalog January 2025."]</code></td>
       </tr>
       <tr>
         <td><code>language</code></td>
@@ -1109,24 +1091,24 @@ details: >+
         <td><code>source</code></td>
         <td>Optional</td>
         <td>string</td>
-        <td>The original metadata this record was derived from, a URL or description of the source.</td>
+        <td>The original metadata this record was derived from — a URL or description of the source.</td>
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/CatalogRecord.json">CatalogRecord.json</a></p>
-  
+
+  Source: [CatalogRecord.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/CatalogRecord.json)
+
   ---
-  
-  <h2>Access and use restrictions</h2>
-  
-  <p>Three classes provide structured, machine-readable ways to express access and use restrictions on a Distribution. They are new in v3.0 and specific to the U.S. federal context. See the <a href="../dcat-us-3-distribution/">Distribution fields</a> page for guidance on how to use them together.</p>
-  
-  <h3>AccessRestriction</h3>
-  
-  <p>Rules or indicators describing who can access a resource. Referenced by <code>accessRestriction</code> on Distribution. Uses NARA authority lists for controlled vocabulary values.</p>
-  
-  <table>
+
+  ### Access and use restrictions
+
+  Three classes provide structured, machine-readable ways to express access and use restrictions on a Distribution. They are new in v3.0 and specific to the U.S. federal context. See the [Distribution fields](../dcat-us-3-distribution/) page for guidance on how to use them together.
+
+  #### AccessRestriction
+
+  Rules or indicators describing who can access a resource. Referenced by `accessRestriction` on Distribution. Uses NARA authority lists for controlled vocabulary values.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -1156,14 +1138,14 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/AccessRestriction.json">AccessRestriction.json</a></p>
-  
-  <h3>UseRestriction</h3>
-  
-  <p>Rules or legal limits on how a resource may be used after access is granted. Referenced by <code>useRestriction</code> on Distribution. Structurally identical to AccessRestriction but applies to use rather than access.</p>
-  
-  <table>
+
+  Source: [AccessRestriction.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/AccessRestriction.json)
+
+  #### UseRestriction
+
+  Rules or legal limits on how a resource may be used after access is granted. Referenced by `useRestriction` on Distribution. Structurally identical to AccessRestriction but applies to use rather than access.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -1193,14 +1175,14 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/UseRestriction.json">UseRestriction.json</a></p>
-  
-  <h3>CUIRestriction</h3>
-  
-  <p>Controlled Unclassified Information (CUI) marking information for a distribution. Referenced by <code>cuiRestriction</code> on Distribution. Required for any distribution containing CUI per Executive Order 13556 and NARA guidelines. Distributions that do not contain CUI should set this field to <code>null</code>.</p>
-  
-  <table>
+
+  Source: [UseRestriction.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/UseRestriction.json)
+
+  #### CUIRestriction
+
+  Controlled Unclassified Information (CUI) marking information for a distribution. Referenced by `cuiRestriction` on Distribution. Required for any distribution containing CUI per Executive Order 13556 and NARA guidelines. Distributions that do not contain CUI should set this field to `null`.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -1230,14 +1212,14 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/CUIRestriction.json">CUIRestriction.json</a></p>
-  
+
+  Source: [CUIRestriction.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/CUIRestriction.json)
+
   ---
-  
-  <h2>Full class index</h2>
-  
-  <table>
+
+  ### Full class index
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Class</th>
@@ -1375,39 +1357,29 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Source: <a href="https://github.com/GSA/dcat-us/tree/main/jsonschema/definitions">jsonschema/definitions/</a></p>
 
+  Source: [jsonschema/definitions/](https://github.com/GSA/dcat-us/tree/main/jsonschema/definitions)
+
+  
   ## DCAT US Pages
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
-
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
   
+  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
   
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
-
-
+  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
 
 examples: ""
 link: ""
