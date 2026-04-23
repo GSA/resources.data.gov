@@ -374,25 +374,25 @@ details: >+
   Source: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json) · Generated reference: [jsonschema/docs/Catalog.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md)
 
 
-## DCAT US Pages
-
-### [Index](https://resources.data.gov/catalog/dcat-us-3/)
-
-### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
-
-### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
-
-### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
-
-### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
-
-### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
-
-### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
-
-### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
-
-### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
+  ## DCAT US Pages
+  
+  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
+  
+  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
+  
+  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
+  
+  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
+  
+  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
+  
+  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
+  
+  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
+  
+  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
+  
+  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
 
 examples: ""
 link: ""
