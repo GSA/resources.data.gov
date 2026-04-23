@@ -16,6 +16,7 @@ tags:
 guidance_tags: ""
 format: ""
 details: >+
+
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Dataset.json -->
 
   ---
@@ -641,25 +642,25 @@ details: >+
   Source: [jsonschema/definitions/Dataset.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Dataset.json) · Generated reference: [jsonschema/docs/Dataset.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Dataset.md)
 
 
-## DCAT US Pages
-
-### [Index](https://resources.data.gov/catalog/dcat-us-3/)
-
-### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
-
-### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
-
-### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
-
-### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
-
-### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
-
-### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
-
-### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
-
-### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
+  ## DCAT US Pages
+  
+  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
+  
+  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
+  
+  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
+  
+  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
+  
+  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
+  
+  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
+  
+  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
+  
+  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
+  
+  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
 
 examples: ""
 link: ""
