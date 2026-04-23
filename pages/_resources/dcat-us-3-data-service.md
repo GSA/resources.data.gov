@@ -25,23 +25,21 @@ details: >+
 
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
-  
-
   ### Overview
 
-    <p>New in v3.0. DataService describes a collection of operations accessible through an interface — such as a REST API, a SPARQL endpoint, or an OGC web service — that provides access to one or more datasets.</p>
+  New in v3.0. DataService describes a collection of operations accessible through an interface — such as a REST API, a SPARQL endpoint, or an OGC web service — that provides access to one or more datasets.
 
-  <p>In v1.1, APIs were documented as Distributions within a Dataset record. In v3.0, a DataService can be documented at the Catalog level as a first-class resource, separate from any individual dataset's distribution list. This is particularly useful for services that provide access to many datasets, or for services that are not tied to a single dataset.</p>
-  
-  <p><strong>When to use DataService vs Distribution:</strong> Use a Distribution when an API is the primary access method for a specific single dataset. Use a DataService when an API serves multiple datasets, is not tied to a single dataset, or when you want to describe the service itself as a catalog-level resource with its own metadata, contact information, and documentation.</p>
-  
-  <p>Required fields in v3.0: <code>endpointURL</code>, <code>contactPoint</code>, <code>publisher</code>, <code>title</code></p>
-  
+  In v1.1, APIs were documented as Distributions within a Dataset record. In v3.0, a DataService can be documented at the Catalog level as a first-class resource, separate from any individual dataset's distribution list. This is particularly useful for services that provide access to many datasets, or for services that are not tied to a single dataset.
+
+  **When to use DataService vs Distribution:** Use a Distribution when an API is the primary access method for a specific single dataset. Use a DataService when an API serves multiple datasets, is not tied to a single dataset, or when you want to describe the service itself as a catalog-level resource with its own metadata, contact information, and documentation.
+
+  **Required fields in v3.0:** `endpointURL`, `contactPoint`, `publisher`, `title`
+
   ---
-  
-  <h2>Core fields</h2>
-  
-  <table>
+
+  ### Core fields
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -61,23 +59,21 @@ details: >+
         <td><code>endpointURL</code></td>
         <td>Mandatory</td>
         <td>array of strings (IRI)</td>
-        <td>
-          The root location(s) or primary endpoint URL(s) of the service. Must be web-resolvable IRIs. This is an array — a service can expose multiple endpoints simultaneously, for example both a v1 and v2 API.
+        <td>The root location(s) or primary endpoint URL(s) of the service. Must be web-resolvable IRIs. This is an array — a service can expose multiple endpoints simultaneously, for example both a v1 and v2 API.
           <br><br>
-          Example: <code>["https://api.agency.gov/v1/"]</code> or <code>["https://api.agency.gov/v1/", "https://api.agency.gov/v2/"]</code>
-        </td>
+          Example: <code>["https://api.agency.gov/v1/"]</code> or <code>["https://api.agency.gov/v1/", "https://api.agency.gov/v2/"]</code></td>
       </tr>
       <tr>
         <td><code>contactPoint</code></td>
         <td>Mandatory</td>
         <td>array of Kind objects</td>
-        <td>Contact information for questions about the service. Must include an email address that is continuously monitored. References the <a href="../dcat-us-3-supporting-classes/#kind">Kind class</a>. Example: <code>[{"fn": "API Support Team", "hasEmail": "mailto:api-support@agency.gov"}]</code></td>
+        <td>Contact information for questions about the service. Must include an email address that is continuously monitored. References the <a href="../dcat-us-3-supporting-classes/">Kind class</a>. Example: <code>[{"fn": "API Support Team", "hasEmail": "mailto:api-support@agency.gov"}]</code></td>
       </tr>
       <tr>
         <td><code>publisher</code></td>
         <td>Mandatory</td>
         <td>Agent object</td>
-        <td>The person or organization responsible for publishing and making the service available. References the <a href="../dcat-us-3-supporting-classes/#agent">Agent class</a>. Example: <code>{"name": "Example Federal Agency"}</code></td>
+        <td>The person or organization responsible for publishing and making the service available. References the <a href="../dcat-us-3-supporting-classes/">Agent class</a>. Example: <code>{"name": "Example Federal Agency"}</code></td>
       </tr>
       <tr>
         <td><code>description</code></td>
@@ -89,21 +85,17 @@ details: >+
         <td><code>endpointDescription</code></td>
         <td>Recommended</td>
         <td>array of strings</td>
-        <td>
-          URLs pointing to documentation that describes the service endpoint, its operations, and parameters. Typically a URL to an OpenAPI specification, WSDL document, or similar service description.
+        <td>URLs pointing to documentation that describes the service endpoint, its operations, and parameters. Typically a URL to an OpenAPI specification, WSDL document, or similar service description.
           <br><br>
-          Example: <code>["https://api.agency.gov/v1/openapi.json"]</code>
-        </td>
+          Example: <code>["https://api.agency.gov/v1/openapi.json"]</code></td>
       </tr>
       <tr>
         <td><code>servesDataset</code></td>
         <td>Recommended</td>
         <td>array of Dataset objects</td>
-        <td>
-          The datasets this service provides access to. Each Dataset must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>. Use this to link the service to the datasets it serves.
+        <td>The datasets this service provides access to. Each Dataset must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>. Use this to link the service to the datasets it serves.
           <br><br>
-          A DataService does not need to serve a specific dataset — for general-purpose APIs this field can be omitted.
-        </td>
+          A DataService does not need to serve a specific dataset — for general-purpose APIs this field can be omitted.</td>
       </tr>
       <tr>
         <td><code>keyword</code></td>
@@ -127,7 +119,7 @@ details: >+
         <td><code>created</code></td>
         <td>Optional</td>
         <td>string (ISO 8601)</td>
-        <td>Date the service was first created. Distinct from <code>issued</code> (public launch date).</td>
+        <td>Date the service was first created. Distinct from a public launch date.</td>
       </tr>
       <tr>
         <td><code>modified</code></td>
@@ -137,12 +129,12 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
+
   ---
-  
-  <h2>Access and rights</h2>
-  
-  <table>
+
+  ### Access and rights
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -174,7 +166,7 @@ details: >+
         <td><code>rightsHolder</code></td>
         <td>Optional</td>
         <td>array of Organization objects</td>
-        <td>Organizations holding rights on the service. References the <a href="../dcat-us-3-supporting-classes/#organization">Organization class</a>.</td>
+        <td>Organizations holding rights on the service. References the <a href="../dcat-us-3-supporting-classes/">Organization class</a>.</td>
       </tr>
       <tr>
         <td><code>creator</code></td>
@@ -184,12 +176,12 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
+
   ---
-  
-  <h2>Coverage and scope</h2>
-  
-  <table>
+
+  ### Coverage and scope
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -203,21 +195,17 @@ details: >+
         <td><code>spatial</code></td>
         <td>Optional</td>
         <td>array of Location objects</td>
-        <td>
-          Geographic region(s) covered by the data accessible through this service. References the <a href="../dcat-us-3-supporting-classes/#location">Location class</a>.
+        <td>Geographic region(s) covered by the data accessible through this service. References the <a href="../dcat-us-3-supporting-classes/">Location class</a>.
           <br><br>
-          Example: <code>[{"@type": "Location", "prefLabel": "United States"}]</code>
-        </td>
+          Example: <code>[{"@type": "Location", "prefLabel": "United States"}]</code></td>
       </tr>
       <tr>
         <td><code>temporal</code></td>
         <td>Optional</td>
         <td>array of PeriodOfTime objects</td>
-        <td>
-          Time period(s) covered by the data accessible through this service. References the <a href="../dcat-us-3-supporting-classes/#periodoftime">PeriodOfTime class</a>.
+        <td>Time period(s) covered by the data accessible through this service. References the <a href="../dcat-us-3-supporting-classes/">PeriodOfTime class</a>.
           <br><br>
-          Example: <code>[{"@type": "PeriodOfTime", "startDate": "2000-01-01", "endDate": "2024-12-31"}]</code>
-        </td>
+          Example: <code>[{"@type": "PeriodOfTime", "startDate": "2000-01-01", "endDate": "2024-12-31"}]</code></td>
       </tr>
       <tr>
         <td><code>spatialResolutionInMeters</code></td>
@@ -241,7 +229,7 @@ details: >+
         <td><code>category</code></td>
         <td>Optional</td>
         <td>array of Concept objects</td>
-        <td>High-level categories for the service, using <code>dcterms:type</code>. Distinct from <code>theme</code> which uses <code>dcat:theme</code>.</td>
+        <td>High-level categories for the service. Distinct from <code>theme</code>.</td>
       </tr>
       <tr>
         <td><code>language</code></td>
@@ -251,12 +239,12 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
+
   ---
-  
-  <h2>Provenance and quality</h2>
-  
-  <table>
+
+  ### Provenance and quality
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Field</th>
@@ -270,39 +258,37 @@ details: >+
         <td><code>conformsTo</code></td>
         <td>Optional</td>
         <td>array of Standard objects</td>
-        <td>
-          Standards or specifications the service endpoints implement. References the <a href="../dcat-us-3-supporting-classes/#standard">Standard class</a>.
+        <td>Standards or specifications the service endpoints implement. References the <a href="../dcat-us-3-supporting-classes/">Standard class</a>.
           <br><br>
-          Example: <code>[{"@type": "Standard", "title": "OGC API - Features", "identifier": "https://ogcapi.ogc.org/features/"}]</code>
-        </td>
+          Example: <code>[{"@type": "Standard", "title": "OGC API - Features", "identifier": "https://ogcapi.ogc.org/features/"}]</code></td>
       </tr>
       <tr>
         <td><code>qualifiedAttribution</code></td>
         <td>Optional</td>
         <td>array of Attribution objects</td>
-        <td>Agents with specific named responsibilities for the service — for example, a service owner or technical lead. References the <a href="../dcat-us-3-supporting-classes/#attribution">Attribution class</a>.</td>
+        <td>Agents with specific named responsibilities for the service — for example, a service owner or technical lead. References the <a href="../dcat-us-3-supporting-classes/">Attribution class</a>.</td>
       </tr>
       <tr>
         <td><code>wasUsedBy</code></td>
         <td>Optional</td>
         <td>array of Activity objects</td>
-        <td>Activities that used or tested the service. References the <a href="../dcat-us-3-supporting-classes/#activity">Activity class</a>.</td>
+        <td>Activities that used or tested the service. References the <a href="../dcat-us-3-supporting-classes/">Activity class</a>.</td>
       </tr>
       <tr>
         <td><code>hasQualityMeasurement</code></td>
         <td>Optional</td>
         <td>array of QualityMeasurement objects</td>
-        <td>Quality measurements for the service — for example, availability percentage, average response time, or reliability metrics. References the <a href="../dcat-us-3-supporting-classes/#qualitymeasurement">QualityMeasurement class</a>.</td>
+        <td>Quality measurements for the service — for example, availability percentage, average response time, or reliability metrics. References the <a href="../dcat-us-3-supporting-classes/">QualityMeasurement class</a>.</td>
       </tr>
     </tbody>
   </table>
-  
+
   ---
-  
-  <h2>Example</h2>
-  
-  <p>A minimal DataService record meeting all v3.0 required fields:</p>
-  
+
+  ### Example
+
+  A minimal DataService record meeting all v3.0 required fields:
+
   <pre><code>{
     "@type": "DataService",
     "title": "Agency Open Data REST API",
@@ -320,9 +306,9 @@ details: >+
     }
   }
   </code></pre>
-  
-  <p>A more complete record showing recommended and commonly used fields:</p>
-  
+
+  A more complete record showing recommended and commonly used fields:
+
   <pre><code>{
     "@type": "DataService",
     "title": "Agency Open Data REST API",
@@ -353,7 +339,6 @@ details: >+
     "accessRights": "Public access with no restrictions.",
     "rights": ["Data provided by Example Federal Agency is in the public domain."],
     "modified": "2024-03-20",
-    "issued": "2018-01-15",
     "language": ["en"],
     "spatial": [
       {
@@ -397,38 +382,28 @@ details: >+
   }
   </code></pre>
 
+  Source: [jsonschema/definitions/DataService.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DataService.json) · Generated reference: [jsonschema/docs/DataService.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DataService.md)
 
-  
+
   ## DCAT US Pages
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
-
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
   
+  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
   
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
-
-
+  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
 
 examples: ""
 link: ""
