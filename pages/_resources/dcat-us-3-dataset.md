@@ -643,6 +643,8 @@ details: >+
 
 
   ## DCAT US Pages
+
+  ### [Quick Migration Guide](https://resources.data.gov/catalog/dcat-us-3-migration/)
   
   ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
   
