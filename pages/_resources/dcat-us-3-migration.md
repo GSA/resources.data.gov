@@ -1,7 +1,9 @@
 ---
-resource_name: DCAT-US Migration from 1.1 to 3
+resource_name: Migrating from DCAT-US v1.1 to v3.0
 slug: dcat-us-3-migration
-description: Quick guide for upgrading from 1.1 to 3
+description: >-
+  A step-by-step guide to updating your existing v1.1 data.json file to be
+  valid against the DCAT-US v3.0 schema.
 source: data.gov
 category: Data standards
 tags:
@@ -11,26 +13,36 @@ tags:
   - DCAT-US
   - metadata standard
   - data inventory
-  - data standards
+  - migration
 guidance_tags: ""
 format: ""
 details: >+
 
-  <p>This guide covers the minimum changes needed to make your existing v1.1 <code>data.json</code> file valid against the v3.0 schema. Work through the steps in order — steps 1 through 4 address breaking changes that will cause validation failures. Steps 5 through 10 are structural changes that are not breaking but are required for correct v3.0 implementation. The additional improvements at the end will not block validation but are strongly recommended.</p>
+  <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/ -->
 
-  <p>After completing all steps, run your updated <code>data.json</code> against the v3.0 validation script: <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py">jsonschema/test_json_schema.py</a></p>
-  
   ---
-  
-  <h2>Breaking changes — fix these first</h2>
-  
-  <p>These are changes where your existing v1.1 values will fail v3.0 schema validation.</p>
-  
-  <h3>Step 1 — Fix <code>modified</code></h3>
-  
-  <p>If you use repeating intervals like <code>R/P1D</code> or <code>R/P1Y</code> in <code>modified</code>, replace them with the actual date the data last changed. Move your update frequency to <code>accrualPeriodicity</code> using a plain-language code.</p>
-  
-  <table>
+
+  See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
+
+  ### Overview
+
+  This guide covers the minimum changes needed to make your existing v1.1 `data.json` file valid against the v3.0 schema. Work through the steps in order — steps 1 through 4 address breaking changes that will cause validation failures. Steps 5 through 8 are structural changes required for correct v3.0 implementation.
+
+  After completing all steps, run your updated `data.json` against the v3.0 validation script: [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py)
+
+  Note: the generated reference documentation in `jsonschema/docs/` currently shows all fields as Optional regardless of their actual requirement level. This is a known issue. Trust the requirement levels in the JSON schema files and on the reference pages, not the generated docs.
+
+  ---
+
+  ### Breaking changes — fix these first
+
+  These are changes where your existing v1.1 values will fail v3.0 schema validation.
+
+  #### Step 1 — Fix `modified`
+
+  If you use repeating intervals like `R/P1D` or `R/P1Y` in `modified`, replace them with the actual date the data last changed. Move your update frequency to `accrualPeriodicity` using a plain-language code.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>v1.1</th>
@@ -48,21 +60,21 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>Add <code>accrualPeriodicity</code> to express update frequency:</p>
-  
+
+  Add `accrualPeriodicity` to express update frequency:
+
   <pre><code>"accrualPeriodicity": "annually"
   </code></pre>
-  
-  <p>Accepted values include: <code>daily</code>, <code>weekly</code>, <code>monthly</code>, <code>quarterly</code>, <code>annually</code>, <code>irregular</code>. ISO 8601 repeating duration format (e.g., <code>R/P1Y</code>) is also still accepted.</p>
-  
+
+  Accepted values include: `daily`, `weekly`, `monthly`, `quarterly`, `annually`, `irregular`. ISO 8601 repeating duration format (e.g., `R/P1Y`) is also still accepted.
+
   ---
-  
-  <h3>Step 2 — Fix <code>temporal</code></h3>
-  
-  <p>Replace the v1.1 ISO 8601 interval string with an array of PeriodOfTime objects. At least one of <code>startDate</code> or <code>endDate</code> is required per object. Open-ended periods are valid — omit <code>endDate</code> for ongoing datasets.</p>
-  
-  <table>
+
+  #### Step 2 — Fix `temporal`
+
+  Replace the v1.1 ISO 8601 interval string with an array of PeriodOfTime objects. At least one of `startDate` or `endDate` is required per object. Open-ended periods are valid — omit `endDate` for ongoing datasets.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>v1.1</th>
@@ -95,14 +107,14 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
+
   ---
-  
-  <h3>Step 3 — Fix <code>spatial</code></h3>
-  
-  <p>Replace the v1.1 plain string or ad-hoc GeoJSON with an array of Location objects. No fields are required on Location — include <code>prefLabel</code> at minimum, and add <code>bbox</code> for geospatial precision.</p>
-  
-  <table>
+
+  #### Step 3 — Fix `spatial`
+
+  Replace the v1.1 plain string or ad-hoc GeoJSON with an array of Location objects. No fields are required on Location — include `prefLabel` at minimum, and add `bbox` for geospatial precision.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>v1.1</th>
@@ -135,14 +147,14 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
+
   ---
-  
-  <h3>Step 4 — Fix <code>language</code></h3>
-  
-  <p>Replace RFC 5646 language tags with two-letter ISO 639-1 codes. The v3.0 schema enforces a maximum length of two characters — values like <code>en-US</code> will fail validation.</p>
-  
-  <table>
+
+  #### Step 4 — Fix `language`
+
+  Replace RFC 5646 language tags with two-letter ISO 639-1 codes. The v3.0 schema enforces a maximum length of two characters — values like `en-US` will fail validation.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>v1.1</th>
@@ -164,20 +176,20 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>This applies to <code>language</code> on Dataset, Distribution, DataService, and Catalog.</p>
-  
+
+  This applies to `language` on Dataset, Distribution, DataService, and Catalog.
+
   ---
-  
-  <h2>Structural changes — required for correct v3.0 implementation</h2>
-  
-  <p>These changes will not cause immediate validation failures but are required to correctly implement v3.0.</p>
-  
-  <h3>Step 5 — Update <code>conformsTo</code> on the Catalog</h3>
-  
-  <p>Change the plain string URI to a Standard object pointing to DCAT-US v3.0.</p>
-  
-  <table>
+
+  ### Structural changes — required for correct v3.0 implementation
+
+  These changes will not cause immediate validation failures but are required to correctly implement v3.0.
+
+  #### Step 5 — Update `conformsTo` on the Catalog
+
+  Change the plain string URI to a Standard object pointing to DCAT-US v3.0.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>v1.1</th>
@@ -197,38 +209,29 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
+
   ---
-  
-  <h3>Step 6 — Remove <code>@context</code> and <code>describedBy</code> from the Catalog</h3>
-  
-  <p>Both fields have been removed at the catalog level in v3.0. Delete these lines from your catalog object.</p>
-  
+
+  #### Step 6 — Remove `@context` and `describedBy` from the Catalog
+
+  Both fields have been removed at the catalog level in v3.0. Delete these lines from your catalog object.
+
   <pre><code>// Remove these lines from your catalog:
   "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
   "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json"
   </code></pre>
-  
+
   ---
-  
-  <h3>Step 7 — Verify <code>identifier</code> on every Dataset</h3>
-  
-  <p><code>identifier</code> is now Mandatory in v3.0 — it is in the schema's required array. If your datasets already have identifiers this is a check rather than a change. If any Dataset records are missing an identifier, add a persistent URI.</p>
-  
-  <pre><code>"identifier": "https://www.agency.gov/data/dataset-name"
-  </code></pre>
-  
-  ---
-  
-  <h3>Step 8 — Replace <code>accessLevel</code> with <code>accessRights</code></h3>
-  
-  <p><code>accessLevel</code> is not in the v3.0 schema. Add <code>accessRights</code> as a free-text string alongside your existing <code>accessLevel</code> field. Until updated OMB guidance is issued, keep <code>accessLevel</code> in your records — the v3.0 schema will not reject it, and existing OMB policy still requires it.</p>
-  
-  <table>
+
+  #### Step 7 — Replace `accessLevel` with `accessRights`
+
+  `accessLevel` is not in the v3.0 schema. Add `accessRights` as a free-text string alongside your existing `accessLevel` field. Until updated OMB guidance is issued, keep `accessLevel` in your records — the v3.0 schema will not reject it, and existing OMB policy still requires it.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>v1.1 <code>accessLevel</code></th>
-        <th>v3.0 <code>accessRights</code></th>
+        <th>v3.0 <code>accessRights</code> (add alongside)</th>
       </tr>
     </thead>
     <tbody>
@@ -238,26 +241,26 @@ details: >+
       </tr>
       <tr>
         <td><code>"restricted public"</code></td>
-        <td><code>"Access restricted to authorized users. Contact data@agency.gov to request access."</code></td>
+        <td><code>"Access restricted. Contact the publisher to request access."</code></td>
       </tr>
       <tr>
         <td><code>"non-public"</code></td>
-        <td><code>"Not available for public release. Contains personally identifiable information."</code></td>
+        <td><code>"Not available for public release. Contact the publisher for more information."</code></td>
       </tr>
     </tbody>
   </table>
-  
+
   ---
-  
-  <h3>Step 9 — Move <code>license</code> from Dataset to Distribution</h3>
-  
-  <p><code>license</code> is not defined at the Dataset level in v3.0 — it belongs on each Distribution object. The v3.0 schema will not reject records that still have it at the Dataset level, but it will not be recognized there. Add it to each Distribution and remove it from the Dataset.</p>
-  
-  <table>
+
+  #### Step 8 — Add `license` to Distribution objects
+
+  In v3.0, `license` is defined at the Distribution level per W3C DCAT. The recommended approach is to add `license` to each Distribution object. You do not need to remove it from the Dataset level during the transition period — the v3.0 schema will not reject records that include it there.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>v1.1 (on Dataset)</th>
-        <th>v3.0 (on each Distribution)</th>
+        <th>v3.0 (add to each Distribution)</th>
       </tr>
     </thead>
     <tbody>
@@ -285,93 +288,22 @@ details: >+
       </tr>
     </tbody>
   </table>
-  
-  <p>If all your distributions share the same license you will need to add it to each one individually.</p>
-  
+
+  If all your distributions share the same license you will need to add it to each one individually.
+
   ---
-  
-  <h3>Step 10 — Update <code>publisher</code>, <code>contactPoint</code>, and <code>subOrganizationOf</code></h3>
-  
-  <p>Three changes to these common fields:</p>
-  
-  <table>
-    <thead>
-      <tr>
-        <th>Field</th>
-        <th>v1.1</th>
-        <th>v3.0</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>publisher @type</code></td>
-        <td><code>"org:Organization"</code></td>
-        <td><code>"Organization"</code></td>
-      </tr>
-      <tr>
-        <td><code>contactPoint @type</code></td>
-        <td><code>"vcard:Contact"</code></td>
-        <td><code>"Kind"</code></td>
-      </tr>
-      <tr>
-        <td><code>publisher.subOrganizationOf</code></td>
-        <td>Single Organization object</td>
-        <td>Array of Organization objects — wrap in square brackets</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <p>Example showing all three changes together:</p>
-  
-  <pre><code>// v1.1
-  "publisher": {
-    "@type": "org:Organization",
-    "name": "Census Bureau",
-    "subOrganizationOf": {
-      "@type": "org:Organization",
-      "name": "U.S. Department of Commerce"
-    }
-  },
-  "contactPoint": {
-    "@type": "vcard:Contact",
-    "fn": "Jane Smith",
-    "hasEmail": "mailto:jane@agency.gov"
-  }
-  </code></pre>
-  
-  <pre><code>// v3.0
-  "publisher": {
-    "@type": "Organization",
-    "name": "Census Bureau",
-    "subOrganizationOf": [
-      {
-        "@type": "Organization",
-        "name": "U.S. Department of Commerce"
-      }
-    ]
-  },
-  "contactPoint": {
-    "@type": "Kind",
-    "fn": "Jane Smith",
-    "hasEmail": "mailto:jane@agency.gov"
-  }
-  </code></pre>
-  
+
+  ### You are done with the minimum migration
+
+  After completing steps 1 through 8 your records should validate against the v3.0 schema. Run your updated `data.json` against the validation script at [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py) to confirm.
+
   ---
-  
-  <h2>You are done with the minimum migration</h2>
-  
-  <p>After completing steps 1 through 10 your records should validate against the v3.0 schema. Run your updated <code>data.json</code> against the validation script at <a href="https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py">jsonschema/test_json_schema.py</a> to confirm.</p>
-  
-  <p>Note: the generated reference documentation in <code>jsonschema/docs/</code> currently shows all fields as Optional regardless of their actual requirement level. This is a known issue. Trust the requirement levels in the JSON schema files and on the reference pages, not the generated docs.</p>
-  
-  ---
-  
-  <h2>Additional improvements</h2>
-  
-  <p>These changes are not required for validation but improve the quality and interoperability of your metadata. Work through them when you are ready.</p>
-  
-  <table>
+
+  ### Additional improvements
+
+  These changes are not required for validation but improve the quality and interoperability of your metadata. Work through them when you are ready.
+
+  <table class="usa-table">
     <thead>
       <tr>
         <th>Improvement</th>
@@ -428,38 +360,26 @@ details: >+
     </tbody>
   </table>
 
+
   ## DCAT US Pages
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
-
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-catalog/">Catalog</a>
+  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">Data Service</a>
+  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
   
+  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
   
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">Dataset Series</a>
+  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset</a>
+  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution</a>
+  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Supporting Classes</a>
+  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us-priorities/">DCAT Priorities</a>
+  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
   
-
-  ### <a href="https://resources.data.gov/catalog/dcat-us/">DCAT US General Information</a>
-
-
-
- 
+  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
 
 examples: ""
 link: ""
