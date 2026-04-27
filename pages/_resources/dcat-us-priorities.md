@@ -214,6 +214,10 @@ details: >-
 
 
   <h2>DCAT US Pages</h2>
+
+  
+
+  ### [Quick Migration Guide](https://resources.data.gov/catalog/dcat-us-3-migration/)
   
 
   ### <a href="https://resources.data.gov/catalog/dcat-us-3/">Index</a>
