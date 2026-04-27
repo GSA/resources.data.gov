@@ -17,7 +17,6 @@ tags:
 guidance_tags: ""
 format: ""
 details: >+
-
   This page documents metadata priorities for federal agency data assets. It describes specific keyword and field requirements tied to federal policy directives, and shows how those requirements map to DCAT-US v3.0 fields.
 
   **Note on DCAT-US version:** The original version of this page was written for DCAT-US v1.1. Field guidance has been updated to reflect DCAT-US v3.0. Where fields have changed between versions, both the original v1.1 field and the v3.0 equivalent are noted.
@@ -28,13 +27,19 @@ details: >+
 
   #### COVID-19 policy background
 
-  In April 2020, OMB Memorandum [M-20-16](https://www.whitehouse.gov/wp-content/uploads/2020/04/M-20-16.pdf), *Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19*, directed agencies to prioritize COVID-19 response data as their highest priority data asset. This memo was issued during the public health emergency and required agencies participating in the Federal Data Strategy 2020 Action Plan to elevate COVID-19 datasets in their data inventories.
+  In April 2020, OMB Memorandum M-20-16, *Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19*, directed agencies to prioritize COVID-19 response data as their highest priority data asset. This memo was issued during the public health emergency and required agencies participating in the Federal Data Strategy 2020 Action Plan to elevate COVID-19 datasets in their data inventories.
 
-  **Current status:** M-20-16 was a pandemic-era directive. The federal public health emergency for COVID-19 ended in May 2023. M-20-16 is no longer actively enforced as a current data prioritization requirement. Agencies that documented COVID-19 datasets under M-20-16 do not need to remove those keywords — the keywords remain useful for discoverability — but there is no active policy mandate requiring new COVID-19 prioritization at this time.
+  **Current status:** M-20-16 was a pandemic-era directive. The federal public health emergency for COVID-19 ended in May 2023. M-20-16 is no longer actively enforced as a current data prioritization requirement. Agencies that documented COVID-19 datasets under M-20-16 do not need to remove those keywords; the keywords remain useful for discoverability, but there is no active policy mandate requiring new COVID-19 prioritization at this time.
 
-  Agencies with COVID-19 datasets in their inventories are encouraged to keep their existing keyword documentation in place and ensure those datasets remain accessible and well-described for ongoing research use.
+  Agencies with COVID-19 datasets in their inventories are encouraged to maintain their existing keyword documentation and ensure those datasets remain accessible and well-described for ongoing research use.
 
   #### COVID-19 field guidance
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Requirement (under M-20-16)</th>
         <th>v1.1 guidance</th>
         <th>v3.0 guidance</th>
       </tr>
@@ -66,6 +71,12 @@ details: >+
   The `usg-artificial-intelligence` keyword convention established under EO 13859 remains a useful and recognized practice for tagging AI-relevant datasets. Agencies should continue applying it. Consult current OMB guidance for any updated keyword requirements under EO 14179.
 
   #### AI field guidance
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Requirement (under EO 13859)</th>
         <th>v1.1 guidance</th>
         <th>v3.0 guidance</th>
       </tr>
@@ -212,6 +223,6 @@ details: >+
 examples: ""
 link: ""
 layout: resource
-toc: true
+toc: false
 publish: true
 ---
