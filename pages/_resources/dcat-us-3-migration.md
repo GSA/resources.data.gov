@@ -13,11 +13,9 @@ tags:
   - DCAT-US
   - metadata standard
   - data inventory
-  - migration
 guidance_tags: ""
 format: ""
 details: >+
-
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/ -->
 
   ---
@@ -26,7 +24,7 @@ details: >+
 
   ### Overview
 
-  This guide covers the minimum changes needed to make your existing v1.1 `data.json` file valid against the v3.0 schema. Work through the steps in order: steps 1 through 4 address breaking changes that will cause validation failures. Steps 5 through 8 are structural changes required for correct v3.0 implementation.
+  This guide covers the minimum changes needed to make your existing v1.1 `data.json` file valid against the v3.0 schema. Work through the steps in order — steps 1 through 4 address breaking changes that will cause validation failures. Steps 5 through 8 are structural changes required for correct v3.0 implementation.
 
   After completing all steps, run your updated `data.json` against the v3.0 validation script: [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py)
 
@@ -34,11 +32,11 @@ details: >+
 
   ---
 
-  ### Breaking changes: fix these first
+  ### Breaking changes — fix these first
 
   These are changes where your existing v1.1 values will fail v3.0 schema validation.
 
-  #### Step 1: Fix `modified`
+  #### Step 1 — Fix `modified`
 
   If you use repeating intervals like `R/P1D` or `R/P1Y` in `modified`, replace them with the actual date the data last changed. Move your update frequency to `accrualPeriodicity` using a plain-language code.
 
@@ -70,9 +68,9 @@ details: >+
 
   ---
 
-  #### Step 2: Fix `temporal`
+  #### Step 2 — Fix `temporal`
 
-  Replace the v1.1 ISO 8601 interval string with an array of PeriodOfTime objects. At least one of `startDate` or `endDate` is required per object. Open-ended periods are valid; omit `endDate` for ongoing datasets.
+  Replace the v1.1 ISO 8601 interval string with an array of PeriodOfTime objects. At least one of `startDate` or `endDate` is required per object. Open-ended periods are valid — omit `endDate` for ongoing datasets.
 
   <table class="usa-table">
     <thead>
@@ -110,9 +108,9 @@ details: >+
 
   ---
 
-  #### Step 3: Fix `spatial`
+  #### Step 3 — Fix `spatial`
 
-  Replace the v1.1 plain string or ad-hoc GeoJSON with an array of Location objects. No fields are required on Location; include `prefLabel` at minimum, and add `bbox` for geospatial precision.
+  Replace the v1.1 plain string or ad-hoc GeoJSON with an array of Location objects. No fields are required on Location — include `prefLabel` at minimum, and add `bbox` for geospatial precision.
 
   <table class="usa-table">
     <thead>
@@ -150,9 +148,9 @@ details: >+
 
   ---
 
-  #### Step 4: Fix `language`
+  #### Step 4 — Fix `language`
 
-  Replace RFC 5646 language tags with two-letter ISO 639-1 codes. The v3.0 schema enforces a maximum length of two characters; values like `en-US` will fail validation.
+  Replace RFC 5646 language tags with two-letter ISO 639-1 codes. The v3.0 schema enforces a maximum length of two characters — values like `en-US` will fail validation.
 
   <table class="usa-table">
     <thead>
@@ -181,11 +179,11 @@ details: >+
 
   ---
 
-  ### Structural changes: required for correct v3.0 implementation
+  ### Structural changes — required for correct v3.0 implementation
 
-  These changes will not cause immediate validation failures, but are required to implement v3.0 correctly.
+  These changes will not cause immediate validation failures but are required to correctly implement v3.0.
 
-  #### Step 5: Update `conformsTo` on the Catalog
+  #### Step 5 — Update `conformsTo` on the Catalog
 
   Change the plain string URI to a Standard object pointing to DCAT-US v3.0.
 
@@ -212,7 +210,7 @@ details: >+
 
   ---
 
-  #### Step 6: Remove `@context` and `describedBy` from the Catalog
+  #### Step 6 — Remove `@context` and `describedBy` from the Catalog
 
   Both fields have been removed at the catalog level in v3.0. Delete these lines from your catalog object.
 
@@ -223,9 +221,9 @@ details: >+
 
   ---
 
-  #### Step 7: Replace `accessLevel` with `accessRights`
+  #### Step 7 — Replace `accessLevel` with `accessRights`
 
-  `accessLevel` is not in the v3.0 schema. Add `accessRights` as a free-text string alongside your existing `accessLevel` field. Until updated OMB guidance is issued, keep `accessLevel` in your records the v3.0 schema will not reject it, and existing OMB policy still requires it.
+  `accessLevel` is not in the v3.0 schema. Add `accessRights` as a free-text string alongside your existing `accessLevel` field. Until updated OMB guidance is issued, keep `accessLevel` in your records — the v3.0 schema will not reject it, and existing OMB policy still requires it.
 
   <table class="usa-table">
     <thead>
@@ -252,9 +250,9 @@ details: >+
 
   ---
 
-  #### Step 8: Add `license` to Distribution objects
+  #### Step 8 — Add `license` to Distribution objects
 
-  In v3.0, `license` is defined at the Distribution level per W3C DCAT. The recommended approach is to add `license` to each Distribution object. You do not need to remove it from the Dataset level during the transition period; the v3.0 schema will not reject records that include it there.
+  In v3.0, `license` is defined at the Distribution level per W3C DCAT. The recommended approach is to add `license` to each Distribution object. You do not need to remove it from the Dataset level during the transition period — the v3.0 schema will not reject records that include it there.
 
   <table class="usa-table">
     <thead>
@@ -324,7 +322,7 @@ details: >+
       </tr>
       <tr>
         <td>Upgrade <code>describedBy</code></td>
-        <td>Change from a plain URL to a Distribution object with <code>title</code>, <code>downloadURL</code> or <code>accessURL</code>, and <code>mediaType</code>. Remove <code>describedByType</code>; it is now expressed as <code>mediaType</code> within the Distribution object.</td>
+        <td>Change from a plain URL to a Distribution object with <code>title</code>, <code>downloadURL</code> or <code>accessURL</code>, and <code>mediaType</code>. Remove <code>describedByType</code> — it is now expressed as <code>mediaType</code> within the Distribution object.</td>
         <td><a href="../dcat-us-3-dataset/">Dataset fields</a></td>
       </tr>
       <tr>
@@ -361,29 +359,25 @@ details: >+
   </table>
 
 
-  ## DCAT US Pages
+## DCAT US Pages
 
-  ### [Quick Migration Guide](https://resources.data.gov/catalog/dcat-us-3-migration/)
+### [Index](https://resources.data.gov/catalog/dcat-us-3/)
 
-  ### [Quick Migration Guide](https://resources.data.gov/catalog/dcat-us-3-migration/)
-  
-  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
-  
-  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
-  
-  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
-  
-  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
-  
-  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
-  
-  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
-  
-  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
-  
-  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
-  
-  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
+### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
+
+### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
+
+### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
+
+### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
+
+### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
+
+### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
+
+### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
+
+### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
 
 examples: ""
 link: ""
