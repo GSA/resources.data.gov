@@ -10,7 +10,6 @@ tags:
   - data schema
   - open data
   - DCAT
-  - metadata standard
   - data inventory
   - data standards
 guidance_tags: ""
