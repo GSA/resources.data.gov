@@ -9,40 +9,50 @@ const submodulePath = path.join(repoRoot, "_external", "dcat-us");
 const docsSourceDir = path.join(submodulePath, "jsonschema", "docs");
 const outputDir = path.join(repoRoot, "pages", "_data_standards", "dcat-us-3");
 
-const mainClassMap = [
-  { source: "Catalog.md", output: "catalog.md", title: "Catalog" },
-  { source: "Dataset.md", output: "dataset.md", title: "Dataset" },
-  { source: "DatasetSeries.md", output: "dataset-series.md", title: "Dataset Series" },
-  { source: "Distribution.md", output: "distribution.md", title: "Distribution" },
-];
+const pageConfigs = {
+  "index.md": {
+    title: "DCAT-US 3.0 Schema Documentation",
+    permalink: "/standards/catalog/dcat-us-3/",
+  },
+  "catalog.md": {
+    title: "DCAT-US 3.0: Catalog",
+    permalink: "/standards/catalog/dcat-us-3/catalog/",
+  },
+  "dataset.md": {
+    title: "DCAT-US 3.0: Dataset",
+    permalink: "/standards/catalog/dcat-us-3/dataset/",
+  },
+  "dataset-series.md": {
+    title: "DCAT-US 3.0: Dataset Series",
+    permalink: "/standards/catalog/dcat-us-3/dataset-series/",
+  },
+  "distribution.md": {
+    title: "DCAT-US 3.0: Distribution",
+    permalink: "/standards/catalog/dcat-us-3/distribution/",
+  },
+  "agents.md": {
+    title: "DCAT-US 3.0: Agents",
+    permalink: "/standards/catalog/dcat-us-3/agents/",
+  },
+  "constraints-and-restrictions.md": {
+    title: "DCAT-US 3.0: Constraints and Restrictions",
+    permalink: "/standards/catalog/dcat-us-3/constraints-and-restrictions/",
+  },
+  "identifiers-and-relationships.md": {
+    title: "DCAT-US 3.0: Identifiers and Relationships",
+    permalink: "/standards/catalog/dcat-us-3/identifiers-and-relationships/",
+  },
+  "temporal-spatial-metrics.md": {
+    title: "DCAT-US 3.0: Temporal, Spatial, and Metrics",
+    permalink: "/standards/catalog/dcat-us-3/temporal-spatial-metrics/",
+  },
+  "quality-governance.md": {
+    title: "DCAT-US 3.0: Quality and Governance",
+    permalink: "/standards/catalog/dcat-us-3/quality-governance/",
+  },
+};
 
-const groupedClassPages = [
-  {
-    output: "agents.md",
-    title: "Agents",
-    classes: ["Agent.md", "Organization.md", "Kind.md"],
-  },
-  {
-    output: "constraints-and-restrictions.md",
-    title: "Constraints and Restrictions",
-    classes: ["AccessRestriction.md", "CUIRestriction.md", "UseRestriction.md"],
-  },
-  {
-    output: "identifiers-and-relationships.md",
-    title: "Identifiers and Relationships",
-    classes: ["Identifier.md", "Relationship.md", "Checksum.md", "Concept.md", "ConceptScheme.md"],
-  },
-  {
-    output: "temporal-spatial-metrics.md",
-    title: "Temporal, Spatial, and Metrics",
-    classes: ["PeriodOfTime.md", "Location.md", "Metric.md", "QualityMeasurement.md", "Activity.md", "Address.md"],
-  },
-  {
-    output: "quality-governance.md",
-    title: "Quality and Governance",
-    classes: ["Standard.md", "Document.md", "CatalogRecord.md", "DataService.md", "Attribution.md"],
-  },
-];
+const skippedFiles = new Set(["README.md"]);
 
 function runCommand(command, cwd = repoRoot) {
   execSync(command, { cwd, stdio: "pipe" });
@@ -52,26 +62,50 @@ function ensureSubmoduleReady() {
   if (!fs.existsSync(path.join(submodulePath, ".git"))) {
     runCommand("git submodule update --init --depth 1 _external/dcat-us");
   }
-
-  runCommand("git sparse-checkout init --no-cone", submodulePath);
-  runCommand('printf "/jsonschema/definitions/\\n/jsonschema/docs/\\n" | git sparse-checkout set --stdin', submodulePath);
 }
 
-function readSourceDoc(fileName) {
-  const fullPath = path.join(docsSourceDir, fileName);
-  if (!fs.existsSync(fullPath)) {
-    throw new Error(`Missing expected source doc: ${fullPath}`);
+function stripLeadingFrontMatter(content) {
+  if (!content.startsWith("---\n")) {
+    return content.trim();
   }
 
-  return fs.readFileSync(fullPath, "utf8").trim();
+  const end = content.indexOf("\n---\n", 4);
+  if (end === -1) {
+    return content.trim();
+  }
+
+  return content.slice(end + 5).trim();
 }
 
-function buildFrontMatter(title, permalink) {
+function titleFromFileName(fileName) {
+  const baseName = path.basename(fileName, ".md");
+  const words = baseName
+    .split("-")
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+
+  return `DCAT-US 3.0: ${words.join(" ")}`;
+}
+
+function getPageConfig(fileName) {
+  if (pageConfigs[fileName]) {
+    return pageConfigs[fileName];
+  }
+
+  const slug = path.basename(fileName, ".md");
+  return {
+    title: titleFromFileName(fileName),
+    permalink: `/standards/catalog/dcat-us-3/${slug}/`,
+  };
+}
+
+function buildFrontMatter(fileName) {
+  const config = getPageConfig(fileName);
   return [
     "---",
-    `title: DCAT-US 3.0: ${title}`,
+    `title: ${config.title}`,
     "layout: page",
-    `permalink: ${permalink}`,
+    `permalink: ${config.permalink}`,
     "primary_nav_section: Data Standards",
     "category_name: Data standards",
     "---",
@@ -79,38 +113,39 @@ function buildFrontMatter(title, permalink) {
   ].join("\n");
 }
 
-function writeFile(outputPath, content) {
-  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-  fs.writeFileSync(outputPath, `${content.trim()}\n`, "utf8");
+function writeOutputFile(fileName, content) {
+  const outputPath = path.join(outputDir, fileName);
+  const pageContent = `${buildFrontMatter(fileName)}${stripLeadingFrontMatter(content)}\n`;
+  fs.writeFileSync(outputPath, pageContent, "utf8");
 }
 
-function buildMainClassPages() {
-  mainClassMap.forEach((item) => {
-    const sourceContent = readSourceDoc(item.source);
-    const permalink = `/standards/catalog/dcat-us-3/${item.output.replace(".md", "")}/`;
-    const pageContent = `${buildFrontMatter(item.title, permalink)}${sourceContent}`;
-    writeFile(path.join(outputDir, item.output), pageContent);
+function cleanSkippedOutputs() {
+  skippedFiles.forEach((fileName) => {
+    const outputPath = path.join(outputDir, fileName);
+    if (fs.existsSync(outputPath)) {
+      fs.unlinkSync(outputPath);
+    }
   });
 }
 
-function buildGroupedPages() {
-  groupedClassPages.forEach((group) => {
-    const permalink = `/standards/catalog/dcat-us-3/${group.output.replace(".md", "")}/`;
-    const sections = group.classes.map((classFile) => {
-      const className = classFile.replace(".md", "");
-      const sourceContent = readSourceDoc(classFile);
-      return `## ${className}\n\n${sourceContent}`;
-    });
+function mergeDocs() {
+  const sourceFiles = fs
+    .readdirSync(docsSourceDir, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
+    .map((entry) => entry.name)
+    .sort();
 
-    const pageContent = [
-      buildFrontMatter(group.title, permalink),
-      `This page combines supporting DCAT-US 3.0 classes used with the main schema classes.`,
-      "",
-      sections.join("\n\n---\n\n"),
-      "",
-    ].join("\n");
+  fs.mkdirSync(outputDir, { recursive: true });
+  cleanSkippedOutputs();
 
-    writeFile(path.join(outputDir, group.output), pageContent);
+  sourceFiles.forEach((fileName) => {
+    if (skippedFiles.has(fileName)) {
+      return;
+    }
+
+    const sourcePath = path.join(docsSourceDir, fileName);
+    const sourceContent = fs.readFileSync(sourcePath, "utf8");
+    writeOutputFile(fileName, sourceContent);
   });
 }
 
@@ -122,10 +157,7 @@ function main() {
       throw new Error(`Source docs directory not found: ${docsSourceDir}`);
     }
 
-    fs.mkdirSync(outputDir, { recursive: true });
-    buildMainClassPages();
-    buildGroupedPages();
-
+    mergeDocs();
     process.stdout.write("Merged DCAT-US 3.0 docs into pages/_data_standards/dcat-us-3/\n");
   } catch (error) {
     process.stderr.write(`${error.message}\n`);

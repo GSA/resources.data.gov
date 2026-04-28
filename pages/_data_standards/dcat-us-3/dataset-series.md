@@ -5,6 +5,10 @@ permalink: /standards/catalog/dcat-us-3/dataset-series/
 primary_nav_section: Data Standards
 category_name: Data standards
 ---
+<a name="root"></a>
+
+Information about a dataset series, including its members, ordering, coverage, and publishing details.
+
 **Title:** DatasetSeries
 
 A group of related datasets that are published separately
@@ -148,20 +152,20 @@ A group of related datasets that are published separately
 
 | Property                                     | Type               | Title/Description           |
 | -------------------------------------------- | ------------------ | --------------------------- |
-| - [@id](#@id )                               | string             | -                           |
-| - [@type](#@type )                           | string             | -                           |
-| - [contactPoint](#contactPoint )             | null or array      | contact point               |
-| - [first](#first )                           | More than one type | first                       |
-| - [last](#last )                             | More than one type | last                        |
-| - [seriesMember](#seriesMember )             | null or array      | series member               |
-| - [accrualPeriodicity](#accrualPeriodicity ) | More than one type | frequency                   |
-| + [description](#description )               | string             | description                 |
-| - [issued](#issued )                         | More than one type | release date                |
-| - [modified](#modified )                     | More than one type | update/modification date    |
-| - [publisher](#publisher )                   | More than one type | publisher                   |
-| - [spatial](#spatial )                       | null or array      | spatial/geographic coverage |
-| - [temporal](#temporal )                     | null or array      | temporal coverage           |
-| + [title](#title )                           | string             | title                       |
+| - [@id](#@id)                               | string             | -                           |
+| - [@type](#@type)                           | string             | -                           |
+| - [contactPoint](#contactPoint)             | null or array      | contact point               |
+| - [first](#first)                           | More than one type | first                       |
+| - [last](#last)                             | More than one type | last                        |
+| - [seriesMember](#seriesMember)             | null or array      | series member               |
+| - [accrualPeriodicity](#accrualPeriodicity) | More than one type | frequency                   |
+| + [description](#description)               | string             | description                 |
+| - [issued](#issued)                         | More than one type | release date                |
+| - [modified](#modified)                     | More than one type | update/modification date    |
+| - [publisher](#publisher)                   | More than one type | publisher                   |
+| - [spatial](#spatial)                       | null or array      | spatial/geographic coverage |
+| - [temporal](#temporal)                     | null or array      | temporal coverage           |
+| + [title](#title)                           | string             | title                       |
 
 ## <a name="@id"></a>[Optional] Property `DatasetSeries > @id`
 
@@ -198,18 +202,7 @@ List of contacts people can use to ask questions or send feedback about the data
 
 | Each item of this array must be | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
-| [Kind](#contactPoint_items)     | Contact information for an individual or entity |
-
-### <a name="contactPoint_items"></a>DatasetSeries > contactPoint > Kind
-
-**Title:** Kind
-
-Contact information for an individual or entity
-
-| **Type**                  | `object`          |
-| ------------------------- | ----------------- |
-| **Additional properties** | Any type allowed  |
-| **Defined in**            | [Kind](./Kind.md) |
+| [Kind](./agents.md#kind)        | Contact information for an individual or entity |
 
 ## <a name="first"></a>[Optional] Property `DatasetSeries > first`
 
@@ -241,10 +234,10 @@ The first dataset in an ordered dataset series
 
 inline description of the first dataset
 
-| **Type**                  | `object`                |
-| ------------------------- | ----------------------- |
-| **Additional properties** | Any type allowed        |
-| **Defined in**            | [Dataset](./Dataset.md) |
+| **Type**                  | `object`                     |
+| ------------------------- | ---------------------------- |
+| **Additional properties** | Any type allowed             |
+| **Defined in**            | [Dataset](./dataset.md#root) |
 
 ## <a name="last"></a>[Optional] Property `DatasetSeries > last`
 
@@ -276,10 +269,10 @@ The last dataset in an ordered dataset series
 
 inline description of the last dataset
 
-| **Type**                  | `object`                   |
-| ------------------------- | -------------------------- |
-| **Additional properties** | Any type allowed           |
-| **Same definition as**    | [Dataset](#first_anyOf_i1) |
+| **Type**                  | `object`                     |
+| ------------------------- | ---------------------------- |
+| **Additional properties** | Any type allowed             |
+| **Same definition as**    | [Dataset](./dataset.md#root) |
 
 ## <a name="seriesMember"></a>[Optional] Property `DatasetSeries > seriesMember`
 
@@ -294,18 +287,7 @@ List of members of the Dataset Series
 
 | Each item of this array must be | Description                                               |
 | ------------------------------- | --------------------------------------------------------- |
-| [Dataset](#seriesMember_items)  | A collection of data published or curated by one provider |
-
-### <a name="seriesMember_items"></a>DatasetSeries > seriesMember > Dataset
-
-**Title:** Dataset
-
-A collection of data published or curated by one provider
-
-| **Type**                  | `object`                   |
-| ------------------------- | -------------------------- |
-| **Additional properties** | Any type allowed           |
-| **Same definition as**    | [Dataset](#first_anyOf_i1) |
+| [Dataset](./dataset.md#root)    | A collection of data published or curated by one provider |
 
 ## <a name="accrualPeriodicity"></a>[Optional] Property `DatasetSeries > accrualPeriodicity`
 
@@ -631,10 +613,10 @@ Organization responsible for maintaining the Dataset Series as a coherent series
 
 inline description of publisher
 
-| **Type**                  | `object`                                                                |
-| ------------------------- | ----------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                        |
-| **Same definition as**    | [Agent](#first_anyOf_i1_sample_items_accessService_items_creator_items) |
+| **Type**                  | `object`                   |
+| ------------------------- | -------------------------- |
+| **Additional properties** | Any type allowed           |
+| **Same definition as**    | [Agent](./agents.md#agent) |
 
 ## <a name="spatial"></a>[Optional] Property `DatasetSeries > spatial`
 
@@ -647,20 +629,9 @@ A geographic region that is covered by the Dataset Series
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                      |
-| ------------------------------- | -------------------------------- |
-| [Location](#spatial_items)      | A named place or geographic area |
-
-### <a name="spatial_items"></a>DatasetSeries > spatial > Location
-
-**Title:** Location
-
-A named place or geographic area
-
-| **Type**                  | `object`                                                                   |
-| ------------------------- | -------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                           |
-| **Same definition as**    | [Location](#first_anyOf_i1_sample_items_accessService_items_spatial_items) |
+| Each item of this array must be                    | Description                      |
+| -------------------------------------------------- | -------------------------------- |
+| [Location](./temporal-spatial-metrics.md#location) | A named place or geographic area |
 
 ## <a name="temporal"></a>[Optional] Property `DatasetSeries > temporal`
 
@@ -673,20 +644,9 @@ Time periods covered by the dataset series
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                            |
-| ------------------------------- | ---------------------------------------------------------------------- |
-| [PeriodOfTime](#temporal_items) | Information about a specific time period with a start- and/or end-time |
-
-### <a name="temporal_items"></a>DatasetSeries > temporal > PeriodOfTime
-
-**Title:** PeriodOfTime
-
-Information about a specific time period with a start- and/or end-time
-
-| **Type**                  | More than one type                                                              |
-| ------------------------- | ------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                |
-| **Same definition as**    | [PeriodOfTime](#first_anyOf_i1_sample_items_accessService_items_temporal_items) |
+| Each item of this array must be                              | Description                                                            |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| [PeriodOfTime](./temporal-spatial-metrics.md#period-of-time) | Information about a specific time period with a start- and/or end-time |
 
 ## <a name="title"></a>[Optional] Property `DatasetSeries > title`
 

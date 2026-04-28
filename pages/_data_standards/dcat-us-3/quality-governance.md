@@ -5,8 +5,11 @@ permalink: /standards/catalog/dcat-us-3/quality-governance/
 primary_nav_section: Data Standards
 category_name: Data standards
 ---
+# Quality and Governance
 
-This page combines supporting DCAT-US 3.0 classes used with the main schema classes.
+Supporting classes for standards, documents, catalog records, data services, and attribution used in governance and quality description.
+
+<a name="standard"></a>
 
 ## Standard
 
@@ -41,19 +44,19 @@ A standard or specification that another resource conforms to
 
 | Property                               | Type               | Title/Description |
 | -------------------------------------- | ------------------ | ----------------- |
-| - [@id](#@id )                         | string             | -                 |
-| - [@type](#@type )                     | string             | -                 |
-| - [created](#created )                 | More than one type | creation date     |
-| - [description](#description )         | null or string     | description       |
-| - [identifier](#identifier )           | More than one type | identifier        |
-| - [otherIdentifier](#otherIdentifier ) | null or array      | other identifier  |
-| - [issued](#issued )                   | More than one type | issued            |
-| - [modified](#modified )               | More than one type | last modified     |
-| - [title](#title )                     | null or string     | title             |
-| - [category](#category )               | null or array      | category          |
-| - [inScheme](#inScheme )               | More than one type | in scheme         |
+| - [@id](#standard--@id)                         | string             | -                 |
+| - [@type](#standard--@type)                     | string             | -                 |
+| - [created](#standard--created)                 | More than one type | creation date     |
+| - [description](#standard--description)         | null or string     | description       |
+| - [identifier](#standard--identifier)           | More than one type | identifier        |
+| - [otherIdentifier](#standard--otherIdentifier) | null or array      | other identifier  |
+| - [issued](#standard--issued)                   | More than one type | issued            |
+| - [modified](#standard--modified)               | More than one type | last modified     |
+| - [title](#standard--title)                     | null or string     | title             |
+| - [category](#standard--category)               | null or array      | category          |
+| - [inScheme](#standard--inScheme)               | More than one type | in scheme         |
 
-## <a name="@id"></a>[Optional] Property `Standard > @id`
+## <a name="standard--@id"></a>[Optional] Property `Standard > @id`
 
 **Requirement:** Optional
 
@@ -67,7 +70,7 @@ A standard or specification that another resource conforms to
 "https://example.gov/standards/dcat-us-3"
 ```
 
-## <a name="@type"></a>[Optional] Property `Standard > @type`
+## <a name="standard--@type"></a>[Optional] Property `Standard > @type`
 
 **Requirement:** Optional
 
@@ -75,7 +78,7 @@ A standard or specification that another resource conforms to
 | ----------- | ------------ |
 | **Default** | `"Standard"` |
 
-## <a name="created"></a>[Optional] Property `Standard > created`
+## <a name="standard--created"></a>[Optional] Property `Standard > created`
 
 **Title:** creation date
 
@@ -107,17 +110,17 @@ The date on which the Standard has been first created
 
 | Any of(Option)                                      |
 | --------------------------------------------------- |
-| [Null allowed when not required](#created_anyOf_i0) |
-| [Date string](#created_anyOf_i1)                    |
+| [Null allowed when not required](#standard--created_anyOf_i0) |
+| [Date string](#standard--created_anyOf_i1)                    |
 
-### <a name="created_anyOf_i0"></a>Property `Standard > created > anyOf > Null allowed when not required`
+### <a name="standard--created_anyOf_i0"></a>Property `Standard > created > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="created_anyOf_i1"></a>Property `Standard > created > anyOf > Date string`
+### <a name="standard--created_anyOf_i1"></a>Property `Standard > created > anyOf > Date string`
 
 **Title:** Date string
 
@@ -127,24 +130,24 @@ The date on which the Standard has been first created
 
 | Any of(Option)                       |
 | ------------------------------------ |
-| [item 0](#created_anyOf_i1_anyOf_i0) |
-| [item 1](#created_anyOf_i1_anyOf_i1) |
-| [item 2](#created_anyOf_i1_anyOf_i2) |
-| [item 3](#created_anyOf_i1_anyOf_i3) |
+| [item 0](#standard--created_anyOf_i1_anyOf_i0) |
+| [item 1](#standard--created_anyOf_i1_anyOf_i1) |
+| [item 2](#standard--created_anyOf_i1_anyOf_i2) |
+| [item 3](#standard--created_anyOf_i1_anyOf_i3) |
 
-#### <a name="created_anyOf_i1_anyOf_i0"></a>Property `Standard > created > anyOf > Date string > anyOf > item 0`
+#### <a name="standard--created_anyOf_i1_anyOf_i0"></a>Property `Standard > created > anyOf > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="created_anyOf_i1_anyOf_i1"></a>Property `Standard > created > anyOf > Date string > anyOf > item 1`
+#### <a name="standard--created_anyOf_i1_anyOf_i1"></a>Property `Standard > created > anyOf > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="created_anyOf_i1_anyOf_i2"></a>Property `Standard > created > anyOf > Date string > anyOf > item 2`
+#### <a name="standard--created_anyOf_i1_anyOf_i2"></a>Property `Standard > created > anyOf > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -155,7 +158,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="created_anyOf_i1_anyOf_i3"></a>Property `Standard > created > anyOf > Date string > anyOf > item 3`
+#### <a name="standard--created_anyOf_i1_anyOf_i3"></a>Property `Standard > created > anyOf > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -166,7 +169,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="description"></a>[Optional] Property `Standard > description`
+## <a name="standard--description"></a>[Optional] Property `Standard > description`
 
 **Title:** description
 
@@ -187,7 +190,7 @@ Plain-language summary of the standard
 "The DCAT-US 3.0 schema defines a standard metadata format for data catalogs in the United States government, based on W3C DCAT."
 ```
 
-## <a name="identifier"></a>[Optional] Property `Standard > identifier`
+## <a name="standard--identifier"></a>[Optional] Property `Standard > identifier`
 
 **Title:** identifier
 
@@ -201,28 +204,28 @@ The unique identifier for the Standard, e.g. the URI or other unique identifier 
 
 | Any of(Option)                                         |
 | ------------------------------------------------------ |
-| [Null allowed when not required](#identifier_anyOf_i0) |
-| [Identifier](#identifier_anyOf_i1)                     |
+| [Null allowed when not required](#standard--identifier_anyOf_i0) |
+| [Identifier](#standard--identifier_anyOf_i1)                     |
 
-### <a name="identifier_anyOf_i0"></a>Property `Standard > identifier > anyOf > Null allowed when not required`
+### <a name="standard--identifier_anyOf_i0"></a>Property `Standard > identifier > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="identifier_anyOf_i1"></a>Property `Standard > identifier > anyOf > Identifier`
+### <a name="standard--identifier_anyOf_i1"></a>Property `Standard > identifier > anyOf > Identifier`
 
 **Title:** Identifier
 
 inline description of Identifier
 
-| **Type**                  | More than one type            |
-| ------------------------- | ----------------------------- |
-| **Additional properties** | Any type allowed              |
-| **Defined in**            | [Identifier](./Identifier.md) |
+| **Type**                  | More than one type                                          |
+| ------------------------- | ----------------------------------------------------------- |
+| **Additional properties** | Any type allowed                                            |
+| **Defined in**            | [Identifier](./identifiers-and-relationships.md#identifier) |
 
-## <a name="otherIdentifier"></a>[Optional] Property `Standard > otherIdentifier`
+## <a name="standard--otherIdentifier"></a>[Optional] Property `Standard > otherIdentifier`
 
 **Title:** other identifier
 
@@ -233,22 +236,11 @@ A list of identifiers for the Standard besides the main identifier, e.g. the URI
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be      | Description                                                                   |
-| ------------------------------------ | ----------------------------------------------------------------------------- |
-| [Identifier](#otherIdentifier_items) | A unique identifier and optionally it's scheme and other relevant information |
+| Each item of this array must be                             | Description                                                                   |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [Identifier](./identifiers-and-relationships.md#identifier) | A unique identifier and optionally it's scheme and other relevant information |
 
-### <a name="otherIdentifier_items"></a>Standard > otherIdentifier > Identifier
-
-**Title:** Identifier
-
-A unique identifier and optionally it's scheme and other relevant information
-
-| **Type**                  | More than one type                 |
-| ------------------------- | ---------------------------------- |
-| **Additional properties** | Any type allowed                   |
-| **Same definition as**    | [Identifier](#identifier_anyOf_i1) |
-
-## <a name="issued"></a>[Optional] Property `Standard > issued`
+## <a name="standard--issued"></a>[Optional] Property `Standard > issued`
 
 **Title:** issued
 
@@ -280,17 +272,17 @@ The date of formal issuance (e.g., publication) of the Standard
 
 | Any of(Option)                                     |
 | -------------------------------------------------- |
-| [Null allowed when not required](#issued_anyOf_i0) |
-| [Date string](#issued_anyOf_i1)                    |
+| [Null allowed when not required](#standard--issued_anyOf_i0) |
+| [Date string](#standard--issued_anyOf_i1)                    |
 
-### <a name="issued_anyOf_i0"></a>Property `Standard > issued > anyOf > Null allowed when not required`
+### <a name="standard--issued_anyOf_i0"></a>Property `Standard > issued > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="issued_anyOf_i1"></a>Property `Standard > issued > anyOf > Date string`
+### <a name="standard--issued_anyOf_i1"></a>Property `Standard > issued > anyOf > Date string`
 
 **Title:** Date string
 
@@ -300,24 +292,24 @@ The date of formal issuance (e.g., publication) of the Standard
 
 | Any of(Option)                      |
 | ----------------------------------- |
-| [item 0](#issued_anyOf_i1_anyOf_i0) |
-| [item 1](#issued_anyOf_i1_anyOf_i1) |
-| [item 2](#issued_anyOf_i1_anyOf_i2) |
-| [item 3](#issued_anyOf_i1_anyOf_i3) |
+| [item 0](#standard--issued_anyOf_i1_anyOf_i0) |
+| [item 1](#standard--issued_anyOf_i1_anyOf_i1) |
+| [item 2](#standard--issued_anyOf_i1_anyOf_i2) |
+| [item 3](#standard--issued_anyOf_i1_anyOf_i3) |
 
-#### <a name="issued_anyOf_i1_anyOf_i0"></a>Property `Standard > issued > anyOf > Date string > anyOf > item 0`
+#### <a name="standard--issued_anyOf_i1_anyOf_i0"></a>Property `Standard > issued > anyOf > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="issued_anyOf_i1_anyOf_i1"></a>Property `Standard > issued > anyOf > Date string > anyOf > item 1`
+#### <a name="standard--issued_anyOf_i1_anyOf_i1"></a>Property `Standard > issued > anyOf > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="issued_anyOf_i1_anyOf_i2"></a>Property `Standard > issued > anyOf > Date string > anyOf > item 2`
+#### <a name="standard--issued_anyOf_i1_anyOf_i2"></a>Property `Standard > issued > anyOf > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -328,7 +320,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="issued_anyOf_i1_anyOf_i3"></a>Property `Standard > issued > anyOf > Date string > anyOf > item 3`
+#### <a name="standard--issued_anyOf_i1_anyOf_i3"></a>Property `Standard > issued > anyOf > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -339,7 +331,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="modified"></a>[Optional] Property `Standard > modified`
+## <a name="standard--modified"></a>[Optional] Property `Standard > modified`
 
 **Title:** last modified
 
@@ -371,17 +363,17 @@ The most recent date on which the Standard was changed or modified
 
 | Any of(Option)                                       |
 | ---------------------------------------------------- |
-| [Null allowed when not required](#modified_anyOf_i0) |
-| [Date string](#modified_anyOf_i1)                    |
+| [Null allowed when not required](#standard--modified_anyOf_i0) |
+| [Date string](#standard--modified_anyOf_i1)                    |
 
-### <a name="modified_anyOf_i0"></a>Property `Standard > modified > anyOf > Null allowed when not required`
+### <a name="standard--modified_anyOf_i0"></a>Property `Standard > modified > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="modified_anyOf_i1"></a>Property `Standard > modified > anyOf > Date string`
+### <a name="standard--modified_anyOf_i1"></a>Property `Standard > modified > anyOf > Date string`
 
 **Title:** Date string
 
@@ -391,24 +383,24 @@ The most recent date on which the Standard was changed or modified
 
 | Any of(Option)                        |
 | ------------------------------------- |
-| [item 0](#modified_anyOf_i1_anyOf_i0) |
-| [item 1](#modified_anyOf_i1_anyOf_i1) |
-| [item 2](#modified_anyOf_i1_anyOf_i2) |
-| [item 3](#modified_anyOf_i1_anyOf_i3) |
+| [item 0](#standard--modified_anyOf_i1_anyOf_i0) |
+| [item 1](#standard--modified_anyOf_i1_anyOf_i1) |
+| [item 2](#standard--modified_anyOf_i1_anyOf_i2) |
+| [item 3](#standard--modified_anyOf_i1_anyOf_i3) |
 
-#### <a name="modified_anyOf_i1_anyOf_i0"></a>Property `Standard > modified > anyOf > Date string > anyOf > item 0`
+#### <a name="standard--modified_anyOf_i1_anyOf_i0"></a>Property `Standard > modified > anyOf > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="modified_anyOf_i1_anyOf_i1"></a>Property `Standard > modified > anyOf > Date string > anyOf > item 1`
+#### <a name="standard--modified_anyOf_i1_anyOf_i1"></a>Property `Standard > modified > anyOf > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="modified_anyOf_i1_anyOf_i2"></a>Property `Standard > modified > anyOf > Date string > anyOf > item 2`
+#### <a name="standard--modified_anyOf_i1_anyOf_i2"></a>Property `Standard > modified > anyOf > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -419,7 +411,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="modified_anyOf_i1_anyOf_i3"></a>Property `Standard > modified > anyOf > Date string > anyOf > item 3`
+#### <a name="standard--modified_anyOf_i1_anyOf_i3"></a>Property `Standard > modified > anyOf > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -430,7 +422,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="title"></a>[Optional] Property `Standard > title`
+## <a name="standard--title"></a>[Optional] Property `Standard > title`
 
 **Title:** title
 
@@ -451,7 +443,7 @@ Human-readable title of the standard
 "DCAT-US 3.0 - Data Catalog Vocabulary United States Profile"
 ```
 
-## <a name="category"></a>[Optional] Property `Standard > category`
+## <a name="standard--category"></a>[Optional] Property `Standard > category`
 
 **Title:** category
 
@@ -462,22 +454,11 @@ List of categories for the Standard
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                        |
-| ------------------------------- | ------------------------------------------------------------------ |
-| [Concept](#category_items)      | A controlled term or label, optionally drawn from a concept scheme |
+| Each item of this array must be                       | Description                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| [Concept](./identifiers-and-relationships.md#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
-### <a name="category_items"></a>Standard > category > Concept
-
-**Title:** Concept
-
-A controlled term or label, optionally drawn from a concept scheme
-
-| **Type**                  | More than one type      |
-| ------------------------- | ----------------------- |
-| **Additional properties** | Any type allowed        |
-| **Defined in**            | [Concept](./Concept.md) |
-
-## <a name="inScheme"></a>[Optional] Property `Standard > inScheme`
+## <a name="standard--inScheme"></a>[Optional] Property `Standard > inScheme`
 
 **Title:** in scheme
 
@@ -491,28 +472,30 @@ The reference register to which the Standard belongs
 
 | Any of(Option)                                       |
 | ---------------------------------------------------- |
-| [Null allowed when not required](#inScheme_anyOf_i0) |
-| [ConceptScheme](#inScheme_anyOf_i1)                  |
+| [Null allowed when not required](#standard--inScheme_anyOf_i0) |
+| [ConceptScheme](#standard--inScheme_anyOf_i1)                  |
 
-### <a name="inScheme_anyOf_i0"></a>Property `Standard > inScheme > anyOf > Null allowed when not required`
+### <a name="standard--inScheme_anyOf_i0"></a>Property `Standard > inScheme > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="inScheme_anyOf_i1"></a>Property `Standard > inScheme > anyOf > ConceptScheme`
+### <a name="standard--inScheme_anyOf_i1"></a>Property `Standard > inScheme > anyOf > ConceptScheme`
 
 **Title:** ConceptScheme
 
 inline description of ConceptScheme
 
-| **Type**                  | `object`                                      |
-| ------------------------- | --------------------------------------------- |
-| **Additional properties** | Any type allowed                              |
-| **Same definition as**    | [inScheme](#category_items_anyOf_i1_inScheme) |
+| **Type**                  | `object`                                                           |
+| ------------------------- | ------------------------------------------------------------------ |
+| **Additional properties** | Any type allowed                                                   |
+| **Same definition as**    | [ConceptScheme](./identifiers-and-relationships.md#concept-scheme) |
 
 ---
+
+<a name="document"></a>
 
 ## Document
 
@@ -547,25 +530,25 @@ A publication or other document related to a resource
 
 | Property                                           | Type               | Title/Description      |
 | -------------------------------------------------- | ------------------ | ---------------------- |
-| - [@id](#@id )                                     | string             | -                      |
-| - [@type](#@type )                                 | string             | -                      |
-| - [accessURL](#accessURL )                         | More than one type | access URL             |
-| - [downloadURL](#downloadURL )                     | More than one type | download URL           |
-| - [creator](#creator )                             | null or array      | author                 |
-| - [mediaType](#mediaType )                         | null or string     | media type             |
-| - [abstract](#abstract )                           | null or string     | abstract               |
-| - [bibliographicCitation](#bibliographicCitation ) | null or string     | bibliographic citation |
-| - [conformsTo](#conformsTo )                       | null or array      | conforms to            |
-| - [corporateCreator](#corporateCreator )           | null or array      | corporate author       |
-| - [description](#description )                     | null or string     | description            |
-| - [identifier](#identifier )                       | More than one type | identifier             |
-| - [otherIdentifier](#otherIdentifier )             | null or array      | other identifier       |
-| - [issued](#issued )                               | More than one type | publication date       |
-| - [publisher](#publisher )                         | null or array      | publisher              |
-| + [title](#title )                                 | string             | title                  |
-| - [category](#category )                           | null or array      | category               |
+| - [@id](#document--@id)                                     | string             | -                      |
+| - [@type](#document--@type)                                 | string             | -                      |
+| - [accessURL](#document--accessURL)                         | More than one type | access URL             |
+| - [downloadURL](#document--downloadURL)                     | More than one type | download URL           |
+| - [creator](#document--creator)                             | null or array      | author                 |
+| - [mediaType](#document--mediaType)                         | null or string     | media type             |
+| - [abstract](#document--abstract)                           | null or string     | abstract               |
+| - [bibliographicCitation](#document--bibliographicCitation) | null or string     | bibliographic citation |
+| - [conformsTo](#document--conformsTo)                       | null or array      | conforms to            |
+| - [corporateCreator](#document--corporateCreator)           | null or array      | corporate author       |
+| - [description](#document--description)                     | null or string     | description            |
+| - [identifier](#document--identifier)                       | More than one type | identifier             |
+| - [otherIdentifier](#document--otherIdentifier)             | null or array      | other identifier       |
+| - [issued](#document--issued)                               | More than one type | publication date       |
+| - [publisher](#document--publisher)                         | null or array      | publisher              |
+| + [title](#document--title)                                 | string             | title                  |
+| - [category](#document--category)                           | null or array      | category               |
 
-## <a name="@id"></a>[Optional] Property `Document > @id`
+## <a name="document--@id"></a>[Optional] Property `Document > @id`
 
 **Requirement:** Optional
 
@@ -579,7 +562,7 @@ A publication or other document related to a resource
 "https://example.gov/documents/climate-user-guide-001"
 ```
 
-## <a name="@type"></a>[Optional] Property `Document > @type`
+## <a name="document--@type"></a>[Optional] Property `Document > @type`
 
 **Requirement:** Optional
 
@@ -587,7 +570,7 @@ A publication or other document related to a resource
 | ----------- | ------------ |
 | **Default** | `"Document"` |
 
-## <a name="accessURL"></a>[Optional] Property `Document > accessURL`
+## <a name="document--accessURL"></a>[Optional] Property `Document > accessURL`
 
 **Title:** access URL
 
@@ -607,17 +590,17 @@ A URL that gives access to the Document
 
 | Any of(Option)                                        |
 | ----------------------------------------------------- |
-| [Null allowed when not required](#accessURL_anyOf_i0) |
-| [URL](#accessURL_anyOf_i1)                            |
+| [Null allowed when not required](#document--accessURL_anyOf_i0) |
+| [URL](#document--accessURL_anyOf_i1)                            |
 
-### <a name="accessURL_anyOf_i0"></a>Property `Document > accessURL > anyOf > Null allowed when not required`
+### <a name="document--accessURL_anyOf_i0"></a>Property `Document > accessURL > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="accessURL_anyOf_i1"></a>Property `Document > accessURL > anyOf > URL`
+### <a name="document--accessURL_anyOf_i1"></a>Property `Document > accessURL > anyOf > URL`
 
 **Title:** URL
 
@@ -627,7 +610,7 @@ reference iri of Document
 | ---------- | -------- |
 | **Format** | `iri`    |
 
-## <a name="downloadURL"></a>[Optional] Property `Document > downloadURL`
+## <a name="document--downloadURL"></a>[Optional] Property `Document > downloadURL`
 
 **Title:** download URL
 
@@ -647,17 +630,17 @@ A URL that is a direct link to a downloadable file of the Document in a given fo
 
 | Any of(Option)                                          |
 | ------------------------------------------------------- |
-| [Null allowed when not required](#downloadURL_anyOf_i0) |
-| [URL](#downloadURL_anyOf_i1)                            |
+| [Null allowed when not required](#document--downloadURL_anyOf_i0) |
+| [URL](#document--downloadURL_anyOf_i1)                            |
 
-### <a name="downloadURL_anyOf_i0"></a>Property `Document > downloadURL > anyOf > Null allowed when not required`
+### <a name="document--downloadURL_anyOf_i0"></a>Property `Document > downloadURL > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="downloadURL_anyOf_i1"></a>Property `Document > downloadURL > anyOf > URL`
+### <a name="document--downloadURL_anyOf_i1"></a>Property `Document > downloadURL > anyOf > URL`
 
 **Title:** URL
 
@@ -667,7 +650,7 @@ reference iri of Document
 | ---------- | -------- |
 | **Format** | `iri`    |
 
-## <a name="creator"></a>[Optional] Property `Document > creator`
+## <a name="document--creator"></a>[Optional] Property `Document > creator`
 
 **Title:** author
 
@@ -680,20 +663,9 @@ The individual(s) responsible for creating the Document
 
 | Each item of this array must be | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
-| [Kind](#creator_items)          | Contact information for an individual or entity |
+| [Kind](./agents.md#kind)        | Contact information for an individual or entity |
 
-### <a name="creator_items"></a>Document > creator > Kind
-
-**Title:** Kind
-
-Contact information for an individual or entity
-
-| **Type**                  | `object`          |
-| ------------------------- | ----------------- |
-| **Additional properties** | Any type allowed  |
-| **Defined in**            | [Kind](./Kind.md) |
-
-## <a name="mediaType"></a>[Optional] Property `Document > mediaType`
+## <a name="document--mediaType"></a>[Optional] Property `Document > mediaType`
 
 **Title:** media type
 
@@ -710,7 +682,7 @@ The file format of the Document as defined in the official register of media typ
 "application/pdf"
 ```
 
-## <a name="abstract"></a>[Optional] Property `Document > abstract`
+## <a name="document--abstract"></a>[Optional] Property `Document > abstract`
 
 **Title:** abstract
 
@@ -727,7 +699,7 @@ Text abstract of the Document
 "This document provides detailed instructions for using climate data products, including API access, file formats, and data interpretation guidelines."
 ```
 
-## <a name="bibliographicCitation"></a>[Optional] Property `Document > bibliographicCitation`
+## <a name="document--bibliographicCitation"></a>[Optional] Property `Document > bibliographicCitation`
 
 **Title:** bibliographic citation
 
@@ -748,7 +720,7 @@ Bibliographic citation as text
 "National Climate Data Center. (2024). Climate Data User Guide. U.S. Department of Commerce."
 ```
 
-## <a name="conformsTo"></a>[Optional] Property `Document > conformsTo`
+## <a name="document--conformsTo"></a>[Optional] Property `Document > conformsTo`
 
 **Title:** conforms to
 
@@ -759,22 +731,11 @@ List of standards or specifications the document follows
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                   |
-| ------------------------------- | ------------------------------------------------------------- |
-| [Standard](#conformsTo_items)   | A standard or specification that another resource conforms to |
+| Each item of this array must be              | Description                                                   |
+| -------------------------------------------- | ------------------------------------------------------------- |
+| [Standard](./quality-governance.md#standard) | A standard or specification that another resource conforms to |
 
-### <a name="conformsTo_items"></a>Document > conformsTo > Standard
-
-**Title:** Standard
-
-A standard or specification that another resource conforms to
-
-| **Type**                  | `object`                  |
-| ------------------------- | ------------------------- |
-| **Additional properties** | Any type allowed          |
-| **Defined in**            | [Standard](./Standard.md) |
-
-## <a name="corporateCreator"></a>[Optional] Property `Document > corporateCreator`
+## <a name="document--corporateCreator"></a>[Optional] Property `Document > corporateCreator`
 
 **Title:** corporate author
 
@@ -785,22 +746,11 @@ The corporate organization(s) responsible for creating the Document
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be         | Description                                                                       |
-| --------------------------------------- | --------------------------------------------------------------------------------- |
-| [Organization](#corporateCreator_items) | An organization involved with a resource, including parent or child organizations |
+| Each item of this array must be          | Description                                                                       |
+| ---------------------------------------- | --------------------------------------------------------------------------------- |
+| [Organization](./agents.md#organization) | An organization involved with a resource, including parent or child organizations |
 
-### <a name="corporateCreator_items"></a>Document > corporateCreator > Organization
-
-**Title:** Organization
-
-An organization involved with a resource, including parent or child organizations
-
-| **Type**                  | `object`                                                                        |
-| ------------------------- | ------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                |
-| **Same definition as**    | [Organization](#conformsTo_items_identifier_anyOf_i1_anyOf_i1_creator_anyOf_i1) |
-
-## <a name="description"></a>[Optional] Property `Document > description`
+## <a name="document--description"></a>[Optional] Property `Document > description`
 
 **Title:** description
 
@@ -821,7 +771,7 @@ Plain-language summary of the document
 "A comprehensive guide for accessing and using the National Climate Data Center's data products and services."
 ```
 
-## <a name="identifier"></a>[Optional] Property `Document > identifier`
+## <a name="document--identifier"></a>[Optional] Property `Document > identifier`
 
 **Title:** identifier
 
@@ -835,28 +785,28 @@ The unique identifier for the Document (e.g. DOI, ISBN)
 
 | Any of(Option)                                         |
 | ------------------------------------------------------ |
-| [Null allowed when not required](#identifier_anyOf_i0) |
-| [Identifier](#identifier_anyOf_i1)                     |
+| [Null allowed when not required](#document--identifier_anyOf_i0) |
+| [Identifier](#document--identifier_anyOf_i1)                     |
 
-### <a name="identifier_anyOf_i0"></a>Property `Document > identifier > anyOf > Null allowed when not required`
+### <a name="document--identifier_anyOf_i0"></a>Property `Document > identifier > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="identifier_anyOf_i1"></a>Property `Document > identifier > anyOf > Identifier`
+### <a name="document--identifier_anyOf_i1"></a>Property `Document > identifier > anyOf > Identifier`
 
 **Title:** Identifier
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                  |
-| ------------------------- | --------------------------------------------------- |
-| **Additional properties** | Any type allowed                                    |
-| **Same definition as**    | [Identifier](#conformsTo_items_identifier_anyOf_i1) |
+| **Type**                  | More than one type                                          |
+| ------------------------- | ----------------------------------------------------------- |
+| **Additional properties** | Any type allowed                                            |
+| **Same definition as**    | [Identifier](./identifiers-and-relationships.md#identifier) |
 
-## <a name="otherIdentifier"></a>[Optional] Property `Document > otherIdentifier`
+## <a name="document--otherIdentifier"></a>[Optional] Property `Document > otherIdentifier`
 
 **Title:** other identifier
 
@@ -867,22 +817,11 @@ A list of identifiers for the Document besides the main identifier, e.g. the URI
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be      | Description                                                                   |
-| ------------------------------------ | ----------------------------------------------------------------------------- |
-| [Identifier](#otherIdentifier_items) | A unique identifier and optionally it's scheme and other relevant information |
+| Each item of this array must be                             | Description                                                                   |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [Identifier](./identifiers-and-relationships.md#identifier) | A unique identifier and optionally it's scheme and other relevant information |
 
-### <a name="otherIdentifier_items"></a>Document > otherIdentifier > Identifier
-
-**Title:** Identifier
-
-A unique identifier and optionally it's scheme and other relevant information
-
-| **Type**                  | More than one type                                  |
-| ------------------------- | --------------------------------------------------- |
-| **Additional properties** | Any type allowed                                    |
-| **Same definition as**    | [Identifier](#conformsTo_items_identifier_anyOf_i1) |
-
-## <a name="issued"></a>[Optional] Property `Document > issued`
+## <a name="document--issued"></a>[Optional] Property `Document > issued`
 
 **Title:** publication date
 
@@ -914,17 +853,17 @@ Publication date of the Document
 
 | Any of(Option)                                     |
 | -------------------------------------------------- |
-| [Null allowed when not required](#issued_anyOf_i0) |
-| [item 1](#issued_anyOf_i1)                         |
+| [Null allowed when not required](#document--issued_anyOf_i0) |
+| [item 1](#document--issued_anyOf_i1)                         |
 
-### <a name="issued_anyOf_i0"></a>Property `Document > issued > anyOf > Null allowed when not required`
+### <a name="document--issued_anyOf_i0"></a>Property `Document > issued > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="issued_anyOf_i1"></a>Property `Document > issued > anyOf > item 1`
+### <a name="document--issued_anyOf_i1"></a>Property `Document > issued > anyOf > item 1`
 
 | **Type**                  | More than one type |
 | ------------------------- | ------------------ |
@@ -932,24 +871,24 @@ Publication date of the Document
 
 | Any of(Option)                      |
 | ----------------------------------- |
-| [item 0](#issued_anyOf_i1_anyOf_i0) |
-| [item 1](#issued_anyOf_i1_anyOf_i1) |
-| [item 2](#issued_anyOf_i1_anyOf_i2) |
-| [item 3](#issued_anyOf_i1_anyOf_i3) |
+| [item 0](#document--issued_anyOf_i1_anyOf_i0) |
+| [item 1](#document--issued_anyOf_i1_anyOf_i1) |
+| [item 2](#document--issued_anyOf_i1_anyOf_i2) |
+| [item 3](#document--issued_anyOf_i1_anyOf_i3) |
 
-#### <a name="issued_anyOf_i1_anyOf_i0"></a>Property `Document > issued > anyOf > item 1 > anyOf > item 0`
+#### <a name="document--issued_anyOf_i1_anyOf_i0"></a>Property `Document > issued > anyOf > item 1 > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="issued_anyOf_i1_anyOf_i1"></a>Property `Document > issued > anyOf > item 1 > anyOf > item 1`
+#### <a name="document--issued_anyOf_i1_anyOf_i1"></a>Property `Document > issued > anyOf > item 1 > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="issued_anyOf_i1_anyOf_i2"></a>Property `Document > issued > anyOf > item 1 > anyOf > item 2`
+#### <a name="document--issued_anyOf_i1_anyOf_i2"></a>Property `Document > issued > anyOf > item 1 > anyOf > item 2`
 
 A year in YYYY format
 
@@ -960,7 +899,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="issued_anyOf_i1_anyOf_i3"></a>Property `Document > issued > anyOf > item 1 > anyOf > item 3`
+#### <a name="document--issued_anyOf_i1_anyOf_i3"></a>Property `Document > issued > anyOf > item 1 > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -971,7 +910,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="publisher"></a>[Optional] Property `Document > publisher`
+## <a name="document--publisher"></a>[Optional] Property `Document > publisher`
 
 **Title:** publisher
 
@@ -982,22 +921,11 @@ The organization(s) that published the Document
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be  | Description                                                                       |
-| -------------------------------- | --------------------------------------------------------------------------------- |
-| [Organization](#publisher_items) | An organization involved with a resource, including parent or child organizations |
+| Each item of this array must be          | Description                                                                       |
+| ---------------------------------------- | --------------------------------------------------------------------------------- |
+| [Organization](./agents.md#organization) | An organization involved with a resource, including parent or child organizations |
 
-### <a name="publisher_items"></a>Document > publisher > Organization
-
-**Title:** Organization
-
-An organization involved with a resource, including parent or child organizations
-
-| **Type**                  | `object`                                                                        |
-| ------------------------- | ------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                |
-| **Same definition as**    | [Organization](#conformsTo_items_identifier_anyOf_i1_anyOf_i1_creator_anyOf_i1) |
-
-## <a name="title"></a>[Optional] Property `Document > title`
+## <a name="document--title"></a>[Optional] Property `Document > title`
 
 **Title:** title
 
@@ -1015,7 +943,7 @@ The title of the Document
 "Climate Data User Guide"
 ```
 
-## <a name="category"></a>[Optional] Property `Document > category`
+## <a name="document--category"></a>[Optional] Property `Document > category`
 
 **Title:** category
 
@@ -1026,22 +954,13 @@ List of categories/genres for the Document
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                        |
-| ------------------------------- | ------------------------------------------------------------------ |
-| [Concept](#category_items)      | A controlled term or label, optionally drawn from a concept scheme |
-
-### <a name="category_items"></a>Document > category > Concept
-
-**Title:** Concept
-
-A controlled term or label, optionally drawn from a concept scheme
-
-| **Type**                  | More than one type                          |
-| ------------------------- | ------------------------------------------- |
-| **Additional properties** | Any type allowed                            |
-| **Same definition as**    | [Concept](#conformsTo_items_category_items) |
+| Each item of this array must be                       | Description                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| [Concept](./identifiers-and-relationships.md#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
 ---
+
+<a name="catalog-record"></a>
 
 ## CatalogRecord
 
@@ -1074,19 +993,19 @@ A record in a catalog, describing the registration of a single resource
 
 | Property                         | Type                    | Title/Description        |
 | -------------------------------- | ----------------------- | ------------------------ |
-| - [@id](#@id )                   | string                  | -                        |
-| - [@type](#@type )               | string                  | -                        |
-| - [status](#status )             | More than one type      | change type              |
-| - [conformsTo](#conformsTo )     | More than one type      | application profile      |
-| - [description](#description )   | null or array of string | Descriptions             |
-| - [issued](#issued )             | null or array           | listing date             |
-| - [language](#language )         | More than one type      | language                 |
-| + [modified](#modified )         | More than one type      | update/modification date |
-| - [source](#source )             | null or string          | source metadata          |
-| - [title](#title )               | null or string          | title                    |
-| + [primaryTopic](#primaryTopic ) | string                  | primary topic            |
+| - [@id](#catalog-record--@id)                   | string                  | -                        |
+| - [@type](#catalog-record--@type)               | string                  | -                        |
+| - [status](#catalog-record--status)             | More than one type      | change type              |
+| - [conformsTo](#catalog-record--conformsTo)     | More than one type      | application profile      |
+| - [description](#catalog-record--description)   | null or array of string | Descriptions             |
+| - [issued](#catalog-record--issued)             | null or array           | listing date             |
+| - [language](#catalog-record--language)         | More than one type      | language                 |
+| + [modified](#catalog-record--modified)         | More than one type      | update/modification date |
+| - [source](#catalog-record--source)             | null or string          | source metadata          |
+| - [title](#catalog-record--title)               | null or string          | title                    |
+| + [primaryTopic](#catalog-record--primaryTopic) | string                  | primary topic            |
 
-## <a name="@id"></a>[Optional] Property `CatalogRecord > @id`
+## <a name="catalog-record--@id"></a>[Optional] Property `CatalogRecord > @id`
 
 **Requirement:** Optional
 
@@ -1100,7 +1019,7 @@ A record in a catalog, describing the registration of a single resource
 "https://example.gov/catalog-records/climate-dataset-record-001"
 ```
 
-## <a name="@type"></a>[Optional] Property `CatalogRecord > @type`
+## <a name="catalog-record--@type"></a>[Optional] Property `CatalogRecord > @type`
 
 **Requirement:** Optional
 
@@ -1108,7 +1027,7 @@ A record in a catalog, describing the registration of a single resource
 | ----------- | ----------------- |
 | **Default** | `"CatalogRecord"` |
 
-## <a name="status"></a>[Optional] Property `CatalogRecord > status`
+## <a name="catalog-record--status"></a>[Optional] Property `CatalogRecord > status`
 
 **Title:** change type
 
@@ -1122,28 +1041,28 @@ The status of the catalog record in the context of editorial flow of the dataset
 
 | Any of(Option)                                     |
 | -------------------------------------------------- |
-| [Null allowed when not required](#status_anyOf_i0) |
-| [Concept](#status_anyOf_i1)                        |
+| [Null allowed when not required](#catalog-record--status_anyOf_i0) |
+| [Concept](#catalog-record--status_anyOf_i1)                        |
 
-### <a name="status_anyOf_i0"></a>Property `CatalogRecord > status > anyOf > Null allowed when not required`
+### <a name="catalog-record--status_anyOf_i0"></a>Property `CatalogRecord > status > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="status_anyOf_i1"></a>Property `CatalogRecord > status > anyOf > Concept`
+### <a name="catalog-record--status_anyOf_i1"></a>Property `CatalogRecord > status > anyOf > Concept`
 
 **Title:** Concept
 
 inline description of status
 
-| **Type**                  | More than one type      |
-| ------------------------- | ----------------------- |
-| **Additional properties** | Any type allowed        |
-| **Defined in**            | [Concept](./Concept.md) |
+| **Type**                  | More than one type                                    |
+| ------------------------- | ----------------------------------------------------- |
+| **Additional properties** | Any type allowed                                      |
+| **Defined in**            | [Concept](./identifiers-and-relationships.md#concept) |
 
-## <a name="conformsTo"></a>[Optional] Property `CatalogRecord > conformsTo`
+## <a name="catalog-record--conformsTo"></a>[Optional] Property `CatalogRecord > conformsTo`
 
 **Title:** application profile
 
@@ -1157,28 +1076,28 @@ An Application Profile that the Catalog Record's metadata conforms to
 
 | Any of(Option)                                         |
 | ------------------------------------------------------ |
-| [Null allowed when not required](#conformsTo_anyOf_i0) |
-| [Standard](#conformsTo_anyOf_i1)                       |
+| [Null allowed when not required](#catalog-record--conformsTo_anyOf_i0) |
+| [Standard](#catalog-record--conformsTo_anyOf_i1)                       |
 
-### <a name="conformsTo_anyOf_i0"></a>Property `CatalogRecord > conformsTo > anyOf > Null allowed when not required`
+### <a name="catalog-record--conformsTo_anyOf_i0"></a>Property `CatalogRecord > conformsTo > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="conformsTo_anyOf_i1"></a>Property `CatalogRecord > conformsTo > anyOf > Standard`
+### <a name="catalog-record--conformsTo_anyOf_i1"></a>Property `CatalogRecord > conformsTo > anyOf > Standard`
 
 **Title:** Standard
 
 inline description of application profile
 
-| **Type**                  | `object`                  |
-| ------------------------- | ------------------------- |
-| **Additional properties** | Any type allowed          |
-| **Defined in**            | [Standard](./Standard.md) |
+| **Type**                  | `object`                                     |
+| ------------------------- | -------------------------------------------- |
+| **Additional properties** | Any type allowed                             |
+| **Defined in**            | [Standard](./quality-governance.md#standard) |
 
-## <a name="description"></a>[Optional] Property `CatalogRecord > description`
+## <a name="catalog-record--description"></a>[Optional] Property `CatalogRecord > description`
 
 **Title:** Descriptions
 
@@ -1200,16 +1119,16 @@ A list of free-text accounts of the catalog record
 
 | Each item of this array must be          | Description |
 | ---------------------------------------- | ----------- |
-| [Description string](#description_items) | -           |
+| [Description string](#catalog-record--description_items) | -           |
 
-### <a name="description_items"></a>CatalogRecord > description > Description string
+### <a name="catalog-record--description_items"></a>CatalogRecord > description > Description string
 
 **Title:** Description string
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="issued"></a>[Optional] Property `CatalogRecord > issued`
+## <a name="catalog-record--issued"></a>[Optional] Property `CatalogRecord > issued`
 
 **Title:** listing date
 
@@ -1248,9 +1167,9 @@ List of dates on which the catalog record was included in the catalog
 
 | Each item of this array must be | Description |
 | ------------------------------- | ----------- |
-| [Date string](#issued_items)    | -           |
+| [Date string](#catalog-record--issued_items)    | -           |
 
-### <a name="issued_items"></a>CatalogRecord > issued > Date string
+### <a name="catalog-record--issued_items"></a>CatalogRecord > issued > Date string
 
 **Title:** Date string
 
@@ -1260,24 +1179,24 @@ List of dates on which the catalog record was included in the catalog
 
 | Any of(Option)                   |
 | -------------------------------- |
-| [item 0](#issued_items_anyOf_i0) |
-| [item 1](#issued_items_anyOf_i1) |
-| [item 2](#issued_items_anyOf_i2) |
-| [item 3](#issued_items_anyOf_i3) |
+| [item 0](#catalog-record--issued_items_anyOf_i0) |
+| [item 1](#catalog-record--issued_items_anyOf_i1) |
+| [item 2](#catalog-record--issued_items_anyOf_i2) |
+| [item 3](#catalog-record--issued_items_anyOf_i3) |
 
-#### <a name="issued_items_anyOf_i0"></a>Property `CatalogRecord > issued > Date string > anyOf > item 0`
+#### <a name="catalog-record--issued_items_anyOf_i0"></a>Property `CatalogRecord > issued > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="issued_items_anyOf_i1"></a>Property `CatalogRecord > issued > Date string > anyOf > item 1`
+#### <a name="catalog-record--issued_items_anyOf_i1"></a>Property `CatalogRecord > issued > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="issued_items_anyOf_i2"></a>Property `CatalogRecord > issued > Date string > anyOf > item 2`
+#### <a name="catalog-record--issued_items_anyOf_i2"></a>Property `CatalogRecord > issued > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -1288,7 +1207,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="issued_items_anyOf_i3"></a>Property `CatalogRecord > issued > Date string > anyOf > item 3`
+#### <a name="catalog-record--issued_items_anyOf_i3"></a>Property `CatalogRecord > issued > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -1299,7 +1218,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="language"></a>[Optional] Property `CatalogRecord > language`
+## <a name="catalog-record--language"></a>[Optional] Property `CatalogRecord > language`
 
 **Title:** language
 
@@ -1326,18 +1245,18 @@ Language code used in catalog record metadata text, using ISO 639-1 values such 
 
 | Any of(Option)                                       |
 | ---------------------------------------------------- |
-| [Null allowed when not required](#language_anyOf_i0) |
-| [Language code](#language_anyOf_i1)                  |
-| [Array of language codes](#language_anyOf_i2)        |
+| [Null allowed when not required](#catalog-record--language_anyOf_i0) |
+| [Language code](#catalog-record--language_anyOf_i1)                  |
+| [Array of language codes](#catalog-record--language_anyOf_i2)        |
 
-### <a name="language_anyOf_i0"></a>Property `CatalogRecord > language > anyOf > Null allowed when not required`
+### <a name="catalog-record--language_anyOf_i0"></a>Property `CatalogRecord > language > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="language_anyOf_i1"></a>Property `CatalogRecord > language > anyOf > Language code`
+### <a name="catalog-record--language_anyOf_i1"></a>Property `CatalogRecord > language > anyOf > Language code`
 
 **Title:** Language code
 
@@ -1348,7 +1267,7 @@ Language code used in catalog record metadata text, using ISO 639-1 values such 
 | -------------- | - |
 | **Max length** | 2 |
 
-### <a name="language_anyOf_i2"></a>Property `CatalogRecord > language > anyOf > Array of language codes`
+### <a name="catalog-record--language_anyOf_i2"></a>Property `CatalogRecord > language > anyOf > Array of language codes`
 
 **Title:** Array of language codes
 
@@ -1357,9 +1276,9 @@ Language code used in catalog record metadata text, using ISO 639-1 values such 
 
 | Each item of this array must be           | Description |
 | ----------------------------------------- | ----------- |
-| [Language code](#language_anyOf_i2_items) | -           |
+| [Language code](#catalog-record--language_anyOf_i2_items) | -           |
 
-#### <a name="language_anyOf_i2_items"></a>CatalogRecord > language > anyOf > Array of language codes > Language code
+#### <a name="catalog-record--language_anyOf_i2_items"></a>CatalogRecord > language > anyOf > Array of language codes > Language code
 
 **Title:** Language code
 
@@ -1370,7 +1289,7 @@ Language code used in catalog record metadata text, using ISO 639-1 values such 
 | -------------- | - |
 | **Max length** | 2 |
 
-## <a name="modified"></a>[Optional] Property `CatalogRecord > modified`
+## <a name="catalog-record--modified"></a>[Optional] Property `CatalogRecord > modified`
 
 **Title:** update/modification date
 
@@ -1403,24 +1322,24 @@ The most recent date on which the catalog record was changed or modified
 
 | Any of(Option)               |
 | ---------------------------- |
-| [item 0](#modified_anyOf_i0) |
-| [item 1](#modified_anyOf_i1) |
-| [item 2](#modified_anyOf_i2) |
-| [item 3](#modified_anyOf_i3) |
+| [item 0](#catalog-record--modified_anyOf_i0) |
+| [item 1](#catalog-record--modified_anyOf_i1) |
+| [item 2](#catalog-record--modified_anyOf_i2) |
+| [item 3](#catalog-record--modified_anyOf_i3) |
 
-### <a name="modified_anyOf_i0"></a>Property `CatalogRecord > modified > anyOf > item 0`
+### <a name="catalog-record--modified_anyOf_i0"></a>Property `CatalogRecord > modified > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-### <a name="modified_anyOf_i1"></a>Property `CatalogRecord > modified > anyOf > item 1`
+### <a name="catalog-record--modified_anyOf_i1"></a>Property `CatalogRecord > modified > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-### <a name="modified_anyOf_i2"></a>Property `CatalogRecord > modified > anyOf > item 2`
+### <a name="catalog-record--modified_anyOf_i2"></a>Property `CatalogRecord > modified > anyOf > item 2`
 
 A year in YYYY format
 
@@ -1431,7 +1350,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-### <a name="modified_anyOf_i3"></a>Property `CatalogRecord > modified > anyOf > item 3`
+### <a name="catalog-record--modified_anyOf_i3"></a>Property `CatalogRecord > modified > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -1442,7 +1361,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="source"></a>[Optional] Property `CatalogRecord > source`
+## <a name="catalog-record--source"></a>[Optional] Property `CatalogRecord > source`
 
 **Title:** source metadata
 
@@ -1459,7 +1378,7 @@ The original metadata that was used in creating metadata for the items in the ca
 "Original metadata harvested from NOAA data portal"
 ```
 
-## <a name="title"></a>[Optional] Property `CatalogRecord > title`
+## <a name="catalog-record--title"></a>[Optional] Property `CatalogRecord > title`
 
 **Title:** title
 
@@ -1480,7 +1399,7 @@ A name given to the Catalog Record
 "Climate Data 2023 Catalog Record"
 ```
 
-## <a name="primaryTopic"></a>[Optional] Property `CatalogRecord > primaryTopic`
+## <a name="catalog-record--primaryTopic"></a>[Optional] Property `CatalogRecord > primaryTopic`
 
 **Title:** primary topic
 
@@ -1503,6 +1422,8 @@ A link to the Dataset, Data service or Catalog described in the Catalog Record
 ```
 
 ---
+
+<a name="data-service"></a>
 
 ## DataService
 
@@ -1564,38 +1485,38 @@ A service that provides access to data or data processing functions
 
 | Property                                                   | Type                    | Title/Description            |
 | ---------------------------------------------------------- | ----------------------- | ---------------------------- |
-| - [@id](#@id )                                             | string                  | -                            |
-| - [@type](#@type )                                         | string                  | -                            |
-| + [contactPoint](#contactPoint )                           | array                   | contact point                |
-| - [endpointDescription](#endpointDescription )             | null or array of string | endpoint description         |
-| + [endpointURL](#endpointURL )                             | array of string         | endpoint URL                 |
-| - [keyword](#keyword )                                     | null or array of string | keyword/tag                  |
-| - [servesDataset](#servesDataset )                         | null or array           | serves dataset               |
-| - [spatialResolutionInMeters](#spatialResolutionInMeters ) | null or string          | spatial resolution in meters |
-| - [temporalResolution](#temporalResolution )               | null or string          | temporal resolution          |
-| - [theme](#theme )                                         | null or array           | theme/category               |
-| - [accessRights](#accessRights )                           | More than one type      | access rights                |
-| - [conformsTo](#conformsTo )                               | null or array           | conforms to                  |
-| - [created](#created )                                     | More than one type      | creation date                |
-| - [creator](#creator )                                     | null or array           | creator                      |
-| - [description](#description )                             | null or string          | description                  |
-| - [identifier](#identifier )                               | More than one type      | identifier                   |
-| - [otherIdentifier](#otherIdentifier )                     | null or array           | other identifier             |
-| - [language](#language )                                   | More than one type      | language                     |
-| - [license](#license )                                     | More than one type      | license                      |
-| - [modified](#modified )                                   | More than one type      | update/modification date     |
-| + [publisher](#publisher )                                 | object                  | publisher                    |
-| - [rights](#rights )                                       | null or array of string | rights                       |
-| - [rightsHolder](#rightsHolder )                           | null or array           | rights holder                |
-| - [spatial](#spatial )                                     | null or array           | spatial/geographic coverage  |
-| - [temporal](#temporal )                                   | null or array           | temporal coverage            |
-| + [title](#title )                                         | string                  | title                        |
-| - [category](#category )                                   | null or array           | category                     |
-| - [hasQualityMeasurement](#hasQualityMeasurement )         | null or array           | quality measurement          |
-| - [qualifiedAttribution](#qualifiedAttribution )           | null or array           | qualified attribution        |
-| - [wasUsedBy](#wasUsedBy )                                 | null or array           | was used by                  |
+| - [@id](#data-service--@id)                                             | string                  | -                            |
+| - [@type](#data-service--@type)                                         | string                  | -                            |
+| + [contactPoint](#data-service--contactPoint)                           | array                   | contact point                |
+| - [endpointDescription](#data-service--endpointDescription)             | null or array of string | endpoint description         |
+| + [endpointURL](#data-service--endpointURL)                             | array of string         | endpoint URL                 |
+| - [keyword](#data-service--keyword)                                     | null or array of string | keyword/tag                  |
+| - [servesDataset](#data-service--servesDataset)                         | null or array           | serves dataset               |
+| - [spatialResolutionInMeters](#data-service--spatialResolutionInMeters) | null or string          | spatial resolution in meters |
+| - [temporalResolution](#data-service--temporalResolution)               | null or string          | temporal resolution          |
+| - [theme](#data-service--theme)                                         | null or array           | theme/category               |
+| - [accessRights](#data-service--accessRights)                           | More than one type      | access rights                |
+| - [conformsTo](#data-service--conformsTo)                               | null or array           | conforms to                  |
+| - [created](#data-service--created)                                     | More than one type      | creation date                |
+| - [creator](#data-service--creator)                                     | null or array           | creator                      |
+| - [description](#data-service--description)                             | null or string          | description                  |
+| - [identifier](#data-service--identifier)                               | More than one type      | identifier                   |
+| - [otherIdentifier](#data-service--otherIdentifier)                     | null or array           | other identifier             |
+| - [language](#data-service--language)                                   | More than one type      | language                     |
+| - [license](#data-service--license)                                     | More than one type      | license                      |
+| - [modified](#data-service--modified)                                   | More than one type      | update/modification date     |
+| + [publisher](#data-service--publisher)                                 | object                  | publisher                    |
+| - [rights](#data-service--rights)                                       | null or array of string | rights                       |
+| - [rightsHolder](#data-service--rightsHolder)                           | null or array           | rights holder                |
+| - [spatial](#data-service--spatial)                                     | null or array           | spatial/geographic coverage  |
+| - [temporal](#data-service--temporal)                                   | null or array           | temporal coverage            |
+| + [title](#data-service--title)                                         | string                  | title                        |
+| - [category](#data-service--category)                                   | null or array           | category                     |
+| - [hasQualityMeasurement](#data-service--hasQualityMeasurement)         | null or array           | quality measurement          |
+| - [qualifiedAttribution](#data-service--qualifiedAttribution)           | null or array           | qualified attribution        |
+| - [wasUsedBy](#data-service--wasUsedBy)                                 | null or array           | was used by                  |
 
-## <a name="@id"></a>[Optional] Property `DataService > @id`
+## <a name="data-service--@id"></a>[Optional] Property `DataService > @id`
 
 **Requirement:** Optional
 
@@ -1609,7 +1530,7 @@ A service that provides access to data or data processing functions
 "https://example.gov/data-services/climate-api-001"
 ```
 
-## <a name="@type"></a>[Optional] Property `DataService > @type`
+## <a name="data-service--@type"></a>[Optional] Property `DataService > @type`
 
 **Requirement:** Optional
 
@@ -1617,7 +1538,7 @@ A service that provides access to data or data processing functions
 | ----------- | --------------- |
 | **Default** | `"DataService"` |
 
-## <a name="contactPoint"></a>[Optional] Property `DataService > contactPoint`
+## <a name="data-service--contactPoint"></a>[Optional] Property `DataService > contactPoint`
 
 **Title:** contact point
 
@@ -1631,20 +1552,9 @@ Contact information for questions about the Data Service. Include an email addre
 
 | Each item of this array must be | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
-| [Kind](#contactPoint_items)     | Contact information for an individual or entity |
+| [Kind](./agents.md#kind)        | Contact information for an individual or entity |
 
-### <a name="contactPoint_items"></a>DataService > contactPoint > Kind
-
-**Title:** Kind
-
-Contact information for an individual or entity
-
-| **Type**                  | `object`          |
-| ------------------------- | ----------------- |
-| **Additional properties** | Any type allowed  |
-| **Defined in**            | [Kind](./Kind.md) |
-
-## <a name="endpointDescription"></a>[Optional] Property `DataService > endpointDescription`
+## <a name="data-service--endpointDescription"></a>[Optional] Property `DataService > endpointDescription`
 
 **Title:** endpoint description
 
@@ -1671,14 +1581,14 @@ List of endpoint descriptions with operations and parameters (for example, OpenA
 
 | Each item of this array must be                         | Description |
 | ------------------------------------------------------- | ----------- |
-| [endpointDescription items](#endpointDescription_items) | -           |
+| [endpointDescription items](#data-service--endpointDescription_items) | -           |
 
-### <a name="endpointDescription_items"></a>DataService > endpointDescription > endpointDescription items
+### <a name="data-service--endpointDescription_items"></a>DataService > endpointDescription > endpointDescription items
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="endpointURL"></a>[Optional] Property `DataService > endpointURL`
+## <a name="data-service--endpointURL"></a>[Optional] Property `DataService > endpointURL`
 
 **Title:** endpoint URL
 
@@ -1707,9 +1617,9 @@ A list of root locations or primary endpoints of the service (a Web-resolvable I
 
 | Each item of this array must be | Description                                                                 |
 | ------------------------------- | --------------------------------------------------------------------------- |
-| [URLs](#endpointURL_items)      | The root location or primary endpoint of the service (a Web-resolvable IRI) |
+| [URLs](#data-service--endpointURL_items)      | The root location or primary endpoint of the service (a Web-resolvable IRI) |
 
-### <a name="endpointURL_items"></a>DataService > endpointURL > URLs
+### <a name="data-service--endpointURL_items"></a>DataService > endpointURL > URLs
 
 **Title:** URLs
 
@@ -1719,7 +1629,7 @@ The root location or primary endpoint of the service (a Web-resolvable IRI)
 | ---------- | -------- |
 | **Format** | `iri`    |
 
-## <a name="keyword"></a>[Optional] Property `DataService > keyword`
+## <a name="data-service--keyword"></a>[Optional] Property `DataService > keyword`
 
 **Title:** keyword/tag
 
@@ -1752,9 +1662,9 @@ List of keywords or tags describing the data service
 
 | Each item of this array must be     | Description |
 | ----------------------------------- | ----------- |
-| [Non-empty strings](#keyword_items) | -           |
+| [Non-empty strings](#data-service--keyword_items) | -           |
 
-### <a name="keyword_items"></a>DataService > keyword > Non-empty strings
+### <a name="data-service--keyword_items"></a>DataService > keyword > Non-empty strings
 
 **Title:** Non-empty strings
 
@@ -1765,7 +1675,7 @@ List of keywords or tags describing the data service
 | -------------- | - |
 | **Min length** | 1 |
 
-## <a name="servesDataset"></a>[Optional] Property `DataService > servesDataset`
+## <a name="data-service--servesDataset"></a>[Optional] Property `DataService > servesDataset`
 
 **Title:** serves dataset
 
@@ -1778,20 +1688,9 @@ List of datasets this service provides access to
 
 | Each item of this array must be | Description                                               |
 | ------------------------------- | --------------------------------------------------------- |
-| [Dataset](#servesDataset_items) | A collection of data published or curated by one provider |
+| [Dataset](./dataset.md#root)    | A collection of data published or curated by one provider |
 
-### <a name="servesDataset_items"></a>DataService > servesDataset > Dataset
-
-**Title:** Dataset
-
-A collection of data published or curated by one provider
-
-| **Type**                  | `object`                |
-| ------------------------- | ----------------------- |
-| **Additional properties** | Any type allowed        |
-| **Defined in**            | [Dataset](./Dataset.md) |
-
-## <a name="spatialResolutionInMeters"></a>[Optional] Property `DataService > spatialResolutionInMeters`
+## <a name="data-service--spatialResolutionInMeters"></a>[Optional] Property `DataService > spatialResolutionInMeters`
 
 **Title:** spatial resolution in meters
 
@@ -1808,7 +1707,7 @@ The minimum spatial separation resolvable in a Data Service, measured in meters
 "1000"
 ```
 
-## <a name="temporalResolution"></a>[Optional] Property `DataService > temporalResolution`
+## <a name="data-service--temporalResolution"></a>[Optional] Property `DataService > temporalResolution`
 
 **Title:** temporal resolution
 
@@ -1825,7 +1724,7 @@ The minimum time period resolvable by the Data Service
 "P1D"
 ```
 
-## <a name="theme"></a>[Optional] Property `DataService > theme`
+## <a name="data-service--theme"></a>[Optional] Property `DataService > theme`
 
 **Title:** theme/category
 
@@ -1836,22 +1735,11 @@ List of themes or categories for the data service
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                        |
-| ------------------------------- | ------------------------------------------------------------------ |
-| [Concept](#theme_items)         | A controlled term or label, optionally drawn from a concept scheme |
+| Each item of this array must be                       | Description                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| [Concept](./identifiers-and-relationships.md#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
-### <a name="theme_items"></a>DataService > theme > Concept
-
-**Title:** Concept
-
-A controlled term or label, optionally drawn from a concept scheme
-
-| **Type**                  | More than one type                                                            |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                              |
-| **Same definition as**    | [Concept](#servesDataset_items_sample_items_representationTechnique_anyOf_i1) |
-
-## <a name="accessRights"></a>[Optional] Property `DataService > accessRights`
+## <a name="data-service--accessRights"></a>[Optional] Property `DataService > accessRights`
 
 **Title:** access rights
 
@@ -1871,22 +1759,22 @@ Information about whether the data service is publicly accessible, restricted, o
 
 | Any of(Option)                   |
 | -------------------------------- |
-| [item 0](#accessRights_anyOf_i0) |
-| [item 1](#accessRights_anyOf_i1) |
+| [item 0](#data-service--accessRights_anyOf_i0) |
+| [item 1](#data-service--accessRights_anyOf_i1) |
 
-### <a name="accessRights_anyOf_i0"></a>Property `DataService > accessRights > anyOf > item 0`
+### <a name="data-service--accessRights_anyOf_i0"></a>Property `DataService > accessRights > anyOf > item 0`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="accessRights_anyOf_i1"></a>Property `DataService > accessRights > anyOf > item 1`
+### <a name="data-service--accessRights_anyOf_i1"></a>Property `DataService > accessRights > anyOf > item 1`
 
 Text description of the access rights
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="conformsTo"></a>[Optional] Property `DataService > conformsTo`
+## <a name="data-service--conformsTo"></a>[Optional] Property `DataService > conformsTo`
 
 **Title:** conforms to
 
@@ -1897,22 +1785,11 @@ List of general standards or specifications that the Data Service endpoints impl
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                   |
-| ------------------------------- | ------------------------------------------------------------- |
-| [Standard](#conformsTo_items)   | A standard or specification that another resource conforms to |
+| Each item of this array must be              | Description                                                   |
+| -------------------------------------------- | ------------------------------------------------------------- |
+| [Standard](./quality-governance.md#standard) | A standard or specification that another resource conforms to |
 
-### <a name="conformsTo_items"></a>DataService > conformsTo > Standard
-
-**Title:** Standard
-
-A standard or specification that another resource conforms to
-
-| **Type**                  | `object`                                                                           |
-| ------------------------- | ---------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                   |
-| **Same definition as**    | [Standard](#servesDataset_items_sample_items_accessService_items_conformsTo_items) |
-
-## <a name="created"></a>[Optional] Property `DataService > created`
+## <a name="data-service--created"></a>[Optional] Property `DataService > created`
 
 **Title:** creation date
 
@@ -1944,15 +1821,15 @@ The date on which the Data Service was first created
 
 | Any of(Option)                   |
 | -------------------------------- |
-| [item 0](#created_anyOf_i0)      |
-| [Date string](#created_anyOf_i1) |
+| [item 0](#data-service--created_anyOf_i0)      |
+| [Date string](#data-service--created_anyOf_i1) |
 
-### <a name="created_anyOf_i0"></a>Property `DataService > created > anyOf > item 0`
+### <a name="data-service--created_anyOf_i0"></a>Property `DataService > created > anyOf > item 0`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="created_anyOf_i1"></a>Property `DataService > created > anyOf > Date string`
+### <a name="data-service--created_anyOf_i1"></a>Property `DataService > created > anyOf > Date string`
 
 **Title:** Date string
 
@@ -1962,24 +1839,24 @@ The date on which the Data Service was first created
 
 | Any of(Option)                       |
 | ------------------------------------ |
-| [item 0](#created_anyOf_i1_anyOf_i0) |
-| [item 1](#created_anyOf_i1_anyOf_i1) |
-| [item 2](#created_anyOf_i1_anyOf_i2) |
-| [item 3](#created_anyOf_i1_anyOf_i3) |
+| [item 0](#data-service--created_anyOf_i1_anyOf_i0) |
+| [item 1](#data-service--created_anyOf_i1_anyOf_i1) |
+| [item 2](#data-service--created_anyOf_i1_anyOf_i2) |
+| [item 3](#data-service--created_anyOf_i1_anyOf_i3) |
 
-#### <a name="created_anyOf_i1_anyOf_i0"></a>Property `DataService > created > anyOf > Date string > anyOf > item 0`
+#### <a name="data-service--created_anyOf_i1_anyOf_i0"></a>Property `DataService > created > anyOf > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="created_anyOf_i1_anyOf_i1"></a>Property `DataService > created > anyOf > Date string > anyOf > item 1`
+#### <a name="data-service--created_anyOf_i1_anyOf_i1"></a>Property `DataService > created > anyOf > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="created_anyOf_i1_anyOf_i2"></a>Property `DataService > created > anyOf > Date string > anyOf > item 2`
+#### <a name="data-service--created_anyOf_i1_anyOf_i2"></a>Property `DataService > created > anyOf > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -1990,7 +1867,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="created_anyOf_i1_anyOf_i3"></a>Property `DataService > created > anyOf > Date string > anyOf > item 3`
+#### <a name="data-service--created_anyOf_i1_anyOf_i3"></a>Property `DataService > created > anyOf > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -2001,7 +1878,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="creator"></a>[Optional] Property `DataService > creator`
+## <a name="data-service--creator"></a>[Optional] Property `DataService > creator`
 
 **Title:** creator
 
@@ -2014,20 +1891,9 @@ List of agents primarily responsible for producing the Data Service
 
 | Each item of this array must be | Description                                                                      |
 | ------------------------------- | -------------------------------------------------------------------------------- |
-| [Agent](#creator_items)         | A person, organization, software agent, or other entity involved with a resource |
+| [Agent](./agents.md#agent)      | A person, organization, software agent, or other entity involved with a resource |
 
-### <a name="creator_items"></a>DataService > creator > Agent
-
-**Title:** Agent
-
-A person, organization, software agent, or other entity involved with a resource
-
-| **Type**                  | `object`                                                                     |
-| ------------------------- | ---------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                             |
-| **Same definition as**    | [Agent](#servesDataset_items_sample_items_accessService_items_creator_items) |
-
-## <a name="description"></a>[Optional] Property `DataService > description`
+## <a name="data-service--description"></a>[Optional] Property `DataService > description`
 
 **Title:** description
 
@@ -2044,7 +1910,7 @@ Plain-language summary of the data service
 "A RESTful API providing access to historical and real-time climate data including temperature, precipitation, and atmospheric conditions."
 ```
 
-## <a name="identifier"></a>[Optional] Property `DataService > identifier`
+## <a name="data-service--identifier"></a>[Optional] Property `DataService > identifier`
 
 **Title:** identifier
 
@@ -2058,26 +1924,26 @@ The unique identifier for the Data Service, e.g. the URI or other unique identif
 
 | Any of(Option)                     |
 | ---------------------------------- |
-| [item 0](#identifier_anyOf_i0)     |
-| [Identifier](#identifier_anyOf_i1) |
+| [item 0](#data-service--identifier_anyOf_i0)     |
+| [Identifier](#data-service--identifier_anyOf_i1) |
 
-### <a name="identifier_anyOf_i0"></a>Property `DataService > identifier > anyOf > item 0`
+### <a name="data-service--identifier_anyOf_i0"></a>Property `DataService > identifier > anyOf > item 0`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="identifier_anyOf_i1"></a>Property `DataService > identifier > anyOf > Identifier`
+### <a name="data-service--identifier_anyOf_i1"></a>Property `DataService > identifier > anyOf > Identifier`
 
 **Title:** Identifier
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                       |
-| ------------------------- | -------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                         |
-| **Same definition as**    | [Identifier](#servesDataset_items_otherIdentifier_items) |
+| **Type**                  | More than one type                                          |
+| ------------------------- | ----------------------------------------------------------- |
+| **Additional properties** | Any type allowed                                            |
+| **Same definition as**    | [Identifier](./identifiers-and-relationships.md#identifier) |
 
-## <a name="otherIdentifier"></a>[Optional] Property `DataService > otherIdentifier`
+## <a name="data-service--otherIdentifier"></a>[Optional] Property `DataService > otherIdentifier`
 
 **Title:** other identifier
 
@@ -2088,22 +1954,11 @@ A list of identifiers for the Data Service besides the main identifier, e.g. the
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be      | Description                                                                   |
-| ------------------------------------ | ----------------------------------------------------------------------------- |
-| [Identifier](#otherIdentifier_items) | A unique identifier and optionally it's scheme and other relevant information |
+| Each item of this array must be                             | Description                                                                   |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [Identifier](./identifiers-and-relationships.md#identifier) | A unique identifier and optionally it's scheme and other relevant information |
 
-### <a name="otherIdentifier_items"></a>DataService > otherIdentifier > Identifier
-
-**Title:** Identifier
-
-A unique identifier and optionally it's scheme and other relevant information
-
-| **Type**                  | More than one type                                       |
-| ------------------------- | -------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                         |
-| **Same definition as**    | [Identifier](#servesDataset_items_otherIdentifier_items) |
-
-## <a name="language"></a>[Optional] Property `DataService > language`
+## <a name="data-service--language"></a>[Optional] Property `DataService > language`
 
 **Title:** language
 
@@ -2130,18 +1985,18 @@ ISO 639-1 language code values supported by the data service, such as en or es, 
 
 | Any of(Option)                                       |
 | ---------------------------------------------------- |
-| [Null allowed when not required](#language_anyOf_i0) |
-| [Language code](#language_anyOf_i1)                  |
-| [List of lanuages](#language_anyOf_i2)               |
+| [Null allowed when not required](#data-service--language_anyOf_i0) |
+| [Language code](#data-service--language_anyOf_i1)                  |
+| [List of lanuages](#data-service--language_anyOf_i2)               |
 
-### <a name="language_anyOf_i0"></a>Property `DataService > language > anyOf > Null allowed when not required`
+### <a name="data-service--language_anyOf_i0"></a>Property `DataService > language > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="language_anyOf_i1"></a>Property `DataService > language > anyOf > Language code`
+### <a name="data-service--language_anyOf_i1"></a>Property `DataService > language > anyOf > Language code`
 
 **Title:** Language code
 
@@ -2152,7 +2007,7 @@ ISO 639-1 language code values supported by the data service, such as en or es, 
 | -------------- | - |
 | **Max length** | 2 |
 
-### <a name="language_anyOf_i2"></a>Property `DataService > language > anyOf > List of lanuages`
+### <a name="data-service--language_anyOf_i2"></a>Property `DataService > language > anyOf > List of lanuages`
 
 **Title:** List of lanuages
 
@@ -2161,9 +2016,9 @@ ISO 639-1 language code values supported by the data service, such as en or es, 
 
 | Each item of this array must be           | Description |
 | ----------------------------------------- | ----------- |
-| [Language code](#language_anyOf_i2_items) | -           |
+| [Language code](#data-service--language_anyOf_i2_items) | -           |
 
-#### <a name="language_anyOf_i2_items"></a>DataService > language > anyOf > List of lanuages > Language code
+#### <a name="data-service--language_anyOf_i2_items"></a>DataService > language > anyOf > List of lanuages > Language code
 
 **Title:** Language code
 
@@ -2174,7 +2029,7 @@ ISO 639-1 language code values supported by the data service, such as en or es, 
 | -------------- | - |
 | **Max length** | 2 |
 
-## <a name="license"></a>[Optional] Property `DataService > license`
+## <a name="data-service--license"></a>[Optional] Property `DataService > license`
 
 **Title:** license
 
@@ -2194,24 +2049,24 @@ License that governs how the data service can be used or reused
 
 | Any of(Option)                                      |
 | --------------------------------------------------- |
-| [Null allowed when not required](#license_anyOf_i0) |
-| [item 1](#license_anyOf_i1)                         |
+| [Null allowed when not required](#data-service--license_anyOf_i0) |
+| [item 1](#data-service--license_anyOf_i1)                         |
 
-### <a name="license_anyOf_i0"></a>Property `DataService > license > anyOf > Null allowed when not required`
+### <a name="data-service--license_anyOf_i0"></a>Property `DataService > license > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="license_anyOf_i1"></a>Property `DataService > license > anyOf > item 1`
+### <a name="data-service--license_anyOf_i1"></a>Property `DataService > license > anyOf > item 1`
 
 Full text of the license
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="modified"></a>[Optional] Property `DataService > modified`
+## <a name="data-service--modified"></a>[Optional] Property `DataService > modified`
 
 **Title:** update/modification date
 
@@ -2243,17 +2098,17 @@ The most recent date on which the Data Service was changed or modified
 
 | Any of(Option)                                       |
 | ---------------------------------------------------- |
-| [Null allowed when not required](#modified_anyOf_i0) |
-| [Date string](#modified_anyOf_i1)                    |
+| [Null allowed when not required](#data-service--modified_anyOf_i0) |
+| [Date string](#data-service--modified_anyOf_i1)                    |
 
-### <a name="modified_anyOf_i0"></a>Property `DataService > modified > anyOf > Null allowed when not required`
+### <a name="data-service--modified_anyOf_i0"></a>Property `DataService > modified > anyOf > Null allowed when not required`
 
 **Title:** Null allowed when not required
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="modified_anyOf_i1"></a>Property `DataService > modified > anyOf > Date string`
+### <a name="data-service--modified_anyOf_i1"></a>Property `DataService > modified > anyOf > Date string`
 
 **Title:** Date string
 
@@ -2263,24 +2118,24 @@ The most recent date on which the Data Service was changed or modified
 
 | Any of(Option)                        |
 | ------------------------------------- |
-| [item 0](#modified_anyOf_i1_anyOf_i0) |
-| [item 1](#modified_anyOf_i1_anyOf_i1) |
-| [item 2](#modified_anyOf_i1_anyOf_i2) |
-| [item 3](#modified_anyOf_i1_anyOf_i3) |
+| [item 0](#data-service--modified_anyOf_i1_anyOf_i0) |
+| [item 1](#data-service--modified_anyOf_i1_anyOf_i1) |
+| [item 2](#data-service--modified_anyOf_i1_anyOf_i2) |
+| [item 3](#data-service--modified_anyOf_i1_anyOf_i3) |
 
-#### <a name="modified_anyOf_i1_anyOf_i0"></a>Property `DataService > modified > anyOf > Date string > anyOf > item 0`
+#### <a name="data-service--modified_anyOf_i1_anyOf_i0"></a>Property `DataService > modified > anyOf > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="modified_anyOf_i1_anyOf_i1"></a>Property `DataService > modified > anyOf > Date string > anyOf > item 1`
+#### <a name="data-service--modified_anyOf_i1_anyOf_i1"></a>Property `DataService > modified > anyOf > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="modified_anyOf_i1_anyOf_i2"></a>Property `DataService > modified > anyOf > Date string > anyOf > item 2`
+#### <a name="data-service--modified_anyOf_i1_anyOf_i2"></a>Property `DataService > modified > anyOf > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -2291,7 +2146,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="modified_anyOf_i1_anyOf_i3"></a>Property `DataService > modified > anyOf > Date string > anyOf > item 3`
+#### <a name="data-service--modified_anyOf_i1_anyOf_i3"></a>Property `DataService > modified > anyOf > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -2302,7 +2157,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="publisher"></a>[Optional] Property `DataService > publisher`
+## <a name="data-service--publisher"></a>[Optional] Property `DataService > publisher`
 
 **Title:** publisher
 
@@ -2310,13 +2165,13 @@ A year and month in YYYY-MM format
 
 Person or organization responsible for publishing and making the data service available
 
-| **Type**                  | `object`            |
-| ------------------------- | ------------------- |
-| **Required**              | Yes                 |
-| **Additional properties** | Any type allowed    |
-| **Defined in**            | [Agent](./Agent.md) |
+| **Type**                  | `object`                   |
+| ------------------------- | -------------------------- |
+| **Required**              | Yes                        |
+| **Additional properties** | Any type allowed           |
+| **Defined in**            | [Agent](./agents.md#agent) |
 
-## <a name="rights"></a>[Optional] Property `DataService > rights`
+## <a name="data-service--rights"></a>[Optional] Property `DataService > rights`
 
 **Title:** rights
 
@@ -2337,14 +2192,14 @@ Rights statements not already covered by license or accessRights, such as copyri
 
 | Each item of this array must be | Description |
 | ------------------------------- | ----------- |
-| [rights items](#rights_items)   | -           |
+| [rights items](#data-service--rights_items)   | -           |
 
-### <a name="rights_items"></a>DataService > rights > rights items
+### <a name="data-service--rights_items"></a>DataService > rights > rights items
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="rightsHolder"></a>[Optional] Property `DataService > rightsHolder`
+## <a name="data-service--rightsHolder"></a>[Optional] Property `DataService > rightsHolder`
 
 **Title:** rights holder
 
@@ -2355,22 +2210,11 @@ A list of Agents (organizations) holding rights on the Data Service
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be     | Description                                                                       |
-| ----------------------------------- | --------------------------------------------------------------------------------- |
-| [Organization](#rightsHolder_items) | An organization involved with a resource, including parent or child organizations |
+| Each item of this array must be          | Description                                                                       |
+| ---------------------------------------- | --------------------------------------------------------------------------------- |
+| [Organization](./agents.md#organization) | An organization involved with a resource, including parent or child organizations |
 
-### <a name="rightsHolder_items"></a>DataService > rightsHolder > Organization
-
-**Title:** Organization
-
-An organization involved with a resource, including parent or child organizations
-
-| **Type**                  | `object`                                                                             |
-| ------------------------- | ------------------------------------------------------------------------------------ |
-| **Additional properties** | Any type allowed                                                                     |
-| **Same definition as**    | [Organization](#servesDataset_items_otherIdentifier_items_anyOf_i1_creator_anyOf_i1) |
-
-## <a name="spatial"></a>[Optional] Property `DataService > spatial`
+## <a name="data-service--spatial"></a>[Optional] Property `DataService > spatial`
 
 **Title:** spatial/geographic coverage
 
@@ -2381,22 +2225,11 @@ A geographic region that is covered by the Data Service
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                      |
-| ------------------------------- | -------------------------------- |
-| [Location](#spatial_items)      | A named place or geographic area |
+| Each item of this array must be                    | Description                      |
+| -------------------------------------------------- | -------------------------------- |
+| [Location](./temporal-spatial-metrics.md#location) | A named place or geographic area |
 
-### <a name="spatial_items"></a>DataService > spatial > Location
-
-**Title:** Location
-
-A named place or geographic area
-
-| **Type**                  | `object`                                                                        |
-| ------------------------- | ------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                |
-| **Same definition as**    | [Location](#servesDataset_items_sample_items_accessService_items_spatial_items) |
-
-## <a name="temporal"></a>[Optional] Property `DataService > temporal`
+## <a name="data-service--temporal"></a>[Optional] Property `DataService > temporal`
 
 **Title:** temporal coverage
 
@@ -2407,22 +2240,11 @@ Time periods covered by the data service
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                            |
-| ------------------------------- | ---------------------------------------------------------------------- |
-| [PeriodOfTime](#temporal_items) | Information about a specific time period with a start- and/or end-time |
+| Each item of this array must be                              | Description                                                            |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| [PeriodOfTime](./temporal-spatial-metrics.md#period-of-time) | Information about a specific time period with a start- and/or end-time |
 
-### <a name="temporal_items"></a>DataService > temporal > PeriodOfTime
-
-**Title:** PeriodOfTime
-
-Information about a specific time period with a start- and/or end-time
-
-| **Type**                  | More than one type                                                                   |
-| ------------------------- | ------------------------------------------------------------------------------------ |
-| **Additional properties** | Any type allowed                                                                     |
-| **Same definition as**    | [PeriodOfTime](#servesDataset_items_sample_items_accessService_items_temporal_items) |
-
-## <a name="title"></a>[Optional] Property `DataService > title`
+## <a name="data-service--title"></a>[Optional] Property `DataService > title`
 
 **Title:** title
 
@@ -2440,7 +2262,7 @@ Human-readable title of the data service
 "Climate Data REST API"
 ```
 
-## <a name="category"></a>[Optional] Property `DataService > category`
+## <a name="data-service--category"></a>[Optional] Property `DataService > category`
 
 **Title:** category
 
@@ -2451,22 +2273,11 @@ List of high-level categories for the data service
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                        |
-| ------------------------------- | ------------------------------------------------------------------ |
-| [Concept](#category_items)      | A controlled term or label, optionally drawn from a concept scheme |
+| Each item of this array must be                       | Description                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| [Concept](./identifiers-and-relationships.md#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
-### <a name="category_items"></a>DataService > category > Concept
-
-**Title:** Concept
-
-A controlled term or label, optionally drawn from a concept scheme
-
-| **Type**                  | More than one type                                                            |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                              |
-| **Same definition as**    | [Concept](#servesDataset_items_sample_items_representationTechnique_anyOf_i1) |
-
-## <a name="hasQualityMeasurement"></a>[Optional] Property `DataService > hasQualityMeasurement`
+## <a name="data-service--hasQualityMeasurement"></a>[Optional] Property `DataService > hasQualityMeasurement`
 
 **Title:** quality measurement
 
@@ -2477,22 +2288,11 @@ Quality measurements for the data service (for example, availability, response t
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be                    | Description                                                   |
-| -------------------------------------------------- | ------------------------------------------------------------- |
-| [QualityMeasurement](#hasQualityMeasurement_items) | A measurement of a resource against a specific quality metric |
+| Each item of this array must be                                         | Description                                                   |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------- |
+| [QualityMeasurement](./temporal-spatial-metrics.md#quality-measurement) | A measurement of a resource against a specific quality metric |
 
-### <a name="hasQualityMeasurement_items"></a>DataService > hasQualityMeasurement > QualityMeasurement
-
-**Title:** QualityMeasurement
-
-A measurement of a resource against a specific quality metric
-
-| **Type**                  | `object`                                                                                                |
-| ------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                                        |
-| **Same definition as**    | [QualityMeasurement](#servesDataset_items_sample_items_accessService_items_hasQualityMeasurement_items) |
-
-## <a name="qualifiedAttribution"></a>[Optional] Property `DataService > qualifiedAttribution`
+## <a name="data-service--qualifiedAttribution"></a>[Optional] Property `DataService > qualifiedAttribution`
 
 **Title:** qualified attribution
 
@@ -2503,22 +2303,11 @@ List of agents with specific responsibilities for the data service
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be            | Description                                       |
-| ------------------------------------------ | ------------------------------------------------- |
-| [Attribution](#qualifiedAttribution_items) | A responsibility that an agent has for a resource |
+| Each item of this array must be                    | Description                                       |
+| -------------------------------------------------- | ------------------------------------------------- |
+| [Attribution](./quality-governance.md#attribution) | A responsibility that an agent has for a resource |
 
-### <a name="qualifiedAttribution_items"></a>DataService > qualifiedAttribution > Attribution
-
-**Title:** Attribution
-
-A responsibility that an agent has for a resource
-
-| **Type**                  | `object`                                                                                        |
-| ------------------------- | ----------------------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                                |
-| **Same definition as**    | [Attribution](#servesDataset_items_sample_items_accessService_items_qualifiedAttribution_items) |
-
-## <a name="wasUsedBy"></a>[Optional] Property `DataService > wasUsedBy`
+## <a name="data-service--wasUsedBy"></a>[Optional] Property `DataService > wasUsedBy`
 
 **Title:** was used by
 
@@ -2529,22 +2318,13 @@ List of activities that used or tested the data service
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                    |
-| ------------------------------- | -------------------------------------------------------------- |
-| [Activity](#wasUsedBy_items)    | An activity related to creating, changing, or using a resource |
-
-### <a name="wasUsedBy_items"></a>DataService > wasUsedBy > Activity
-
-**Title:** Activity
-
-An activity related to creating, changing, or using a resource
-
-| **Type**                  | `object`                                                                          |
-| ------------------------- | --------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                  |
-| **Same definition as**    | [Activity](#servesDataset_items_sample_items_accessService_items_wasUsedBy_items) |
+| Each item of this array must be                    | Description                                                    |
+| -------------------------------------------------- | -------------------------------------------------------------- |
+| [Activity](./temporal-spatial-metrics.md#activity) | An activity related to creating, changing, or using a resource |
 
 ---
+
+<a name="attribution"></a>
 
 ## Attribution
 
@@ -2570,12 +2350,12 @@ A responsibility that an agent has for a resource
 
 | Property               | Type   | Title/Description |
 | ---------------------- | ------ | ----------------- |
-| - [@id](#@id )         | string | -                 |
-| - [@type](#@type )     | string | -                 |
-| + [hadRole](#hadRole ) | string | role              |
-| + [agent](#agent )     | object | agent             |
+| - [@id](#attribution--@id)         | string | -                 |
+| - [@type](#attribution--@type)     | string | -                 |
+| + [hadRole](#attribution--hadRole) | string | role              |
+| + [agent](#attribution--agent)     | object | agent             |
 
-## <a name="@id"></a>[Optional] Property `Attribution > @id`
+## <a name="attribution--@id"></a>[Optional] Property `Attribution > @id`
 
 **Requirement:** Optional
 
@@ -2589,7 +2369,7 @@ A responsibility that an agent has for a resource
 "https://example.gov/attributions/dataset-steward-001"
 ```
 
-## <a name="@type"></a>[Optional] Property `Attribution > @type`
+## <a name="attribution--@type"></a>[Optional] Property `Attribution > @type`
 
 **Requirement:** Optional
 
@@ -2597,7 +2377,7 @@ A responsibility that an agent has for a resource
 | ----------- | --------------- |
 | **Default** | `"Attribution"` |
 
-## <a name="hadRole"></a>[Optional] Property `Attribution > hadRole`
+## <a name="attribution--hadRole"></a>[Optional] Property `Attribution > hadRole`
 
 **Title:** role
 
@@ -2615,7 +2395,7 @@ The function of an entity or agent with respect to another entity or resource
 "Data Steward"
 ```
 
-## <a name="agent"></a>[Optional] Property `Attribution > agent`
+## <a name="attribution--agent"></a>[Optional] Property `Attribution > agent`
 
 **Title:** agent
 
@@ -2623,8 +2403,8 @@ The function of an entity or agent with respect to another entity or resource
 
 The agent that plays a role in the resource
 
-| **Type**                  | `object`            |
-| ------------------------- | ------------------- |
-| **Required**              | Yes                 |
-| **Additional properties** | Any type allowed    |
-| **Defined in**            | [Agent](./Agent.md) |
+| **Type**                  | `object`                   |
+| ------------------------- | -------------------------- |
+| **Required**              | Yes                        |
+| **Additional properties** | Any type allowed           |
+| **Defined in**            | [Agent](./agents.md#agent) |

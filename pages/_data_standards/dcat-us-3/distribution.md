@@ -5,6 +5,10 @@ permalink: /standards/catalog/dcat-us-3/distribution/
 primary_nav_section: Data Standards
 category_name: Data standards
 ---
+<a name="root"></a>
+
+Information about a distribution, including access methods, formats, licenses, restrictions, and quality details.
+
 **Title:** Distribution
 
 A specific representation of a dataset, such as a file, feed, or API response
@@ -43,41 +47,41 @@ A specific representation of a dataset, such as a file, feed, or API response
 
 | Property                                                   | Type                    | Title/Description           |
 | ---------------------------------------------------------- | ----------------------- | --------------------------- |
-| - [@id](#@id )                                             | string                  | -                           |
-| - [@type](#@type )                                         | string                  | -                           |
-| - [representationTechnique](#representationTechnique )     | More than one type      | representation technique    |
-| - [status](#status )                                       | More than one type      | lifecycle status            |
-| - [characterEncoding](#characterEncoding )                 | More than one type      | character encoding          |
-| - [accessService](#accessService )                         | null or array           | access service              |
-| - [accessURL](#accessURL )                                 | More than one type      | access URL                  |
-| - [byteSize](#byteSize )                                   | null or string          | byte size                   |
-| - [compressFormat](#compressFormat )                       | null or string          | compression format          |
-| - [downloadURL](#downloadURL )                             | More than one type      | download URL                |
-| - [mediaType](#mediaType )                                 | null or string          | media type                  |
-| - [packageFormat](#packageFormat )                         | null or string          | packaging format            |
-| - [spatialResolutionInMeters](#spatialResolutionInMeters ) | null or string          | Spatial resolution (meters) |
-| - [temporalResolution](#temporalResolution )               | null or string          | termporal resolution        |
-| - [availability](#availability )                           | More than one type      | availability                |
-| - [accessRestriction](#accessRestriction )                 | null or array           | access restriction          |
-| - [cuiRestriction](#cuiRestriction )                       | More than one type      | CUI restriction             |
-| - [describedBy](#describedBy )                             | More than one type      | data dictionary             |
-| - [useRestriction](#useRestriction )                       | null or array           | use restriction             |
-| - [accessRights](#accessRights )                           | More than one type      | access rights               |
-| - [conformsTo](#conformsTo )                               | null or array           | linked schemas              |
-| - [description](#description )                             | null or string          | description                 |
-| - [format](#format )                                       | null or string          | format                      |
-| - [identifier](#identifier )                               | More than one type      | identifier                  |
-| - [otherIdentifier](#otherIdentifier )                     | null or array           | other identifier            |
-| - [issued](#issued )                                       | More than one type      | release date                |
-| - [language](#language )                                   | More than one type      | language                    |
-| - [license](#license )                                     | More than one type      | license                     |
-| - [modified](#modified )                                   | More than one type      | last modified               |
-| - [rights](#rights )                                       | null or array of string | rights                      |
-| - [title](#title )                                         | null or string          | title                       |
-| - [hasQualityMeasurement](#hasQualityMeasurement )         | null or array           | quality measurement         |
-| - [page](#page )                                           | null or array           | documentation               |
-| - [image](#image )                                         | More than one type      | image                       |
-| - [checksum](#checksum )                                   | More than one type      | checksum                    |
+| - [@id](#@id)                                             | string                  | -                           |
+| - [@type](#@type)                                         | string                  | -                           |
+| - [representationTechnique](#representationTechnique)     | More than one type      | representation technique    |
+| - [status](#status)                                       | More than one type      | lifecycle status            |
+| - [characterEncoding](#characterEncoding)                 | More than one type      | character encoding          |
+| - [accessService](#accessService)                         | null or array           | access service              |
+| - [accessURL](#accessURL)                                 | More than one type      | access URL                  |
+| - [byteSize](#byteSize)                                   | null or string          | byte size                   |
+| - [compressFormat](#compressFormat)                       | null or string          | compression format          |
+| - [downloadURL](#downloadURL)                             | More than one type      | download URL                |
+| - [mediaType](#mediaType)                                 | null or string          | media type                  |
+| - [packageFormat](#packageFormat)                         | null or string          | packaging format            |
+| - [spatialResolutionInMeters](#spatialResolutionInMeters) | null or string          | Spatial resolution (meters) |
+| - [temporalResolution](#temporalResolution)               | null or string          | termporal resolution        |
+| - [availability](#availability)                           | More than one type      | availability                |
+| - [accessRestriction](#accessRestriction)                 | null or array           | access restriction          |
+| - [cuiRestriction](#cuiRestriction)                       | More than one type      | CUI restriction             |
+| - [describedBy](#describedBy)                             | More than one type      | data dictionary             |
+| - [useRestriction](#useRestriction)                       | null or array           | use restriction             |
+| - [accessRights](#accessRights)                           | More than one type      | access rights               |
+| - [conformsTo](#conformsTo)                               | null or array           | linked schemas              |
+| - [description](#description)                             | null or string          | description                 |
+| - [format](#format)                                       | null or string          | format                      |
+| - [identifier](#identifier)                               | More than one type      | identifier                  |
+| - [otherIdentifier](#otherIdentifier)                     | null or array           | other identifier            |
+| - [issued](#issued)                                       | More than one type      | release date                |
+| - [language](#language)                                   | More than one type      | language                    |
+| - [license](#license)                                     | More than one type      | license                     |
+| - [modified](#modified)                                   | More than one type      | last modified               |
+| - [rights](#rights)                                       | null or array of string | rights                      |
+| - [title](#title)                                         | null or string          | title                       |
+| - [hasQualityMeasurement](#hasQualityMeasurement)         | null or array           | quality measurement         |
+| - [page](#page)                                           | null or array           | documentation               |
+| - [image](#image)                                         | More than one type      | image                       |
+| - [checksum](#checksum)                                   | More than one type      | checksum                    |
 
 ## <a name="@id"></a>[Optional] Property `Distribution > @id`
 
@@ -131,10 +135,10 @@ Method or schema used to structure the distribution content (for example, CSV co
 
 inline description of Concept
 
-| **Type**                  | More than one type      |
-| ------------------------- | ----------------------- |
-| **Additional properties** | Any type allowed        |
-| **Defined in**            | [Concept](./Concept.md) |
+| **Type**                  | More than one type                                    |
+| ------------------------- | ----------------------------------------------------- |
+| **Additional properties** | Any type allowed                                      |
+| **Defined in**            | [Concept](./identifiers-and-relationships.md#concept) |
 
 ## <a name="status"></a>[Optional] Property `Distribution > status`
 
@@ -166,10 +170,10 @@ The status of the distribution in the context of maturity lifecycle
 
 inline description of Concept
 
-| **Type**                  | More than one type                           |
-| ------------------------- | -------------------------------------------- |
-| **Additional properties** | Any type allowed                             |
-| **Same definition as**    | [Concept](#representationTechnique_anyOf_i1) |
+| **Type**                  | More than one type                                    |
+| ------------------------- | ----------------------------------------------------- |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Concept](./identifiers-and-relationships.md#concept) |
 
 ## <a name="characterEncoding"></a>[Optional] Property `Distribution > characterEncoding`
 
@@ -232,20 +236,9 @@ A data service that gives access to the distribution of the dataset
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be     | Description                                                         |
-| ----------------------------------- | ------------------------------------------------------------------- |
-| [DataService](#accessService_items) | A service that provides access to data or data processing functions |
-
-### <a name="accessService_items"></a>Distribution > accessService > DataService
-
-**Title:** DataService
-
-A service that provides access to data or data processing functions
-
-| **Type**                  | `object`                        |
-| ------------------------- | ------------------------------- |
-| **Additional properties** | Any type allowed                |
-| **Defined in**            | [Dataservice](./Dataservice.md) |
+| Each item of this array must be                     | Description                                                         |
+| --------------------------------------------------- | ------------------------------------------------------------------- |
+| [DataService](./quality-governance.md#data-service) | A service that provides access to data or data processing functions |
 
 ## <a name="accessURL"></a>[Optional] Property `Distribution > accessURL`
 
@@ -463,10 +456,10 @@ An indication how long it is planned to keep the Distribution of the Dataset ava
 
 inline description of Concept
 
-| **Type**                  | More than one type                           |
-| ------------------------- | -------------------------------------------- |
-| **Additional properties** | Any type allowed                             |
-| **Same definition as**    | [Concept](#representationTechnique_anyOf_i1) |
+| **Type**                  | More than one type                                    |
+| ------------------------- | ----------------------------------------------------- |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Concept](./identifiers-and-relationships.md#concept) |
 
 ## <a name="accessRestriction"></a>[Optional] Property `Distribution > accessRestriction`
 
@@ -479,20 +472,9 @@ List of access restrictions related to the distribution
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be               | Description                                                 |
-| --------------------------------------------- | ----------------------------------------------------------- |
-| [AccessRestriction](#accessRestriction_items) | Rules or indicators that describe who can access a resource |
-
-### <a name="accessRestriction_items"></a>Distribution > accessRestriction > AccessRestriction
-
-**Title:** AccessRestriction
-
-Rules or indicators that describe who can access a resource
-
-| **Type**                  | `object`                                                                                           |
-| ------------------------- | -------------------------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                                   |
-| **Same definition as**    | [AccessRestriction](#accessService_items_servesDataset_items_sample_items_accessRestriction_items) |
+| Each item of this array must be                                           | Description                                                 |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| [AccessRestriction](./constraints-and-restrictions.md#access-restriction) | Rules or indicators that describe who can access a resource |
 
 ## <a name="cuiRestriction"></a>[Optional] Property `Distribution > cuiRestriction`
 
@@ -524,10 +506,10 @@ Controlled Unclassified Information restriction related to the distribution
 
 inline description of CUIRestriction
 
-| **Type**                  | `object`                                                                                        |
-| ------------------------- | ----------------------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                                |
-| **Same definition as**    | [CUIRestriction](#accessService_items_servesDataset_items_sample_items_cuiRestriction_anyOf_i1) |
+| **Type**                  | `object`                                                            |
+| ------------------------- | ------------------------------------------------------------------- |
+| **Additional properties** | Any type allowed                                                    |
+| **Same definition as**    | [CUIRestriction](./constraints-and-restrictions.md#cui-restriction) |
 
 ## <a name="describedBy"></a>[Optional] Property `Distribution > describedBy`
 
@@ -559,10 +541,10 @@ A distribution containing the Data Dictionary for this distribution
 
 inline description of the data dictionary
 
-| **Type**                  | `object`                                                              |
-| ------------------------- | --------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                      |
-| **Same definition as**    | [Distribution](#accessService_items_servesDataset_items_sample_items) |
+| **Type**                  | `object`                               |
+| ------------------------- | -------------------------------------- |
+| **Additional properties** | Any type allowed                       |
+| **Same definition as**    | [Distribution](./distribution.md#root) |
 
 ## <a name="useRestriction"></a>[Optional] Property `Distribution > useRestriction`
 
@@ -575,20 +557,9 @@ Use restriction related to the distribution
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be         | Description                                         |
-| --------------------------------------- | --------------------------------------------------- |
-| [UseRestriction](#useRestriction_items) | Rules or legal limits on how a resource may be used |
-
-### <a name="useRestriction_items"></a>Distribution > useRestriction > UseRestriction
-
-**Title:** UseRestriction
-
-Rules or legal limits on how a resource may be used
-
-| **Type**                  | `object`                                                                                     |
-| ------------------------- | -------------------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                             |
-| **Same definition as**    | [UseRestriction](#accessService_items_servesDataset_items_sample_items_useRestriction_items) |
+| Each item of this array must be                                     | Description                                         |
+| ------------------------------------------------------------------- | --------------------------------------------------- |
+| [UseRestriction](./constraints-and-restrictions.md#use-restriction) | Rules or legal limits on how a resource may be used |
 
 ## <a name="accessRights"></a>[Optional] Property `Distribution > accessRights`
 
@@ -638,20 +609,9 @@ List of standards, schemas, or reference systems the Distribution follows (prefe
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                   |
-| ------------------------------- | ------------------------------------------------------------- |
-| [Standard](#conformsTo_items)   | A standard or specification that another resource conforms to |
-
-### <a name="conformsTo_items"></a>Distribution > conformsTo > Standard
-
-**Title:** Standard
-
-A standard or specification that another resource conforms to
-
-| **Type**                  | `object`                                                                           |
-| ------------------------- | ---------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                   |
-| **Same definition as**    | [Standard](#accessService_items_servesDataset_items_sample_items_conformsTo_items) |
+| Each item of this array must be              | Description                                                   |
+| -------------------------------------------- | ------------------------------------------------------------- |
+| [Standard](./quality-governance.md#standard) | A standard or specification that another resource conforms to |
 
 ## <a name="description"></a>[Optional] Property `Distribution > description`
 
@@ -721,10 +681,10 @@ The unique identifier for the Distribution (e.g. DOI, ISBN)
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                                           |
-| ------------------------- | ---------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                             |
-| **Same definition as**    | [Identifier](#accessService_items_servesDataset_items_otherIdentifier_items) |
+| **Type**                  | More than one type                                          |
+| ------------------------- | ----------------------------------------------------------- |
+| **Additional properties** | Any type allowed                                            |
+| **Same definition as**    | [Identifier](./identifiers-and-relationships.md#identifier) |
 
 ## <a name="otherIdentifier"></a>[Optional] Property `Distribution > otherIdentifier`
 
@@ -737,20 +697,9 @@ A list of identifiers for the Distribution besides the main identifier, e.g. the
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be      | Description                                                                   |
-| ------------------------------------ | ----------------------------------------------------------------------------- |
-| [Identifier](#otherIdentifier_items) | A unique identifier and optionally it's scheme and other relevant information |
-
-### <a name="otherIdentifier_items"></a>Distribution > otherIdentifier > Identifier
-
-**Title:** Identifier
-
-A unique identifier and optionally it's scheme and other relevant information
-
-| **Type**                  | More than one type                                                           |
-| ------------------------- | ---------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                             |
-| **Same definition as**    | [Identifier](#accessService_items_servesDataset_items_otherIdentifier_items) |
+| Each item of this array must be                             | Description                                                                   |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [Identifier](./identifiers-and-relationships.md#identifier) | A unique identifier and optionally it's scheme and other relevant information |
 
 ## <a name="issued"></a>[Optional] Property `Distribution > issued`
 
@@ -1110,20 +1059,9 @@ Quality measurements for the distribution (for example, completeness, accuracy, 
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be                    | Description                                                   |
-| -------------------------------------------------- | ------------------------------------------------------------- |
-| [QualityMeasurement](#hasQualityMeasurement_items) | A measurement of a resource against a specific quality metric |
-
-### <a name="hasQualityMeasurement_items"></a>Distribution > hasQualityMeasurement > QualityMeasurement
-
-**Title:** QualityMeasurement
-
-A measurement of a resource against a specific quality metric
-
-| **Type**                  | `object`                                                                                                |
-| ------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                                        |
-| **Same definition as**    | [QualityMeasurement](#accessService_items_servesDataset_items_sample_items_hasQualityMeasurement_items) |
+| Each item of this array must be                                         | Description                                                   |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------- |
+| [QualityMeasurement](./temporal-spatial-metrics.md#quality-measurement) | A measurement of a resource against a specific quality metric |
 
 ## <a name="page"></a>[Optional] Property `Distribution > page`
 
@@ -1136,20 +1074,9 @@ A page or document about this Distribution
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                           |
-| ------------------------------- | ----------------------------------------------------- |
-| [Document](#page_items)         | A publication or other document related to a resource |
-
-### <a name="page_items"></a>Distribution > page > Document
-
-**Title:** Document
-
-A publication or other document related to a resource
-
-| **Type**                  | `object`                                                                     |
-| ------------------------- | ---------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                             |
-| **Same definition as**    | [Document](#accessService_items_servesDataset_items_sample_items_page_items) |
+| Each item of this array must be              | Description                                           |
+| -------------------------------------------- | ----------------------------------------------------- |
+| [Document](./quality-governance.md#document) | A publication or other document related to a resource |
 
 ## <a name="image"></a>[Optional] Property `Distribution > image`
 
@@ -1215,7 +1142,7 @@ Checksum used to verify that the downloadable file content has not changed
 
 inline description of Checksum
 
-| **Type**                  | `object`                                                                            |
-| ------------------------- | ----------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                    |
-| **Same definition as**    | [Checksum](#accessService_items_servesDataset_items_sample_items_checksum_anyOf_i1) |
+| **Type**                  | `object`                                                |
+| ------------------------- | ------------------------------------------------------- |
+| **Additional properties** | Any type allowed                                        |
+| **Same definition as**    | [Checksum](./identifiers-and-relationships.md#checksum) |

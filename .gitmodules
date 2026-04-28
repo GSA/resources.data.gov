@@ -1,5 +1,5 @@
 [submodule "_external/dcat-us"]
 	path = _external/dcat-us
 	url = https://github.com/GSA/dcat-us.git
-	branch = main
+	branch = docs-update
 	shallow = true

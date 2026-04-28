@@ -5,6 +5,10 @@ permalink: /standards/catalog/dcat-us-3/catalog/
 primary_nav_section: Data Standards
 category_name: Data standards
 ---
+<a name="root"></a>
+
+The catalog of datasets, services, and other information describing data assets.
+
 **Title:** DCAT-US 3 Catalog
 
 A curated collection of metadata about datasets, data services, or other resources
@@ -74,37 +78,37 @@ A curated collection of metadata about datasets, data services, or other resourc
 
 | Property                                         | Type                    | Title/Description           |
 | ------------------------------------------------ | ----------------------- | --------------------------- |
-| - [@id](#@id )                                   | string                  | -                           |
-| - [@type](#@type )                               | string                  | -                           |
-| - [catalog](#catalog )                           | null or array           | Related catalogs            |
-| - [contactPoint](#contactPoint )                 | null or array           | Contact points              |
-| + [dataset](#dataset )                           | array                   | dataset                     |
-| - [keyword](#keyword )                           | null or array of string | keyword/tag                 |
-| - [record](#record )                             | null or array           | catalog record              |
-| - [service](#service )                           | null or array           | service                     |
-| - [theme](#theme )                               | null or array           | theme/category              |
-| - [themeTaxonomy](#themeTaxonomy )               | null or array           | themes                      |
-| - [accessRights](#accessRights )                 | More than one type      | access rights               |
-| - [conformsTo](#conformsTo )                     | More than one type      | schema version              |
-| - [creator](#creator )                           | null or array           | creator                     |
-| - [description](#description )                   | null or string          | description                 |
-| - [hasPart](#hasPart )                           | null or array           | has part                    |
-| - [identifier](#identifier )                     | More than one type      | identifier                  |
-| - [otherIdentifier](#otherIdentifier )           | null or array           | other identifier            |
-| - [issued](#issued )                             | More than one type      | release date                |
-| - [language](#language )                         | More than one type      | language                    |
-| - [license](#license )                           | More than one type      | license                     |
-| - [modified](#modified )                         | More than one type      | update/modification date    |
-| - [publisher](#publisher )                       | More than one type      | publisher                   |
-| - [rights](#rights )                             | null or array of string | rights                      |
-| - [rightsHolder](#rightsHolder )                 | null or array           | rights holder               |
-| - [spatial](#spatial )                           | null or array           | spatial/geographic coverage |
-| - [subject](#subject )                           | null or array           | subject                     |
-| - [temporal](#temporal )                         | null or array           | temporal coverage           |
-| - [title](#title )                               | null or string          | title                       |
-| - [category](#category )                         | null or array           | category                    |
-| - [homepage](#homepage )                         | More than one type      | homepage                    |
-| - [qualifiedAttribution](#qualifiedAttribution ) | null or array           | qualified attribution       |
+| - [@id](#@id)                                   | string                  | -                           |
+| - [@type](#@type)                               | string                  | -                           |
+| - [catalog](#catalog)                           | null or array           | Related catalogs            |
+| - [contactPoint](#contactPoint)                 | null or array           | Contact points              |
+| + [dataset](#dataset)                           | array                   | dataset                     |
+| - [keyword](#keyword)                           | null or array of string | keyword/tag                 |
+| - [record](#record)                             | null or array           | catalog record              |
+| - [service](#service)                           | null or array           | service                     |
+| - [theme](#theme)                               | null or array           | theme/category              |
+| - [themeTaxonomy](#themeTaxonomy)               | null or array           | themes                      |
+| - [accessRights](#accessRights)                 | More than one type      | access rights               |
+| - [conformsTo](#conformsTo)                     | More than one type      | schema version              |
+| - [creator](#creator)                           | null or array           | creator                     |
+| - [description](#description)                   | null or string          | description                 |
+| - [hasPart](#hasPart)                           | null or array           | has part                    |
+| - [identifier](#identifier)                     | More than one type      | identifier                  |
+| - [otherIdentifier](#otherIdentifier)           | null or array           | other identifier            |
+| - [issued](#issued)                             | More than one type      | release date                |
+| - [language](#language)                         | More than one type      | language                    |
+| - [license](#license)                           | More than one type      | license                     |
+| - [modified](#modified)                         | More than one type      | update/modification date    |
+| - [publisher](#publisher)                       | More than one type      | publisher                   |
+| - [rights](#rights)                             | null or array of string | rights                      |
+| - [rightsHolder](#rightsHolder)                 | null or array           | rights holder               |
+| - [spatial](#spatial)                           | null or array           | spatial/geographic coverage |
+| - [subject](#subject)                           | null or array           | subject                     |
+| - [temporal](#temporal)                         | null or array           | temporal coverage           |
+| - [title](#title)                               | null or string          | title                       |
+| - [category](#category)                         | null or array           | category                    |
+| - [homepage](#homepage)                         | More than one type      | homepage                    |
+| - [qualifiedAttribution](#qualifiedAttribution) | null or array           | qualified attribution       |
 
 ## <a name="@id"></a>[Optional] Property `DCAT-US 3 Catalog > @id`
 
@@ -143,17 +147,6 @@ List of related catalogs that are useful in the context of this catalog
 | ----------------------------------- | ---------------------------------------------------------------------------------- |
 | [DCAT-US 3 Catalog](#catalog_items) | A curated collection of metadata about datasets, data services, or other resources |
 
-### <a name="catalog_items"></a>DCAT-US 3 Catalog > catalog > DCAT-US 3 Catalog
-
-**Title:** DCAT-US 3 Catalog
-
-A curated collection of metadata about datasets, data services, or other resources
-
-| **Type**                  | `object`                   |
-| ------------------------- | -------------------------- |
-| **Additional properties** | Any type allowed           |
-| **Same definition as**    | [DCAT-US 3 Catalog](#root) |
-
 ## <a name="contactPoint"></a>[Optional] Property `DCAT-US 3 Catalog > contactPoint`
 
 **Title:** Contact points
@@ -167,18 +160,7 @@ Contact information people can use to ask questions or send feedback about the c
 
 | Each item of this array must be | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
-| [Kind](#contactPoint_items)     | Contact information for an individual or entity |
-
-### <a name="contactPoint_items"></a>DCAT-US 3 Catalog > contactPoint > Kind
-
-**Title:** Kind
-
-Contact information for an individual or entity
-
-| **Type**                  | `object`          |
-| ------------------------- | ----------------- |
-| **Additional properties** | Any type allowed  |
-| **Defined in**            | [Kind](./Kind.md) |
+| [Kind](./agents.md#kind)        | Contact information for an individual or entity |
 
 ## <a name="dataset"></a>[Optional] Property `DCAT-US 3 Catalog > dataset`
 
@@ -194,18 +176,7 @@ List of datasets included in the catalog. Use this together with service so the 
 
 | Each item of this array must be | Description                                               |
 | ------------------------------- | --------------------------------------------------------- |
-| [Dataset](#dataset_items)       | A collection of data published or curated by one provider |
-
-### <a name="dataset_items"></a>DCAT-US 3 Catalog > dataset > Dataset
-
-**Title:** Dataset
-
-A collection of data published or curated by one provider
-
-| **Type**                  | `object`                |
-| ------------------------- | ----------------------- |
-| **Additional properties** | Any type allowed        |
-| **Defined in**            | [Dataset](./Dataset.md) |
+| [Dataset](./dataset.md#root)    | A collection of data published or curated by one provider |
 
 ## <a name="keyword"></a>[Optional] Property `DCAT-US 3 Catalog > keyword`
 
@@ -253,20 +224,9 @@ A catalog record describing how a single resource (such as a dataset or data ser
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                             |
-| ------------------------------- | ----------------------------------------------------------------------- |
-| [CatalogRecord](#record_items)  | A record in a catalog, describing the registration of a single resource |
-
-### <a name="record_items"></a>DCAT-US 3 Catalog > record > CatalogRecord
-
-**Title:** CatalogRecord
-
-A record in a catalog, describing the registration of a single resource
-
-| **Type**                  | `object`                            |
-| ------------------------- | ----------------------------------- |
-| **Additional properties** | Any type allowed                    |
-| **Defined in**            | [Catalogrecord](./Catalogrecord.md) |
+| Each item of this array must be                         | Description                                                             |
+| ------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [CatalogRecord](./quality-governance.md#catalog-record) | A record in a catalog, describing the registration of a single resource |
 
 ## <a name="service"></a>[Optional] Property `DCAT-US 3 Catalog > service`
 
@@ -279,20 +239,9 @@ List of data services included in the catalog. Use this together with dataset so
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                         |
-| ------------------------------- | ------------------------------------------------------------------- |
-| [DataService](#service_items)   | A service that provides access to data or data processing functions |
-
-### <a name="service_items"></a>DCAT-US 3 Catalog > service > DataService
-
-**Title:** DataService
-
-A service that provides access to data or data processing functions
-
-| **Type**                  | `object`                                                       |
-| ------------------------- | -------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                               |
-| **Same definition as**    | [DataService](#dataset_items_sample_items_accessService_items) |
+| Each item of this array must be                     | Description                                                         |
+| --------------------------------------------------- | ------------------------------------------------------------------- |
+| [DataService](./quality-governance.md#data-service) | A service that provides access to data or data processing functions |
 
 ## <a name="theme"></a>[Optional] Property `DCAT-US 3 Catalog > theme`
 
@@ -305,20 +254,9 @@ List of themes or categories for the catalog. A catalog can have more than one t
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                        |
-| ------------------------------- | ------------------------------------------------------------------ |
-| [Concept](#theme_items)         | A controlled term or label, optionally drawn from a concept scheme |
-
-### <a name="theme_items"></a>DCAT-US 3 Catalog > theme > Concept
-
-**Title:** Concept
-
-A controlled term or label, optionally drawn from a concept scheme
-
-| **Type**                  | More than one type                                                      |
-| ------------------------- | ----------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                        |
-| **Same definition as**    | [Concept](#dataset_items_sample_items_representationTechnique_anyOf_i1) |
+| Each item of this array must be                       | Description                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| [Concept](./identifiers-and-relationships.md#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
 ## <a name="themeTaxonomy"></a>[Optional] Property `DCAT-US 3 Catalog > themeTaxonomy`
 
@@ -331,20 +269,9 @@ Controlled vocabulary or taxonomy used to classify catalog resources, such as da
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be       | Description                                                           |
-| ------------------------------------- | --------------------------------------------------------------------- |
-| [ConceptScheme](#themeTaxonomy_items) | A controlled vocabulary or other list of approved terms for a concept |
-
-### <a name="themeTaxonomy_items"></a>DCAT-US 3 Catalog > themeTaxonomy > ConceptScheme
-
-**Title:** ConceptScheme
-
-A controlled vocabulary or other list of approved terms for a concept
-
-| **Type**                  | `object`                                                                                   |
-| ------------------------- | ------------------------------------------------------------------------------------------ |
-| **Additional properties** | Any type allowed                                                                           |
-| **Same definition as**    | [inScheme](#dataset_items_sample_items_representationTechnique_anyOf_i1_anyOf_i1_inScheme) |
+| Each item of this array must be                                    | Description                                                           |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------- |
+| [ConceptScheme](./identifiers-and-relationships.md#concept-scheme) | A controlled vocabulary or other list of approved terms for a concept |
 
 ## <a name="accessRights"></a>[Optional] Property `DCAT-US 3 Catalog > accessRights`
 
@@ -413,10 +340,10 @@ Standard, schema, profile, or model that this catalog follows
 
 A standard or specification that another resource conforms to
 
-| **Type**                  | `object`                                                                     |
-| ------------------------- | ---------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                             |
-| **Same definition as**    | [Standard](#dataset_items_sample_items_accessService_items_conformsTo_items) |
+| **Type**                  | `object`                                     |
+| ------------------------- | -------------------------------------------- |
+| **Additional properties** | Any type allowed                             |
+| **Same definition as**    | [Standard](./quality-governance.md#standard) |
 
 ## <a name="creator"></a>[Optional] Property `DCAT-US 3 Catalog > creator`
 
@@ -431,18 +358,7 @@ Person or organization responsible for creating the catalog metadata
 
 | Each item of this array must be | Description                                                                      |
 | ------------------------------- | -------------------------------------------------------------------------------- |
-| [Agent](#creator_items)         | A person, organization, software agent, or other entity involved with a resource |
-
-### <a name="creator_items"></a>DCAT-US 3 Catalog > creator > Agent
-
-**Title:** Agent
-
-A person, organization, software agent, or other entity involved with a resource
-
-| **Type**                  | `object`                                                               |
-| ------------------------- | ---------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                       |
-| **Same definition as**    | [Agent](#dataset_items_sample_items_accessService_items_creator_items) |
+| [Agent](./agents.md#agent)      | A person, organization, software agent, or other entity involved with a resource |
 
 ## <a name="description"></a>[Optional] Property `DCAT-US 3 Catalog > description`
 
@@ -480,17 +396,6 @@ List of catalogs that are contained within this catalog
 | ----------------------------------- | ---------------------------------------------------------------------------------- |
 | [DCAT-US 3 Catalog](#hasPart_items) | A curated collection of metadata about datasets, data services, or other resources |
 
-### <a name="hasPart_items"></a>DCAT-US 3 Catalog > hasPart > DCAT-US 3 Catalog
-
-**Title:** DCAT-US 3 Catalog
-
-A curated collection of metadata about datasets, data services, or other resources
-
-| **Type**                  | `object`                   |
-| ------------------------- | -------------------------- |
-| **Additional properties** | Any type allowed           |
-| **Same definition as**    | [DCAT-US 3 Catalog](#root) |
-
 ## <a name="identifier"></a>[Optional] Property `DCAT-US 3 Catalog > identifier`
 
 **Title:** identifier
@@ -521,10 +426,10 @@ Main unique identifier for the catalog, such as a URI or another persistent iden
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                 |
-| ------------------------- | -------------------------------------------------- |
-| **Additional properties** | Any type allowed                                   |
-| **Same definition as**    | [Identifier](#dataset_items_otherIdentifier_items) |
+| **Type**                  | More than one type                                          |
+| ------------------------- | ----------------------------------------------------------- |
+| **Additional properties** | Any type allowed                                            |
+| **Same definition as**    | [Identifier](./identifiers-and-relationships.md#identifier) |
 
 ## <a name="otherIdentifier"></a>[Optional] Property `DCAT-US 3 Catalog > otherIdentifier`
 
@@ -537,20 +442,9 @@ A list of identifiers for the Catalog besides the main identifier, e.g. the URI 
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be      | Description                                                                   |
-| ------------------------------------ | ----------------------------------------------------------------------------- |
-| [Identifier](#otherIdentifier_items) | A unique identifier and optionally it's scheme and other relevant information |
-
-### <a name="otherIdentifier_items"></a>DCAT-US 3 Catalog > otherIdentifier > Identifier
-
-**Title:** Identifier
-
-A unique identifier and optionally it's scheme and other relevant information
-
-| **Type**                  | More than one type                                 |
-| ------------------------- | -------------------------------------------------- |
-| **Additional properties** | Any type allowed                                   |
-| **Same definition as**    | [Identifier](#dataset_items_otherIdentifier_items) |
+| Each item of this array must be                             | Description                                                                   |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [Identifier](./identifiers-and-relationships.md#identifier) | A unique identifier and optionally it's scheme and other relevant information |
 
 ## <a name="issued"></a>[Optional] Property `DCAT-US 3 Catalog > issued`
 
@@ -874,10 +768,10 @@ Person or organization responsible for publishing and making the catalog availab
 
 inline description of the publisher
 
-| **Type**                  | `object`                                                               |
-| ------------------------- | ---------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                       |
-| **Same definition as**    | [Agent](#dataset_items_sample_items_accessService_items_creator_items) |
+| **Type**                  | `object`                   |
+| ------------------------- | -------------------------- |
+| **Additional properties** | Any type allowed           |
+| **Same definition as**    | [Agent](./agents.md#agent) |
 
 ## <a name="rights"></a>[Optional] Property `DCAT-US 3 Catalog > rights`
 
@@ -927,20 +821,9 @@ Organizations that hold rights in the catalog
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be     | Description                                                                       |
-| ----------------------------------- | --------------------------------------------------------------------------------- |
-| [Organization](#rightsHolder_items) | An organization involved with a resource, including parent or child organizations |
-
-### <a name="rightsHolder_items"></a>DCAT-US 3 Catalog > rightsHolder > Organization
-
-**Title:** Organization
-
-An organization involved with a resource, including parent or child organizations
-
-| **Type**                  | `object`                                                                       |
-| ------------------------- | ------------------------------------------------------------------------------ |
-| **Additional properties** | Any type allowed                                                               |
-| **Same definition as**    | [Organization](#dataset_items_otherIdentifier_items_anyOf_i1_creator_anyOf_i1) |
+| Each item of this array must be          | Description                                                                       |
+| ---------------------------------------- | --------------------------------------------------------------------------------- |
+| [Organization](./agents.md#organization) | An organization involved with a resource, including parent or child organizations |
 
 ## <a name="spatial"></a>[Optional] Property `DCAT-US 3 Catalog > spatial`
 
@@ -953,20 +836,9 @@ Geographic area covered by the catalog
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                      |
-| ------------------------------- | -------------------------------- |
-| [Location](#spatial_items)      | A named place or geographic area |
-
-### <a name="spatial_items"></a>DCAT-US 3 Catalog > spatial > Location
-
-**Title:** Location
-
-A named place or geographic area
-
-| **Type**                  | `object`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                          |
-| **Same definition as**    | [Location](#dataset_items_sample_items_accessService_items_spatial_items) |
+| Each item of this array must be                    | Description                      |
+| -------------------------------------------------- | -------------------------------- |
+| [Location](./temporal-spatial-metrics.md#location) | A named place or geographic area |
 
 ## <a name="subject"></a>[Optional] Property `DCAT-US 3 Catalog > subject`
 
@@ -979,20 +851,9 @@ List of subjects of the catalog
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                        |
-| ------------------------------- | ------------------------------------------------------------------ |
-| [Concept](#subject_items)       | A controlled term or label, optionally drawn from a concept scheme |
-
-### <a name="subject_items"></a>DCAT-US 3 Catalog > subject > Concept
-
-**Title:** Concept
-
-A controlled term or label, optionally drawn from a concept scheme
-
-| **Type**                  | More than one type                                                      |
-| ------------------------- | ----------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                        |
-| **Same definition as**    | [Concept](#dataset_items_sample_items_representationTechnique_anyOf_i1) |
+| Each item of this array must be                       | Description                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| [Concept](./identifiers-and-relationships.md#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
 ## <a name="temporal"></a>[Optional] Property `DCAT-US 3 Catalog > temporal`
 
@@ -1005,20 +866,9 @@ Time periods covered by the catalog
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                            |
-| ------------------------------- | ---------------------------------------------------------------------- |
-| [PeriodOfTime](#temporal_items) | Information about a specific time period with a start- and/or end-time |
-
-### <a name="temporal_items"></a>DCAT-US 3 Catalog > temporal > PeriodOfTime
-
-**Title:** PeriodOfTime
-
-Information about a specific time period with a start- and/or end-time
-
-| **Type**                  | More than one type                                                             |
-| ------------------------- | ------------------------------------------------------------------------------ |
-| **Additional properties** | Any type allowed                                                               |
-| **Same definition as**    | [PeriodOfTime](#dataset_items_sample_items_accessService_items_temporal_items) |
+| Each item of this array must be                              | Description                                                            |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| [PeriodOfTime](./temporal-spatial-metrics.md#period-of-time) | Information about a specific time period with a start- and/or end-time |
 
 ## <a name="title"></a>[Optional] Property `DCAT-US 3 Catalog > title`
 
@@ -1052,20 +902,9 @@ List of high-level categories for the catalog
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be | Description                                                        |
-| ------------------------------- | ------------------------------------------------------------------ |
-| [Concept](#category_items)      | A controlled term or label, optionally drawn from a concept scheme |
-
-### <a name="category_items"></a>DCAT-US 3 Catalog > category > Concept
-
-**Title:** Concept
-
-A controlled term or label, optionally drawn from a concept scheme
-
-| **Type**                  | More than one type                                                      |
-| ------------------------- | ----------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                        |
-| **Same definition as**    | [Concept](#dataset_items_sample_items_representationTechnique_anyOf_i1) |
+| Each item of this array must be                       | Description                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| [Concept](./identifiers-and-relationships.md#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
 ## <a name="homepage"></a>[Optional] Property `DCAT-US 3 Catalog > homepage`
 
@@ -1097,10 +936,10 @@ Main public web page for the catalog, usually an HTML page
 
 inline description of the home page
 
-| **Type**                  | `object`                                           |
-| ------------------------- | -------------------------------------------------- |
-| **Additional properties** | Any type allowed                                   |
-| **Same definition as**    | [Document](#dataset_items_sample_items_page_items) |
+| **Type**                  | `object`                                     |
+| ------------------------- | -------------------------------------------- |
+| **Additional properties** | Any type allowed                             |
+| **Same definition as**    | [Document](./quality-governance.md#document) |
 
 ## <a name="qualifiedAttribution"></a>[Optional] Property `DCAT-US 3 Catalog > qualifiedAttribution`
 
@@ -1113,17 +952,6 @@ List of agents with specific responsibilities for the catalog
 | **Type** | `null or array` |
 | -------- | --------------- |
 
-| Each item of this array must be            | Description                                       |
-| ------------------------------------------ | ------------------------------------------------- |
-| [Attribution](#qualifiedAttribution_items) | A responsibility that an agent has for a resource |
-
-### <a name="qualifiedAttribution_items"></a>DCAT-US 3 Catalog > qualifiedAttribution > Attribution
-
-**Title:** Attribution
-
-A responsibility that an agent has for a resource
-
-| **Type**                  | `object`                                                                                  |
-| ------------------------- | ----------------------------------------------------------------------------------------- |
-| **Additional properties** | Any type allowed                                                                          |
-| **Same definition as**    | [Attribution](#dataset_items_sample_items_accessService_items_qualifiedAttribution_items) |
+| Each item of this array must be                    | Description                                       |
+| -------------------------------------------------- | ------------------------------------------------- |
+| [Attribution](./quality-governance.md#attribution) | A responsibility that an agent has for a resource |
