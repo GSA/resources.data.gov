@@ -9,7 +9,7 @@
 - text: Data Standards
   children:
     - text: DCAT-US 3
-      url: /standards/catalog/dcat-us-3/
+      url: /resources/dcat-us3/
     - text: DCAT-US v1.1
       url: /standards/catalog/dcat-us/
 - text: API Documentation
