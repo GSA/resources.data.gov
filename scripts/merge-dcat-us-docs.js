@@ -99,23 +99,38 @@ function getPageConfig(fileName) {
   };
 }
 
+function yamlQuote(value) {
+  return JSON.stringify(value);
+}
+
 function buildFrontMatter(fileName) {
   const config = getPageConfig(fileName);
   return [
     "---",
-    `title: ${config.title}`,
-    "layout: page",
-    `permalink: ${config.permalink}`,
-    "primary_nav_section: Data Standards",
-    "category_name: Data standards",
+    `title: ${yamlQuote(config.title)}`,
+    `layout: ${yamlQuote("page")}`,
+    `permalink: ${yamlQuote(config.permalink)}`,
+    `primary_nav_section: ${yamlQuote("Data Standards")}`,
+    `category_name: ${yamlQuote("Data standards")}`,
     "---",
     "",
   ].join("\n");
 }
 
+function rewriteMarkdownLinks(content) {
+  return content.replace(/\]\((\.\/)?([^\)#?]+\.md)(#[^\)]*)?\)/g, (match, _dotSlash, fileName, anchor = "") => {
+    if (skippedFiles.has(fileName)) {
+      return match;
+    }
+
+    const config = getPageConfig(fileName);
+    return `](${config.permalink}${anchor})`;
+  });
+}
+
 function writeOutputFile(fileName, content) {
   const outputPath = path.join(outputDir, fileName);
-  const pageContent = `${buildFrontMatter(fileName)}${stripLeadingFrontMatter(content)}\n`;
+  const pageContent = `${buildFrontMatter(fileName)}${rewriteMarkdownLinks(stripLeadingFrontMatter(content))}\n`;
   fs.writeFileSync(outputPath, pageContent, "utf8");
 }
 

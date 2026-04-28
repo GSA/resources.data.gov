@@ -1,9 +1,9 @@
 ---
-title: DCAT-US 3.0: Identifiers and Relationships
-layout: page
-permalink: /standards/catalog/dcat-us-3/identifiers-and-relationships/
-primary_nav_section: Data Standards
-category_name: Data standards
+title: "DCAT-US 3.0: Identifiers and Relationships"
+layout: "page"
+permalink: "/standards/catalog/dcat-us-3/identifiers-and-relationships/"
+primary_nav_section: "Data Standards"
+category_name: "Data standards"
 ---
 # Identifiers and Relationships
 
@@ -11,9 +11,7 @@ Supporting classes for identifiers, relationships, checksums, and controlled con
 
 <a name="identifier"></a>
 
-## Identifier
-
-**Title:** Identifier
+## Class Identifier
 
 A unique identifier and optionally it's scheme and other relevant information
 
@@ -21,37 +19,33 @@ A unique identifier and optionally it's scheme and other relevant information
 | ------------------------- | ------------------ |
 | **Additional properties** | Any type allowed   |
 
-| Any of(Option)                              |
+| Any of                                      |
 | ------------------------------------------- |
 | [Simple string identifier](#identifier--anyOf_i0)       |
 | [Identifier as a complex object](#identifier--anyOf_i1) |
 
-## <a name="identifier--anyOf_i0"></a>Property `Identifier > anyOf > Simple string identifier`
-
-**Title:** Simple string identifier
+## <a name="identifier--anyOf_i0"></a>`Identifier > anyOf > Simple string identifier`
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="identifier--anyOf_i1"></a>Property `Identifier > anyOf > Identifier as a complex object`
-
-**Title:** Identifier as a complex object
+## <a name="identifier--anyOf_i1"></a>`Identifier > anyOf > Identifier as a complex object`
 
 | **Type**                  | `object`         |
 | ------------------------- | ---------------- |
 | **Additional properties** | Any type allowed |
 
-| Property                                  | Type               | Title/Description |
-| ----------------------------------------- | ------------------ | ----------------- |
-| - [@id](#identifier--anyOf_i1_@id)                   | string             | -                 |
-| - [@type](#identifier--anyOf_i1_@type)               | string             | -                 |
-| - [schemaAgency](#identifier--anyOf_i1_schemaAgency) | null or string     | schema agency     |
-| - [creator](#identifier--anyOf_i1_creator)           | More than one type | creator           |
-| - [issued](#identifier--anyOf_i1_issued)             | More than one type | issued            |
-| - [version](#identifier--anyOf_i1_version)           | null or string     | version           |
-| - [notation](#identifier--anyOf_i1_notation)         | null or string     | notation          |
+| Property                                | Type               | Requirement Level | Title/Description                                                 |
+| --------------------------------------- | ------------------ | ----------------- | ----------------------------------------------------------------- |
+| [@id](#identifier--anyOf_i1_@id)                   | string             | Optional          |                                                                   |
+| [@type](#identifier--anyOf_i1_@type)               | string             | Optional          |                                                                   |
+| [schemaAgency](#identifier--anyOf_i1_schemaAgency) | null or string     | Optional          | The name of the agency that issued the identifier                 |
+| [creator](#identifier--anyOf_i1_creator)           | More than one type | Optional          | the agency that manages the identifier scheme                     |
+| [issued](#identifier--anyOf_i1_issued)             | More than one type | Optional          | The date of formal issuance (e.g., publication) of the Identifier |
+| [version](#identifier--anyOf_i1_version)           | null or string     | Optional          | version of the identifier scheme                                  |
+| [notation](#identifier--anyOf_i1_notation)         | null or string     | Optional          | abbreviation or code from code lists for an identifier            |
 
-### <a name="identifier--anyOf_i1_@id"></a>Property `Identifier > anyOf > Identifier as a complex object > @id`
+### <a name="identifier--anyOf_i1_@id"></a>`Identifier > anyOf > Identifier as a complex object > @id`
 
 **Requirement:** Optional
 
@@ -59,7 +53,7 @@ A unique identifier and optionally it's scheme and other relevant information
 | ---------- | -------- |
 | **Format** | `iri`    |
 
-### <a name="identifier--anyOf_i1_@type"></a>Property `Identifier > anyOf > Identifier as a complex object > @type`
+### <a name="identifier--anyOf_i1_@type"></a>`Identifier > anyOf > Identifier as a complex object > @type`
 
 **Requirement:** Optional
 
@@ -67,9 +61,7 @@ A unique identifier and optionally it's scheme and other relevant information
 | ----------- | -------------- |
 | **Default** | `"Identifier"` |
 
-### <a name="identifier--anyOf_i1_schemaAgency"></a>Property `Identifier > anyOf > Identifier as a complex object > schemaAgency`
-
-**Title:** schema agency
+### <a name="identifier--anyOf_i1_schemaAgency"></a>`Identifier > anyOf > Identifier as a complex object > schemaAgency`
 
 **Requirement:** Optional
 
@@ -78,9 +70,7 @@ The name of the agency that issued the identifier
 | **Type** | `null or string` |
 | -------- | ---------------- |
 
-### <a name="identifier--anyOf_i1_creator"></a>Property `Identifier > anyOf > Identifier as a complex object > creator`
-
-**Title:** creator
+### <a name="identifier--anyOf_i1_creator"></a>`Identifier > anyOf > Identifier as a complex object > creator`
 
 **Requirement:** Optional
 
@@ -90,32 +80,26 @@ the agency that manages the identifier scheme
 | ------------------------- | ------------------ |
 | **Additional properties** | Any type allowed   |
 
-| Any of(Option)                                               |
+| Any of                                                       |
 | ------------------------------------------------------------ |
 | [Null allowed when not required](#identifier--anyOf_i1_creator_anyOf_i0) |
 | [Organization](#identifier--anyOf_i1_creator_anyOf_i1)                   |
 
-#### <a name="identifier--anyOf_i1_creator_anyOf_i0"></a>Property `Identifier > anyOf > Identifier as a complex object > creator > anyOf > Null allowed when not required`
-
-**Title:** Null allowed when not required
+#### <a name="identifier--anyOf_i1_creator_anyOf_i0"></a>`Identifier > anyOf > Identifier as a complex object > creator > anyOf > Null allowed when not required`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-#### <a name="identifier--anyOf_i1_creator_anyOf_i1"></a>Property `Identifier > anyOf > Identifier as a complex object > creator > anyOf > Organization`
-
-**Title:** Organization
+#### <a name="identifier--anyOf_i1_creator_anyOf_i1"></a>`Identifier > anyOf > Identifier as a complex object > creator > anyOf > Organization`
 
 inline description of the creator
 
 | **Type**                  | `object`                                 |
 | ------------------------- | ---------------------------------------- |
 | **Additional properties** | Any type allowed                         |
-| **Defined in**            | [Organization](./agents.md#organization) |
+| **Defined in**            | [Organization](/standards/catalog/dcat-us-3/agents/#organization) |
 
-### <a name="identifier--anyOf_i1_issued"></a>Property `Identifier > anyOf > Identifier as a complex object > issued`
-
-**Title:** issued
+### <a name="identifier--anyOf_i1_issued"></a>`Identifier > anyOf > Identifier as a complex object > issued`
 
 **Requirement:** Optional
 
@@ -125,46 +109,42 @@ The date of formal issuance (e.g., publication) of the Identifier
 | ------------------------- | ------------------ |
 | **Additional properties** | Any type allowed   |
 
-| Any of(Option)                                              |
+| Any of                                                      |
 | ----------------------------------------------------------- |
 | [Null allowed when not required](#identifier--anyOf_i1_issued_anyOf_i0) |
 | [Date string](#identifier--anyOf_i1_issued_anyOf_i1)                    |
 
-#### <a name="identifier--anyOf_i1_issued_anyOf_i0"></a>Property `Identifier > anyOf > Identifier as a complex object > issued > anyOf > Null allowed when not required`
-
-**Title:** Null allowed when not required
+#### <a name="identifier--anyOf_i1_issued_anyOf_i0"></a>`Identifier > anyOf > Identifier as a complex object > issued > anyOf > Null allowed when not required`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-#### <a name="identifier--anyOf_i1_issued_anyOf_i1"></a>Property `Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string`
-
-**Title:** Date string
+#### <a name="identifier--anyOf_i1_issued_anyOf_i1"></a>`Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string`
 
 | **Type**                  | More than one type |
 | ------------------------- | ------------------ |
 | **Additional properties** | Any type allowed   |
 
-| Any of(Option)                               |
+| Any of                                       |
 | -------------------------------------------- |
 | [item 0](#identifier--anyOf_i1_issued_anyOf_i1_anyOf_i0) |
 | [item 1](#identifier--anyOf_i1_issued_anyOf_i1_anyOf_i1) |
 | [item 2](#identifier--anyOf_i1_issued_anyOf_i1_anyOf_i2) |
 | [item 3](#identifier--anyOf_i1_issued_anyOf_i1_anyOf_i3) |
 
-##### <a name="identifier--anyOf_i1_issued_anyOf_i1_anyOf_i0"></a>Property `Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string > anyOf > item 0`
+##### <a name="identifier--anyOf_i1_issued_anyOf_i1_anyOf_i0"></a>`Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-##### <a name="identifier--anyOf_i1_issued_anyOf_i1_anyOf_i1"></a>Property `Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string > anyOf > item 1`
+##### <a name="identifier--anyOf_i1_issued_anyOf_i1_anyOf_i1"></a>`Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-##### <a name="identifier--anyOf_i1_issued_anyOf_i1_anyOf_i2"></a>Property `Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string > anyOf > item 2`
+##### <a name="identifier--anyOf_i1_issued_anyOf_i1_anyOf_i2"></a>`Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -175,7 +155,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-##### <a name="identifier--anyOf_i1_issued_anyOf_i1_anyOf_i3"></a>Property `Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string > anyOf > item 3`
+##### <a name="identifier--anyOf_i1_issued_anyOf_i1_anyOf_i3"></a>`Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -186,9 +166,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-### <a name="identifier--anyOf_i1_version"></a>Property `Identifier > anyOf > Identifier as a complex object > version`
-
-**Title:** version
+### <a name="identifier--anyOf_i1_version"></a>`Identifier > anyOf > Identifier as a complex object > version`
 
 **Requirement:** Optional
 
@@ -197,9 +175,7 @@ version of the identifier scheme
 | **Type** | `null or string` |
 | -------- | ---------------- |
 
-### <a name="identifier--anyOf_i1_notation"></a>Property `Identifier > anyOf > Identifier as a complex object > notation`
-
-**Title:** notation
+### <a name="identifier--anyOf_i1_notation"></a>`Identifier > anyOf > Identifier as a complex object > notation`
 
 **Requirement:** Optional
 
@@ -212,9 +188,7 @@ abbreviation or code from code lists for an identifier
 
 <a name="relationship"></a>
 
-## Relationship
-
-**Title:** Relationship
+## Class Relationship
 
 Additional information about how one resource is related to another
 
@@ -232,14 +206,14 @@ Additional information about how one resource is related to another
 }
 ```
 
-| Property                 | Type   | Title/Description |
-| ------------------------ | ------ | ----------------- |
-| - [@id](#relationship--@id)           | string | -                 |
-| - [@type](#relationship--@type)       | string | -                 |
-| + [hadRole](#relationship--hadRole)   | string | role              |
-| + [relation](#relationship--relation) | string | relation          |
+| Property               | Type   | Requirement Level | Title/Description                                                                                                                  |
+| ---------------------- | ------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [@id](#relationship--@id)           | string | Optional          |                                                                                                                                    |
+| [@type](#relationship--@type)       | string | Optional          |                                                                                                                                    |
+| [hadRole](#relationship--hadRole)   | string | Mandatory         | The function of an entity or agent with respect to a dataset                                                                       |
+| [relation](#relationship--relation) | string | Mandatory         | The entity related to the dataset. This string should unambiguously identify the related resource using an appropriate identifier. |
 
-## <a name="relationship--@id"></a>[Optional] Property `Relationship > @id`
+## <a name="relationship--@id"></a>`Relationship > @id`
 
 **Requirement:** Optional
 
@@ -253,7 +227,7 @@ Additional information about how one resource is related to another
 "https://example.gov/relationships/dataset-001-data-provider"
 ```
 
-## <a name="relationship--@type"></a>[Optional] Property `Relationship > @type`
+## <a name="relationship--@type"></a>`Relationship > @type`
 
 **Requirement:** Optional
 
@@ -261,11 +235,11 @@ Additional information about how one resource is related to another
 | ----------- | ---------------- |
 | **Default** | `"Relationship"` |
 
-## <a name="relationship--hadRole"></a>[Optional] Property `Relationship > hadRole`
+## <a name="relationship--hadRole"></a>`Relationship > hadRole`
 
 **Title:** role
 
-**Requirement:** Optional
+**Requirement:** Mandatory
 
 The function of an entity or agent with respect to a dataset
 
@@ -283,11 +257,9 @@ The function of an entity or agent with respect to a dataset
 "dataProvider"
 ```
 
-## <a name="relationship--relation"></a>[Optional] Property `Relationship > relation`
+## <a name="relationship--relation"></a>`Relationship > relation`
 
-**Title:** relation
-
-**Requirement:** Optional
+**Requirement:** Mandatory
 
 The entity related to the dataset. This string should unambiguously identify the related resource using an appropriate identifier.
 
@@ -309,9 +281,7 @@ The entity related to the dataset. This string should unambiguously identify the
 
 <a name="checksum"></a>
 
-## Checksum
-
-**Title:** Checksum
+## Class Checksum
 
 A mechanism that can be used to verify that the contents of a distribution have not changed
 
@@ -329,14 +299,14 @@ A mechanism that can be used to verify that the contents of a distribution have 
 }
 ```
 
-| Property                           | Type   | Title/Description |
-| ---------------------------------- | ------ | ----------------- |
-| - [@id](#checksum--@id)                     | string | -                 |
-| - [@type](#checksum--@type)                 | string | -                 |
-| + [algorithm](#checksum--algorithm)         | string | algorithm         |
-| + [checksumValue](#checksum--checksumValue) | string | checksum value    |
+| Property                         | Type   | Requirement Level | Title/Description                                                                 |
+| -------------------------------- | ------ | ----------------- | --------------------------------------------------------------------------------- |
+| [@id](#checksum--@id)                     | string | Optional          |                                                                                   |
+| [@type](#checksum--@type)                 | string | Optional          |                                                                                   |
+| [algorithm](#checksum--algorithm)         | string | Mandatory         | The algorithm used to produce the checksum                                        |
+| [checksumValue](#checksum--checksumValue) | string | Mandatory         | A lower case hexadecimal encoded digest value produced using a specific algorithm |
 
-## <a name="checksum--@id"></a>[Optional] Property `Checksum > @id`
+## <a name="checksum--@id"></a>`Checksum > @id`
 
 **Requirement:** Optional
 
@@ -350,7 +320,7 @@ A mechanism that can be used to verify that the contents of a distribution have 
 "https://example.gov/checksums/dataset-001-sha256"
 ```
 
-## <a name="checksum--@type"></a>[Optional] Property `Checksum > @type`
+## <a name="checksum--@type"></a>`Checksum > @type`
 
 **Requirement:** Optional
 
@@ -358,11 +328,9 @@ A mechanism that can be used to verify that the contents of a distribution have 
 | ----------- | ------------ |
 | **Default** | `"Checksum"` |
 
-## <a name="checksum--algorithm"></a>[Optional] Property `Checksum > algorithm`
+## <a name="checksum--algorithm"></a>`Checksum > algorithm`
 
-**Title:** algorithm
-
-**Requirement:** Optional
+**Requirement:** Mandatory
 
 The algorithm used to produce the checksum
 
@@ -376,11 +344,9 @@ The algorithm used to produce the checksum
 "SHA-256"
 ```
 
-## <a name="checksum--checksumValue"></a>[Optional] Property `Checksum > checksumValue`
+## <a name="checksum--checksumValue"></a>`Checksum > checksumValue`
 
-**Title:** checksum value
-
-**Requirement:** Optional
+**Requirement:** Mandatory
 
 A lower case hexadecimal encoded digest value produced using a specific algorithm
 
@@ -402,9 +368,7 @@ A lower case hexadecimal encoded digest value produced using a specific algorith
 
 <a name="concept"></a>
 
-## Concept
-
-**Title:** Concept
+## Class Concept
 
 A controlled term or label, optionally drawn from a concept scheme
 
@@ -412,37 +376,35 @@ A controlled term or label, optionally drawn from a concept scheme
 | ------------------------- | ------------------ |
 | **Additional properties** | Any type allowed   |
 
-| Any of(Option)       |
+| Any of               |
 | -------------------- |
 | [Concept](#concept--anyOf_i0) |
 | [item 1](#concept--anyOf_i1)  |
 
-## <a name="concept--anyOf_i0"></a>Property `Concept > anyOf > Concept`
-
-**Title:** Concept
+## <a name="concept--anyOf_i0"></a>`Concept > anyOf > Concept`
 
 The value of the concept, expressed as a string. This is only used when the concept is not further described by the properties of the Concept object and is not linked to a concept scheme.
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="concept--anyOf_i1"></a>Property `Concept > anyOf > item 1`
+## <a name="concept--anyOf_i1"></a>`Concept > anyOf > item 1`
 
 | **Type**                  | `object`         |
 | ------------------------- | ---------------- |
 | **Additional properties** | Any type allowed |
 
-| Property                              | Type               | Title/Description |
-| ------------------------------------- | ------------------ | ----------------- |
-| - [@id](#concept--anyOf_i1_@id)               | string             | -                 |
-| - [@type](#concept--anyOf_i1_@type)           | string             | -                 |
-| - [altLabel](#concept--anyOf_i1_altLabel)     | null or string     | alternate label   |
-| - [definition](#concept--anyOf_i1_definition) | null or string     | definition        |
-| - [inScheme](#concept--anyOf_i1_inScheme)     | object             | in scheme         |
-| - [notation](#concept--anyOf_i1_notation)     | More than one type | notation          |
-| + [prefLabel](#concept--anyOf_i1_prefLabel)   | string             | preferred label   |
+| Property                            | Type               | Requirement Level | Title/Description                                              |
+| ----------------------------------- | ------------------ | ----------------- | -------------------------------------------------------------- |
+| [@id](#concept--anyOf_i1_@id)               | string             | Optional          |                                                                |
+| [@type](#concept--anyOf_i1_@type)           | string             | Optional          |                                                                |
+| [altLabel](#concept--anyOf_i1_altLabel)     | null or string     | Optional          | Alternative label for a concept                                |
+| [definition](#concept--anyOf_i1_definition) | null or string     | Optional          | Definition of the controlled vocabulary term                   |
+| [inScheme](#concept--anyOf_i1_inScheme)     | object             | Optional          | Concept scheme defining this concept                           |
+| [notation](#concept--anyOf_i1_notation)     | More than one type | Optional          | List of abbreviations or codes from code lists for the Concept |
+| [prefLabel](#concept--anyOf_i1_prefLabel)   | string             | Optional          | Preferred label for the term                                   |
 
-### <a name="concept--anyOf_i1_@id"></a>Property `Concept > anyOf > item 1 > @id`
+### <a name="concept--anyOf_i1_@id"></a>`Concept > anyOf > item 1 > @id`
 
 **Requirement:** Optional
 
@@ -450,7 +412,7 @@ The value of the concept, expressed as a string. This is only used when the conc
 | ---------- | -------- |
 | **Format** | `iri`    |
 
-### <a name="concept--anyOf_i1_@type"></a>Property `Concept > anyOf > item 1 > @type`
+### <a name="concept--anyOf_i1_@type"></a>`Concept > anyOf > item 1 > @type`
 
 **Requirement:** Optional
 
@@ -458,7 +420,7 @@ The value of the concept, expressed as a string. This is only used when the conc
 | ----------- | ----------- |
 | **Default** | `"Concept"` |
 
-### <a name="concept--anyOf_i1_altLabel"></a>Property `Concept > anyOf > item 1 > altLabel`
+### <a name="concept--anyOf_i1_altLabel"></a>`Concept > anyOf > item 1 > altLabel`
 
 **Title:** alternate label
 
@@ -469,9 +431,7 @@ Alternative label for a concept
 | **Type** | `null or string` |
 | -------- | ---------------- |
 
-### <a name="concept--anyOf_i1_definition"></a>Property `Concept > anyOf > item 1 > definition`
-
-**Title:** definition
+### <a name="concept--anyOf_i1_definition"></a>`Concept > anyOf > item 1 > definition`
 
 **Requirement:** Optional
 
@@ -480,9 +440,7 @@ Definition of the controlled vocabulary term
 | **Type** | `null or string` |
 | -------- | ---------------- |
 
-### <a name="concept--anyOf_i1_inScheme"></a>Property `Concept > anyOf > item 1 > inScheme`
-
-**Title:** in scheme
+### <a name="concept--anyOf_i1_inScheme"></a>`Concept > anyOf > item 1 > inScheme`
 
 **Requirement:** Optional
 
@@ -491,11 +449,9 @@ Concept scheme defining this concept
 | **Type**                  | `object`                                                           |
 | ------------------------- | ------------------------------------------------------------------ |
 | **Additional properties** | Any type allowed                                                   |
-| **Defined in**            | [ConceptScheme](./identifiers-and-relationships.md#concept-scheme) |
+| **Defined in**            | [ConceptScheme](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept-scheme) |
 
-### <a name="concept--anyOf_i1_notation"></a>Property `Concept > anyOf > item 1 > notation`
-
-**Title:** notation
+### <a name="concept--anyOf_i1_notation"></a>`Concept > anyOf > item 1 > notation`
 
 **Requirement:** Optional
 
@@ -505,17 +461,17 @@ List of abbreviations or codes from code lists for the Concept
 | ------------------------- | ------------------ |
 | **Additional properties** | Any type allowed   |
 
-| Any of(Option)                        |
+| Any of                                |
 | ------------------------------------- |
 | [item 0](#concept--anyOf_i1_notation_anyOf_i0) |
 | [item 1](#concept--anyOf_i1_notation_anyOf_i1) |
 
-#### <a name="concept--anyOf_i1_notation_anyOf_i0"></a>Property `Concept > anyOf > item 1 > notation > anyOf > item 0`
+#### <a name="concept--anyOf_i1_notation_anyOf_i0"></a>`Concept > anyOf > item 1 > notation > anyOf > item 0`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-#### <a name="concept--anyOf_i1_notation_anyOf_i1"></a>Property `Concept > anyOf > item 1 > notation > anyOf > item 1`
+#### <a name="concept--anyOf_i1_notation_anyOf_i1"></a>`Concept > anyOf > item 1 > notation > anyOf > item 1`
 
 | **Type** | `array of string` |
 | -------- | ----------------- |
@@ -524,12 +480,12 @@ List of abbreviations or codes from code lists for the Concept
 | ------------------------------------------------- | ----------- |
 | [item 1 items](#concept--anyOf_i1_notation_anyOf_i1_items) | -           |
 
-##### <a name="concept--anyOf_i1_notation_anyOf_i1_items"></a>Concept > anyOf > item 1 > notation > anyOf > item 1 > item 1 items
+##### <a name="concept--anyOf_i1_notation_anyOf_i1_items"></a>Array Item
 
 | **Type** | `string` |
 | -------- | -------- |
 
-### <a name="concept--anyOf_i1_prefLabel"></a>Property `Concept > anyOf > item 1 > prefLabel`
+### <a name="concept--anyOf_i1_prefLabel"></a>`Concept > anyOf > item 1 > prefLabel`
 
 **Title:** preferred label
 
@@ -545,9 +501,7 @@ Preferred label for the term
 
 <a name="concept-scheme"></a>
 
-## ConceptScheme
-
-**Title:** ConceptScheme
+## Class ConceptScheme
 
 A controlled vocabulary or other list of approved terms for a concept
 
@@ -566,18 +520,18 @@ A controlled vocabulary or other list of approved terms for a concept
 }
 ```
 
-| Property                       | Type               | Title/Description        |
-| ------------------------------ | ------------------ | ------------------------ |
-| - [@id](#concept-scheme--@id)                 | string             | -                        |
-| - [@type](#concept-scheme--@type)             | string             | -                        |
-| - [version](#concept-scheme--version)         | null or string     | version info             |
-| - [created](#concept-scheme--created)         | More than one type | creation date            |
-| - [description](#concept-scheme--description) | null or string     | description              |
-| - [issued](#concept-scheme--issued)           | More than one type | publication date         |
-| - [modified](#concept-scheme--modified)       | More than one type | update/modification date |
-| + [title](#concept-scheme--title)             | string             | title                    |
+| Property                     | Type               | Requirement Level | Title/Description                                                        |
+| ---------------------------- | ------------------ | ----------------- | ------------------------------------------------------------------------ |
+| [@id](#concept-scheme--@id)                 | string             | Optional          |                                                                          |
+| [@type](#concept-scheme--@type)             | string             | Optional          |                                                                          |
+| [version](#concept-scheme--version)         | null or string     | Optional          | A version number or other version designation of the concept scheme      |
+| [created](#concept-scheme--created)         | More than one type | Optional          | The date on which the Concept Scheme was first created                   |
+| [description](#concept-scheme--description) | null or string     | Recommended       | A description of the concept scheme                                      |
+| [issued](#concept-scheme--issued)           | More than one type | Optional          | The date of formal issuance (e.g., publication) of the concept scheme    |
+| [modified](#concept-scheme--modified)       | More than one type | Optional          | The most recent date at which the concept scheme was changed or modified |
+| [title](#concept-scheme--title)             | string             | Mandatory         | The title of the concept scheme                                          |
 
-## <a name="concept-scheme--@id"></a>[Optional] Property `ConceptScheme > @id`
+## <a name="concept-scheme--@id"></a>`ConceptScheme > @id`
 
 **Requirement:** Optional
 
@@ -591,7 +545,7 @@ A controlled vocabulary or other list of approved terms for a concept
 "https://example.gov/concept-schemes/data-classification"
 ```
 
-## <a name="concept-scheme--@type"></a>[Optional] Property `ConceptScheme > @type`
+## <a name="concept-scheme--@type"></a>`ConceptScheme > @type`
 
 **Requirement:** Optional
 
@@ -599,7 +553,7 @@ A controlled vocabulary or other list of approved terms for a concept
 | ----------- | ----------------- |
 | **Default** | `"ConceptScheme"` |
 
-## <a name="concept-scheme--version"></a>[Optional] Property `ConceptScheme > version`
+## <a name="concept-scheme--version"></a>`ConceptScheme > version`
 
 **Title:** version info
 
@@ -616,7 +570,7 @@ A version number or other version designation of the concept scheme
 "2.0.1"
 ```
 
-## <a name="concept-scheme--created"></a>[Optional] Property `ConceptScheme > created`
+## <a name="concept-scheme--created"></a>`ConceptScheme > created`
 
 **Title:** creation date
 
@@ -646,46 +600,42 @@ The date on which the Concept Scheme was first created
 "2024-01"
 ```
 
-| Any of(Option)                                      |
+| Any of                                              |
 | --------------------------------------------------- |
 | [Null allowed when not required](#concept-scheme--created_anyOf_i0) |
 | [Date string](#concept-scheme--created_anyOf_i1)                    |
 
-### <a name="concept-scheme--created_anyOf_i0"></a>Property `ConceptScheme > created > anyOf > Null allowed when not required`
-
-**Title:** Null allowed when not required
+### <a name="concept-scheme--created_anyOf_i0"></a>`ConceptScheme > created > anyOf > Null allowed when not required`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="concept-scheme--created_anyOf_i1"></a>Property `ConceptScheme > created > anyOf > Date string`
-
-**Title:** Date string
+### <a name="concept-scheme--created_anyOf_i1"></a>`ConceptScheme > created > anyOf > Date string`
 
 | **Type**                  | More than one type |
 | ------------------------- | ------------------ |
 | **Additional properties** | Any type allowed   |
 
-| Any of(Option)                       |
+| Any of                               |
 | ------------------------------------ |
 | [item 0](#concept-scheme--created_anyOf_i1_anyOf_i0) |
 | [item 1](#concept-scheme--created_anyOf_i1_anyOf_i1) |
 | [item 2](#concept-scheme--created_anyOf_i1_anyOf_i2) |
 | [item 3](#concept-scheme--created_anyOf_i1_anyOf_i3) |
 
-#### <a name="concept-scheme--created_anyOf_i1_anyOf_i0"></a>Property `ConceptScheme > created > anyOf > Date string > anyOf > item 0`
+#### <a name="concept-scheme--created_anyOf_i1_anyOf_i0"></a>`ConceptScheme > created > anyOf > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="concept-scheme--created_anyOf_i1_anyOf_i1"></a>Property `ConceptScheme > created > anyOf > Date string > anyOf > item 1`
+#### <a name="concept-scheme--created_anyOf_i1_anyOf_i1"></a>`ConceptScheme > created > anyOf > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="concept-scheme--created_anyOf_i1_anyOf_i2"></a>Property `ConceptScheme > created > anyOf > Date string > anyOf > item 2`
+#### <a name="concept-scheme--created_anyOf_i1_anyOf_i2"></a>`ConceptScheme > created > anyOf > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -696,7 +646,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="concept-scheme--created_anyOf_i1_anyOf_i3"></a>Property `ConceptScheme > created > anyOf > Date string > anyOf > item 3`
+#### <a name="concept-scheme--created_anyOf_i1_anyOf_i3"></a>`ConceptScheme > created > anyOf > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -707,11 +657,9 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="concept-scheme--description"></a>[Optional] Property `ConceptScheme > description`
+## <a name="concept-scheme--description"></a>`ConceptScheme > description`
 
-**Title:** description
-
-**Requirement:** Optional
+**Requirement:** Recommended
 
 A description of the concept scheme
 
@@ -728,7 +676,7 @@ A description of the concept scheme
 "A controlled vocabulary for classifying federal government data assets by sensitivity and access requirements."
 ```
 
-## <a name="concept-scheme--issued"></a>[Optional] Property `ConceptScheme > issued`
+## <a name="concept-scheme--issued"></a>`ConceptScheme > issued`
 
 **Title:** publication date
 
@@ -758,46 +706,42 @@ The date of formal issuance (e.g., publication) of the concept scheme
 "2024-01"
 ```
 
-| Any of(Option)                                     |
+| Any of                                             |
 | -------------------------------------------------- |
 | [Null allowed when not required](#concept-scheme--issued_anyOf_i0) |
 | [Date string](#concept-scheme--issued_anyOf_i1)                    |
 
-### <a name="concept-scheme--issued_anyOf_i0"></a>Property `ConceptScheme > issued > anyOf > Null allowed when not required`
-
-**Title:** Null allowed when not required
+### <a name="concept-scheme--issued_anyOf_i0"></a>`ConceptScheme > issued > anyOf > Null allowed when not required`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="concept-scheme--issued_anyOf_i1"></a>Property `ConceptScheme > issued > anyOf > Date string`
-
-**Title:** Date string
+### <a name="concept-scheme--issued_anyOf_i1"></a>`ConceptScheme > issued > anyOf > Date string`
 
 | **Type**                  | More than one type |
 | ------------------------- | ------------------ |
 | **Additional properties** | Any type allowed   |
 
-| Any of(Option)                      |
+| Any of                              |
 | ----------------------------------- |
 | [item 0](#concept-scheme--issued_anyOf_i1_anyOf_i0) |
 | [item 1](#concept-scheme--issued_anyOf_i1_anyOf_i1) |
 | [item 2](#concept-scheme--issued_anyOf_i1_anyOf_i2) |
 | [item 3](#concept-scheme--issued_anyOf_i1_anyOf_i3) |
 
-#### <a name="concept-scheme--issued_anyOf_i1_anyOf_i0"></a>Property `ConceptScheme > issued > anyOf > Date string > anyOf > item 0`
+#### <a name="concept-scheme--issued_anyOf_i1_anyOf_i0"></a>`ConceptScheme > issued > anyOf > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="concept-scheme--issued_anyOf_i1_anyOf_i1"></a>Property `ConceptScheme > issued > anyOf > Date string > anyOf > item 1`
+#### <a name="concept-scheme--issued_anyOf_i1_anyOf_i1"></a>`ConceptScheme > issued > anyOf > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="concept-scheme--issued_anyOf_i1_anyOf_i2"></a>Property `ConceptScheme > issued > anyOf > Date string > anyOf > item 2`
+#### <a name="concept-scheme--issued_anyOf_i1_anyOf_i2"></a>`ConceptScheme > issued > anyOf > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -808,7 +752,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="concept-scheme--issued_anyOf_i1_anyOf_i3"></a>Property `ConceptScheme > issued > anyOf > Date string > anyOf > item 3`
+#### <a name="concept-scheme--issued_anyOf_i1_anyOf_i3"></a>`ConceptScheme > issued > anyOf > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -819,7 +763,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="concept-scheme--modified"></a>[Optional] Property `ConceptScheme > modified`
+## <a name="concept-scheme--modified"></a>`ConceptScheme > modified`
 
 **Title:** update/modification date
 
@@ -849,46 +793,42 @@ The most recent date at which the concept scheme was changed or modified
 "2024-01"
 ```
 
-| Any of(Option)                                       |
+| Any of                                               |
 | ---------------------------------------------------- |
 | [Null allowed when not required](#concept-scheme--modified_anyOf_i0) |
 | [Date string](#concept-scheme--modified_anyOf_i1)                    |
 
-### <a name="concept-scheme--modified_anyOf_i0"></a>Property `ConceptScheme > modified > anyOf > Null allowed when not required`
-
-**Title:** Null allowed when not required
+### <a name="concept-scheme--modified_anyOf_i0"></a>`ConceptScheme > modified > anyOf > Null allowed when not required`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="concept-scheme--modified_anyOf_i1"></a>Property `ConceptScheme > modified > anyOf > Date string`
-
-**Title:** Date string
+### <a name="concept-scheme--modified_anyOf_i1"></a>`ConceptScheme > modified > anyOf > Date string`
 
 | **Type**                  | More than one type |
 | ------------------------- | ------------------ |
 | **Additional properties** | Any type allowed   |
 
-| Any of(Option)                        |
+| Any of                                |
 | ------------------------------------- |
 | [item 0](#concept-scheme--modified_anyOf_i1_anyOf_i0) |
 | [item 1](#concept-scheme--modified_anyOf_i1_anyOf_i1) |
 | [item 2](#concept-scheme--modified_anyOf_i1_anyOf_i2) |
 | [item 3](#concept-scheme--modified_anyOf_i1_anyOf_i3) |
 
-#### <a name="concept-scheme--modified_anyOf_i1_anyOf_i0"></a>Property `ConceptScheme > modified > anyOf > Date string > anyOf > item 0`
+#### <a name="concept-scheme--modified_anyOf_i1_anyOf_i0"></a>`ConceptScheme > modified > anyOf > Date string > anyOf > item 0`
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="concept-scheme--modified_anyOf_i1_anyOf_i1"></a>Property `ConceptScheme > modified > anyOf > Date string > anyOf > item 1`
+#### <a name="concept-scheme--modified_anyOf_i1_anyOf_i1"></a>`ConceptScheme > modified > anyOf > Date string > anyOf > item 1`
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="concept-scheme--modified_anyOf_i1_anyOf_i2"></a>Property `ConceptScheme > modified > anyOf > Date string > anyOf > item 2`
+#### <a name="concept-scheme--modified_anyOf_i1_anyOf_i2"></a>`ConceptScheme > modified > anyOf > Date string > anyOf > item 2`
 
 A year in YYYY format
 
@@ -899,7 +839,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="concept-scheme--modified_anyOf_i1_anyOf_i3"></a>Property `ConceptScheme > modified > anyOf > Date string > anyOf > item 3`
+#### <a name="concept-scheme--modified_anyOf_i1_anyOf_i3"></a>`ConceptScheme > modified > anyOf > Date string > anyOf > item 3`
 
 A year and month in YYYY-MM format
 
@@ -910,11 +850,9 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="concept-scheme--title"></a>[Optional] Property `ConceptScheme > title`
+## <a name="concept-scheme--title"></a>`ConceptScheme > title`
 
-**Title:** title
-
-**Requirement:** Optional
+**Requirement:** Mandatory
 
 The title of the concept scheme
 

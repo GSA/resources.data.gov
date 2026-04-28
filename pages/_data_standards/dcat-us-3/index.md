@@ -1,9 +1,9 @@
 ---
-title: DCAT-US 3.0 Schema Documentation
-layout: page
-permalink: /standards/catalog/dcat-us-3/
-primary_nav_section: Data Standards
-category_name: Data standards
+title: "DCAT-US 3.0 Schema Documentation"
+layout: "page"
+permalink: "/standards/catalog/dcat-us-3/"
+primary_nav_section: "Data Standards"
+category_name: "Data standards"
 ---
 # DCAT-US 3 Schema Documentation
 
@@ -11,15 +11,15 @@ DCAT-US 3 is documented here as a smaller set of review-friendly pages.
 
 ## Main classes
 
-- [Catalog](./catalog.md)
-- [Dataset](./dataset.md)
-- [Dataset Series](./dataset-series.md)
-- [Distribution](./distribution.md)
+- [Catalog](/standards/catalog/dcat-us-3/catalog/)
+- [Dataset](/standards/catalog/dcat-us-3/dataset/)
+- [Dataset Series](/standards/catalog/dcat-us-3/dataset-series/)
+- [Distribution](/standards/catalog/dcat-us-3/distribution/)
 
 ## Supporting classes
 
-- [Agents](./agents.md): [Agent](./agents.md#agent), [Organization](./agents.md#organization), [Kind](./agents.md#kind)
-- [Constraints and Restrictions](./constraints-and-restrictions.md): [AccessRestriction](./constraints-and-restrictions.md#access-restriction), [CUIRestriction](./constraints-and-restrictions.md#cui-restriction), [UseRestriction](./constraints-and-restrictions.md#use-restriction)
-- [Identifiers and Relationships](./identifiers-and-relationships.md): [Identifier](./identifiers-and-relationships.md#identifier), [Relationship](./identifiers-and-relationships.md#relationship), [Checksum](./identifiers-and-relationships.md#checksum), [Concept](./identifiers-and-relationships.md#concept), [ConceptScheme](./identifiers-and-relationships.md#concept-scheme)
-- [Temporal, Spatial, and Metrics](./temporal-spatial-metrics.md): [PeriodOfTime](./temporal-spatial-metrics.md#period-of-time), [Location](./temporal-spatial-metrics.md#location), [Metric](./temporal-spatial-metrics.md#metric), [QualityMeasurement](./temporal-spatial-metrics.md#quality-measurement), [Activity](./temporal-spatial-metrics.md#activity), [Address](./temporal-spatial-metrics.md#address)
-- [Quality and Governance](./quality-governance.md): [Standard](./quality-governance.md#standard), [Document](./quality-governance.md#document), [CatalogRecord](./quality-governance.md#catalog-record), [DataService](./quality-governance.md#data-service), [Attribution](./quality-governance.md#attribution)
+- [Agents](/standards/catalog/dcat-us-3/agents/): [Agent](/standards/catalog/dcat-us-3/agents/#agent), [Organization](/standards/catalog/dcat-us-3/agents/#organization), [Kind](/standards/catalog/dcat-us-3/agents/#kind)
+- [Constraints and Restrictions](/standards/catalog/dcat-us-3/constraints-and-restrictions/): [AccessRestriction](/standards/catalog/dcat-us-3/constraints-and-restrictions/#access-restriction), [CUIRestriction](/standards/catalog/dcat-us-3/constraints-and-restrictions/#cui-restriction), [UseRestriction](/standards/catalog/dcat-us-3/constraints-and-restrictions/#use-restriction)
+- [Identifiers and Relationships](/standards/catalog/dcat-us-3/identifiers-and-relationships/): [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier), [Relationship](/standards/catalog/dcat-us-3/identifiers-and-relationships/#relationship), [Checksum](/standards/catalog/dcat-us-3/identifiers-and-relationships/#checksum), [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept), [ConceptScheme](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept-scheme)
+- [Temporal, Spatial, and Metrics](/standards/catalog/dcat-us-3/temporal-spatial-metrics/): [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time), [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location), [Metric](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#metric), [QualityMeasurement](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#quality-measurement), [Activity](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#activity), [Address](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#address)
+- [Quality and Governance](/standards/catalog/dcat-us-3/quality-governance/): [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard), [Document](/standards/catalog/dcat-us-3/quality-governance/#document), [CatalogRecord](/standards/catalog/dcat-us-3/quality-governance/#catalog-record), [DataService](/standards/catalog/dcat-us-3/quality-governance/#data-service), [Attribution](/standards/catalog/dcat-us-3/quality-governance/#attribution)

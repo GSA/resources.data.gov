@@ -1,9 +1,9 @@
 ---
-title: DCAT-US 3.0: Constraints and Restrictions
-layout: page
-permalink: /standards/catalog/dcat-us-3/constraints-and-restrictions/
-primary_nav_section: Data Standards
-category_name: Data standards
+title: "DCAT-US 3.0: Constraints and Restrictions"
+layout: "page"
+permalink: "/standards/catalog/dcat-us-3/constraints-and-restrictions/"
+primary_nav_section: "Data Standards"
+category_name: "Data standards"
 ---
 # Constraints and Restrictions
 
@@ -11,9 +11,7 @@ Restriction classes describing access limits, controlled unclassified informatio
 
 <a name="access-restriction"></a>
 
-## AccessRestriction
-
-**Title:** AccessRestriction
+## Class AccessRestriction
 
 Rules or indicators that describe who can access a resource
 
@@ -32,15 +30,15 @@ Rules or indicators that describe who can access a resource
 }
 ```
 
-| Property                                       | Type               | Title/Description    |
-| ---------------------------------------------- | ------------------ | -------------------- |
-| - [@id](#access-restriction--@id)                                 | string             | -                    |
-| - [@type](#access-restriction--@type)                             | string             | -                    |
-| - [restrictionNote](#access-restriction--restrictionNote)         | null or string     | restriction note     |
-| + [restrictionStatus](#access-restriction--restrictionStatus)     | object             | restriction status   |
-| - [specificRestriction](#access-restriction--specificRestriction) | More than one type | specific restriction |
+| Property                                     | Type               | Requirement Level | Title/Description                                                                                                                                                                                                                                 |
+| -------------------------------------------- | ------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@id](#access-restriction--@id)                                 | string             | Optional          |                                                                                                                                                                                                                                                   |
+| [@type](#access-restriction--@type)                             | string             | Optional          |                                                                                                                                                                                                                                                   |
+| [restrictionNote](#access-restriction--restrictionNote)         | null or string     | Optional          | A note related to the access restriction                                                                                                                                                                                                          |
+| [restrictionStatus](#access-restriction--restrictionStatus)     | object             | Mandatory         | The indication of whether or not there are access restrictions on the item, consider using a controlled vocabulary such as https://www.archives.gov/research/catalog/lcdrg/authority-lists/access-restriction-status                              |
+| [specificRestriction](#access-restriction--specificRestriction) | More than one type | Recommended       | Authority, code list entry, or policy reference that defines the specific access restriction; consider using a controlled vocabulary such as the NARA https://www.archives.gov/research/catalog/lcdrg/authority-lists/specific-access-restriction |
 
-## <a name="access-restriction--@id"></a>[Optional] Property `AccessRestriction > @id`
+## <a name="access-restriction--@id"></a>`AccessRestriction > @id`
 
 **Requirement:** Optional
 
@@ -48,7 +46,7 @@ Rules or indicators that describe who can access a resource
 | ---------- | -------- |
 | **Format** | `iri`    |
 
-## <a name="access-restriction--@type"></a>[Optional] Property `AccessRestriction > @type`
+## <a name="access-restriction--@type"></a>`AccessRestriction > @type`
 
 **Requirement:** Optional
 
@@ -56,9 +54,7 @@ Rules or indicators that describe who can access a resource
 | ----------- | --------------------- |
 | **Default** | `"AccessRestriction"` |
 
-## <a name="access-restriction--restrictionNote"></a>[Optional] Property `AccessRestriction > restrictionNote`
-
-**Title:** restriction note
+## <a name="access-restriction--restrictionNote"></a>`AccessRestriction > restrictionNote`
 
 **Requirement:** Optional
 
@@ -73,11 +69,9 @@ A note related to the access restriction
 "Access restricted to authorized personnel only."
 ```
 
-## <a name="access-restriction--restrictionStatus"></a>[Optional] Property `AccessRestriction > restrictionStatus`
+## <a name="access-restriction--restrictionStatus"></a>`AccessRestriction > restrictionStatus`
 
-**Title:** restriction status
-
-**Requirement:** Optional
+**Requirement:** Mandatory
 
 The indication of whether or not there are access restrictions on the item, consider using a controlled vocabulary such as https://www.archives.gov/research/catalog/lcdrg/authority-lists/access-restriction-status
 
@@ -85,7 +79,7 @@ The indication of whether or not there are access restrictions on the item, cons
 | ------------------------- | ----------------------------------------------------- |
 | **Required**              | Yes                                                   |
 | **Additional properties** | Any type allowed                                      |
-| **Defined in**            | [Concept](./identifiers-and-relationships.md#concept) |
+| **Defined in**            | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
 
 **Examples:**
 
@@ -97,11 +91,9 @@ The indication of whether or not there are access restrictions on the item, cons
 "Unrestricted"
 ```
 
-## <a name="access-restriction--specificRestriction"></a>[Optional] Property `AccessRestriction > specificRestriction`
+## <a name="access-restriction--specificRestriction"></a>`AccessRestriction > specificRestriction`
 
-**Title:** specific restriction
-
-**Requirement:** Optional
+**Requirement:** Recommended
 
 Authority, code list entry, or policy reference that defines the specific access restriction; consider using a controlled vocabulary such as the NARA https://www.archives.gov/research/catalog/lcdrg/authority-lists/specific-access-restriction
 
@@ -119,36 +111,30 @@ Authority, code list entry, or policy reference that defines the specific access
 "PRMPA - National Security Classified (B)"
 ```
 
-| Any of(Option)                                                  |
+| Any of                                                          |
 | --------------------------------------------------------------- |
 | [Null allowed when not required](#access-restriction--specificRestriction_anyOf_i0) |
 | [Concept](#access-restriction--specificRestriction_anyOf_i1)                        |
 
-### <a name="access-restriction--specificRestriction_anyOf_i0"></a>Property `AccessRestriction > specificRestriction > anyOf > Null allowed when not required`
-
-**Title:** Null allowed when not required
+### <a name="access-restriction--specificRestriction_anyOf_i0"></a>`AccessRestriction > specificRestriction > anyOf > Null allowed when not required`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="access-restriction--specificRestriction_anyOf_i1"></a>Property `AccessRestriction > specificRestriction > anyOf > Concept`
-
-**Title:** Concept
+### <a name="access-restriction--specificRestriction_anyOf_i1"></a>`AccessRestriction > specificRestriction > anyOf > Concept`
 
 inline description of the specific restriction
 
 | **Type**                  | More than one type                                    |
 | ------------------------- | ----------------------------------------------------- |
 | **Additional properties** | Any type allowed                                      |
-| **Same definition as**    | [Concept](./identifiers-and-relationships.md#concept) |
+| **Same definition as**    | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
 
 ---
 
 <a name="cui-restriction"></a>
 
-## CUIRestriction
-
-**Title:** CUIRestriction
+## Class CUIRestriction
 
 Information describing Controlled Unclassified Information (CUI) restrictions for a resource
 
@@ -166,15 +152,15 @@ Information describing Controlled Unclassified Information (CUI) restrictions fo
 }
 ```
 
-| Property                                                           | Type                    | Title/Description                |
-| ------------------------------------------------------------------ | ----------------------- | -------------------------------- |
-| - [@id](#cui-restriction--@id)                                                     | string                  | -                                |
-| - [@type](#cui-restriction--@type)                                                 | string                  | -                                |
-| + [cuiBannerMarking](#cui-restriction--cuiBannerMarking)                           | string                  | CUI banner marking               |
-| + [designationIndicator](#cui-restriction--designationIndicator)                   | string                  | CUI designation indicator        |
-| - [requiredIndicatorPerAuthority](#cui-restriction--requiredIndicatorPerAuthority) | null or array of string | required indicator per authority |
+| Property                                                         | Type                    | Requirement Level | Title/Description                                                                                                                                                                                                                      |
+| ---------------------------------------------------------------- | ----------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@id](#cui-restriction--@id)                                                     | string                  | Optional          |                                                                                                                                                                                                                                        |
+| [@type](#cui-restriction--@type)                                                 | string                  | Optional          |                                                                                                                                                                                                                                        |
+| [cuiBannerMarking](#cui-restriction--cuiBannerMarking)                           | string                  | Mandatory         | CUI (Controlled Unclassified Information) banner marking is required for any unclassified information that is deemed sensitive and requires protection; see information at https://www.archives.gov/cui/registry/category-marking-list |
+| [designationIndicator](#cui-restriction--designationIndicator)                   | string                  | Mandatory         | Agency that designated the information as CUI; include at least "Controlled by:" and, when possible, contact information                                                                                                               |
+| [requiredIndicatorPerAuthority](#cui-restriction--requiredIndicatorPerAuthority) | null or array of string | Optional          | List of free-text required indicators from the applicable authority (for example, category descriptions or distribution statements)                                                                                                    |
 
-## <a name="cui-restriction--@id"></a>[Optional] Property `CUIRestriction > @id`
+## <a name="cui-restriction--@id"></a>`CUIRestriction > @id`
 
 **Requirement:** Optional
 
@@ -188,7 +174,7 @@ Information describing Controlled Unclassified Information (CUI) restrictions fo
 "https://example.gov/cui-restrictions/dataset-001"
 ```
 
-## <a name="cui-restriction--@type"></a>[Optional] Property `CUIRestriction > @type`
+## <a name="cui-restriction--@type"></a>`CUIRestriction > @type`
 
 **Requirement:** Optional
 
@@ -196,11 +182,9 @@ Information describing Controlled Unclassified Information (CUI) restrictions fo
 | ----------- | ------------------ |
 | **Default** | `"CUIRestriction"` |
 
-## <a name="cui-restriction--cuiBannerMarking"></a>[Optional] Property `CUIRestriction > cuiBannerMarking`
+## <a name="cui-restriction--cuiBannerMarking"></a>`CUIRestriction > cuiBannerMarking`
 
-**Title:** CUI banner marking
-
-**Requirement:** Optional
+**Requirement:** Mandatory
 
 CUI (Controlled Unclassified Information) banner marking is required for any unclassified information that is deemed sensitive and requires protection; see information at https://www.archives.gov/cui/registry/category-marking-list
 
@@ -218,11 +202,11 @@ CUI (Controlled Unclassified Information) banner marking is required for any unc
 "CUI//SP-PRVCY//SP-LEGAL"
 ```
 
-## <a name="cui-restriction--designationIndicator"></a>[Optional] Property `CUIRestriction > designationIndicator`
+## <a name="cui-restriction--designationIndicator"></a>`CUIRestriction > designationIndicator`
 
 **Title:** CUI designation indicator
 
-**Requirement:** Optional
+**Requirement:** Mandatory
 
 Agency that designated the information as CUI; include at least "Controlled by:" and, when possible, contact information
 
@@ -240,9 +224,7 @@ Agency that designated the information as CUI; include at least "Controlled by:"
 "Controlled by: DOC; POC: Jane Smith, mailto:jane.smith@example.gov, XXX-XXX-XXXX"
 ```
 
-## <a name="cui-restriction--requiredIndicatorPerAuthority"></a>[Optional] Property `CUIRestriction > requiredIndicatorPerAuthority`
-
-**Title:** required indicator per authority
+## <a name="cui-restriction--requiredIndicatorPerAuthority"></a>`CUIRestriction > requiredIndicatorPerAuthority`
 
 **Requirement:** Optional
 
@@ -264,9 +246,7 @@ List of free-text required indicators from the applicable authority (for example
 | -------------------------------------------------------- | ----------- |
 | [Indicator string](#cui-restriction--requiredIndicatorPerAuthority_items) | -           |
 
-### <a name="cui-restriction--requiredIndicatorPerAuthority_items"></a>CUIRestriction > requiredIndicatorPerAuthority > Indicator string
-
-**Title:** Indicator string
+### <a name="cui-restriction--requiredIndicatorPerAuthority_items"></a>Indicator string
 
 | **Type** | `string` |
 | -------- | -------- |
@@ -275,9 +255,7 @@ List of free-text required indicators from the applicable authority (for example
 
 <a name="use-restriction"></a>
 
-## UseRestriction
-
-**Title:** UseRestriction
+## Class UseRestriction
 
 Rules or legal limits on how a resource may be used
 
@@ -296,15 +274,15 @@ Rules or legal limits on how a resource may be used
 }
 ```
 
-| Property                                       | Type               | Title/Description    |
-| ---------------------------------------------- | ------------------ | -------------------- |
-| - [@id](#use-restriction--@id)                                 | string             | -                    |
-| - [@type](#use-restriction--@type)                             | string             | -                    |
-| - [restrictionNote](#use-restriction--restrictionNote)         | null or string     | restriction note     |
-| + [restrictionStatus](#use-restriction--restrictionStatus)     | object             | restriction status   |
-| - [specificRestriction](#use-restriction--specificRestriction) | More than one type | specific restriction |
+| Property                                     | Type               | Requirement Level | Title/Description                                                                                                                                                                                                                           |
+| -------------------------------------------- | ------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@id](#use-restriction--@id)                                 | string             | Optional          |                                                                                                                                                                                                                                             |
+| [@type](#use-restriction--@type)                             | string             | Optional          |                                                                                                                                                                                                                                             |
+| [restrictionNote](#use-restriction--restrictionNote)         | null or string     | Optional          | Significant information pertaining to the use or reproduction of the data                                                                                                                                                                   |
+| [restrictionStatus](#use-restriction--restrictionStatus)     | object             | Mandatory         | Indication of whether or not there are use restrictions on the archival materials, consider using a controlled vocabulary such as https://www.archives.gov/research/catalog/lcdrg/authority-lists/use-restriction-status                    |
+| [specificRestriction](#use-restriction--specificRestriction) | More than one type | Recommended       | Authority, code list entry, or policy reference that defines the specific use restriction; consider using a controlled vocabulary such as the NARA https://www.archives.gov/research/catalog/lcdrg/authority-lists/specific-use-restriction |
 
-## <a name="use-restriction--@id"></a>[Optional] Property `UseRestriction > @id`
+## <a name="use-restriction--@id"></a>`UseRestriction > @id`
 
 **Requirement:** Optional
 
@@ -318,7 +296,7 @@ Rules or legal limits on how a resource may be used
 "https://example.gov/restrictions/use-restriction-001"
 ```
 
-## <a name="use-restriction--@type"></a>[Optional] Property `UseRestriction > @type`
+## <a name="use-restriction--@type"></a>`UseRestriction > @type`
 
 **Requirement:** Optional
 
@@ -326,9 +304,7 @@ Rules or legal limits on how a resource may be used
 | ----------- | ------------------ |
 | **Default** | `"UseRestriction"` |
 
-## <a name="use-restriction--restrictionNote"></a>[Optional] Property `UseRestriction > restrictionNote`
-
-**Title:** restriction note
+## <a name="use-restriction--restrictionNote"></a>`UseRestriction > restrictionNote`
 
 **Requirement:** Optional
 
@@ -347,11 +323,9 @@ Significant information pertaining to the use or reproduction of the data
 "This data may be used for research purposes. Commercial use requires written permission from the data steward."
 ```
 
-## <a name="use-restriction--restrictionStatus"></a>[Optional] Property `UseRestriction > restrictionStatus`
+## <a name="use-restriction--restrictionStatus"></a>`UseRestriction > restrictionStatus`
 
-**Title:** restriction status
-
-**Requirement:** Optional
+**Requirement:** Mandatory
 
 Indication of whether or not there are use restrictions on the archival materials, consider using a controlled vocabulary such as https://www.archives.gov/research/catalog/lcdrg/authority-lists/use-restriction-status
 
@@ -359,7 +333,7 @@ Indication of whether or not there are use restrictions on the archival material
 | ------------------------- | ----------------------------------------------------- |
 | **Required**              | Yes                                                   |
 | **Additional properties** | Any type allowed                                      |
-| **Defined in**            | [Concept](./identifiers-and-relationships.md#concept) |
+| **Defined in**            | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
 
 **Examples:**
 
@@ -371,11 +345,9 @@ Indication of whether or not there are use restrictions on the archival material
 "Unrestricted"
 ```
 
-## <a name="use-restriction--specificRestriction"></a>[Optional] Property `UseRestriction > specificRestriction`
+## <a name="use-restriction--specificRestriction"></a>`UseRestriction > specificRestriction`
 
-**Title:** specific restriction
-
-**Requirement:** Optional
+**Requirement:** Recommended
 
 Authority, code list entry, or policy reference that defines the specific use restriction; consider using a controlled vocabulary such as the NARA https://www.archives.gov/research/catalog/lcdrg/authority-lists/specific-use-restriction
 
@@ -393,25 +365,21 @@ Authority, code list entry, or policy reference that defines the specific use re
 "Trademark"
 ```
 
-| Any of(Option)                                                  |
+| Any of                                                          |
 | --------------------------------------------------------------- |
 | [Null allowed when not required](#use-restriction--specificRestriction_anyOf_i0) |
 | [Concept](#use-restriction--specificRestriction_anyOf_i1)                        |
 
-### <a name="use-restriction--specificRestriction_anyOf_i0"></a>Property `UseRestriction > specificRestriction > anyOf > Null allowed when not required`
-
-**Title:** Null allowed when not required
+### <a name="use-restriction--specificRestriction_anyOf_i0"></a>`UseRestriction > specificRestriction > anyOf > Null allowed when not required`
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="use-restriction--specificRestriction_anyOf_i1"></a>Property `UseRestriction > specificRestriction > anyOf > Concept`
-
-**Title:** Concept
+### <a name="use-restriction--specificRestriction_anyOf_i1"></a>`UseRestriction > specificRestriction > anyOf > Concept`
 
 inline description of the specific restriction
 
 | **Type**                  | More than one type                                    |
 | ------------------------- | ----------------------------------------------------- |
 | **Additional properties** | Any type allowed                                      |
-| **Same definition as**    | [Concept](./identifiers-and-relationships.md#concept) |
+| **Same definition as**    | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
