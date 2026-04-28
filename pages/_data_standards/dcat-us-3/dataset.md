@@ -104,66 +104,66 @@ A collection of data published or curated by one provider
 }
 ```
 
-| Property                                                 | Type                    | Requirement Level | Title/Description                                                                                                                                                                                                                                          |
-| -------------------------------------------------------- | ----------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [@id](#@id)                                             | string                  | Optional          |                                                                                                                                                                                                                                                            |
-| [@type](#@type)                                         | string                  | Optional          |                                                                                                                                                                                                                                                            |
-| [otherIdentifier](#otherIdentifier)                     | null or array           | Optional          | Additional identifiers for the dataset besides the main identifier, such as a DOI or other persistent ID                                                                                                                                                   |
-| [sample](#sample)                                       | null or array           | Optional          | List of sample distributions for the dataset                                                                                                                                                                                                               |
-| [status](#status)                                       | More than one type      | Optional          | Lifecycle status of the dataset, such as completed, deprecated, under development, or withdrawn                                                                                                                                                            |
-| [supportedSchema](#supportedSchema)                     | More than one type      | Optional          | supported schema for this dataset                                                                                                                                                                                                                          |
-| [versionNotes](#versionNotes)                           | null or string          | Optional          | Notes describing how this version differs from earlier versions of the dataset                                                                                                                                                                             |
-| [contactPoint](#contactPoint)                           | More than one type      | Mandatory         | A contact point for questions about the Dataset (single contact or list). Include an email address that is continuously monitored                                                                                                                          |
-| [distribution](#distribution)                           | null or array           | Recommended       | List of available distributions for the dataset. This can be omitted when no distribution is available yet.                                                                                                                                                |
-| [first](#first)                                         | More than one type      | Optional          | the first item of the sequence the dataset belongs to                                                                                                                                                                                                      |
-| [hasCurrentVersion](#hasCurrentVersion)                 | More than one type      | Optional          | reference to the current (latest) version of a dataset                                                                                                                                                                                                     |
-| [hasVersion](#hasVersion)                               | null or array           | Optional          | List of related Datasets that are a version, edition, or adaptation of the described Dataset                                                                                                                                                               |
-| [inSeries](#inSeries)                                   | null or array           | Optional          | Dataset series this dataset belongs to                                                                                                                                                                                                                     |
-| [keyword](#keyword)                                     | null or array of string | Recommended       | List of keywords or tags describing the dataset                                                                                                                                                                                                            |
-| [landingPage](#landingPage)                             | More than one type      | Recommended       | A web page from the original data provider that gives access to the Dataset, its Distributions, and related information                                                                                                                                    |
-| [previousVersion](#previousVersion)                     | More than one type      | Optional          | reference to the previous dataset version                                                                                                                                                                                                                  |
-| [qualifiedRelation](#qualifiedRelation)                 | null or array           | Optional          | Detailed relationship between the dataset and another resource, including the role of that relationship                                                                                                                                                    |
-| [spatialResolutionInMeters](#spatialResolutionInMeters) | null or string          | Optional          | Smallest spatial distance between data points, in meters, represented as a single value                                                                                                                                                                    |
-| [temporalResolution](#temporalResolution)               | null or string          | Optional          | Smallest time interval between data points, using xsd:duration format (for example, P1D)                                                                                                                                                                   |
-| [theme](#theme)                                         | null or array           | Recommended       | List of themes or categories for the dataset                                                                                                                                                                                                               |
-| [version](#version)                                     | null or string          | Optional          | The version indicator (name or identifier) of a resource                                                                                                                                                                                                   |
-| [describedBy](#describedBy)                             | More than one type      | Recommended       | A distribution describing the Data Dictionary for this dataset                                                                                                                                                                                             |
-| [liabilityStatement](#liabilityStatement)               | More than one type      | Optional          | A liability statement about the dataset that may clarify limitations of responsibility, qualifications on the accuracy, reliability, and completeness of the data, or absence of endorsement by the data publisher or provider, among other considerations |
-| [metadataDistribution](#metadataDistribution)           | null or array           | Optional          | Distribution of the original metadata document this dataset was derived from                                                                                                                                                                               |
-| [purpose](#purpose)                                     | null or string          | Optional          | The purpose of the dataset                                                                                                                                                                                                                                 |
-| [accessRights](#accessRights)                           | More than one type      | Optional          | Information about whether the dataset is publicly accessible, restricted, or not public                                                                                                                                                                    |
-| [accrualPeriodicity](#accrualPeriodicity)               | More than one type      | Optional          | The frequency at which the Dataset is updated                                                                                                                                                                                                              |
-| [conformsTo](#conformsTo)                               | null or array           | Optional          | List of standards, schemas, or profiles the dataset follows                                                                                                                                                                                                |
-| [contributor](#contributor)                             | null or array           | Optional          | List of agents contributing to the Dataset                                                                                                                                                                                                                 |
-| [created](#created)                                     | More than one type      | Optional          | The date on which the Dataset was first created                                                                                                                                                                                                            |
-| [creator](#creator)                                     | More than one type      | Optional          | Person or organization responsible for creating the dataset                                                                                                                                                                                                |
-| [description](#description)                             | string                  | Mandatory         | Plain-language summary of the dataset                                                                                                                                                                                                                      |
-| [hasPart](#hasPart)                                     | null or array           | Optional          | List of related datasets that are part of the described dataset                                                                                                                                                                                            |
-| [identifier](#identifier)                               | More than one type      | Mandatory         | The unique identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalog                                                                                                                                               |
-| [isReferencedBy](#isReferencedBy)                       | null or array of string | Optional          | List of links to related resources, such as publications, that reference, cite, or otherwise point to the Dataset                                                                                                                                          |
-| [issued](#issued)                                       | More than one type      | Optional          | Date when the dataset was first published. If the exact publication date is unknown, use the date it was first referenced in the catalog.                                                                                                                  |
-| [language](#language)                                   | More than one type      | Optional          | ISO 639-1 language code values used in the dataset text or metadata, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html                                                                                                |
-| [modified](#modified)                                   | More than one type      | Recommended       | Most recent date when the dataset's actual data changed, not just metadata                                                                                                                                                                                 |
-| [provenance](#provenance)                               | null or array of string | Optional          | List of statements about the lineage of a Dataset, including any changes in its ownership or custody since its creation that may be significant for its authenticity, integrity, or interpretation                                                         |
-| [publisher](#publisher)                                 | object                  | Mandatory         | Organization responsible for publishing and making the dataset available                                                                                                                                                                                   |
-| [relation](#relation)                                   | null or array of string | Optional          | List of links to related resources when the relationship is not otherwise specified                                                                                                                                                                        |
-| [replaces](#replaces)                                   | null or array           | Optional          | List of Datasets replaced by this Dataset                                                                                                                                                                                                                  |
-| [rights](#rights)                                       | null or array of string | Recommended       | Rights statements not already covered by license or accessRights, such as copyright or policy restrictions                                                                                                                                                 |
-| [rightsHolder](#rightsHolder)                           | null or array           | Optional          | List of agents (organizations) holding rights on the Dataset                                                                                                                                                                                               |
-| [source](#source)                                       | null or array           | Optional          | List of related Datasets from which the described Dataset is derived                                                                                                                                                                                       |
-| [spatial](#spatial)                                     | More than one type      | Recommended       | A geographic region or regions that are covered by the Dataset                                                                                                                                                                                             |
-| [subject](#subject)                                     | null or array           | Optional          | List of primary subjects for the dataset, usually narrower than broad theme categories                                                                                                                                                                     |
-| [temporal](#temporal)                                   | null or array           | Recommended       | Time periods covered by the dataset                                                                                                                                                                                                                        |
-| [title](#title)                                         | string                  | Mandatory         | Human-readable title of the dataset                                                                                                                                                                                                                        |
-| [category](#category)                                   | null or array           | Optional          | List of high-level categories for the dataset                                                                                                                                                                                                              |
-| [hasQualityMeasurement](#hasQualityMeasurement)         | null or array           | Optional          | List of quality measurements for the dataset (for example, completeness, accuracy, or timeliness) beyond spatial or temporal resolution                                                                                                                    |
-| [page](#page)                                           | null or array           | Optional          | List of pages or documents about this dataset                                                                                                                                                                                                              |
-| [qualifiedAttribution](#qualifiedAttribution)           | null or array           | Optional          | List of agents with specific responsibilities for the dataset                                                                                                                                                                                              |
-| [wasAttributedTo](#wasAttributedTo)                     | null or array           | Optional          | List of agents attributed to this dataset                                                                                                                                                                                                                  |
-| [wasGeneratedBy](#wasGeneratedBy)                       | null or array           | Optional          | List of activities that generated, or provide the business context for the creation of the dataset                                                                                                                                                         |
-| [wasUsedBy](#wasUsedBy)                                 | null or array           | Optional          | List of activities that used the Dataset                                                                                                                                                                                                                   |
-| [image](#image)                                         | More than one type      | Optional          | Thumbnail image illustrating the dataset, especially useful for visual data such as maps, photos, or video                                                                                                                                                 |
-| [scopeNote](#scopeNote)                                 | null or string          | Optional          | usage note for the dataset                                                                                                                                                                                                                                 |
+| Property                                                 | Type                                                                                             | Requirement Level | Title/Description                                                                                                                                                                                                                                          |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@id](#@id)                                             | string                                                                                           | Optional          |                                                                                                                                                                                                                                                            |
+| [@type](#@type)                                         | string                                                                                           | Optional          |                                                                                                                                                                                                                                                            |
+| [otherIdentifier](#otherIdentifier)                     | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes             | Optional          | Additional identifiers for the dataset besides the main identifier, such as a DOI or other persistent ID                                                                                                                                                   |
+| [sample](#sample)                                       | null or array of [Distribution](/standards/catalog/dcat-us-3/distribution/#root) classes                                  | Optional          | List of sample distributions for the dataset                                                                                                                                                                                                               |
+| [status](#status)                                       | More than one type                                                                               | Optional          | Lifecycle status of the dataset, such as completed, deprecated, under development, or withdrawn                                                                                                                                                            |
+| [supportedSchema](#supportedSchema)                     | More than one type                                                                               | Optional          | supported schema for this dataset                                                                                                                                                                                                                          |
+| [versionNotes](#versionNotes)                           | null or string                                                                                   | Optional          | Notes describing how this version differs from earlier versions of the dataset                                                                                                                                                                             |
+| [contactPoint](#contactPoint)                           | More than one type                                                                               | Mandatory         | A contact point for questions about the Dataset (single contact or list). Include an email address that is continuously monitored                                                                                                                          |
+| [distribution](#distribution)                           | null or array of [Distribution](/standards/catalog/dcat-us-3/distribution/#root) classes                                  | Recommended       | List of available distributions for the dataset. This can be omitted when no distribution is available yet.                                                                                                                                                |
+| [first](#first)                                         | More than one type                                                                               | Optional          | the first item of the sequence the dataset belongs to                                                                                                                                                                                                      |
+| [hasCurrentVersion](#hasCurrentVersion)                 | More than one type                                                                               | Optional          | reference to the current (latest) version of a dataset                                                                                                                                                                                                     |
+| [hasVersion](#hasVersion)                               | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                            | Optional          | List of related Datasets that are a version, edition, or adaptation of the described Dataset                                                                                                                                                               |
+| [inSeries](#inSeries)                                   | null or array of [DatasetSeries](/standards/catalog/dcat-us-3/dataset-series/#root) classes                               | Optional          | Dataset series this dataset belongs to                                                                                                                                                                                                                     |
+| [keyword](#keyword)                                     | null or array of string                                                                          | Recommended       | List of keywords or tags describing the dataset                                                                                                                                                                                                            |
+| [landingPage](#landingPage)                             | More than one type                                                                               | Recommended       | A web page from the original data provider that gives access to the Dataset, its Distributions, and related information                                                                                                                                    |
+| [previousVersion](#previousVersion)                     | More than one type                                                                               | Optional          | reference to the previous dataset version                                                                                                                                                                                                                  |
+| [qualifiedRelation](#qualifiedRelation)                 | null or array of [Relationship](/standards/catalog/dcat-us-3/identifiers-and-relationships/#relationship) classes         | Optional          | Detailed relationship between the dataset and another resource, including the role of that relationship                                                                                                                                                    |
+| [spatialResolutionInMeters](#spatialResolutionInMeters) | null or string                                                                                   | Optional          | Smallest spatial distance between data points, in meters, represented as a single value                                                                                                                                                                    |
+| [temporalResolution](#temporalResolution)               | null or string                                                                                   | Optional          | Smallest time interval between data points, using xsd:duration format (for example, P1D)                                                                                                                                                                   |
+| [theme](#theme)                                         | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes                   | Recommended       | List of themes or categories for the dataset                                                                                                                                                                                                               |
+| [version](#version)                                     | null or string                                                                                   | Optional          | The version indicator (name or identifier) of a resource                                                                                                                                                                                                   |
+| [describedBy](#describedBy)                             | More than one type                                                                               | Recommended       | A distribution describing the Data Dictionary for this dataset                                                                                                                                                                                             |
+| [liabilityStatement](#liabilityStatement)               | More than one type                                                                               | Optional          | A liability statement about the dataset that may clarify limitations of responsibility, qualifications on the accuracy, reliability, and completeness of the data, or absence of endorsement by the data publisher or provider, among other considerations |
+| [metadataDistribution](#metadataDistribution)           | null or array of [Distribution](/standards/catalog/dcat-us-3/distribution/#root) classes                                  | Optional          | Distribution of the original metadata document this dataset was derived from                                                                                                                                                                               |
+| [purpose](#purpose)                                     | null or string                                                                                   | Optional          | The purpose of the dataset                                                                                                                                                                                                                                 |
+| [accessRights](#accessRights)                           | More than one type                                                                               | Optional          | Information about whether the dataset is publicly accessible, restricted, or not public                                                                                                                                                                    |
+| [accrualPeriodicity](#accrualPeriodicity)               | More than one type                                                                               | Optional          | The frequency at which the Dataset is updated                                                                                                                                                                                                              |
+| [conformsTo](#conformsTo)                               | null or array of [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard) classes                            | Optional          | List of standards, schemas, or profiles the dataset follows                                                                                                                                                                                                |
+| [contributor](#contributor)                             | null or array of [Agent](/standards/catalog/dcat-us-3/agents/#agent) classes                                              | Optional          | List of agents contributing to the Dataset                                                                                                                                                                                                                 |
+| [created](#created)                                     | More than one type                                                                               | Optional          | The date on which the Dataset was first created                                                                                                                                                                                                            |
+| [creator](#creator)                                     | More than one type                                                                               | Optional          | Person or organization responsible for creating the dataset                                                                                                                                                                                                |
+| [description](#description)                             | string                                                                                           | Mandatory         | Plain-language summary of the dataset                                                                                                                                                                                                                      |
+| [hasPart](#hasPart)                                     | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                            | Optional          | List of related datasets that are part of the described dataset                                                                                                                                                                                            |
+| [identifier](#identifier)                               | More than one type                                                                               | Mandatory         | The unique identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalog                                                                                                                                               |
+| [isReferencedBy](#isReferencedBy)                       | null or array of string                                                                          | Optional          | List of links to related resources, such as publications, that reference, cite, or otherwise point to the Dataset                                                                                                                                          |
+| [issued](#issued)                                       | More than one type                                                                               | Optional          | Date when the dataset was first published. If the exact publication date is unknown, use the date it was first referenced in the catalog.                                                                                                                  |
+| [language](#language)                                   | More than one type                                                                               | Optional          | ISO 639-1 language code values used in the dataset text or metadata, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html                                                                                                |
+| [modified](#modified)                                   | More than one type                                                                               | Recommended       | Most recent date when the dataset's actual data changed, not just metadata                                                                                                                                                                                 |
+| [provenance](#provenance)                               | null or array of string                                                                          | Optional          | List of statements about the lineage of a Dataset, including any changes in its ownership or custody since its creation that may be significant for its authenticity, integrity, or interpretation                                                         |
+| [publisher](#publisher)                                 | object                                                                                           | Mandatory         | Organization responsible for publishing and making the dataset available                                                                                                                                                                                   |
+| [relation](#relation)                                   | null or array of string                                                                          | Optional          | List of links to related resources when the relationship is not otherwise specified                                                                                                                                                                        |
+| [replaces](#replaces)                                   | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                            | Optional          | List of Datasets replaced by this Dataset                                                                                                                                                                                                                  |
+| [rights](#rights)                                       | null or array of string                                                                          | Recommended       | Rights statements not already covered by license or accessRights, such as copyright or policy restrictions                                                                                                                                                 |
+| [rightsHolder](#rightsHolder)                           | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes                                | Optional          | List of agents (organizations) holding rights on the Dataset                                                                                                                                                                                               |
+| [source](#source)                                       | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                            | Optional          | List of related Datasets from which the described Dataset is derived                                                                                                                                                                                       |
+| [spatial](#spatial)                                     | More than one type                                                                               | Recommended       | A geographic region or regions that are covered by the Dataset                                                                                                                                                                                             |
+| [subject](#subject)                                     | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes                   | Optional          | List of primary subjects for the dataset, usually narrower than broad theme categories                                                                                                                                                                     |
+| [temporal](#temporal)                                   | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes            | Recommended       | Time periods covered by the dataset                                                                                                                                                                                                                        |
+| [title](#title)                                         | string                                                                                           | Mandatory         | Human-readable title of the dataset                                                                                                                                                                                                                        |
+| [category](#category)                                   | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes                   | Optional          | List of high-level categories for the dataset                                                                                                                                                                                                              |
+| [hasQualityMeasurement](#hasQualityMeasurement)         | null or array of [QualityMeasurement](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#quality-measurement) classes | Optional          | List of quality measurements for the dataset (for example, completeness, accuracy, or timeliness) beyond spatial or temporal resolution                                                                                                                    |
+| [page](#page)                                           | null or array of [Document](/standards/catalog/dcat-us-3/quality-governance/#document) classes                            | Optional          | List of pages or documents about this dataset                                                                                                                                                                                                              |
+| [qualifiedAttribution](#qualifiedAttribution)           | null or array of [Attribution](/standards/catalog/dcat-us-3/quality-governance/#attribution) classes                      | Optional          | List of agents with specific responsibilities for the dataset                                                                                                                                                                                              |
+| [wasAttributedTo](#wasAttributedTo)                     | null or array of [Agent](/standards/catalog/dcat-us-3/agents/#agent) classes                                              | Optional          | List of agents attributed to this dataset                                                                                                                                                                                                                  |
+| [wasGeneratedBy](#wasGeneratedBy)                       | null or array of [Activity](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#activity) classes                      | Optional          | List of activities that generated, or provide the business context for the creation of the dataset                                                                                                                                                         |
+| [wasUsedBy](#wasUsedBy)                                 | null or array of [Activity](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#activity) classes                      | Optional          | List of activities that used the Dataset                                                                                                                                                                                                                   |
+| [image](#image)                                         | More than one type                                                                               | Optional          | Thumbnail image illustrating the dataset, especially useful for visual data such as maps, photos, or video                                                                                                                                                 |
+| [scopeNote](#scopeNote)                                 | null or string                                                                                   | Optional          | usage note for the dataset                                                                                                                                                                                                                                 |
 
 ## <a name="@id"></a>`Dataset > @id`
 
@@ -193,8 +193,8 @@ A collection of data published or curated by one provider
 
 Additional identifiers for the dataset besides the main identifier, such as a DOI or other persistent ID
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes |
+| -------- | ------------------------------------------------------------------------------------ |
 
 | Each item of this array must be                             | Description                                                                   |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -206,8 +206,8 @@ Additional identifiers for the dataset besides the main identifier, such as a DO
 
 List of sample distributions for the dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Distribution](/standards/catalog/dcat-us-3/distribution/#root) classes |
+| -------- | --------------------------------------------------------------- |
 
 | Each item of this array must be        | Description                                                                   |
 | -------------------------------------- | ----------------------------------------------------------------------------- |
@@ -221,9 +221,9 @@ List of sample distributions for the dataset
 
 Lifecycle status of the dataset, such as completed, deprecated, under development, or withdrawn
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                             |
 | -------------------------------------------------- |
@@ -239,7 +239,7 @@ Lifecycle status of the dataset, such as completed, deprecated, under developmen
 
 inline description of Concept
 
-| **Type**                  | More than one type                                    |
+| **Type**                  | `combining`                                           |
 | ------------------------- | ----------------------------------------------------- |
 | **Additional properties** | Any type allowed                                      |
 | **Same definition as**    | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
@@ -250,9 +250,9 @@ inline description of Concept
 
 supported schema for this dataset
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                      |
 | ----------------------------------------------------------- |
@@ -297,10 +297,10 @@ Notes describing how this version differs from earlier versions of the dataset
 
 A contact point for questions about the Dataset (single contact or list). Include an email address that is continuously monitored
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Required**              | Yes                |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Required**              | Yes              |
+| **Additional properties** | Any type allowed |
 
 | Any of                                     |
 | ------------------------------------------ |
@@ -318,8 +318,8 @@ inline description of Kind
 
 ### <a name="contactPoint_anyOf_i1"></a>`Dataset > contactPoint > anyOf > List of contacts`
 
-| **Type** | `array` |
-| -------- | ------- |
+| **Type** | array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes |
+| -------- | ----------------------------------------- |
 
 | Each item of this array must be | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
@@ -333,8 +333,8 @@ inline description of Kind
 
 List of available distributions for the dataset. This can be omitted when no distribution is available yet.
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Distribution](/standards/catalog/dcat-us-3/distribution/#root) classes |
+| -------- | --------------------------------------------------------------- |
 
 | Each item of this array must be        | Description                                                                   |
 | -------------------------------------- | ----------------------------------------------------------------------------- |
@@ -346,9 +346,9 @@ List of available distributions for the dataset. This can be omitted when no dis
 
 the first item of the sequence the dataset belongs to
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                            |
 | ------------------------------------------------- |
@@ -380,9 +380,9 @@ inline description of Dataset
 
 reference to the current (latest) version of a dataset
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                        |
 | ------------------------------------------------------------- |
@@ -412,8 +412,8 @@ inline description of Dataset
 
 List of related Datasets that are a version, edition, or adaptation of the described Dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes |
+| -------- | ----------------------------------------------------- |
 
 | Each item of this array must be | Description                                               |
 | ------------------------------- | --------------------------------------------------------- |
@@ -425,8 +425,8 @@ List of related Datasets that are a version, edition, or adaptation of the descr
 
 Dataset series this dataset belongs to
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [DatasetSeries](/standards/catalog/dcat-us-3/dataset-series/#root) classes |
+| -------- | ------------------------------------------------------------------ |
 
 | Each item of this array must be           | Description                                               |
 | ----------------------------------------- | --------------------------------------------------------- |
@@ -440,8 +440,8 @@ Dataset series this dataset belongs to
 
 List of keywords or tags describing the dataset
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Examples:**
 
@@ -485,9 +485,9 @@ List of keywords or tags describing the dataset
 
 A web page from the original data provider that gives access to the Dataset, its Distributions, and related information
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                  |
 | ------------------------------------------------------- |
@@ -514,9 +514,9 @@ inline description of Document
 
 reference to the previous dataset version
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                      |
 | ----------------------------------------------------------- |
@@ -546,8 +546,8 @@ inline description of Dataset
 
 Detailed relationship between the dataset and another resource, including the role of that relationship
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Relationship](/standards/catalog/dcat-us-3/identifiers-and-relationships/#relationship) classes |
+| -------- | ---------------------------------------------------------------------------------------- |
 
 | Each item of this array must be                                 | Description                                                         |
 | --------------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -593,8 +593,8 @@ Smallest time interval between data points, using xsd:duration format (for examp
 
 List of themes or categories for the dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes |
+| -------- | ------------------------------------------------------------------------------ |
 
 | Each item of this array must be                       | Description                                                        |
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
@@ -623,9 +623,9 @@ The version indicator (name or identifier) of a resource
 
 A distribution describing the Data Dictionary for this dataset
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                  |
 | ------------------------------------------------------- |
@@ -655,9 +655,9 @@ inline description of Distribution
 
 A liability statement about the dataset that may clarify limitations of responsibility, qualifications on the accuracy, reliability, and completeness of the data, or absence of endorsement by the data publisher or provider, among other considerations
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -688,8 +688,8 @@ Full text of the liability statement
 
 Distribution of the original metadata document this dataset was derived from
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Distribution](/standards/catalog/dcat-us-3/distribution/#root) classes |
+| -------- | --------------------------------------------------------------- |
 
 | Each item of this array must be        | Description                                                                   |
 | -------------------------------------- | ----------------------------------------------------------------------------- |
@@ -716,9 +716,9 @@ The purpose of the dataset
 
 Information about whether the dataset is publicly accessible, restricted, or not public
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -755,9 +755,9 @@ Text description of the access rights
 
 The frequency at which the Dataset is updated
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -841,8 +841,8 @@ Must be one of:
 
 List of standards, schemas, or profiles the dataset follows
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard) classes |
+| -------- | --------------------------------------------------------------------- |
 
 | Each item of this array must be              | Description                                                   |
 | -------------------------------------------- | ------------------------------------------------------------- |
@@ -854,8 +854,8 @@ List of standards, schemas, or profiles the dataset follows
 
 List of agents contributing to the Dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Agent](/standards/catalog/dcat-us-3/agents/#agent) classes |
+| -------- | --------------------------------------------------- |
 
 | Each item of this array must be | Description                                                                      |
 | ------------------------------- | -------------------------------------------------------------------------------- |
@@ -869,9 +869,9 @@ List of agents contributing to the Dataset
 
 The date on which the Dataset was first created
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -903,9 +903,9 @@ The date on which the Dataset was first created
 
 ### <a name="created_anyOf_i1"></a>`Dataset > created > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                               |
 | ------------------------------------ |
@@ -954,9 +954,9 @@ A year and month in YYYY-MM format
 
 Person or organization responsible for creating the dataset
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                              |
 | --------------------------------------------------- |
@@ -1003,8 +1003,8 @@ Plain-language summary of the dataset
 
 List of related datasets that are part of the described dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes |
+| -------- | ----------------------------------------------------- |
 
 | Each item of this array must be | Description                                               |
 | ------------------------------- | --------------------------------------------------------- |
@@ -1016,10 +1016,10 @@ List of related datasets that are part of the described dataset
 
 The unique identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalog
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Required**              | Yes                |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Required**              | Yes              |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                 |
 | ------------------------------------------------------ |
@@ -1035,7 +1035,7 @@ The unique identifier for the Dataset, e.g. the URI or other unique identifier i
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                          |
+| **Type**                  | `combining`                                                 |
 | ------------------------- | ----------------------------------------------------------- |
 | **Additional properties** | Any type allowed                                            |
 | **Same definition as**    | [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) |
@@ -1046,8 +1046,8 @@ inline description of Identifier
 
 List of links to related resources, such as publications, that reference, cite, or otherwise point to the Dataset
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Example:**
 
@@ -1077,9 +1077,9 @@ reference iri of Resource
 
 Date when the dataset was first published. If the exact publication date is unknown, use the date it was first referenced in the catalog.
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -1111,9 +1111,9 @@ Date when the dataset was first published. If the exact publication date is unkn
 
 ### <a name="issued_anyOf_i1"></a>`Dataset > issued > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                              |
 | ----------------------------------- |
@@ -1162,9 +1162,9 @@ A year and month in YYYY-MM format
 
 ISO 639-1 language code values used in the dataset text or metadata, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -1196,8 +1196,8 @@ ISO 639-1 language code values used in the dataset text or metadata, such as en 
 
 ### <a name="language_anyOf_i2"></a>`Dataset > language > anyOf > List of languages`
 
-| **Type** | `array of string` |
-| -------- | ----------------- |
+| **Type** | array of string |
+| -------- | --------------- |
 
 | Each item of this array must be           | Description |
 | ----------------------------------------- | ----------- |
@@ -1220,9 +1220,9 @@ ISO 639-1 language code values used in the dataset text or metadata, such as en 
 
 Most recent date when the dataset's actual data changed, not just metadata
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -1254,9 +1254,9 @@ Most recent date when the dataset's actual data changed, not just metadata
 
 ### <a name="modified_anyOf_i1"></a>`Dataset > modified > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                |
 | ------------------------------------- |
@@ -1305,8 +1305,8 @@ A year and month in YYYY-MM format
 
 List of statements about the lineage of a Dataset, including any changes in its ownership or custody since its creation that may be significant for its authenticity, integrity, or interpretation
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Example:**
 
@@ -1348,8 +1348,8 @@ Organization responsible for publishing and making the dataset available
 
 List of links to related resources when the relationship is not otherwise specified
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Example:**
 
@@ -1377,8 +1377,8 @@ reference iri of Resource
 
 List of Datasets replaced by this Dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes |
+| -------- | ----------------------------------------------------- |
 
 | Each item of this array must be | Description                                               |
 | ------------------------------- | --------------------------------------------------------- |
@@ -1390,8 +1390,8 @@ List of Datasets replaced by this Dataset
 
 Rights statements not already covered by license or accessRights, such as copyright or policy restrictions
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Examples:**
 
@@ -1424,8 +1424,8 @@ Full text of a statement of rights
 
 List of agents (organizations) holding rights on the Dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes |
+| -------- | ----------------------------------------------------------------- |
 
 | Each item of this array must be          | Description                                                                       |
 | ---------------------------------------- | --------------------------------------------------------------------------------- |
@@ -1439,8 +1439,8 @@ List of agents (organizations) holding rights on the Dataset
 
 List of related Datasets from which the described Dataset is derived
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes |
+| -------- | ----------------------------------------------------- |
 
 | Each item of this array must be | Description                                               |
 | ------------------------------- | --------------------------------------------------------- |
@@ -1454,9 +1454,9 @@ List of related Datasets from which the described Dataset is derived
 
 A geographic region or regions that are covered by the Dataset
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                              |
 | --------------------------------------------------- |
@@ -1480,8 +1480,8 @@ inline description of Location
 
 ### <a name="spatial_anyOf_i2"></a>`Dataset > spatial > anyOf > List of geographic regions`
 
-| **Type** | `array` |
-| -------- | ------- |
+| **Type** | array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes |
+| -------- | ------------------------------------------------------------------- |
 
 | Each item of this array must be                    | Description                      |
 | -------------------------------------------------- | -------------------------------- |
@@ -1493,8 +1493,8 @@ inline description of Location
 
 List of primary subjects for the dataset, usually narrower than broad theme categories
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes |
+| -------- | ------------------------------------------------------------------------------ |
 
 | Each item of this array must be                       | Description                                                        |
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
@@ -1508,8 +1508,8 @@ List of primary subjects for the dataset, usually narrower than broad theme cate
 
 Time periods covered by the dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes |
+| -------- | ------------------------------------------------------------------------------------- |
 
 | Each item of this array must be                              | Description                                                            |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------- |
@@ -1541,8 +1541,8 @@ Human-readable title of the dataset
 
 List of high-level categories for the dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes |
+| -------- | ------------------------------------------------------------------------------ |
 
 | Each item of this array must be                       | Description                                                        |
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
@@ -1556,8 +1556,8 @@ List of high-level categories for the dataset
 
 List of quality measurements for the dataset (for example, completeness, accuracy, or timeliness) beyond spatial or temporal resolution
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [QualityMeasurement](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#quality-measurement) classes |
+| -------- | ------------------------------------------------------------------------------------------------ |
 
 | Each item of this array must be                                         | Description                                                   |
 | ----------------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -1571,8 +1571,8 @@ List of quality measurements for the dataset (for example, completeness, accurac
 
 List of pages or documents about this dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Document](/standards/catalog/dcat-us-3/quality-governance/#document) classes |
+| -------- | --------------------------------------------------------------------- |
 
 | Each item of this array must be              | Description                                           |
 | -------------------------------------------- | ----------------------------------------------------- |
@@ -1584,8 +1584,8 @@ List of pages or documents about this dataset
 
 List of agents with specific responsibilities for the dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Attribution](/standards/catalog/dcat-us-3/quality-governance/#attribution) classes |
+| -------- | --------------------------------------------------------------------------- |
 
 | Each item of this array must be                    | Description                                       |
 | -------------------------------------------------- | ------------------------------------------------- |
@@ -1599,8 +1599,8 @@ List of agents with specific responsibilities for the dataset
 
 List of agents attributed to this dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Agent](/standards/catalog/dcat-us-3/agents/#agent) classes |
+| -------- | --------------------------------------------------- |
 
 | Each item of this array must be | Description                                                                      |
 | ------------------------------- | -------------------------------------------------------------------------------- |
@@ -1612,8 +1612,8 @@ List of agents attributed to this dataset
 
 List of activities that generated, or provide the business context for the creation of the dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Activity](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#activity) classes |
+| -------- | --------------------------------------------------------------------------- |
 
 | Each item of this array must be                    | Description                                                    |
 | -------------------------------------------------- | -------------------------------------------------------------- |
@@ -1627,8 +1627,8 @@ List of activities that generated, or provide the business context for the creat
 
 List of activities that used the Dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Activity](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#activity) classes |
+| -------- | --------------------------------------------------------------------------- |
 
 | Each item of this array must be                    | Description                                                    |
 | -------------------------------------------------- | -------------------------------------------------------------- |
@@ -1640,9 +1640,9 @@ List of activities that used the Dataset
 
 Thumbnail image illustrating the dataset, especially useful for visual data such as maps, photos, or video
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                            |
 | ------------------------------------------------- |

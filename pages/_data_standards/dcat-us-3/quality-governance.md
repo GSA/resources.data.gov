@@ -40,19 +40,19 @@ A standard or specification that another resource conforms to
 }
 ```
 
-| Property                             | Type               | Requirement Level | Title/Description                                                                                                                          |
-| ------------------------------------ | ------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| [@id](#standard--@id)                         | string             | Optional          |                                                                                                                                            |
-| [@type](#standard--@type)                     | string             | Optional          |                                                                                                                                            |
-| [created](#standard--created)                 | More than one type | Optional          | The date on which the Standard has been first created                                                                                      |
-| [description](#standard--description)         | null or string     | Recommended       | Plain-language summary of the standard                                                                                                     |
-| [identifier](#standard--identifier)           | More than one type | Recommended       | The unique identifier for the Standard, e.g. the URI or other unique identifier in the context of the Catalog                              |
-| [otherIdentifier](#standard--otherIdentifier) | null or array      | Optional          | A list of identifiers for the Standard besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog |
-| [issued](#standard--issued)                   | More than one type | Recommended       | The date of formal issuance (e.g., publication) of the Standard                                                                            |
-| [modified](#standard--modified)               | More than one type | Optional          | The most recent date on which the Standard was changed or modified                                                                         |
-| [title](#standard--title)                     | null or string     | Recommended       | Human-readable title of the standard                                                                                                       |
-| [category](#standard--category)               | null or array      | Optional          | List of categories for the Standard                                                                                                        |
-| [inScheme](#standard--inScheme)               | More than one type | Recommended       | The reference register to which the Standard belongs                                                                                       |
+| Property                             | Type                                                                                 | Requirement Level | Title/Description                                                                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| [@id](#standard--@id)                         | string                                                                               | Optional          |                                                                                                                                            |
+| [@type](#standard--@type)                     | string                                                                               | Optional          |                                                                                                                                            |
+| [created](#standard--created)                 | More than one type                                                                   | Optional          | The date on which the Standard has been first created                                                                                      |
+| [description](#standard--description)         | null or string                                                                       | Recommended       | Plain-language summary of the standard                                                                                                     |
+| [identifier](#standard--identifier)           | More than one type                                                                   | Recommended       | The unique identifier for the Standard, e.g. the URI or other unique identifier in the context of the Catalog                              |
+| [otherIdentifier](#standard--otherIdentifier) | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes | Optional          | A list of identifiers for the Standard besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog |
+| [issued](#standard--issued)                   | More than one type                                                                   | Recommended       | The date of formal issuance (e.g., publication) of the Standard                                                                            |
+| [modified](#standard--modified)               | More than one type                                                                   | Optional          | The most recent date on which the Standard was changed or modified                                                                         |
+| [title](#standard--title)                     | null or string                                                                       | Recommended       | Human-readable title of the standard                                                                                                       |
+| [category](#standard--category)               | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes       | Optional          | List of categories for the Standard                                                                                                        |
+| [inScheme](#standard--inScheme)               | More than one type                                                                   | Recommended       | The reference register to which the Standard belongs                                                                                       |
 
 ## <a name="standard--@id"></a>`Standard > @id`
 
@@ -84,9 +84,9 @@ A standard or specification that another resource conforms to
 
 The date on which the Standard has been first created
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -118,9 +118,9 @@ The date on which the Standard has been first created
 
 ### <a name="standard--created_anyOf_i1"></a>`Standard > created > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                               |
 | ------------------------------------ |
@@ -188,9 +188,9 @@ Plain-language summary of the standard
 
 The unique identifier for the Standard, e.g. the URI or other unique identifier in the context of the Catalog
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                 |
 | ------------------------------------------------------ |
@@ -206,7 +206,7 @@ The unique identifier for the Standard, e.g. the URI or other unique identifier 
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                          |
+| **Type**                  | `combining`                                                 |
 | ------------------------- | ----------------------------------------------------------- |
 | **Additional properties** | Any type allowed                                            |
 | **Defined in**            | [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) |
@@ -217,8 +217,8 @@ inline description of Identifier
 
 A list of identifiers for the Standard besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes |
+| -------- | ------------------------------------------------------------------------------------ |
 
 | Each item of this array must be                             | Description                                                                   |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -230,9 +230,9 @@ A list of identifiers for the Standard besides the main identifier, e.g. the URI
 
 The date of formal issuance (e.g., publication) of the Standard
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -264,9 +264,9 @@ The date of formal issuance (e.g., publication) of the Standard
 
 ### <a name="standard--issued_anyOf_i1"></a>`Standard > issued > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                              |
 | ----------------------------------- |
@@ -317,9 +317,9 @@ A year and month in YYYY-MM format
 
 The most recent date on which the Standard was changed or modified
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -351,9 +351,9 @@ The most recent date on which the Standard was changed or modified
 
 ### <a name="standard--modified_anyOf_i1"></a>`Standard > modified > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                |
 | ------------------------------------- |
@@ -421,8 +421,8 @@ Human-readable title of the standard
 
 List of categories for the Standard
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes |
+| -------- | ------------------------------------------------------------------------------ |
 
 | Each item of this array must be                       | Description                                                        |
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
@@ -434,9 +434,9 @@ List of categories for the Standard
 
 The reference register to which the Standard belongs
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                               |
 | ---------------------------------------------------- |
@@ -490,25 +490,25 @@ A publication or other document related to a resource
 }
 ```
 
-| Property                                         | Type               | Requirement Level | Title/Description                                                                                                                                                  |
-| ------------------------------------------------ | ------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [@id](#document--@id)                                     | string             | Optional          |                                                                                                                                                                    |
-| [@type](#document--@type)                                 | string             | Optional          |                                                                                                                                                                    |
-| [accessURL](#document--accessURL)                         | More than one type | Optional          | A URL that gives access to the Document                                                                                                                            |
-| [downloadURL](#document--downloadURL)                     | More than one type | Optional          | A URL that is a direct link to a downloadable file of the Document in a given format                                                                               |
-| [creator](#document--creator)                             | null or array      | Optional          | The individual(s) responsible for creating the Document                                                                                                            |
-| [mediaType](#document--mediaType)                         | null or string     | Optional          | The file format of the Document as defined in the official register of media types managed by IANA: https://www.iana.org/assignments/media-types/media-types.xhtml |
-| [abstract](#document--abstract)                           | null or string     | Optional          | Text abstract of the Document                                                                                                                                      |
-| [bibliographicCitation](#document--bibliographicCitation) | null or string     | Recommended       | Bibliographic citation as text                                                                                                                                     |
-| [conformsTo](#document--conformsTo)                       | null or array      | Optional          | List of standards or specifications the document follows                                                                                                           |
-| [corporateCreator](#document--corporateCreator)           | null or array      | Optional          | The corporate organization(s) responsible for creating the Document                                                                                                |
-| [description](#document--description)                     | null or string     | Recommended       | Plain-language summary of the document                                                                                                                             |
-| [identifier](#document--identifier)                       | More than one type | Recommended       | The unique identifier for the Document (e.g. DOI, ISBN)                                                                                                            |
-| [otherIdentifier](#document--otherIdentifier)             | null or array      | Optional          | A list of identifiers for the Document besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog                         |
-| [issued](#document--issued)                               | More than one type | Recommended       | Publication date of the Document                                                                                                                                   |
-| [publisher](#document--publisher)                         | null or array      | Recommended       | The organization(s) that published the Document                                                                                                                    |
-| [title](#document--title)                                 | string             | Mandatory         | The title of the Document                                                                                                                                          |
-| [category](#document--category)                           | null or array      | Optional          | List of categories/genres for the Document                                                                                                                         |
+| Property                                         | Type                                                                                 | Requirement Level | Title/Description                                                                                                                                                  |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [@id](#document--@id)                                     | string                                                                               | Optional          |                                                                                                                                                                    |
+| [@type](#document--@type)                                 | string                                                                               | Optional          |                                                                                                                                                                    |
+| [accessURL](#document--accessURL)                         | More than one type                                                                   | Optional          | A URL that gives access to the Document                                                                                                                            |
+| [downloadURL](#document--downloadURL)                     | More than one type                                                                   | Optional          | A URL that is a direct link to a downloadable file of the Document in a given format                                                                               |
+| [creator](#document--creator)                             | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes                                    | Optional          | The individual(s) responsible for creating the Document                                                                                                            |
+| [mediaType](#document--mediaType)                         | null or string                                                                       | Optional          | The file format of the Document as defined in the official register of media types managed by IANA: https://www.iana.org/assignments/media-types/media-types.xhtml |
+| [abstract](#document--abstract)                           | null or string                                                                       | Optional          | Text abstract of the Document                                                                                                                                      |
+| [bibliographicCitation](#document--bibliographicCitation) | null or string                                                                       | Recommended       | Bibliographic citation as text                                                                                                                                     |
+| [conformsTo](#document--conformsTo)                       | null or array of [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard) classes                | Optional          | List of standards or specifications the document follows                                                                                                           |
+| [corporateCreator](#document--corporateCreator)           | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes                    | Optional          | The corporate organization(s) responsible for creating the Document                                                                                                |
+| [description](#document--description)                     | null or string                                                                       | Recommended       | Plain-language summary of the document                                                                                                                             |
+| [identifier](#document--identifier)                       | More than one type                                                                   | Recommended       | The unique identifier for the Document (e.g. DOI, ISBN)                                                                                                            |
+| [otherIdentifier](#document--otherIdentifier)             | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes | Optional          | A list of identifiers for the Document besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog                         |
+| [issued](#document--issued)                               | More than one type                                                                   | Recommended       | Publication date of the Document                                                                                                                                   |
+| [publisher](#document--publisher)                         | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes                    | Recommended       | The organization(s) that published the Document                                                                                                                    |
+| [title](#document--title)                                 | string                                                                               | Mandatory         | The title of the Document                                                                                                                                          |
+| [category](#document--category)                           | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes       | Optional          | List of categories/genres for the Document                                                                                                                         |
 
 ## <a name="document--@id"></a>`Document > @id`
 
@@ -538,9 +538,9 @@ A publication or other document related to a resource
 
 A URL that gives access to the Document
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -572,9 +572,9 @@ reference iri of Document
 
 A URL that is a direct link to a downloadable file of the Document in a given format
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -608,8 +608,8 @@ reference iri of Document
 
 The individual(s) responsible for creating the Document
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes |
+| -------- | ------------------------------------------------- |
 
 | Each item of this array must be | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
@@ -670,8 +670,8 @@ Bibliographic citation as text
 
 List of standards or specifications the document follows
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard) classes |
+| -------- | --------------------------------------------------------------------- |
 
 | Each item of this array must be              | Description                                                   |
 | -------------------------------------------- | ------------------------------------------------------------- |
@@ -685,8 +685,8 @@ List of standards or specifications the document follows
 
 The corporate organization(s) responsible for creating the Document
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes |
+| -------- | ----------------------------------------------------------------- |
 
 | Each item of this array must be          | Description                                                                       |
 | ---------------------------------------- | --------------------------------------------------------------------------------- |
@@ -717,9 +717,9 @@ Plain-language summary of the document
 
 The unique identifier for the Document (e.g. DOI, ISBN)
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                 |
 | ------------------------------------------------------ |
@@ -735,7 +735,7 @@ The unique identifier for the Document (e.g. DOI, ISBN)
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                          |
+| **Type**                  | `combining`                                                 |
 | ------------------------- | ----------------------------------------------------------- |
 | **Additional properties** | Any type allowed                                            |
 | **Same definition as**    | [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) |
@@ -746,8 +746,8 @@ inline description of Identifier
 
 A list of identifiers for the Document besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes |
+| -------- | ------------------------------------------------------------------------------------ |
 
 | Each item of this array must be                             | Description                                                                   |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -761,9 +761,9 @@ A list of identifiers for the Document besides the main identifier, e.g. the URI
 
 Publication date of the Document
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -795,9 +795,9 @@ Publication date of the Document
 
 ### <a name="document--issued_anyOf_i1"></a>`Document > issued > anyOf > item 1`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                              |
 | ----------------------------------- |
@@ -846,8 +846,8 @@ A year and month in YYYY-MM format
 
 The organization(s) that published the Document
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes |
+| -------- | ----------------------------------------------------------------- |
 
 | Each item of this array must be          | Description                                                                       |
 | ---------------------------------------- | --------------------------------------------------------------------------------- |
@@ -875,8 +875,8 @@ The title of the Document
 
 List of categories/genres for the Document
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes |
+| -------- | ------------------------------------------------------------------------------ |
 
 | Each item of this array must be                       | Description                                                        |
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
@@ -920,7 +920,7 @@ A record in a catalog, describing the registration of a single resource
 | [status](#catalog-record--status)             | More than one type      | Recommended       | The status of the catalog record in the context of editorial flow of the dataset and data service descriptions                                                                       |
 | [conformsTo](#catalog-record--conformsTo)     | More than one type      | Recommended       | An Application Profile that the Catalog Record's metadata conforms to                                                                                                                |
 | [description](#catalog-record--description)   | null or array of string | Optional          | A list of free-text accounts of the catalog record                                                                                                                                   |
-| [issued](#catalog-record--issued)             | null or array           | Optional          | List of dates on which the catalog record was included in the catalog                                                                                                                |
+| [issued](#catalog-record--issued)             | null or array of object | Optional          | List of dates on which the catalog record was included in the catalog                                                                                                                |
 | [language](#catalog-record--language)         | More than one type      | Optional          | Language code used in catalog record metadata text, using ISO 639-1 values such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html                    |
 | [modified](#catalog-record--modified)         | More than one type      | Mandatory         | The most recent date on which the catalog record was changed or modified                                                                                                             |
 | [source](#catalog-record--source)             | null or string          | Optional          | The original metadata that was used in creating metadata for the items in the catalog record, either a URL referencing the source metadata or a string of the source metadata itself |
@@ -957,9 +957,9 @@ A record in a catalog, describing the registration of a single resource
 
 The status of the catalog record in the context of editorial flow of the dataset and data service descriptions
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                             |
 | -------------------------------------------------- |
@@ -975,7 +975,7 @@ The status of the catalog record in the context of editorial flow of the dataset
 
 inline description of status
 
-| **Type**                  | More than one type                                    |
+| **Type**                  | `combining`                                           |
 | ------------------------- | ----------------------------------------------------- |
 | **Additional properties** | Any type allowed                                      |
 | **Defined in**            | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
@@ -988,9 +988,9 @@ inline description of status
 
 An Application Profile that the Catalog Record's metadata conforms to
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                 |
 | ------------------------------------------------------ |
@@ -1019,8 +1019,8 @@ inline description of application profile
 
 A list of free-text accounts of the catalog record
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Example:**
 
@@ -1048,8 +1048,8 @@ A list of free-text accounts of the catalog record
 
 List of dates on which the catalog record was included in the catalog
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of object |
+| -------- | ----------------------- |
 
 **Examples:**
 
@@ -1083,9 +1083,9 @@ List of dates on which the catalog record was included in the catalog
 
 ### <a name="catalog-record--issued_items"></a>Date string
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                           |
 | -------------------------------- |
@@ -1134,9 +1134,9 @@ A year and month in YYYY-MM format
 
 Language code used in catalog record metadata text, using ISO 639-1 values such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -1173,8 +1173,8 @@ Language code used in catalog record metadata text, using ISO 639-1 values such 
 
 ### <a name="catalog-record--language_anyOf_i2"></a>`CatalogRecord > language > anyOf > Array of language codes`
 
-| **Type** | `array of string` |
-| -------- | ----------------- |
+| **Type** | array of string |
+| -------- | --------------- |
 
 | Each item of this array must be           | Description |
 | ----------------------------------------- | ----------- |
@@ -1197,10 +1197,10 @@ Language code used in catalog record metadata text, using ISO 639-1 values such 
 
 The most recent date on which the catalog record was changed or modified
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Required**              | Yes                |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Required**              | Yes              |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -1377,38 +1377,38 @@ A service that provides access to data or data processing functions
 }
 ```
 
-| Property                                                 | Type                    | Requirement Level | Title/Description                                                                                                                                    |
-| -------------------------------------------------------- | ----------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [@id](#data-service--@id)                                             | string                  | Optional          |                                                                                                                                                      |
-| [@type](#data-service--@type)                                         | string                  | Optional          |                                                                                                                                                      |
-| [contactPoint](#data-service--contactPoint)                           | array                   | Mandatory         | Contact information for questions about the Data Service. Include an email address that is continuously monitored                                    |
-| [endpointDescription](#data-service--endpointDescription)             | null or array of string | Recommended       | List of endpoint descriptions with operations and parameters (for example, OpenAPI or similar service documentation)                                 |
-| [endpointURL](#data-service--endpointURL)                             | array of string         | Mandatory         | A list of root locations or primary endpoints of the service (a Web-resolvable IRI)                                                                  |
-| [keyword](#data-service--keyword)                                     | null or array of string | Optional          | List of keywords or tags describing the data service                                                                                                 |
-| [servesDataset](#data-service--servesDataset)                         | null or array           | Recommended       | List of datasets this service provides access to                                                                                                     |
-| [spatialResolutionInMeters](#data-service--spatialResolutionInMeters) | null or string          | Optional          | The minimum spatial separation resolvable in a Data Service, measured in meters                                                                      |
-| [temporalResolution](#data-service--temporalResolution)               | null or string          | Optional          | The minimum time period resolvable by the Data Service                                                                                               |
-| [theme](#data-service--theme)                                         | null or array           | Optional          | List of themes or categories for the data service                                                                                                    |
-| [accessRights](#data-service--accessRights)                           | More than one type      | Optional          | Information about whether the data service is publicly accessible, restricted, or not public                                                         |
-| [conformsTo](#data-service--conformsTo)                               | null or array           | Optional          | List of general standards or specifications that the Data Service endpoints implement                                                                |
-| [created](#data-service--created)                                     | More than one type      | Optional          | The date on which the Data Service was first created                                                                                                 |
-| [creator](#data-service--creator)                                     | null or array           | Optional          | List of agents primarily responsible for producing the Data Service                                                                                  |
-| [description](#data-service--description)                             | null or string          | Optional          | Plain-language summary of the data service                                                                                                           |
-| [identifier](#data-service--identifier)                               | More than one type      | Optional          | The unique identifier for the Data Service, e.g. the URI or other unique identifier in the context of the Catalog                                    |
-| [otherIdentifier](#data-service--otherIdentifier)                     | null or array           | Optional          | A list of identifiers for the Data Service besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog       |
-| [language](#data-service--language)                                   | More than one type      | Optional          | ISO 639-1 language code values supported by the data service, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html |
-| [license](#data-service--license)                                     | More than one type      | Recommended       | License that governs how the data service can be used or reused                                                                                      |
-| [modified](#data-service--modified)                                   | More than one type      | Optional          | The most recent date on which the Data Service was changed or modified                                                                               |
-| [publisher](#data-service--publisher)                                 | object                  | Mandatory         | Person or organization responsible for publishing and making the data service available                                                              |
-| [rights](#data-service--rights)                                       | null or array of string | Optional          | Rights statements not already covered by license or accessRights, such as copyright or policy restrictions                                           |
-| [rightsHolder](#data-service--rightsHolder)                           | null or array           | Optional          | A list of Agents (organizations) holding rights on the Data Service                                                                                  |
-| [spatial](#data-service--spatial)                                     | null or array           | Optional          | A geographic region that is covered by the Data Service                                                                                              |
-| [temporal](#data-service--temporal)                                   | null or array           | Optional          | Time periods covered by the data service                                                                                                             |
-| [title](#data-service--title)                                         | string                  | Mandatory         | Human-readable title of the data service                                                                                                             |
-| [category](#data-service--category)                                   | null or array           | Optional          | List of high-level categories for the data service                                                                                                   |
-| [hasQualityMeasurement](#data-service--hasQualityMeasurement)         | null or array           | Optional          | Quality measurements for the data service (for example, availability, response time, or reliability)                                                 |
-| [qualifiedAttribution](#data-service--qualifiedAttribution)           | null or array           | Optional          | List of agents with specific responsibilities for the data service                                                                                   |
-| [wasUsedBy](#data-service--wasUsedBy)                                 | null or array           | Optional          | List of activities that used or tested the data service                                                                                              |
+| Property                                                 | Type                                                                                             | Requirement Level | Title/Description                                                                                                                                    |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@id](#data-service--@id)                                             | string                                                                                           | Optional          |                                                                                                                                                      |
+| [@type](#data-service--@type)                                         | string                                                                                           | Optional          |                                                                                                                                                      |
+| [contactPoint](#data-service--contactPoint)                           | array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes                                                        | Mandatory         | Contact information for questions about the Data Service. Include an email address that is continuously monitored                                    |
+| [endpointDescription](#data-service--endpointDescription)             | null or array of string                                                                          | Recommended       | List of endpoint descriptions with operations and parameters (for example, OpenAPI or similar service documentation)                                 |
+| [endpointURL](#data-service--endpointURL)                             | array of string                                                                                  | Mandatory         | A list of root locations or primary endpoints of the service (a Web-resolvable IRI)                                                                  |
+| [keyword](#data-service--keyword)                                     | null or array of string                                                                          | Optional          | List of keywords or tags describing the data service                                                                                                 |
+| [servesDataset](#data-service--servesDataset)                         | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                            | Recommended       | List of datasets this service provides access to                                                                                                     |
+| [spatialResolutionInMeters](#data-service--spatialResolutionInMeters) | null or string                                                                                   | Optional          | The minimum spatial separation resolvable in a Data Service, measured in meters                                                                      |
+| [temporalResolution](#data-service--temporalResolution)               | null or string                                                                                   | Optional          | The minimum time period resolvable by the Data Service                                                                                               |
+| [theme](#data-service--theme)                                         | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes                   | Optional          | List of themes or categories for the data service                                                                                                    |
+| [accessRights](#data-service--accessRights)                           | More than one type                                                                               | Optional          | Information about whether the data service is publicly accessible, restricted, or not public                                                         |
+| [conformsTo](#data-service--conformsTo)                               | null or array of [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard) classes                            | Optional          | List of general standards or specifications that the Data Service endpoints implement                                                                |
+| [created](#data-service--created)                                     | More than one type                                                                               | Optional          | The date on which the Data Service was first created                                                                                                 |
+| [creator](#data-service--creator)                                     | null or array of [Agent](/standards/catalog/dcat-us-3/agents/#agent) classes                                              | Optional          | List of agents primarily responsible for producing the Data Service                                                                                  |
+| [description](#data-service--description)                             | null or string                                                                                   | Optional          | Plain-language summary of the data service                                                                                                           |
+| [identifier](#data-service--identifier)                               | More than one type                                                                               | Optional          | The unique identifier for the Data Service, e.g. the URI or other unique identifier in the context of the Catalog                                    |
+| [otherIdentifier](#data-service--otherIdentifier)                     | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes             | Optional          | A list of identifiers for the Data Service besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog       |
+| [language](#data-service--language)                                   | More than one type                                                                               | Optional          | ISO 639-1 language code values supported by the data service, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html |
+| [license](#data-service--license)                                     | More than one type                                                                               | Recommended       | License that governs how the data service can be used or reused                                                                                      |
+| [modified](#data-service--modified)                                   | More than one type                                                                               | Optional          | The most recent date on which the Data Service was changed or modified                                                                               |
+| [publisher](#data-service--publisher)                                 | object                                                                                           | Mandatory         | Person or organization responsible for publishing and making the data service available                                                              |
+| [rights](#data-service--rights)                                       | null or array of string                                                                          | Optional          | Rights statements not already covered by license or accessRights, such as copyright or policy restrictions                                           |
+| [rightsHolder](#data-service--rightsHolder)                           | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes                                | Optional          | A list of Agents (organizations) holding rights on the Data Service                                                                                  |
+| [spatial](#data-service--spatial)                                     | null or array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes                      | Optional          | A geographic region that is covered by the Data Service                                                                                              |
+| [temporal](#data-service--temporal)                                   | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes            | Optional          | Time periods covered by the data service                                                                                                             |
+| [title](#data-service--title)                                         | string                                                                                           | Mandatory         | Human-readable title of the data service                                                                                                             |
+| [category](#data-service--category)                                   | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes                   | Optional          | List of high-level categories for the data service                                                                                                   |
+| [hasQualityMeasurement](#data-service--hasQualityMeasurement)         | null or array of [QualityMeasurement](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#quality-measurement) classes | Optional          | Quality measurements for the data service (for example, availability, response time, or reliability)                                                 |
+| [qualifiedAttribution](#data-service--qualifiedAttribution)           | null or array of [Attribution](/standards/catalog/dcat-us-3/quality-governance/#attribution) classes                      | Optional          | List of agents with specific responsibilities for the data service                                                                                   |
+| [wasUsedBy](#data-service--wasUsedBy)                                 | null or array of [Activity](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#activity) classes                      | Optional          | List of activities that used or tested the data service                                                                                              |
 
 ## <a name="data-service--@id"></a>`DataService > @id`
 
@@ -1438,9 +1438,9 @@ A service that provides access to data or data processing functions
 
 Contact information for questions about the Data Service. Include an email address that is continuously monitored
 
-| **Type**     | `array` |
-| ------------ | ------- |
-| **Required** | Yes     |
+| **Type**     | array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes |
+| ------------ | ----------------------------------------- |
+| **Required** | Yes                                       |
 
 | Each item of this array must be | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
@@ -1452,8 +1452,8 @@ Contact information for questions about the Data Service. Include an email addre
 
 List of endpoint descriptions with operations and parameters (for example, OpenAPI or similar service documentation)
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Examples:**
 
@@ -1484,9 +1484,9 @@ List of endpoint descriptions with operations and parameters (for example, OpenA
 
 A list of root locations or primary endpoints of the service (a Web-resolvable IRI)
 
-| **Type**     | `array of string` |
-| ------------ | ----------------- |
-| **Required** | Yes               |
+| **Type**     | array of string |
+| ------------ | --------------- |
+| **Required** | Yes             |
 
 **Examples:**
 
@@ -1523,8 +1523,8 @@ The root location or primary endpoint of the service (a Web-resolvable IRI)
 
 List of keywords or tags describing the data service
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Examples:**
 
@@ -1565,8 +1565,8 @@ List of keywords or tags describing the data service
 
 List of datasets this service provides access to
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes |
+| -------- | ----------------------------------------------------- |
 
 | Each item of this array must be | Description                                               |
 | ------------------------------- | --------------------------------------------------------- |
@@ -1610,8 +1610,8 @@ The minimum time period resolvable by the Data Service
 
 List of themes or categories for the data service
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes |
+| -------- | ------------------------------------------------------------------------------ |
 
 | Each item of this array must be                       | Description                                                        |
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
@@ -1623,9 +1623,9 @@ List of themes or categories for the data service
 
 Information about whether the data service is publicly accessible, restricted, or not public
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -1656,8 +1656,8 @@ Text description of the access rights
 
 List of general standards or specifications that the Data Service endpoints implement
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard) classes |
+| -------- | --------------------------------------------------------------------- |
 
 | Each item of this array must be              | Description                                                   |
 | -------------------------------------------- | ------------------------------------------------------------- |
@@ -1671,9 +1671,9 @@ List of general standards or specifications that the Data Service endpoints impl
 
 The date on which the Data Service was first created
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -1705,9 +1705,9 @@ The date on which the Data Service was first created
 
 ### <a name="data-service--created_anyOf_i1"></a>`DataService > created > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                               |
 | ------------------------------------ |
@@ -1756,8 +1756,8 @@ A year and month in YYYY-MM format
 
 List of agents primarily responsible for producing the Data Service
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Agent](/standards/catalog/dcat-us-3/agents/#agent) classes |
+| -------- | --------------------------------------------------- |
 
 | Each item of this array must be | Description                                                                      |
 | ------------------------------- | -------------------------------------------------------------------------------- |
@@ -1784,9 +1784,9 @@ Plain-language summary of the data service
 
 The unique identifier for the Data Service, e.g. the URI or other unique identifier in the context of the Catalog
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                             |
 | ---------------------------------- |
@@ -1802,7 +1802,7 @@ The unique identifier for the Data Service, e.g. the URI or other unique identif
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                          |
+| **Type**                  | `combining`                                                 |
 | ------------------------- | ----------------------------------------------------------- |
 | **Additional properties** | Any type allowed                                            |
 | **Same definition as**    | [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) |
@@ -1813,8 +1813,8 @@ inline description of Identifier
 
 A list of identifiers for the Data Service besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes |
+| -------- | ------------------------------------------------------------------------------------ |
 
 | Each item of this array must be                             | Description                                                                   |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -1826,9 +1826,9 @@ A list of identifiers for the Data Service besides the main identifier, e.g. the
 
 ISO 639-1 language code values supported by the data service, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -1865,8 +1865,8 @@ ISO 639-1 language code values supported by the data service, such as en or es, 
 
 ### <a name="data-service--language_anyOf_i2"></a>`DataService > language > anyOf > List of lanuages`
 
-| **Type** | `array of string` |
-| -------- | ----------------- |
+| **Type** | array of string |
+| -------- | --------------- |
 
 | Each item of this array must be           | Description |
 | ----------------------------------------- | ----------- |
@@ -1887,9 +1887,9 @@ ISO 639-1 language code values supported by the data service, such as en or es, 
 
 License that governs how the data service can be used or reused
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -1922,9 +1922,9 @@ Full text of the license
 
 The most recent date on which the Data Service was changed or modified
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -1956,9 +1956,9 @@ The most recent date on which the Data Service was changed or modified
 
 ### <a name="data-service--modified_anyOf_i1"></a>`DataService > modified > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                |
 | ------------------------------------- |
@@ -2019,8 +2019,8 @@ Person or organization responsible for publishing and making the data service av
 
 Rights statements not already covered by license or accessRights, such as copyright or policy restrictions
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Example:**
 
@@ -2045,8 +2045,8 @@ Rights statements not already covered by license or accessRights, such as copyri
 
 A list of Agents (organizations) holding rights on the Data Service
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes |
+| -------- | ----------------------------------------------------------------- |
 
 | Each item of this array must be          | Description                                                                       |
 | ---------------------------------------- | --------------------------------------------------------------------------------- |
@@ -2060,8 +2060,8 @@ A list of Agents (organizations) holding rights on the Data Service
 
 A geographic region that is covered by the Data Service
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes |
+| -------- | --------------------------------------------------------------------------- |
 
 | Each item of this array must be                    | Description                      |
 | -------------------------------------------------- | -------------------------------- |
@@ -2075,8 +2075,8 @@ A geographic region that is covered by the Data Service
 
 Time periods covered by the data service
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes |
+| -------- | ------------------------------------------------------------------------------------- |
 
 | Each item of this array must be                              | Description                                                            |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------- |
@@ -2104,8 +2104,8 @@ Human-readable title of the data service
 
 List of high-level categories for the data service
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes |
+| -------- | ------------------------------------------------------------------------------ |
 
 | Each item of this array must be                       | Description                                                        |
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
@@ -2119,8 +2119,8 @@ List of high-level categories for the data service
 
 Quality measurements for the data service (for example, availability, response time, or reliability)
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [QualityMeasurement](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#quality-measurement) classes |
+| -------- | ------------------------------------------------------------------------------------------------ |
 
 | Each item of this array must be                                         | Description                                                   |
 | ----------------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -2132,8 +2132,8 @@ Quality measurements for the data service (for example, availability, response t
 
 List of agents with specific responsibilities for the data service
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Attribution](/standards/catalog/dcat-us-3/quality-governance/#attribution) classes |
+| -------- | --------------------------------------------------------------------------- |
 
 | Each item of this array must be                    | Description                                       |
 | -------------------------------------------------- | ------------------------------------------------- |
@@ -2145,8 +2145,8 @@ List of agents with specific responsibilities for the data service
 
 List of activities that used or tested the data service
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Activity](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#activity) classes |
+| -------- | --------------------------------------------------------------------------- |
 
 | Each item of this array must be                    | Description                                                    |
 | -------------------------------------------------- | -------------------------------------------------------------- |

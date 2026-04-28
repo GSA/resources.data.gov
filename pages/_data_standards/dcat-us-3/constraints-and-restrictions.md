@@ -75,7 +75,7 @@ A note related to the access restriction
 
 The indication of whether or not there are access restrictions on the item, consider using a controlled vocabulary such as https://www.archives.gov/research/catalog/lcdrg/authority-lists/access-restriction-status
 
-| **Type**                  | More than one type                                    |
+| **Type**                  | `combining`                                           |
 | ------------------------- | ----------------------------------------------------- |
 | **Required**              | Yes                                                   |
 | **Additional properties** | Any type allowed                                      |
@@ -97,9 +97,9 @@ The indication of whether or not there are access restrictions on the item, cons
 
 Authority, code list entry, or policy reference that defines the specific access restriction; consider using a controlled vocabulary such as the NARA https://www.archives.gov/research/catalog/lcdrg/authority-lists/specific-access-restriction
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -125,7 +125,7 @@ Authority, code list entry, or policy reference that defines the specific access
 
 inline description of the specific restriction
 
-| **Type**                  | More than one type                                    |
+| **Type**                  | `combining`                                           |
 | ------------------------- | ----------------------------------------------------- |
 | **Additional properties** | Any type allowed                                      |
 | **Same definition as**    | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
@@ -230,8 +230,8 @@ Agency that designated the information as CUI; include at least "Controlled by:"
 
 List of free-text required indicators from the applicable authority (for example, category descriptions or distribution statements)
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Example:**
 
@@ -329,7 +329,7 @@ Significant information pertaining to the use or reproduction of the data
 
 Indication of whether or not there are use restrictions on the archival materials, consider using a controlled vocabulary such as https://www.archives.gov/research/catalog/lcdrg/authority-lists/use-restriction-status
 
-| **Type**                  | More than one type                                    |
+| **Type**                  | `combining`                                           |
 | ------------------------- | ----------------------------------------------------- |
 | **Required**              | Yes                                                   |
 | **Additional properties** | Any type allowed                                      |
@@ -351,9 +351,9 @@ Indication of whether or not there are use restrictions on the archival material
 
 Authority, code list entry, or policy reference that defines the specific use restriction; consider using a controlled vocabulary such as the NARA https://www.archives.gov/research/catalog/lcdrg/authority-lists/specific-use-restriction
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -379,7 +379,7 @@ Authority, code list entry, or policy reference that defines the specific use re
 
 inline description of the specific restriction
 
-| **Type**                  | More than one type                                    |
+| **Type**                  | `combining`                                           |
 | ------------------------- | ----------------------------------------------------- |
 | **Additional properties** | Any type allowed                                      |
 | **Same definition as**    | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |

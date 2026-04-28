@@ -43,43 +43,43 @@ A specific representation of a dataset, such as a file, feed, or API response
 }
 ```
 
-| Property                                                 | Type                    | Requirement Level | Title/Description                                                                                                                                                             |
-| -------------------------------------------------------- | ----------------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [@id](#@id)                                             | string                  | Optional          |                                                                                                                                                                               |
-| [@type](#@type)                                         | string                  | Optional          |                                                                                                                                                                               |
-| [representationTechnique](#representationTechnique)     | More than one type      | Optional          | Method or schema used to structure the distribution content (for example, CSV convention, XML schema, or spatial representation type)                                         |
-| [status](#status)                                       | More than one type      | Optional          | The status of the distribution in the context of maturity lifecycle                                                                                                           |
-| [characterEncoding](#characterEncoding)                 | More than one type      | Optional          | List of character encodings used in the Distribution, using IANA character set names (for example, UTF-8)                                                                     |
-| [accessService](#accessService)                         | null or array           | Optional          | A data service that gives access to the distribution of the dataset                                                                                                           |
-| [accessURL](#accessURL)                                 | More than one type      | Recommended       | URL for indirect access to the Distribution (for example, a landing page, API docs, or request form), not a direct file download                                              |
-| [byteSize](#byteSize)                                   | null or string          | Optional          | The size of a Distribution in bytes                                                                                                                                           |
-| [compressFormat](#compressFormat)                       | null or string          | Optional          | The format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file                                                  |
-| [downloadURL](#downloadURL)                             | More than one type      | Optional          | Direct URL to a downloadable file for the Distribution; use accessURL for indirect access                                                                                     |
-| [mediaType](#mediaType)                                 | null or string          | Optional          | MIME type of the Distribution (for example, text/csv or application/json), from the IANA media types registry: https://www.iana.org/assignments/media-types/media-types.xhtml |
-| [packageFormat](#packageFormat)                         | null or string          | Optional          | The format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together                                  |
-| [spatialResolutionInMeters](#spatialResolutionInMeters) | null or string          | Optional          | The minimum spatial separation resolvable in a dataset distribution, measured in meters                                                                                       |
-| [temporalResolution](#temporalResolution)               | null or string          | Optional          | The minimum time period resolvable in the dataset distribution                                                                                                                |
-| [availability](#availability)                           | More than one type      | Optional          | An indication how long it is planned to keep the Distribution of the Dataset available                                                                                        |
-| [accessRestriction](#accessRestriction)                 | null or array           | Recommended       | List of access restrictions related to the distribution                                                                                                                       |
-| [cuiRestriction](#cuiRestriction)                       | More than one type      | Recommended       | Controlled Unclassified Information restriction related to the distribution                                                                                                   |
-| [describedBy](#describedBy)                             | More than one type      | Recommended       | A distribution containing the Data Dictionary for this distribution                                                                                                           |
-| [useRestriction](#useRestriction)                       | null or array           | Recommended       | Use restriction related to the distribution                                                                                                                                   |
-| [accessRights](#accessRights)                           | More than one type      | Optional          | Information about whether the distribution is publicly accessible, restricted, or not public                                                                                  |
-| [conformsTo](#conformsTo)                               | null or array           | Optional          | List of standards, schemas, or reference systems the Distribution follows (prefer stable URIs when available)                                                                 |
-| [description](#description)                             | null or string          | Recommended       | Plain-language summary of the distribution                                                                                                                                    |
-| [format](#format)                                       | null or string          | Recommended       | A human-readable description of the file format of the Distribution that provides useful information that might not be apparent from mediaType                                |
-| [identifier](#identifier)                               | More than one type      | Optional          | The unique identifier for the Distribution (e.g. DOI, ISBN)                                                                                                                   |
-| [otherIdentifier](#otherIdentifier)                     | null or array           | Optional          | A list of identifiers for the Distribution besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog                                |
-| [issued](#issued)                                       | More than one type      | Optional          | The date of formal issuance (e.g., publication) of the Distribution                                                                                                           |
-| [language](#language)                                   | More than one type      | Optional          | ISO 639-1 language code values used in the distribution metadata text, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html                 |
-| [license](#license)                                     | More than one type      | Recommended       | License that governs how the distribution can be used or reused                                                                                                               |
-| [modified](#modified)                                   | More than one type      | Recommended       | The most recent date on which the Distribution was changed or modified                                                                                                        |
-| [rights](#rights)                                       | null or array of string | Recommended       | Rights statements not already covered by license or accessRights, such as copyright or policy restrictions                                                                    |
-| [title](#title)                                         | null or string          | Recommended       | Human-readable title of the distribution                                                                                                                                      |
-| [hasQualityMeasurement](#hasQualityMeasurement)         | null or array           | Optional          | Quality measurements for the distribution (for example, completeness, accuracy, or timeliness)                                                                                |
-| [page](#page)                                           | null or array           | Optional          | A page or document about this Distribution                                                                                                                                    |
-| [image](#image)                                         | More than one type      | Optional          | A link to a thumbnail picture illustrating the content of the distribution                                                                                                    |
-| [checksum](#checksum)                                   | More than one type      | Optional          | Checksum used to verify that the downloadable file content has not changed                                                                                                    |
+| Property                                                 | Type                                                                                               | Requirement Level | Title/Description                                                                                                                                                             |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@id](#@id)                                             | string                                                                                             | Optional          |                                                                                                                                                                               |
+| [@type](#@type)                                         | string                                                                                             | Optional          |                                                                                                                                                                               |
+| [representationTechnique](#representationTechnique)     | More than one type                                                                                 | Optional          | Method or schema used to structure the distribution content (for example, CSV convention, XML schema, or spatial representation type)                                         |
+| [status](#status)                                       | More than one type                                                                                 | Optional          | The status of the distribution in the context of maturity lifecycle                                                                                                           |
+| [characterEncoding](#characterEncoding)                 | More than one type                                                                                 | Optional          | List of character encodings used in the Distribution, using IANA character set names (for example, UTF-8)                                                                     |
+| [accessService](#accessService)                         | null or array of [DataService](/standards/catalog/dcat-us-3/quality-governance/#data-service) classes                       | Optional          | A data service that gives access to the distribution of the dataset                                                                                                           |
+| [accessURL](#accessURL)                                 | More than one type                                                                                 | Recommended       | URL for indirect access to the Distribution (for example, a landing page, API docs, or request form), not a direct file download                                              |
+| [byteSize](#byteSize)                                   | null or string                                                                                     | Optional          | The size of a Distribution in bytes                                                                                                                                           |
+| [compressFormat](#compressFormat)                       | null or string                                                                                     | Optional          | The format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file                                                  |
+| [downloadURL](#downloadURL)                             | More than one type                                                                                 | Optional          | Direct URL to a downloadable file for the Distribution; use accessURL for indirect access                                                                                     |
+| [mediaType](#mediaType)                                 | null or string                                                                                     | Optional          | MIME type of the Distribution (for example, text/csv or application/json), from the IANA media types registry: https://www.iana.org/assignments/media-types/media-types.xhtml |
+| [packageFormat](#packageFormat)                         | null or string                                                                                     | Optional          | The format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together                                  |
+| [spatialResolutionInMeters](#spatialResolutionInMeters) | null or string                                                                                     | Optional          | The minimum spatial separation resolvable in a dataset distribution, measured in meters                                                                                       |
+| [temporalResolution](#temporalResolution)               | null or string                                                                                     | Optional          | The minimum time period resolvable in the dataset distribution                                                                                                                |
+| [availability](#availability)                           | More than one type                                                                                 | Optional          | An indication how long it is planned to keep the Distribution of the Dataset available                                                                                        |
+| [accessRestriction](#accessRestriction)                 | null or array of [AccessRestriction](/standards/catalog/dcat-us-3/constraints-and-restrictions/#access-restriction) classes | Recommended       | List of access restrictions related to the distribution                                                                                                                       |
+| [cuiRestriction](#cuiRestriction)                       | More than one type                                                                                 | Recommended       | Controlled Unclassified Information restriction related to the distribution                                                                                                   |
+| [describedBy](#describedBy)                             | More than one type                                                                                 | Recommended       | A distribution containing the Data Dictionary for this distribution                                                                                                           |
+| [useRestriction](#useRestriction)                       | null or array of [UseRestriction](/standards/catalog/dcat-us-3/constraints-and-restrictions/#use-restriction) classes       | Recommended       | Use restriction related to the distribution                                                                                                                                   |
+| [accessRights](#accessRights)                           | More than one type                                                                                 | Optional          | Information about whether the distribution is publicly accessible, restricted, or not public                                                                                  |
+| [conformsTo](#conformsTo)                               | null or array of [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard) classes                              | Optional          | List of standards, schemas, or reference systems the Distribution follows (prefer stable URIs when available)                                                                 |
+| [description](#description)                             | null or string                                                                                     | Recommended       | Plain-language summary of the distribution                                                                                                                                    |
+| [format](#format)                                       | null or string                                                                                     | Recommended       | A human-readable description of the file format of the Distribution that provides useful information that might not be apparent from mediaType                                |
+| [identifier](#identifier)                               | More than one type                                                                                 | Optional          | The unique identifier for the Distribution (e.g. DOI, ISBN)                                                                                                                   |
+| [otherIdentifier](#otherIdentifier)                     | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes               | Optional          | A list of identifiers for the Distribution besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog                                |
+| [issued](#issued)                                       | More than one type                                                                                 | Optional          | The date of formal issuance (e.g., publication) of the Distribution                                                                                                           |
+| [language](#language)                                   | More than one type                                                                                 | Optional          | ISO 639-1 language code values used in the distribution metadata text, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html                 |
+| [license](#license)                                     | More than one type                                                                                 | Recommended       | License that governs how the distribution can be used or reused                                                                                                               |
+| [modified](#modified)                                   | More than one type                                                                                 | Recommended       | The most recent date on which the Distribution was changed or modified                                                                                                        |
+| [rights](#rights)                                       | null or array of string                                                                            | Recommended       | Rights statements not already covered by license or accessRights, such as copyright or policy restrictions                                                                    |
+| [title](#title)                                         | null or string                                                                                     | Recommended       | Human-readable title of the distribution                                                                                                                                      |
+| [hasQualityMeasurement](#hasQualityMeasurement)         | null or array of [QualityMeasurement](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#quality-measurement) classes   | Optional          | Quality measurements for the distribution (for example, completeness, accuracy, or timeliness)                                                                                |
+| [page](#page)                                           | null or array of [Document](/standards/catalog/dcat-us-3/quality-governance/#document) classes                              | Optional          | A page or document about this Distribution                                                                                                                                    |
+| [image](#image)                                         | More than one type                                                                                 | Optional          | A link to a thumbnail picture illustrating the content of the distribution                                                                                                    |
+| [checksum](#checksum)                                   | More than one type                                                                                 | Optional          | Checksum used to verify that the downloadable file content has not changed                                                                                                    |
 
 ## <a name="@id"></a>`Distribution > @id`
 
@@ -109,9 +109,9 @@ A specific representation of a dataset, such as a file, feed, or API response
 
 Method or schema used to structure the distribution content (for example, CSV convention, XML schema, or spatial representation type)
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                              |
 | ------------------------------------------------------------------- |
@@ -127,7 +127,7 @@ Method or schema used to structure the distribution content (for example, CSV co
 
 inline description of Concept
 
-| **Type**                  | More than one type                                    |
+| **Type**                  | `combining`                                           |
 | ------------------------- | ----------------------------------------------------- |
 | **Additional properties** | Any type allowed                                      |
 | **Defined in**            | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
@@ -140,9 +140,9 @@ inline description of Concept
 
 The status of the distribution in the context of maturity lifecycle
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                             |
 | -------------------------------------------------- |
@@ -158,7 +158,7 @@ The status of the distribution in the context of maturity lifecycle
 
 inline description of Concept
 
-| **Type**                  | More than one type                                    |
+| **Type**                  | `combining`                                           |
 | ------------------------- | ----------------------------------------------------- |
 | **Additional properties** | Any type allowed                                      |
 | **Same definition as**    | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
@@ -169,9 +169,9 @@ inline description of Concept
 
 List of character encodings used in the Distribution, using IANA character set names (for example, UTF-8)
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -193,8 +193,8 @@ List of character encodings used in the Distribution, using IANA character set n
 
 ### <a name="characterEncoding_anyOf_i1"></a>`Distribution > characterEncoding > anyOf > List of encodings`
 
-| **Type** | `array of string` |
-| -------- | ----------------- |
+| **Type** | array of string |
+| -------- | --------------- |
 
 | Each item of this array must be                         | Description |
 | ------------------------------------------------------- | ----------- |
@@ -211,8 +211,8 @@ List of character encodings used in the Distribution, using IANA character set n
 
 A data service that gives access to the distribution of the dataset
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [DataService](/standards/catalog/dcat-us-3/quality-governance/#data-service) classes |
+| -------- | ---------------------------------------------------------------------------- |
 
 | Each item of this array must be                     | Description                                                         |
 | --------------------------------------------------- | ------------------------------------------------------------------- |
@@ -224,9 +224,9 @@ A data service that gives access to the distribution of the dataset
 
 URL for indirect access to the Distribution (for example, a landing page, API docs, or request form), not a direct file download
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -294,9 +294,9 @@ The format of the file in which the data is contained in a compressed form, e.g.
 
 Direct URL to a downloadable file for the Distribution; use accessURL for indirect access
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -394,9 +394,9 @@ The minimum time period resolvable in the dataset distribution
 
 An indication how long it is planned to keep the Distribution of the Dataset available
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                   |
 | -------------------------------------------------------- |
@@ -412,7 +412,7 @@ An indication how long it is planned to keep the Distribution of the Dataset ava
 
 inline description of Concept
 
-| **Type**                  | More than one type                                    |
+| **Type**                  | `combining`                                           |
 | ------------------------- | ----------------------------------------------------- |
 | **Additional properties** | Any type allowed                                      |
 | **Same definition as**    | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
@@ -423,8 +423,8 @@ inline description of Concept
 
 List of access restrictions related to the distribution
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [AccessRestriction](/standards/catalog/dcat-us-3/constraints-and-restrictions/#access-restriction) classes |
+| -------- | -------------------------------------------------------------------------------------------------- |
 
 | Each item of this array must be                                           | Description                                                 |
 | ------------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -436,9 +436,9 @@ List of access restrictions related to the distribution
 
 Controlled Unclassified Information restriction related to the distribution
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                     |
 | ---------------------------------------------------------- |
@@ -467,9 +467,9 @@ inline description of CUIRestriction
 
 A distribution containing the Data Dictionary for this distribution
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                  |
 | ------------------------------------------------------- |
@@ -499,8 +499,8 @@ inline description of the data dictionary
 
 Use restriction related to the distribution
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [UseRestriction](/standards/catalog/dcat-us-3/constraints-and-restrictions/#use-restriction) classes |
+| -------- | -------------------------------------------------------------------------------------------- |
 
 | Each item of this array must be                                     | Description                                         |
 | ------------------------------------------------------------------- | --------------------------------------------------- |
@@ -512,9 +512,9 @@ Use restriction related to the distribution
 
 Information about whether the distribution is publicly accessible, restricted, or not public
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -547,8 +547,8 @@ Text description of the access rights
 
 List of standards, schemas, or reference systems the Distribution follows (prefer stable URIs when available)
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard) classes |
+| -------- | --------------------------------------------------------------------- |
 
 | Each item of this array must be              | Description                                                   |
 | -------------------------------------------- | ------------------------------------------------------------- |
@@ -594,9 +594,9 @@ A human-readable description of the file format of the Distribution that provide
 
 The unique identifier for the Distribution (e.g. DOI, ISBN)
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                 |
 | ------------------------------------------------------ |
@@ -612,7 +612,7 @@ The unique identifier for the Distribution (e.g. DOI, ISBN)
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                          |
+| **Type**                  | `combining`                                                 |
 | ------------------------- | ----------------------------------------------------------- |
 | **Additional properties** | Any type allowed                                            |
 | **Same definition as**    | [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) |
@@ -623,8 +623,8 @@ inline description of Identifier
 
 A list of identifiers for the Distribution besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes |
+| -------- | ------------------------------------------------------------------------------------ |
 
 | Each item of this array must be                             | Description                                                                   |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -638,9 +638,9 @@ A list of identifiers for the Distribution besides the main identifier, e.g. the
 
 The date of formal issuance (e.g., publication) of the Distribution
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -672,9 +672,9 @@ The date of formal issuance (e.g., publication) of the Distribution
 
 ### <a name="issued_anyOf_i1"></a>`Distribution > issued > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                              |
 | ----------------------------------- |
@@ -723,9 +723,9 @@ A year and month in YYYY-MM format
 
 ISO 639-1 language code values used in the distribution metadata text, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -762,8 +762,8 @@ ISO 639-1 language code values used in the distribution metadata text, such as e
 
 ### <a name="language_anyOf_i2"></a>`Distribution > language > anyOf > List of languages`
 
-| **Type** | `array of string` |
-| -------- | ----------------- |
+| **Type** | array of string |
+| -------- | --------------- |
 
 | Each item of this array must be           | Description |
 | ----------------------------------------- | ----------- |
@@ -784,9 +784,9 @@ ISO 639-1 language code values used in the distribution metadata text, such as e
 
 License that governs how the distribution can be used or reused
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -819,9 +819,9 @@ Full text of the license
 
 The most recent date on which the Distribution was changed or modified
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -857,9 +857,9 @@ The most recent date on which the Distribution was changed or modified
 
 ### <a name="modified_anyOf_i1"></a>`Distribution > modified > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                |
 | ------------------------------------- |
@@ -908,8 +908,8 @@ A year and month in YYYY-MM format
 
 Rights statements not already covered by license or accessRights, such as copyright or policy restrictions
 
-| **Type** | `null or array of string` |
-| -------- | ------------------------- |
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Examples:**
 
@@ -959,8 +959,8 @@ Human-readable title of the distribution
 
 Quality measurements for the distribution (for example, completeness, accuracy, or timeliness)
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [QualityMeasurement](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#quality-measurement) classes |
+| -------- | ------------------------------------------------------------------------------------------------ |
 
 | Each item of this array must be                                         | Description                                                   |
 | ----------------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -974,8 +974,8 @@ Quality measurements for the distribution (for example, completeness, accuracy, 
 
 A page or document about this Distribution
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Document](/standards/catalog/dcat-us-3/quality-governance/#document) classes |
+| -------- | --------------------------------------------------------------------- |
 
 | Each item of this array must be              | Description                                           |
 | -------------------------------------------- | ----------------------------------------------------- |
@@ -987,9 +987,9 @@ A page or document about this Distribution
 
 A link to a thumbnail picture illustrating the content of the distribution
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                            |
 | ------------------------------------------------- |
@@ -1015,9 +1015,9 @@ The link to the image
 
 Checksum used to verify that the downloadable file content has not changed
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                               |
 | ---------------------------------------------------- |

@@ -15,9 +15,9 @@ Supporting classes for identifiers, relationships, checksums, and controlled con
 
 A unique identifier and optionally it's scheme and other relevant information
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                      |
 | ------------------------------------------- |
@@ -76,9 +76,9 @@ The name of the agency that issued the identifier
 
 the agency that manages the identifier scheme
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                       |
 | ------------------------------------------------------------ |
@@ -105,9 +105,9 @@ inline description of the creator
 
 The date of formal issuance (e.g., publication) of the Identifier
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                      |
 | ----------------------------------------------------------- |
@@ -121,9 +121,9 @@ The date of formal issuance (e.g., publication) of the Identifier
 
 #### <a name="identifier--anyOf_i1_issued_anyOf_i1"></a>`Identifier > anyOf > Identifier as a complex object > issued > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                       |
 | -------------------------------------------- |
@@ -372,9 +372,9 @@ A lower case hexadecimal encoded digest value produced using a specific algorith
 
 A controlled term or label, optionally drawn from a concept scheme
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of               |
 | -------------------- |
@@ -457,9 +457,9 @@ Concept scheme defining this concept
 
 List of abbreviations or codes from code lists for the Concept
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                |
 | ------------------------------------- |
@@ -473,8 +473,8 @@ List of abbreviations or codes from code lists for the Concept
 
 #### <a name="concept--anyOf_i1_notation_anyOf_i1"></a>`Concept > anyOf > item 1 > notation > anyOf > item 1`
 
-| **Type** | `array of string` |
-| -------- | ----------------- |
+| **Type** | array of string |
+| -------- | --------------- |
 
 | Each item of this array must be                   | Description |
 | ------------------------------------------------- | ----------- |
@@ -578,9 +578,9 @@ A version number or other version designation of the concept scheme
 
 The date on which the Concept Scheme was first created
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -612,9 +612,9 @@ The date on which the Concept Scheme was first created
 
 ### <a name="concept-scheme--created_anyOf_i1"></a>`ConceptScheme > created > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                               |
 | ------------------------------------ |
@@ -684,9 +684,9 @@ A description of the concept scheme
 
 The date of formal issuance (e.g., publication) of the concept scheme
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -718,9 +718,9 @@ The date of formal issuance (e.g., publication) of the concept scheme
 
 ### <a name="concept-scheme--issued_anyOf_i1"></a>`ConceptScheme > issued > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                              |
 | ----------------------------------- |
@@ -771,9 +771,9 @@ A year and month in YYYY-MM format
 
 The most recent date at which the concept scheme was changed or modified
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -805,9 +805,9 @@ The most recent date at which the concept scheme was changed or modified
 
 ### <a name="concept-scheme--modified_anyOf_i1"></a>`ConceptScheme > modified > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                |
 | ------------------------------------- |

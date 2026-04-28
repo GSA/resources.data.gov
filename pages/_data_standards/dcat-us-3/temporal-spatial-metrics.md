@@ -15,9 +15,9 @@ Supporting classes for time periods, locations, quality metrics, measurements, a
 
 Information about a specific time period with a start- and/or end-time
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -87,9 +87,9 @@ Information about a specific time period with a start- and/or end-time
 
 The end date of the period of time
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -121,9 +121,9 @@ The end date of the period of time
 
 ### <a name="period-of-time--endDate_anyOf_i1"></a>`PeriodOfTime > endDate > anyOf > item 1`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                               |
 | ------------------------------------ |
@@ -172,9 +172,9 @@ A year and month in YYYY-MM format
 
 The start date of the period of time
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -206,9 +206,9 @@ The start date of the period of time
 
 ### <a name="period-of-time--startDate_anyOf_i1"></a>`PeriodOfTime > startDate > anyOf > item 1`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                 |
 | -------------------------------------- |
@@ -373,18 +373,18 @@ A named place or geographic area
 }
 ```
 
-| Property                             | Type               | Requirement Level | Title/Description                                                                                                                                                |
-| ------------------------------------ | ------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [@id](#location--@id)                         | string             | Optional          |                                                                                                                                                                  |
-| [@type](#location--@type)                     | string             | Optional          |                                                                                                                                                                  |
-| [bbox](#location--bbox)                       | More than one type | Recommended       | Bounding box for the location, described in WKT, GeoJSON, or GML format                                                                                          |
-| [centroid](#location--centroid)               | More than one type | Optional          | The geographic center (centroid) of a location described in WKT, GeoJSON, or GML format                                                                          |
-| [identifier](#location--identifier)           | More than one type | Optional          | The unique geographic identifier for the Location, e.g., the URI or other unique identifier in the context of the relevant gazetteer                             |
-| [otherIdentifier](#location--otherIdentifier) | null or array      | Optional          | A list of geographic identifiers for the Location besides the main identifier, e.g. the URI or other unique identifiers in the context of the relevant gazetteer |
-| [geometry](#location--geometry)               | More than one type | Optional          | Associates a location with a corresponding geometry described in WKT, GeoJSON, or GML format                                                                     |
-| [inScheme](#location--inScheme)               | More than one type | Optional          | The gazetteer to which the location belongs                                                                                                                      |
-| [altLabel](#location--altLabel)               | null or string     | Optional          | An alternative label or name for a location                                                                                                                      |
-| [prefLabel](#location--prefLabel)             | null or string     | Recommended       | Preferred label or name of the Location                                                                                                                          |
+| Property                             | Type                                                                                 | Requirement Level | Title/Description                                                                                                                                                |
+| ------------------------------------ | ------------------------------------------------------------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@id](#location--@id)                         | string                                                                               | Optional          |                                                                                                                                                                  |
+| [@type](#location--@type)                     | string                                                                               | Optional          |                                                                                                                                                                  |
+| [bbox](#location--bbox)                       | More than one type                                                                   | Recommended       | Bounding box for the location, described in WKT, GeoJSON, or GML format                                                                                          |
+| [centroid](#location--centroid)               | More than one type                                                                   | Optional          | The geographic center (centroid) of a location described in WKT, GeoJSON, or GML format                                                                          |
+| [identifier](#location--identifier)           | More than one type                                                                   | Optional          | The unique geographic identifier for the Location, e.g., the URI or other unique identifier in the context of the relevant gazetteer                             |
+| [otherIdentifier](#location--otherIdentifier) | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes | Optional          | A list of geographic identifiers for the Location besides the main identifier, e.g. the URI or other unique identifiers in the context of the relevant gazetteer |
+| [geometry](#location--geometry)               | More than one type                                                                   | Optional          | Associates a location with a corresponding geometry described in WKT, GeoJSON, or GML format                                                                     |
+| [inScheme](#location--inScheme)               | More than one type                                                                   | Optional          | The gazetteer to which the location belongs                                                                                                                      |
+| [altLabel](#location--altLabel)               | null or string                                                                       | Optional          | An alternative label or name for a location                                                                                                                      |
+| [prefLabel](#location--prefLabel)             | null or string                                                                       | Recommended       | Preferred label or name of the Location                                                                                                                          |
 
 ## <a name="location--@id"></a>`Location > @id`
 
@@ -416,9 +416,9 @@ A named place or geographic area
 
 Bounding box for the location, described in WKT, GeoJSON, or GML format
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -511,9 +511,9 @@ Specific value: `"Polygon"`
 
 The geographic center (centroid) of a location described in WKT, GeoJSON, or GML format
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -562,9 +562,9 @@ Centroid represented in GeoJSON format; force point usage with coordinates of lo
 
 **Requirement:** Optional
 
-| **Type**     | `array of number` |
-| ------------ | ----------------- |
-| **Required** | Yes               |
+| **Type**     | array of number |
+| ------------ | --------------- |
+| **Required** | Yes             |
 
 | Each item of this array must be                           | Description |
 | --------------------------------------------------------- | ----------- |
@@ -591,9 +591,9 @@ Specific value: `"Point"`
 
 The unique geographic identifier for the Location, e.g., the URI or other unique identifier in the context of the relevant gazetteer
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                             |
 | ---------------------------------- |
@@ -609,7 +609,7 @@ The unique geographic identifier for the Location, e.g., the URI or other unique
 
 inline description of Identifier
 
-| **Type**                  | More than one type                                          |
+| **Type**                  | `combining`                                                 |
 | ------------------------- | ----------------------------------------------------------- |
 | **Additional properties** | Any type allowed                                            |
 | **Defined in**            | [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) |
@@ -620,8 +620,8 @@ inline description of Identifier
 
 A list of geographic identifiers for the Location besides the main identifier, e.g. the URI or other unique identifiers in the context of the relevant gazetteer
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes |
+| -------- | ------------------------------------------------------------------------------------ |
 
 | Each item of this array must be                             | Description                                                                   |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -633,9 +633,9 @@ A list of geographic identifiers for the Location besides the main identifier, e
 
 Associates a location with a corresponding geometry described in WKT, GeoJSON, or GML format
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -731,9 +731,9 @@ Geometry represented in GeoJSON format
 
 The gazetteer to which the location belongs
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                              |
 | ----------------------------------- |
@@ -1029,12 +1029,12 @@ An activity related to creating, changing, or using a resource
 }
 ```
 
-| Property               | Type          | Requirement Level | Title/Description                       |
-| ---------------------- | ------------- | ----------------- | --------------------------------------- |
-| [@id](#activity--@id)           | string        | Optional          |                                         |
-| [@type](#activity--@type)       | string        | Optional          |                                         |
-| [category](#activity--category) | null or array | Optional          | List of categories for the Activity     |
-| [label](#activity--label)       | string        | Mandatory         | A human-readable label for the activity |
+| Property               | Type                                                                           | Requirement Level | Title/Description                       |
+| ---------------------- | ------------------------------------------------------------------------------ | ----------------- | --------------------------------------- |
+| [@id](#activity--@id)           | string                                                                         | Optional          |                                         |
+| [@type](#activity--@type)       | string                                                                         | Optional          |                                         |
+| [category](#activity--category) | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes | Optional          | List of categories for the Activity     |
+| [label](#activity--label)       | string                                                                         | Mandatory         | A human-readable label for the activity |
 
 ## <a name="activity--@id"></a>`Activity > @id`
 
@@ -1064,8 +1064,8 @@ An activity related to creating, changing, or using a resource
 
 List of categories for the Activity
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes |
+| -------- | ------------------------------------------------------------------------------ |
 
 | Each item of this array must be                       | Description                                                        |
 | ----------------------------------------------------- | ------------------------------------------------------------------ |

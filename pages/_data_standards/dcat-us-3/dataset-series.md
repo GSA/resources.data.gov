@@ -148,22 +148,22 @@ A group of related datasets that are published separately
 }
 ```
 
-| Property                                   | Type               | Requirement Level | Title/Description                                                                                                                        |
-| ------------------------------------------ | ------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [@id](#@id)                               | string             | Optional          |                                                                                                                                          |
-| [@type](#@type)                           | string             | Optional          |                                                                                                                                          |
-| [contactPoint](#contactPoint)             | null or array      | Recommended       | List of contacts people can use to ask questions or send feedback about the dataset series                                               |
-| [first](#first)                           | More than one type | Recommended       | The first dataset in an ordered dataset series                                                                                           |
-| [last](#last)                             | More than one type | Recommended       | The last dataset in an ordered dataset series                                                                                            |
-| [seriesMember](#seriesMember)             | null or array      | Recommended       | List of members of the Dataset Series                                                                                                    |
-| [accrualPeriodicity](#accrualPeriodicity) | More than one type | Optional          | The frequency at which the Dataset Series is updated. This is the series update frequency, not necessarily each dataset's frequency      |
-| [description](#description)               | string             | Mandatory         | Plain-language summary of the dataset series                                                                                             |
-| [issued](#issued)                         | More than one type | Optional          | Date when the Dataset Series was formally established or published, not the release date of the oldest dataset in the series             |
-| [modified](#modified)                     | More than one type | Recommended       | Most recent date when the Dataset Series changed, not the modified date of the newest dataset in the series                              |
-| [publisher](#publisher)                   | More than one type | Recommended       | Organization responsible for maintaining the Dataset Series as a coherent series; this may differ from publishers of individual datasets |
-| [spatial](#spatial)                       | null or array      | Recommended       | A geographic region that is covered by the Dataset Series                                                                                |
-| [temporal](#temporal)                     | null or array      | Recommended       | Time periods covered by the dataset series                                                                                               |
-| [title](#title)                           | string             | Mandatory         | Human-readable title of the dataset series                                                                                               |
+| Property                                   | Type                                                                                  | Requirement Level | Title/Description                                                                                                                        |
+| ------------------------------------------ | ------------------------------------------------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [@id](#@id)                               | string                                                                                | Optional          |                                                                                                                                          |
+| [@type](#@type)                           | string                                                                                | Optional          |                                                                                                                                          |
+| [contactPoint](#contactPoint)             | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes                                     | Recommended       | List of contacts people can use to ask questions or send feedback about the dataset series                                               |
+| [first](#first)                           | More than one type                                                                    | Recommended       | The first dataset in an ordered dataset series                                                                                           |
+| [last](#last)                             | More than one type                                                                    | Recommended       | The last dataset in an ordered dataset series                                                                                            |
+| [seriesMember](#seriesMember)             | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                 | Recommended       | List of members of the Dataset Series                                                                                                    |
+| [accrualPeriodicity](#accrualPeriodicity) | More than one type                                                                    | Optional          | The frequency at which the Dataset Series is updated. This is the series update frequency, not necessarily each dataset's frequency      |
+| [description](#description)               | string                                                                                | Mandatory         | Plain-language summary of the dataset series                                                                                             |
+| [issued](#issued)                         | More than one type                                                                    | Optional          | Date when the Dataset Series was formally established or published, not the release date of the oldest dataset in the series             |
+| [modified](#modified)                     | More than one type                                                                    | Recommended       | Most recent date when the Dataset Series changed, not the modified date of the newest dataset in the series                              |
+| [publisher](#publisher)                   | More than one type                                                                    | Recommended       | Organization responsible for maintaining the Dataset Series as a coherent series; this may differ from publishers of individual datasets |
+| [spatial](#spatial)                       | null or array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes           | Recommended       | A geographic region that is covered by the Dataset Series                                                                                |
+| [temporal](#temporal)                     | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes | Recommended       | Time periods covered by the dataset series                                                                                               |
+| [title](#title)                           | string                                                                                | Mandatory         | Human-readable title of the dataset series                                                                                               |
 
 ## <a name="@id"></a>`DatasetSeries > @id`
 
@@ -193,8 +193,8 @@ A group of related datasets that are published separately
 
 List of contacts people can use to ask questions or send feedback about the dataset series
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes |
+| -------- | ------------------------------------------------- |
 
 | Each item of this array must be | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
@@ -206,9 +206,9 @@ List of contacts people can use to ask questions or send feedback about the data
 
 The first dataset in an ordered dataset series
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                            |
 | ------------------------------------------------- |
@@ -238,9 +238,9 @@ inline description of the first dataset
 
 The last dataset in an ordered dataset series
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                           |
 | ------------------------------------------------ |
@@ -270,8 +270,8 @@ inline description of the last dataset
 
 List of members of the Dataset Series
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes |
+| -------- | ----------------------------------------------------- |
 
 | Each item of this array must be | Description                                               |
 | ------------------------------- | --------------------------------------------------------- |
@@ -285,9 +285,9 @@ List of members of the Dataset Series
 
 The frequency at which the Dataset Series is updated. This is the series update frequency, not necessarily each dataset's frequency
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -389,9 +389,9 @@ Plain-language summary of the dataset series
 
 Date when the Dataset Series was formally established or published, not the release date of the oldest dataset in the series
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -423,9 +423,9 @@ Date when the Dataset Series was formally established or published, not the rele
 
 ### <a name="issued_anyOf_i1"></a>`DatasetSeries > issued > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                              |
 | ----------------------------------- |
@@ -476,9 +476,9 @@ A year and month in YYYY-MM format
 
 Most recent date when the Dataset Series changed, not the modified date of the newest dataset in the series
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -514,9 +514,9 @@ Most recent date when the Dataset Series changed, not the modified date of the n
 
 ### <a name="modified_anyOf_i1"></a>`DatasetSeries > modified > anyOf > Date string`
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                |
 | ------------------------------------- |
@@ -565,9 +565,9 @@ A year and month in YYYY-MM format
 
 Organization responsible for maintaining the Dataset Series as a coherent series; this may differ from publishers of individual datasets
 
-| **Type**                  | More than one type |
-| ------------------------- | ------------------ |
-| **Additional properties** | Any type allowed   |
+| **Type**                  | `combining`      |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 | Any of                                                |
 | ----------------------------------------------------- |
@@ -596,8 +596,8 @@ inline description of publisher
 
 A geographic region that is covered by the Dataset Series
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes |
+| -------- | --------------------------------------------------------------------------- |
 
 | Each item of this array must be                    | Description                      |
 | -------------------------------------------------- | -------------------------------- |
@@ -611,8 +611,8 @@ A geographic region that is covered by the Dataset Series
 
 Time periods covered by the dataset series
 
-| **Type** | `null or array` |
-| -------- | --------------- |
+| **Type** | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes |
+| -------- | ------------------------------------------------------------------------------------- |
 
 | Each item of this array must be                              | Description                                                            |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------- |
