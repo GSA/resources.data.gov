@@ -77,7 +77,6 @@ details: |
 
   ### Main reference pages
 
-  - [DCAT-US v3.0 overview](/standards/catalog/dcat-us-3/)
   - [Catalog fields](/standards/catalog/dcat-us-3/catalog/)
   - [Dataset fields](/standards/catalog/dcat-us-3/dataset/)
   - [Distribution fields](/standards/catalog/dcat-us-3/distribution/)

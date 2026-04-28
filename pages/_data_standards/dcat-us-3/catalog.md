@@ -143,7 +143,7 @@ List of related catalogs that are useful in the context of this catalog
 
 | Each item of this array must be     | Description                                                                        |
 | ----------------------------------- | ---------------------------------------------------------------------------------- |
-| [DCAT-US 3 Catalog](#catalog_items) | A curated collection of metadata about datasets, data services, or other resources |
+| [DCAT-US 3 Catalog](#root) | A curated collection of metadata about datasets, data services, or other resources |
 
 ## <a name="contactPoint"></a>`DCAT-US 3 Catalog > contactPoint` [#](#contactPoint)
 
@@ -374,7 +374,7 @@ List of catalogs that are contained within this catalog
 
 | Each item of this array must be     | Description                                                                        |
 | ----------------------------------- | ---------------------------------------------------------------------------------- |
-| [DCAT-US 3 Catalog](#hasPart_items) | A curated collection of metadata about datasets, data services, or other resources |
+| [DCAT-US 3 Catalog](#root) | A curated collection of metadata about datasets, data services, or other resources |
 
 ## <a name="identifier"></a>`DCAT-US 3 Catalog > identifier` [#](#identifier)
 
