@@ -165,7 +165,7 @@ A collection of data published or curated by one provider
 | [image](#image)                                         | More than one type                                                                               | Optional          | Thumbnail image illustrating the dataset, especially useful for visual data such as maps, photos, or video                                                                                                                                                 |
 | [scopeNote](#scopeNote)                                 | null or string                                                                                   | Optional          | usage note for the dataset                                                                                                                                                                                                                                 |
 
-## <a name="@id"></a>`Dataset > @id`
+## <a name="@id"></a>`Dataset > @id` [#](#@id)
 
 **Requirement:** Optional
 
@@ -179,7 +179,7 @@ A collection of data published or curated by one provider
 "https://example.gov/datasets/national-climate-observations-2024"
 ```
 
-## <a name="@type"></a>`Dataset > @type`
+## <a name="@type"></a>`Dataset > @type` [#](#@type)
 
 **Requirement:** Optional
 
@@ -187,7 +187,7 @@ A collection of data published or curated by one provider
 | ----------- | ----------- |
 | **Default** | `"Dataset"` |
 
-## <a name="otherIdentifier"></a>`Dataset > otherIdentifier`
+## <a name="otherIdentifier"></a>`Dataset > otherIdentifier` [#](#otherIdentifier)
 
 **Requirement:** Optional
 
@@ -200,7 +200,7 @@ Additional identifiers for the dataset besides the main identifier, such as a DO
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) | A unique identifier and optionally it's scheme and other relevant information |
 
-## <a name="sample"></a>`Dataset > sample`
+## <a name="sample"></a>`Dataset > sample` [#](#sample)
 
 **Requirement:** Optional
 
@@ -213,7 +213,7 @@ List of sample distributions for the dataset
 | -------------------------------------- | ----------------------------------------------------------------------------- |
 | [Distribution](/standards/catalog/dcat-us-3/distribution/#root) | A specific representation of a dataset, such as a file, feed, or API response |
 
-## <a name="status"></a>`Dataset > status`
+## <a name="status"></a>`Dataset > status` [#](#status)
 
 **Title:** lifecycle status
 
@@ -230,12 +230,12 @@ Lifecycle status of the dataset, such as completed, deprecated, under developmen
 | [Null allowed when not required](#status_anyOf_i0) |
 | [Concept](#status_anyOf_i1)                        |
 
-### <a name="status_anyOf_i0"></a>`Dataset > status > anyOf > Null allowed when not required`
+### <a name="status_anyOf_i0"></a>`Dataset > status > anyOf > Null allowed when not required` [#](#status_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="status_anyOf_i1"></a>`Dataset > status > anyOf > Concept`
+### <a name="status_anyOf_i1"></a>`Dataset > status > anyOf > Concept` [#](#status_anyOf_i1)
 
 inline description of Concept
 
@@ -244,7 +244,7 @@ inline description of Concept
 | **Additional properties** | Any type allowed                                      |
 | **Same definition as**    | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) |
 
-## <a name="supportedSchema"></a>`Dataset > supportedSchema`
+## <a name="supportedSchema"></a>`Dataset > supportedSchema` [#](#supportedSchema)
 
 **Requirement:** Optional
 
@@ -259,12 +259,12 @@ supported schema for this dataset
 | [Null allowed when not required](#supportedSchema_anyOf_i0) |
 | [Dataset](#supportedSchema_anyOf_i1)                        |
 
-### <a name="supportedSchema_anyOf_i0"></a>`Dataset > supportedSchema > anyOf > Null allowed when not required`
+### <a name="supportedSchema_anyOf_i0"></a>`Dataset > supportedSchema > anyOf > Null allowed when not required` [#](#supportedSchema_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="supportedSchema_anyOf_i1"></a>`Dataset > supportedSchema > anyOf > Dataset`
+### <a name="supportedSchema_anyOf_i1"></a>`Dataset > supportedSchema > anyOf > Dataset` [#](#supportedSchema_anyOf_i1)
 
 inline description of the supported schema
 
@@ -276,7 +276,7 @@ inline description of the supported schema
 ---
 **See Also:** (related supporting classes)
 
-## <a name="versionNotes"></a>`Dataset > versionNotes`
+## <a name="versionNotes"></a>`Dataset > versionNotes` [#](#versionNotes)
 
 **Requirement:** Optional
 
@@ -291,7 +291,7 @@ Notes describing how this version differs from earlier versions of the dataset
 "Initial release of 2024 climate observations data."
 ```
 
-## <a name="contactPoint"></a>`Dataset > contactPoint`
+## <a name="contactPoint"></a>`Dataset > contactPoint` [#](#contactPoint)
 
 **Requirement:** Mandatory
 
@@ -307,7 +307,7 @@ A contact point for questions about the Dataset (single contact or list). Includ
 | [Kind](#contactPoint_anyOf_i0)             |
 | [List of contacts](#contactPoint_anyOf_i1) |
 
-### <a name="contactPoint_anyOf_i0"></a>`Dataset > contactPoint > anyOf > Kind`
+### <a name="contactPoint_anyOf_i0"></a>`Dataset > contactPoint > anyOf > Kind` [#](#contactPoint_anyOf_i0)
 
 inline description of Kind
 
@@ -316,7 +316,7 @@ inline description of Kind
 | **Additional properties** | Any type allowed         |
 | **Same definition as**    | [Kind](/standards/catalog/dcat-us-3/agents/#kind) |
 
-### <a name="contactPoint_anyOf_i1"></a>`Dataset > contactPoint > anyOf > List of contacts`
+### <a name="contactPoint_anyOf_i1"></a>`Dataset > contactPoint > anyOf > List of contacts` [#](#contactPoint_anyOf_i1)
 
 | **Type** | array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes |
 | -------- | ----------------------------------------- |
@@ -325,7 +325,7 @@ inline description of Kind
 | ------------------------------- | ----------------------------------------------- |
 | [Kind](/standards/catalog/dcat-us-3/agents/#kind)        | Contact information for an individual or entity |
 
-## <a name="distribution"></a>`Dataset > distribution`
+## <a name="distribution"></a>`Dataset > distribution` [#](#distribution)
 
 **Title:** dataset distribution
 
@@ -340,7 +340,7 @@ List of available distributions for the dataset. This can be omitted when no dis
 | -------------------------------------- | ----------------------------------------------------------------------------- |
 | [Distribution](/standards/catalog/dcat-us-3/distribution/#root) | A specific representation of a dataset, such as a file, feed, or API response |
 
-## <a name="first"></a>`Dataset > first`
+## <a name="first"></a>`Dataset > first` [#](#first)
 
 **Requirement:** Optional
 
@@ -355,12 +355,12 @@ the first item of the sequence the dataset belongs to
 | [Null allowed when not required](#first_anyOf_i0) |
 | [Dataset](#first_anyOf_i1)                        |
 
-### <a name="first_anyOf_i0"></a>`Dataset > first > anyOf > Null allowed when not required`
+### <a name="first_anyOf_i0"></a>`Dataset > first > anyOf > Null allowed when not required` [#](#first_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="first_anyOf_i1"></a>`Dataset > first > anyOf > Dataset`
+### <a name="first_anyOf_i1"></a>`Dataset > first > anyOf > Dataset` [#](#first_anyOf_i1)
 
 inline description of Dataset
 
@@ -372,7 +372,7 @@ inline description of Dataset
 ---
 **See Also:** (related supporting classes)
 
-## <a name="hasCurrentVersion"></a>`Dataset > hasCurrentVersion`
+## <a name="hasCurrentVersion"></a>`Dataset > hasCurrentVersion` [#](#hasCurrentVersion)
 
 **Title:** current version
 
@@ -389,12 +389,12 @@ reference to the current (latest) version of a dataset
 | [Null allowed when not required](#hasCurrentVersion_anyOf_i0) |
 | [Dataset](#hasCurrentVersion_anyOf_i1)                        |
 
-### <a name="hasCurrentVersion_anyOf_i0"></a>`Dataset > hasCurrentVersion > anyOf > Null allowed when not required`
+### <a name="hasCurrentVersion_anyOf_i0"></a>`Dataset > hasCurrentVersion > anyOf > Null allowed when not required` [#](#hasCurrentVersion_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="hasCurrentVersion_anyOf_i1"></a>`Dataset > hasCurrentVersion > anyOf > Dataset`
+### <a name="hasCurrentVersion_anyOf_i1"></a>`Dataset > hasCurrentVersion > anyOf > Dataset` [#](#hasCurrentVersion_anyOf_i1)
 
 inline description of Dataset
 
@@ -406,7 +406,7 @@ inline description of Dataset
 ---
 **See Also:** (related supporting classes)
 
-## <a name="hasVersion"></a>`Dataset > hasVersion`
+## <a name="hasVersion"></a>`Dataset > hasVersion` [#](#hasVersion)
 
 **Requirement:** Optional
 
@@ -419,7 +419,7 @@ List of related Datasets that are a version, edition, or adaptation of the descr
 | ------------------------------- | --------------------------------------------------------- |
 | [Dataset](/standards/catalog/dcat-us-3/dataset/#root)    | A collection of data published or curated by one provider |
 
-## <a name="inSeries"></a>`Dataset > inSeries`
+## <a name="inSeries"></a>`Dataset > inSeries` [#](#inSeries)
 
 **Requirement:** Optional
 
@@ -432,7 +432,7 @@ Dataset series this dataset belongs to
 | ----------------------------------------- | --------------------------------------------------------- |
 | [DatasetSeries](/standards/catalog/dcat-us-3/dataset-series/#root) | A group of related datasets that are published separately |
 
-## <a name="keyword"></a>`Dataset > keyword`
+## <a name="keyword"></a>`Dataset > keyword` [#](#keyword)
 
 **Title:** keyword/tag
 
@@ -470,7 +470,7 @@ List of keywords or tags describing the dataset
 | ---------------------------------- | ----------- |
 | [Non-empty string](#keyword_items) | -           |
 
-### <a name="keyword_items"></a>Non-empty string
+### <a name="keyword_items"></a>Non-empty string [#](#keyword_items)
 
 | **Type** | `string` |
 | -------- | -------- |
@@ -479,7 +479,7 @@ List of keywords or tags describing the dataset
 | -------------- | - |
 | **Min length** | 1 |
 
-## <a name="landingPage"></a>`Dataset > landingPage`
+## <a name="landingPage"></a>`Dataset > landingPage` [#](#landingPage)
 
 **Requirement:** Recommended
 
@@ -494,12 +494,12 @@ A web page from the original data provider that gives access to the Dataset, its
 | [Null allowed when not required](#landingPage_anyOf_i0) |
 | [Document](#landingPage_anyOf_i1)                       |
 
-### <a name="landingPage_anyOf_i0"></a>`Dataset > landingPage > anyOf > Null allowed when not required`
+### <a name="landingPage_anyOf_i0"></a>`Dataset > landingPage > anyOf > Null allowed when not required` [#](#landingPage_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="landingPage_anyOf_i1"></a>`Dataset > landingPage > anyOf > Document`
+### <a name="landingPage_anyOf_i1"></a>`Dataset > landingPage > anyOf > Document` [#](#landingPage_anyOf_i1)
 
 inline description of Document
 
@@ -508,7 +508,7 @@ inline description of Document
 | **Additional properties** | Any type allowed                             |
 | **Same definition as**    | [Document](/standards/catalog/dcat-us-3/quality-governance/#document) |
 
-## <a name="previousVersion"></a>`Dataset > previousVersion`
+## <a name="previousVersion"></a>`Dataset > previousVersion` [#](#previousVersion)
 
 **Requirement:** Optional
 
@@ -523,12 +523,12 @@ reference to the previous dataset version
 | [Null allowed when not required](#previousVersion_anyOf_i0) |
 | [Dataset](#previousVersion_anyOf_i1)                        |
 
-### <a name="previousVersion_anyOf_i0"></a>`Dataset > previousVersion > anyOf > Null allowed when not required`
+### <a name="previousVersion_anyOf_i0"></a>`Dataset > previousVersion > anyOf > Null allowed when not required` [#](#previousVersion_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="previousVersion_anyOf_i1"></a>`Dataset > previousVersion > anyOf > Dataset`
+### <a name="previousVersion_anyOf_i1"></a>`Dataset > previousVersion > anyOf > Dataset` [#](#previousVersion_anyOf_i1)
 
 inline description of Dataset
 
@@ -540,7 +540,7 @@ inline description of Dataset
 ---
 **See Also:** (related supporting classes)
 
-## <a name="qualifiedRelation"></a>`Dataset > qualifiedRelation`
+## <a name="qualifiedRelation"></a>`Dataset > qualifiedRelation` [#](#qualifiedRelation)
 
 **Requirement:** Optional
 
@@ -553,7 +553,7 @@ Detailed relationship between the dataset and another resource, including the ro
 | --------------------------------------------------------------- | ------------------------------------------------------------------- |
 | [Relationship](/standards/catalog/dcat-us-3/identifiers-and-relationships/#relationship) | Additional information about how one resource is related to another |
 
-## <a name="spatialResolutionInMeters"></a>`Dataset > spatialResolutionInMeters`
+## <a name="spatialResolutionInMeters"></a>`Dataset > spatialResolutionInMeters` [#](#spatialResolutionInMeters)
 
 **Title:** Spatial resolution (meters)
 
@@ -570,7 +570,7 @@ Smallest spatial distance between data points, in meters, represented as a singl
 "1000"
 ```
 
-## <a name="temporalResolution"></a>`Dataset > temporalResolution`
+## <a name="temporalResolution"></a>`Dataset > temporalResolution` [#](#temporalResolution)
 
 **Requirement:** Optional
 
@@ -585,7 +585,7 @@ Smallest time interval between data points, using xsd:duration format (for examp
 "P1D"
 ```
 
-## <a name="theme"></a>`Dataset > theme`
+## <a name="theme"></a>`Dataset > theme` [#](#theme)
 
 **Title:** theme/category
 
@@ -600,7 +600,7 @@ List of themes or categories for the dataset
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
 | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
-## <a name="version"></a>`Dataset > version`
+## <a name="version"></a>`Dataset > version` [#](#version)
 
 **Requirement:** Optional
 
@@ -615,7 +615,7 @@ The version indicator (name or identifier) of a resource
 "2024.1"
 ```
 
-## <a name="describedBy"></a>`Dataset > describedBy`
+## <a name="describedBy"></a>`Dataset > describedBy` [#](#describedBy)
 
 **Title:** data dictionary
 
@@ -632,12 +632,12 @@ A distribution describing the Data Dictionary for this dataset
 | [Null allowed when not required](#describedBy_anyOf_i0) |
 | [Distribution](#describedBy_anyOf_i1)                   |
 
-### <a name="describedBy_anyOf_i0"></a>`Dataset > describedBy > anyOf > Null allowed when not required`
+### <a name="describedBy_anyOf_i0"></a>`Dataset > describedBy > anyOf > Null allowed when not required` [#](#describedBy_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="describedBy_anyOf_i1"></a>`Dataset > describedBy > anyOf > Distribution`
+### <a name="describedBy_anyOf_i1"></a>`Dataset > describedBy > anyOf > Distribution` [#](#describedBy_anyOf_i1)
 
 inline description of Distribution
 
@@ -649,7 +649,7 @@ inline description of Distribution
 ---
 **See Also:** (related supporting classes)
 
-## <a name="liabilityStatement"></a>`Dataset > liabilityStatement`
+## <a name="liabilityStatement"></a>`Dataset > liabilityStatement` [#](#liabilityStatement)
 
 **Requirement:** Optional
 
@@ -670,19 +670,19 @@ A liability statement about the dataset that may clarify limitations of responsi
 | [Null allowed when not required](#liabilityStatement_anyOf_i0) |
 | [item 1](#liabilityStatement_anyOf_i1)                         |
 
-### <a name="liabilityStatement_anyOf_i0"></a>`Dataset > liabilityStatement > anyOf > Null allowed when not required`
+### <a name="liabilityStatement_anyOf_i0"></a>`Dataset > liabilityStatement > anyOf > Null allowed when not required` [#](#liabilityStatement_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="liabilityStatement_anyOf_i1"></a>`Dataset > liabilityStatement > anyOf > item 1`
+### <a name="liabilityStatement_anyOf_i1"></a>`Dataset > liabilityStatement > anyOf > item 1` [#](#liabilityStatement_anyOf_i1)
 
 Full text of the liability statement
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="metadataDistribution"></a>`Dataset > metadataDistribution`
+## <a name="metadataDistribution"></a>`Dataset > metadataDistribution` [#](#metadataDistribution)
 
 **Requirement:** Optional
 
@@ -695,7 +695,7 @@ Distribution of the original metadata document this dataset was derived from
 | -------------------------------------- | ----------------------------------------------------------------------------- |
 | [Distribution](/standards/catalog/dcat-us-3/distribution/#root) | A specific representation of a dataset, such as a file, feed, or API response |
 
-## <a name="purpose"></a>`Dataset > purpose`
+## <a name="purpose"></a>`Dataset > purpose` [#](#purpose)
 
 **Requirement:** Optional
 
@@ -710,7 +710,7 @@ The purpose of the dataset
 "To provide comprehensive, high-quality climate observations for research, planning, and decision-making related to weather and climate."
 ```
 
-## <a name="accessRights"></a>`Dataset > accessRights`
+## <a name="accessRights"></a>`Dataset > accessRights` [#](#accessRights)
 
 **Requirement:** Optional
 
@@ -735,19 +735,19 @@ Information about whether the dataset is publicly accessible, restricted, or not
 | [Null allowed when not required](#accessRights_anyOf_i0) |
 | [item 1](#accessRights_anyOf_i1)                         |
 
-### <a name="accessRights_anyOf_i0"></a>`Dataset > accessRights > anyOf > Null allowed when not required`
+### <a name="accessRights_anyOf_i0"></a>`Dataset > accessRights > anyOf > Null allowed when not required` [#](#accessRights_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="accessRights_anyOf_i1"></a>`Dataset > accessRights > anyOf > item 1`
+### <a name="accessRights_anyOf_i1"></a>`Dataset > accessRights > anyOf > item 1` [#](#accessRights_anyOf_i1)
 
 Text description of the access rights
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="accrualPeriodicity"></a>`Dataset > accrualPeriodicity`
+## <a name="accrualPeriodicity"></a>`Dataset > accrualPeriodicity` [#](#accrualPeriodicity)
 
 **Title:** frequency
 
@@ -772,12 +772,12 @@ The frequency at which the Dataset is updated
 | [item 2](#accrualPeriodicity_anyOf_i2)                         |
 | [item 3](#accrualPeriodicity_anyOf_i3)                         |
 
-### <a name="accrualPeriodicity_anyOf_i0"></a>`Dataset > accrualPeriodicity > anyOf > Null allowed when not required`
+### <a name="accrualPeriodicity_anyOf_i0"></a>`Dataset > accrualPeriodicity > anyOf > Null allowed when not required` [#](#accrualPeriodicity_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="accrualPeriodicity_anyOf_i1"></a>`Dataset > accrualPeriodicity > anyOf > item 1`
+### <a name="accrualPeriodicity_anyOf_i1"></a>`Dataset > accrualPeriodicity > anyOf > item 1` [#](#accrualPeriodicity_anyOf_i1)
 
 ISO 19115 Maintenance Frequency code
 
@@ -798,7 +798,7 @@ Must be one of:
 * "notPlanned"
 * "unknown"
 
-### <a name="accrualPeriodicity_anyOf_i2"></a>`Dataset > accrualPeriodicity > anyOf > item 2`
+### <a name="accrualPeriodicity_anyOf_i2"></a>`Dataset > accrualPeriodicity > anyOf > item 2` [#](#accrualPeriodicity_anyOf_i2)
 
 ISO-8601 Maintenance Frequency code for recurring values, see https://www.iso.org/standard/70907.html
 
@@ -809,7 +809,7 @@ ISO-8601 Maintenance Frequency code for recurring values, see https://www.iso.or
 | --------------------------------- | ----------------------------------------------------------------- |
 | **Must match regular expression** | ```^R/P.+$``` [Test](https://regex101.com/?regex=%5ER%2FP.%2B%24) |
 
-### <a name="accrualPeriodicity_anyOf_i3"></a>`Dataset > accrualPeriodicity > anyOf > item 3`
+### <a name="accrualPeriodicity_anyOf_i3"></a>`Dataset > accrualPeriodicity > anyOf > item 3` [#](#accrualPeriodicity_anyOf_i3)
 
 Dublin Core Collection Frequency Vocabulary, see https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/#vocabulary-terms
 
@@ -835,7 +835,7 @@ Must be one of:
 * "semiweekly"
 * "threeTimesAWeek"
 
-## <a name="conformsTo"></a>`Dataset > conformsTo`
+## <a name="conformsTo"></a>`Dataset > conformsTo` [#](#conformsTo)
 
 **Requirement:** Optional
 
@@ -848,7 +848,7 @@ List of standards, schemas, or profiles the dataset follows
 | -------------------------------------------- | ------------------------------------------------------------- |
 | [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard) | A standard or specification that another resource conforms to |
 
-## <a name="contributor"></a>`Dataset > contributor`
+## <a name="contributor"></a>`Dataset > contributor` [#](#contributor)
 
 **Requirement:** Optional
 
@@ -861,7 +861,7 @@ List of agents contributing to the Dataset
 | ------------------------------- | -------------------------------------------------------------------------------- |
 | [Agent](/standards/catalog/dcat-us-3/agents/#agent)      | A person, organization, software agent, or other entity involved with a resource |
 
-## <a name="created"></a>`Dataset > created`
+## <a name="created"></a>`Dataset > created` [#](#created)
 
 **Title:** creation date
 
@@ -896,12 +896,12 @@ The date on which the Dataset was first created
 | [Null allowed when not required](#created_anyOf_i0) |
 | [Date string](#created_anyOf_i1)                    |
 
-### <a name="created_anyOf_i0"></a>`Dataset > created > anyOf > Null allowed when not required`
+### <a name="created_anyOf_i0"></a>`Dataset > created > anyOf > Null allowed when not required` [#](#created_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="created_anyOf_i1"></a>`Dataset > created > anyOf > Date string`
+### <a name="created_anyOf_i1"></a>`Dataset > created > anyOf > Date string` [#](#created_anyOf_i1)
 
 | **Type**                  | `combining`      |
 | ------------------------- | ---------------- |
@@ -914,19 +914,19 @@ The date on which the Dataset was first created
 | [item 2](#created_anyOf_i1_anyOf_i2) |
 | [item 3](#created_anyOf_i1_anyOf_i3) |
 
-#### <a name="created_anyOf_i1_anyOf_i0"></a>`Dataset > created > anyOf > Date string > anyOf > item 0`
+#### <a name="created_anyOf_i1_anyOf_i0"></a>`Dataset > created > anyOf > Date string > anyOf > item 0` [#](#created_anyOf_i1_anyOf_i0)
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="created_anyOf_i1_anyOf_i1"></a>`Dataset > created > anyOf > Date string > anyOf > item 1`
+#### <a name="created_anyOf_i1_anyOf_i1"></a>`Dataset > created > anyOf > Date string > anyOf > item 1` [#](#created_anyOf_i1_anyOf_i1)
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="created_anyOf_i1_anyOf_i2"></a>`Dataset > created > anyOf > Date string > anyOf > item 2`
+#### <a name="created_anyOf_i1_anyOf_i2"></a>`Dataset > created > anyOf > Date string > anyOf > item 2` [#](#created_anyOf_i1_anyOf_i2)
 
 A year in YYYY format
 
@@ -937,7 +937,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="created_anyOf_i1_anyOf_i3"></a>`Dataset > created > anyOf > Date string > anyOf > item 3`
+#### <a name="created_anyOf_i1_anyOf_i3"></a>`Dataset > created > anyOf > Date string > anyOf > item 3` [#](#created_anyOf_i1_anyOf_i3)
 
 A year and month in YYYY-MM format
 
@@ -948,7 +948,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="creator"></a>`Dataset > creator`
+## <a name="creator"></a>`Dataset > creator` [#](#creator)
 
 **Requirement:** Optional
 
@@ -963,12 +963,12 @@ Person or organization responsible for creating the dataset
 | [Null allowed when not required](#creator_anyOf_i0) |
 | [Agent](#creator_anyOf_i1)                          |
 
-### <a name="creator_anyOf_i0"></a>`Dataset > creator > anyOf > Null allowed when not required`
+### <a name="creator_anyOf_i0"></a>`Dataset > creator > anyOf > Null allowed when not required` [#](#creator_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="creator_anyOf_i1"></a>`Dataset > creator > anyOf > Agent`
+### <a name="creator_anyOf_i1"></a>`Dataset > creator > anyOf > Agent` [#](#creator_anyOf_i1)
 
 inline description of Agent
 
@@ -977,7 +977,7 @@ inline description of Agent
 | **Additional properties** | Any type allowed           |
 | **Same definition as**    | [Agent](/standards/catalog/dcat-us-3/agents/#agent) |
 
-## <a name="description"></a>`Dataset > description`
+## <a name="description"></a>`Dataset > description` [#](#description)
 
 **Requirement:** Mandatory
 
@@ -997,7 +997,7 @@ Plain-language summary of the dataset
 "Comprehensive daily climate observations collected from monitoring stations across the United States, including temperature, precipitation, humidity, and wind measurements."
 ```
 
-## <a name="hasPart"></a>`Dataset > hasPart`
+## <a name="hasPart"></a>`Dataset > hasPart` [#](#hasPart)
 
 **Requirement:** Optional
 
@@ -1010,7 +1010,7 @@ List of related datasets that are part of the described dataset
 | ------------------------------- | --------------------------------------------------------- |
 | [Dataset](/standards/catalog/dcat-us-3/dataset/#root)    | A collection of data published or curated by one provider |
 
-## <a name="identifier"></a>`Dataset > identifier`
+## <a name="identifier"></a>`Dataset > identifier` [#](#identifier)
 
 **Requirement:** Mandatory
 
@@ -1026,12 +1026,12 @@ The unique identifier for the Dataset, e.g. the URI or other unique identifier i
 | [Null allowed when not required](#identifier_anyOf_i0) |
 | [Identifier](#identifier_anyOf_i1)                     |
 
-### <a name="identifier_anyOf_i0"></a>`Dataset > identifier > anyOf > Null allowed when not required`
+### <a name="identifier_anyOf_i0"></a>`Dataset > identifier > anyOf > Null allowed when not required` [#](#identifier_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="identifier_anyOf_i1"></a>`Dataset > identifier > anyOf > Identifier`
+### <a name="identifier_anyOf_i1"></a>`Dataset > identifier > anyOf > Identifier` [#](#identifier_anyOf_i1)
 
 inline description of Identifier
 
@@ -1040,7 +1040,7 @@ inline description of Identifier
 | **Additional properties** | Any type allowed                                            |
 | **Same definition as**    | [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) |
 
-## <a name="isReferencedBy"></a>`Dataset > isReferencedBy`
+## <a name="isReferencedBy"></a>`Dataset > isReferencedBy` [#](#isReferencedBy)
 
 **Requirement:** Optional
 
@@ -1061,7 +1061,7 @@ List of links to related resources, such as publications, that reference, cite, 
 | ------------------------------- | ------------------------- |
 | [Link](#isReferencedBy_items)   | reference iri of Resource |
 
-### <a name="isReferencedBy_items"></a>Link
+### <a name="isReferencedBy_items"></a>Link [#](#isReferencedBy_items)
 
 reference iri of Resource
 
@@ -1069,7 +1069,7 @@ reference iri of Resource
 | ---------- | -------- |
 | **Format** | `iri`    |
 
-## <a name="issued"></a>`Dataset > issued`
+## <a name="issued"></a>`Dataset > issued` [#](#issued)
 
 **Title:** release date
 
@@ -1104,12 +1104,12 @@ Date when the dataset was first published. If the exact publication date is unkn
 | [Null allowed when not required](#issued_anyOf_i0) |
 | [Date string](#issued_anyOf_i1)                    |
 
-### <a name="issued_anyOf_i0"></a>`Dataset > issued > anyOf > Null allowed when not required`
+### <a name="issued_anyOf_i0"></a>`Dataset > issued > anyOf > Null allowed when not required` [#](#issued_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="issued_anyOf_i1"></a>`Dataset > issued > anyOf > Date string`
+### <a name="issued_anyOf_i1"></a>`Dataset > issued > anyOf > Date string` [#](#issued_anyOf_i1)
 
 | **Type**                  | `combining`      |
 | ------------------------- | ---------------- |
@@ -1122,19 +1122,19 @@ Date when the dataset was first published. If the exact publication date is unkn
 | [item 2](#issued_anyOf_i1_anyOf_i2) |
 | [item 3](#issued_anyOf_i1_anyOf_i3) |
 
-#### <a name="issued_anyOf_i1_anyOf_i0"></a>`Dataset > issued > anyOf > Date string > anyOf > item 0`
+#### <a name="issued_anyOf_i1_anyOf_i0"></a>`Dataset > issued > anyOf > Date string > anyOf > item 0` [#](#issued_anyOf_i1_anyOf_i0)
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="issued_anyOf_i1_anyOf_i1"></a>`Dataset > issued > anyOf > Date string > anyOf > item 1`
+#### <a name="issued_anyOf_i1_anyOf_i1"></a>`Dataset > issued > anyOf > Date string > anyOf > item 1` [#](#issued_anyOf_i1_anyOf_i1)
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="issued_anyOf_i1_anyOf_i2"></a>`Dataset > issued > anyOf > Date string > anyOf > item 2`
+#### <a name="issued_anyOf_i1_anyOf_i2"></a>`Dataset > issued > anyOf > Date string > anyOf > item 2` [#](#issued_anyOf_i1_anyOf_i2)
 
 A year in YYYY format
 
@@ -1145,7 +1145,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="issued_anyOf_i1_anyOf_i3"></a>`Dataset > issued > anyOf > Date string > anyOf > item 3`
+#### <a name="issued_anyOf_i1_anyOf_i3"></a>`Dataset > issued > anyOf > Date string > anyOf > item 3` [#](#issued_anyOf_i1_anyOf_i3)
 
 A year and month in YYYY-MM format
 
@@ -1156,7 +1156,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="language"></a>`Dataset > language`
+## <a name="language"></a>`Dataset > language` [#](#language)
 
 **Requirement:** Optional
 
@@ -1180,12 +1180,12 @@ ISO 639-1 language code values used in the dataset text or metadata, such as en 
 | [Language code](#language_anyOf_i1)                  |
 | [List of languages](#language_anyOf_i2)              |
 
-### <a name="language_anyOf_i0"></a>`Dataset > language > anyOf > Null allowed when not required`
+### <a name="language_anyOf_i0"></a>`Dataset > language > anyOf > Null allowed when not required` [#](#language_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="language_anyOf_i1"></a>`Dataset > language > anyOf > Language code`
+### <a name="language_anyOf_i1"></a>`Dataset > language > anyOf > Language code` [#](#language_anyOf_i1)
 
 | **Type** | `string` |
 | -------- | -------- |
@@ -1194,7 +1194,7 @@ ISO 639-1 language code values used in the dataset text or metadata, such as en 
 | -------------- | - |
 | **Max length** | 2 |
 
-### <a name="language_anyOf_i2"></a>`Dataset > language > anyOf > List of languages`
+### <a name="language_anyOf_i2"></a>`Dataset > language > anyOf > List of languages` [#](#language_anyOf_i2)
 
 | **Type** | array of string |
 | -------- | --------------- |
@@ -1203,7 +1203,7 @@ ISO 639-1 language code values used in the dataset text or metadata, such as en 
 | ----------------------------------------- | ----------- |
 | [Language code](#language_anyOf_i2_items) | -           |
 
-#### <a name="language_anyOf_i2_items"></a>Language code
+#### <a name="language_anyOf_i2_items"></a>Language code [#](#language_anyOf_i2_items)
 
 | **Type** | `string` |
 | -------- | -------- |
@@ -1212,7 +1212,7 @@ ISO 639-1 language code values used in the dataset text or metadata, such as en 
 | -------------- | - |
 | **Max length** | 2 |
 
-## <a name="modified"></a>`Dataset > modified`
+## <a name="modified"></a>`Dataset > modified` [#](#modified)
 
 **Title:** last modified
 
@@ -1247,12 +1247,12 @@ Most recent date when the dataset's actual data changed, not just metadata
 | [Null allowed when not required](#modified_anyOf_i0) |
 | [Date string](#modified_anyOf_i1)                    |
 
-### <a name="modified_anyOf_i0"></a>`Dataset > modified > anyOf > Null allowed when not required`
+### <a name="modified_anyOf_i0"></a>`Dataset > modified > anyOf > Null allowed when not required` [#](#modified_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="modified_anyOf_i1"></a>`Dataset > modified > anyOf > Date string`
+### <a name="modified_anyOf_i1"></a>`Dataset > modified > anyOf > Date string` [#](#modified_anyOf_i1)
 
 | **Type**                  | `combining`      |
 | ------------------------- | ---------------- |
@@ -1265,19 +1265,19 @@ Most recent date when the dataset's actual data changed, not just metadata
 | [item 2](#modified_anyOf_i1_anyOf_i2) |
 | [item 3](#modified_anyOf_i1_anyOf_i3) |
 
-#### <a name="modified_anyOf_i1_anyOf_i0"></a>`Dataset > modified > anyOf > Date string > anyOf > item 0`
+#### <a name="modified_anyOf_i1_anyOf_i0"></a>`Dataset > modified > anyOf > Date string > anyOf > item 0` [#](#modified_anyOf_i1_anyOf_i0)
 
 | **Type**   | `string`    |
 | ---------- | ----------- |
 | **Format** | `date-time` |
 
-#### <a name="modified_anyOf_i1_anyOf_i1"></a>`Dataset > modified > anyOf > Date string > anyOf > item 1`
+#### <a name="modified_anyOf_i1_anyOf_i1"></a>`Dataset > modified > anyOf > Date string > anyOf > item 1` [#](#modified_anyOf_i1_anyOf_i1)
 
 | **Type**   | `string` |
 | ---------- | -------- |
 | **Format** | `date`   |
 
-#### <a name="modified_anyOf_i1_anyOf_i2"></a>`Dataset > modified > anyOf > Date string > anyOf > item 2`
+#### <a name="modified_anyOf_i1_anyOf_i2"></a>`Dataset > modified > anyOf > Date string > anyOf > item 2` [#](#modified_anyOf_i1_anyOf_i2)
 
 A year in YYYY format
 
@@ -1288,7 +1288,7 @@ A year in YYYY format
 | --------------------------------- | --------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D%24) |
 
-#### <a name="modified_anyOf_i1_anyOf_i3"></a>`Dataset > modified > anyOf > Date string > anyOf > item 3`
+#### <a name="modified_anyOf_i1_anyOf_i3"></a>`Dataset > modified > anyOf > Date string > anyOf > item 3` [#](#modified_anyOf_i1_anyOf_i3)
 
 A year and month in YYYY-MM format
 
@@ -1299,7 +1299,7 @@ A year and month in YYYY-MM format
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Must match regular expression** | ```^[0-9]{4}-[0-9]{2}$``` [Test](https://regex101.com/?regex=%5E%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D%24) |
 
-## <a name="provenance"></a>`Dataset > provenance`
+## <a name="provenance"></a>`Dataset > provenance` [#](#provenance)
 
 **Requirement:** Optional
 
@@ -1321,14 +1321,14 @@ List of statements about the lineage of a Dataset, including any changes in its 
 | ------------------------------------- | ------------------------------------- |
 | [provenance items](#provenance_items) | Full text of the provenance statement |
 
-### <a name="provenance_items"></a>Array Item
+### <a name="provenance_items"></a>Array Item [#](#provenance_items)
 
 Full text of the provenance statement
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="publisher"></a>`Dataset > publisher`
+## <a name="publisher"></a>`Dataset > publisher` [#](#publisher)
 
 **Requirement:** Mandatory
 
@@ -1340,7 +1340,7 @@ Organization responsible for publishing and making the dataset available
 | **Additional properties** | Any type allowed                         |
 | **Defined in**            | [Organization](/standards/catalog/dcat-us-3/agents/#organization) |
 
-## <a name="relation"></a>`Dataset > relation`
+## <a name="relation"></a>`Dataset > relation` [#](#relation)
 
 **Title:** related resource
 
@@ -1363,7 +1363,7 @@ List of links to related resources when the relationship is not otherwise specif
 | ------------------------------- | ------------------------- |
 | [Link](#relation_items)         | reference iri of Resource |
 
-### <a name="relation_items"></a>Link
+### <a name="relation_items"></a>Link [#](#relation_items)
 
 reference iri of Resource
 
@@ -1371,7 +1371,7 @@ reference iri of Resource
 | ---------- | -------- |
 | **Format** | `iri`    |
 
-## <a name="replaces"></a>`Dataset > replaces`
+## <a name="replaces"></a>`Dataset > replaces` [#](#replaces)
 
 **Requirement:** Optional
 
@@ -1384,7 +1384,7 @@ List of Datasets replaced by this Dataset
 | ------------------------------- | --------------------------------------------------------- |
 | [Dataset](/standards/catalog/dcat-us-3/dataset/#root)    | A collection of data published or curated by one provider |
 
-## <a name="rights"></a>`Dataset > rights`
+## <a name="rights"></a>`Dataset > rights` [#](#rights)
 
 **Requirement:** Recommended
 
@@ -1411,14 +1411,14 @@ Rights statements not already covered by license or accessRights, such as copyri
 | ------------------------------- | ---------------------------------- |
 | [rights items](#rights_items)   | Full text of a statement of rights |
 
-### <a name="rights_items"></a>Array Item
+### <a name="rights_items"></a>Array Item [#](#rights_items)
 
 Full text of a statement of rights
 
 | **Type** | `string` |
 | -------- | -------- |
 
-## <a name="rightsHolder"></a>`Dataset > rightsHolder`
+## <a name="rightsHolder"></a>`Dataset > rightsHolder` [#](#rightsHolder)
 
 **Requirement:** Optional
 
@@ -1431,7 +1431,7 @@ List of agents (organizations) holding rights on the Dataset
 | ---------------------------------------- | --------------------------------------------------------------------------------- |
 | [Organization](/standards/catalog/dcat-us-3/agents/#organization) | An organization involved with a resource, including parent or child organizations |
 
-## <a name="source"></a>`Dataset > source`
+## <a name="source"></a>`Dataset > source` [#](#source)
 
 **Title:** data source
 
@@ -1446,7 +1446,7 @@ List of related Datasets from which the described Dataset is derived
 | ------------------------------- | --------------------------------------------------------- |
 | [Dataset](/standards/catalog/dcat-us-3/dataset/#root)    | A collection of data published or curated by one provider |
 
-## <a name="spatial"></a>`Dataset > spatial`
+## <a name="spatial"></a>`Dataset > spatial` [#](#spatial)
 
 **Title:** spatial/geographic coverage
 
@@ -1464,12 +1464,12 @@ A geographic region or regions that are covered by the Dataset
 | [Location](#spatial_anyOf_i1)                       |
 | [List of geographic regions](#spatial_anyOf_i2)     |
 
-### <a name="spatial_anyOf_i0"></a>`Dataset > spatial > anyOf > Null allowed when not required`
+### <a name="spatial_anyOf_i0"></a>`Dataset > spatial > anyOf > Null allowed when not required` [#](#spatial_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="spatial_anyOf_i1"></a>`Dataset > spatial > anyOf > Location`
+### <a name="spatial_anyOf_i1"></a>`Dataset > spatial > anyOf > Location` [#](#spatial_anyOf_i1)
 
 inline description of Location
 
@@ -1478,7 +1478,7 @@ inline description of Location
 | **Additional properties** | Any type allowed                                   |
 | **Same definition as**    | [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) |
 
-### <a name="spatial_anyOf_i2"></a>`Dataset > spatial > anyOf > List of geographic regions`
+### <a name="spatial_anyOf_i2"></a>`Dataset > spatial > anyOf > List of geographic regions` [#](#spatial_anyOf_i2)
 
 | **Type** | array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes |
 | -------- | ------------------------------------------------------------------- |
@@ -1487,7 +1487,7 @@ inline description of Location
 | -------------------------------------------------- | -------------------------------- |
 | [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) | A named place or geographic area |
 
-## <a name="subject"></a>`Dataset > subject`
+## <a name="subject"></a>`Dataset > subject` [#](#subject)
 
 **Requirement:** Optional
 
@@ -1500,7 +1500,7 @@ List of primary subjects for the dataset, usually narrower than broad theme cate
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
 | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
-## <a name="temporal"></a>`Dataset > temporal`
+## <a name="temporal"></a>`Dataset > temporal` [#](#temporal)
 
 **Title:** temporal coverage
 
@@ -1515,7 +1515,7 @@ Time periods covered by the dataset
 | ------------------------------------------------------------ | ---------------------------------------------------------------------- |
 | [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) | Information about a specific time period with a start- and/or end-time |
 
-## <a name="title"></a>`Dataset > title`
+## <a name="title"></a>`Dataset > title` [#](#title)
 
 **Requirement:** Mandatory
 
@@ -1535,7 +1535,7 @@ Human-readable title of the dataset
 "National Climate Observations 2024"
 ```
 
-## <a name="category"></a>`Dataset > category`
+## <a name="category"></a>`Dataset > category` [#](#category)
 
 **Requirement:** Optional
 
@@ -1548,7 +1548,7 @@ List of high-level categories for the dataset
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
 | [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) | A controlled term or label, optionally drawn from a concept scheme |
 
-## <a name="hasQualityMeasurement"></a>`Dataset > hasQualityMeasurement`
+## <a name="hasQualityMeasurement"></a>`Dataset > hasQualityMeasurement` [#](#hasQualityMeasurement)
 
 **Title:** quality measurement
 
@@ -1563,7 +1563,7 @@ List of quality measurements for the dataset (for example, completeness, accurac
 | ----------------------------------------------------------------------- | ------------------------------------------------------------- |
 | [QualityMeasurement](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#quality-measurement) | A measurement of a resource against a specific quality metric |
 
-## <a name="page"></a>`Dataset > page`
+## <a name="page"></a>`Dataset > page` [#](#page)
 
 **Title:** documentation
 
@@ -1578,7 +1578,7 @@ List of pages or documents about this dataset
 | -------------------------------------------- | ----------------------------------------------------- |
 | [Document](/standards/catalog/dcat-us-3/quality-governance/#document) | A publication or other document related to a resource |
 
-## <a name="qualifiedAttribution"></a>`Dataset > qualifiedAttribution`
+## <a name="qualifiedAttribution"></a>`Dataset > qualifiedAttribution` [#](#qualifiedAttribution)
 
 **Requirement:** Optional
 
@@ -1591,7 +1591,7 @@ List of agents with specific responsibilities for the dataset
 | -------------------------------------------------- | ------------------------------------------------- |
 | [Attribution](/standards/catalog/dcat-us-3/quality-governance/#attribution) | A responsibility that an agent has for a resource |
 
-## <a name="wasAttributedTo"></a>`Dataset > wasAttributedTo`
+## <a name="wasAttributedTo"></a>`Dataset > wasAttributedTo` [#](#wasAttributedTo)
 
 **Title:** attribution
 
@@ -1606,7 +1606,7 @@ List of agents attributed to this dataset
 | ------------------------------- | -------------------------------------------------------------------------------- |
 | [Agent](/standards/catalog/dcat-us-3/agents/#agent)      | A person, organization, software agent, or other entity involved with a resource |
 
-## <a name="wasGeneratedBy"></a>`Dataset > wasGeneratedBy`
+## <a name="wasGeneratedBy"></a>`Dataset > wasGeneratedBy` [#](#wasGeneratedBy)
 
 **Requirement:** Optional
 
@@ -1619,7 +1619,7 @@ List of activities that generated, or provide the business context for the creat
 | -------------------------------------------------- | -------------------------------------------------------------- |
 | [Activity](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#activity) | An activity related to creating, changing, or using a resource |
 
-## <a name="wasUsedBy"></a>`Dataset > wasUsedBy`
+## <a name="wasUsedBy"></a>`Dataset > wasUsedBy` [#](#wasUsedBy)
 
 **Title:** used by
 
@@ -1634,7 +1634,7 @@ List of activities that used the Dataset
 | -------------------------------------------------- | -------------------------------------------------------------- |
 | [Activity](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#activity) | An activity related to creating, changing, or using a resource |
 
-## <a name="image"></a>`Dataset > image`
+## <a name="image"></a>`Dataset > image` [#](#image)
 
 **Requirement:** Optional
 
@@ -1649,12 +1649,12 @@ Thumbnail image illustrating the dataset, especially useful for visual data such
 | [Null allowed when not required](#image_anyOf_i0) |
 | [Link](#image_anyOf_i1)                           |
 
-### <a name="image_anyOf_i0"></a>`Dataset > image > anyOf > Null allowed when not required`
+### <a name="image_anyOf_i0"></a>`Dataset > image > anyOf > Null allowed when not required` [#](#image_anyOf_i0)
 
 | **Type** | `null` |
 | -------- | ------ |
 
-### <a name="image_anyOf_i1"></a>`Dataset > image > anyOf > Link`
+### <a name="image_anyOf_i1"></a>`Dataset > image > anyOf > Link` [#](#image_anyOf_i1)
 
 The link to the image
 
@@ -1662,7 +1662,7 @@ The link to the image
 | ---------- | -------- |
 | **Format** | `iri`    |
 
-## <a name="scopeNote"></a>`Dataset > scopeNote`
+## <a name="scopeNote"></a>`Dataset > scopeNote` [#](#scopeNote)
 
 **Title:** usage note
 
