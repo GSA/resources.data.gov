@@ -10,9 +10,6 @@ tags:
   - data schema
   - open data
   - DCAT
-  - DCAT-US
-  - DCAT-US3
-  - DCAT-US-3.0
   - metadata standard
   - data inventory
   - data standards
