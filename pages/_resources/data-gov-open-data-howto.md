@@ -217,8 +217,7 @@ details: >-
   source file. Nothing is added or edited by harvest. The table below maps the
   most common fields.
  
-  <pre><code>
-    <table>
+ <table>
       <thead>
         <tr>
           <th>What you see on catalog.data.gov</th>
@@ -297,7 +296,7 @@ details: >-
       </tbody>
     </table>
 
-   </code></pre>
+
  
   Fields that are absent from your source file simply do not appear on the
   page. There is no placeholder or default value.
