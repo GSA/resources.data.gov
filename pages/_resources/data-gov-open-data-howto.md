@@ -218,84 +218,85 @@ details: >-
   most common fields.
  
   <pre><code>
-  <table>
-   <thead>
-   <tr>
-   <th>What you see on catalog.data.gov</th>
-   <th>Field in your data.json</th>
-   </tr>
-   </thead>
-   <tbody>
-   <tr>
-   <td>Page title</td>
-   <td><code>title</code></td>
-   </tr>
-   <tr>
-   <td>"Published by" line</td>
-   <td><code>publisher.name</code></td>
-   </tr>
-   <tr>
-   <td>Description</td>
-   <td><code>description</code></td>
-   </tr>
-   <tr>
-   <td>Resource download rows</td>
-   <td><code>distribution</code> (one row per entry)</td>
-   </tr>
-   <tr>
-   <td>Resource row label</td>
-   <td><code>distribution[].title</code> — falls back to generic "Resource 1", "Resource 2", etc. if absent</td>
-   </tr>
-   <tr>
-   <td>Download button vs Visit Page button</td>
-   <td><code>distribution[].downloadURL</code> renders a Download button; <code>distribution[].accessURL</code> renders a Visit Page button. A single dataset can mix both.</td>
-   </tr>
-   <tr>
-   <td>Resource format label</td>
-   <td><code>distribution[].mediaType</code> — falls back to <code>distribution[].format</code> if <code>mediaType</code> is absent. Value is displayed verbatim.</td>
-   </tr>
-   <tr>
-   <td>Contact name and email</td>
-   <td><code>contactPoint.fn</code> and <code>contactPoint.hasEmail</code></td>
-   </tr>
-   <tr>
-   <td>License</td>
-   <td><code>license</code></td>
-   </tr>
-   <tr>
-   <td>Access level</td>
-   <td><code>accessLevel</code></td>
-   </tr>
-   <tr>
-   <td>Dataset Issued</td>
-   <td><code>issued</code></td>
-   </tr>
-   <tr>
-   <td>Dataset Last Modified</td>
-   <td><code>modified</code></td>
-   </tr>
-   <tr>
-   <td>Accrual Periodicity</td>
-   <td><code>accrualPeriodicity</code> — displayed verbatim, including ISO 8601 duration codes like R/P6M</td>
-   </tr>
-   <tr>
-   <td>Location map</td>
-   <td><code>spatial</code> — must be parseable coordinates (bounding box or GeoJSON polygon). A plain text string like "United States" will not render a map.</td>
-   </tr>
-   <tr>
-   <td>Tags</td>
-   <td><code>keyword</code> and <code>theme</code> — both feed the tag cloud. Values are displayed verbatim.</td>
-   </tr>
-   <tr>
-   <td>Metadata Last Checked</td>
-   <td>Set by the harvest system — not from your file</td>
-   </tr>
-   <tr>
-   <td>"Explore Collection" widget</td>
-   <td><code>isPartOf</code> — groups datasets under a named collection</td>
-   </tr>
-   </tbody>
-   </table>
+    <table>
+      <thead>
+        <tr>
+          <th>What you see on catalog.data.gov</th>
+          <th>Field in your data.json</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Page title</td>
+          <td><code>title</code></td>
+        </tr>
+        <tr>
+          <td>"Published by" line</td>
+          <td><code>publisher.name</code></td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td><code>description</code></td>
+        </tr>
+        <tr>
+          <td>Resource download rows</td>
+          <td><code>distribution</code> (one row per entry)</td>
+        </tr>
+        <tr>
+          <td>Resource row label</td>
+          <td><code>distribution[].title</code> — falls back to generic "Resource 1", "Resource 2", etc. if absent</td>
+        </tr>
+        <tr>
+          <td>Download button vs Visit Page button</td>
+          <td><code>distribution[].downloadURL</code> renders a Download button; <code>distribution[].accessURL</code> renders a Visit Page button. A single dataset can mix both.</td>
+        </tr>
+        <tr>
+          <td>Resource format label</td>
+          <td><code>distribution[].mediaType</code> — falls back to <code>distribution[].format</code> if <code>mediaType</code> is absent. Value is displayed verbatim.</td>
+        </tr>
+        <tr>
+          <td>Contact name and email</td>
+          <td><code>contactPoint.fn</code> and <code>contactPoint.hasEmail</code></td>
+        </tr>
+        <tr>
+          <td>License</td>
+          <td><code>license</code></td>
+        </tr>
+        <tr>
+          <td>Access level</td>
+          <td><code>accessLevel</code></td>
+        </tr>
+        <tr>
+          <td>Dataset Issued</td>
+          <td><code>issued</code></td>
+        </tr>
+        <tr>
+          <td>Dataset Last Modified</td>
+          <td><code>modified</code></td>
+        </tr>
+        <tr>
+          <td>Accrual Periodicity</td>
+          <td><code>accrualPeriodicity</code> — displayed verbatim, including ISO 8601 duration codes like R/P6M</td>
+        </tr>
+        <tr>
+          <td>Location map</td>
+          <td><code>spatial</code> — must be parseable coordinates (bounding box or GeoJSON polygon). A plain text string like "United States" will not render a map.</td>
+        </tr>
+        <tr>
+          <td>Tags</td>
+          <td><code>keyword</code> and <code>theme</code> — both feed the tag cloud. Values are displayed verbatim.</td>
+        </tr>
+        <tr>
+          <td>Metadata Last Checked</td>
+          <td>Set by the harvest system — not from your file</td>
+        </tr>
+        <tr>
+          <td>"Explore Collection" widget</td>
+          <td><code>isPartOf</code> — groups datasets under a named collection</td>
+        </tr>
+      </tbody>
+    </table>
+
    </code></pre>
  
   Fields that are absent from your source file simply do not appear on the
