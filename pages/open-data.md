@@ -9,7 +9,7 @@ A community and working group that unites open data leads at federal agencies, d
       Connect with us
     </h3>
     <div class="usa-summary-box__text">
-        <p>Want to hear updates about data.gov? Contact us at <a href="mailto:datagovhelp@gsa.gov">datagovhelp@gsa.gov</a> to get added to our email list.</p>
+        <p>Want to hear updates about data.gov? Contact us at <a href="mailto:datagovhelp@gsa.gov">datagovhelp@gsa.gov</a> to be added to our email list.</p>
     </div>
   </div>
 </div>
