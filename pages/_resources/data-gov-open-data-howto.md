@@ -2,11 +2,7 @@
 redirect_from: /tools/how-to-get-your-open-data-on-datagov/
 resource_name: How to get your Open Data on Data.gov
 slug: data-gov-open-data-howto
-description: Data.gov is the central clearinghouse for open data from the United
-  States federal government and also provides access to many state and local
-  (non-federal) open data resources. Find out below how federal, federal geospatial,
-  and non-federal data is funneled to Data.gov and how you can get your data
-  federated on Data.gov for greater discoverability and impact.
+description: Learn how Data.gov harvests metadata from agency data sources and how to request a new harvest source or modify an existing one.
 source: data.gov
 category: Skills development
 tags:
@@ -16,89 +12,301 @@ tags:
 guidance_tags: ""
 format: ""
 details: >-
-  *This guide is primarily for the Open Data Points of Contact (POC) at each
-  agency. If you would like to add data to Data.gov and you are not the POC for
-  your agency, please contact your POC. If you do not know your agency POC,
-  please continue reading and [contact Data.gov](https://www.data.gov/contact)
-  for assistance.* 
 
-  ## Introduction
-
-  Data.gov is primarily a federal open government data site. However, state, local, and tribal governments can also publish metadata describing their open data resources on Data.gov for greater discoverability. Data.gov does not host data directly (with a few exceptions), but rather aggregates metadata about open data assets in one centralized location. Once an agency creates an open data source with the necessary format and metadata requirements, the Data.gov team can harvest the metadata directly, synchronizing that source’s metadata on Data.gov as often as every 24 hours.
+  ## Overview
+ 
+  Data.gov is the federal government's central open data catalog. It does not
+  host data files directly. Instead, it collects metadata — the descriptions,
+  contact information, and download links for your datasets — from a file your
+  agency publishes and maintains. That file is harvested on a schedule and the
+  records appear on [catalog.data.gov](https://catalog.data.gov).
+ 
+ 
+  This means that **what you publish is exactly what appears on Data.gov.** The
+  harvest system reads your source file and stores it as-is. It does not
+  correct typos, normalize field values, or fill in missing information. Your
+  agency owns the quality of your catalog entries.
+ 
+ 
+  This guide covers how the harvest pipeline works, what your agency needs to
+  prepare, and how to request a new harvest source or modify an existing one.
+ 
+ 
+  ---
 
   ### Overview Diagram
 
   ![opendatagraphic](../../assets/img/data-harvest-diagram.png)
 
-  ## Step 1: Metadata Gathering and Publishing
+  ## How the harvest pipeline works
+ 
+ 
+  The process has three stages.
+ 
+ 
+  **1. Your agency publishes a metadata source file.** This is a publicly
+  accessible file — typically a `data.json` for DCAT-US, or a web accessible
+  folder (WAF) of XML files for ISO or CSDGM metadata. You host this file on
+  your own infrastructure and keep it up to date.
+ 
+ 
+  **2. Data.gov harvest reads the file on a schedule.** Harvest.data.gov runs
+  automated jobs — daily, weekly, or at another configured frequency — that
+  fetch your source file, parse each dataset record, and store it. Records that
+  cannot be parsed due to errors in your file are skipped; they do not appear
+  on Data.gov and do not affect other records in the same harvest run. Your
+  agency is responsible for fixing errors in your source file.
+ 
+ 
+  **3. Catalog.data.gov displays the stored records.** The catalog reads from
+  what harvest stored and renders each dataset as a public page. The raw record
+  stored by harvest is always accessible via the "View Raw Data" link on any
+  dataset page, so anyone can verify exactly what was ingested.
+ 
+ 
+  When you update your source file, the changes appear on Data.gov after the
+  next scheduled harvest run — not immediately.
+ 
+ 
+  State, local, and tribal governments can also publish metadata on Data.gov
+  using this same process.
+ 
+ 
+  ---
 
-  In order for Data.gov to harvest your metadata, it needs to be created/generated with a specific metadata schema, gathered into a central location, and made public.
-
-  ### 1a: Choose your metadata standard
-
-
-  There are three accepted metadata standards currently handled by Data.gov. Data.gov was originally created with DCAT-US as the standard, and agencies were expected to provide metadata in this format according to the [M-13-13 policy](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2013/m-13-13.pdf) issued in 2013 (note that Project Open Data was the previous name for the DCAT-US standard). The other two have roots in the geospatial data community (ISO and CSDGM, described in more detail below). All three are currently supported by Data.gov.
-
-
-  Please note that we defer to the Federal Geographic Data Committee ([FGDC](https://www.fgdc.gov/metadata)) on geospatial data, as it has the authority to do so under the [Geospatial Data Act](https://www.fgdc.gov/gda) and [Executive Order 12906](http://www.archives.gov/federal-register/executive-orders/pdf/12906.pdf). Please see their website above for the latest information, and note that [current FGDC guidance](https://www.fgdc.gov/metadata/geospatial-metadata-standards) is to transition to ISO standard (and not use CSDGM).
-
-  #### DCAT-US (JSON)
-
-  Previously known as the Project Open Data standard, the [DCAT-US standard](https://resources.data.gov/resources/dcat-us/) is based on the commonly used [DCAT](https://www.w3.org/TR/vocab-dcat-1/) standard from the [W3C](https://www.w3.org/). This format is expected to be implemented in a JSON file type. Please note that Data.gov only harvests “catalogs” of information, a single JSON file that has a list of all datasets. For common examples, see our [github tests](https://github.com/GSA/ckanext-datajson/tree/main/ckanext/datajson/tests/datajson-samples).
-
-  #### ISO 19115 (XML)
-
-  The FGDC recommends using the ISO 19115 metadata standard for geospatial metadata. See [ISO 19115:2003 Geographic Information – Metadata](http://www.fgdc.gov/metadata/geospatial-metadata-standards).
-
-  #### CSDGM (XML)
-
-  While the CSDGM standard was created by the FGDC (and is sometimes referred to as FGDC metadata), [it is no longer recommended](https://www.fgdc.gov/metadata/geospatial-metadata-standards). A known problem with using CSDGM is that there is no unique identifier in the metadata itself. This makes it difficult to track dataset changes and can cause datasets to be removed and re-created in Data.gov unnecessarily due to URL changes, title changes, etc. The main result of this known deficiency is that the URL of the dataset page on the Data.gov catalog may change (since it wasn’t registered as a change but a new dataset), and anyone linking to the previous URL (such as agency pages, data consumers, and other federal sites like [Geoplatform](https://www.geoplatform.gov/)) can lose track of the URL for the metadata on the [Data.gov catalog](https://catalog.data.gov/dataset).
-
-  ### 1b: Create and gather metadata across your organization
-
-  The choice on how to gather metadata across the organization is up to each agency. There are a variety of tools from open source to commercially available to custom-created that are in use to gather, maintain, and publish the metadata files.
-
-
-  If you don’t know where to start, and plan to provide metadata using the [DCAT-US standard](https://resources.data.gov/resources/dcat-us/), you can start by making use of the [inventory tool](https://resources.data.gov/resources/inventory-data-gov-guide/) provided by the Data.gov team. Contact the Data.gov team for more information about using inventory.data.gov.
-
-  ### 1c: Make your catalog public
-
-  The metadata that you have chosen to publish must be publicly available. The best practice is to generate the catalog at a certain time offline and then publicly release the file(s), such that a static copy is available to Data.gov (and the general public). Please note that there is no support for an API or live querying of a database, all solutions need to be provided statically.
-
-  #### DCAT-US Catalog
-
-  If you are providing a DCAT-US catalog, Data.gov requires the metadata as a JSON file at a public URL in order to harvest. For example, GSA’s metadata can be found at [gsa.gov/data.json](https://gsa.gov/data.json).
-
-  #### Web Accessible Folder
-
-  Currently Data.gov supports scanning a WAF (web accessible folder) and harvesting all XML files in the WAF. It can scan a nested folder structure and assumes any XML files are metadata files to be harvested. These files can be CSDGM or ISO standard, but we recommend making separate folders/WAF’s for the different standards if you use both. A good example can be seen [here](https://data.noaa.gov/waf/NOAA/nos/onms/iso/xml/).
   
-  
-  It should be noted that Data.gov expects the file timestamp to be included on the page with the file link, and to only be updated if and when file content changes; this helps Data.gov target only the files that were changed since the last harvest. The absence or inaccurate update of file timestamps can lead to a number of inefficiencies. Data.gov may need to harvest this source less frequently, among other mitigations.
-
-  ## Step 2: Data.gov Harvest
-
-  ### Contact Data.gov
-
-  Contact the Data.gov team via email at [datagov@gsa.gov](mailto:datagov@gsa.gov) to let them know you’d like to get started. Please include a link to your publicly available metadata (see step 1c above). Please also include information about how often the information is updated (and when, if applicable) so that Data.gov can set up the right cadence for refreshing the catalog from your source.
-
-  ### Harvest Setup
-
-  The Data.gov team will create a new harvest source that will automatically collect information about your datasets and update Data.gov on a regular schedule. Depending on the number of datasets and/or the complexity of the organization, Data.gov may elect to test harvest on a dev/test system in order to verify things will work properly before “going live” with the production system. Agencies can provide email addresses to receive a harvest report describing the results of each harvest job, such as number of datasets added, deleted, or updated, and lists of any errors that prevented metadata for a particular dataset from being added to the Data.gov catalog.
-
-  ## Geoplatform Overlap
-
-  The [Geospatial Data Act](https://www.fgdc.gov/gda) is in many ways a companion of the OPEN Data Act. The Geospatial Data Act was enacted first, and the two laws do not reference each other. At a high level, the Geospatial Data Act codifies existing authorities of the Federal Geographic Data Committee regarding geospatial data, and requires the existence of the geospatial data site at [geoplatform.gov](https://www.geoplatform.gov/). In practice, Geoplatform uses Data.gov as the source of its metadata (filtering on geospatial metadata like [this](https://catalog.data.gov/dataset/?metadata_type=geospatial)). The Data.gov and Geoplatform.gov teams collaborate on overlapping issues such as harvesting, metadata standards, API’s and links between the two systems.
-
-  ## Term Definitions
-
-  - **Dataset:** For Data.gov, this is in reference to metadata describing a data asset. This may contain references to multiple API’s, files, and other ways to access the data. It is not a database, a data file, or an API, it’s the metadata describing these things. Agencies are required to create and maintain a “comprehensive data inventory” of the metadata for harvesting into Data.gov, the federal data catalog required under the [OPEN Government Data Act](https://www.congress.gov/115/plaws/publ435/PLAW-115publ435.pdf).
-
-  - **Harvest Job:** When Data.gov processes the harvest source to capture the current state of the harvest source, and make additions, updates, and deletions accordingly on the Data.gov catalog.
-
-  - **Harvest Source:** A public URL where Data.gov can gather metadata for a department, bureau, organization, or other entity. See step 1c.
-
-  - **Metadata:** the information describing the data that is available. Following one of the three supported metadata standards: DCAT-US, CSDGM, and ISO. Elements such as title, description, keywords, location, source links, etc.
+ 
+  ## Step 1: Prepare your metadata source
+ 
+ 
+  ### Choose a metadata standard
+ 
+ 
+  Data.gov currently supports three metadata standards.
+ 
+ 
+  **DCAT-US (JSON)** is the standard for most federal civilian agencies. It is
+  required under the [OPEN Government Data
+  Act](https://www.congress.gov/115/plaws/publ435/PLAW-115publ435.pdf) and
+  [OMB M-13-13](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2013/m-13-13.pdf).
+  Your agency publishes a single JSON file — a catalog — at a stable public
+  URL. For example, GSA's catalog is at
+  [gsa.gov/data.json](https://gsa.gov/data.json). The current version is
+  DCAT-US 1.1. DCAT-US 3.0 is in active development; see the [DCAT-US 3.0
+  guidance](https://resources.data.gov/resources/dcat-us3/) for transition
+  information.
+ 
+ 
+  **ISO 19115 (XML)** is the standard recommended by the Federal Geographic
+  Data Committee (FGDC) for geospatial metadata. If your agency publishes
+  geospatial datasets, consult [FGDC guidance](https://www.fgdc.gov/metadata)
+  for the current recommended profile.
+ 
+ 
+  **CSDGM (XML)** is a legacy geospatial standard created by the FGDC. It is
+  no longer recommended. A significant limitation of CSDGM is that it has no
+  unique identifier field. This means harvest cannot reliably track a dataset
+  across changes: a URL or title change can cause the dataset to be deleted and
+  re-created as a new record, breaking any existing links to the catalog page.
+  If you are currently using CSDGM, the FGDC recommends transitioning to ISO
+  19115.
+ 
+ 
+  ### Publish your source at a stable public URL
+ 
+ 
+  Your metadata source file must be publicly accessible without authentication.
+  Data.gov cannot harvest from files behind a login, API key, or VPN.
+ 
+ 
+  For DCAT-US, this is a single JSON file. For ISO or CSDGM, this is a web
+  accessible folder (WAF) — a directory of XML files accessible at a public
+  URL, one XML file per dataset.
+ 
+ 
+  For WAF sources: Data.gov expects a file timestamp to appear alongside each
+  file link in the folder listing, and that timestamp should only be updated
+  when the file content actually changes. If timestamps are absent or updated
+  indiscriminately, harvest efficiency is reduced and Data.gov may need to
+  reduce the harvest frequency for your source.
+ 
+ 
+  ---
+ 
+ 
+  ## Step 2: Check whether your organization already has a harvest source
+ 
+ 
+  Before submitting a request, check
+  [harvest.data.gov](https://harvest.data.gov) to see whether your organization
+  already has an active harvest source. Search for your agency or bureau name.
+ 
+ 
+  If your organization is already listed, you need a **modification** to an
+  existing source, not a new one. Common reasons to request a modification
+  include a changed source URL, updated notification email addresses, or a
+  change in harvest frequency.
+ 
+ 
+  ---
+ 
+ 
+  ## Step 3: Submit a request
+ 
+ 
+  Use the [Harvest.data.gov Setup or Modification
+  form](https://touchpoints.app.cloud.gov/touchpoints/ffb7e9d0/submit) to
+  request a new harvest source or a change to an existing one. The form has two
+  pages.
+ 
+ 
+  **Page 1 — Your organization**
+ 
+ 
+  - Your name and government email address
+  - Whether this is a new source or a modification to an existing one
+  - Your organization name, or the direct link to your organization on
+    harvest.data.gov (for example,
+    `https://harvest.data.gov/organization/gsa`)
+  - Optionally, a URL for your organization's logo if it is new or outdated
+ 
+ 
+  **Page 2 — Your source details**
+ 
+ 
+  - **Source name:** a short identifier with no spaces or special characters,
+    following the convention `agencyname-json` (for example, `gsa-json` or
+    `doi-arcgis`)
+  - **Source URL:** the public URL of your metadata file or WAF folder
+  - **Notification emails:** one or more addresses to receive harvest reports,
+    separated by commas
+  - **Harvest frequency:** how often Data.gov should fetch your file — daily
+    and weekly are most common
+  - **Schema type:** the metadata standard your file uses — DCAT-US 1.1,
+    DCAT-US 3.0, ISO 19115-1, or ISO 19115-2
+  - **Source type:** Document (a single file, such as `data.json`) or Web
+    Accessible Folder (a WAF of XML files)
+  - **Notification preference:** when you want to receive harvest reports —
+    always, on error only, or on error or update
+ 
+ 
+  After you submit the form, the Data.gov team will add your source directly to
+  harvest.data.gov. Your datasets will appear on catalog.data.gov after the
+  first successful harvest run at your configured frequency.
+ 
+ 
+  For questions or to check the status of your request, email
+  [DataGovHelp@gsa.gov](mailto:DataGovHelp@gsa.gov).
+ 
+ 
+  ---
+ 
+ 
+  ## What appears on your catalog page
+ 
+ 
+  Every field visible on a dataset's catalog page comes directly from your
+  source file. Nothing is added or edited by harvest. The table below maps the
+  most common fields.
+ 
+ 
+  | What you see on catalog.data.gov | Field in your data.json |
+  |---|---|
+  | Page title | `title` |
+  | "Published by" line | `publisher.name` |
+  | Description | `description` |
+  | Resource download rows | `distribution` (one row per entry) |
+  | Resource row label | `distribution[].title` (falls back to generic "Resource 1" if absent) |
+  | Download button vs Visit Page button | `distribution[].downloadURL` = Download; `distribution[].accessURL` = Visit Page |
+  | Resource format label | `distribution[].mediaType` (falls back to `distribution[].format` if `mediaType` is absent) |
+  | Contact name and email | `contactPoint.fn` and `contactPoint.hasEmail` |
+  | License | `license` |
+  | Access level | `accessLevel` |
+  | Dataset Issued | `issued` |
+  | Dataset Last Modified | `modified` |
+  | Accrual Periodicity | `accrualPeriodicity` |
+  | Location map | `spatial` (must be parseable coordinates or GeoJSON — a text string like "United States" will not render a map) |
+  | Tags | `keyword` and `theme` |
+  | Metadata Last Checked | Set by harvest system — not from your file |
+  | "Explore Collection" widget | `isPartOf` |
+ 
+ 
+  Fields that are absent from your source file simply do not appear on the
+  page. There is no placeholder or default value.
+ 
+ 
+  Because harvest stores your record verbatim, the value you provide for any
+  field is what users see. A `mediaType` of `placeholder/value` will appear as
+  "PLACEHOLDER/VALUE." An internal system identifier in your `keyword` array
+  will appear as a public tag. Review your source file carefully before
+  submitting a harvest request.
+ 
+ 
+  ---
+ 
+ 
+  ## Harvest errors
+ 
+ 
+  When a harvest job encounters a record it cannot parse — due to malformed
+  JSON, a missing required field, or an unreachable source URL — that record is
+  skipped. The error is logged and included in the harvest notification email
+  sent to the addresses you provided. The rest of the harvest run continues
+  normally.
+ 
+ 
+  Harvest errors mean a dataset does not appear on Data.gov. They do not cause
+  system failures and do not affect other agencies' datasets. Your agency is
+  responsible for correcting errors in your source file. Once corrected, the
+  dataset will appear after the next successful harvest run.
+ 
+ 
+  If your source URL becomes unreachable, all datasets from that source will
+  stop updating until the URL is restored and harvest successfully completes.
+ 
+ 
+  ---
+ 
+ 
+  ## GeoPlatform
+ 
+ 
+  [GeoPlatform.gov](https://www.geoplatform.gov/) uses Data.gov as its source
+  for geospatial dataset metadata, filtering on records that include geospatial
+  fields. If your agency publishes geospatial metadata to Data.gov, it will
+  also appear on GeoPlatform. The Data.gov and GeoPlatform teams coordinate on
+  harvesting, metadata standards, and the relationship between the two
+  catalogs.
+ 
+ 
+  ---
+ 
+ 
+  ## Term definitions
+ 
+ 
+  **Dataset:** For Data.gov, this refers to the metadata describing a data
+  asset — the title, description, contact information, and links to the actual
+  data files. Data.gov does not host the data files themselves. Agencies are
+  required to maintain a comprehensive data inventory for harvesting into
+  Data.gov under the [OPEN Government Data Act](https://www.congress.gov/115/plaws/publ435/PLAW-115publ435.pdf).
+ 
+ 
+  **Harvest job:** A single run of the harvest system that fetches your source
+  file, processes each record, and updates Data.gov with additions, changes,
+  and deletions.
+ 
+ 
+  **Harvest source:** The public URL where Data.gov collects metadata for your
+  organization. Each source corresponds to one URL and one configured schedule.
+ 
+ 
+  **Metadata:** The structured information describing your datasets, following
+  one of the supported standards (DCAT-US, ISO 19115, or CSDGM). Fields like
+  title, description, keywords, contact information, and distribution links are
+  all metadata. Your agency owns the accuracy and completeness of this
+  information.
+ 
 examples: ""
 link: ""
 layout: resource
