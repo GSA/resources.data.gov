@@ -16,27 +16,36 @@ details: >-
   ## You got a harvest error email. Here's what to do.
   
   This guide walks you through what the email means, how to read the error page, and what steps to take for the most common problems.
+
+
   ---
-  On this page
-  What is a harvest error?
-  What the email is telling you
-  How to read the harvest job page
-  How to read an error message
-  Common errors and what to do
-  When to escalate
-  ---
-  1. What is a harvest error?
+
+  
+  ## 1. What is a harvest error?
+  
   harvest.data.gov is the system that automatically pulls your agency's dataset listings into the public catalog at data.gov. It runs on a schedule and checks each dataset's metadata against a standard format called DCAT-US.
+  
   A harvest error means one or more of your datasets had metadata that the system could not read or could not accept. The dataset may still appear on data.gov if it was previously published, but the latest version of its information could not be loaded.
-  > **An error does not mean your data is gone.** It means the metadata description of your dataset had a problem. Your actual data files are not affected.
+  
+  **An error does not mean your data is gone.** It means the metadata description of your dataset had a problem. Your actual data files are not affected.
+
   ---
-  2. What the email is telling you
+  ## 2. What the email is telling you
+
+  
   The notification email tells you that a recent harvest job for your source found errors. It includes a link to the harvest job page where you can see the details.
+  
   What to look for in the email:
-  Harvest source name -- the name of your agency's data feed
-  Number of errors -- how many dataset records had problems
-  A link -- click it to see the full error details
+  
+  - Harvest source name -- the name of your agency's data feed
+  
+  - Number of errors -- how many dataset records had problems
+  
+  - A link -- click it to see the full error details
+  
   Click the link in the email. It will take you to a harvest job page on harvest.data.gov.
+
+  
   ---
   3. How to read the harvest job page
   The page you land on shows a summary of what happened during the most recent harvest run. Here is what the numbers mean:
