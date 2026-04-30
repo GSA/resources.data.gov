@@ -16,7 +16,7 @@ format: ""
 details: >
   {: .bgbox.success}
 
-  Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the [Office of Management and Budget Integrated Data Collection (IDC)](../../PoD/IDC/), the [Report Metrics Dashboard](//catalog.data.gov/report/metrics-dashboard) and [Open Data Cross-Agency Priority (CAP) Goal](https://trumpadministration.archives.performance.gov/CAP/overview/). Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources.  
+  Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the [Office of Management and Budget Integrated Data Collection (IDC)](../../PoD/IDC/), the [Report Metrics Dashboard](//catalog.data.gov/report/metrics-dashboard) and Open Data Cross-Agency Priority (CAP) Goal). Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources.  
    
 
 
@@ -26,13 +26,12 @@ details: >
   *Moved from Project Open Data to resources.data.gov. References to Project Open Data have been preserved as links have been updated.*  
 
 
-  *NOTE: Due to the government shutdown in the fall of 2013, OMB extended the previous Nov 1, 2013 deadlines in this document to Nov 30, 2013*
 
 
   ### I. Introduction
 
 
-  The purpose of this guidance is to provide additional clarification and detailed requirements to assist agencies in carrying out the objectives of [Executive Order 13642](https://obamawhitehouse.archives.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-) of May 9, 2013, *Making Open and Machine Readable the New Default for Government Information* and [OMB Memorandum M-13-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf) *Open Data Policy-Managing Information as an Asset*.  Specifically, this document focuses on near-term efforts agencies must take to meet the following five initial requirements of M-13-13, which are due November 30, 2013 (six months from publication of M-13-13):
+  The purpose of this guidance is to provide additional clarification and detailed requirements to assist agencies in carrying out the objectives of Executive Order 13642 of May 9, 2013, *Making Open and Machine Readable the New Default for Government Information* and OMB Memorandum M-13-13 *Open Data Policy-Managing Information as an Asset*.  Specifically, this document focuses on near-term efforts agencies must take to meet the following five initial requirements of M-13-13, which are due November 30, 2013 (six months from publication of M-13-13):
 
 
   1. Create and maintain an Enterprise Data Inventory (Inventory)
@@ -46,7 +45,7 @@ details: >
   5. Clarify roles and responsibilities for promoting efficient and effective data release
 
 
-  Agencies will establish an open data infrastructure by implementing this guidance and Memorandum [M-13-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf) and taking advantage of the resources provided on [Project Open Data](/). Once established, agencies will continue to evolve the infrastructure by identifying and adding new data assets<sup>[1](#footnote-1)</sup>, enriching the description of those data assets through improved metadata, and increasing the amount of data shared with other agencies and the public.
+  Agencies will establish an open data infrastructure by implementing this guidance and Memorandum M-13-13 and taking advantage of the resources provided on Project Open Data. Once established, agencies will continue to evolve the infrastructure by identifying and adding new data assets<sup>[1](#footnote-1)</sup>, enriching the description of those data assets through improved metadata, and increasing the amount of data shared with other agencies and the public.
 
 
   At a minimum, a successful open data infrastructure must:
@@ -62,7 +61,7 @@ details: >
   The “access level” categories described in this document are intended to be used for organizational purposes within agencies and to reflect decisions already made in agencies about whether data assets can be made public; simply marking data assets “public” cannot substitute for the analysis necessary to ensure the data can be made public. Agencies are reminded that this underlying data from the inventory may only be released to the public after a full analysis of privacy, confidentiality, security, and other valid restrictions pertinent to law and policy.
 
 
-  This guidance seeks to balance the need to establish clear and meaningful expectations for agencies to meet, while allowing sufficient flexibility on the approach each agency may take to address their own unique needs. This guidance also includes references to other OMB memoranda that relate to the management of information.  Agencies should refer to the definitions included in the attachment in [OMB Memorandum M-13-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf) *Open Data Policy-Managing Information as an Asset*.
+  This guidance seeks to balance the need to establish clear and meaningful expectations for agencies to meet, while allowing sufficient flexibility on the approach each agency may take to address their own unique needs. This guidance also includes references to other OMB memoranda that relate to the management of information.  Agencies should refer to the definitions included in the attachment in OMB Memorandum M-13-13 *Open Data Policy-Managing Information as an Asset*.
 
 
   This guidance introduces an Enterprise Data Inventory framework to provide agencies with improved clarity on specific actions to be taken and minimum requirements to be met.  It also provides OMB with a rubric by which to evaluate compliance and progress toward the objectives laid out in the Open Data Policy. Following the November 30, 2013 deadline, agencies shall report progress on a quarterly basis, and performance will be tracked through the Open Data Cross-Agency Priority (CAP) Goal. Meeting the requirements of this guidance will ensure agencies are putting in place a basic infrastructure for inventorying, managing, and opening up data to unlock the value created by opening up information resources.
@@ -88,7 +87,7 @@ details: >
 
   * Indicate if the data may be made publicly available and if currently available
 
-  * Describe the data with [Project Open Data metadata schema](../dcat-us) available on Project Open Data.
+  * Describe the data with Project Open Data metadata schema available on Project Open Data.
 
 
   #### Framework to Create and Maintain the Enterprise Data Inventory: Expand, Enrich, Open
@@ -101,13 +100,13 @@ details: >
 
   * Agency operating units (for example, bureaus or offices).
 
-  * [Federal Program Inventory](https://obamaadministration.archives.performance.gov/federalprograminventory.html) on Performance.gov.
+  * Federal Program Inventory on Performance.gov.
 
-  * Common business areas or segments, such as those described in the [Business Reference Model](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/egov_docs/brm_v3-1-service_codes_and_definitions_rev1_20130615.pdf) or the Budget Function Codes of budget accounts.
+  * Common business areas or segments, such as those described in the Business Reference Model or the Budget Function Codes of budget accounts.
 
-  * Agency strategic objectives on Performance.gov and the [Performance Reference Model.](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/egov_docs/prm_2012_agencystrategicobjectivesv3.xlsx)
+  * Agency strategic objectives on Performance.gov and the Performance Reference Model.
 
-  * Types of data from [Data Reference Model.](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/egov_docs/DRM_2_0_Final.pdf)
+  * Types of data from Data Reference Model
 
   * Existing listings of certain types of data assets, such as Information Collection Requests (ICR) submitted to OMB under the Paperwork Reduction Act (as listed on reginfo.gov<sup>[5](#footnote-5)</sup>) and/or files posted on the agency’s public website
 
@@ -272,13 +271,6 @@ details: >
   * Moving forward, agencies should consider updating their customer feedback strategy and reflecting changes on www.[agency].gov/digitalstrategy beyond November 30, 2013.
 
 
-  **Tools and Resources on Project Open Data**
-
-
-  * Data “Kickstart” Plug-in
-
-  * [GSA’s API Resources](http://18f.github.io/API-All-the-X/)
-
 
   #### D. Document if Data Cannot be Released
 
@@ -300,7 +292,7 @@ details: >
   * Encourage dialogue regarding resources necessary to make more data assets public
 
 
-  As part of an agency’s analysis to assign a general access level to each data asset<sup>[19](#footnote-19)</sup>,  agencies should consult section ##III.4 of the [OMB Memorandum M-13-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf),  and Executive Order 13556.  Specifically, agencies are required to incorporate the National Institute of Standards and Technology (NIST) Federal Information Processing Standard (FIPS) Publication 199 "[Standards for Security Categorization of Federal Information and Information Systems](http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf),"  which includes guidance and definitions for confidentiality, integrity, and availability. Agencies should also consult with the [Controlled Unclassified Information  (CUI)](https://www.archives.gov/cui) program to ensure compliance with CUI requirements, the National Strategy for Information Sharing and Safeguarding and the best practices found in Project Open Data.  In addition to complying with the Privacy Act of 1974, the Paperwork Reduction Act, the E-Government Act of 2002, the Federal Information Security Management Act (FISMA), and the Confidential Information Protection and Statistical Efficiency Act (CIPSEA), and other applicable laws, agencies should implement information policies based upon Fair Information Practice Principles, OMB guidance, and NIST guidance on Security and Privacy Controls for Federal Information Systems and Organizations.
+  As part of an agency’s analysis to assign a general access level to each data asset<sup>[19](#footnote-19)</sup>,  agencies should consult section ##III.4 of the OMB Memorandum M-13-13,  and Executive Order 13556.  Specifically, agencies are required to incorporate the National Institute of Standards and Technology (NIST) Federal Information Processing Standard (FIPS) Publication 199 "Standards for Security Categorization of Federal Information and Information Systems,"  which includes guidance and definitions for confidentiality, integrity, and availability. Agencies should also consult with the Controlled Unclassified Information  (CUI) program to ensure compliance with CUI requirements, the National Strategy for Information Sharing and Safeguarding and the best practices found in Project Open Data.  In addition to complying with the Privacy Act of 1974, the Paperwork Reduction Act, the E-Government Act of 2002, the Federal Information Security Management Act (FISMA), and the Confidential Information Protection and Statistical Efficiency Act (CIPSEA), and other applicable laws, agencies should implement information policies based upon Fair Information Practice Principles, OMB guidance, and NIST guidance on Security and Privacy Controls for Federal Information Systems and Organizations.
 
 
   * **Public**: Data asset is or could be made publicly available to all without restrictions.
@@ -315,7 +307,7 @@ details: >
 
   * **Non-Public**: Data asset is not available to members of the public.
 
-  *This category includes data assets that are only available for internal use by the Federal Government, such as by a single program, single agency, or across multiple agencies.  This category might include some but not all data assets designated as Controlled Unclassified Information (CUI), consistent with Executive Order 13556.  Some non-public data assets may still potentially be available to other intra-agency operating units and/or other government agencies, as discussed in [OMB Memorandum M-11-02: Sharing Data While Protecting Privacy](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2011/m11-02.pdf).  The accessLevelComment field for non-public datasets must contain an explanation for the reasoning behind why these data cannot be made public.*
+  *This category includes data assets that are only available for internal use by the Federal Government, such as by a single program, single agency, or across multiple agencies.  This category might include some but not all data assets designated as Controlled Unclassified Information (CUI), consistent with Executive Order 13556.  Some non-public data assets may still potentially be available to other intra-agency operating units and/or other government agencies, as discussed in OMB Memorandum M-11-02: Sharing Data While Protecting Privacy.  The accessLevelComment field for non-public datasets must contain an explanation for the reasoning behind why these data cannot be made public.*
 
 
   ##### Minimum Requirements to Document if Data Cannot be Released
@@ -446,7 +438,7 @@ details: >
 
   |**Data Value**|	These fields describe internal and external use, reuse, and demand by customers and users.|
 
-  |**Openness**|	These fields describe to what extent each data asset achieves the criteria for “open data” in [M-13-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf). |
+  |**Openness**|	These fields describe to what extent each data asset achieves the criteria for “open data” in M-13-13
 
 
   ###Footnotes
@@ -455,29 +447,29 @@ details: >
   <sup><a id="footnote-1">1</a></sup> Data Asset: A collection of data elements or datasets that make sense to group together. Each community of interest identifies the Data Assets specific to supporting the needs of their respective mission or business functions. Notably, a Data Asset is a deliberately abstract concept. A given Data Asset may represent an entire database consisting of multiple distinct entity classes, or may represent a single entity class.
 
 
-  <sup><a id="footnote-2">2</a></sup> Programs from the Federal Program Inventory: http://goals.performance.gov/federalprograminventory (dead link)
+  <sup><a id="footnote-2">2</a></sup> Programs from the Federal Program Inventory
 
 
-  <sup><a id="footnote-3">3</a></sup> Bureaus from OMB Circular A-11 Appendix C: http://www.whitehouse.gov/sites/default/files/omb/assets/a11_current_year/app_c.pdf
+  <sup><a id="footnote-3">3</a></sup> Bureaus from OMB Circular A-11 Appendix C
 
 
   <sup><a id="footnote-4">4</a></sup> For example, by applying the categorizations of “bureau” and “business,” an agency might create classes of “bureau and business,” and choose to tackle “Bureau A, B, & C’s education grants-related data” first.
 
 
-  <sup><a id="footnote-5">5</a></sup> Information collection requests (ICR): http://www.reginfo.gov/public/jsp/PRA/praDashboard.jsp
+  <sup><a id="footnote-5">5</a></sup> Information collection requests (ICR)
 
 
   <sup><a id="footnote-6">6</a></sup> For example:
 
 
-  * OSTP Memorandum Increasing Access to Results of Federally Funded Scientific Research: http://www.whitehouse.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf
+  * OSTP Memorandum Increasing Access to Results of Federally Funded Scientific Research: 
 
-  * OMB Memorandum M-13-17 Next Steps in the Evidence and Innovation Agenda: http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-17.pdf
+  * OMB Memorandum M-13-17 Next Steps in the Evidence and Innovation Agenda: 
 
-  * OMB Memorandum M-12-14, Use of Evidence and Evaluation in the 2014 Budget: http://www.whitehouse.gov/sites/default/files/omb/memoranda/2012/m-12-14.pdf
+  * OMB Memorandum M-12-14, Use of Evidence and Evaluation in the 2014 Budget:
 
 
-  <sup><a id="footnote-7">7</a></sup> IT Dashboard for Exhibit 53 and 300 reporting on IT investments: https://www.itdashboard.gov/
+  <sup><a id="footnote-7">7</a></sup> IT Dashboard for Exhibit 53 and 300 reporting on IT investments:
 
 
   <sup><a id="footnote-8">8</a></sup> For example the statistical and geospatial communities have mature metadata standards
@@ -486,17 +478,16 @@ details: >
   <sup><a id="footnote-9">9</a></sup> For example discipline specific
 
 
-  <sup><a id="footnote-10">10</a></sup> By following the instructions at: https://max.omb.gov/community/x/kIamK
+  <sup><a id="footnote-10">10</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-11">11</a></sup> By following the instructions at: https://max.omb.gov/community/x/kIamK
+  <sup><a id="footnote-11">11</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-12">12</a></sup> By following the instructions at: https://max.omb.gov/community/x/8YamK
+  <sup><a id="footnote-12">12</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-13">13</a></sup> By following the instructions at: https://max.omb.gov/community/x/kIamK
-
+  <sup><a id="footnote-13">13</a></sup> By following the instructions at: 
 
   <sup><a id="footnote-14">14</a></sup> The value of “public” in the **AccessLevel** metadata field should be used to refer to a data asset that is or could be made publicly available to all without restrictions.  This includes 1) data assets that have already been openly published online, and 2) data assets that have *not yet been made publicly available but could be*.
 
@@ -509,53 +500,51 @@ details: >
 
   <sup><a id="footnote-17">17</a></sup> Working with government stakeholders is encouraged through existing initiatives such as:
 
-  * OMB Memorandum M-13-17 Next Steps in the Evidence and Innovation Agenda: http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-17.pdf
+  * OMB Memorandum M-13-17 Next Steps in the Evidence and Innovation Agenda: 
 
-  * OMB Memorandum M-12-14, Use of Evidence and Evaluation in the 2014 Budget: http://www.whitehouse.gov/sites/default/files/omb/memoranda/2012/m-12-14.pdf
+  * OMB Memorandum M-12-14, Use of Evidence and Evaluation in the 2014 Budget: 
 
-  * OMB Memorandum M-11-02 Sharing Data While Protecting Privacy: http://www.whitehouse.gov/sites/default/files/omb/memoranda/2011/m11-02.pdf
+  * OMB Memorandum M-11-02 Sharing Data While Protecting Privacy: 
 
 
-  <sup><a id="footnote-18">18</a></sup> Agency Digital Government Strategy page by following the instructions at: https://max.omb.gov/community/x/kIamK
+  <sup><a id="footnote-18">18</a></sup> Agency Digital Government Strategy page by following the instructions at: 
 
 
   <sup><a id="footnote-19">19</a></sup> The inventory’s “access levels” should be implemented consistent with Executive Order 13556, which sets out the framework for designating the Controlled Unclassified Information (CUI) categories and subcategories that will serve as exclusive designations for identifying unclassified information throughout the Executive branch that requires safeguarding or dissemination controls, pursuant to and consistent with applicable law, regulations, and Government-wide policies.
 
 
-  <sup><a id="footnote-20">20</a></sup> By following the instructions at: https://max.omb.gov/community/x/uIemK
+  <sup><a id="footnote-20">20</a></sup> By following the instructions at: 
+
+  <sup><a id="footnote-21">21</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-21">21</a></sup> By following the instructions at: https://max.omb.gov/community/x/uIemK
+  <sup><a id="footnote-22">22</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-22">22</a></sup> By following the instructions at: https://max.omb.gov/community/x/8YamK
+  <sup><a id="footnote-23">23</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-23">23</a></sup> By following the instructions at: https://max.omb.gov/community/x/kIamK
+  <sup><a id="footnote-24">24</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-24">24</a></sup> By following the instructions at: https://max.omb.gov/community/x/kIamK
+  <sup><a id="footnote-25">25</a></sup> By following the instructions at:
+
+  <sup><a id="footnote-26">26</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-25">25</a></sup> By following the instructions at: https://max.omb.gov/community/x/8YamK
+  <sup><a id="footnote-27">27</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-26">26</a></sup> By following the instructions at: https://max.omb.gov/community/x/8YamK
+  <sup><a id="footnote-28">28</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-27">27</a></sup> By following the instructions at: https://max.omb.gov/community/x/kIamK
+  <sup><a id="footnote-29">29</a></sup> By following the instructions at: 
 
 
-  <sup><a id="footnote-28">28</a></sup> By following the instructions at: https://max.omb.gov/community/x/kIamK
+  <sup><a id="footnote-30">30</a></sup> By following the instructions at:
 
 
-  <sup><a id="footnote-29">29</a></sup> By following the instructions at: https://max.omb.gov/community/x/kIamK
-
-
-  <sup><a id="footnote-30">30</a></sup> By following the instructions at: https://max.omb.gov/community/x/uIemK
-
-
-  <sup><a id="footnote-31">31</a></sup> By following the instructions at: https://max.omb.gov/community/x/uIemK
+  <sup><a id="footnote-31">31</a></sup> By following the instructions at: 
 examples: ""
 link: ""
 layout: resource
