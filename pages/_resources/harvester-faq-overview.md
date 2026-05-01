@@ -11,17 +11,17 @@ category: Skills development
 
 tags:
   - open data
-  - data sharing
-  - data inventory
-  - harvest
+
 
 guidance_tags: ""
 
 format: ""
 
-details: |
+details: >-
+
 
   ### About this FAQ
+
 
   This FAQ documents the most frequently encountered errors in harvest.data.gov jobs. It is based on analysis of 1,470 errors across 81 active harvest sources.
 
@@ -29,9 +29,12 @@ details: |
 
   If you are not sure what your error means or where to start, see [Understanding your harvest error notification](/resources/harvester-help/) first. That page walks through how to read an error message from the beginning.
 
+
   ---
 
+
   ### Error types at a glance
+
 
   Harvest errors fall into two main categories.
 
@@ -41,9 +44,12 @@ details: |
 
   The remaining errors are less common types covered on the [other errors](/resources/harvester-faq-other-errors/) page.
 
+
   ---
 
+
   ### Validation errors -- find your field
+
 
   If your error message contains `$.fieldname` near the start, it is a validation error. Find the field name below.
 
@@ -61,9 +67,12 @@ details: |
 
   - Missing `modified` or `keyword`: [missing required fields](/resources/harvester-faq-missing-fields/)
 
+
   ---
 
+
   ### Transformation errors
+  
 
   If your error message starts with `record failed to transform`, it is a transformation error. See [transformation errors](/resources/harvester-faq-transformation/).
 
@@ -75,9 +84,12 @@ details: |
 
   - `XML file is not well formed` -- the metadata file is corrupted or invalid XML
 
+
   ---
+  
 
   ### Other errors
+
 
   - `Duplicate identifier` -- same dataset identifier exists in two sources
 
@@ -87,15 +99,21 @@ details: |
 
   See [other errors](/resources/harvester-faq-other-errors/) for details on all three.
 
+
   ---
+
 
   ### Quick reference
 
+
   Need a one-page summary of the most common fixes? See the [quick reference](/resources/harvester-faq-quick-reference/).
 
+
   ---
+  
 
   ### All pages in this FAQ
+
 
   - [What is harvesting?](/resources/harvester-what-is-harvesting/)
 
@@ -120,6 +138,8 @@ details: |
   - [Other errors](/resources/harvester-faq-other-errors/)
 
   - [Quick reference](/resources/harvester-faq-quick-reference/)
+
+
 
 examples: ""
 
