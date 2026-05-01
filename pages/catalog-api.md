@@ -3,9 +3,16 @@ title: Catalog API
 layout: page
 ---
 
-The Data.gov Catalog API provides access to metadata about datasets published by federal, state, local, and tribal governments. You can use it to search for datasets, filter by organization or topic, and retrieve detailed information about individual records.
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Note on upcoming changes</h4>
+    <p class="usa-alert__text">
+      The base URL for the data.gov APIs will change when Data.gov routes its APIs through api.data.gov.  This is expected to occur soon.  If you're building a new integration, avoid hard-coding the base URL and check this page for updates before going to production.  Email us with any questions at <a href="mailto:datagovhelp@gsa.gov">datagovhelp@gsa.gov</a>.
+    </p>
+  </div>
+</div>
 
-**4/9/2026: Note on upcoming changes:** The base URL for the data.gov APIs will change when Data.gov routes its APIs through api.data.gov.  This is expected to occur soon.  If you're building a new integration, avoid hard-coding the base URL and check this page for updates before going to production.  Email us with any questions at datagovhelp@gsa.gov
+The Data.gov Catalog API provides access to metadata about datasets published by federal, state, local, and tribal governments. You can use it to search for datasets, filter by organization or topic, and retrieve detailed information about individual records.
 
 **Base URL:** `https://catalog.data.gov`
 
