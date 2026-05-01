@@ -409,10 +409,14 @@ details: >-
   
   What to do:
 
+
   
   This requires a coordination decision, not a technical fix. Forward the error to your data.gov point of contact and include the identifier shown in the error message (e.g. `ANDA203942`). They can help identify which source should be removed.
+
+
   
   ---
+
   
   ## 6. When to escalate
 
@@ -425,11 +429,16 @@ details: >-
   
   - System or file problems (malformed XML, ISO structure errors), these need your IT team or whoever built and maintains your metadata publishing pipeline.
 
+
+
   
   ## If after reading this guide you are still not sure what to do:
 
+
+
   
   Forward the error CSV from the harvest job page to your data.gov point of contact. Include the name of your harvest source and the date of the failed job.
+
 
   
   
