@@ -11,39 +11,46 @@ category: Skills development
 
 tags:
   - open data
-  - data sharing
-  - data inventory
-  - harvest
 
 guidance_tags: ""
 
 format: ""
 
-details: |
+details: >-
+
 
   ### keyword -- wrong format errors
+
 
   This error affects about 26 records. It occurs when the `keyword` field exists in the record but its value is a plain string instead of an array of strings.
 
   This is different from a missing `keyword` field. The field is there -- it just has the wrong data type.
 
+
   ---
 
+
   ### What you see
+
 
   ```
   $.keyword does not match any of the acceptable formats
   ```
 
+
   ---
+
 
   ### What this means
 
   The DCAT-US schema requires `keyword` to be an array -- a list -- even if there is only one keyword. A plain string is not accepted.
 
+
   ---
 
+
   ### Common problems and fixes
+
 
   Single string instead of an array:
 
@@ -63,9 +70,12 @@ details: |
 
   - Correct: `"keyword": ["health"]`
 
+
   ---
 
+
   ### What the correct format looks like
+
 
   Keywords must always be an array of strings, wrapped in square brackets:
 
@@ -79,21 +89,29 @@ details: |
   "keyword": ["environment"]
   ```
 
+
   ---
+
 
   ### If you can edit your metadata directly
 
+
   Wrap the keyword value in square brackets to make it an array. If the field contains null or non-string values, replace them with descriptive text keywords.
+
 
   ---
 
+
   ### If you cannot edit the metadata yourself
+
 
   Contact whoever manages your agency's metadata publishing system and tell them:
 
   > "The `keyword` field on some of our datasets is formatted as a plain string instead of an array. It must always be an array of strings, even for a single keyword. For example, `\"environment\"` should be `[\"environment\"]`. This is causing validation failures on harvest.data.gov."
 
+
   ---
+
 
   ### Related pages
 
@@ -102,6 +120,8 @@ details: |
   - [Quick reference](/resources/harvester-faq-quick-reference/) -- at-a-glance fix table
 
   - [FAQ overview](/resources/harvester-faq-overview/) -- all error types
+
+
 
 examples: ""
 
