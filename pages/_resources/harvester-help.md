@@ -88,10 +88,13 @@ details: >-
   Find the field name in the list below to see what to do.
   
   > If the message starts with **"record failed to transform"** rather than a field name, skip to [transformation errors](#transformation-errors----the-file-itself-has-a-problem). Those are a different kind of problem.
+
   
   ---
   
+  
   ## 5. Common errors and what to do
+  
   
   ### Validation errors: metadata field problems
   
