@@ -13,6 +13,7 @@ format: ""
 details: >-
 
 
+
   ### What is harvesting?
   
 
@@ -20,7 +21,9 @@ details: >-
 
   Think of it as a scheduled import. Your agency maintains its own catalog of datasets. The harvester visits that catalog on a set schedule, reads the metadata for each dataset, and loads it into data.gov so the public can find it.
 
+
   ---
+
 
   ### What is harvest.data.gov?
   
@@ -29,7 +32,9 @@ details: >-
 
   Each agency or data publisher has one or more harvest sources -- a configured connection between harvest.data.gov and the agency's data catalog. The harvester uses that connection to find and read the agency's dataset metadata.
 
+
   ---
+
 
   ### How the process works
   
