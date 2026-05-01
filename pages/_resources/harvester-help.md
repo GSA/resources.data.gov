@@ -337,7 +337,7 @@ details: >-
   ---
 
   
-  ### Transformation errors: the file itself has a problem
+  ### Transformation errors -- when the file itself has a problem
 
   
   These errors start with "record failed to transform". They mean the system could not read the source file at all, before it even checked the individual fields. These almost always need to be fixed by your IT team or the system that generates your metadata files.
