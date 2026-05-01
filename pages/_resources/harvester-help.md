@@ -383,10 +383,13 @@ details: >-
 
   
   What to tell your IT team, copy and send this:
+
   
   > "One or more of our metadata files contains invalid XML that the harvest system cannot read. The error says 'XML file is not well formed.' The fix needs to happen in the system that generates or exports the metadata files. These records are failing to appear on data.gov."
+
   
   ---
+  
   
   ### Error: `Duplicate identifier`
 
@@ -399,10 +402,13 @@ details: >-
 
   
   What this means:
+
   
   This dataset is being published to data.gov by two different sources at the same time using the same identifier. The system only accepts one version, the second one it encounters is rejected.
+
   
   What to do:
+
   
   This requires a coordination decision, not a technical fix. Forward the error to your data.gov point of contact and include the identifier shown in the error message (e.g. `ANDA203942`). They can help identify which source should be removed.
   
