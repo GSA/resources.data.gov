@@ -21,6 +21,8 @@ format: ""
 
 details: |
 
+
+
   ### What is harvesting?
 
   Harvesting is the automated process that keeps [data.gov](https://data.gov) up to date. Instead of agencies manually submitting their datasets one by one, harvest.data.gov regularly checks each agency's data catalog and pulls in the latest dataset information automatically.
