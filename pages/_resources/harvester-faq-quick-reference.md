@@ -11,23 +11,27 @@ category: Skills development
 
 tags:
   - open data
-  - data sharing
-  - data inventory
-  - harvest
+
 
 guidance_tags: ""
 
 format: ""
 
-details: |
+details: >-
+
+
 
   ### Quick reference -- common harvest error fixes
 
+
   Use this page to look up a fix when you already know the field name from your error message. For full explanations of each error, follow the links to the detail pages.
+
 
   ---
 
+
   ### Field-level fixes
+
 
   **modified / issued -- malformed date**
 
@@ -37,7 +41,9 @@ details: |
 
   - Detail: [date format errors](/resources/harvester-faq-date-errors/)
 
+
   ---
+
 
   **modified -- missing entirely**
 
@@ -45,9 +51,13 @@ details: |
 
   - Detail: [missing required fields](/resources/harvester-faq-missing-fields/)
 
+
+  
   ---
 
+
   **accrualPeriodicity -- plain English value**
+
 
   - `Weekly` -- use `R/P1W`
 
@@ -65,9 +75,12 @@ details: |
 
   - Detail: [accrualPeriodicity errors](/resources/harvester-faq-accrual/)
 
+
   ---
 
+
   **license -- free text instead of a URI**
+
 
   - Wrong: `Other (Public Domain)` or `None`
 
@@ -75,9 +88,12 @@ details: |
 
   - Detail: [license errors](/resources/harvester-faq-license/)
 
+
   ---
 
+
   **contactPoint.hasEmail -- malformed email**
+
 
   - Remove subject lines: `mailto:contact@agency.gov` not `mailto:contact@agency.gov (subject: ...)`
 
@@ -89,9 +105,13 @@ details: |
 
   - Detail: [email format errors](/resources/harvester-faq-email/)
 
+
+  
   ---
 
+
   **keyword -- string instead of array**
+
 
   - Wrong: `"keyword": "environment"`
 
@@ -99,17 +119,23 @@ details: |
 
   - Detail: [keyword format errors](/resources/harvester-faq-keyword-format/)
 
+
   ---
 
+
   **keyword -- missing entirely**
+
 
   - Add at least one keyword as an array: `"keyword": ["public health"]`
 
   - Detail: [missing required fields](/resources/harvester-faq-missing-fields/)
 
+
   ---
 
+
   ### ISO 8601 duration codes for accrualPeriodicity
+
 
   - Continuous / real-time: `R/PT1S`
 
@@ -133,9 +159,12 @@ details: |
 
   - Irregular or no longer updated: `irregular`
 
+
   ---
 
+
   ### Error type triage
+
 
   **Error starts with `$.fieldname`** -- validation error, find the field name above
 
@@ -147,9 +176,12 @@ details: |
 
   **Error says `SynchronizeException`** -- re-run the job: [other errors](/resources/harvester-faq-other-errors/)
 
+
   ---
 
+
   ### All pages in this FAQ
+  
 
   - [What is harvesting?](/resources/harvester-what-is-harvesting/)
 
@@ -174,6 +206,8 @@ details: |
   - [Other errors](/resources/harvester-faq-other-errors/)
 
   - [Quick reference](/resources/harvester-faq-quick-reference/) -- this page
+
+
 
 examples: ""
 
