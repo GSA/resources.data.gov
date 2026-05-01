@@ -100,16 +100,22 @@ details: >-
   
   Field: `modified` or `issued` -- date format problem
   
+  
   What you see:
+  
   ```
   $.modified, '201603-01-01T00:00:00.000+00:00' does not match any of the acceptable formats
   ```
+
   
   What this means:
   
+  
   The date recorded for when this dataset was last modified or published has a typo. The year and month are run together without the required hyphen between them. For example, `201603` should be `2016-03`.
+
   
   If you can edit your metadata directly:
+
   
   - Find the `modified` or `issued` field in your metadata record and correct the date format. Dates must follow this pattern:
   
