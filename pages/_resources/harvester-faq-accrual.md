@@ -11,9 +11,6 @@ category: Skills development
 
 tags:
   - open data
-  - data sharing
-  - data inventory
-  - harvest
 
 guidance_tags: ""
 
