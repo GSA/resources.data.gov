@@ -1,7 +1,7 @@
 ---
 resource_name: Harvester Help
 slug: harvester-help
-description:   This guide walks you through what the email means, how to read the error page, and what steps to take for the most common problems.
+description:   This guide walks you through what a harvester email error means, how to read the error page, and what steps to take for the most common problems.
 source: data.gov
 category: Skills development
 tags:
