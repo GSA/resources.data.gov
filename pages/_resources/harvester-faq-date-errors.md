@@ -11,37 +11,45 @@ category: Skills development
 
 tags:
   - open data
-  - data sharing
-  - data inventory
-  - harvest
 
 guidance_tags: ""
 
 format: ""
 
-details: |
+details: >-
+
+
 
   ### Date format errors -- modified and issued
 
+
   Date format errors in the `modified` and `issued` fields are the single most common cause of harvest validation failures, making up about 40% of all errors.
+
 
   ---
 
+
   ### What you see
+
 
   ```
   $.modified, '201603-01-01T00:00:00.000+00:00' does not match any of the acceptable formats
   ```
 
+
   or
+
 
   ```
   $.issued, '201505-01-01T00:00:00.000+00:00' does not match any of the acceptable formats
   ```
 
+
   ---
 
+
   ### What this means
+
 
   The date value has a typo. The year and month are run together without the required hyphen separator, producing an invalid date string that the schema cannot accept.
 
@@ -49,9 +57,12 @@ details: |
 
   This error is usually not introduced by hand. It is typically produced by a metadata pipeline or export tool that has a bug in how it formats dates.
 
+
   ---
 
+
   ### Most common offending values
+
 
   - `201603-01-01T00:00:00.000+00:00` -- should be `2016-03-01T00:00:00.000+00:00`
 
@@ -61,9 +72,12 @@ details: |
 
   These values are concentrated in KML and Census boundary file sources from 2014 to 2016.
 
+
   ---
 
+
   ### What the correct format looks like
+
 
   Dates must follow ISO 8601 format. The separator between year, month, and day must always be a hyphen.
 
@@ -75,23 +89,31 @@ details: |
 
   Any of these are valid. The key requirement is that the year, month, and day are each separated by a hyphen.
 
+
   ---
 
+
   ### If you can edit your metadata directly
+
 
   Find the `modified` and `issued` fields in your metadata records and correct the date format. Check that the year, month, and day each have a hyphen between them.
 
   If many records are affected, the fix is best applied in the system that generates your metadata rather than record by record.
 
+
   ---
 
+
   ### If you cannot edit the metadata yourself
+
 
   Contact whoever manages your agency's metadata publishing system or data catalog and tell them:
 
   > "The `modified` and `issued` date fields on some of our datasets are formatted incorrectly. The year and month are being merged without a hyphen separator. For example, `201603-01-01` should be `2016-03-01`. This is causing validation failures on harvest.data.gov."
 
+
   ---
+
 
   ### Related pages
 
@@ -100,6 +122,8 @@ details: |
   - [Quick reference](/resources/harvester-faq-quick-reference/) -- at-a-glance fix table
 
   - [FAQ overview](/resources/harvester-faq-overview/) -- all error types
+
+
 
 examples: ""
 
