@@ -1,5 +1,10 @@
 [
     {
+        "term": "accrualPeriodicity",
+        "definition": "A DCAT-US metadata field describing how often a dataset is updated. Must use ISO 8601 duration codes in repeating interval format (such as R/P1W for weekly, R/P1M for monthly, R/P1Y for annual) or the literal value 'irregular' for datasets that are no longer updated. Plain English descriptions like 'Weekly' or 'Monthly' are not accepted and cause validation failures.",
+        "source": "https://resources.data.gov/resources/harvester-faq-accrual/"
+    },
+    {
         "term": "API",
         "definition": "An application programming interface, which is a set of definitions of the ways one piece of computer software communicates with another. It is a method of achieving abstraction, usually (but not necessarily) between higher-level and lower-level software.",
         "source": "https://books.google.com/books?id=On_Hh23IXDUC&pg=PA40&lpg=PA40&dq=An+application+programming+interface,+which+is+a+set+of+definitions+of+the+ways+one+piece+of+computer+software+communicates+with+another.+It+is+a+method+of+achieving+abstraction,+usually+(but+not+necessarily)+between+higher-level+and+lower-level+software.&source=bl&ots=pTandfj4CY&sig=ACfU3U1MiU_2jKWsY8VH4_hJfTL5WDxpWg&hl=en&sa=X&ved=2ahUKEwihlImFgsTkAhWx2FkKHeoJAPQQ6AEwAHoECAkQAQ"
@@ -23,6 +28,11 @@
         "term": "Code Library",
         "definition": "Working code samples in all the top programming languages are common place in the most successful APIs. Documentation will describe in a general way, how to use an API, but code samples will speak in the specific language of developers.",
         "source": "https://www.pcmag.com/encyclopedia/term/code-library"
+    },
+    {
+        "term": "contactPoint.hasEmail",
+        "definition": "A required DCAT-US metadata field containing the email address for the dataset contact. Must be formatted as a single mailto: URI (for example, mailto:contact@agency.gov) with no extra text, no subject lines, no multiple addresses, and no trailing spaces. Common validation failures include appended subject lines, multiple email addresses in one field, or invisible Unicode characters from copy-pasting.",
+        "source": "https://resources.data.gov/resources/harvester-faq-email/"
     },
     {
         "term": "Content API",
@@ -60,6 +70,11 @@
         "source": "https://searchsqlserver.techtarget.com/definition/database"
     },
     {
+        "term": "DCAT-US",
+        "definition": "Data Catalog Vocabulary - United States. The federal metadata standard that data.gov requires for all published datasets. DCAT-US defines which metadata fields are required (such as title, description, modified date, and keywords) and what formats are acceptable for each field. Harvest validation errors occur when dataset metadata does not conform to the DCAT-US schema.",
+        "source": "https://resources.data.gov/schemas/dcat-us/v1.1/"
+    },
+    {
         "term": "Endpoint",
         "definition": "An association between a binding and a network address, specified by a URI, that may be used to communicate with an instance of a service. An end point indicates a specific location for accessing a service using a specific protocol and data format.",
         "source": "https://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"
@@ -80,6 +95,26 @@
         "source": "https://en.wikipedia.org/wiki/Hackathon"
     },
     {
+        "term": "Harvesting",
+        "definition": "The automated process that pulls dataset metadata from federal agency catalogs into data.gov on a scheduled basis. Instead of agencies manually submitting datasets one by one, the harvester visits each agency's catalog regularly and imports the latest dataset information automatically.",
+        "source": "https://resources.data.gov/resources/harvester-what-is-harvesting/"
+    },
+    {
+        "term": "Harvest.data.gov",
+        "definition": "The system that manages the harvesting process for federal agencies publishing to data.gov. It is where harvest sources are configured, where harvest jobs are run, and where errors are logged when dataset metadata cannot be processed.",
+        "source": "https://harvest.data.gov"
+    },
+    {
+        "term": "Harvest Source",
+        "definition": "A configured connection between harvest.data.gov and an agency's data catalog. Each harvest source specifies where to find the agency's metadata (URL), what format it is in (JSON, XML, ISO 19115, etc.), and how often to check for updates. Each agency typically has one or more harvest sources.",
+        "source": "https://resources.data.gov/resources/harvester-what-is-harvesting/"
+    },
+    {
+        "term": "Harvest Job",
+        "definition": "A single run of the harvest process for one harvest source. Each job records how many dataset records were checked, how many were added or updated successfully, and how many encountered errors. When a harvest error notification is sent, it includes a link to the specific harvest job that found the problem.",
+        "source": "https://resources.data.gov/resources/harvester-what-is-harvesting/"
+    },
+    {
         "term": "Information Life Cycle",
         "definition": "Information life cycle, as defined in OMB Circular A-130, means the stages through which information passes, typically characterized as creation or collection, processing, dissemination, use, storage, and disposition.",
         "source": "https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf"
@@ -90,9 +125,24 @@
         "source": "https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf"
     },
     {
+        "term": "issued (metadata field)",
+        "definition": "An optional DCAT-US metadata field containing the date a dataset was first published or released. When present, must be formatted in ISO 8601 format (YYYY-MM-DD). Like the modified field, issued dates commonly fail validation when the year and month are run together without proper hyphen separators.",
+        "source": "https://resources.data.gov/resources/harvester-faq-date-errors/"
+    },
+    {
         "term": "Information System Life Cycle",
         "definition": "Information system life cycle, as defined in OMB Circular A-130, means the phases through which an information system passes, typically characterized as initiation, development, operation, and termination.",
         "source": "https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf"
+    },
+    {
+        "term": "ISO 19115",
+        "definition": "An international standard for geospatial metadata. Some federal agencies publish their dataset metadata in ISO 19115 or ISO 19115-2 format. When harvesting these sources, the system converts the ISO metadata into DCAT-US format. Transformation errors can occur if the ISO records are missing required elements that are needed for the conversion.",
+        "source": "https://www.iso.org/standard/53798.html"
+    },
+    {
+        "term": "ISO 8601",
+        "definition": "The international standard for representing dates and times. ISO 8601 requires dates to be formatted as YYYY-MM-DD with hyphens separating year, month, and day (for example, 2024-03-15). Date format errors are the most common type of harvest validation failure, typically occurring when dates are malformed such as having the year and month run together (201603-01 instead of 2016-03-01).",
+        "source": "https://www.iso.org/iso-8601-date-and-time-format.html"
     },
     {
         "term": "JSON",
@@ -110,6 +160,16 @@
         "source": "https://en.wikipedia.org/wiki/JSONP"
     },
     {
+        "term": "keyword (metadata field)",
+        "definition": "A required DCAT-US metadata field containing tags that describe the dataset's subject matter to help users find it in search results. Must be formatted as an array of strings, even if there is only one keyword (for example, ['environment'] not 'environment'). Datasets must have at least one keyword. Both missing keywords and improperly formatted keyword fields cause validation failures.",
+        "source": "https://resources.data.gov/resources/harvester-faq-keyword-format/"
+    },
+    {
+        "term": "license (metadata field)",
+        "definition": "A DCAT-US metadata field that must contain a URL pointing to the dataset's license document. The field only accepts valid URIs, not plain text descriptions. For most U.S. government public domain datasets, the correct value is https://creativecommons.org/publicdomain/zero/1.0/. Text values like 'Public Domain' or 'None' cause validation failures.",
+        "source": "https://resources.data.gov/resources/harvester-faq-license/"
+    },
+    {
         "term": "Machine Readable File",
         "definition": "Refers to information or data that is in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost.",
         "source": "https://csrc.nist.gov/glossary/term/Machine_Readable"
@@ -118,6 +178,11 @@
         "term": "Metadata",
         "definition": "To facilitate common understanding, a number of characteristics, or attributes, of data are defined. These characteristics of data are known as “metadata”, that is, “data that describes data.” For any particular datum, the metadata may describe how the datum is represented, ranges of acceptable values, its relationship to other data, and how it should be labeled. Metadata also may provide other relevant information, such as the responsible steward, associated laws and regulations, and access management policy. Each of the types of data described above has a corresponding set of metadata. Two of the many metadata standards are the Dublin Core Metadata Initiative (DCMI) and Department of Defense Discovery Metadata Standard (DDMS). The metadata for structured data objects describes the structure, data elements, interrelationships, and other characteristics of information, including its creation, disposition, access and handling controls, formats, content, and context, as well as related audit trails. Metadata includes data element names (such as Organization Name, Address, etc.), their definition, and their format (numeric, date, text, etc.). In contrast, data is the actual data values such as the “US Patent and Trade Office” or the “Social Security Administration” for the metadata called “Organization Name”. Metadata may include metrics about an organization’s data including its data quality (accuracy, completeness, etc.).",
         "source": "https://csrc.nist.gov/glossary/term/metadata"
+    },
+    {
+        "term": "modified (metadata field)",
+        "definition": "A required DCAT-US metadata field containing the date a dataset or its metadata was last updated. Must be formatted in ISO 8601 format (YYYY-MM-DD). The most common harvest error is a malformed modified date where the year and month run together without the required hyphen separator. Missing modified dates also trigger validation failures since this is a required field.",
+        "source": "https://resources.data.gov/resources/harvester-faq-date-errors/"
     },
     {
         "term": "OAuth",
@@ -154,6 +219,31 @@
         "definition": "RDFa Lite is a minimal subset of RDFa, the Resource Description Framework in attributes, consisting of a few attributes that may be used to express machine-readable data in Web documents like HTML, SVG, and XML. While it is not a complete solution for advanced data markup tasks, it does work for most day-to-day needs and can be learned by most Web authors in a day.",
         "source": "https://www.w3.org/TR/rdfa-lite/"
     },
+    {
+        "term": "Records Total",
+        "definition": "The number of dataset records that the harvester checked during a harvest job. This count appears on the harvest job summary page and represents all records found in the source catalog, regardless of whether they were processed successfully or encountered errors.",
+        "source": "https://resources.data.gov/resources/harvester-help/"
+    },
+    {
+        "term": "Records Added",
+        "definition": "The number of new dataset records that were successfully published to data.gov during a harvest job. These are datasets that did not exist in data.gov before this harvest run and passed all validation checks.",
+        "source": "https://resources.data.gov/resources/harvester-help/"
+    },
+    {
+        "term": "Records Updated",
+        "definition": "The number of existing dataset records that were successfully refreshed on data.gov during a harvest job. These are datasets that already existed in data.gov but had changes in their metadata since the last harvest, and the updated information passed validation.",
+        "source": "https://resources.data.gov/resources/harvester-help/"
+    },
+    {
+        "term": "Records Errored",
+        "definition": "The number of dataset records that could not be processed during a harvest job due to validation or transformation problems. This is the most important number to focus on when reviewing a harvest job, as these represent datasets whose information could not be updated on data.gov. An error notification email is sent when this number is greater than zero.",
+        "source": "https://resources.data.gov/resources/harvester-help/"
+    },
+    {
+        "term": "Records Ignored",
+        "definition": "The number of dataset records that the harvester skipped during a harvest job because nothing changed since the last successful harvest. These records already exist on data.gov with current information, so they do not need to be reprocessed.",
+        "source": "https://resources.data.gov/resources/harvester-help/"
+    }
     {
         "term": "REST",
         "definition": "A style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a predominant Web service design model. REST facilitates the transaction between web servers by allowing loose coupling between different services. REST is less strongly typed than its counterpart, SOAP. The REST language is based on the use of nouns and verbs, and has an emphasis on readability. Unlike SOAP, REST does not require XML parsing and does not require a message header to and from a service provider. This ultimately uses less bandwidth.",
@@ -195,6 +285,11 @@
         "source": "https://whatis.techtarget.com/definition/terms-of-service-ToS"
     },
     {
+        "term": "Transformation Error",
+        "definition": "A harvest error that occurs before validation when the harvester cannot read or convert a metadata record at all. These indicate structural problems with the source file itself, such as malformed XML, missing required elements in ISO 19115 records, or unrecognizable record structures. Transformation errors make up approximately 32% of harvest failures and always begin with the phrase 'record failed to transform'.",
+        "source": "https://resources.data.gov/resources/harvester-faq-transformation/"
+    },
+    {
         "term": "TSV",
         "definition": "A simple text format for a database table. Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab stop character. It is a form of the more general delimiter-separated values format.",
         "source": "https://en.wikipedia.org/wiki/Tab-separated_values"
@@ -203,6 +298,11 @@
         "term": "Unstructured Data",
         "definition": "Data that is more free-form, such as multimedia files, images, sound files, or unstructured text. Unstructured data does not necessarily follow any format or hierarchical sequence, nor does it follow any relational rules. Unstructured data refers to masses of (usually) computerized information which do not have a data structure which is easily readable by a machine. Examples of unstructured data may include audio, video and unstructured text such as the body of an email or word processor document. Data mining techniques are used to find patterns in, or otherwise interpret, this information. Merrill Lynch estimates that more than 85 percent of all business information exists as unstructured data – commonly appearing in e-mails, memos, notes from call centers and support operations, news, user groups, chats, reports, letters, surveys, white papers, marketing material, research, presentations, and Web pages (“The Problem with Unstructured Data.”)",
         "source": "https://searchbusinessanalytics.techtarget.com/definition/unstructured-data"
+    },
+    {
+        "term": "Validation Error",
+        "definition": "A harvest error that occurs when a metadata field value does not conform to the DCAT-US schema requirements. The harvester can read the record, but a specific field value is formatted incorrectly, contains an unacceptable value, or is missing when required. Validation errors make up approximately 66% of all harvest failures. These errors typically begin with a field name such as '$.modified' or '$.accrualPeriodicity'.",
+        "source": "https://resources.data.gov/resources/harvester-faq-overview/"
     },
     {
         "term": "Web Service",
