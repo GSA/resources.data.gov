@@ -73,7 +73,7 @@ details: >-
       <td><a href="/resources/harvester-faq-other-errors/">Duplicates, Sync Failures, Unrecognized Records</a></td>
     </tr>
   </tbody>
-</table>
+  </table>
   
 
 
