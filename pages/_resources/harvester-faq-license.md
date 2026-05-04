@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error: License Field
+resource_name: Harvest Error - License Field
 
 slug: harvester-faq-license
 
