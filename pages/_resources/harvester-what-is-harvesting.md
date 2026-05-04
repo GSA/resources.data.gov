@@ -57,24 +57,94 @@ details: >-
   ---
 
 
-  ### What is a harvest source?
+  ### What is a harvest source versus a harvest job?
   
 
   A harvest source is the configured connection between harvest.data.gov and your agency's data catalog. It tells the harvester where to find your metadata, what format it is in, and how often to check for updates.
 
   Each harvest source has its own page on harvest.data.gov showing its configuration, its recent job history, and any errors from the most recent run.
 
-
-  ---
-
-
-  ### What is a harvest job?
-  
-
   Every time the harvester runs for a source, it creates a harvest job. A job is a single run of the harvest process for one source. It records how many records were checked, how many were added or updated, and how many had errors.
 
   If you receive a harvest error notification email, it will include a link to the specific harvest job that found the problem.
 
+
+  ---
+
+  
+  ### Understanding harvest schedules
+  
+  
+  Most harvest sources run automatically on a set schedule—typically daily or weekly, depending on how the source was configured. You do not need to manually trigger harvests under normal circumstances.
+  
+  The harvester will check your agency's catalog URL at the scheduled time, validate any new or changed records, and update data.gov accordingly. Some sources may be configured for manual-only harvesting, which means a data.gov administrator must trigger each run.
+  
+  To find your specific harvest schedule, log into harvest.data.gov and navigate to your agency's harvest source page, or check the timestamps on recent harvest jobs to identify the pattern.
+  
+  ---
+  
+  
+  ### What happens after you fix an error
+  
+  
+  When you correct a metadata error—whether by editing records directly or by updating the system that generates your metadata—the correction will be validated the next time your harvest source runs.
+  
+  
+  **Timeline for fixes to appear:**
+  
+  - **In your source catalog**: Immediate to a few hours, depending on your agency's publishing system
+  
+  - **In harvest.data.gov validation**: Next scheduled harvest run (typically within 24 hours to 1 week)
+  
+  - **On data.gov**: Within minutes to a few hours after successful harvest validation
+  
+  The harvester reads from your source catalog URL. Even if you have corrected a record in your internal system, the fix will not be validated until the corrected metadata is published to the catalog URL and the next harvest job processes that record.
+  
+  
+  **To verify a fix worked:**
+  
+  1. Confirm the corrected metadata appears in your source catalog URL
+  
+  2. Wait for the next scheduled harvest to run
+  
+  3. Check the harvest job results on harvest.data.gov—the Records Errored count should decrease and the specific error should no longer appear in the error log
+  
+  4. If the error persists after 2-3 harvest cycles, verify your fix matches the requirements in the [error-specific guide pages](/resources/harvester-faq-overview/) or contact your data.gov point of contact
+  
+  
+  ---
+  
+  
+  ### Monitoring your harvest source
+  
+  
+  Regular monitoring helps catch problems early and maintain data quality on data.gov. Even when you are not receiving error notifications, it is good practice to periodically check your harvest source health.
+  
+  
+  **What to check during routine reviews:**
+  
+  - **Records Errored count**: Is it zero or low? Has it increased since last time?
+  
+  - **Error patterns**: Are the same errors or dataset identifiers appearing repeatedly?
+  
+  - **Records Total count**: Does the total number of datasets match what you expect?
+  
+  - **Recent job dates**: Is your harvest source running on its expected schedule?
+
+  
+  **Best practices:**
+  
+  - Review harvest job results weekly or bi-weekly, even without error notifications
+  
+  - Check harvest results after any updates to your catalog software or publishing processes
+  
+  - Share results with your team members who author or manage dataset metadata
+  
+  - Keep an internal reference of common errors and fixes specific to your agency's data
+  
+  
+  If you need to verify fixes urgently before the next scheduled harvest, contact DataGovHelp@gsa.gov to request a manual harvest run.
+  
 
   ---
 
@@ -109,6 +179,12 @@ details: >-
   - [Harvest error FAQ overview](/resources/harvester-faq-overview/) -- a summary of the most common harvest errors and where to find fixes
 
   - [harvest.data.gov](https://harvest.data.gov) -- the harvesting system itself
+
+  - [Quick reference](/resources/harvester-faq-quick-reference/) -- at-a-glance error fixes and field corrections
+
+  - [harvest.data.gov](https://harvest.data.gov) -- the harvesting system itself
+
+  - [Glossary](/glossary/) -- definitions of harvesting terms, metadata fields, and technical concepts
 
 
 examples: ""
