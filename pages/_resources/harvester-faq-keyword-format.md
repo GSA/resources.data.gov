@@ -145,7 +145,7 @@ details: >-
 
 
   ```
-  "keyword": ["public health", "surveillance", "CDC"]
+      "keyword": ["public health", "surveillance", "CDC"]
   ```
 
 
@@ -153,7 +153,7 @@ details: >-
 
 
   ```
-  "keyword": ["environment"]
+      "keyword": ["environment"]
   ```
 
   
