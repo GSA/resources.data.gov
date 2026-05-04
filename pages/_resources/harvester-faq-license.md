@@ -20,6 +20,8 @@ format: ""
 details: >-
 
 
+
+
   ## Harvester Guide Pages
   
   <table>
