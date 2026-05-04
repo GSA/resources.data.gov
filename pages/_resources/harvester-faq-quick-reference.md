@@ -21,19 +21,83 @@ details: >-
 
 
 
-  ### Quick reference -- common harvest error fixes
+  ## Harvester Guide Pages
+  
+  <table>
+  <thead>
+    <tr>
+      <th>Error Type</th>
+      <th>Page</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Getting Started</strong></td>
+      <td>
+        <a href="/resources/harvester-what-is-harvesting/">What is Harvesting?</a> | 
+        <a href="/resources/harvester-help/">Understanding Harvest Errors</a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Quick Lookup</strong></td>
+      <td>
+        <a href="/resources/harvester-faq-overview/">FAQ Overview</a> | 
+        <a href="/resources/harvester-faq-quick-reference/">Quick Reference</a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Date & Time</strong></td>
+      <td><a href="/resources/harvester-faq-date-errors/">Date Format Errors (modified, issued)</a></td>
+    </tr>
+    <tr>
+      <td><strong>Update Frequency</strong></td>
+      <td><a href="/resources/harvester-faq-accrual/">accrualPeriodicity Errors</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td><a href="/resources/harvester-faq-license/">License Field Errors</a></td>
+    </tr>
+    <tr>
+      <td><strong>Contact Info</strong></td>
+      <td><a href="/resources/harvester-faq-email/">Email Format Errors (contactPoint.hasEmail)</a></td>
+    </tr>
+    <tr>
+      <td><strong>Keywords/Tags</strong></td>
+      <td>
+        <a href="/resources/harvester-faq-missing-fields/">Missing Keywords</a> | 
+        <a href="/resources/harvester-faq-keyword-format/">Keyword Format</a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Missing Fields</strong></td>
+      <td><a href="/resources/harvester-faq-missing-fields/">Missing Required Fields (modified, keyword, description)</a></td>
+    </tr>
+    <tr>
+      <td><strong>File Structure</strong></td>
+      <td><a href="/resources/harvester-faq-transformation/">Transformation Errors (ISO 19115, XML, file problems)</a></td>
+    </tr>
+    <tr>
+      <td><strong>Other Issues</strong></td>
+      <td><a href="/resources/harvester-faq-other-errors/">Duplicates, Sync Failures, Unrecognized Records</a></td>
+    </tr>
+  </tbody>
+  </table>
+  
 
 
+  ## Quick reference -- common harvest error fixes
+  
   Use this page to look up a fix when you already know the field name from your error message. For full explanations of each error, follow the links to the detail pages.
 
-
+  
   ---
 
-
-  ### Field-level fixes
+  
+  ## Field-level fixes
 
 
   **modified / issued -- malformed date**
+
 
   - Wrong: `201603-01-01T00:00:00.000+00:00`
 
@@ -41,16 +105,16 @@ details: >-
 
   - Detail: [date format errors](/resources/harvester-faq-date-errors/)
 
-
+  
   ---
 
 
   **modified -- missing entirely**
 
+
   - Add the field with a valid ISO 8601 date, for example: `2024-01-15`
 
   - Detail: [missing required fields](/resources/harvester-faq-missing-fields/)
-
 
   
   ---
@@ -75,7 +139,7 @@ details: >-
 
   - Detail: [accrualPeriodicity errors](/resources/harvester-faq-accrual/)
 
-
+  
   ---
 
 
@@ -88,7 +152,7 @@ details: >-
 
   - Detail: [license errors](/resources/harvester-faq-license/)
 
-
+  
   ---
 
 
@@ -105,7 +169,6 @@ details: >-
 
   - Detail: [email format errors](/resources/harvester-faq-email/)
 
-
   
   ---
 
@@ -119,7 +182,7 @@ details: >-
 
   - Detail: [keyword format errors](/resources/harvester-faq-keyword-format/)
 
-
+  
   ---
 
 
@@ -130,12 +193,12 @@ details: >-
 
   - Detail: [missing required fields](/resources/harvester-faq-missing-fields/)
 
-
+  
   ---
 
-
-  ### ISO 8601 duration codes for accrualPeriodicity
-
+  
+  ## ISO 8601 duration codes for accrualPeriodicity
+  
 
   - Continuous / real-time: `R/PT1S`
 
@@ -159,63 +222,31 @@ details: >-
 
   - Irregular or no longer updated: `irregular`
 
-
+  
   ---
 
-
-  ### Error type triage
-
+  
+  ## Error type triage
+  
 
   **Error starts with `$.fieldname`** -- validation error, find the field name above
 
+
   **Error says `'fieldname' is a required property`** -- field is missing: [missing required fields](/resources/harvester-faq-missing-fields/)
+
 
   **Error starts with `record failed to transform`** -- transformation error: [transformation errors](/resources/harvester-faq-transformation/)
 
+
   **Error says `Duplicate identifier`** -- two sources publishing same dataset: [other errors](/resources/harvester-faq-other-errors/)
+
 
   **Error says `SynchronizeException`** -- re-run the job: [other errors](/resources/harvester-faq-other-errors/)
 
 
-  ---
-
-
-  ### All pages in this FAQ
-  
-
-  - [What is harvesting?](/resources/harvester-what-is-harvesting/)
-
-  - [Understanding your harvest error notification](/resources/harvester-help/)
-
-  - [Harvest error FAQ -- overview](/resources/harvester-faq-overview/)
-
-  - [Date format errors](/resources/harvester-faq-date-errors/)
-
-  - [accrualPeriodicity errors](/resources/harvester-faq-accrual/)
-
-  - [License errors](/resources/harvester-faq-license/)
-
-  - [Missing required fields](/resources/harvester-faq-missing-fields/)
-
-  - [Email format errors](/resources/harvester-faq-email/)
-
-  - [Keyword format errors](/resources/harvester-faq-keyword-format/)
-
-  - [Transformation errors](/resources/harvester-faq-transformation/)
-
-  - [Other errors](/resources/harvester-faq-other-errors/)
-
-  - [Quick reference](/resources/harvester-faq-quick-reference/) -- this page
-
-
-
 examples: ""
-
 link: ""
-
 layout: resource
-
 toc: true
-
 publish: true
 ---
