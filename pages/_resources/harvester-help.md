@@ -11,69 +11,69 @@ tags:
 guidance_tags: ""
 format: ""
 details: >-
----
 
-## Harvester Guide Pages
 
-    <table>
-    <thead>
-      <tr>
-        <th>Error Type</th>
-        <th>Page</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Getting Started</strong></td>
-        <td>
-          <a href="/resources/harvester-what-is-harvesting/">What is Harvesting?</a> | 
-          <a href="/resources/harvester-help/">Understanding Harvest Errors</a>
-        </td>
-      </tr>
-      <tr>
-        <td><strong>Quick Lookup</strong></td>
-        <td>
-          <a href="/resources/harvester-faq-overview/">FAQ Overview</a> | 
-          <a href="/resources/harvester-faq-quick-reference/">Quick Reference</a>
-        </td>
-      </tr>
-      <tr>
-        <td><strong>Date & Time</strong></td>
-        <td><a href="/resources/harvester-faq-date-errors/">Date Format Errors (modified, issued)</a></td>
-      </tr>
-      <tr>
-        <td><strong>Update Frequency</strong></td>
-        <td><a href="/resources/harvester-faq-accrual/">accrualPeriodicity Errors</a></td>
-      </tr>
-      <tr>
-        <td><strong>License</strong></td>
-        <td><a href="/resources/harvester-faq-license/">License Field Errors</a></td>
-      </tr>
-      <tr>
-        <td><strong>Contact Info</strong></td>
-        <td><a href="/resources/harvester-faq-email/">Email Format Errors (contactPoint.hasEmail)</a></td>
-      </tr>
-      <tr>
-        <td><strong>Keywords/Tags</strong></td>
-        <td>
-          <a href="/resources/harvester-faq-missing-fields/">Missing Keywords</a> | 
-          <a href="/resources/harvester-faq-keyword-format/">Keyword Format</a>
-        </td>
-      </tr>
-      <tr>
-        <td><strong>Missing Fields</strong></td>
-        <td><a href="/resources/harvester-faq-missing-fields/">Missing Required Fields (modified, keyword, description)</a></td>
-      </tr>
-      <tr>
-        <td><strong>File Structure</strong></td>
-        <td><a href="/resources/harvester-faq-transformation/">Transformation Errors (ISO 19115, XML, file problems)</a></td>
-      </tr>
-      <tr>
-        <td><strong>Other Issues</strong></td>
-        <td><a href="/resources/harvester-faq-other-errors/">Duplicates, Sync Failures, Unrecognized Records</a></td>
-      </tr>
-    </tbody>
-  </table>
+  ## Harvester Guide Pages
+  
+      <table>
+      <thead>
+        <tr>
+          <th>Error Type</th>
+          <th>Page</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Getting Started</strong></td>
+          <td>
+            <a href="/resources/harvester-what-is-harvesting/">What is Harvesting?</a> | 
+            <a href="/resources/harvester-help/">Understanding Harvest Errors</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Quick Lookup</strong></td>
+          <td>
+            <a href="/resources/harvester-faq-overview/">FAQ Overview</a> | 
+            <a href="/resources/harvester-faq-quick-reference/">Quick Reference</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Date & Time</strong></td>
+          <td><a href="/resources/harvester-faq-date-errors/">Date Format Errors (modified, issued)</a></td>
+        </tr>
+        <tr>
+          <td><strong>Update Frequency</strong></td>
+          <td><a href="/resources/harvester-faq-accrual/">accrualPeriodicity Errors</a></td>
+        </tr>
+        <tr>
+          <td><strong>License</strong></td>
+          <td><a href="/resources/harvester-faq-license/">License Field Errors</a></td>
+        </tr>
+        <tr>
+          <td><strong>Contact Info</strong></td>
+          <td><a href="/resources/harvester-faq-email/">Email Format Errors (contactPoint.hasEmail)</a></td>
+        </tr>
+        <tr>
+          <td><strong>Keywords/Tags</strong></td>
+          <td>
+            <a href="/resources/harvester-faq-missing-fields/">Missing Keywords</a> | 
+            <a href="/resources/harvester-faq-keyword-format/">Keyword Format</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Missing Fields</strong></td>
+          <td><a href="/resources/harvester-faq-missing-fields/">Missing Required Fields (modified, keyword, description)</a></td>
+        </tr>
+        <tr>
+          <td><strong>File Structure</strong></td>
+          <td><a href="/resources/harvester-faq-transformation/">Transformation Errors (ISO 19115, XML, file problems)</a></td>
+        </tr>
+        <tr>
+          <td><strong>Other Issues</strong></td>
+          <td><a href="/resources/harvester-faq-other-errors/">Duplicates, Sync Failures, Unrecognized Records</a></td>
+        </tr>
+      </tbody>
+    </table>
   
 
 
