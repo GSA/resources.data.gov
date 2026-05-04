@@ -117,7 +117,7 @@ details: >-
   - **Routine monitoring**: During regular checks of your harvest source page on harvest.data.gov, you'll see error counts in recent harvest jobs.
 
   
-  - **Data.gov point of contact**: Your agency's data.gov liaison may notify you about persistent or high-priority errors.
+  - **Data.gov point of contact**: The Data.gov Team may notify you about persistent or high-priority errors.
 
 
   
@@ -583,7 +583,7 @@ details: >-
   **What to do:**  
 
  
-  This requires a coordination decision, not a technical fix. Forward the error to your data.gov point of contact and include the identifier shown in the error message (e.g., `ANDA203942`). They can help identify which source should be removed.
+  This requires a coordination decision, not a technical fix. Forward the error to DataGovHelp@gsa.gov and include the identifier shown in the error message (e.g., `ANDA203942`). They can help identify which source should be removed.
 
   
   **Full details:** [Other errors](/resources/harvester-faq-other-errors/)
@@ -600,7 +600,8 @@ details: >-
 
 
 
-  **To verify your fix worked:**
+  ### To verify your fix worked:
+
 
   1. Confirm the corrected metadata appears in your source catalog URL
 
@@ -614,7 +615,8 @@ details: >-
 
 
 
-  **If the error persists after 2-3 harvest cycles:**
+  ### If the error persists after 2-3 harvest cycles:
+  
 
   - Double-check that your changes were saved and published in your source system
 
@@ -622,7 +624,7 @@ details: >-
 
   - Compare your fix against the examples in the detailed error pages to ensure the format exactly matches requirements
 
-  - Contact your data.gov point of contact if the error continues
+  - Contact DataGovHelp@gsa.gov if the error continues
 
 
   
@@ -645,7 +647,7 @@ details: >-
   **If after reading this guide you are still not sure what to do:**
   
 
-  Forward the error details from the harvest job page to your data.gov point of contact. Include the name of your harvest source and the date of the failed job.
+  Forward the error details from the harvest job page to DataGovHelp@gsa.gov . Include the name of your harvest source and the date of the failed job.
 
 
 
