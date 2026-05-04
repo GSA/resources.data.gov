@@ -243,7 +243,7 @@
         "term": "Records Ignored",
         "definition": "The number of dataset records that the harvester skipped during a harvest job because nothing changed since the last successful harvest. These records already exist on data.gov with current information, so they do not need to be reprocessed.",
         "source": "https://resources.data.gov/resources/harvester-help/"
-    }
+    },
     {
         "term": "REST",
         "definition": "A style of software architecture for distributed systems such as the World Wide Web. REST has emerged as a predominant Web service design model. REST facilitates the transaction between web servers by allowing loose coupling between different services. REST is less strongly typed than its counterpart, SOAP. The REST language is based on the use of nouns and verbs, and has an emphasis on readability. Unlike SOAP, REST does not require XML parsing and does not require a message header to and from a service provider. This ultimately uses less bandwidth.",
