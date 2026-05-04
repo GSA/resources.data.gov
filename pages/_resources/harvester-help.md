@@ -206,7 +206,7 @@ details: >-
   **Find the field name in the sections below to see what to do.**
   
 
-  > **Note:** If the message starts with **"record failed to transform"** rather than a field name, skip to [Transformation Errors](#transformation-errors). Those are a different kind of problem.
+  > **Note:** If the message starts with **"record failed to transform"** rather than a field name, skip to [Transformation Errors](/resources/harvester-faq-transformation/). Those are a different kind of problem.
   
 
   
