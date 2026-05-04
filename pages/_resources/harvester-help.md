@@ -649,17 +649,7 @@ details: >-
 
 
 
-  ---
 
-  
-
-  ### Related pages
-
-  - [What is harvesting?](/resources/harvester-what-is-harvesting/) -- understand how the harvest system works
-
-  - [Harvest error FAQ overview](/resources/harvester-faq-overview/) -- all error types with links to detailed guides
-
-  - [Quick reference](/resources/harvester-faq-quick-reference/) -- at-a-glance summary of common fixes
   
   ---
   
