@@ -19,40 +19,99 @@ format: ""
 details: >-
 
 
+  ## Harvester Guide Pages
+  
+  <table>
+  <thead>
+    <tr>
+      <th>Error Type</th>
+      <th>Page</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Getting Started</strong></td>
+      <td>
+        <a href="/resources/harvester-what-is-harvesting/">What is Harvesting?</a> | 
+        <a href="/resources/harvester-help/">Understanding Harvest Errors</a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Quick Lookup</strong></td>
+      <td>
+        <a href="/resources/harvester-faq-overview/">FAQ Overview</a> | 
+        <a href="/resources/harvester-faq-quick-reference/">Quick Reference</a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Date & Time</strong></td>
+      <td><a href="/resources/harvester-faq-date-errors/">Date Format Errors (modified, issued)</a></td>
+    </tr>
+    <tr>
+      <td><strong>Update Frequency</strong></td>
+      <td><a href="/resources/harvester-faq-accrual/">accrualPeriodicity Errors</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td><a href="/resources/harvester-faq-license/">License Field Errors</a></td>
+    </tr>
+    <tr>
+      <td><strong>Contact Info</strong></td>
+      <td><a href="/resources/harvester-faq-email/">Email Format Errors (contactPoint.hasEmail)</a></td>
+    </tr>
+    <tr>
+      <td><strong>Keywords/Tags</strong></td>
+      <td>
+        <a href="/resources/harvester-faq-missing-fields/">Missing Keywords</a> | 
+        <a href="/resources/harvester-faq-keyword-format/">Keyword Format</a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Missing Fields</strong></td>
+      <td><a href="/resources/harvester-faq-missing-fields/">Missing Required Fields (modified, keyword, description)</a></td>
+    </tr>
+    <tr>
+      <td><strong>File Structure</strong></td>
+      <td><a href="/resources/harvester-faq-transformation/">Transformation Errors (ISO 19115, XML, file problems)</a></td>
+    </tr>
+    <tr>
+      <td><strong>Other Issues</strong></td>
+      <td><a href="/resources/harvester-faq-other-errors/">Duplicates, Sync Failures, Unrecognized Records</a></td>
+    </tr>
+  </tbody>
+  </table>
+  
 
-  ### accrualPeriodicity -- update frequency format errors
 
-
+  ## accrualPeriodicity -- update frequency format errors
+  
   This error affects about 195 records across multiple sources. It occurs when the `accrualPeriodicity` field contains a plain English description of update frequency instead of the required code format.
 
-
+  
   ---
 
-
-  ### What you see
   
+  ### What you see
+
 
   ```
   $.accrualPeriodicity, 'Weekly' does not match any of the acceptable formats: constant value 'irregular' was expected, '^R\/P...'
   ```
 
-
-  ---
   
-
-  ### What this means
-
-
-  The `accrualPeriodicity` field describes how often a dataset is updated. The DCAT-US schema requires this field to use either the literal value `irregular` or an ISO 8601 duration code in repeating interval format (e.g. `R/P1W` for weekly).
-
-  Plain English values like `Weekly`, `Monthly`, or `No longer updated` are not accepted even though they are descriptively correct.
-
-
   ---
 
+  
+  ### What this means
+  
+  The `accrualPeriodicity` field describes how often a dataset is updated. The DCAT-US schema requires this field to use either the literal value `irregular` or an ISO 8601 duration code in repeating interval format (e.g. `R/P1W` for weekly). Plain English values like `Weekly`, `Monthly`, or `No longer updated` are not accepted even though they are descriptively correct.
 
+  
+  ---
+
+  
   ### Common rejected values and their correct replacements
-
+  
 
   - `Weekly` -- use `R/P1W`
 
@@ -76,47 +135,32 @@ details: >-
 
   - `Not updated` -- use `irregular`
 
+
   For a full list of ISO 8601 duration codes, see the [quick reference](/resources/harvester-faq-quick-reference/).
 
-
+  
   ---
 
-
+  
   ### If you can edit your metadata directly
-
-
+  
   Replace the plain English value with the appropriate code from the list above. If the dataset is no longer being updated for any reason, use `irregular`.
 
-
+  
   ---
 
+  
   ### If you cannot edit the metadata yourself
-
-
+  
   Contact whoever manages your agency's metadata publishing system and tell them:
+
 
   > "The `accrualPeriodicity` field on our datasets needs to use ISO 8601 duration codes instead of plain English descriptions. For example, `Weekly` should be `R/P1W`, `Monthly` should be `R/P1M`, and `Annual` should be `R/P1Y`. Datasets that are no longer updated should use the value `irregular`. This is causing validation failures on harvest.data.gov."
 
 
-  ---
-
-
-  ### Related pages
-
-
-  - [Quick reference](/resources/harvester-faq-quick-reference/) -- full ISO 8601 duration code table
-
-  - [FAQ overview](/resources/harvester-faq-overview/) -- all error types
-
-
-
 examples: ""
-
 link: ""
-
 layout: resource
-
 toc: true
-
 publish: true
 ---
