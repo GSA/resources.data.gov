@@ -144,17 +144,17 @@ details: >-
   Keywords must always be an array of strings, wrapped in square brackets:
 
 
-  ```
+  
       "keyword": ["public health", "surveillance", "CDC"]
-  ```
+  
 
 
   Even a single keyword must be in an array:
 
 
-  ```
+  
       "keyword": ["environment"]
-  ```
+  
 
   
   ---
