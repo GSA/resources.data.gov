@@ -13,6 +13,7 @@ format: ""
 details: >-
 
 
+
   ## Harvester Guide Pages
   
   <table>
@@ -190,7 +191,10 @@ details: >-
   
   Error messages look intimidating but follow a simple pattern. Here's a real example:
 
-  > $.accrualPeriodicity, 'Weekly' does not match any of the acceptable formats
+
+  ```
+  $.accrualPeriodicity, 'Weekly' does not match any of the acceptable formats
+  ```
 
   
   **Break it into three parts:**
@@ -209,7 +213,7 @@ details: >-
   > **Note:** If the message starts with **"record failed to transform"** rather than a field name, skip to [Transformation Errors](/resources/harvester-faq-transformation/). Those are a different kind of problem.
   
 
-  
+
   ---
 
 
@@ -223,10 +227,12 @@ details: >-
   ### **Date format errors: modified or issued**
 
   
-  **What you see:**
+  ### **What you see:**
 
 
-  > $.modified, '201603-01-01T00:00:00.000+00:00' does not match any of the acceptable formats
+  ```
+  $.modified, '201603-01-01T00:00:00.000+00:00' does not match any of the acceptable formats
+  ```
 
   
   **What this means:**  
@@ -259,10 +265,12 @@ details: >-
   ### **Update frequency: accrualPeriodicity**
 
   
-  **What you see:**
+  ### **What you see:**
 
 
-  > $.accrualPeriodicity, 'Weekly' does not match any of the acceptable formats
+  ```
+  $.accrualPeriodicity, 'Weekly' does not match any of the acceptable formats
+  ```
 
 
   
@@ -274,10 +282,10 @@ details: >-
   
   **How to fix:**
 
-  
+
   Replace the plain English description with the correct code:
 
-  
+
   <table>
     <thead>
       <tr>
@@ -307,7 +315,7 @@ details: >-
         <td>R/P3M</td>
       </tr>
       <tr>
-        <td>No longer updated, Archived, Never     </td>
+        <td>No longer updated, Archived, Never</td>
         <td>irregular</td>
       </tr>
     </tbody>
@@ -316,8 +324,9 @@ details: >-
   
   **If you cannot edit the metadata yourself, send this to your IT team:**
 
-  
+
   > "The **accrualPeriodicity** field on our datasets needs to use machine-readable codes instead of plain English. For example, **Weekly** should be **R/P1W**, **Monthly** should be **R/P1M**, and **Annual** should be **R/P1Y**. Datasets that are no longer updated should say **irregular**. This is causing harvest failures on data.gov."
+
 
   
   **Full details:** [accrualPeriodicity errors](/resources/harvester-faq-accrual/)
@@ -326,14 +335,16 @@ details: >-
   
   ---
 
-  
+
   
   ### **License field: must be a URL, not text**
   
-  **What you see:**
+  ### **What you see:**
 
 
-  > $.license, 'Other (Public Domain)' does not match any of the acceptable formats
+  ```
+  $.license, 'Other (Public Domain)' does not match any of the acceptable formats
+  ```
 
 
 
@@ -355,7 +366,7 @@ details: >-
   
   **If you cannot edit the metadata yourself, send this to your IT team:**
 
-  
+
   > "The **license** field on our datasets needs to contain a URL, not a text description. For most of our datasets the correct value is **https://creativecommons.org/publicdomain/zero/1.0/**. This is causing harvest failures on data.gov."
 
   
@@ -369,10 +380,12 @@ details: >-
   ### **Contact email: contactPoint.hasEmail**
 
   
-  **What you see:**
+  ### **What you see:**
 
 
-  > $.contactPoint.hasEmail, 'mailto:nhsn@cdc.gov (subject line: Hospital Data)' does not match
+  ```
+  $.contactPoint.hasEmail, 'mailto:nhsn@cdc.gov (subject line: Hospital Data)' does not match
+  ```
 
 
     
@@ -384,7 +397,7 @@ details: >-
   
   **How to fix:**
 
-  
+
   - The field must contain exactly one email address in this format: `mailto:name@agency.gov`
 
   - Remove any text after the email address (subject lines, descriptions, etc.)
@@ -412,16 +425,20 @@ details: >-
   ### **Missing required fields**
 
   
-  **What you see:**
+  ### **What you see:**
 
 
-  > 'modified' is a required property
+  ```
+  'modified' is a required property
+  ```
 
 
   or
 
 
-  > 'keyword' is a required property
+  ```
+  'keyword' is a required property
+  ```
 
 
 
@@ -432,10 +449,10 @@ details: >-
   
   **How to fix:**
 
-  
+
   **For missing modified:**
 
-  
+
   - Add a `modified` field to the dataset record
 
   - Use the date the data was last updated, formatted as: `YYYY-MM-DD` (example: `2024-01-15`)
@@ -443,7 +460,7 @@ details: >-
   
   **For missing keyword:**
 
-  
+
   - Add at least one keyword (tag) to the dataset record
 
   - Keywords should describe what the data is about, for example: public health, environment, budget
@@ -467,10 +484,12 @@ details: >-
   ### **Keyword format: wrong data type**
 
   
-  **What you see:**
+  ### **What you see:**
 
 
-  > $.keyword does not match any of the acceptable formats
+  ```
+  $.keyword does not match any of the acceptable formats
+  ```
 
 
   **What this means:**  
@@ -508,10 +527,12 @@ details: >-
   ### **ISO 19115 missing required element**
 
   
-  **What you see:**
+  ### **What you see:**
 
 
-  > record failed to transform: validation messages: WARNING: ISO19115-2 reader: element 'linkage' is missing
+  ```
+  record failed to transform: validation messages: WARNING: ISO19115-2 reader: element 'linkage' is missing
+  ```
 
 
 
@@ -523,7 +544,7 @@ details: >-
   
   **What to tell your IT team:**
 
-  
+
   > "Our ISO 19115 metadata records are missing required elements. The harvest error says 'element linkage is missing' (or similar). This means some records don't include the URL for the resource. The fix needs to happen in the system that generates our geospatial metadata. These records are failing to appear on data.gov."
 
 
@@ -534,14 +555,17 @@ details: >-
   
   ---
 
-  
+
   
   ### **Malformed XML**
 
   
-  **What you see:**
+  ### **What you see:**
 
-  > record failed to transform: structure messages: ERROR: XML file is not well formed
+
+  ```
+  record failed to transform: structure messages: ERROR: XML file is not well formed
+  ```
 
     
   **What this means:**  
@@ -567,10 +591,12 @@ details: >-
   ### **Duplicate identifier**
 
   
-  **What you see:**
+  ### **What you see:**
 
 
-  > Duplicate identifier 'ANDA203942' found for source: healthdata-gov
+  ```
+  Duplicate identifier 'ANDA203942' found for source: healthdata-gov
+  ```
 
 
 
@@ -591,7 +617,7 @@ details: >-
   
   ---
 
-  
+
   
   ## **7. After you fix an error**
 
@@ -632,8 +658,8 @@ details: >-
 
   
   ## **8. When to escalate**
-
   
+
 
   Most errors fall into one of two categories:
   
