@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- License Field
+resource_name: Harvest Error: License Field
 
 slug: harvester-faq-license
 
@@ -18,8 +18,6 @@ guidance_tags: ""
 format: ""
 
 details: >-
-
-
 
 
   ## Harvester Guide Pages
@@ -86,7 +84,7 @@ details: >-
   
 
 
-  ## License field errors -- free text instead of a URL
+  ## License field errors:free text instead of a URL
   
   This error affects about 122 records. It occurs when the `license` field contains a text description instead of a web address pointing to the license document.
 
@@ -107,7 +105,7 @@ details: >-
   
   ### What this means
   
-  The `license` field must contain a URI -- a web address that points to the license document. The schema does not accept plain text descriptions, legal disclaimer text, or any value that is not a properly formatted URI.
+  The `license` field must contain a URI:a web address that points to the license document. The schema does not accept plain text descriptions, legal disclaimer text, or any value that is not a properly formatted URI.
 
   
   ---
@@ -116,13 +114,13 @@ details: >-
   ### Common rejected values
   
 
-  - `Other (Public Domain)` -- a description, not a URI
+  - `Other (Public Domain)`: a description, not a URI
 
-  - `None` -- not a valid URI
+  - `None`: not a valid URI
 
-  - Long legal disclaimer text -- not a valid URI
+  - Long legal disclaimer text: not a valid URI
 
-  - CSS font-family strings -- a data entry error, likely a copy-paste from a web form
+  - CSS font-family strings: a data entry error, likely a copy-paste from a web form
 
   
   ---
@@ -165,7 +163,7 @@ details: >-
   Contact whoever manages your agency's metadata publishing system and tell them:
 
 
-  > "The `license` field on our datasets needs to contain a URI -- a web address pointing to the license -- not a text description. For most of our datasets the correct value is `https://creativecommons.org/publicdomain/zero/1.0/`. This is causing validation failures on harvest.data.gov."
+  > "The `license` field on our datasets needs to contain a URI, or a web address pointing to the license, not a text description. For most of our datasets, the correct value is https://creativecommons.org/publicdomain/zero/1.0/. This is causing validation failures on harvest.data.gov."
 
 
 examples: ""
