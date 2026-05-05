@@ -3,17 +3,17 @@ title: Data.gov APIs
 layout: page
 ---
 
-The Data.gov APIs provide programmatic access to federal open data. Use them to search for datasets, retrieve metadata, look up harvest sources, and check harvest job status -- all in support of the open data principles established by the [OPEN Government Data Act](https://www.congress.gov/bill/115th-congress/house-bill/4174).
+The Data.gov APIs provide programmatic access to federal open data. Use them to search for datasets, retrieve metadata, look up harvest sources, and check harvest job status, all in support of the open data principles established by the [OPEN Government Data Act](https://www.congress.gov/bill/115th-congress/house-bill/4174).
 
-**To get started, you will need a free API key.** [Register at open.gsa.gov](https://open.gsa.gov/api/datadotgov/) -- it takes less than a minute.
+**To get started, you will need a free API key.** [Register at open.gsa.gov](https://open.gsa.gov/api/datadotgov/) 
 
 ---
 
 ## What is api.data.gov?
 
-When you register for an API key and make requests to the Data.gov APIs, you are going through [api.data.gov](https://api.data.gov) -- GSA's shared API gateway. It manages authentication, rate limiting, and usage tracking for Data.gov's APIs.
+When you register for an API key and make requests to the Data.gov APIs, you are going through [api.data.gov](https://api.data.gov) (GSA's shared API gateway). It manages authentication, rate limiting, and usage tracking for Data.gov's APIs.
 
-api.data.gov is not a barrier to access -- it is what makes access reliable. It ensures that federal open data is available consistently and at scale, in the spirit of the OPEN Government Data Act's mandate that government data be open and machine-readable by default.
+api.data.gov is not a barrier to access, rather it is what makes access reliable. It ensures that federal open data is available consistently and at scale, in the spirit of the OPEN Government Data Act's mandate that government data be open and machine-readable by default.
 
 Your API key is free. It identifies your application, allows you to track your own usage, and gives you a higher rate limit than the anonymous `DEMO_KEY`. For more information about how api.data.gov works, visit [api.data.gov/docs/developer-manual/](https://api.data.gov/docs/developer-manual/).
 
@@ -80,7 +80,7 @@ curl -H 'X-Api-Key: DEMO_KEY' 'https://api.gsa.gov/technology/datagov/v4/search?
 
 ### Harvester API
 
-The Harvester API provides access to Data.gov's harvest infrastructure -- the system that collects dataset metadata from federal agencies and other publishers. Use it to look up harvest sources, check job status, and investigate harvest errors.
+The Harvester API provides access to Data.gov's harvest infrastructure which is the system that collects dataset metadata from federal agencies and other publishers. Use it to look up harvest sources, check job status, and investigate harvest errors.
 
 **Base URL:** `https://api.gsa.gov/technology/datagov_harvest/v2/`
 
