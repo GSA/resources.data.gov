@@ -16,9 +16,9 @@ The Data.gov Catalog API provides access to metadata about datasets published by
 
 **Base URL:** `https://catalog.data.gov`
 
-No API key is required. All endpoints are publicly accessible and return JSON.
+**Authentication:** [Sign up for an API key at api.data.gov](https://api.data.gov/signup). Documentation related to authenticaion and rate limits is available in [api.data.gov's developer manual](https://api.data.gov/docs/developer-manual/).
 
-Note: This API replaces the previous CKAN-based API. The prior endpoint remains available in a read-only state for existing integrations, but new development should use this API.
+**Note**: This API replaces the previous CKAN-based API. The prior endpoint remains available in a read-only state for existing integrations, but new development should use this API.
 
 ---
 
@@ -32,7 +32,7 @@ To filter results by organization, you first need the organization's slug. Fetch
 
 **Request:**
 ```
-GET https://catalog.data.gov/api/organizations
+curl -H 'X-Api-Key: DEMO_KEY'
 ```
 
 **Look for NASA in the response:**
@@ -58,7 +58,7 @@ Use the `q` parameter for your keyword and `org_slug` to filter by organization.
 
 **Request:**
 ```
-GET https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3
 ```
 
 **Response:**
@@ -94,7 +94,7 @@ Pass the `after` value from the previous response to retrieve the next page. Kee
 
 **Request:**
 ```
-GET https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3&after=WzY5LjM0NDY5NiwwLCJiYmRhZGNmYi00NDM1LTQzZWUtYjhlMy0yMzZiZjBlZDEwODIiXQ==
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3&after=WzY5LjM0NDY5NiwwLCJiYmRhZGNmYi00NDM1LTQzZWUtYjhlMy0yMzZiZjBlZDEwODIiXQ==
 ```
 
 Continue repeating this step until the response no longer includes an `after` field, which means you have reached the last page. For more details see [Pagination](#pagination) below.
@@ -212,12 +212,12 @@ Search the catalog for datasets using keywords, filters, and sorting options.
 ### Example Requests
 
 ```
-GET https://catalog.data.gov/search?q=water+quality
-GET https://catalog.data.gov/search?q=climate&sort=popularity&per_page=25
-GET https://catalog.data.gov/search?org_slug=nasa&per_page=10
-GET https://catalog.data.gov/search?org_type=Federal+Government&spatial_filter=geospatial
-GET https://catalog.data.gov/search?q=education&after=WzEwMC4wNjEzNiwwLCJiMWEzOTY3YzJhMTExZjE2NzgxN2IwMTI0YzUyYjBhYyJd
-GET https://catalog.data.gov/search?spatial_geometry={"type":"Polygon","coordinates":[[[-109.05,37.0],[-102.05,37.0],[-102.05,41.0],[-109.05,41.0],[-109.05,37.0]]]}&spatial_within=true
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?q=water+quality
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?q=climate&sort=popularity&per_page=25
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?org_slug=nasa&per_page=10
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?org_type=Federal+Government&spatial_filter=geospatial
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?q=education&after=WzEwMC4wNjEzNiwwLCJiMWEzOTY3YzJhMTExZjE2NzgxN2IwMTI0YzUyYjBhYyJd
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?spatial_geometry={"type":"Polygon","coordinates":[[[-109.05,37.0],[-102.05,37.0],[-102.05,41.0],[-109.05,41.0],[-109.05,37.0]]]}&spatial_within=true
 
 ```
 
@@ -649,8 +649,8 @@ Retrieve a list of the most commonly used keywords across all datasets, along wi
 ### Example Requests
 
 ```
-GET https://catalog.data.gov/api/keywords
-GET https://catalog.data.gov/api/keywords?size=50&min_count=100
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/api/keywords
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/api/keywords?size=50&min_count=100
 ```
 
 ### Response
@@ -713,7 +713,7 @@ Search for location names to use with spatial filtering. This endpoint is design
 ### Example Request
 
 ```
-GET https://catalog.data.gov/api/locations/search?q=Colorado&size=5
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/api/locations/search?q=Colorado&size=5
 ```
 
 ### Response
@@ -768,7 +768,7 @@ Retrieve the geographic boundary (GeoJSON geometry) for a specific location by i
 ### Example Request
 
 ```
-GET https://catalog.data.gov/api/location/a1b2c3d4-e5f6-7890-abcd-ef1234567890
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/api/location/a1b2c3d4-e5f6-7890-abcd-ef1234567890
 ```
 
 ### Response
@@ -799,7 +799,7 @@ No query parameters. Returns all organizations.
 ### Example Request
 
 ```
-GET https://catalog.data.gov/api/organizations
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/api/organizations
 ```
 
 ### Response
@@ -899,7 +899,7 @@ Retrieve metadata about a specific harvest record by its ID. Harvest records tra
 ### Example Request
 
 ```
-GET https://catalog.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8
 ```
 
 ### Response
@@ -970,7 +970,7 @@ Retrieve the original, unmodified source payload from a harvest record exactly a
 ### Example Request
 
 ```
-GET https://catalog.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/raw
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/raw
 ```
 
 ### Response
@@ -1018,7 +1018,7 @@ Retrieve the transformed DCAT-US payload for a harvest record. This is the versi
 ### Example Request
 
 ```
-GET https://catalog.data.gov/harvest_record/000c4ce7-90c6-405c-8ed7-3ae06c45005c/transformed
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/harvest_record/000c4ce7-90c6-405c-8ed7-3ae06c45005c/transformed
 ```
 
 ### Response
@@ -1044,12 +1044,12 @@ The `/search` endpoint uses cursor-based pagination. This approach is more relia
 
 ```
 # First request
-GET https://catalog.data.gov/search?q=water&per_page=10
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?q=water&per_page=10
 
 # Response includes: "after": "WzEwMC4wNjEzNiwwLCJiMWEz..."
 
 # Second request
-GET https://catalog.data.gov/search?q=water&per_page=10&after=WzEwMC4wNjEzNiwwLCJiMWEz...
+curl -H 'X-Api-Key: DEMO_KEY' https://catalog.data.gov/search?q=water&per_page=10&after=WzEwMC4wNjEzNiwwLCJiMWEz...
 ```
 
 Keep all other parameters the same across pages. Changing `q`, `sort`, or filter parameters while paginating will return inconsistent results.
