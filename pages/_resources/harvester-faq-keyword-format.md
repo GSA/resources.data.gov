@@ -17,7 +17,7 @@ guidance_tags: ""
 
 format: ""
 
-details: >-
+details: |
 
 
   ## Harvester Guide Pages
