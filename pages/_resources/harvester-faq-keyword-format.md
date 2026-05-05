@@ -12,6 +12,7 @@ category: Skills development
 tags:
   - open data
 
+
 guidance_tags: ""
 
 format: ""
@@ -173,7 +174,9 @@ details: >-
   Contact whoever manages your agency's metadata publishing system and tell them:
 
 
-  > "The `keyword` field on some of our datasets is formatted as a plain string instead of an array. It must always be an array of strings, even for a single keyword. For example, `\"environment\"` should be `[\"environment\"]`. This is causing validation failures on harvest.data.gov."
+  > "The `keyword` field on some of our datasets is formatted as a plain string instead of an array. It must always be an array of strings, even for a single keyword. For example, `"environment"` should be `["environment"]`. This is causing validation failures on harvest.data.gov."
+
+
 
 
 examples: ""
