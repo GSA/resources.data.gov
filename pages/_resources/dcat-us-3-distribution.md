@@ -32,7 +32,7 @@ details: >+
 
   ### Changes from v1.1
 
-  The table below summarizes field-level changes from DCAT-US v1.1 to v3.0 for the Distribution class. See the [DCAT-US v3.0 overview](../dcat-us-3/) for a full list of changes across all classes.
+  The table below summarizes field-level changes from DCAT-US v1.1 to v3.0 for the Distribution class. See the DCAT-US v3.0 overview for a full list of changes across all classes.
 
   <table class="usa-table">
     <thead>
