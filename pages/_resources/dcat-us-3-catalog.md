@@ -15,7 +15,6 @@ tags:
 guidance_tags: ""
 format: ""
 details: >+
-
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json -->
 
   ---
@@ -139,7 +138,7 @@ details: >+
         <td><code>dataset</code></td>
         <td>Mandatory</td>
         <td>array of Dataset objects</td>
-        <td>The list of datasets in this catalog. See <a href="https://resources.data.gov/catalog/dcat-us-3-dataset/">Dataset fields</a>.</td>
+        <td>The list of datasets in this catalog. See <a href="../dcat-us-3-dataset/">Dataset fields</a>.</td>
       </tr>
       <tr>
         <td><code>@id</code></td>
@@ -193,7 +192,7 @@ details: >+
         <td><code>license</code></td>
         <td>Optional</td>
         <td>string (URL)</td>
-        <td>License for the catalog as a whole. See <a href="https://resources.data.gov/open-licenses/">Open Licenses</a>.</td>
+        <td>License for the catalog as a whole. See <a href="../../open-licenses/">Open Licenses</a>.</td>
       </tr>
       <tr>
         <td><code>rights</code></td>
@@ -205,13 +204,13 @@ details: >+
         <td><code>spatial</code></td>
         <td>Optional</td>
         <td>array of Location objects</td>
-        <td>Spatial coverage of the catalog. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Location class</a>.</td>
+        <td>Spatial coverage of the catalog. References the <a href="../dcat-us-3-supporting-classes/">Location class</a>.</td>
       </tr>
       <tr>
         <td><code>contactPoint</code></td>
         <td>Optional</td>
         <td>array of Kind objects</td>
-        <td>Contact points for the catalog. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Kind class</a>.</td>
+        <td>Contact points for the catalog. References the <a href="../dcat-us-3-supporting-classes/">Kind class</a>.</td>
       </tr>
       <tr>
         <td><code>keyword</code></td>
@@ -223,7 +222,7 @@ details: >+
         <td><code>publisher</code></td>
         <td>Optional</td>
         <td>Agent object</td>
-        <td>The publishing entity for this catalog. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+        <td>The publishing entity for this catalog. References the <a href="../dcat-us-3-supporting-classes/">Agent class</a>.</td>
       </tr>
       <tr>
         <td><code>catalog</code></td>
@@ -235,7 +234,7 @@ details: >+
         <td><code>service</code></td>
         <td>Optional</td>
         <td>array of DataService objects</td>
-        <td>New in v3.0. DataService resources accessible through this catalog. In v1.1, APIs were documented only as Distributions inside a Dataset record. In v3.0, a DataService can be a first-class catalog resource. See <a href="https://resources.data.gov/catalog/dcat-us-3-data-service/">DataService fields</a>.</td>
+        <td>New in v3.0. DataService resources accessible through this catalog. In v1.1, APIs were documented only as Distributions inside a Dataset record. In v3.0, a DataService can be a first-class catalog resource. See <a href="../dcat-us-3-data-service/">DataService fields</a>.</td>
       </tr>
       <tr>
         <td><code>record</code></td>
@@ -247,7 +246,7 @@ details: >+
         <td><code>themeTaxonomy</code></td>
         <td>Optional</td>
         <td>array of ConceptScheme objects</td>
-        <td>A knowledge organization system used to classify the catalog's datasets. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">ConceptScheme class</a>. Use this to declare the controlled vocabulary behind your <code>theme</code> values. Federal agencies may reference Data.gov topic categories, ISO 19115 topic categories for geospatial data, or their own agency-specific taxonomy.</td>
+        <td>A knowledge organization system used to classify the catalog's datasets. References the <a href="../dcat-us-3-supporting-classes/">ConceptScheme class</a>. Use this to declare the controlled vocabulary behind your <code>theme</code> values. Federal agencies may reference Data.gov topic categories, ISO 19115 topic categories for geospatial data, or their own agency-specific taxonomy.</td>
       </tr>
     </tbody>
   </table>
@@ -374,27 +373,25 @@ details: >+
   Source: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json) · Generated reference: [jsonschema/docs/Catalog.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md)
 
 
-  ## DCAT US Pages
+## DCAT US Pages
 
-  ### [Quick Migration Guide](https://resources.data.gov/catalog/dcat-us-3-migration/)
-  
-  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
-  
-  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
-  
-  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
-  
-  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
-  
-  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
-  
-  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
-  
-  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
-  
-  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
-  
-  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
+### [Index](../dcat-us-3/)
+
+### [Catalog](../dcat-us-3-catalog/)
+
+### [Data Service](../dcat-us-3-data-service/)
+
+### [Dataset Series](../dcat-us-3-dataset-series/)
+
+### [Dataset](../dcat-us-3-dataset/)
+
+### [Distribution](../dcat-us-3-distribution/)
+
+### [Supporting Classes](../dcat-us-3-supporting-classes/)
+
+### [DCAT Priorities](../dcat-us-priorities/)
+
+### [DCAT US General Information](../dcat-us/)
 
 examples: ""
 link: ""
