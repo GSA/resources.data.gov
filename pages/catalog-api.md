@@ -5,15 +5,111 @@ layout: page
 
 The Data.gov Catalog API provides access to metadata about datasets published by federal, state, local, and tribal governments. You can use it to search for datasets, filter by organization or topic, and retrieve detailed information about individual records.
 
-**4/9/2026: Note on upcoming changes:** The base URL for the data.gov APIs will change when Data.gov routes its APIs through api.data.gov.  This is expected to occur soon.  If you're building a new integration, avoid hard-coding the base URL and check this page for updates before going to production.  Email us with any questions at datagovhelp@gsa.gov
-
-**Base URL:** `https://catalog.data.gov`
-
-No API key is required. All endpoints are publicly accessible and return JSON.
+**Base URL:** `https://api.gsa.gov/technology/datagov/v4/`
 
 Note: This API replaces the previous CKAN-based API. The prior endpoint remains available in a read-only state for existing integrations, but new development should use this API.
 
+**Authentication:** This API is accessed through [api.data.gov](https://api.data.gov), which manages API keys, rate limiting, and usage tracking. [Sign up for a free API key](https://api.data.gov/signup) and include it in the `X-Api-Key` header with every request.
+
+For initial exploration, you can use `DEMO_KEY` without signing up:
+
+```
+curl -H 'X-Api-Key: DEMO_KEY' 'https://api.gsa.gov/technology/datagov/v4/search?q=climate'
+```
+
+Replace `DEMO_KEY` with your personal key for production use or any automated querying. See [API Key and Rate Limit Errors](#api-key-and-rate-limit-errors) below.
+
 ---
+
+## Table of Contents
+
+1. [Authentication](#authentication)
+
+2. [Search Datasets](#search-datasets)
+
+3. [Get Keywords](#get-keywords)
+
+4. [Search Locations](#search-locations)
+
+5. [Get Location Geometry](#get-location-geometry)
+
+6. [Get Organizations](#get-organizations)
+
+7. [Get Harvest Record](#get-harvest-record)
+
+8. [Get Harvest Record Raw](#get-harvest-record-raw)
+
+9. [Get Harvest Record Transformed](#get-harvest-record-transformed)
+
+10. [Pagination](#pagination)
+
+11. [Response Codes and Errors](#response-codes-and-errors)
+
+---
+
+
+
+## Authentication
+
+All requests must include an API key issued through [api.data.gov](https://api.data.gov).
+
+**[Sign up for a free API key](https://api.data.gov/signup)**
+
+### Passing Your API Key
+
+Include your key in the `X-Api-Key` HTTP header:
+
+```
+curl -H 'X-Api-Key: YOUR_KEY_HERE' 'https://api.gsa.gov/technology/datagov/v4/search?q=climate'
+```
+
+### DEMO_KEY
+
+For initial exploration, use `DEMO_KEY` without signing up:
+
+```
+curl -H 'X-Api-Key: DEMO_KEY' 'https://api.gsa.gov/technology/datagov/v4/search?q=climate'
+```
+
+`DEMO_KEY` has much lower rate limits and is not suitable for production use or automated queries.
+
+### Rate Limits
+
+
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Key type</th>
+      <th>Hourly limit</th>
+      <th>Daily limit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Personal API key</td>
+      <td>1,000 requests/hour</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td><code>DEMO_KEY</code></td>
+      <td>30 requests/IP/hour</td>
+      <td>50 requests/IP/day</td>
+    </tr>
+  </tbody>
+</table>
+
+Every response includes these headers so you can track your current usage:
+
+```
+X-RateLimit-Limit: 1000
+X-RateLimit-Remaining: 998
+```
+
+If you exceed your limit, you will receive an HTTP `429 Too Many Requests` response. The block lifts automatically after one hour. If you need higher limits, contact us at [datagovhelp@gsa.gov](mailto:datagovhelp@gsa.gov).
+
+
+---
+
 
 ## Getting Started
 
@@ -25,7 +121,7 @@ To filter results by organization, you first need the organization's slug. Fetch
 
 **Request:**
 ```
-GET https://catalog.data.gov/api/organizations
+GET https://api.gsa.gov/technology/datagov/v4/api/organizations
 ```
 
 **Look for NASA in the response:**
@@ -51,7 +147,7 @@ Use the `q` parameter for your keyword and `org_slug` to filter by organization.
 
 **Request:**
 ```
-GET https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3
+GET https://api.gsa.gov/technology/datagov/v4/search?q=climate&org_slug=nasa&per_page=3
 ```
 
 **Response:**
@@ -79,7 +175,7 @@ GET https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3
 }
 ```
 
-The response includes an `after` value, which means there are more results available.
+The response includes an `after` value, indicating that more results are available.
 
 ### Step 3: Get the next page
 
@@ -87,25 +183,11 @@ Pass the `after` value from the previous response to retrieve the next page. Kee
 
 **Request:**
 ```
-GET https://catalog.data.gov/search?q=climate&org_slug=nasa&per_page=3&after=WzY5LjM0NDY5NiwwLCJiYmRhZGNmYi00NDM1LTQzZWUtYjhlMy0yMzZiZjBlZDEwODIiXQ==
+GET https://api.gsa.gov/technology/datagov/v4/search?q=climate&org_slug=nasa&per_page=3&after=WzY5LjM0NDY5NiwwLCJiYmRhZGNmYi00NDM1LTQzZWUtYjhlMy0yMzZiZjBlZDEwODIiXQ==
 ```
 
 Continue repeating this step until the response no longer includes an `after` field, which means you have reached the last page. For more details see [Pagination](#pagination) below.
 
----
-
-## Table of Contents
-
-1. [Search Datasets](#search-datasets)
-2. [Get Keywords](#get-keywords)
-3. [Search Locations](#search-locations)
-4. [Get Location Geometry](#get-location-geometry)
-5. [Get Organizations](#get-organizations)
-6. [Get Harvest Record](#get-harvest-record)
-7. [Get Harvest Record Raw](#get-harvest-record-raw)
-8. [Get Harvest Record Transformed](#get-harvest-record-transformed)
-9. [Pagination](#pagination)
-10. [Response Codes and Errors](#response-codes-and-errors)
 
 ---
 
@@ -205,12 +287,12 @@ Search the catalog for datasets using keywords, filters, and sorting options.
 ### Example Requests
 
 ```
-GET https://catalog.data.gov/search?q=water+quality
-GET https://catalog.data.gov/search?q=climate&sort=popularity&per_page=25
-GET https://catalog.data.gov/search?org_slug=nasa&per_page=10
-GET https://catalog.data.gov/search?org_type=Federal+Government&spatial_filter=geospatial
-GET https://catalog.data.gov/search?q=education&after=WzEwMC4wNjEzNiwwLCJiMWEzOTY3YzJhMTExZjE2NzgxN2IwMTI0YzUyYjBhYyJd
-GET https://catalog.data.gov/search?spatial_geometry={"type":"Polygon","coordinates":[[[-109.05,37.0],[-102.05,37.0],[-102.05,41.0],[-109.05,41.0],[-109.05,37.0]]]}&spatial_within=true
+GET https://api.gsa.gov/technology/datagov/v4/search?q=water+quality
+GET https://api.gsa.gov/technology/datagov/v4/search?q=climate&sort=popularity&per_page=25
+GET https://api.gsa.gov/technology/datagov/v4/search?org_slug=nasa&per_page=10
+GET https://api.gsa.gov/technology/datagov/v4/search?org_type=Federal+Government&spatial_filter=geospatial
+GET https://api.gsa.gov/technology/datagov/v4/search?q=education&after=WzEwMC4wNjEzNiwwLCJiMWEzOTY3YzJhMTExZjE2NzgxN2IwMTI0YzUyYjBhYyJd
+GET https://api.gsa.gov/technology/datagov/v4/search?spatial_geometry={"type":"Polygon","coordinates":[[[-109.05,37.0],[-102.05,37.0],[-102.05,41.0],[-109.05,41.0],[-109.05,37.0]]]}&spatial_within=true
 
 ```
 
@@ -279,8 +361,8 @@ GET https://catalog.data.gov/search?spatial_geometry={"type":"Polygon","coordina
         "systemOfRecords": "https://www2.ed.gov/notices/pai/pai-18-13-01.pdf",
         "temporal": "2012/2012"
       },
-      "harvest_record": "https://catalog.data.gov/harvest_record/0be6d0c0-8383-4966-acd1-38b0d7baea3c",
-      "harvest_record_raw": "https://catalog.data.gov/harvest_record/0be6d0c0-8383-4966-acd1-38b0d7baea3c/raw"
+      "harvest_record": "https://api.gsa.gov/technology/datagov/v4/harvest_record/0be6d0c0-8383-4966-acd1-38b0d7baea3c",
+      "harvest_record_raw": "https://api.gsa.gov/technology/datagov/v4/harvest_record/0be6d0c0-8383-4966-acd1-38b0d7baea3c/raw"
     }
   ]
 }
@@ -642,8 +724,8 @@ Retrieve a list of the most commonly used keywords across all datasets, along wi
 ### Example Requests
 
 ```
-GET https://catalog.data.gov/api/keywords
-GET https://catalog.data.gov/api/keywords?size=50&min_count=100
+GET https://api.gsa.gov/technology/datagov/v4/api/keywords
+GET https://api.gsa.gov/technology/datagov/v4/api/keywords?size=50&min_count=100
 ```
 
 ### Response
@@ -706,7 +788,7 @@ Search for location names to use with spatial filtering. This endpoint is design
 ### Example Request
 
 ```
-GET https://catalog.data.gov/api/locations/search?q=Colorado&size=5
+GET https://api.gsa.gov/technology/datagov/v4/api/locations/search?q=Colorado&size=5
 ```
 
 ### Response
@@ -761,7 +843,7 @@ Retrieve the geographic boundary (GeoJSON geometry) for a specific location by i
 ### Example Request
 
 ```
-GET https://catalog.data.gov/api/location/a1b2c3d4-e5f6-7890-abcd-ef1234567890
+GET https://api.gsa.gov/technology/datagov/v4/api/location/a1b2c3d4-e5f6-7890-abcd-ef1234567890
 ```
 
 ### Response
@@ -792,7 +874,7 @@ No query parameters. Returns all organizations.
 ### Example Request
 
 ```
-GET https://catalog.data.gov/api/organizations
+GET https://api.gsa.gov/technology/datagov/v4/api/organizations
 ```
 
 ### Response
@@ -892,7 +974,7 @@ Retrieve metadata about a specific harvest record by its ID. Harvest records tra
 ### Example Request
 
 ```
-GET https://catalog.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8
+GET https://api.gsa.gov/technology/datagov/v4/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8
 ```
 
 ### Response
@@ -963,7 +1045,7 @@ Retrieve the original, unmodified source payload from a harvest record exactly a
 ### Example Request
 
 ```
-GET https://catalog.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/raw
+GET https://api.gsa.gov/technology/datagov/v4/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/raw
 ```
 
 ### Response
@@ -1011,7 +1093,7 @@ Retrieve the transformed DCAT-US payload for a harvest record. This is the versi
 ### Example Request
 
 ```
-GET https://catalog.data.gov/harvest_record/000c4ce7-90c6-405c-8ed7-3ae06c45005c/transformed
+GET https://api.gsa.gov/technology/datagov/v4/harvest_record/000c4ce7-90c6-405c-8ed7-3ae06c45005c/transformed
 ```
 
 ### Response
@@ -1037,12 +1119,12 @@ The `/search` endpoint uses cursor-based pagination. This approach is more relia
 
 ```
 # First request
-GET https://catalog.data.gov/search?q=water&per_page=10
+GET https://api.gsa.gov/technology/datagov/v4/search?q=water&per_page=10
 
 # Response includes: "after": "WzEwMC4wNjEzNiwwLCJiMWEz..."
 
 # Second request
-GET https://catalog.data.gov/search?q=water&per_page=10&after=WzEwMC4wNjEzNiwwLCJiMWEz...
+GET https://api.gsa.gov/technology/datagov/v4/search?q=water&per_page=10&after=WzEwMC4wNjEzNiwwLCJiMWEz...
 ```
 
 Keep all other parameters the same across pages. Changing `q`, `sort`, or filter parameters while paginating will return inconsistent results.
@@ -1098,3 +1180,51 @@ For validation errors (422), additional detail is provided:
   }
 }
 ```
+### API Key and Rate Limit Errors
+
+These errors are returned by api.data.gov before the request reaches the catalog.
+
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Status Code</th>
+      <th>Error Code</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>403</td>
+      <td><code>API_KEY_MISSING</code></td>
+      <td>No API key was supplied. Include your key in the <code>X-Api-Key</code> header.</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td><code>API_KEY_INVALID</code></td>
+      <td>The API key supplied is not valid. Double-check your key or sign up for a new one.</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td><code>API_KEY_UNVERIFIED</code></td>
+      <td>Your API key has not been verified yet. Check your email to complete signup.</td>
+    </tr>
+    <tr>
+      <td>429</td>
+      <td><code>OVER_RATE_LIMIT</code></td>
+      <td>You have exceeded your rate limit. Wait one hour for the block to lift automatically.</td>
+    </tr>
+  </tbody>
+</table>
+
+Rate limit error responses use this JSON format:
+
+```json
+{
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later."
+  }
+}
+```
+
+For more information see the [api.data.gov developer manual](https://api.data.gov/docs/developer-manual/).
