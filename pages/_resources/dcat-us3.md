@@ -31,7 +31,7 @@ details: >+
       </tr>
       <tr>
         <th>Previous version:</th>
-        <td><a href="https://resources.data.gov/catalog/dcat-us/">DCAT-US v1.1 (Project Open Data Metadata Schema)</a></td>
+        <td><a href="../dcat-us/">DCAT-US v1.1 (Project Open Data Metadata Schema)</a></td>
       </tr>
       <tr>
         <th>Schema repository:</th>
@@ -448,30 +448,30 @@ details: >+
 
   ### Still using DCAT-US v1.1?
 
-  The [DCAT-US v1.1 reference](https://resources.data.gov/catalog/dcat-us/) remains available.
+  The [DCAT-US v1.1 reference](../dcat-us/) remains available.
 
 
 ## DCAT US Pages
 
-### [Quick Migration Guide](https://resources.data.gov/catalog/dcat-us-3-migration/)
+### [Quick Migration Guide](../dcat-us-3-migration/)
 
-### [Index](https://resources.data.gov/catalog/dcat-us-3/)
+### [Index](../dcat-us-3/)
 
-### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
+### [Catalog](../dcat-us-3-catalog/)
 
-### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
+### [Data Service](../dcat-us-3-data-service/)
 
-### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
+### [Dataset Series](../dcat-us-3-dataset-series/)
 
-### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
+### [Dataset](../dcat-us-3-dataset/)
 
-### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
+### [Distribution](../dcat-us-3-distribution/)
 
-### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
+### [Supporting Classes](../dcat-us-3-supporting-classes/)
 
-### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
+### [DCAT Priorities](../dcat-us-priorities/)
 
-### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
+### [DCAT US General Information](../dcat-us/)
 
 examples: ""
 link: ""
