@@ -219,17 +219,17 @@ details: >+
     </thead>
     <tbody>
       <tr>
-        <td><a href="../dcat-us-3-implementation/">Agency Implementation Guide</a></td>
+        <td><a href="../dcat-us3/">Agency Implementation Guide</a></td>
         <td>Human-readable guidance for the core classes — Catalog, Dataset, Distribution, DataService, and DatasetSeries. Includes federal-specific context, before/after upgrade examples, common mistakes, and a breaking changes summary.</td>
         <td>Data managers implementing v3.0 for the first time or upgrading from v1.1</td>
       </tr>
       <tr>
-        <td><a href="../dcat-us-3-migration/">Quick Migration Guide</a></td>
+        <td><a href="../dcat-us3/">Quick Migration Guide</a></td>
         <td>Step-by-step instructions for updating an existing v1.1 data.json file to v3.0. Covers the eight most important changes in order of priority.</td>
         <td>Agencies with existing v1.1 implementations ready to migrate</td>
       </tr>
       <tr>
-        <td><a href="../dcat-us-priorities/">DCAT-US Priorities</a></td>
+        <td><a href="../dcat-us3/">DCAT-US Priorities</a></td>
         <td>Keyword and field requirements for priority federal data assets, including COVID-19 response data and AI research datasets. Shows how v1.1 field guidance maps to v3.0.</td>
         <td>Agencies with COVID-19 or AI research datasets in their inventory</td>
       </tr>
@@ -242,7 +242,7 @@ details: >+
 
   The table below summarizes the most significant changes from DCAT-US v1.1 to v3.0. For a complete field-by-field comparison, see the [schema repository](https://github.com/GSA/dcat-us). For field-level detail see the individual schema reference pages linked above.
 
-  For step-by-step migration instructions see the [Quick Migration Guide](../dcat-us-3-migration/).
+  For step-by-step migration instructions see the [Quick Migration Guide](../dcat-us3/).
 
   #### Breaking changes
 
@@ -479,7 +479,7 @@ details: >+
 
 ## DCAT US Pages
 
-### [Quick Migration Guide](../dcat-us-3-migration/)
+### [Quick Migration Guide](../dcat-us3/)
 
 ### [Index](../dcat-us-3/)
 
