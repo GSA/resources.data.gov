@@ -27,11 +27,11 @@ details: >+
 
   #### COVID-19 policy background
 
-  In April 2020, OMB Memorandum M-20-16, *Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19*, directed agencies to prioritize COVID-19 response data as their highest priority data asset. This memo was issued during the public health emergency and required agencies participating in the Federal Data Strategy 2020 Action Plan to elevate COVID-19 datasets in their data inventories.
+  In April 2020, OMB Memorandum [M-20-16](https://www.whitehouse.gov/wp-content/uploads/2020/04/M-20-16.pdf), *Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19*, directed agencies to prioritize COVID-19 response data as their highest priority data asset. This memo was issued during the public health emergency and required agencies participating in the Federal Data Strategy 2020 Action Plan to elevate COVID-19 datasets in their data inventories.
 
-  **Current status:** M-20-16 was a pandemic-era directive. The federal public health emergency for COVID-19 ended in May 2023. M-20-16 is no longer actively enforced as a current data prioritization requirement. Agencies that documented COVID-19 datasets under M-20-16 do not need to remove those keywords; the keywords remain useful for discoverability, but there is no active policy mandate requiring new COVID-19 prioritization at this time.
+  **Current status:** M-20-16 was a pandemic-era directive. The federal public health emergency for COVID-19 ended in May 2023. M-20-16 is no longer actively enforced as a current data prioritization requirement. Agencies that documented COVID-19 datasets under M-20-16 do not need to remove those keywords — the keywords remain useful for discoverability — but there is no active policy mandate requiring new COVID-19 prioritization at this time.
 
-  Agencies with COVID-19 datasets in their inventories are encouraged to maintain their existing keyword documentation and ensure those datasets remain accessible and well-described for ongoing research use.
+  Agencies with COVID-19 datasets in their inventories are encouraged to keep their existing keyword documentation in place and ensure those datasets remain accessible and well-described for ongoing research use.
 
   #### COVID-19 field guidance
 
@@ -200,25 +200,25 @@ details: >+
   </table>
 
 
-  ## DCAT US Pages
-  
-  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
-  
-  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
-  
-  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
-  
-  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
-  
-  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
-  
-  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
-  
-  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
-  
-  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
-  
-  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
+## DCAT US Pages
+
+### [Index](../dcat-us-3/)
+
+### [Catalog](../dcat-us-3-catalog/)
+
+### [Data Service](../dcat-us-3-data-service/)
+
+### [Dataset Series](../dcat-us-3-dataset-series/)
+
+### [Dataset](../dcat-us-3-dataset/)
+
+### [Distribution](../dcat-us-3-distribution/)
+
+### [Supporting Classes](../dcat-us-3-supporting-classes/)
+
+### [DCAT Priorities](../dcat-us-priorities/)
+
+### [DCAT US General Information](../dcat-us/)
 
 examples: ""
 link: ""
