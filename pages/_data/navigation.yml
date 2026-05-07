@@ -18,6 +18,8 @@
       url: /resources/documenting-apis/
     - text: Catalog API
       url: /catalog-api/
+    - text: Harvester API
+      url: /harvester-api/
     - text: API.Data.Gov
       url: https://api.data.gov/
 - text: Agency Links
