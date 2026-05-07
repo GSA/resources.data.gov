@@ -58,4 +58,4 @@ We do not have information specifically for children on our website. The [Childr
 
 ## Questions about privacy
 
-If you have questions about this privacy policy, please [email us]({% include email.html %}).
+If you have questions about this privacy policy, please email us at datagovhelp@gsa.gov
