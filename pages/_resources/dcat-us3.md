@@ -60,13 +60,13 @@ details: >+
 
   DCAT-US v1.1 was published in 2014 and served federal agencies well for over a decade. But the data landscape changed significantly. Agencies increasingly publish APIs alongside downloadable files, with no standard way to describe them at the catalog level. Geospatial data required a separate metadata standard. Datasets published in recurring series — annual surveys, quarterly reports, versioned reference data — had no standard way to express their relationship to each other. And the international open data community moved forward with W3C DCAT 2 and DCAT 3, leaving v1.1 increasingly out of step with global practice.
 
-  DCAT-US v3.0 addresses these gaps while preserving the core investment agencies have made in their existing metadata. It aligns the U.S. federal standard with W3C DCAT 3, introduces structured support for APIs, geospatial data, dataset series, and data quality, and brings a consistent requirement level framework — Mandatory, Recommended, or Optional — that tells agencies exactly which fields matter most.
+  DCAT-US v3.0 addresses these gaps while preserving the core investment agencies' existing metadata. It aligns the U.S. federal standard with W3C DCAT 3, introduces structured support for APIs, geospatial data, dataset series, and data quality, and brings a consistent requirement level framework — Mandatory, Recommended, or Optional — that tells agencies exactly which fields matter most.
 
   ---
 
   ### What stays the same
 
-  For most agencies the core structure of your data.json file carries forward unchanged. Your Catalog still holds an array of Datasets. Each Dataset still describes its Distributions. The fields you have been required to populate — `title`, `description`, `publisher`, `contactPoint`, `keyword`, `modified`, `bureauCode`, and `programCode` — are all still present and recognized in v3.0.
+  For most agencies, the core structure of your data.json file carries forward unchanged. Your Catalog still holds an array of Datasets. Each Dataset still describes its Distributions. The fields you have been required to populate — `title`, `description`, `publisher`, `contactPoint`, `keyword`, `modified`, `bureauCode`, and `programCode` — are all still present and recognized in v3.0.
 
   Note: `accessLevel` is not part of the v3.0 core schema. The v3.0 equivalent is `accessRights`, a free-text string. Agencies should continue populating `accessLevel` per existing OMB policy (M-13-13) and add `accessRights` alongside it. See the [Changes from v1.1](#changes-from-v11) section for details.
 
@@ -76,9 +76,9 @@ details: >+
 
   ### Who needs to act and when
 
-  **For agencies currently implementing v1.1:** Continue operating your existing data.json files as-is until you are ready to migrate. v1.1 continues to be harvested by Data.gov during the transition period. When you are ready to migrate, start with the breaking changes listed in the Changes from v1.1 section — particularly `modified`, `temporal`, `spatial`, and `language` — since these are the fields most likely to fail v3.0 validation.
+  **For agencies currently implementing v1.1:** Continue operating your existing data.json files as-is until you are ready to migrate. v1.1 continues to be harvested by Data.gov during the transition period. When you are ready to migrate, start with the breaking changes listed in the Changes from v1.1 section — particularly `modified`, `temporal`, `spatial`, and `language` — since these are the fields most likely to fail validation in v3.0.
 
-  **For agencies building new implementations:** Use v3.0 from the start. The [v1.1 reference](../dcat-us/) remains available but new implementations should not be built against it.
+  **For agencies building new implementations:** Use v3.0 from the start. The [v1.1 reference](../dcat-us/) remains available, but new implementations should not be built against it.
 
   **For system and tool developers:** The schema has moved from JSON Schema Draft-04 to JSON Schema 2020-12. Update your validators accordingly. See [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema) for tooling guidance.
 
