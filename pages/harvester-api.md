@@ -14,7 +14,7 @@ layout: page
 
 The Harvester API provides programmatic access to Data.gov's harvest infrastructure — the system that collects dataset metadata from federal agencies and other publishers. Use this API to look up harvest sources, check job status, and investigate harvest errors.
 
-**Base URL:** `https://harvest.data.gov/`
+**Base URL:** `https://api.gsa.gov/technology/datagov_harvest/v2/`
 
 **Authentication:** [Sign up for an API key at api.data.gov](https://api.data.gov/signup). Documentation related to authenticaion and rate limits is available in [api.data.gov's developer manual](https://api.data.gov/docs/developer-manual/).
 
@@ -27,7 +27,7 @@ The Harvester API provides programmatic access to Data.gov's harvest infrastruct
 Get a list of all registered harvest sources:
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/harvest_sources/
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_sources/
 ```
 
 ---
@@ -61,7 +61,7 @@ Returns all registered harvest sources.
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/harvest_sources/
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_sources/
 ```
 
 **Example Response:**
@@ -113,7 +113,7 @@ Retrieve details for a specific harvest source.
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/harvest_source/3fa85f64-5717-4562-b3fc-2c963f66afa6
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_source/3fa85f64-5717-4562-b3fc-2c963f66afa6
 ```
 
 **Response:** Same structure as individual items in [List Harvest Sources](#list-harvest-sources).
@@ -135,7 +135,7 @@ Retrieve all harvest jobs for a specific source.
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/harvest_source/3fa85f64-5717-4562-b3fc-2c963f66afa6/jobs
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_source/3fa85f64-5717-4562-b3fc-2c963f66afa6/jobs
 ```
 
 **Example Response:**
@@ -169,7 +169,7 @@ Returns all organizations with registered harvest sources.
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/organizations/
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/organizations/
 ```
 
 **Example Response:**
@@ -219,7 +219,7 @@ Retrieve details for a specific organization.
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/organization/f4ca4614-8901-409b-8553-2e994ad10023
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/organization/f4ca4614-8901-409b-8553-2e994ad10023
 ```
 
 ---
@@ -241,7 +241,7 @@ Retrieve details for a specific harvest job.
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/harvest_job/de2010f9-d9ec-4211-9690-5b3bbc9fe1f3
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_job/de2010f9-d9ec-4211-9690-5b3bbc9fe1f3
 ```
 
 **Response Fields:**
@@ -275,7 +275,7 @@ Retrieve errors from a specific harvest job.
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/harvest_job/de2010f9-d9ec-4211-9690-5b3bbc9fe1f3/errors
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_job/de2010f9-d9ec-4211-9690-5b3bbc9fe1f3/errors
 ```
 
 **Example Response:**
@@ -312,7 +312,7 @@ Retrieve metadata about a specific harvest record. Harvest records track how ind
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8
 ```
 
 **Example Response:**
@@ -368,7 +368,7 @@ Retrieve the original, unmodified source payload from a harvest record exactly a
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/raw
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/raw
 ```
 
 **Response:** The original metadata payload. Content-Type is detected automatically:
@@ -396,7 +396,7 @@ Retrieve the transformed DCAT-US payload for a harvest record. This is the versi
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' https://harvest.data.gov/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/transformed
+curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_record/d0e03fb2-f885-4b1d-8feb-2d8acc93f4f8/transformed
 ```
 
 **Response:** The transformed DCAT-US metadata payload as JSON.
@@ -435,7 +435,7 @@ Validate a DCAT-US catalog against the 1.1 schema.
 **Example Request:**
 
 ```bash
-curl -H 'X-Api-Key: DEMO_KEY' -X POST https://harvest.data.gov/validate \
+curl -H 'X-Api-Key: DEMO_KEY' -X POST https://api.gsa.gov/technology/datagov_harvest/v2/validate \
   -H "Content-Type: application/json" \
   -d '{
     "fetch_method": "url",
