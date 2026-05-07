@@ -3,8 +3,6 @@ permissions:
   contents: read
 
 on:
-  pull_request:
-    branches: [ main ]
   schedule:
     - cron: '0 5 * * *'  # Run at midnight Eastern Time every day (midnight EST/1 AM EDT)
   workflow_dispatch:  # Allow manual triggering
@@ -34,5 +32,4 @@ jobs:
         run: snyk auth ${{ secrets.SNYK_TOKEN }}
 
       - name: Run Snyk test for vulnerabilities
-        run: snyk test --severity-threshold=high
-        continue-on-error: true
+        run: snyk test --severity-threshold=medium
