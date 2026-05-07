@@ -1,6 +1,6 @@
 ---
 resource_name: DCAT-US Schema v3.0
-slug: dcat-us-3
+slug: dcat-us3
 description: Reference documentation for DCAT-US v3.0, the federal metadata standard
   for documenting datasets, APIs, and data services. Use this reference to build or
   validate your agency's data inventory.
@@ -10,13 +10,13 @@ tags:
   - data schema
   - open data
   - DCAT
+  - DCAT-US
+  - metadata standard
   - data inventory
   - data standards
 guidance_tags: ""
 format: ""
 details: >+
-
-  
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
 
   <table class="usa-table vertical-headings">
@@ -103,90 +103,118 @@ details: >+
 
   **Two new classes** can appear alongside Dataset in the Catalog:
 
-  - **DataService:** describes an API or other programmatic interface that provides access to data. In v1.1, APIs were documented only as Distributions inside a Dataset. In v3.0, a DataService can be listed at the Catalog level as its own resource, which is useful for services that serve many datasets or are not tied to a single one. See [DataService fields](../dcat-us-3-data-service/).
-  - **DatasetSeries:** groups related datasets published over time — annual releases, recurring surveys, versioned reference data — under a single series record. Individual Dataset records point back to the series using the `inSeries` field. See [DatasetSeries fields](../dcat-us-3-dataset-series/).
+  - **DataService:** describes an API or other programmatic interface that provides access to data. In v1.1, APIs were documented only as Distributions inside a Dataset. In v3.0, a DataService can be listed at the Catalog level as its own resource, which is useful for services that serve many datasets or are not tied to a single one. See [Catalog fields](/standards/catalog/dcat-us-3/catalog/) for how DataService fits into the catalog structure.
+  - **DatasetSeries:** groups related datasets published over time — annual releases, recurring surveys, versioned reference data — under a single series record. Individual Dataset records point back to the series using the `inSeries` field. See [DatasetSeries fields](/standards/catalog/dcat-us-3/dataset-series/).
 
-  **Supporting classes** provide structured definitions for information that was unstructured in v1.1, such as geographic location, temporal coverage, contact information, attribution, quality measurements, and access restrictions. These classes are referenced from Dataset, Distribution, and the new classes above. Most agencies will encounter them indirectly, through a field that points to one of these structures. See [Supporting classes](../dcat-us-3-supporting-classes/).
+  **Supporting classes** provide structured definitions for information that was unstructured in v1.1, such as geographic location, temporal coverage, contact information, attribution, quality measurements, and access restrictions. These classes are referenced from Dataset, Distribution, and the new classes above. Most agencies will encounter them indirectly, through a field that points to one of these structures.
 
   **JSON Schema validation.** DCAT-US v3.0 is a valid JSON Schema (2020-12). Agencies can programmatically validate their metadata files against the schema. See [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema) for tooling.
 
-  **Federal access and use restrictions.** Three new structured classes — AccessRestriction, UseRestriction, and CUIRestriction — replace the v1.1 pattern of expressing restrictions as free text in `rights` or using the three-value `accessLevel` field. These are documented on the [Distribution fields](../dcat-us-3-distribution/) page.
+  **Federal access and use restrictions.** Three new structured classes — AccessRestriction, UseRestriction, and CUIRestriction — replace the v1.1 pattern of expressing restrictions as free text in `rights` or using the three-value `accessLevel` field. These are documented on the [Constraints and Restrictions](/standards/catalog/dcat-us-3/constraints-and-restrictions/) reference page.
 
   ---
 
-  ### Reference pages
+  ### Schema reference pages
 
-  Each core class has its own reference page with field-level detail, requirement levels, and JSON examples.
+  The schema reference pages below are generated directly from the [DCAT-US v3.0 schema repository](https://github.com/GSA/dcat-us) and reflect the current authoritative field definitions, types, and requirement levels. For human-readable implementation guidance, migration help, and examples, see the [Implementation guidance](#implementation-guidance) section below.
 
-  #### Catalog → Dataset → Distribution
+  #### Core classes
 
   These three pages cover the fields most agencies interact with directly.
 
-  - [Catalog fields](../dcat-us-3-catalog/) — the top-level container; your `data.json` is a Catalog
-  - [Dataset fields](../dcat-us-3-dataset/) — the primary inventory unit; one record per dataset
-  - [Distribution fields](../dcat-us-3-distribution/) — a specific file or access point for a dataset
-
-  #### Additional classes (new in v3.0)
-
-  - [DataService fields](../dcat-us-3-data-service/) — APIs and query endpoints
-  - [DatasetSeries fields](../dcat-us-3-dataset-series/) — recurring or versioned dataset releases
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Description</th>
+        <th>Schema reference</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Catalog</td>
+        <td>The top-level container. Your agency's <code>data.json</code> file is a Catalog.</td>
+        <td><a href="/standards/catalog/dcat-us-3/catalog/">Catalog fields</a></td>
+      </tr>
+      <tr>
+        <td>Dataset</td>
+        <td>The primary inventory unit. One record per dataset.</td>
+        <td><a href="/standards/catalog/dcat-us-3/dataset/">Dataset fields</a></td>
+      </tr>
+      <tr>
+        <td>Distribution</td>
+        <td>A specific file or access point for a dataset.</td>
+        <td><a href="/standards/catalog/dcat-us-3/distribution/">Distribution fields</a></td>
+      </tr>
+      <tr>
+        <td>Dataset Series</td>
+        <td>New in v3.0. A named collection of related datasets published over time.</td>
+        <td><a href="/standards/catalog/dcat-us-3/dataset-series/">Dataset Series fields</a></td>
+      </tr>
+    </tbody>
+  </table>
 
   #### Supporting classes
 
-  Supporting classes are referenced from the core classes above. The [supporting classes reference](../dcat-us-3-supporting-classes/) covers all of them in one place, grouped by function.
+  Supporting classes are referenced from the core classes above. Each page covers a group of related classes.
 
   <table class="usa-table">
     <thead>
       <tr>
         <th>Group</th>
-        <th>Classes</th>
+        <th>Classes covered</th>
         <th>Referenced from</th>
+        <th>Schema reference</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Agents</td>
         <td>Agent, Organization, Kind, Address</td>
-        <td><code>publisher</code>, <code>contactPoint</code>, <code>creator</code> on Dataset and DataService</td>
+        <td><code>publisher</code>, <code>contactPoint</code>, <code>creator</code></td>
+        <td><a href="/standards/catalog/dcat-us-3/agents/">Agents</a></td>
       </tr>
       <tr>
-        <td>Location and time</td>
-        <td>Location, PeriodOfTime</td>
-        <td><code>spatial</code>, <code>temporal</code> on Dataset, DataService, DatasetSeries</td>
+        <td>Temporal, Spatial, and Metrics</td>
+        <td>Location, PeriodOfTime, QualityMeasurement, Metric</td>
+        <td><code>spatial</code>, <code>temporal</code>, <code>hasQualityMeasurement</code></td>
+        <td><a href="/standards/catalog/dcat-us-3/temporal-spatial-metrics/">Temporal, Spatial, and Metrics</a></td>
       </tr>
       <tr>
-        <td>Controlled vocabularies</td>
-        <td>Concept, ConceptScheme</td>
-        <td><code>status</code>, <code>theme</code>, <code>representationTechnique</code> and others</td>
+        <td>Identifiers and Relationships</td>
+        <td>Identifier, Checksum, Attribution, Relationship, CatalogRecord</td>
+        <td><code>otherIdentifier</code>, <code>checksum</code>, <code>qualifiedRelation</code>, <code>record</code></td>
+        <td><a href="/standards/catalog/dcat-us-3/identifiers-and-relationships/">Identifiers and Relationships</a></td>
       </tr>
       <tr>
-        <td>Quality and provenance</td>
-        <td>QualityMeasurement, Metric, Activity</td>
-        <td><code>hasQualityMeasurement</code>, <code>wasGeneratedBy</code> on Dataset</td>
+        <td>Quality and Governance</td>
+        <td>Activity and related governance terms</td>
+        <td><code>wasGeneratedBy</code>, <code>wasUsedBy</code></td>
+        <td><a href="/standards/catalog/dcat-us-3/quality-governance/">Quality and Governance</a></td>
       </tr>
       <tr>
-        <td>Identifiers and integrity</td>
-        <td>Identifier, Checksum, Standard, Document</td>
-        <td><code>otherIdentifier</code>, <code>checksum</code>, <code>conformsTo</code>, <code>page</code></td>
-      </tr>
-      <tr>
-        <td>Relationships</td>
-        <td>Attribution, Relationship, CatalogRecord</td>
-        <td><code>qualifiedAttribution</code>, <code>qualifiedRelation</code>, <code>record</code></td>
-      </tr>
-      <tr>
-        <td>Restrictions</td>
-        <td>AccessRestriction, CUIRestriction, UseRestriction</td>
+        <td>Constraints and Restrictions</td>
+        <td>AccessRestriction, UseRestriction, CUIRestriction</td>
         <td><code>accessRestriction</code>, <code>useRestriction</code>, <code>cuiRestriction</code> on Distribution</td>
+        <td><a href="/standards/catalog/dcat-us-3/constraints-and-restrictions/">Constraints and Restrictions</a></td>
       </tr>
     </tbody>
   </table>
 
   ---
 
+  ### Implementation guidance
+
+  The pages below are written for federal agency data managers and developers implementing DCAT-US v3.0. They cover what changed from v1.1, how to migrate existing records, and how to document common types of federal data assets.
+
+  - [Quick Migration Guide](../dcat-us-3-migration/) — step-by-step instructions for updating a v1.1 data.json file to v3.0
+  - [DCAT-US Priorities](../dcat-us-priorities/) — keyword and field requirements for COVID-19 and AI research data assets
+
+  ---
+
   ### Changes from v1.1
 
-  The table below summarizes the most significant changes from DCAT-US v1.1 to v3.0. For a complete field-by-field comparison, see the [schema repository](https://github.com/GSA/dcat-us). For field-level detail see the individual reference pages for [Catalog](../dcat-us-3-catalog/), [Dataset](../dcat-us-3-dataset/), and [Distribution](../dcat-us-3-distribution/).
+  The table below summarizes the most significant changes from DCAT-US v1.1 to v3.0. For a complete field-by-field comparison, see the [schema repository](https://github.com/GSA/dcat-us). For field-level detail see the individual schema reference pages linked above.
 
   For step-by-step migration instructions see the [Quick Migration Guide](../dcat-us-3-migration/).
 
@@ -386,13 +414,35 @@ details: >+
 
   <!-- SOURCE: https://github.com/GSA/dcat-us/tree/main/jsonschema -->
 
-  Note: the generated reference documentation in `jsonschema/docs/` currently shows all fields as Optional regardless of their actual requirement level. This is a known issue. Trust the requirement levels documented on the reference pages and in the JSON schema files directly.
+  Note: the generated reference documentation in `jsonschema/docs/` currently shows all fields as Optional regardless of their actual requirement level. This is a known issue. Trust the requirement levels documented on the schema reference pages and in the JSON schema files directly.
 
   Validate your metadata against the v3.0 schema:
 
   - JSON Schema file: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json)
   - Validation script: [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py)
   - Instructions: [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema)
+
+  ---
+
+  ### Changelog
+
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>May 2026</td>
+        <td>Page rewritten to correct several errors and add links to schema reference pages generated from the DCAT-US v3.0 GitHub repository.
+          <br><br>
+          Corrections made: removed <code>accessLevel</code> from the "What stays the same" list (not in v3.0 core schema); corrected <code>language</code> breaking change description from BCP 47 to ISO 639-1 two-letter codes; corrected <code>landingPage</code> entry (still in schema as Recommended, moved to Structural changes table); corrected <code>accrualPeriodicity</code> description to reflect three accepted vocabularies; removed <code>webService</code> and <code>accessLevelComment</code> (v1.0 fields, not relevant to v1.1 to v3.0 migration); added <code>bureauCode</code>, <code>programCode</code>, and <code>accrualPeriodicity</code> to the relevant tables.
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   ---
 
@@ -426,6 +476,6 @@ details: >+
 examples: ""
 link: ""
 layout: resource
-toc: true
+toc: false
 publish: true
 ---
