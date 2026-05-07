@@ -6,6 +6,8 @@
       url: /categories/data-tools
     - text: Guidance
       url: /categories/guidance
+    - text: Harvester Help
+      url: /resources/harvester-what-is-harvesting/
 - text: Data Standards
   children:
     - text: DCAT-US 3
