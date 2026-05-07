@@ -88,7 +88,7 @@ layout: toc
       </div>
     {% endif %}
 
-    <div class="grid-row padding-top-205 padding-bottom-205 border-top border-bottom border-base">
+    <div class="grid-row display-flex flex-column padding-top-205 padding-bottom-205 border-top border-bottom border-base">
       <h2 id="details" class="margin-top-0 text-primary-dark">Details</h2>
       <div>
         {{ page.details | default: "No details provided." | markdownify }}
