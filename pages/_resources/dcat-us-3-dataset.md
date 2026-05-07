@@ -1,5 +1,5 @@
 ---
-resource_name: DCAT-US Schema v3.0 Dataset fields
+resource_name: DCAT-US Schema v3.0 — Dataset fields
 slug: dcat-us-3-dataset
 description: >-
   Field-level reference for the DCAT-US v3.0 Dataset class. The Dataset is the
@@ -16,7 +16,6 @@ tags:
 guidance_tags: ""
 format: ""
 details: >+
-
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Dataset.json -->
 
   ---
@@ -118,13 +117,13 @@ details: >+
         <td><code>publisher</code></td>
         <td>Mandatory</td>
         <td>object</td>
-        <td>The publishing entity and optionally its parent organization(s). References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Organization class</a>. At a minimum, provide <code>name</code>. Optionally add <code>prefLabel</code> (preferred legal name), <code>altLabel</code> (acronym), and <code>subOrganizationOf</code> (array of parent organizations).</td>
+        <td>The publishing entity and optionally its parent organization(s). References the <a href="../dcat-us-3-supporting-classes/">Organization class</a>. At a minimum, provide <code>name</code>. Optionally add <code>prefLabel</code> (preferred legal name), <code>altLabel</code> (acronym), and <code>subOrganizationOf</code> (array of parent organizations).</td>
       </tr>
       <tr>
         <td><code>contactPoint</code></td>
         <td>Mandatory</td>
         <td>object or array</td>
-        <td>Contact person's name and email for the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Kind class</a>. Must include <code>fn</code> (full name) and <code>hasEmail</code> (formatted as <code>mailto:name@agency.gov</code>). Can be a single object or an array for multiple contacts. Optionally add <code>tel</code> and <code>organization-name</code>.</td>
+        <td>Contact person's name and email for the dataset. References the <a href="../dcat-us-3-supporting-classes/">Kind class</a>. Must include <code>fn</code> (full name) and <code>hasEmail</code> (formatted as <code>mailto:name@agency.gov</code>). Can be a single object or an array for multiple contacts. Optionally add <code>tel</code> and <code>organization-name</code>.</td>
       </tr>
       <tr>
         <td><code>identifier</code></td>
@@ -209,7 +208,7 @@ details: >+
         <td><code>distribution</code></td>
         <td>Conditional</td>
         <td>array of objects</td>
-        <td>A container for one or more Distribution objects describing how the dataset can be accessed or downloaded. Required if the dataset has an <code>accessURL</code> or <code>downloadURL</code>. See <a href="https://resources.data.gov/catalog/dcat-us-3-distribution/">Distribution fields</a>. In v3.0, <code>license</code> should be included on each Distribution object rather than at the Dataset level. If all distributions share the same license, add it to each one.</td>
+        <td>A container for one or more Distribution objects describing how the dataset can be accessed or downloaded. Required if the dataset has an <code>accessURL</code> or <code>downloadURL</code>. See <a href="../dcat-us-3-distribution/">Distribution fields</a>. In v3.0, <code>license</code> should be included on each Distribution object rather than at the Dataset level. If all distributions share the same license, add it to each one.</td>
       </tr>
       <tr>
         <td><code>sample</code></td>
@@ -252,13 +251,13 @@ details: >+
         <td><code>rightsHolder</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>An agent owning or managing rights over the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Agent class</a>.</td>
+        <td>An agent owning or managing rights over the dataset. References the <a href="../dcat-us-3-supporting-classes/">Agent class</a>.</td>
       </tr>
       <tr>
         <td><code>license</code></td>
         <td>Optional</td>
         <td>string (URL)</td>
-        <td>The license or public domain dedication status of the dataset. Provide as a URL. See <a href="https://resources.data.gov/open-licenses/">Open Licenses</a>. In v3.0, <code>license</code> is more correctly expressed at the Distribution level per W3C DCAT. Including it here at the dataset level is supported, but agencies are encouraged to move <code>license</code> to each Distribution object.</td>
+        <td>The license or public domain dedication status of the dataset. Provide as a URL. See <a href="../../open-licenses/">Open Licenses</a>. In v3.0, <code>license</code> is more correctly expressed at the Distribution level per W3C DCAT. Including it here at the dataset level is supported, but agencies are encouraged to move <code>license</code> to each Distribution object.</td>
       </tr>
     </tbody>
   </table>
@@ -283,13 +282,13 @@ details: >+
         <td><code>spatial</code></td>
         <td>Recommended</td>
         <td>array of Location objects</td>
-        <td>Spatial coverage of the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Location class</a>. (Was a string in v1.1; now uses the Location class.) Minimum upgrade: <code>{"@type": "Location", "prefLabel": "United States"}</code>. For geospatial precision, add a <code>bbox</code> as a WKT string: <code>"POLYGON((-125 24, -66 24, -66 50, -125 50, -125 24))"</code> or as a GeoJSON Polygon object.</td>
+        <td>Spatial coverage of the dataset. References the <a href="../dcat-us-3-supporting-classes/">Location class</a>. (Was a string in v1.1; now uses the Location class.) Minimum upgrade: <code>{"@type": "Location", "prefLabel": "United States"}</code>. For geospatial precision, add a <code>bbox</code> as a WKT string: <code>"POLYGON((-125 24, -66 24, -66 50, -125 50, -125 24))"</code> or as a GeoJSON Polygon object.</td>
       </tr>
       <tr>
         <td><code>temporal</code></td>
         <td>Recommended</td>
         <td>array of PeriodOfTime objects</td>
-        <td>Temporal coverage of the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">PeriodOfTime class</a>. <strong>Note for agencies upgrading from v1.1:</strong> The v1.1 string format (e.g., <code>2000-01-15T00:00:00Z/2010-01-15T00:00:00Z</code>) is no longer valid. Use a PeriodOfTime object: <code>{"@type": "PeriodOfTime", "startDate": "2000-01-15", "endDate": "2010-01-15"}</code>. Open-ended periods are valid — you can omit either <code>startDate</code> or <code>endDate</code>.</td>
+        <td>Temporal coverage of the dataset. References the <a href="../dcat-us-3-supporting-classes/">PeriodOfTime class</a>. <strong>Note for agencies upgrading from v1.1:</strong> The v1.1 string format (e.g., <code>2000-01-15T00:00:00Z/2010-01-15T00:00:00Z</code>) is no longer valid. Use a PeriodOfTime object: <code>{"@type": "PeriodOfTime", "startDate": "2000-01-15", "endDate": "2010-01-15"}</code>. Open-ended periods are valid — you can omit either <code>startDate</code> or <code>endDate</code>.</td>
       </tr>
       <tr>
         <td><code>spatialResolutionInMeters</code></td>
@@ -362,7 +361,7 @@ details: >+
         <td><code>inSeries</code></td>
         <td>Optional</td>
         <td>array of DatasetSeries objects</td>
-        <td>A DatasetSeries to which this dataset belongs. See <a href="https://resources.data.gov/catalog/dcat-us-3-dataset-series/">DatasetSeries fields</a>. In v1.1, <code>isPartOf</code> was used to group datasets into a collection. In v3.0, use <code>inSeries</code> for temporal series membership, or document collection membership at the parent dataset level using <code>hasPart</code>.</td>
+        <td>A DatasetSeries to which this dataset belongs. See <a href="../dcat-us-3-dataset-series/">DatasetSeries fields</a>. In v1.1, <code>isPartOf</code> was used to group datasets into a collection. In v3.0, use <code>inSeries</code> for temporal series membership, or document collection membership at the parent dataset level using <code>hasPart</code>.</td>
       </tr>
     </tbody>
   </table>
@@ -408,13 +407,13 @@ details: >+
         <td><code>wasGeneratedBy</code></td>
         <td>Optional</td>
         <td>array</td>
-        <td>Activities that generated this dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Activity class</a>.</td>
+        <td>Activities that generated this dataset. References the <a href="../dcat-us-3-supporting-classes/">Activity class</a>.</td>
       </tr>
       <tr>
         <td><code>hasQualityMeasurement</code></td>
         <td>Optional</td>
         <td>array</td>
-        <td>Quality measurements associated with the dataset. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">QualityMeasurement class</a>.</td>
+        <td>Quality measurements associated with the dataset. References the <a href="../dcat-us-3-supporting-classes/">QualityMeasurement class</a>.</td>
       </tr>
     </tbody>
   </table>
@@ -642,27 +641,25 @@ details: >+
   Source: [jsonschema/definitions/Dataset.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Dataset.json) · Generated reference: [jsonschema/docs/Dataset.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Dataset.md)
 
 
-  ## DCAT US Pages
+## DCAT US Pages
 
-  ### [Quick Migration Guide](https://resources.data.gov/catalog/dcat-us-3-migration/)
-  
-  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
-  
-  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
-  
-  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
-  
-  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
-  
-  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
-  
-  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
-  
-  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
-  
-  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
-  
-  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
+### [Index](../dcat-us-3/)
+
+### [Catalog](../dcat-us-3-catalog/)
+
+### [Data Service](../dcat-us-3-data-service/)
+
+### [Dataset Series](../dcat-us-3-dataset-series/)
+
+### [Dataset](../dcat-us-3-dataset/)
+
+### [Distribution](../dcat-us-3-distribution/)
+
+### [Supporting Classes](../dcat-us-3-supporting-classes/)
+
+### [DCAT Priorities](../dcat-us-priorities/)
+
+### [DCAT US General Information](../dcat-us/)
 
 examples: ""
 link: ""
