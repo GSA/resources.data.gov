@@ -70,7 +70,7 @@ details: >+
 
   Note: `accessLevel` is not part of the v3.0 core schema. The v3.0 equivalent is `accessRights`, a free-text string. Agencies should continue populating `accessLevel` per existing OMB policy (M-13-13) and add `accessRights` alongside it. See the [Changes from v1.1](#changes-from-v11) section for details.
 
-  The upgrade work is real but manageable. Most of it involves converting a handful of fields from plain strings to structured objects, and updating a small number of field formats that are no longer valid. See the [Quick Migration Guide](../dcat-us-3-migration/) for step-by-step instructions.
+  The upgrade work is real but manageable. Most of it involves converting a handful of fields from plain strings to structured objects, and updating a small number of field formats that are no longer valid. See the [Quick Migration Guide](../dcat-us3/) for step-by-step instructions.
 
   ---
 
