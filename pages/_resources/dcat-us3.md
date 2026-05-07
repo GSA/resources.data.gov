@@ -19,6 +19,8 @@ format: ""
 details: >+
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
 
+  THE IMPLEMENTATION GUIDE AND IMPLEMENTATION GUIDANCE IN GENERAL IS IN DRAFT FORMAT AT THIS TIME. 5.7.2026.
+
   <table class="usa-table vertical-headings">
     <tbody>
       <tr>
@@ -205,10 +207,34 @@ details: >+
 
   ### Implementation guidance
 
-  The pages below are written for federal agency data managers and developers implementing DCAT-US v3.0. They cover what changed from v1.1, how to migrate existing records, and how to document common types of federal data assets.
+  The pages below are written for federal agency data managers and developers implementing DCAT-US v3.0. They explain what the standard means in practice, what changed from v1.1, and how to document common types of federal data assets. These pages complement the schema reference pages above — the schema reference pages tell you what every field is, the implementation pages tell you what to do with them.
 
-  - [Quick Migration Guide](../dcat-us-3-migration/) — step-by-step instructions for updating a v1.1 data.json file to v3.0
-  - [DCAT-US Priorities](../dcat-us-priorities/) — keyword and field requirements for COVID-19 and AI research data assets
+  <table class="usa-table">
+    <thead>
+      <tr>
+        <th>Page</th>
+        <th>What it covers</th>
+        <th>Best for</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="../dcat-us-3-implementation/">Agency Implementation Guide</a></td>
+        <td>Human-readable guidance for the core classes — Catalog, Dataset, Distribution, DataService, and DatasetSeries. Includes federal-specific context, before/after upgrade examples, common mistakes, and a breaking changes summary.</td>
+        <td>Data managers implementing v3.0 for the first time or upgrading from v1.1</td>
+      </tr>
+      <tr>
+        <td><a href="../dcat-us-3-migration/">Quick Migration Guide</a></td>
+        <td>Step-by-step instructions for updating an existing v1.1 data.json file to v3.0. Covers the eight most important changes in order of priority.</td>
+        <td>Agencies with existing v1.1 implementations ready to migrate</td>
+      </tr>
+      <tr>
+        <td><a href="../dcat-us-priorities/">DCAT-US Priorities</a></td>
+        <td>Keyword and field requirements for priority federal data assets, including COVID-19 response data and AI research datasets. Shows how v1.1 field guidance maps to v3.0.</td>
+        <td>Agencies with COVID-19 or AI research datasets in their inventory</td>
+      </tr>
+    </tbody>
+  </table>
 
   ---
 
