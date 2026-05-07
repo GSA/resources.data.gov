@@ -16,7 +16,6 @@ tags:
 guidance_tags: ""
 format: ""
 details: >+
-
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json -->
 
   ---
@@ -132,7 +131,7 @@ details: >+
         <td><code>checksum</code></td>
         <td>Optional</td>
         <td>object</td>
-        <td>A Checksum object for verifying that the downloadable file has not been corrupted or tampered with. Requires <code>algorithm</code> (e.g., <code>SHA-256</code>) and <code>checksumValue</code> (a lowercase hexadecimal string). Example: <code>{"@type": "Checksum", "algorithm": "SHA-256", "checksumValue": "a1b2c3..."}</code>. Strongly recommended for all downloadable distributions. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Checksum class</a>. New in v3.0.</td>
+        <td>A Checksum object for verifying that the downloadable file has not been corrupted or tampered with. Requires <code>algorithm</code> (e.g., <code>SHA-256</code>) and <code>checksumValue</code> (a lowercase hexadecimal string). Example: <code>{"@type": "Checksum", "algorithm": "SHA-256", "checksumValue": "a1b2c3..."}</code>. Strongly recommended for all downloadable distributions. References the <a href="../dcat-us-3-supporting-classes/">Checksum class</a>. New in v3.0.</td>
       </tr>
     </tbody>
   </table>
@@ -181,7 +180,7 @@ details: >+
         <td><code>license</code></td>
         <td>Recommended</td>
         <td>string (URL)</td>
-        <td>The license or public domain dedication for this distribution. See <a href="https://resources.data.gov/open-licenses/">Open Licenses</a>. In v1.1 <code>license</code> was documented at the Dataset level. In v3.0 it is more correctly expressed here at the Distribution level per W3C DCAT. If all distributions share the same license add it to each one individually.</td>
+        <td>The license or public domain dedication for this distribution. See <a href="../../open-licenses/">Open Licenses</a>. In v1.1 <code>license</code> was documented at the Dataset level. In v3.0 it is more correctly expressed here at the Distribution level per W3C DCAT. If all distributions share the same license add it to each one individually.</td>
       </tr>
       <tr>
         <td><code>rights</code></td>
@@ -211,7 +210,7 @@ details: >+
         <td><code>page</code></td>
         <td>Optional</td>
         <td>array of Document objects</td>
-        <td>Documentation pages for this distribution. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Document class</a>.</td>
+        <td>Documentation pages for this distribution. References the <a href="../dcat-us-3-supporting-classes/">Document class</a>.</td>
       </tr>
     </tbody>
   </table>
@@ -236,13 +235,13 @@ details: >+
         <td><code>representationTechnique</code></td>
         <td>Optional</td>
         <td>Concept object</td>
-        <td>The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Concept class</a>.</td>
+        <td>The format in which the distribution is released, beyond the file format. For geospatial data, use this to express the spatial representation type (grid, vector, TIN) using URIs from an approved registry. References the <a href="../dcat-us-3-supporting-classes/">Concept class</a>.</td>
       </tr>
       <tr>
         <td><code>status</code></td>
         <td>Optional</td>
         <td>Concept object</td>
-        <td>The lifecycle status of this distribution. References the <a href="https://resources.data.gov/catalog/dcat-us-3-supporting-classes/">Concept class</a>.</td>
+        <td>The lifecycle status of this distribution. References the <a href="../dcat-us-3-supporting-classes/">Concept class</a>.</td>
       </tr>
       <tr>
         <td><code>characterEncoding</code></td>
@@ -444,27 +443,25 @@ details: >+
   Source: [jsonschema/definitions/Distribution.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Distribution.json) · Generated reference: [jsonschema/docs/Distribution.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Distribution.md)
 
 
-  ## DCAT US Pages
+## DCAT US Pages
 
-  ### [Quick Migration Guide](https://resources.data.gov/catalog/dcat-us-3-migration/)
-  
-  ### [Index](https://resources.data.gov/catalog/dcat-us-3/)
-  
-  ### [Catalog](https://resources.data.gov/catalog/dcat-us-3-catalog/)
-  
-  ### [Data Service](https://resources.data.gov/catalog/dcat-us-3-data-service/)
-  
-  ### [Dataset Series](https://resources.data.gov/catalog/dcat-us-3-dataset-series/)
-  
-  ### [Dataset](https://resources.data.gov/catalog/dcat-us-3-dataset/)
-  
-  ### [Distribution](https://resources.data.gov/catalog/dcat-us-3-distribution/)
-  
-  ### [Supporting Classes](https://resources.data.gov/catalog/dcat-us-3-supporting-classes/)
-  
-  ### [DCAT Priorities](https://resources.data.gov/catalog/dcat-us-priorities/)
-  
-  ### [DCAT US General Information](https://resources.data.gov/catalog/dcat-us/)
+### [Index](../dcat-us-3/)
+
+### [Catalog](../dcat-us-3-catalog/)
+
+### [Data Service](../dcat-us-3-data-service/)
+
+### [Dataset Series](../dcat-us-3-dataset-series/)
+
+### [Dataset](../dcat-us-3-dataset/)
+
+### [Distribution](../dcat-us-3-distribution/)
+
+### [Supporting Classes](../dcat-us-3-supporting-classes/)
+
+### [DCAT Priorities](../dcat-us-priorities/)
+
+### [DCAT US General Information](../dcat-us/)
 
 examples: ""
 link: ""
