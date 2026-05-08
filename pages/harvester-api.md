@@ -3,22 +3,16 @@ title: Harvester API
 layout: page
 ---
 
-<div class="usa-alert usa-alert--info">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Note on upcoming changes</h4>
-    <p class="usa-alert__text">
-      The base URL for the data.gov APIs will change when Data.gov routes its APIs through api.data.gov.  This is expected to occur soon.  If you're building a new integration, avoid hard-coding the base URL and check this page for updates before going to production.  Email us with any questions at <a href="mailto:datagovhelp@gsa.gov">datagovhelp@gsa.gov</a>.
-    </p>
-  </div>
-</div>
-
 The Harvester API provides programmatic access to Data.gov's harvest infrastructure — the system that collects dataset metadata from federal agencies and other publishers. Use this API to look up harvest sources, check job status, and investigate harvest errors.
+
+## Getting Started
 
 **Base URL:** `https://api.gsa.gov/technology/datagov_harvest/v2/`
 
-**Authentication:** [Sign up for an API key at api.data.gov](https://api.data.gov/signup). Documentation related to authenticaion and rate limits is available in [api.data.gov's developer manual](https://api.data.gov/docs/developer-manual/).
+### Authentication
 
-**Full OpenAPI Specification:** For complete technical details, including POST/PUT/DELETE operations, see the [interactive OpenAPI documentation](https://harvest.data.gov/openapi/docs).
+To begin using this API, you will need to register for an API Key. You can [sign up for an API key at open.gsa.gov](https://open.gsa.gov/api/datadotgov/).  After registration, you will need to provide this API key in the `x-api-key` HTTP header with every API request.
+
 
 ---
 
