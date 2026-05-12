@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '0 15 * * 1'
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   qa:
     uses: gsa/data.gov/.github/workflows/static-site-qa-template.yml@main
