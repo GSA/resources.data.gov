@@ -121,7 +121,7 @@ To filter results by organization, you first need the organization's slug. Fetch
 
 **Request:**
 ```
-GET https://api.gsa.gov/technology/datagov/v4/api/organizations
+GET https://api.gsa.gov/technology/datagov/v4/organizations
 ```
 
 **Look for NASA in the response:**
@@ -724,8 +724,8 @@ Retrieve a list of the most commonly used keywords across all datasets, along wi
 ### Example Requests
 
 ```
-GET https://api.gsa.gov/technology/datagov/v4/api/keywords
-GET https://api.gsa.gov/technology/datagov/v4/api/keywords?size=50&min_count=100
+GET https://api.gsa.gov/technology/datagov/v4/keywords
+GET https://api.gsa.gov/technology/datagov/v4/keywords?size=50&min_count=100
 ```
 
 ### Response
@@ -788,7 +788,7 @@ Search for location names to use with spatial filtering. This endpoint is design
 ### Example Request
 
 ```
-GET https://api.gsa.gov/technology/datagov/v4/api/locations/search?q=Colorado&size=5
+GET https://api.gsa.gov/technology/datagov/v4/locations/search?q=Colorado&size=5
 ```
 
 ### Response
@@ -843,7 +843,7 @@ Retrieve the geographic boundary (GeoJSON geometry) for a specific location by i
 ### Example Request
 
 ```
-GET https://api.gsa.gov/technology/datagov/v4/api/location/a1b2c3d4-e5f6-7890-abcd-ef1234567890
+GET https://api.gsa.gov/technology/datagov/v4/location/a1b2c3d4-e5f6-7890-abcd-ef1234567890
 ```
 
 ### Response
@@ -874,7 +874,7 @@ No query parameters. Returns all organizations.
 ### Example Request
 
 ```
-GET https://api.gsa.gov/technology/datagov/v4/api/organizations
+GET https://api.gsa.gov/technology/datagov/v4/organizations
 ```
 
 ### Response
