@@ -13,7 +13,6 @@ format: ""
 details: >-
 
 
-
   This page tracks the current status and upcoming schedule for DCAT-US 3.0 implementation on Data.gov. It is updated every two weeks on the sprint cadence. Last updated: May 20, 2026.
 
 
@@ -62,7 +61,7 @@ details: >-
   ## In progress
 
 
-  The following items are actively being worked on and are expected to be available in the coming sprints.
+  The following items are currently being worked on and are expected to be available in upcoming sprints.
 
 
   <table class="usa-table">
@@ -75,14 +74,14 @@ details: >-
     </thead>
     <tbody>
       <tr>
-        <td>Detailed DCAT-US 3.0 guidance pages on resources.data.gov (class-level documentation, migration guide, field reference)</td>
+        <td>Implementation DCAT-US 3.0 guidance pages on resources.data.gov (class-level documentation, migration guide, field reference)</td>
         <td>June 2026</td>
-        <td>Content complete; pending final schema team confirmation before publication</td>
+        <td>Content drafted; pending CDO Tiger Team completion</td>
       </tr>
       <tr>
-        <td>DCAT-US 1.1 to 3.0 migration script (dcat_convert.py)</td>
-        <td>June 2026</td>
-        <td>Script built; documentation and published home in progress</td>
+        <td>DCAT-US 1.1 to 3.0 migration script for agency editing and implementation(dcat_convert.py)</td>
+        <td>July 2026</td>
+        <td>Script being drafted</td>
       </tr>
     </tbody>
   </table>
@@ -105,7 +104,7 @@ details: >-
     <tbody>
       <tr>
         <td>harvest.data.gov and catalog.data.gov support for DCAT-US 3.0 ingestion</td>
-        <td>Fall 2026</td>
+        <td>August & September 2026</td>
         <td>Agencies will be able to publish DCAT-US 3.0 metadata and have it harvested and displayed in Data.gov</td>
       </tr>
       <tr>
@@ -120,10 +119,16 @@ details: >-
   ## About this page
 
 
-  This page is maintained by the Data.gov team at GSA Technology Transformation Services. It is updated every two weeks. DCAT-US 3.0 is the updated U.S. federal metadata standard required under OMB M-25-05 and anchored in the OPEN Government Data Act and the Evidence Act.
+  This page is maintained by the Data.gov team at GSA Technology Transformation Services. It is updated every two weeks. 
+  
+  
+  DCAT-US 3.0 is the updated U.S. federal metadata standard required under OMB M-25-05 and anchored in the OPEN Government Data Act and the Evidence Act.
 
 
-  Data.gov is the implementation support partner for DCAT-US 3.0. Compliance guidance is issued through OMB and the CDO Council.
+  Data.gov is the implementation support partner for DCAT-US 3.0. 
+  
+  
+  Compliance guidance is issued through OMB and the CDO Council.
 
   
 examples: ""
