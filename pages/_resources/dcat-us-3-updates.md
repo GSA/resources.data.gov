@@ -37,7 +37,7 @@ details: >-
       <tr>
         <td>DCAT-US 3.0 schema documentation</td>
         <td><a href="https://resources.data.gov/resources/dcat-us3/">resources.data.gov/resources/dcat-us3/</a></td>
-        <td>Full metadata schema reference including all classes</td>
+        <td>Metadata schema documentation for all classes with examples</td>
       </tr>
       <tr>
         <td>DCAT-US 3.0 validator</td>
@@ -74,14 +74,14 @@ details: >-
     </thead>
     <tbody>
       <tr>
-        <td>Implementation DCAT-US 3.0 guidance pages on resources.data.gov (class-level documentation, migration guide, field reference)</td>
+        <td>Implementation DCAT-US 3.0 guidance pages on resources.data.gov (migration guide, field reference with M-25-05 mapping)</td>
         <td>June 2026</td>
         <td>Content drafted; pending CDO Tiger Team completion</td>
       </tr>
       <tr>
         <td>DCAT-US 1.1 to 3.0 migration script for agency editing and implementation(dcat_convert.py)</td>
         <td>July 2026</td>
-        <td>Script being drafted</td>
+        <td>Script being drafted and tested against all agency current DCAT-US1.1 catalogs</td>
       </tr>
     </tbody>
   </table>
