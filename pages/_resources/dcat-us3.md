@@ -6,6 +6,7 @@ description: Reference documentation for DCAT-US v3.0, the federal metadata stan
   validate your agency's data inventory.
 source: data.gov
 category: Data standards
+resource: resource
 tags:
   - data schema
   - open data
