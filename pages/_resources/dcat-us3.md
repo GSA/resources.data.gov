@@ -581,7 +581,7 @@ details: >+
   
   ### [Quick Migration Guide](../dcat-us-3-migration/)
   
-  ### [Index](../dcat-us-3/)
+  ### [Index](../dcat-us3/)
   
   ### [Catalog](../dcat-us-3-catalog/)
   
