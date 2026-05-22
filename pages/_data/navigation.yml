@@ -44,17 +44,17 @@
       url: /resources/dcat-us-3-migration/
     - text: Implementation Guide
       url: /resources/dcat-us-3-implementation/
-    - text: DCAT-US Schema v3.0 Catalog fields
+    - text: Catalog fields, Guidance, Examples
       url: /resources/dcat-us-3-catalog/
-    - text: DCAT-US Schema v3.0 DataService fields
+    - text: DataService fields, Guidance, Examples
       url: /resources/dcat-us-3-data-service/
-    - text: DCAT-US Schema v3.0 DatasetSeries fields
+    - text: DatasetSeries fields, Guidance, Examples
       url: /resources/dcat-us-3-dataset-series/
-    - text: DCAT-US Schema v3.0 Dataset fields
+    - text: Dataset fields, Guidance, Examples
       url: /resources/dcat-us-3-dataset/
-    - text: DCAT-US Schema v3.0 Distribution fields
+    - text: Distribution fields, Guidance, Examples
       url: /resources/dcat-us-3-distribution/
-    - text: DCAT-US Schema v3.0 Supporting classes
+    - text: Supporting classes, Guidance, Examples
       url: /resources/dcat-us-3-supporting-classes/
 - text: API Documentation
   children:
