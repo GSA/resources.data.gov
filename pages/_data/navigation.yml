@@ -8,7 +8,7 @@
       url: /categories/guidance
     - text: Harvester Help
       url: /resources/harvester-what-is-harvesting/
-- text: Data Standards & Schemas
+- text: Data Standards - Schemas
   children:
     - text: DCAT-US 3
       url: /resources/dcat-us3/
@@ -34,7 +34,7 @@
       url: /standards/catalog/dcat-us-3/temporal-spatial-metrics/
     - text: DCAT-US v1.1    
       url: /standards/catalog/dcat-us/ 
-- text: DCAT-US 3 Tools & Implementation
+- text: DCAT-US 3 Tools - Implementation
   children:
     - text: DCAT-US 3 Schedule, Maintenance, and Release Plan
       url: /resources/dcat-us-3-updates/
