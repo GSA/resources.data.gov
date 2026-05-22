@@ -17,6 +17,8 @@ tags:
 guidance_tags: ""
 format: ""
 details: >+
+
+
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
 
   **  THE IMPLEMENTATION GUIDE AND IMPLEMENTATION GUIDANCE IN GENERAL IS IN DRAFT FORMAT AT THIS TIME. 5.7.2026.  **
@@ -47,27 +49,39 @@ details: >+
     </tbody>
   </table>
 
+
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
+
+
   ### What is DCAT-US v3.0?
+
+
 
   DCAT-US v3.0 is the federal data catalog metadata standard, updated to improve the Findability, Accessibility, Interoperability, and Reusability (FAIRness) of federal data. It is a U.S. application profile of the [W3C Data Catalog Vocabulary (DCAT) version 3](https://www.w3.org/TR/vocab-dcat-3/) — not a new or separate standard. This means most DCAT-US v3.0 metadata is valid W3C DCAT 3 metadata, making it easier to share federal data with international catalogs and platforms that understand the W3C standard.
   
 
   DCAT-US v3.0 was developed collaboratively by the Federal Chief Data Officers Council, the Federal Committee on Statistical Methodology, and the Data.gov team at GSA, drawing on more than a decade of implementation experience with v1.1 and feedback from agencies, data providers, and data users across government. The schema is maintained in a [public GitHub repository](https://github.com/GSA/dcat-us) and governed through a CDO Tiger Team review process to ensure ongoing accuracy and responsiveness to agency needs.
 
-  ---
+
+
+  
 
   ### Why v3.0?
+
 
   DCAT-US v1.1 was published in 2014 and served federal agencies well for over a decade. But the data landscape changed significantly. Agencies increasingly publish APIs alongside downloadable files, with no standard way to describe them at the catalog level. Geospatial data required a separate metadata standard. Datasets published in recurring series (annual surveys, quarterly reports, versioned reference data) had no standard way to express their relationship to each other. And the international open data community moved forward with W3C DCAT 2 and DCAT 3, leaving v1.1 increasingly out of step with global practice.
 
 
   DCAT-US v3.0 addresses these gaps while preserving the core investment agencies' existing metadata. It aligns the U.S. federal standard with W3C DCAT 3, introduces structured support for APIs, geospatial data, dataset series, and data quality, and brings a consistent requirement level framework — Mandatory, Recommended, or Optional — that tells agencies exactly which fields matter most.
 
-  ---
+
+
+  
 
   ### What stays the same
+
+
 
   For most agencies, the core structure of your data.json file carries forward unchanged. Your Catalog still holds an array of Datasets. Each Dataset still describes its Distributions. The fields you have been required to populate — `title`, `description`, `publisher`, `contactPoint`, `keyword`, `modified`, `bureauCode`, and `programCode` are all still present and recognized in v3.0.
 
@@ -77,9 +91,11 @@ details: >+
 
   The upgrade work is real but manageable. Most of it involves converting a handful of fields from plain strings to structured objects, and updating a small number of field formats that are no longer valid. See the [Quick Migration Guide](../dcat-us-3-migration/) for step-by-step instructions.
 
-  ---
+
+
 
   ### Who needs to act and when
+
 
 
   **For agencies currently implementing v1.1:** Continue operating your existing data.json files as-is until you are ready to migrate. v1.1 continues to be harvested by Data.gov during the transition period. When you are ready to migrate, start with the breaking changes listed in the Changes from v1.1 section — particularly `modified`, `temporal`, `spatial`, and `language` — since these are the fields most likely to fail validation in v3.0.
@@ -90,9 +106,13 @@ details: >+
 
   **For system and tool developers:** The schema has moved from JSON Schema Draft-04 to JSON Schema 2020-12. Update your validators accordingly. See [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema) for tooling guidance.
 
-  ---
+ 
+
+  
 
   ### How the schema is organized
+
+
 
   DCAT-US v3.0 continues the same three-tier structure that agencies have used since v1.1: a Catalog holds Datasets, and each Dataset describes its Distributions.
 
@@ -108,9 +128,13 @@ details: >+
 
   However, v3.0 introduces several field-level changes that affect existing records. See the [Changes from v1.1](#changes-from-v11) section before migrating.
 
-  ---
+
+
+  
 
   ### What's new in v3.0
+
+
 
   **Requirement levels.** For the first time, every field is explicitly labeled Mandatory, Recommended, or Optional. Mandatory fields must be present for a record to be valid. Recommended fields are not required by the schema validator but should be populated whenever the information exists — they improve discoverability and interoperability. Optional fields are available but not expected in most records.
   
@@ -132,13 +156,21 @@ details: >+
 
   **Federal access and use restrictions.** Three new structured classes — AccessRestriction, UseRestriction, and CUIRestriction — replace the v1.1 pattern of expressing restrictions as free text in `rights` or using the three-value `accessLevel` field. These are documented on the [Constraints and Restrictions](/standards/catalog/dcat-us-3/constraints-and-restrictions/) reference page.
 
-  ---
+ 
+
+  
 
   ### Schema reference pages
 
+
+
   The schema reference pages below are generated directly from the [DCAT-US v3.0 schema repository](https://github.com/GSA/dcat-us) and reflect the current authoritative field definitions, types, and requirement levels. For human-readable implementation guidance, migration help, and examples, see the [Implementation guidance](#implementation-guidance) section below.
 
+
+
   #### Core classes
+
+
 
 
   These three pages cover the fields most agencies interact with directly.
@@ -176,7 +208,10 @@ details: >+
     </tbody>
   </table>
 
+
+
   #### Supporting classes
+
 
 
   Supporting classes are referenced from the core classes above. Each page covers a group of related classes.
@@ -225,9 +260,12 @@ details: >+
     </tbody>
   </table>
 
-  ---
+
+
+  
 
   ### Implementation guidance
+
 
 
   The pages below are written for federal agency data managers and developers implementing DCAT-US v3.0. They explain what the standard means in practice, what changed from v1.1, and how to document common types of federal data assets. These pages complement the schema reference pages above — the schema reference pages tell you what every field is, the implementation pages tell you what to do with them.
@@ -260,15 +298,20 @@ details: >+
     </tbody>
   </table>
 
-  ---
+
+
+  
 
   ### Changes from v1.1
+
 
 
   The table below summarizes the most significant changes from DCAT-US v1.1 to v3.0. For a complete field-by-field comparison, see the [schema repository](https://github.com/GSA/dcat-us). For field-level detail see the individual schema reference pages linked above.
 
 
   For step-by-step migration instructions see the [Quick Migration Guide](../dcat-us-3-migration/).
+
+
 
   #### Breaking changes
 
@@ -309,7 +352,9 @@ details: >+
   </table>
 
 
+
   #### Fields replaced or removed
+
 
 
   <table class="usa-table">
@@ -355,7 +400,9 @@ details: >+
   </table>
 
 
+
   #### Fields not in the v3.0 core schema
+
 
 
   The following fields were introduced in v1.1 specifically for U.S. federal agencies. They are not defined in the v3.0 core schema but agencies should continue populating them until updated OMB policy guidance is issued. The v3.0 schema will not reject records that include them.
@@ -397,7 +444,9 @@ details: >+
   </table>
 
 
+
   #### Structural changes
+
 
 
   The following fields changed type or structure between v1.1 and v3.0. Existing string values in these fields will not validate against the v3.0 schema and must be converted to the new object format.
@@ -470,10 +519,13 @@ details: >+
     </tbody>
   </table>
 
-  ---
+
+
+  
 
 
   ### Validation
+
 
 
   <!-- SOURCE: https://github.com/GSA/dcat-us/tree/main/jsonschema -->
@@ -515,34 +567,37 @@ details: >+
     </tbody>
   </table>
 
-  ---
+
+
+  
 
   ### Still using DCAT-US v1.1?
+
 
   The [DCAT-US v1.1 reference](../dcat-us/) remains available.
 
 
-## DCAT US Pages
-
-### [Quick Migration Guide](../dcat-us-3-migration/)
-
-### [Index](../dcat-us-3/)
-
-### [Catalog](../dcat-us-3-catalog/)
-
-### [Data Service](../dcat-us-3-data-service/)
-
-### [Dataset Series](../dcat-us-3-dataset-series/)
-
-### [Dataset](../dcat-us-3-dataset/)
-
-### [Distribution](../dcat-us-3-distribution/)
-
-### [Supporting Classes](../dcat-us-3-supporting-classes/)
-
-### [DCAT Priorities](../dcat-us-priorities/)
-
-### [DCAT US General Information](../dcat-us/)
+  ## DCAT US Pages
+  
+  ### [Quick Migration Guide](../dcat-us-3-migration/)
+  
+  ### [Index](../dcat-us-3/)
+  
+  ### [Catalog](../dcat-us-3-catalog/)
+  
+  ### [Data Service](../dcat-us-3-data-service/)
+  
+  ### [Dataset Series](../dcat-us-3-dataset-series/)
+  
+  ### [Dataset](../dcat-us-3-dataset/)
+  
+  ### [Distribution](../dcat-us-3-distribution/)
+  
+  ### [Supporting Classes](../dcat-us-3-supporting-classes/)
+  
+  ### [DCAT Priorities](../dcat-us-priorities/)
+  
+  ### [DCAT US General Information](../dcat-us/)
 
 
 examples: ""
