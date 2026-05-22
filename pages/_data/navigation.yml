@@ -8,12 +8,58 @@
       url: /categories/guidance
     - text: Harvester Help
       url: /resources/harvester-what-is-harvesting/
-- text: Data Standards
+- text: Data Standards & Schemas
   children:
     - text: DCAT-US 3
       url: /resources/dcat-us3/
-    - text: DCAT-US v1.1
-      url: /standards/catalog/dcat-us/
+    - text: DCAT-US Priorities
+      url: /resources/dcat-us-priorities/
+    - text: - Schema: DCAT-US 3.0: Agents
+      url: /standards/catalog/dcat-us-3/agents/
+    - text: - Schema: DCAT-US 3.0: Catalog
+      url: /standards/catalog/dcat-us-3/catalog/
+    - text: - Schema: DCAT-US 3.0: Constraints and Restrictions
+      url: /standards/catalog/dcat-us-3/constraints-and-restrictions/
+    - text: - Schema: DCAT-US 3.0: Dataset Series
+      url: /standards/catalog/dcat-us-3/dataset-series/
+    - text: - Schema: DCAT-US 3.0: Dataset
+      url: /standards/catalog/dcat-us-3/dataset/
+    - text: - Schema: DCAT-US 3.0: Distribution
+      url: /standards/catalog/dcat-us-3/distribution/
+    - text: - Schema: DCAT-US 3.0: Identifiers and Relationships
+      url: /standards/catalog/dcat-us-3/identifiers-and-relationships/
+    - text: - Schema: DCAT-US 3.0: Quality and Governance
+      url: /standards/catalog/dcat-us-3/quality-governance/
+    - text: - Schema: DCAT-US 3.0: Temporal, Spatial, and Metrics
+      url: /standards/catalog/dcat-us-3/temporal-spatial-metrics/
+    - text: DCAT-US v1.1    
+      url: /standards/catalog/dcat-us/ 
+- text: DCAT-US 3 Tools & Implementation
+  children:
+    - text: DCAT-US 3 Schedule, Maintenance, and Release Plan
+      url: /resources/dcat-us-3-updates/
+    - text: DCAT-US 3
+      url: /resources/dcat-us3/
+    - text: Migrating from DCAT-US v1.1 to v3.0
+      url: /resources/dcat-us-3-migration/
+    - text: Implementation Guide
+      url: /resources/dcat-us-3-implementation/
+    - text: - DCAT-US Schema v3.0 Catalog fields
+      url: /resources/dcat-us-3-catalog/
+    - text: - DCAT-US Schema v3.0 DataService fields
+      url: /resources/dcat-us-3-data-service/
+    - text: - DCAT-US Schema v3.0 DatasetSeries fields
+      url: /resources/dcat-us-3-dataset-series/
+    - text: - DCAT-US Schema v3.0 Dataset fields
+      url: /resources/dcat-us-3-dataset/
+    - text: - DCAT-US Schema v3.0 Distribution fields
+      url: /resources/dcat-us-3-distribution/
+    - text: - DCAT-US Schema v3.0 Supporting classes
+      url: /resources/dcat-us-3-supporting-classes/
+
+
+
+      
 - text: API Documentation
   children:
     - text: General Information
