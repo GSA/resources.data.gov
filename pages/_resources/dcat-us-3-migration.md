@@ -295,7 +295,7 @@ details: >+
 
   ### You are done with the minimum migration
 
-  After completing steps 1 through 8 your records should validate against the v3.0 schema. Run your updated `data.json` against the validation script at [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py) to confirm.
+  After completing steps 1 through 8 your records should validate against the v3.0 schema. Run your updated `data.json` against the validation script at [harvest.data.gov/validate](harvest.data.gov/validate) to confirm.
 
   ---
 
