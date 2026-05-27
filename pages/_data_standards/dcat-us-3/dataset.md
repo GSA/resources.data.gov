@@ -7,7 +7,17 @@ category_name: "Data standards"
 ---
 <a name="root"></a>
 
+
+
+<B>CHANGE LOG - PLEASE NOTE: 
+
+
+5/27/2026: FOR VALUE publisher	object	Mandatory	Organization responsible for publishing and making the dataset available - THIS IS BEING CHANGED TO OPTIONAL INSTEAD OF MANDATORY.
+</b>
+
+
 Information about a dataset, including identifiers, contacts, coverage, distributions, and related resources.
+
 
 A collection of data published or curated by one provider
 
