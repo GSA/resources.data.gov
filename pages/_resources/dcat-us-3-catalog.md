@@ -17,7 +17,7 @@ format: ""
 details: >+
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json -->
 
-
+  ---
   
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
   
