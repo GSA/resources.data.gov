@@ -1,13 +1,16 @@
 ---
-resource_name: Implementation Guide
-slug: dcat-us-3-implementation
+resource_name: Improving Discoverability, Usability and Governance of Priority Agency Data
+slug: dcat-us-priorities
 description: >-
-  Implementation Guide
+  To improve the discoverability, usability, and governance of these priority
+  agency data assets agencies shall apply the documenting techniques illustrated
+  below.
 source: data.gov
 category: Data standards
 tags:
   - data schema
   - open data
+  - Project Open Data Metadata Schema
   - DCAT
   - DCAT-US
   - metadata standard
