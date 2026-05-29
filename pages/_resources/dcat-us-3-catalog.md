@@ -24,7 +24,7 @@ details: >+
   
   
   
-  For the full technical schema reference, see the [DCAT-US 3.0 Catalog schema reference](../../../standards/catalog/dcat-us3/catalog).
+  For the full technical schema reference, see the [DCAT-US 3.0 Catalog schema reference](https://resources.data.gov/standards/catalog/dcat-us-3/catalog/).
   
   
   ### Overview
@@ -491,7 +491,7 @@ details: >+
 
   ## DCAT US Pages
   
-  ### [Index](../dcat-us-3/)
+  ### [Index](https://resources.data.gov/resources/dcat-us3/)
   
   ### [Catalog](../dcat-us-3-catalog/)
   
