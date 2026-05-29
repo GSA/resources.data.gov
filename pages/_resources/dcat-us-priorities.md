@@ -131,10 +131,10 @@ details: >+
       "inDimension": "https://agency.gov/quality/iq-guidelines",
       "definition": "Meets agency Information Quality Guidelines"
     },
-    "value": "true"
-  }</code></pre>
-          <br>
-          See <a href="https://resources.data.gov/standards/catalog/dcat-us-3/temporal-spatial-metrics/#class-qualitymeasurement-">QualityMeasurement</a> for full field details.
+      "value": "true"
+      }</code></pre>
+      <br>
+      See <a href="https://resources.data.gov/standards/catalog/dcat-us-3/temporal-spatial-metrics/#class-qualitymeasurement-">QualityMeasurement</a> for full field details.
       </tr>
       <tr>
         <td><code>references</code> (v1.1) → <code>isReferencedBy</code> / <code>page</code> (v3.0)</td>
