@@ -23,165 +23,205 @@ details: >+
 
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
 
+
+  
+  For the full technical schema reference, see the [DCAT-US 3.0 DatasetSeries schema reference](https://resources.data.gov/standards/catalog/dcat-us-3/dataset-series/).
+
+
+  
   ### Overview
 
+
+  
   New in v3.0. DatasetSeries groups related datasets that are published in an ordered sequence — such as annual budget data, recurring survey releases, or versioned reference datasets — under a single series record. The series record describes the collection as a whole. Each edition within the series is its own Dataset record that points back to the series using the Dataset's `inSeries` field.
 
+
+  
   DatasetSeries is a subclass of Dataset. This means a DatasetSeries record can be included directly in the `dataset` array of a Catalog alongside individual Dataset records.
 
+
+  
   **Required fields in v3.0:** `title`, `description`
 
+
+  
   **Important date distinctions:** `issued` is the date the series was *established* — not the publication date of the oldest dataset in the series. `modified` is the date the series *description* changed — not the modified date of the newest dataset. Keep these distinct from the `issued` and `modified` fields on the individual Dataset records within the series.
 
+
+  
   ---
 
+
+  
   ### Core fields
 
+
+  
   <table class="usa-table">
-    <thead>
-      <tr>
-        <th>Field</th>
-        <th>Required</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>title</code></td>
-        <td>Mandatory</td>
-        <td>string</td>
-        <td>A human-readable name for the series. Example: <code>"Federal IT Dashboard Annual Data"</code></td>
-      </tr>
-      <tr>
-        <td><code>description</code></td>
-        <td>Mandatory</td>
-        <td>string</td>
-        <td>A human-readable description of the series — what it covers, how often it is published, and what each edition contains. Example: <code>"Annual releases of federal IT investment data from the IT Dashboard, published each fiscal year."</code></td>
-      </tr>
-      <tr>
-        <td><code>publisher</code></td>
-        <td>Recommended</td>
-        <td>Agent object</td>
-        <td>The organization responsible for maintaining the series as a coherent collection. May differ from the publishers of individual datasets within the series. References the <a href="../dcat-us-3-supporting-classes/">Agent class</a>.
-          <br><br>
-          Example: <code>{"name": "Office of the Chief Information Officer"}</code></td>
-      </tr>
-      <tr>
-        <td><code>contactPoint</code></td>
-        <td>Recommended</td>
-        <td>array of Kind objects</td>
-        <td>Contact information for questions about the series as a whole. References the <a href="../dcat-us-3-supporting-classes/">Kind class</a>. Example: <code>[{"fn": "IT Dashboard Team", "hasEmail": "mailto:itdashboard@agency.gov"}]</code></td>
-      </tr>
-      <tr>
-        <td><code>accrualPeriodicity</code></td>
-        <td>Optional</td>
-        <td>string</td>
-        <td>The frequency at which new editions of the series are published. Accepts plain-language codes (e.g., <code>"annually"</code>, <code>"quarterly"</code>, <code>"monthly"</code>), ISO 8601 repeating duration format (e.g., <code>"R/P1Y"</code>), or Dublin Core frequency vocabulary terms. Plain-language codes are preferred.
-          <br><br>
-          Example: <code>"annually"</code></td>
-      </tr>
-      <tr>
-        <td><code>issued</code></td>
-        <td>Optional</td>
-        <td>string (ISO 8601)</td>
-        <td>The date the series was formally established — not the publication date of the oldest dataset in the series. Accepts date, datetime, year (YYYY), or year-month (YYYY-MM).
-          <br><br>
-          Example: <code>"2010-01-01"</code></td>
-      </tr>
-      <tr>
-        <td><code>modified</code></td>
-        <td>Recommended</td>
-        <td>string (ISO 8601)</td>
-        <td>The most recent date the series description or metadata changed — not the modified date of the newest dataset in the series. Accepts date, datetime, year (YYYY), or year-month (YYYY-MM).
-          <br><br>
-          Example: <code>"2024-12-01"</code></td>
-      </tr>
-    </tbody>
+  <thead>
+  <tr>
+  <th>Field</th>
+  <th>Required</th>
+  <th>Type</th>
+  <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr id="title">
+  <td><code>title</code></td>
+  <td>Mandatory</td>
+  <td>string</td>
+  <td>A human-readable name for the series. Example: <code>"Federal IT Dashboard Annual Data"</code></td>
+  </tr>
+  <tr id="description">
+  <td><code>description</code></td>
+  <td>Mandatory</td>
+  <td>string</td>
+  <td>A human-readable description of the series — what it covers, how often it is published, and what each edition contains. Example: <code>"Annual releases of federal IT investment data from the IT Dashboard, published each fiscal year."</code></td>
+  </tr>
+  <tr id="publisher">
+  <td><code>publisher</code></td>
+  <td>Recommended</td>
+  <td>Agent object</td>
+  <td>The organization responsible for maintaining the series as a coherent collection. May differ from the publishers of individual datasets within the series. References the <a href="../dcat-us-3-supporting-classes/">Agent class</a>.
+  <br><br>
+  Example: <code>{"name": "Office of the Chief Information Officer"}</code></td>
+  </tr>
+  <tr id="contactPoint">
+  <td><code>contactPoint</code></td>
+  <td>Recommended</td>
+  <td>array of Kind objects</td>
+  <td>Contact information for questions about the series as a whole. References the <a href="../dcat-us-3-supporting-classes/">Kind class</a>. Example: <code>[{"fn": "IT Dashboard Team", "hasEmail": "mailto:itdashboard@agency.gov"}]</code></td>
+  </tr>
+  <tr id="accrualPeriodicity">
+  <td><code>accrualPeriodicity</code></td>
+  <td>Optional</td>
+  <td>string</td>
+  <td>The frequency at which new editions of the series are published. Accepts plain-language codes (e.g., <code>"annually"</code>, <code>"quarterly"</code>, <code>"monthly"</code>), ISO 8601 repeating duration format (e.g., <code>"R/P1Y"</code>), or Dublin Core frequency vocabulary terms. Plain-language codes are preferred.
+  <br><br>
+  Example: <code>"annually"</code></td>
+  </tr>
+  <tr id="issued">
+  <td><code>issued</code></td>
+  <td>Optional</td>
+  <td>string (ISO 8601)</td>
+  <td>The date the series was formally established — not the publication date of the oldest dataset in the series. Accepts date, datetime, year (YYYY), or year-month (YYYY-MM).
+  <br><br>
+  Example: <code>"2010-01-01"</code></td>
+  </tr>
+  <tr id="modified">
+  <td><code>modified</code></td>
+  <td>Recommended</td>
+  <td>string (ISO 8601)</td>
+  <td>The most recent date the series description or metadata changed — not the modified date of the newest dataset in the series. Accepts date, datetime, year (YYYY), or year-month (YYYY-MM).
+  <br><br>
+  Example: <code>"2024-12-01"</code></td>
+  </tr>
+  </tbody>
   </table>
 
+  
+  
   ---
 
+
+  
   ### Series structure
 
+  
+  
   <table class="usa-table">
-    <thead>
-      <tr>
-        <th>Field</th>
-        <th>Required</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>first</code></td>
-        <td>Recommended</td>
-        <td>Dataset object</td>
-        <td>The first Dataset in the series — the earliest or founding edition. Providing <code>first</code> and <code>last</code> together gives users a quick sense of the series' temporal span without needing to retrieve all members.
-          <br><br>
-          The Dataset object must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>.</td>
-      </tr>
-      <tr>
-        <td><code>last</code></td>
-        <td>Recommended</td>
-        <td>Dataset object</td>
-        <td>The most recent or final Dataset in the series. Update this field whenever a new edition is published.
-          <br><br>
-          The Dataset object must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>.</td>
-      </tr>
-      <tr>
-        <td><code>seriesMember</code></td>
-        <td>Recommended</td>
-        <td>array of Dataset objects</td>
-        <td>The Dataset records that are members of this series. You do not need to list every member here — it is sufficient for each individual Dataset to reference the series via its own <code>inSeries</code> field. However listing key members here improves discoverability and allows catalog browsers to navigate between editions directly.
-          <br><br>
-          Each Dataset object must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>.</td>
-      </tr>
-    </tbody>
+  <thead>
+  <tr>
+  <th>Field</th>
+  <th>Required</th>
+  <th>Type</th>
+  <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr id="first">
+  <td><code>first</code></td>
+  <td>Recommended</td>
+  <td>Dataset object</td>
+  <td>The first Dataset in the series — the earliest or founding edition. Providing <code>first</code> and <code>last</code> together gives users a quick sense of the series' temporal span without needing to retrieve all members.
+  <br><br>
+  The Dataset object must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>.</td>
+  </tr>
+  <tr id="last">
+  <td><code>last</code></td>
+  <td>Recommended</td>
+  <td>Dataset object</td>
+  <td>The most recent or final Dataset in the series. Update this field whenever a new edition is published.
+  <br><br>
+  The Dataset object must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>.</td>
+  </tr>
+  <tr id="seriesMember">
+  <td><code>seriesMember</code></td>
+  <td>Recommended</td>
+  <td>array of Dataset objects</td>
+  <td>The Dataset records that are members of this series. You do not need to list every member here — it is sufficient for each individual Dataset to reference the series via its own <code>inSeries</code> field. However listing key members here improves discoverability and allows catalog browsers to navigate between editions directly.
+  <br><br>
+  Each Dataset object must include at minimum <code>title</code>, <code>description</code>, <code>identifier</code>, <code>publisher</code>, and <code>contactPoint</code>.</td>
+  </tr>
+  </tbody>
   </table>
 
+
+  
   ---
 
+
+  
   ### Coverage
 
+
+  
   <table class="usa-table">
-    <thead>
-      <tr>
-        <th>Field</th>
-        <th>Required</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>spatial</code></td>
-        <td>Recommended</td>
-        <td>array of Location objects</td>
-        <td>Geographic region(s) covered by the series as a whole. References the <a href="../dcat-us-3-supporting-classes/">Location class</a>.
-          <br><br>
-          Example: <code>[{"@type": "Location", "prefLabel": "United States"}]</code></td>
-      </tr>
-      <tr>
-        <td><code>temporal</code></td>
-        <td>Recommended</td>
-        <td>array of PeriodOfTime objects</td>
-        <td>Temporal coverage of the series as a whole — typically from the first edition to the most recent. References the <a href="../dcat-us-3-supporting-classes/">PeriodOfTime class</a>. Update <code>endDate</code> whenever a new edition is published, or omit it for an ongoing series.
-          <br><br>
-          Ongoing series: <code>[{"@type": "PeriodOfTime", "startDate": "2010-01-01"}]</code>
-          <br><br>
-          Completed series: <code>[{"@type": "PeriodOfTime", "startDate": "2010-01-01", "endDate": "2024-12-31"}]</code></td>
-      </tr>
-    </tbody>
+  <thead>
+  <tr>
+  <th>Field</th>
+  <th>Required</th>
+  <th>Type</th>
+  <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr id="spatial">
+  <td><code>spatial</code></td>
+  <td>Recommended</td>
+  <td>array of Location objects</td>
+  <td>Geographic region(s) covered by the series as a whole. References the <a href="../dcat-us-3-supporting-classes/">Location class</a>.
+  <br><br>
+  Example: <code>[{"@type": "Location", "prefLabel": "United States"}]</code></td>
+  </tr>
+  <tr id="temporal">
+  <td><code>temporal</code></td>
+  <td>Recommended</td>
+  <td>array of PeriodOfTime objects</td>
+  <td>Temporal coverage of the series as a whole — typically from the first edition to the most recent. References the <a href="../dcat-us-3-supporting-classes/">PeriodOfTime class</a>. Update <code>endDate</code> whenever a new edition is published, or omit it for an ongoing series.
+  <br><br>
+  Ongoing series: <code>[{"@type": "PeriodOfTime", "startDate": "2010-01-01"}]</code>
+  <br><br>
+  Completed series: <code>[{"@type": "PeriodOfTime", "startDate": "2010-01-01", "endDate": "2024-12-31"}]</code></td>
+  </tr>
+  </tbody>
   </table>
 
+
+  
   ---
 
+
+  
   ### How to link datasets to a series
 
+
+  
   In each Dataset record that belongs to the series, use the `inSeries` field to reference the series. `inSeries` is an array of DatasetSeries objects — include at minimum the series `@id` so the link can be resolved.
 
+
+  
   <pre><code>{
     "@type": "Dataset",
     "title": "Federal IT Dashboard Annual Data - FY2024",
@@ -199,12 +239,20 @@ details: >+
   }
   </code></pre>
 
+
+  
   ---
 
+
+  
   ### Example
 
+
+  
   A minimal DatasetSeries record meeting all v3.0 required fields:
 
+
+  
   <pre><code>{
     "@type": "DatasetSeries",
     "title": "Federal IT Dashboard Annual Data",
@@ -212,8 +260,12 @@ details: >+
   }
   </code></pre>
 
+
+  
   A more complete record showing recommended fields:
 
+
+  
   <pre><code>{
     "@type": "DatasetSeries",
     "@id": "https://www.agency.gov/data/it-dashboard-series",
@@ -296,28 +348,46 @@ details: >+
   }
   </code></pre>
 
+
+  
   Source: [jsonschema/definitions/DatasetSeries.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/DatasetSeries.json) · Generated reference: [jsonschema/docs/DatasetSeries.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/DatasetSeries.md)
 
 
-## DCAT US Pages
+  
+  ---
 
-### [Index](../dcat-us-3/)
 
-### [Catalog](../dcat-us-3-catalog/)
+  
+  ### Changelog
 
-### [Data Service](../dcat-us-3-data-service/)
 
-### [Dataset Series](../dcat-us-3-dataset-series/)
+  
+  | Date | Change |
+  |---|---|
+  | 2026-05-27 | Added deep-link anchors to all table rows. Added link to full technical schema reference. No field-level differences found between hand-authored page and schema reference. |
 
-### [Dataset](../dcat-us-3-dataset/)
 
-### [Distribution](../dcat-us-3-distribution/)
-
-### [Supporting Classes](../dcat-us-3-supporting-classes/)
-
-### [DCAT Priorities](../dcat-us-priorities/)
-
-### [DCAT US General Information](../dcat-us/)
+  
+  
+  ## DCAT US Pages
+  
+  ### [Index](https://resources.data.gov/resources/dcat-us3/)
+  
+  ### [Catalog](../dcat-us-3-catalog/)
+  
+  ### [Data Service](../dcat-us-3-data-service/)
+  
+  ### [Dataset Series](../dcat-us-3-dataset-series/)
+  
+  ### [Dataset](../dcat-us-3-dataset/)
+  
+  ### [Distribution](../dcat-us-3-distribution/)
+  
+  ### [Supporting Classes](../dcat-us-3-supporting-classes/)
+  
+  ### [DCAT Priorities](../dcat-us-priorities/)
+  
+  ### [DCAT US General Information](../dcat-us/)
 
 examples: ""
 link: ""
