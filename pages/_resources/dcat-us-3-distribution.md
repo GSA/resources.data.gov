@@ -27,7 +27,7 @@ details: >+
 
 
   
-  For the full technical schema reference, see the [DCAT-US 3.0 Distribution schema reference](../../../standards/catalog/dcat-us-3/distribution/).
+  For the full technical schema reference, see the [DCAT-US 3.0 Distribution schema reference](https://resources.data.gov/standards/catalog/dcat-us-3/distribution/).
 
 
   
@@ -575,7 +575,7 @@ details: >+
   
   ## DCAT US Pages
   
-  ### [Index](../dcat-us-3/)
+  ### [Index](https://resources.data.gov/resources/dcat-us3/)
   
   ### [Catalog](../dcat-us-3-catalog/)
   
