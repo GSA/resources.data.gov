@@ -382,7 +382,7 @@ details: >+
     ]
   }
   
-
+  </code></pre>
     
     A more complete catalog showing recommended fields and a DataService:
 
@@ -470,7 +470,7 @@ details: >+
     ]
   }
 
-
+  </code></pre>
     
   Source: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json) · Generated reference: [jsonschema/docs/Catalog.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md)
 
