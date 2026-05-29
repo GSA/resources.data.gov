@@ -351,7 +351,9 @@ details: >+
 
   ### Example
 
+
   A minimal valid v3.0 catalog:
+
 
   <pre><code>{
     "@id": "https://www.agency.gov/data.json",
@@ -361,7 +363,7 @@ details: >+
       "title": "DCAT-US 3.0",
       "identifier": "https://resources.data.gov/dcat-us/3.0.0"
     },
-    "dataset": [
+    "dataset": \[
       {
         "@type": "Dataset",
         "title": "Agency Travel Data FY2024",
@@ -379,10 +381,13 @@ details: >+
       }
     ]
   }
-  </code></pre>
+  
 
-  A more complete catalog showing recommended fields and a DataService:
+    
+    A more complete catalog showing recommended fields and a DataService:
 
+
+    
   <pre><code>{
     "@id": "https://www.agency.gov/data.json",
     "@type": "dcat:Catalog",
@@ -397,25 +402,25 @@ details: >+
       "@type": "Agent",
       "name": "Example Federal Agency"
     },
-    "contactPoint": [
+    "contactPoint": \[
       {
         "@type": "Kind",
         "fn": "Open Data Team",
         "hasEmail": "mailto:opendata@agency.gov"
       }
     ],
-    "language": ["en"],
+    "language": \["en"],
     "modified": "2025-04-15",
     "issued": "2014-11-06",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "rights": ["This catalog is maintained by Example Federal Agency."],
-    "spatial": [
+    "rights": \["This catalog is maintained by Example Federal Agency."],
+    "spatial": \[
       {
         "@type": "Location",
         "prefLabel": "United States"
       }
     ],
-    "dataset": [
+    "dataset": \[
       {
         "@type": "Dataset",
         "title": "Agency Travel Data FY2024",
@@ -424,7 +429,7 @@ details: >+
         "publisher": {
           "@type": "Organization",
           "name": "Office of the Chief Financial Officer",
-          "subOrganizationOf": [
+          "subOrganizationOf": \[
             {
               "@type": "Organization",
               "name": "Example Federal Agency"
@@ -436,25 +441,25 @@ details: >+
           "fn": "Jane Smith",
           "hasEmail": "mailto:jane.smith@agency.gov"
         },
-        "keyword": ["travel", "expenditure", "fiscal year"],
+        "keyword": \["travel", "expenditure", "fiscal year"],
         "modified": "2024-10-15",
         "accessRights": "public",
-        "bureauCode": ["015:11"],
-        "programCode": ["015:001"]
+        "bureauCode": \["015:11"],
+        "programCode": \["015:001"]
       }
     ],
-    "service": [
+    "service": \[
       {
         "@type": "DataService",
         "title": "Agency Open Data REST API",
         "description": "A REST API providing queryable access to agency datasets in JSON and CSV formats.",
-        "endpointURL": ["https://api.agency.gov/v1/"],
-        "endpointDescription": ["https://api.agency.gov/v1/openapi.json"],
+        "endpointURL": \["https://api.agency.gov/v1/"],
+        "endpointDescription": \["https://api.agency.gov/v1/openapi.json"],
         "publisher": {
           "@type": "Agent",
           "name": "Example Federal Agency"
         },
-        "contactPoint": [
+        "contactPoint": \[
           {
             "@type": "Kind",
             "fn": "API Support Team",
@@ -464,9 +469,24 @@ details: >+
       }
     ]
   }
-  </code></pre>
 
+
+    
   Source: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json) · Generated reference: [jsonschema/docs/Catalog.md](https://github.com/GSA/dcat-us/blob/main/jsonschema/docs/Catalog.md)
+
+
+    
+  ---
+
+
+    
+  ### Changelog
+
+    
+  |Date|Change|
+  |-|-|
+  |2026-05-27|Added missing fields: `theme`, `accessRights`, `creator`, `hasPart`, `identifier`, `otherIdentifier`, `rightsHolder`, `subject`, `temporal`, `category`, `homepage`, `qualifiedAttribution`. Corrected requirement levels for `issued`, `language`, `modified`, `spatial`, `rights` from Optional to Recommended. Added deep-link anchors to all table rows. Added link to full technical schema reference.|
+  
 
 
 ## DCAT US Pages
