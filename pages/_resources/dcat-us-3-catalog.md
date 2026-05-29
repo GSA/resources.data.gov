@@ -18,13 +18,15 @@ details: >+
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json -->
 
   ---
-
+  
   See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
-
+  
+  For the full technical schema reference, see the [DCAT-US 3.0 Catalog schema reference](../../../standards/catalog/dcat-us-3/catalog/).
+  
   ### Overview
-
+  
   The Catalog class is the top-level container for an agency's data inventory. Your agency's `data.json` file is an instance of a DCAT-US Catalog. It holds the array of Dataset records and, in v3.0, can also reference DataService records.
-
+  
   Required field in v3.0: A Catalog must contain at least one Dataset.
 
   ---
@@ -32,9 +34,9 @@ details: >+
   ### Moving from DCAT-US v1.1 to v3.0
 
   If your agency is upgrading from v1.1, your catalog structure carries forward with minimal changes. The `dataset` array works the same way. The main differences are: `@context` is no longer a catalog field, `conformsTo` now uses a Standard object rather than a plain URI string, and `describedBy` has been removed. Several new optional fields are available, including `service` for registering APIs and `title` and `description` for the catalog itself.
-
+  
   A valid v3.0 catalog requires only one thing: a `dataset` array containing at least one Dataset record. Everything else is optional at the catalog level. However, adding `@id`, `@type`, `conformsTo`, `title`, `modified`, and `publisher` at the catalog level is strongly recommended as it makes your catalog self-describing and helps harvesters like Data.gov identify and process it correctly.
-
+  
   Your agency's `data.json` file is an instance of the Catalog class. The file hosted at `agency.gov/data.json` is what Data.gov harvests. Setting `@id` to the URL of your `data.json` file itself is the recommended way to give your catalog a persistent identifier.
 
   ---
@@ -42,35 +44,35 @@ details: >+
   ### Changes from v1.1
 
   <table class="usa-table">
-    <thead>
-      <tr>
-        <th>v1.1 Field</th>
-        <th>Status in v3.0</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>@context</code></td>
-        <td>Removed</td>
-        <td>Remove from your catalog file.</td>
-      </tr>
-      <tr>
-        <td><code>conformsTo</code> as plain string URI</td>
-        <td>Now a Standard object</td>
-        <td>Change to <code>{"@type": "Standard", "title": "DCAT-US 3.0", "identifier": "https://resources.data.gov/dcat-us/3.0.0"}</code></td>
-      </tr>
-      <tr>
-        <td><code>describedBy</code></td>
-        <td>Removed at catalog level</td>
-        <td>Remove from your catalog file. The Standard object in <code>conformsTo</code> serves this purpose.</td>
-      </tr>
-      <tr>
-        <td><code>dataset</code></td>
-        <td>Unchanged</td>
-        <td>No change required. Dataset objects inside must be updated to v3.0 format.</td>
-      </tr>
-    </tbody>
+  <thead>
+  <tr>
+  <th>v1.1 Field</th>
+  <th>Status in v3.0</th>
+  <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr id="change-context">
+  <td><code>@context</code></td>
+  <td>Removed</td>
+  <td>Remove from your catalog file.</td>
+  </tr>
+  <tr id="change-conformsTo">
+  <td><code>conformsTo</code> as plain string URI</td>
+  <td>Now a Standard object</td>
+  <td>Change to <code>{"@type": "Standard", "title": "DCAT-US 3.0", "identifier": "https://resources.data.gov/dcat-us/3.0.0"}</code></td>
+  </tr>
+  <tr id="change-describedBy">
+  <td><code>describedBy</code></td>
+  <td>Removed at catalog level</td>
+  <td>Remove from your catalog file. The Standard object in <code>conformsTo</code> serves this purpose.</td>
+  </tr>
+  <tr id="change-dataset">
+  <td><code>dataset</code></td>
+  <td>Unchanged</td>
+  <td>No change required. Dataset objects inside must be updated to v3.0 format.</td>
+  </tr>
+  </tbody>
   </table>
 
   ---
