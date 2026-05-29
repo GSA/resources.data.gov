@@ -24,7 +24,7 @@ details: >+
   
   
   
-  For the full technical schema reference, see the [DCAT-US 3.0 Catalog schema reference](../../../standards/catalog/dcat-us-3/catalog/).
+  For the full technical schema reference, see the [DCAT-US 3.0 Catalog schema reference](../../../standards/catalog/dcat-us3/catalog).
   
   
   ### Overview
@@ -480,7 +480,7 @@ details: >+
 
 
     
-  ### Changelog
+  ## Changelog
 
     
   |Date|Change|
