@@ -134,7 +134,7 @@ details: >+
     "value": "true"
   }</code></pre>
           <br>
-          See <a href="../dcat-us-3-supporting-classes/#qualitymeasurement">QualityMeasurement</a> for full field details.</td>
+          See <a href="https://resources.data.gov/standards/catalog/dcat-us-3/temporal-spatial-metrics/#class-qualitymeasurement-">QualityMeasurement</a> for full field details.
       </tr>
       <tr>
         <td><code>references</code> (v1.1) → <code>isReferencedBy</code> / <code>page</code> (v3.0)</td>
