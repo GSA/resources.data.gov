@@ -9,6 +9,8 @@ The Harvester API provides programmatic access to Data.gov's harvest infrastruct
 
 **Base URL:** `https://api.gsa.gov/technology/datagov_harvest/v2/`
 
+**Full documentation:** `[Full OpenAPI documentation available here.](https://harvest.data.gov/openapi/docs)`
+
 ### Authentication
 
 To begin using this API, you will need to register for an API Key. You can [sign up for an API key at open.gsa.gov](https://open.gsa.gov/api/datadotgov/).  After registration, you will need to provide this API key in the `x-api-key` HTTP header with every API request.
