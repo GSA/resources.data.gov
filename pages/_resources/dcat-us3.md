@@ -87,7 +87,7 @@ details: >+
   For most agencies, the core structure of your data.json file carries forward unchanged. Your Catalog still holds an array of Datasets. Each Dataset still describes its Distributions. The fields you have been required to populate — `title`, `description`, `publisher`, `contactPoint`, `keyword`, `modified`, `bureauCode`, and `programCode` are all still present and recognized in v3.0.
 
 
-  Note: `accessLevel` is not part of the v3.0 core schema. The v3.0 equivalent is `accessRights`, a free-text string. Agencies should continue populating `accessLevel` per existing OMB policy (M-13-13) and add `accessRights` alongside it. See the [Changes from v1.1](#changes-from-v11) section for details.
+  Note: `accessLevel` is not part of the v3.0 core schema. The v3.0 equivalent is `accessRights`, a free-text string. Agencies may continue populating `accessLevel`and add `accessRights` alongside it. See the [Changes from v1.1](#changes-from-v11) section for details.
 
 
   The upgrade work is real but manageable. Most of it involves converting a handful of fields from plain strings to structured objects, and updating a small number of field formats that are no longer valid. See the [Quick Migration Guide](../dcat-us-3-migration/) for step-by-step instructions.
@@ -370,7 +370,7 @@ details: >+
       <tr>
         <td><code>accessLevel</code></td>
         <td>Not in v3.0 core schema. Replaced by <code>accessRights</code> on Dataset.</td>
-        <td>Add <code>accessRights</code> as a free-text string alongside your existing <code>accessLevel</code>. The value <code>"public"</code> remains valid. For restricted datasets write a plain-language explanation. Continue populating <code>accessLevel</code> per OMB policy (M-13-13) until updated guidance is issued.</td>
+        <td>Add <code>accessRights</code> as a free-text string alongside your existing <code>accessLevel</code>. The value <code>"public"</code> remains valid. For restricted datasets write a plain-language explanation. Continue populating <code>accessLevel</code>.</td>
       </tr>
       <tr>
         <td><code>isPartOf</code></td>
@@ -419,15 +419,15 @@ details: >+
     <tbody>
       <tr>
         <td><code>bureauCode</code></td>
-        <td>Required by existing OMB policy (M-13-13). Continue populating per current guidance.</td>
+        <td>Required by recinded OMB policy (M-13-13). Continue populating as possible.</td>
       </tr>
       <tr>
         <td><code>programCode</code></td>
-        <td>Required by existing OMB policy (M-13-13). Continue populating per current guidance.</td>
+        <td>Required by recinded OMB policy (M-13-13). Continue populating as possible.</td>
       </tr>
       <tr>
         <td><code>accessLevel</code></td>
-        <td>Required by existing OMB policy. Not in the v3.0 core schema. Use alongside the new <code>accessRights</code> field until updated guidance is issued.</td>
+        <td>Required by recinded OMB policy. Not in the v3.0 core schema. Use alongside the new <code>accessRights</code> field.</td>
       </tr>
       <tr>
         <td><code>dataQuality</code></td>
