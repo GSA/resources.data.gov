@@ -9,7 +9,7 @@ The Harvester API provides programmatic access to Data.gov's harvest infrastruct
 
 **Base URL:** `https://api.gsa.gov/technology/datagov_harvest/v2/`
 
-**Full documentation:** `[Full OpenAPI documentation available here.](https://harvest.data.gov/openapi/docs)`
+**Documentation:** Full endpoint documentation available via the [OpenAPI specification](https://api.gsa.gov/technology/datagov_harvest/v2/openapi.json?api_key=DEMO_KEY).
 
 ### Authentication
 
@@ -475,14 +475,6 @@ For validation errors (422), additional detail is provided:
   }
 }
 ```
-
----
-
-## Related Resources
-
-- **[Catalog API](https://resources.data.gov/catalog-api/)** — Search and retrieve dataset metadata from the Data.gov catalog
-- **[DCAT-US Schema](https://resources.data.gov/resources/dcat-us/)** — The federal metadata standard for dataset descriptions
-- **[Full OpenAPI Specification](https://harvest.data.gov/openapi/docs)** — Interactive documentation with all endpoints, including POST/PUT/DELETE operations
 
 ---
 
