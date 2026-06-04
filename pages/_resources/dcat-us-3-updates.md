@@ -13,7 +13,7 @@ format: ""
 details: >-
 
 
-  This page tracks the current status and upcoming schedule for DCAT-US 3.0 implementation on Data.gov. It is updated every two weeks on the sprint cadence. Last updated: May 20, 2026.
+  This page tracks the current status and upcoming schedule for DCAT-US 3.0 implementation on Data.gov. It is updated every two weeks on the sprint cadence. Last updated: June 4, 2026.
 
 
   Questions or feedback? Contact us at [datagovhelp@gsa.gov](mailto:datagovhelp@gsa.gov).
@@ -75,13 +75,13 @@ details: >-
     <tbody>
       <tr>
         <td>Implementation DCAT-US 3.0 guidance pages on resources.data.gov (migration guide, field reference with M-25-05 mapping)</td>
-        <td>June 2026</td>
-        <td>Content drafted; pending CDO Tiger Team completion</td>
+        <td>Sept 2026</td>
+        <td>Pending CDO Tiger Team completion</td>
       </tr>
       <tr>
         <td>DCAT-US 1.1 to 3.0 migration script for agency editing and implementation(dcat_convert.py)</td>
         <td>July 2026</td>
-        <td>Script being drafted and tested against all agency current DCAT-US1.1 catalogs</td>
+        <td>Script being TESTED and ENHANCED.  Testing against all agency current DCAT-US1.1 catalogs</td>
       </tr>
     </tbody>
   </table>
@@ -111,6 +111,11 @@ details: >-
         <td>inventory.data.gov DCAT-US 3.0 support</td>
         <td>Fall 2026</td>
         <td>inventory.data.gov reprogramming targeted for fall 2026</td>
+      </tr>
+      <tr>
+        <td>DCAT-US v3.0 Schema Maintenance Plan</td>
+        <td>Fall 2026</td>
+        <td>Data.gov works with CDO and agencies to establish maintenace cycle and plan</td>
       </tr>
     </tbody>
   </table>
