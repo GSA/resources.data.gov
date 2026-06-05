@@ -406,7 +406,7 @@ details: >+
 
 
 
-  The following fields were introduced in v1.1 specifically for U.S. federal agencies. They are not defined in the v3.0 core schema but agencies should continue populating them until updated OMB policy guidance is issued. The v3.0 schema will not reject records that include them.
+  The following fields were introduced in v1.1 specifically for U.S. federal agencies. They are not defined in the v3.0 core schema howver the v3.0 schema will not reject records that include them.
 
 
   <table class="usa-table">
@@ -419,15 +419,15 @@ details: >+
     <tbody>
       <tr>
         <td><code>bureauCode</code></td>
-        <td>Required by recinded OMB policy (M-13-13). Continue populating as possible.</td>
+        <td>DCAT-US 3.0 will not reject this if it is included.</td>
       </tr>
       <tr>
         <td><code>programCode</code></td>
-        <td>Required by recinded OMB policy (M-13-13). Continue populating as possible.</td>
+        <td>DCAT-US 3.0 will not reject this if it is included.</td>
       </tr>
       <tr>
         <td><code>accessLevel</code></td>
-        <td>Required by recinded OMB policy. Not in the v3.0 core schema. Use alongside the new <code>accessRights</code> field.</td>
+        <td>DCAT-US 3.0 will not reject this if it is included. Use alongside the new <code>accessRights</code> field.</td>
       </tr>
       <tr>
         <td><code>dataQuality</code></td>
