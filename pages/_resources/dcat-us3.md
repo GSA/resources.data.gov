@@ -406,7 +406,7 @@ details: >+
 
 
 
-  The following fields were introduced in v1.1 specifically for U.S. federal agencies. They are not defined in the v3.0 core schema howver the v3.0 schema will not reject records that include them.
+  The following fields were introduced in v1.1 specifically for U.S. federal agencies. They are not defined in the v3.0 core schema however the v3.0 schema will not reject records that include them.
 
 
   <table class="usa-table">
