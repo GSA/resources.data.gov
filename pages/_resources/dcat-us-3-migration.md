@@ -292,11 +292,11 @@ details: >+
 
 
   
-  #### Step 7 — Replace `accessLevel` with `accessRights`
+  #### Step 7 — Manage `accessLevel` along side `accessRights`
 
 
   
-  `accessLevel` is not in the v3.0 schema. Add `accessRights` as a free-text string alongside your existing `accessLevel` field. Until updated OMB guidance is issued, keep `accessLevel` in your records — the v3.0 schema will not reject it, and existing OMB policy still requires it.
+  `accessLevel` is not in the v3.0 schema. Add `accessRights` as a free-text string alongside your existing `accessLevel` field. Until updated OMB guidance is issued, keep `accessLevel` in your records — the v3.0 schema will not reject it.
   
   <table class="usa-table">
   <thead>
