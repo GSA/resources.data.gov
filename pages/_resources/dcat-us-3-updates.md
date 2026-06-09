@@ -81,7 +81,7 @@ details: >-
       <tr>
         <td>DCAT-US 1.1 to 3.0 migration script for agency editing and implementation(dcat_convert.py)</td>
         <td>July 2026</td>
-        <td>Script being TESTED and ENHANCED.  Testing against all agency current DCAT-US1.1 catalogs</td>
+        <td>Script is available for testing and feedback here: _______________________________________________________________</td>
       </tr>
     </tbody>
   </table>
