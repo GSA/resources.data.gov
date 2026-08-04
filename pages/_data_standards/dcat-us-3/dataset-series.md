@@ -18,6 +18,7 @@ A group of related datasets that are published separately
 
 ```json
 {
+    "@id": "https://example.gov/series/annual-climate-observations",
     "@type": "DatasetSeries",
     "title": "Annual Climate Observations",
     "description": "A series of annual climate observation datasets from monitoring stations.",
@@ -151,6 +152,7 @@ A group of related datasets that are published separately
 | ------------------------------------------ | ------------------------------------------------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | [description](#description)               | string                                                                                | Mandatory         | Plain-language summary of the dataset series                                                                                             |
 | [title](#title)                           | string                                                                                | Mandatory         | Human-readable title of the dataset series                                                                                               |
+| [@id](#@id)                               | string                                                                                | Recommended       |                                                                                                                                          |
 | [contactPoint](#contactPoint)             | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes                                     | Recommended       | List of contacts people can use to ask questions or send feedback about the dataset series                                               |
 | [first](#first)                           | null or [Dataset](/standards/catalog/dcat-us-3/dataset/#root)                                                  | Recommended       | The first dataset in an ordered dataset series                                                                                           |
 | [last](#last)                             | null or [Dataset](/standards/catalog/dcat-us-3/dataset/#root)                                                  | Recommended       | The last dataset in an ordered dataset series                                                                                            |
@@ -159,7 +161,6 @@ A group of related datasets that are published separately
 | [seriesMember](#seriesMember)             | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                 | Recommended       | List of members of the Dataset Series                                                                                                    |
 | [spatial](#spatial)                       | null or array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes           | Recommended       | A geographic region that is covered by the Dataset Series                                                                                |
 | [temporal](#temporal)                     | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes | Recommended       | Time periods covered by the dataset series                                                                                               |
-| [@id](#@id)                               | string                                                                                | Optional          |                                                                                                                                          |
 | [@type](#@type)                           | string                                                                                | Optional          |                                                                                                                                          |
 | [accrualPeriodicity](#accrualPeriodicity) | More than one type                                                                    | Optional          | The frequency at which the Dataset Series is updated. This is the series update frequency, not necessarily each dataset's frequency      |
 | [issued](#issued)                         | null or object                                                                        | Optional          | Date when the Dataset Series was formally established or published, not the release date of the oldest dataset in the series             |
@@ -196,6 +197,19 @@ Human-readable title of the dataset series
 
 ```json
 "Annual National Climate Observations Series"
+```
+
+## <a name="@id"></a>`DatasetSeries > @id` [#](#@id)
+
+**Requirement:** Recommended
+
+- **Type**: `string`
+- **Format**: `iri`
+
+**Example:**
+
+```json
+"https://example.gov/series/annual-climate-observations"
 ```
 
 ## <a name="contactPoint"></a>`DatasetSeries > contactPoint` [#](#contactPoint)
@@ -301,19 +315,6 @@ Time periods covered by the dataset series
 
 **Each item of this array must be:**
 - [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time): Information about a specific time period with a start- and/or end-time
-
-## <a name="@id"></a>`DatasetSeries > @id` [#](#@id)
-
-**Requirement:** Optional
-
-- **Type**: `string`
-- **Format**: `iri`
-
-**Example:**
-
-```json
-"https://example.gov/series/annual-climate-observations"
-```
 
 ## <a name="@type"></a>`DatasetSeries > @type` [#](#@type)
 
