@@ -41,6 +41,32 @@ A curated collection of metadata about datasets, data services, or other resourc
             "identifier": "https://example.gov/datasets/climate-observations-1"
         }
     ],
+    "datasetSeries": [
+        {
+            "@id": "https://example.gov/series/annual-climate-observations",
+            "@type": "DatasetSeries",
+            "title": "Annual Climate Observations",
+            "description": "A series of annual climate observation datasets from monitoring stations.",
+            "publisher": {
+                "name": "National Climate Data Center"
+            },
+            "seriesMember": [
+                {
+                    "@type": "Dataset",
+                    "title": "Daily Climate Observations 2024",
+                    "description": "Daily temperature, precipitation, and wind measurements.",
+                    "contactPoint": {
+                        "fn": "Climate Data Support",
+                        "hasEmail": "mailto:climate@example.gov"
+                    },
+                    "publisher": {
+                        "name": "National Climate Data Center"
+                    },
+                    "identifier": "https://example.gov/datasets/climate-observations-1"
+                }
+            ]
+        }
+    ],
     "homepage": {
         "@type": "Document",
         "title": "National Climate Data Catalog Homepage",
@@ -91,6 +117,7 @@ A curated collection of metadata about datasets, data services, or other resourc
 | [category](#category)                         | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes              | Optional          | List of high-level categories for the catalog                                                                                         |
 | [contactPoint](#contactPoint)                 | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes                                           | Optional          | Contact information people can use to ask questions or send feedback about the catalog                                                |
 | [creator](#creator)                           | null or array of [Agent](/standards/catalog/dcat-us-3/agents/#agent) classes                                         | Optional          | Person or organization responsible for creating the catalog metadata                                                                  |
+| [datasetSeries](#datasetSeries)               | null or array of [DatasetSeries](/standards/catalog/dcat-us-3/dataset-series/#root) classes                          | Optional          | List of dataset series included in the catalog.                                                                                       |
 | [description](#description)                   | null or string                                                                              | Optional          | Plain-language summary of the catalog                                                                                                 |
 | [hasPart](#hasPart)                           | null or array of object                                                                     | Optional          | List of catalogs that are contained within this catalog                                                                               |
 | [identifier](#identifier)                     | null or [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier)                         | Optional          | Main unique identifier for the catalog, such as a URI or another persistent identifier                                                |
@@ -386,6 +413,17 @@ Person or organization responsible for creating the catalog metadata
 
 **Each item of this array must be:**
 - [Agent](/standards/catalog/dcat-us-3/agents/#agent): A person, organization, software agent, or other entity involved with a resource
+
+## <a name="datasetSeries"></a>`DCAT-US 3 Catalog > datasetSeries` [#](#datasetSeries)
+
+**Requirement:** Optional
+
+List of dataset series included in the catalog.
+
+- **Type**: null or array of [DatasetSeries](/standards/catalog/dcat-us-3/dataset-series/#root) classes
+
+**Each item of this array must be:**
+- [DatasetSeries](/standards/catalog/dcat-us-3/dataset-series/#root): A group of related datasets that are published separately
 
 ## <a name="description"></a>`DCAT-US 3 Catalog > description` [#](#description)
 
