@@ -42,7 +42,7 @@
     {
         "term": "CSV",
         "definition": "A comma separated values (CSV) file is a computer data file used for implementing the tried and true organizational tool, the Comma Separated List. The CSV file is used for the digital storage of data structured in a table of lists form. Each line in the CSV file corresponds to a row in the table. Within a line, fields are separated by commas, and each field belongs to one table column. CSV files are often used for moving tabular data between two different computer programs (like moving between a database program and a spreadsheet program)",
-        "source": "http://www.data.gov/glossary"
+        "source": "https://csrc.nist.gov/glossary/term/csv"
     },
     {
         "term": "CSW",
@@ -52,7 +52,7 @@
     {
         "term": "Data vs. information",
         "definition": "Data is defined as a value or set of values representing a specific concept or concepts. Data become 'information' when analyzed and possibly combined with other data in order to extract meaning, and to provide context. The meaning of data can vary depending on its context. 'Data' includes, but is not limited to, 1) geospatial data 2) unstructured data, 3) structured data, etc. Information, as defined in OMB Circular A-130, means any communication or representation of knowledge such as facts, data, or opinions in any medium or form, including textual, numerical, graphic, cartographic, narrative, or audiovisual forms.",
-        "source": "http://www.data.gov/glossary"
+        "source": "https://csrc.nist.gov/glossary/term/data"
     },
     {
         "term": "Data Asset",
@@ -72,7 +72,7 @@
     {
         "term": "DCAT-US",
         "definition": "Data Catalog Vocabulary - United States. The federal metadata standard that data.gov requires for all published datasets. DCAT-US defines which metadata fields are required (such as title, description, modified date, and keywords) and what formats are acceptable for each field. Harvest validation errors occur when dataset metadata does not conform to the DCAT-US schema.",
-        "source": "https://resources.data.gov/schemas/dcat-us/v1.1/"
+        "source": "https://resources.data.gov/resources/dcat-us3/"
     },
     {
         "term": "Endpoint",
