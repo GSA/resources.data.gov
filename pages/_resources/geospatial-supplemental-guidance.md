@@ -5,7 +5,6 @@ description: Guidance on how to tag, list, display, and create linkages for geos
 source: data.gov
 category: Geospatial
 tags:
-  - geospatial
   - data tagging
   - API
   - DCAT
