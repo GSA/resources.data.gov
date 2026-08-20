@@ -90,7 +90,7 @@ details: >+
   
   
   
-  **References and documentation** were required under EO 13859 if publications, model documentation, or other references exist for the dataset. In v1.1 this was expressed using the `references` field (an array of URLs). That field is not in the v3.0 schema. In v3.0 use one of two replacements depending on the type of link. Use `isReferencedBy` for publications or papers that cite or use the dataset -- this is a simple array of URL strings. Use `page` for documentation, model cards, or technical references about the dataset -- this is an array of Document objects, each with a `title` and an `accessURL` or `downloadURL`. See the [Dataset fields page](../dcat-us-3-dataset/) for details on both fields.
+  **References and documentation** were required under EO 13859 if publications, model documentation, or other references exist for the dataset. In v1.1 this was expressed using the `references` field (an array of URLs). That field is not in the v3.0 schema. In v3.0 use one of two replacements depending on the type of link. Use `isReferencedBy` for publications or papers that cite or use the dataset -- this is a simple array of URL strings. Use `page` for documentation, model cards, or technical references about the dataset -- this is an array of Document objects, each with a `title` and an `accessURL` or `downloadURL`. 
   
   
   ---
