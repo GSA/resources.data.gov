@@ -82,15 +82,14 @@ details: >+
 
   
   
-  **Contact information** is also required for AI datasets. Include a contact who can discuss restrictions or controls on the dataset with AI researchers. In v1.1 this was expressed using a vCard-style format. In v3.0 `contactPoint` uses a Kind object -- provide at minimum a `fn` (full name or team name) and a `hasEmail` value formatted with a `mailto:` prefix. You can optionally add a position title and organization name. See the [Dataset fields page](../dcat-us-3-dataset/) for the full contactPoint format.
-
+  **Contact information** is also required for AI datasets. Include a contact who can discuss restrictions or controls on the dataset with AI researchers. In v1.1 this was expressed using a vCard-style format. In v3.0 `contactPoint` uses a Kind object -- provide at minimum a `fn` (full name or team name) and a `hasEmail` value formatted with a `mailto:` prefix. You can optionally add a position title and organization name. 
   
   
   **Data quality** was required under EO 13859 to indicate whether a dataset meets the agency's Information Quality Guidelines. In v1.1 this was expressed using the `dataQuality` boolean field (set to `true` or `false`). That field is not in the v3.0 schema. In v3.0 use `hasQualityMeasurement` instead -- this is a structured object that captures the quality metric, the measured value, and the unit of measure. See the [QualityMeasurement class](https://resources.data.gov/standards/catalog/dcat-us-3/temporal-spatial-metrics/#class-qualitymeasurement-) technical reference for field details.
   
   
   
-  **References and documentation** were required under EO 13859 if publications, model documentation, or other references exist for the dataset. In v1.1 this was expressed using the `references` field (an array of URLs). That field is not in the v3.0 schema. In v3.0 use one of two replacements depending on the type of link. Use `isReferencedBy` for publications or papers that cite or use the dataset -- this is a simple array of URL strings. Use `page` for documentation, model cards, or technical references about the dataset -- this is an array of Document objects, each with a `title` and an `accessURL` or `downloadURL`. See the [Dataset fields page](../dcat-us-3-dataset/) for details on both fields.
+  **References and documentation** were required under EO 13859 if publications, model documentation, or other references exist for the dataset. In v1.1 this was expressed using the `references` field (an array of URLs). That field is not in the v3.0 schema. In v3.0 use one of two replacements depending on the type of link. Use `isReferencedBy` for publications or papers that cite or use the dataset -- this is a simple array of URL strings. Use `page` for documentation, model cards, or technical references about the dataset -- this is an array of Document objects, each with a `title` and an `accessURL` or `downloadURL`. 
   
   
   ---
