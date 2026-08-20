@@ -15,8 +15,9 @@ Data information classes including Agent, Organization, and Kind, which describe
 
 A person, organization, software agent, or other entity involved with a resource
 
-- **Type**: `object`
-- **Additional properties**: Any type allowed
+| **Type**                  | `object`         |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Example:**
 
@@ -32,36 +33,18 @@ A person, organization, software agent, or other entity involved with a resource
 
 | Property               | Type                                                                           | Requirement Level | Title/Description                                   |
 | ---------------------- | ------------------------------------------------------------------------------ | ----------------- | --------------------------------------------------- |
-| [name](#agent--name)         | string                                                                         | Mandatory         | The name of the agent                               |
 | [@id](#agent--@id)           | string                                                                         | Optional          |                                                     |
 | [@type](#agent--@type)       | string                                                                         | Optional          |                                                     |
 | [category](#agent--category) | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes | Optional          | The type of the agent that makes the item available |
-
-## <a name="agent--name"></a>`Agent > name` [#](#agent--name)
-
-**Requirement:** Mandatory
-
-The name of the agent
-
-- **Type**: `string`
-- **Required**: Yes
-
-**Examples:**
-
-```json
-"National Climate Data Center"
-```
-
-```json
-"U.S. Department of Commerce Data Stewardship Office"
-```
+| [name](#agent--name)         | string                                                                         | Mandatory         | The name of the agent                               |
 
 ## <a name="agent--@id"></a>`Agent > @id` [#](#agent--@id)
 
 **Requirement:** Optional
 
-- **Type**: `string`
-- **Format**: `iri`
+| **Type**   | `string` |
+| ---------- | -------- |
+| **Format** | `iri`    |
 
 **Example:**
 
@@ -73,8 +56,9 @@ The name of the agent
 
 **Requirement:** Optional
 
-- **Type**: `string`
-- **Default**: `"Agent"`
+| **Type**    | `string`  |
+| ----------- | --------- |
+| **Default** | `"Agent"` |
 
 ## <a name="agent--category"></a>`Agent > category` [#](#agent--category)
 
@@ -82,10 +66,32 @@ The name of the agent
 
 The type of the agent that makes the item available
 
-- **Type**: null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes
+| **Type** | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes |
+| -------- | ------------------------------------------------------------------------------ |
 
-**Each item of this array must be:**
-- [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept): A controlled term or label, optionally drawn from a concept scheme
+| Each item of this array must be                       | Description                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) | A controlled term or label, optionally drawn from a concept scheme |
+
+## <a name="agent--name"></a>`Agent > name` [#](#agent--name)
+
+**Requirement:** Mandatory
+
+The name of the agent
+
+| **Type**     | `string` |
+| ------------ | -------- |
+| **Required** | Yes      |
+
+**Examples:**
+
+```json
+"National Climate Data Center"
+```
+
+```json
+"U.S. Department of Commerce Data Stewardship Office"
+```
 
 ---
 
@@ -95,8 +101,9 @@ The type of the agent that makes the item available
 
 An organization involved with a resource, including parent or child organizations
 
-- **Type**: `object`
-- **Additional properties**: Any type allowed
+| **Type**                  | `object`         |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -131,39 +138,21 @@ An organization involved with a resource, including parent or child organization
 
 | Property                                 | Type                                                              | Requirement Level | Title/Description                                                                                                                       |
 | ---------------------------------------- | ----------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| [name](#organization--name)                           | string                                                            | Mandatory         | The full name of the Organization                                                                                                       |
 | [@id](#organization--@id)                             | string                                                            | Optional          |                                                                                                                                         |
 | [@type](#organization--@type)                         | string                                                            | Optional          |                                                                                                                                         |
+| [name](#organization--name)                           | string                                                            | Mandatory         | The full name of the Organization                                                                                                       |
+| [subOrganizationOf](#organization--subOrganizationOf) | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes | Optional          | Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization |
 | [altLabel](#organization--altLabel)                   | null or string                                                    | Optional          | alternative name (trading name, colloquial name) for an organization                                                                    |
 | [notation](#organization--notation)                   | null or array of string                                           | Optional          | List of abbreviations or codes from code lists for an organization (e.g. DOI, DOD)                                                      |
 | [prefLabel](#organization--prefLabel)                 | null or string                                                    | Optional          | Preferred or legal name of the organization                                                                                             |
-| [subOrganizationOf](#organization--subOrganizationOf) | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes | Optional          | Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization |
-
-## <a name="organization--name"></a>`Organization > name` [#](#organization--name)
-
-**Requirement:** Mandatory
-
-The full name of the Organization
-
-- **Type**: `string`
-- **Required**: Yes
-
-**Examples:**
-
-```json
-"National Climate Data Center"
-```
-
-```json
-"U.S. Census Bureau"
-```
 
 ## <a name="organization--@id"></a>`Organization > @id` [#](#organization--@id)
 
 **Requirement:** Optional
 
-- **Type**: `string`
-- **Format**: `iri`
+| **Type**   | `string` |
+| ---------- | -------- |
+| **Format** | `iri`    |
 
 **Example:**
 
@@ -175,8 +164,42 @@ The full name of the Organization
 
 **Requirement:** Optional
 
-- **Type**: `string`
-- **Default**: `"Organization"`
+| **Type**    | `string`         |
+| ----------- | ---------------- |
+| **Default** | `"Organization"` |
+
+## <a name="organization--name"></a>`Organization > name` [#](#organization--name)
+
+**Requirement:** Mandatory
+
+The full name of the Organization
+
+| **Type**     | `string` |
+| ------------ | -------- |
+| **Required** | Yes      |
+
+**Examples:**
+
+```json
+"National Climate Data Center"
+```
+
+```json
+"U.S. Census Bureau"
+```
+
+## <a name="organization--subOrganizationOf"></a>`Organization > subOrganizationOf` [#](#organization--subOrganizationOf)
+
+**Requirement:** Optional
+
+Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization
+
+| **Type** | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes |
+| -------- | ----------------------------------------------------------------- |
+
+| Each item of this array must be          | Description                                                                       |
+| ---------------------------------------- | --------------------------------------------------------------------------------- |
+| [Organization](/standards/catalog/dcat-us-3/agents/#organization) | An organization involved with a resource, including parent or child organizations |
 
 ## <a name="organization--altLabel"></a>`Organization > altLabel` [#](#organization--altLabel)
 
@@ -186,7 +209,8 @@ The full name of the Organization
 
 alternative name (trading name, colloquial name) for an organization
 
-- **Type**: `null or string`
+| **Type** | `null or string` |
+| -------- | ---------------- |
 
 **Examples:**
 
@@ -204,7 +228,8 @@ alternative name (trading name, colloquial name) for an organization
 
 List of abbreviations or codes from code lists for an organization (e.g. DOI, DOD)
 
-- **Type**: null or array of string
+| **Type** | null or array of string |
+| -------- | ----------------------- |
 
 **Example:**
 
@@ -215,12 +240,14 @@ List of abbreviations or codes from code lists for an organization (e.g. DOI, DO
 ]
 ```
 
-**Each item of this array must be:**
-- [Abbreviation](#organization--notation_items): -
+| Each item of this array must be | Description |
+| ------------------------------- | ----------- |
+| [Abbreviation](#organization--notation_items) | -           |
 
 ### <a name="organization--notation_items"></a>Abbreviation [#](#organization--notation_items)
 
-- **Type**: `string`
+| **Type** | `string` |
+| -------- | -------- |
 
 ## <a name="organization--prefLabel"></a>`Organization > prefLabel` [#](#organization--prefLabel)
 
@@ -230,24 +257,14 @@ List of abbreviations or codes from code lists for an organization (e.g. DOI, DO
 
 Preferred or legal name of the organization
 
-- **Type**: `null or string`
+| **Type** | `null or string` |
+| -------- | ---------------- |
 
 **Example:**
 
 ```json
 "United States Census Bureau"
 ```
-
-## <a name="organization--subOrganizationOf"></a>`Organization > subOrganizationOf` [#](#organization--subOrganizationOf)
-
-**Requirement:** Optional
-
-Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization
-
-- **Type**: null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes
-
-**Each item of this array must be:**
-- [Organization](/standards/catalog/dcat-us-3/agents/#organization): An organization involved with a resource, including parent or child organizations
 
 ---
 
@@ -257,8 +274,9 @@ Represents hierarchical containment of Organizations or OrganizationalUnits; ind
 
 Contact information for an individual or entity
 
-- **Type**: `object`
-- **Additional properties**: Any type allowed
+| **Type**                  | `object`         |
+| ------------------------- | ---------------- |
+| **Additional properties** | Any type allowed |
 
 **Examples:**
 
@@ -282,68 +300,24 @@ Contact information for an individual or entity
 
 | Property                                 | Type                                                                      | Requirement Level | Title/Description                                                                         |
 | ---------------------------------------- | ------------------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------- |
-| [fn](#kind--fn)                               | string                                                                    | Mandatory         | The formatted text of the name of the contact                                             |
-| [hasEmail](#kind--hasEmail)                   | string                                                                    | Mandatory         | Email address for the contact in mailto: format (for example, mailto:support@example.gov) |
 | [@id](#kind--@id)                             | string                                                                    | Optional          |                                                                                           |
 | [@type](#kind--@type)                         | string                                                                    | Optional          |                                                                                           |
 | [address](#kind--address)                     | null or array of [Address](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#address) classes | Optional          | The address of the contact                                                                |
+| [hasEmail](#kind--hasEmail)                   | string                                                                    | Mandatory         | Email address for the contact in mailto: format (for example, mailto:support@example.gov) |
 | [family-name](#kind--family-name)             | null or string                                                            | Optional          | The family name of the contact                                                            |
+| [fn](#kind--fn)                               | string                                                                    | Mandatory         | The formatted text of the name of the contact                                             |
 | [given-name](#kind--given-name)               | null or string                                                            | Optional          | The given name of the contact                                                             |
 | [organization-name](#kind--organization-name) | null or string                                                            | Optional          | The name of the organization to contact                                                   |
 | [tel](#kind--tel)                             | null or string                                                            | Optional          | The telephone number for the contact                                                      |
 | [title](#kind--title)                         | null or string                                                            | Optional          | The position role of the person to contact                                                |
 
-## <a name="kind--fn"></a>`Kind > fn` [#](#kind--fn)
-
-**Title:** formatted name
-
-**Requirement:** Mandatory
-
-The formatted text of the name of the contact
-
-- **Type**: `string`
-- **Required**: Yes
-
-**Examples:**
-
-```json
-"Climate Data Support Team"
-```
-
-```json
-"Dr. Jane Smith"
-```
-
-## <a name="kind--hasEmail"></a>`Kind > hasEmail` [#](#kind--hasEmail)
-
-**Title:** Email
-
-**Requirement:** Mandatory
-
-Email address for the contact in mailto: format (for example, mailto:support@example.gov)
-
-- **Type**: `string`
-- **Required**: Yes
-
-**Examples:**
-
-```json
-"mailto:climate-support@example.gov"
-```
-
-```json
-"mailto:jane.smith@example.gov"
-```
-
-**Restrictions:**
-- **Must match regular expression**: ```^mailto:[\w\_\~\!\$\&\'\(\)\*\+\,\;\=\:.-]+@[\w.-]+\.[\w.-]+?$``` [Test](https://regex101.com/?regex=%5Emailto%3A%5B%5Cw%5C_%5C~%5C%21%5C%24%5C%26%5C%27%5C%28%5C%29%5C%2A%5C%2B%5C%2C%5C%3B%5C%3D%5C%3A.-%5D%2B%40%5B%5Cw.-%5D%2B%5C.%5B%5Cw.-%5D%2B%3F%24&testString=%22mailto%3Aclimate-support%40example.gov%22)
-
 ## <a name="kind--@id"></a>`Kind > @id` [#](#kind--@id)
 
 **Requirement:** Optional
 
-- **Type**: `string`
-- **Format**: `iri`
+| **Type**   | `string` |
+| ---------- | -------- |
+| **Format** | `iri`    |
 
 **Example:**
 
@@ -355,8 +329,9 @@ Email address for the contact in mailto: format (for example, mailto:support@exa
 
 **Requirement:** Optional
 
-- **Type**: `string`
-- **Default**: `"Kind"`
+| **Type**    | `string` |
+| ----------- | -------- |
+| **Default** | `"Kind"` |
 
 ## <a name="kind--address"></a>`Kind > address` [#](#kind--address)
 
@@ -364,10 +339,38 @@ Email address for the contact in mailto: format (for example, mailto:support@exa
 
 The address of the contact
 
-- **Type**: null or array of [Address](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#address) classes
+| **Type** | null or array of [Address](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#address) classes |
+| -------- | ------------------------------------------------------------------------- |
 
-**Each item of this array must be:**
-- [Address](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#address): A single physical address
+| Each item of this array must be                  | Description               |
+| ------------------------------------------------ | ------------------------- |
+| [Address](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#address) | A single physical address |
+
+## <a name="kind--hasEmail"></a>`Kind > hasEmail` [#](#kind--hasEmail)
+
+**Title:** Email
+
+**Requirement:** Mandatory
+
+Email address for the contact in mailto: format (for example, mailto:support@example.gov)
+
+| **Type**     | `string` |
+| ------------ | -------- |
+| **Required** | Yes      |
+
+**Examples:**
+
+```json
+"mailto:climate-support@example.gov"
+```
+
+```json
+"mailto:jane.smith@example.gov"
+```
+
+| Restrictions                      |                                                                                                                                                                                                                                                                                                                         |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Must match regular expression** | ```^mailto:[\w\_\~\!\$\&\'\(\)\*\+\,\;\=\:.-]+@[\w.-]+\.[\w.-]+?$``` [Test](https://regex101.com/?regex=%5Emailto%3A%5B%5Cw%5C_%5C~%5C%21%5C%24%5C%26%5C%27%5C%28%5C%29%5C%2A%5C%2B%5C%2C%5C%3B%5C%3D%5C%3A.-%5D%2B%40%5B%5Cw.-%5D%2B%5C.%5B%5Cw.-%5D%2B%3F%24&testString=%22mailto%3Aclimate-support%40example.gov%22) |
 
 ## <a name="kind--family-name"></a>`Kind > family-name` [#](#kind--family-name)
 
@@ -375,12 +378,35 @@ The address of the contact
 
 The family name of the contact
 
-- **Type**: `null or string`
+| **Type** | `null or string` |
+| -------- | ---------------- |
 
 **Example:**
 
 ```json
 "Smith"
+```
+
+## <a name="kind--fn"></a>`Kind > fn` [#](#kind--fn)
+
+**Title:** formatted name
+
+**Requirement:** Mandatory
+
+The formatted text of the name of the contact
+
+| **Type**     | `string` |
+| ------------ | -------- |
+| **Required** | Yes      |
+
+**Examples:**
+
+```json
+"Climate Data Support Team"
+```
+
+```json
+"Dr. Jane Smith"
 ```
 
 ## <a name="kind--given-name"></a>`Kind > given-name` [#](#kind--given-name)
@@ -389,7 +415,8 @@ The family name of the contact
 
 The given name of the contact
 
-- **Type**: `null or string`
+| **Type** | `null or string` |
+| -------- | ---------------- |
 
 **Example:**
 
@@ -403,7 +430,8 @@ The given name of the contact
 
 The name of the organization to contact
 
-- **Type**: `null or string`
+| **Type** | `null or string` |
+| -------- | ---------------- |
 
 **Example:**
 
@@ -419,7 +447,8 @@ The name of the organization to contact
 
 The telephone number for the contact
 
-- **Type**: `null or string`
+| **Type** | `null or string` |
+| -------- | ---------------- |
 
 **Example:**
 
@@ -435,7 +464,8 @@ The telephone number for the contact
 
 The position role of the person to contact
 
-- **Type**: `null or string`
+| **Type** | `null or string` |
+| -------- | ---------------- |
 
 **Example:**
 
