@@ -10,8 +10,8 @@ tags:
   - open data
   - DCAT
   - DCAT-US
-  - metadata standard
   - data inventory
+  - metadata standard
 guidance_tags: ""
 format: ""
 details: >+
