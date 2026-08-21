@@ -10,12 +10,12 @@ source: CDO Council
 category: Data management & governance
 tags:
   - Federal Data Strategy
-  - Open Data
-  - Data Inventories
-  - Data Catalog
+  - open data
+  - data inventory
+  - data catalog
   - data management
   - DCAT-US
-  - Schema
+  - data schema
 format: PDF (78 pages)
 link: ../../assets/documents/dcat-us-3-implementation-guide.pdf
 ---
