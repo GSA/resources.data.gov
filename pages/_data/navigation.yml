@@ -42,6 +42,8 @@
       url: /resources/dcat-us-3-migration/
     - text: Implementation Guide
       url: /resources/dcat-us-3-implementation/
+    - text: M-25-05 Crosswalk
+      url: /resources/dcat-us-3-crosswalk/
     - text: DCAT-US 3 Overview
       url: /resources/dcat-us3/
 - text: API Documentation

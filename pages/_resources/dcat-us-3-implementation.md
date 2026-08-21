@@ -10,8 +10,8 @@ tags:
   - open data
   - DCAT
   - DCAT-US
-  - metadata standard
   - data inventory
+  - metadata standard
 guidance_tags: ""
 format: ""
 details: >+
@@ -19,9 +19,9 @@ details: >+
 
   ---
 
-  **This page is a draft and will be updated when the implementation guide is released.**  Want to know when that happens? Email us at DataGovHelp@gsa.gov, and we'll let you know!
+  <p>We are in the process of converting the implementation guide to HTML. In the interim, please use the <a href="../../assets/documents/dcat-us-3-implementation-guide.pdf">PDF version</a>.</p>
   
-  See an error on this page or have other feedback? Email us at DataGovHelp@gsa.gov
+  <p>See an error on this page or have other feedback? Email us at <a href="mailto:datagovhelp@gsa.gov">DataGovHelp@gsa.gov</a></p>
 
  
 ## DCAT US Pages
