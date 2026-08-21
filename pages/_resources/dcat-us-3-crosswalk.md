@@ -22,7 +22,7 @@ details: >-
 
   <p>Agencies may share feedback regarding the crosswalk by emailing <a href="mailto:datagovhelp@gsa.gov">DataGovHelp@gsa.gov</a> or opening a new issue on the <a href="https://github.com/GSA/dcat-us/issues">DCAT-US GitHub</a>.</p>
   
-  <p>This crosswalk is also available as an <a href="/assets/documents/dcat-us3-crosswalk.xlsx">Excel file</a>.</p>
+  <p>This crosswalk is also available as an <a href="../../assets/documents/dcat-us3-crosswalk.xlsx" target="_blank">Excel file</a>.</p>
 
   <table class="usa-table">
   <thead>
@@ -58,7 +58,7 @@ details: >-
       <td>Dataset</td>
       <td>title</td>
       <td>The formal human-readable name of the dataset.</td>
-    </tr>
+    </tr></tbody>
     <tbody><tr>
       <td rowspan="5">D</td>
       <th colspan="4">(Open Data Indication) An indication of whether the agency has determined that:</th>
@@ -383,7 +383,7 @@ details: >-
         </ul>
       </td>
     </tr>
-  </tbody>
+  </tbody></table>
   
 examples: ""
 
@@ -391,7 +391,7 @@ link: ""
 
 layout: resource
 
-toc: true
+toc: false
 
 publish: true
 ---
