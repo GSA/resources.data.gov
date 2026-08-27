@@ -2,13 +2,4 @@
 version: v1.25.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
-  SNYK-RUBY-WEBRICK-17808181:
-    - '*':
-        reason: >-
-          no published fix yet but fix has been pushed into main branch
-          so setting the expiration date to 1 month instead of usual 3.
-          https://security.snyk.io/vuln/SNYK-RUBY-WEBRICK-17808181
-        expires: 2026-08-10T00:00:00.000Z
-        created: 2026-07-10T00:00:00.000Z
-
 patch: {}
