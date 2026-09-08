@@ -19,11 +19,7 @@ guidance_tags: ""
 format: ""
 details: >+
 
-
   <!-- SOURCE: https://github.com/GSA/dcat-us/blob/main/README.md -->
-
-  **  THE IMPLEMENTATION GUIDE AND IMPLEMENTATION GUIDANCE IN GENERAL IS IN DRAFT FORMAT AT THIS TIME. 5.7.2026.  **
-
   
   <table class="usa-table vertical-headings">
     <tbody>
