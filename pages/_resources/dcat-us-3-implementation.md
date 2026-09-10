@@ -36,13 +36,13 @@ details: >+
     <tbody>
       <tr>
         <td>1.1</td>
-        <td><time datetime="2026-09-10">September 10, 2026</time></td>
+        <td><time datetime="2026-09-09">September 9, 2026</time></td>
         <td>Step 1: Filter Structure Using FGDC Metadata Standards Technical Crosswalk (page 63)</td>
         <td>Corrected the metadata standard number in the crosswalk description. The guide now cites ISO 19115-1. The previous version cited ISO 19115-2.</td>
       </tr>
       <tr>
         <td>1.1</td>
-        <td><time datetime="2026-09-10">September 10, 2026</time></td>
+        <td><time datetime="2026-09-09">September 9, 2026</time></td>
         <td>Guidance for Geospatial Data Providers: Step 3</td>
         <td>Corrected the spelling of the word "catalog."</td>
       </tr>
