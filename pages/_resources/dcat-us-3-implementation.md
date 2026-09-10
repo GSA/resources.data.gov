@@ -48,7 +48,7 @@ details: >+
       </tr>
     </tbody>
   </table>
-</section>
+  </section>
   
   <p>See an error on this page or have other feedback? Email us at <a href="mailto:datagovhelp@gsa.gov">DataGovHelp@gsa.gov</a></p>
 
