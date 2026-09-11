@@ -278,7 +278,7 @@ details: >+
     </thead>
     <tbody>
       <tr>
-        <td><a href="../dcat-us3/">Agency Implementation Guide</a></td>
+        <td><a href="../../assets/documents/dcat-us-3-implementation-guide.pdf">Agency Implementation Guide</a></td>
         <td>Human-readable guidance for the core classes — Catalog, Dataset, Distribution, DataService, and DatasetSeries. Includes federal-specific context, before/after upgrade examples, common mistakes, and a breaking changes summary.</td>
         <td>Data managers implementing v3.0 for the first time or upgrading from v1.1</td>
       </tr>
