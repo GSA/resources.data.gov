@@ -3,6 +3,7 @@ layout: page
 title: ISO 8601 Guidance
 ---
 
+**Note**: This table applies to DCAT-US 1.1. For DCAT-US 3.0, this ISO 8601 duration format is one of three accepted formats for `accrualPeriodicity`. See [Migrating from DCAT-US v1.1 to v3.0](https://resources.data.gov/resources/dcat-us-3-migration/) for what changed, and the [DCAT-US 3.0 Dataset schema](https://resources.data.gov/standards/catalog/dcat-us-3/dataset/#accrualPeriodicity) for the full field definition.
 
 ### accrualPeriodicity
 
