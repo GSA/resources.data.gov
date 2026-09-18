@@ -363,8 +363,15 @@ details: >+
 
 
   - JSON Schema file: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json)
+
+
   - Validation script: [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py)
+
+
+
   - Instructions: [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema)
+
+
 
   ---
 
@@ -378,6 +385,11 @@ details: >+
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td>September 2026</td>
+        <td>Page rewritten to correct several errors and add links to schema reference pages generated from the DCAT-US v3.0 GitHub repository.
+        </td>
+      </tr>
       <tr>
         <td>May 2026</td>
         <td>Page rewritten to correct several errors and add links to schema reference pages generated from the DCAT-US v3.0 GitHub repository.
