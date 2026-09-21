@@ -543,78 +543,78 @@ details: >+
   ---
 
 
-    #### Step 13 — Convert legacy `isPartOf` into catalog-level `datasetSeries`
-
-    If a v1.1 Dataset uses `isPartOf` to point at another Dataset's `identifier`, the conversion script promotes that parent Dataset into a catalog-level `DatasetSeries` and moves the related child Datasets into `seriesMember`.
-
-    The current script also:
-
-    - removes legacy `isPartOf` from the converted child Datasets
-    - removes the child Datasets from the top-level `dataset` array
-    - changes the promoted parent Dataset `identifier` into DatasetSeries `@id`
-    - wraps the promoted series `contactPoint` in an array when needed
-    - does not populate `first` or `last`
-
-    <table class="usa-table">
-    <thead>
-    <tr>
-    <th>v1.1</th>
-    <th>v3.0</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr id="step13-datasetSeries">
-    <td>
-    <pre><code>"dataset": [
+  #### Step 13 — Convert legacy `isPartOf` into catalog-level `datasetSeries`
+  
+  If a v1.1 Dataset uses `isPartOf` to point at another Dataset's `identifier`, the conversion script promotes that parent Dataset into a catalog-level `DatasetSeries` and moves the related child Datasets into `seriesMember`.
+  
+  The current script also:
+  
+  - removes legacy `isPartOf` from the converted child Datasets
+  - removes the child Datasets from the top-level `dataset` array
+  - changes the promoted parent Dataset `identifier` into DatasetSeries `@id`
+  - wraps the promoted series `contactPoint` in an array when needed
+  - does not populate `first` or `last`
+  
+  <table class="usa-table">
+  <thead>
+  <tr>
+  <th>v1.1</th>
+  <th>v3.0</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr id="step13-datasetSeries">
+  <td>
+  <pre><code>"dataset": [
       {
-        "title": "Annual Widget Releases",
-        "identifier": "https://example.gov/series/widget-series",
-        "contactPoint": {
+      "title": "Annual Widget Releases",
+      "identifier": "https://example.gov/series/widget-series",
+      "contactPoint": {
           "fn": "Widget Desk",
           "hasEmail": "mailto:widgets@agency.gov"
-        }
+      }
       },
       {
-        "title": "Widget Inventory 2024",
-        "identifier": "widget-2024",
-        "isPartOf": "https://example.gov/series/widget-series"
+      "title": "Widget Inventory 2024",
+      "identifier": "widget-2024",
+      "isPartOf": "https://example.gov/series/widget-series"
       }
-    ]</code></pre>
-    </td>
-    <td>
-    <pre><code>"dataset": [],
-    "datasetSeries": [
+  ]</code></pre>
+  </td>
+  <td>
+  <pre><code>"dataset": [],
+  "datasetSeries": [
       {
-        "@type": "DatasetSeries",
-        "@id": "https://example.gov/series/widget-series",
-        "title": "Annual Widget Releases",
-        "contactPoint": [
+      "@type": "DatasetSeries",
+      "@id": "https://example.gov/series/widget-series",
+      "title": "Annual Widget Releases",
+      "contactPoint": [
           {
-            "fn": "Widget Desk",
-            "hasEmail": "mailto:widgets@agency.gov"
+          "fn": "Widget Desk",
+          "hasEmail": "mailto:widgets@agency.gov"
           }
-        ],
-        "seriesMember": [
+      ],
+      "seriesMember": [
           {
-            "title": "Widget Inventory 2024",
-            "identifier": "widget-2024"
+          "title": "Widget Inventory 2024",
+          "identifier": "widget-2024"
           }
-        ]
+      ]
       }
-    ]</code></pre>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-
-    If an `isPartOf` parent cannot be found, the script leaves that Dataset in the top-level `dataset` array and logs a warning instead of creating a partial DatasetSeries.
-
-    This catalog-level change is handled by the conversion script directly. See [`convert_dcat_1_1_to_3_0.py`](https://github.com/GSA/dcat-us/blob/main/jsonschema/convert_dcat_1_1_to_3_0.py#L275-L433) for the implementation.
-
-    ---
-
-
-    #### Step 14 — Update `conformsTo` on the Catalog
+  ]</code></pre>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+ 
+  If an `isPartOf` parent cannot be found, the script leaves that Dataset in the top-level `dataset` array and logs a warning instead of creating a partial DatasetSeries.
+  
+  This catalog-level change is handled by the conversion script directly. See [`convert_dcat_1_1_to_3_0.py`](https://github.com/GSA/dcat-us/blob/main/jsonschema/convert_dcat_1_1_to_3_0.py#L275-L433) for the implementation.
+ 
+  ---
+ 
+ 
+  #### Step 14 — Update `conformsTo` on the Catalog
   
   
   Change the plain string URI to a Standard object pointing to DCAT-US v3.0.
