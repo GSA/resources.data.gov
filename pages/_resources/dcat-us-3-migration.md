@@ -541,6 +541,8 @@ details: >+
 
   
   ---
+
+
     #### Step 13 — Convert legacy `isPartOf` into catalog-level `datasetSeries`
 
     If a v1.1 Dataset uses `isPartOf` to point at another Dataset's `identifier`, the conversion script promotes that parent Dataset into a catalog-level `DatasetSeries` and moves the related child Datasets into `seriesMember`.
@@ -611,9 +613,9 @@ details: >+
 
     ---
 
+
     #### Step 14 — Update `conformsTo` on the Catalog
   
-  #### Step 13 — Update `conformsTo` on the Catalog
   
   Change the plain string URI to a Standard object pointing to DCAT-US v3.0.
   
@@ -644,8 +646,8 @@ details: >+
   
   ---
   
+
   #### Step 15 — Remove `@context` and `describedBy` from the Catalog
-  #### Step 14 — Remove `@context` and `describedBy` from the Catalog
 
   
   Both fields have been removed at the catalog level in v3.0. Delete these lines from your catalog object.
@@ -662,8 +664,8 @@ details: >+
   
   ---
 
+
   #### Step 16 — Normalize catalog-level `modified`
-  #### Step 15 — Normalize catalog-level `modified`
 
   
   If the Catalog itself has a `modified` value, the conversion script normalizes valid date-times to UTC Zulu format. If the value cannot be parsed as a date, the script removes it.
