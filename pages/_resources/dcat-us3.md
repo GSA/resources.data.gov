@@ -86,7 +86,7 @@ details: >+
   Note: `accessLevel` is not part of the v3.0 core schema. The v3.0 equivalent is `accessRights`, a free-text string. Agencies may continue populating `accessLevel`and add `accessRights` alongside it. See the [Changes from v1.1](#changes-from-v11) section for details.
 
 
-  The upgrade work is real but manageable. Most of it involves converting a handful of fields from plain strings to structured objects, and updating a small number of field formats that are no longer valid. See the [Quick Migration Guide](../dcat-us-3-migration/) for step-by-step instructions.
+  The upgrade work is real but manageable. Most of it involves converting a handful of fields from plain strings to structured objects, and updating a small number of field formats that are no longer valid. See the [Technical Migration Guide](../dcat-us-3-migration/) for step-by-step instructions.
 
 
 
@@ -283,7 +283,7 @@ details: >+
         <td>Data managers implementing v3.0 for the first time or upgrading from v1.1</td>
       </tr>
       <tr>
-        <td><a href="../dcat-us-3-migration/">Quick Migration Guide</a></td>
+        <td><a href="../dcat-us-3-migration/">Technical Migration Guide</a></td>
         <td>Step-by-step instructions for updating an existing v1.1 data.json file to v3.0. Covers the eight most important changes in order of priority.</td>
         <td>Agencies with existing v1.1 implementations ready to migrate</td>
       </tr>
@@ -303,99 +303,10 @@ details: >+
 
 
 
-  The table below summarizes the most significant changes from DCAT-US v1.1 to v3.0. For a complete field-by-field comparison, see the [schema repository](https://github.com/GSA/dcat-us). For field-level detail see the individual schema reference pages linked above.
+  For a complete field-by-field comparison, see the [schema repository](https://github.com/GSA/dcat-us). For field-level detail see the individual schema reference pages linked above.
 
 
-  For step-by-step migration instructions see the [Quick Migration Guide](../dcat-us-3-migration/).
-
-
-
-  #### Breaking changes
-
-
-  These are changes where existing v1.1 field values will fail v3.0 schema validation and must be updated.
-
-
-  <table class="usa-table">
-    <thead>
-      <tr>
-        <th>Field</th>
-        <th>What changed</th>
-        <th>Action required</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>modified</code> with repeating intervals</td>
-        <td>v1.1 accepted repeating duration formats like <code>R/P1D</code> or <code>R/P1Y</code> to indicate continually updated datasets. v3.0 requires a plain ISO 8601 date.</td>
-        <td>Set <code>modified</code> to the actual date the data last changed (e.g., <code>"2024-06-01"</code>). Use <code>accrualPeriodicity</code> to express update frequency.</td>
-      </tr>
-      <tr>
-        <td><code>temporal</code> as an ISO 8601 string</td>
-        <td>v1.1 used a plain interval string (e.g., <code>"2000-01-15T00:00:00Z/2010-01-15T00:00:00Z"</code>). v3.0 uses a structured PeriodOfTime object.</td>
-        <td>Convert to a PeriodOfTime object: <code>[{"@type": "PeriodOfTime", "startDate": "2000-01-15", "endDate": "2010-01-15"}]</code>. Open-ended periods are valid — you can omit either <code>startDate</code> or <code>endDate</code>.</td>
-      </tr>
-      <tr>
-        <td><code>spatial</code> as a plain string</td>
-        <td>v1.1 accepted plain strings like <code>"United States"</code> or bounding box coordinate strings. v3.0 uses a structured Location object.</td>
-        <td>Convert to a Location object: <code>[{"@type": "Location", "prefLabel": "United States"}]</code>. Add a <code>bbox</code> for geospatial precision.</td>
-      </tr>
-      <tr>
-        <td><code>language</code> with RFC 5646 tags</td>
-        <td>v1.1 used RFC 5646 language tags like <code>en-US</code>. v3.0 uses two-letter ISO 639-1 codes only, with a maximum length of two characters. Values like <code>en-US</code> will fail v3.0 validation.</td>
-        <td>Simplify to two-letter codes: change <code>en-US</code> to <code>en</code>, <code>es-MX</code> to <code>es</code>, etc.</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-
-  #### Fields replaced or removed
-
-
-
-  <table class="usa-table">
-    <thead>
-      <tr>
-        <th>v1.1 Field</th>
-        <th>Status in v3.0</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>accessLevel</code></td>
-        <td>Not in v3.0 core schema. Replaced by <code>accessRights</code> on Dataset.</td>
-        <td>Add <code>accessRights</code> as a free-text string alongside your existing <code>accessLevel</code>. The value <code>"public"</code> remains valid. For restricted datasets write a plain-language explanation. Continue populating <code>accessLevel</code>.</td>
-      </tr>
-      <tr>
-        <td><code>isPartOf</code></td>
-        <td>Replaced by <code>inSeries</code> and <code>hasPart</code></td>
-        <td>Use <code>inSeries</code> for datasets that belong to a recurring temporal series. Use <code>hasPart</code> at the parent dataset level for generic collections.</td>
-      </tr>
-      <tr>
-        <td><code>describedByType</code></td>
-        <td>Absorbed into <code>describedBy</code></td>
-        <td>Express the format as <code>mediaType</code> within the <code>describedBy</code> Distribution object. No separate field needed.</td>
-      </tr>
-      <tr>
-        <td><code>license</code> at Dataset level</td>
-        <td>Now at Distribution level</td>
-        <td>Add <code>license</code> to each Distribution object. You do not need to remove it from the Dataset level during the transition period — the v3.0 schema will not reject records that include it there.</td>
-      </tr>
-      <tr>
-        <td><code>@context</code> at Catalog level</td>
-        <td>Removed</td>
-        <td>Remove from your catalog file.</td>
-      </tr>
-      <tr>
-        <td><code>describedBy</code> at Catalog level</td>
-        <td>Removed — replaced by <code>conformsTo</code> Standard object</td>
-        <td>Remove from your catalog file. Use a Standard object in <code>conformsTo</code> instead.</td>
-      </tr>
-    </tbody>
-  </table>
-
+  For step-by-step migration instructions see the [Technical Migration Guide](../dcat-us-3-migration/).
 
 
   #### Fields not in the v3.0 core schema
@@ -441,86 +352,6 @@ details: >+
   </table>
 
 
-
-  #### Structural changes
-
-
-
-  The following fields changed type or structure between v1.1 and v3.0. Existing string values in these fields will not validate against the v3.0 schema and must be converted to the new object format.
-
-
-  <table class="usa-table">
-    <thead>
-      <tr>
-        <th>Field</th>
-        <th>v1.1 type</th>
-        <th>v3.0 type</th>
-        <th>Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>landingPage</code></td>
-        <td>string (URL)</td>
-        <td>Document object</td>
-        <td>Wrap in a Document object with <code>title</code> and <code>accessURL</code>. Still in the v3.0 schema as Recommended.</td>
-      </tr>
-      <tr>
-        <td><code>theme</code></td>
-        <td>array of strings</td>
-        <td>array of Concept objects</td>
-        <td>Each Concept requires a <code>prefLabel</code>. Plain string values are no longer valid.</td>
-      </tr>
-      <tr>
-        <td><code>describedBy</code> on Dataset and Distribution</td>
-        <td>string (URL)</td>
-        <td>Distribution object</td>
-        <td>Wrap in a Distribution object with <code>title</code>, <code>downloadURL</code> or <code>accessURL</code>, and <code>mediaType</code>.</td>
-      </tr>
-      <tr>
-        <td><code>conformsTo</code> on Dataset and Distribution</td>
-        <td>string (URI)</td>
-        <td>array of Standard objects</td>
-        <td>Wrap in an array of Standard objects. Each Standard should include <code>title</code> and <code>identifier</code>.</td>
-      </tr>
-      <tr>
-        <td><code>conformsTo</code> on Catalog</td>
-        <td>string (URI)</td>
-        <td>Standard object</td>
-        <td>Use <code>{"@type": "Standard", "title": "DCAT-US 3.0", "identifier": "https://resources.data.gov/dcat-us/3.0.0"}</code></td>
-      </tr>
-      <tr>
-        <td><code>rights</code></td>
-        <td>string — max 255 characters</td>
-        <td>array of strings — no character limit</td>
-        <td>Convert to an array. The 255-character limit no longer applies.</td>
-      </tr>
-      <tr>
-        <td><code>byteSize</code> on Distribution</td>
-        <td>number</td>
-        <td>string</td>
-        <td>Express as a numeric string, e.g. <code>"52428800"</code>.</td>
-      </tr>
-      <tr>
-        <td><code>publisher.subOrganizationOf</code></td>
-        <td>single Organization object</td>
-        <td>array of Organization objects</td>
-        <td>Wrap in an array if you have parent organization hierarchy.</td>
-      </tr>
-      <tr>
-        <td><code>accrualPeriodicity</code></td>
-        <td>ISO 8601 repeating duration only (e.g., <code>R/P1Y</code>) or <code>irregular</code></td>
-        <td>Three vocabularies accepted: ISO 19115 plain-language codes, Dublin Core frequency vocabulary, or ISO 8601 repeating duration</td>
-        <td>ISO 8601 patterns remain valid but plain-language codes are preferred — e.g., <code>"annually"</code> instead of <code>"R/P1Y"</code>.</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-
-  
-
-
   ### Validation
 
 
@@ -528,19 +359,19 @@ details: >+
   <!-- SOURCE: https://github.com/GSA/dcat-us/tree/main/jsonschema -->
 
 
-  Note: the generated reference documentation in `jsonschema/docs/` currently shows all fields as Optional regardless of their actual requirement level. This is a known issue. Trust the requirement levels documented on the schema reference pages and in the JSON schema files directly.
-
-
-  Validate your metadata against the v3.0 schema:
+  Validate your metadata against the v3.0 schema in data.gov's [online validator](https://harvest.data.gov/validate/), or build your own using the following resources:
 
 
   - JSON Schema file: [jsonschema/definitions/Catalog.json](https://github.com/GSA/dcat-us/blob/main/jsonschema/definitions/Catalog.json)
 
-  
+
   - Validation script: [jsonschema/test_json_schema.py](https://github.com/GSA/dcat-us/blob/main/jsonschema/test_json_schema.py)
-  
-  
+
+
+
   - Instructions: [jsonschema/README.md](https://github.com/GSA/dcat-us/tree/main/jsonschema)
+
+
 
   ---
 
@@ -554,6 +385,11 @@ details: >+
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td>September 2026</td>
+        <td>Page rewritten to correct several errors and add links to schema reference pages generated from the DCAT-US v3.0 GitHub repository.
+        </td>
+      </tr>
       <tr>
         <td>May 2026</td>
         <td>Page rewritten to correct several errors and add links to schema reference pages generated from the DCAT-US v3.0 GitHub repository.

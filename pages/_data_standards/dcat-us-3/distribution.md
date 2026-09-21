@@ -71,7 +71,7 @@ A specific representation of a dataset, such as a file, feed, or API response
 | [image](#image)                                         | null or string                                                                                     | Optional          | A link to a thumbnail picture illustrating the content of the distribution                                                                                                    |
 | [inventoried](#inventoried)                             | null or object                                                                                     | Optional          | Date on which the distribution was added to the catalog. This may differ from the publication/release date.                                                                   |
 | [issued](#issued)                                       | null or object                                                                                     | Optional          | The date of formal issuance (e.g., publication) of the Distribution                                                                                                           |
-| [language](#language)                                   | More than one type                                                                                 | Optional          | ISO 639-1 language code values used in the distribution metadata text, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html                 |
+| [language](#language)                                   | single Language code or array of Language codes                                                    | Optional          | ISO 639-1 language code values used in the distribution metadata text, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html                 |
 | [mediaType](#mediaType)                                 | null or string                                                                                     | Optional          | MIME type of the Distribution (for example, text/csv or application/json), from the IANA media types registry: https://www.iana.org/assignments/media-types/media-types.xhtml |
 | [otherIdentifier](#otherIdentifier)                     | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes               | Optional          | A list of identifiers for the Distribution besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog                                |
 | [packageFormat](#packageFormat)                         | null or string                                                                                     | Optional          | The format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together                                  |
@@ -487,7 +487,7 @@ The date of formal issuance (e.g., publication) of the Distribution
 
 ISO 639-1 language code values used in the distribution metadata text, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html
 
-- **Type**: `combining`
+- **Type**: single Language code or array of Language codes
 - **Additional properties**: Any type allowed
 
 **Examples:**

@@ -542,8 +542,80 @@ details: >+
   
   ---
 
+
+  #### Step 13 — Convert legacy `isPartOf` into catalog-level `datasetSeries`
   
-  #### Step 13 — Update `conformsTo` on the Catalog
+  If a v1.1 Dataset uses `isPartOf` to point at another Dataset's `identifier`, the conversion script promotes that parent Dataset into a catalog-level `DatasetSeries` and moves the related child Datasets into `seriesMember`.
+  
+  The current script also:
+  
+  - removes legacy `isPartOf` from the converted child Datasets
+  - removes the child Datasets from the top-level `dataset` array
+  - changes the promoted parent Dataset `identifier` into DatasetSeries `@id`
+  - wraps the promoted series `contactPoint` in an array when needed
+  - does not populate `first` or `last`
+  
+  <table class="usa-table">
+  <thead>
+  <tr>
+  <th>v1.1</th>
+  <th>v3.0</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr id="step13-datasetSeries">
+  <td>
+  <pre><code>"dataset": [
+      {
+      "title": "Annual Widget Releases",
+      "identifier": "https://example.gov/series/widget-series",
+      "contactPoint": {
+          "fn": "Widget Desk",
+          "hasEmail": "mailto:widgets@agency.gov"
+      }
+      },
+      {
+      "title": "Widget Inventory 2024",
+      "identifier": "widget-2024",
+      "isPartOf": "https://example.gov/series/widget-series"
+      }
+  ]</code></pre>
+  </td>
+  <td>
+  <pre><code>"dataset": [],
+  "datasetSeries": [
+      {
+      "@type": "DatasetSeries",
+      "@id": "https://example.gov/series/widget-series",
+      "title": "Annual Widget Releases",
+      "contactPoint": [
+          {
+          "fn": "Widget Desk",
+          "hasEmail": "mailto:widgets@agency.gov"
+          }
+      ],
+      "seriesMember": [
+          {
+          "title": "Widget Inventory 2024",
+          "identifier": "widget-2024"
+          }
+      ]
+      }
+  ]</code></pre>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+ 
+  If an `isPartOf` parent cannot be found, the script leaves that Dataset in the top-level `dataset` array and logs a warning instead of creating a partial DatasetSeries.
+  
+  This catalog-level change is handled by the conversion script directly. See [`convert_dcat_1_1_to_3_0.py`](https://github.com/GSA/dcat-us/blob/main/jsonschema/convert_dcat_1_1_to_3_0.py#L275-L433) for the implementation.
+ 
+  ---
+ 
+ 
+  #### Step 14 — Update `conformsTo` on the Catalog
+  
   
   Change the plain string URI to a Standard object pointing to DCAT-US v3.0.
   
@@ -555,7 +627,7 @@ details: >+
   </tr>
   </thead>
   <tbody>
-  <tr id="step13-conformsTo">
+  <tr id="step14-conformsTo">
   <td><code>"conformsTo": "https://project-open-data.cio.gov/v1.1/schema"</code></td>
   <td>
   <pre><code>"conformsTo": {
@@ -574,8 +646,8 @@ details: >+
   
   ---
   
-  
-  #### Step 14 — Remove `@context` and `describedBy` from the Catalog
+
+  #### Step 15 — Remove `@context` and `describedBy` from the Catalog
 
   
   Both fields have been removed at the catalog level in v3.0. Delete these lines from your catalog object.
@@ -592,8 +664,8 @@ details: >+
   
   ---
 
-  
-  #### Step 15 — Normalize catalog-level `modified`
+
+  #### Step 16 — Normalize catalog-level `modified`
 
   
   If the Catalog itself has a `modified` value, the conversion script normalizes valid date-times to UTC Zulu format. If the value cannot be parsed as a date, the script removes it.
@@ -607,11 +679,11 @@ details: >+
   </tr>
   </thead>
   <tbody>
-  <tr id="step15-catalog-modified-datetime">
+  <tr id="step16-catalog-modified-datetime">
   <td><code>"modified": "2024-10-01T12:30:00-04:00"</code></td>
   <td><code>"modified": "2024-10-01T16:30:00Z"</code></td>
   </tr>
-  <tr id="step15-catalog-modified-invalid">
+  <tr id="step16-catalog-modified-invalid">
   <td><code>"modified": "unknown"</code></td>
   <td><code>// removed</code></td>
   </tr>
@@ -628,7 +700,7 @@ details: >+
   ### You are done with the minimum migration
 
   
-  After completing steps 1 through 15, your records should be much closer to the current conversion script output and should validate against the v3.0 schema more consistently. Run your updated `data.json` against the validation script at <https://harvest.data.gov/validate/> to confirm.
+  After completing steps 1 through 16, your records should be much closer to the current conversion script output and should validate against the v3.0 schema more consistently. Run your updated `data.json` against the validation script at <https://harvest.data.gov/validate/> to confirm.
 
   
   ---
@@ -645,6 +717,10 @@ details: >+
   </tr>
   </thead>
   <tbody>
+  <tr>
+  <td>2026-09-18</td>
+  <td>Added the legacy <code>isPartOf</code> to catalog <code>datasetSeries</code> migration step to match DCAT-US3 translation updates and renumbered the catalog-level steps that follow.</td>
+  </tr>
   <tr>
   <td>2026-06-24</td>
   <td>Rewrote overview; aligned the migration steps to the current conversion script; removed the split between breaking and structural changes; added coverage for catalog <code>modified</code>, <code>rights</code>, <code>describedBy</code>, <code>subOrganizationOf</code>, Dataset and Distribution <code>conformsTo</code>, <code>landingPage</code>, and <code>issued</code>.</td>
