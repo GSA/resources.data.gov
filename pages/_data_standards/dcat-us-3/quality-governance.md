@@ -554,7 +554,7 @@ A record in a catalog, describing the registration of a single resource
 | [@type](#catalog-record--@type)               | string                                                        | Optional          |                                                                                                                                                                                      |
 | [description](#catalog-record--description)   | null or array of string                                       | Optional          | A list of free-text accounts of the catalog record                                                                                                                                   |
 | [issued](#catalog-record--issued)             | null or array of object                                       | Optional          | List of dates on which the catalog record was included in the catalog                                                                                                                |
-| [language](#catalog-record--language)         | More than one type                                            | Optional          | Language code used in catalog record metadata text, using ISO 639-1 values such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html                    |
+| [language](#catalog-record--language)         | single Language code or array of Language codes               | Optional          | Language code used in catalog record metadata text, using ISO 639-1 values such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html                    |
 | [source](#catalog-record--source)             | null or string                                                | Optional          | The original metadata that was used in creating metadata for the items in the catalog record, either a URL referencing the source metadata or a string of the source metadata itself |
 | [title](#catalog-record--title)               | null or string                                                | Optional          | A name given to the Catalog Record                                                                                                                                                   |
 
@@ -791,7 +791,7 @@ A year and month in YYYY-MM format
 
 Language code used in catalog record metadata text, using ISO 639-1 values such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html
 
-- **Type**: `combining`
+- **Type**: single Language code or array of Language codes
 - **Additional properties**: Any type allowed
 
 **Examples:**
@@ -953,7 +953,7 @@ A service that provides access to data or data processing functions
 | [identifier](#data-service--identifier)                               | null or [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier)                                | Optional          | The unique identifier for the Data Service, e.g. the URI or other unique identifier in the context of the Catalog                                    |
 | [inventoried](#data-service--inventoried)                             | null or object                                                                                     | Optional          | Date on which the data service was added to the catalog. This may differ from the publication/release date.                                          |
 | [keyword](#data-service--keyword)                                     | null or array of string                                                                            | Optional          | List of keywords or tags describing the data service                                                                                                 |
-| [language](#data-service--language)                                   | More than one type                                                                                 | Optional          | ISO 639-1 language code values supported by the data service, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html |
+| [language](#data-service--language)                                   | single Language code or array of Language codes                                                    | Optional          | ISO 639-1 language code values supported by the data service, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html |
 | [modified](#data-service--modified)                                   | null or object                                                                                     | Optional          | The most recent date on which the Data Service was changed or modified                                                                               |
 | [otherIdentifier](#data-service--otherIdentifier)                     | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes               | Optional          | A list of identifiers for the Data Service besides the main identifier, e.g. the URI or other unique identifiers in the context of the Catalog       |
 | [qualifiedAttribution](#data-service--qualifiedAttribution)           | null or array of [Attribution](/standards/catalog/dcat-us-3/quality-governance/#attribution) classes                        | Optional          | List of agents with specific responsibilities for the data service                                                                                   |
@@ -1316,7 +1316,7 @@ List of keywords or tags describing the data service
 
 ISO 639-1 language code values supported by the data service, such as en or es, full list can be seen at https://id.loc.gov/vocabulary/iso639-1.html
 
-- **Type**: `combining`
+- **Type**: single Language code or array of Language codes
 - **Additional properties**: Any type allowed
 
 **Examples:**
