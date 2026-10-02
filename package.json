@@ -56,7 +56,7 @@
         "@uswds/compile": {
             "postcss": "^8.5.16"
         },
-        "shell-quote": "1.9.0",
+        "shell-quote": "1.11.0",
         "node-notifier": {
             "uuid": "11.1.1"
         },
