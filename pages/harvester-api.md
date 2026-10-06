@@ -7,7 +7,7 @@ layout: page
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Interactive API Documentation Available</h4>
     <p class="usa-alert__text">
-      Try our new <a href="/harvester-api-interactive.html">interactive API documentation</a> with live endpoint testing. 
+      Try our new <a href="/harvester-api-interactive/">interactive API documentation</a> with live endpoint testing. 
       This page provides a guided overview; the interactive version shows all endpoints with full technical details.
     </p>
   </div>

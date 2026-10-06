@@ -105,7 +105,7 @@ window.onload = function() {
 This interactive documentation is automatically generated from the harvester application code using OpenAPI 3.0. 
 You can explore endpoints, view request/response schemas, and even test API calls directly from this page using the "Try it out" feature.
 
-For a curated introduction and common use cases, see the [Getting Started Guide](/harvester-api.html).
+For a curated introduction and common use cases, see the [Getting Started Guide](/harvester-api/).
 
 ### Need Help?
 
