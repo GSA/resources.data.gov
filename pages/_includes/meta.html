@@ -5,11 +5,12 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'none';
     font-src 'self' https://use.fontawesome.com;
     frame-src youtube.com www.youtube.com;
-    script-src 'self' https://dap.digitalgov.gov https://www.googletagmanager.com 'unsafe-eval'
-      'sha256-YA7FKxq4SsPjpF6nCIXnPuHXV/cbo/DEFJDHdjwDoAU=';
-    connect-src 'self' https://www.google-analytics.com;
+    script-src 'self' https://dap.digitalgov.gov https://www.googletagmanager.com https://unpkg.com 'unsafe-eval' 'unsafe-inline';
+    connect-src 'self' https://www.google-analytics.com https://harvest.data.gov https://catalog.data.gov https://dap.digitalgov.gov https://unpkg.com;
     img-src 'self' data:  https://strategy.data.gov;
-    style-src-elem 'self' https://use.fontawesome.com;
+    manifest-src 'self';
+    style-src 'self' 'unsafe-inline';
+    style-src-elem 'self' https://use.fontawesome.com https://unpkg.com 'unsafe-inline';
     style-src-attr 'self' 'unsafe-hashes'
       'sha256-6l+tpow5lGPV0MHWZlDv8nD7HrL77FGFldqQ7zc5gxY='
       'sha256-i0JPB0qmRu5AViJTxOIzqXnfGoiWFw+oNAm4uJd7ZQk='
