@@ -19,26 +19,26 @@ A curated collection of metadata about datasets, data services, or other resourc
 ```json
 {
     "@type": "Catalog",
-    "title": "National Climate Data Catalog",
-    "description": "A comprehensive catalog of climate and weather datasets from federal monitoring stations across the United States.",
+    "title": "Federal Data Catalog",
+    "description": "A catalog of datasets from federal agencies covering a range of subject areas.",
     "publisher": {
         "@type": "Agent",
-        "name": "National Climate Data Center"
+        "name": "Federal Data Management Office"
     },
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "dataset": [
         {
             "@type": "Dataset",
-            "title": "Daily Climate Observations 2024",
-            "description": "Daily temperature, precipitation, and wind measurements.",
+            "title": "Federal Workforce Statistics 2024",
+            "description": "Annual statistics on the federal civilian workforce by agency.",
             "contactPoint": {
-                "fn": "Climate Data Support",
-                "hasEmail": "mailto:climate@example.gov"
+                "fn": "Workforce Data Support",
+                "hasEmail": "mailto:workforce@example.gov"
             },
             "publisher": {
-                "name": "National Climate Data Center"
+                "name": "Office of Personnel Management"
             },
-            "identifier": "https://example.gov/datasets/climate-observations-1"
+            "identifier": "https://example.gov/datasets/federal-workforce-statistics-2024"
         }
     ],
     "datasetSeries": [
@@ -62,15 +62,15 @@ A curated collection of metadata about datasets, data services, or other resourc
                     "publisher": {
                         "name": "National Climate Data Center"
                     },
-                    "identifier": "https://example.gov/datasets/climate-observations-1"
+                    "identifier": "https://example.gov/datasets/annual-climate-observations-2024"
                 }
             ]
         }
     ],
     "homepage": {
         "@type": "Document",
-        "title": "National Climate Data Catalog Homepage",
-        "accessURL": "https://example.gov/climate-data"
+        "title": "Federal Data Catalog Homepage",
+        "accessURL": "https://example.gov/data-catalog"
     },
     "language": [
         "en"
@@ -78,7 +78,7 @@ A curated collection of metadata about datasets, data services, or other resourc
     "issued": "2020-01-15",
     "modified": "2024-06-01",
     "rights": [
-        "This catalog is maintained by the National Climate Data Center."
+        "This catalog is maintained by the Federal Data Management Office."
     ],
     "spatial": [
         {
@@ -89,7 +89,7 @@ A curated collection of metadata about datasets, data services, or other resourc
     "themeTaxonomy": [
         {
             "@type": "ConceptScheme",
-            "title": "Climate Science Topics"
+            "title": "Federal Data Topics"
         }
     ],
     "conformsTo": {
@@ -99,46 +99,46 @@ A curated collection of metadata about datasets, data services, or other resourc
 }
 ```
 
-| Property                                       | Type                                                                                        | Requirement Level | Title/Description                                                                                                                     |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| [dataset](#dataset)                           | array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                               | Mandatory         | List of datasets included in the catalog. Use this together with service so the catalog is not empty.                                 |
-| [conformsTo](#conformsTo)                     | null or [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard)                                        | Recommended       | Standard, schema, profile, or model that this catalog follows                                                                         |
-| [homepage](#homepage)                         | null or [Document](/standards/catalog/dcat-us-3/quality-governance/#document)                                        | Recommended       | Main public web page for the catalog, usually an HTML page                                                                            |
-| [issued](#issued)                             | null or object                                                                              | Recommended       | Date when the catalog was formally issued, such as its initial publication date                                                       |
-| [language](#language)                         | single Language code or array of Language codes                                             | Recommended       | Language codes used for catalog metadata text (such as titles and descriptions), using ISO 639-1 codes like en or es                  |
-| [modified](#modified)                         | null or object                                                                              | Recommended       | Most recent date when the catalog content changed, not just catalog-record metadata                                                   |
-| [rights](#rights)                             | null or array of string                                                                     | Recommended       | Rights statements about the catalog that are not already covered by license or accessRights, such as copyright or policy restrictions |
-| [spatial](#spatial)                           | null or array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes                 | Recommended       | Geographic area covered by the catalog                                                                                                |
-| [themeTaxonomy](#themeTaxonomy)               | null or array of [ConceptScheme](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept-scheme) classes | Recommended       | Controlled vocabulary or taxonomy used to classify catalog resources, such as datasets and services                                   |
-| [@id](#@id)                                   | string                                                                                      | Optional          |                                                                                                                                       |
-| [@type](#@type)                               | string                                                                                      | Optional          |                                                                                                                                       |
-| [accessRights](#accessRights)                 | null or string                                                                              | Optional          | Information about whether the catalog is publicly accessible, restricted, or not public                                               |
-| [catalog](#catalog)                           | null or array of object                                                                     | Optional          | List of related catalogs that are useful in the context of this catalog                                                               |
-| [category](#category)                         | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes              | Optional          | List of high-level categories for the catalog                                                                                         |
-| [contactPoint](#contactPoint)                 | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes                                           | Optional          | Contact information people can use to ask questions or send feedback about the catalog                                                |
-| [creator](#creator)                           | null or array of [Agent](/standards/catalog/dcat-us-3/agents/#agent) classes                                         | Optional          | Person or organization responsible for creating the catalog metadata                                                                  |
-| [datasetSeries](#datasetSeries)               | null or array of [DatasetSeries](/standards/catalog/dcat-us-3/dataset-series/#root) classes                          | Optional          | List of dataset series included in the catalog.                                                                                       |
-| [description](#description)                   | null or string                                                                              | Optional          | Plain-language summary of the catalog                                                                                                 |
-| [hasPart](#hasPart)                           | null or array of object                                                                     | Optional          | List of catalogs that are contained within this catalog                                                                               |
-| [identifier](#identifier)                     | null or [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier)                         | Optional          | Main unique identifier for the catalog, such as a URI or another persistent identifier                                                |
-| [keyword](#keyword)                           | null or array of string                                                                     | Optional          | List of keywords or tags describing the catalog                                                                                       |
-| [license](#license)                           | null or string                                                                              | Optional          | License that governs how the catalog can be used or reused                                                                            |
-| [otherIdentifier](#otherIdentifier)           | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes        | Optional          | A list of identifiers for the Catalog besides the main identifier, e.g. the URI or other unique identifiers                           |
-| [publisher](#publisher)                       | null or [Agent](/standards/catalog/dcat-us-3/agents/#agent)                                                          | Optional          | Person or organization responsible for publishing and making the catalog available                                                    |
-| [qualifiedAttribution](#qualifiedAttribution) | null or array of [Attribution](/standards/catalog/dcat-us-3/quality-governance/#attribution) classes                 | Optional          | List of agents with specific responsibilities for the catalog                                                                         |
-| [record](#record)                             | null or array of [CatalogRecord](/standards/catalog/dcat-us-3/quality-governance/#catalog-record) classes            | Optional          | A catalog record describing how a single resource (such as a dataset or data service) is registered in the catalog                    |
-| [rightsHolder](#rightsHolder)                 | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes                           | Optional          | Organizations that hold rights in the catalog                                                                                         |
-| [service](#service)                           | null or array of [DataService](/standards/catalog/dcat-us-3/quality-governance/#data-service) classes                | Optional          | List of data services included in the catalog. Use this together with dataset so the catalog is not empty.                            |
-| [subject](#subject)                           | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes              | Optional          | List of subjects of the catalog                                                                                                       |
-| [temporal](#temporal)                         | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes       | Optional          | Time periods covered by the catalog                                                                                                   |
-| [theme](#theme)                               | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes              | Optional          | List of themes or categories for the catalog. A catalog can have more than one theme.                                                 |
-| [title](#title)                               | null or string                                                                              | Optional          | Human-readable title of the catalog                                                                                                   |
+| Property                                       | Type                                                                                        | Requirement Level | Title/Description                                                                                                                                                                                                      |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [dataset](#dataset)                           | array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                               | Mandatory         | List of datasets included directly in the catalog. Do not include datasets that are members of a dataset series here. Dataset identifiers must be unique across all datasets in the catalog, including series members. |
+| [conformsTo](#conformsTo)                     | null or [Standard](/standards/catalog/dcat-us-3/quality-governance/#standard)                                        | Recommended       | Standard, schema, profile, or model that this catalog follows                                                                                                                                                          |
+| [homepage](#homepage)                         | null or [Document](/standards/catalog/dcat-us-3/quality-governance/#document)                                        | Recommended       | Main public web page for the catalog, usually an HTML page                                                                                                                                                             |
+| [issued](#issued)                             | null or object                                                                              | Recommended       | Date when the catalog was formally issued, such as its initial publication date                                                                                                                                        |
+| [language](#language)                         | single Language code or array of Language codes                                             | Recommended       | Language codes used for catalog metadata text (such as titles and descriptions), using ISO 639-1 codes like en or es                                                                                                   |
+| [modified](#modified)                         | null or object                                                                              | Recommended       | Most recent date when the catalog content changed, not just catalog-record metadata                                                                                                                                    |
+| [rights](#rights)                             | null or array of string                                                                     | Recommended       | Rights statements about the catalog that are not already covered by license or accessRights, such as copyright or policy restrictions                                                                                  |
+| [spatial](#spatial)                           | null or array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes                 | Recommended       | Geographic area covered by the catalog                                                                                                                                                                                 |
+| [themeTaxonomy](#themeTaxonomy)               | null or array of [ConceptScheme](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept-scheme) classes | Recommended       | Controlled vocabulary or taxonomy used to classify catalog resources, such as datasets and services                                                                                                                    |
+| [@id](#@id)                                   | string                                                                                      | Optional          |                                                                                                                                                                                                                        |
+| [@type](#@type)                               | string                                                                                      | Optional          |                                                                                                                                                                                                                        |
+| [accessRights](#accessRights)                 | null or string                                                                              | Optional          | Information about whether the catalog is publicly accessible, restricted, or not public                                                                                                                                |
+| [catalog](#catalog)                           | null or array of object                                                                     | Optional          | List of related catalogs that are useful in the context of this catalog                                                                                                                                                |
+| [category](#category)                         | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes              | Optional          | List of high-level categories for the catalog                                                                                                                                                                          |
+| [contactPoint](#contactPoint)                 | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes                                           | Optional          | Contact information people can use to ask questions or send feedback about the catalog                                                                                                                                 |
+| [creator](#creator)                           | null or array of [Agent](/standards/catalog/dcat-us-3/agents/#agent) classes                                         | Optional          | Person or organization responsible for creating the catalog metadata                                                                                                                                                   |
+| [datasetSeries](#datasetSeries)               | null or array of [DatasetSeries](/standards/catalog/dcat-us-3/dataset-series/#root) classes                          | Optional          | List of dataset series included in the catalog. Do not duplicate datasets in the series members in the catalog's dataset list.                                                                                         |
+| [description](#description)                   | null or string                                                                              | Optional          | Plain-language summary of the catalog                                                                                                                                                                                  |
+| [hasPart](#hasPart)                           | null or array of object                                                                     | Optional          | List of catalogs that are contained within this catalog                                                                                                                                                                |
+| [identifier](#identifier)                     | null or [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier)                         | Optional          | Main unique identifier for the catalog, such as a URI or another persistent identifier                                                                                                                                 |
+| [keyword](#keyword)                           | null or array of string                                                                     | Optional          | List of keywords or tags describing the catalog                                                                                                                                                                        |
+| [license](#license)                           | null or string                                                                              | Optional          | License that governs how the catalog can be used or reused                                                                                                                                                             |
+| [otherIdentifier](#otherIdentifier)           | null or array of [Identifier](/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier) classes        | Optional          | A list of identifiers for the Catalog besides the main identifier, e.g. the URI or other unique identifiers                                                                                                            |
+| [publisher](#publisher)                       | null or [Agent](/standards/catalog/dcat-us-3/agents/#agent)                                                          | Optional          | Person or organization responsible for publishing and making the catalog available                                                                                                                                     |
+| [qualifiedAttribution](#qualifiedAttribution) | null or array of [Attribution](/standards/catalog/dcat-us-3/quality-governance/#attribution) classes                 | Optional          | List of agents with specific responsibilities for the catalog                                                                                                                                                          |
+| [record](#record)                             | null or array of [CatalogRecord](/standards/catalog/dcat-us-3/quality-governance/#catalog-record) classes            | Optional          | A catalog record describing how a single resource (such as a dataset or data service) is registered in the catalog                                                                                                     |
+| [rightsHolder](#rightsHolder)                 | null or array of [Organization](/standards/catalog/dcat-us-3/agents/#organization) classes                           | Optional          | Organizations that hold rights in the catalog                                                                                                                                                                          |
+| [service](#service)                           | null or array of [DataService](/standards/catalog/dcat-us-3/quality-governance/#data-service) classes                | Optional          | List of data services included in the catalog. Use this together with dataset so the catalog is not empty.                                                                                                             |
+| [subject](#subject)                           | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes              | Optional          | List of subjects of the catalog                                                                                                                                                                                        |
+| [temporal](#temporal)                         | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes       | Optional          | Time periods covered by the catalog                                                                                                                                                                                    |
+| [theme](#theme)                               | null or array of [Concept](/standards/catalog/dcat-us-3/identifiers-and-relationships/#concept) classes              | Optional          | List of themes or categories for the catalog. A catalog can have more than one theme.                                                                                                                                  |
+| [title](#title)                               | null or string                                                                              | Optional          | Human-readable title of the catalog                                                                                                                                                                                    |
 
 ## <a name="dataset"></a>`DCAT-US 3 Catalog > dataset` [#](#dataset)
 
 **Requirement:** Mandatory
 
-List of datasets included in the catalog. Use this together with service so the catalog is not empty.
+List of datasets included directly in the catalog. Do not include datasets that are members of a dataset series here. Dataset identifiers must be unique across all datasets in the catalog, including series members.
 
 - **Type**: array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes
 - **Required**: Yes
@@ -418,7 +418,7 @@ Person or organization responsible for creating the catalog metadata
 
 **Requirement:** Optional
 
-List of dataset series included in the catalog.
+List of dataset series included in the catalog. Do not duplicate datasets in the series members in the catalog's dataset list.
 
 - **Type**: null or array of [DatasetSeries](/standards/catalog/dcat-us-3/dataset-series/#root) classes
 
