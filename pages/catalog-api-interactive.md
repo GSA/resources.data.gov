@@ -80,7 +80,7 @@ window.onload = function() {
 
 ## About This Documentation
 
-This interactive documentation is automatically generated from the Catalog application code using OpenAPI 3.0. 
+This interactive documentation is automatically generated from the catalog application code using OpenAPI 3.0. 
 You can explore endpoints, view request/response schemas, and test API calls directly using the "Try it out" feature.
 
 ### Need Help?
