@@ -16,8 +16,10 @@ layout: page
   }
   
   .swagger-ui .info hgroup.main a,
-  .swagger-ui .info .title small.version-stamp {
-    display: none;
+  .swagger-ui .info .title small.version-stamp,
+  .swagger-ui .info .title small,
+  .swagger-ui .info hgroup.main small {
+    display: none !important;
   }
   
   .swagger-ui .info {
@@ -103,7 +105,7 @@ window.onload = function() {
 This interactive documentation is automatically generated from the harvester application code using OpenAPI 3.0. 
 You can explore endpoints, view request/response schemas, and even test API calls directly from this page using the "Try it out" feature.
 
-For a curated introduction and common use cases, see the [Getting Started Guide](./harvester-api.html).
+For a curated introduction and common use cases, see the [Getting Started Guide](/harvester-api.html).
 
 ### Need Help?
 
