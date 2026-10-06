@@ -32,28 +32,6 @@ layout: page
     border-radius: 4px;
     margin-bottom: 2rem;
   }
-  
-  .swagger-ui .info .link,
-  .swagger-ui .info .url,
-  .swagger-ui .info a,
-  .swagger-ui .info hgroup.main a {
-    color: #333 !important;
-  }
-  
-  .swagger-ui select {
-    color: #333;
-  }
-  
-  .swagger-ui .info .title small,
-  .swagger-ui .info hgroup.main small {
-    color: #333 !important;
-    background: transparent !important;
-  }
-  
-  .swagger-ui .info hgroup.main a,
-  .swagger-ui .info .base-url {
-    color: #0071bc !important;
-  }
 </style>
 
 <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
@@ -103,7 +81,7 @@ window.onload = function() {
 ## About This Documentation
 
 This interactive documentation is automatically generated from the harvester application code using OpenAPI 3.0. 
-You can explore endpoints, view request/response schemas, and even test API calls directly from this page using the "Try it out" feature.
+You can explore endpoints, view request/response schemas, and test API calls directly using the "Try it out" feature.
 
 For a curated introduction and common use cases, see the [Getting Started Guide](/harvester-api/).
 
