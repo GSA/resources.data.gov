@@ -60,7 +60,6 @@ details: >+
   - Promoting Efficient and Appropriate Data Use (Practices 27 to 40)
 
 
-  For how the Practices were developed, see [Federal Data Strategy history](../federal-data-strategy-history/#how-were-the-practices-created).
 
 
   ### Building a Culture that Values Data and Promotes Public Use
