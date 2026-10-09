@@ -50,8 +50,6 @@ details: >+
   The Principles serve as motivational guidelines in the areas of Ethical Governance, Conscious Design, and a Learning Culture. They underlie a comprehensive data strategy that encompasses federal and federally-sponsored program, statistical, and mission-support data. These Principles include concepts reflected in existing principles for the protection of personal information, for the management of information as an asset, for federal statistical agencies, and for federal evidence building. The Principles inform the Practices and Action Steps for the Federal Data Strategy.
 
 
-  For how the Principles were developed, see [Federal Data Strategy history](../federal-data-strategy-history/#how-were-the-principles-created).
-
 
   ### Ethical Governance
 
