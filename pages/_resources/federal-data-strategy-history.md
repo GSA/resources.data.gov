@@ -71,6 +71,7 @@ details: >+
 
 
   ### How the Principles were created
+  ### How were the Principles Created
 
 
   On behalf of the development team, the Department of Commerce published a Request for Comments (RFC) in the Federal Register on June 27, 2018. The RFC included a set of 10 draft Principles and asked the public to review and comment on their clarity, appropriateness, completeness, and potential duplications. Comments were also submitted through the Federal Data Strategy website and GitHub.
