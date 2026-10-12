@@ -40,7 +40,7 @@ layout: page
 <script>
 window.onload = function() {
   const ui = SwaggerUIBundle({
-    url: "/assets/api/harvester-openapi.json",
+    url: "{{ '/assets/api/harvester-openapi.json' | relative_url }}",
     dom_id: '#swagger-ui',
     deepLinking: true,
     presets: [
