@@ -2,10 +2,9 @@
 resource_name: Federal Data Strategy
 slug: federal-data-strategy
 description: >-
-  The Federal Data Strategy ran from 2019 to 2021 and set out a mission,
-  10 Principles, 40 Practices, and annual Action Plans for federal data
-  management. This page explains what it covered and where the full record
-  is preserved.
+  The Federal Data Strategy was established by OMB Memorandum M-19-18 and sets out a
+  mission, 10 Principles, 40 Practices, and annual Action Plans for federal data
+  management. This page collects its documents and explains where the full record is held.
 source: Federal Data Strategy
 category: Guidance
 tags:
@@ -22,12 +21,8 @@ details: >+
   <table class="usa-table vertical-headings">
     <tbody>
       <tr>
-        <th>Status:</th>
-        <td>Concluded. Not current policy.</td>
-      </tr>
-      <tr>
         <th>Active:</th>
-        <td>2019 to 2021</td>
+        <td>2019 and 2021</td>
       </tr>
       <tr>
         <th>Established by:</th>
@@ -94,8 +89,7 @@ details: >+
   ### Action Plans
 
 
-  Two annual Action Plans were published before the Strategy concluded. Agency progress against them was reported quarterly through 2020.
-
+  Two annual Action Plans were published, for 2020 and 2021.
 
   <table class="usa-table">
     <thead>
@@ -123,14 +117,14 @@ details: >+
 
   Draft versions of both plans, along with the documents describing how public comment changed them, are listed on the [Federal Data Strategy history](../federal-data-strategy-history/) page.
 
-
-  ### How it relates to current policy
-
-
-  The Federal Data Strategy is not current policy and should not be cited as a current requirement. Agencies looking for current direction on data inventories and metadata should start with OMB M-25-05 and the [DCAT-US Schema v3.0](../dcat-us3/) reference.
+    ### Related current guidance
 
 
-  Several resources on this site were produced under the Strategy and remain in active use, including the Data Ethics Framework, the Data Governance Playbook, and the Curated Data Skills Catalog. Browse them under the [Federal Data Strategy keyword](/keywords/federal-data-strategy/).
+  OMB Memorandum M-25-05, Phase 2 Implementation of the Foundations for Evidence-Based Policymaking Act of 2018, is the current guidance for open government data access and management. It rescinds and replaces M-13-13, the Open Data Policy, and cites M-19-18 in a footnote as background. For current data inventory and metadata requirements, see the [DCAT-US Schema v3.0](../dcat-us3/) reference.
+
+
+  Several resources on this site were produced under the Strategy, including the Data Ethics Framework, the Data Governance Playbook, and the Curated Data Skills Catalog. Browse them under the [Federal Data Strategy keyword](/keywords/federal-data-strategy/).
+
 
 
   ### Where the full record is preserved
