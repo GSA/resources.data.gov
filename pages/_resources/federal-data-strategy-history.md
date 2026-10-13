@@ -25,7 +25,7 @@ details: >+
       </tr>
       <tr>
         <th>Status:</th>
-        <td>Historical reference. Carried forward from strategy.data.gov.</td>
+        <td>Carried forward from strategy.data.gov.</td>
       </tr>
       <tr>
         <th>Related:</th>
