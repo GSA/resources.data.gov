@@ -151,10 +151,6 @@ details: >+
         <td><a href="https://github.com/GSA/data-strategy">GSA/data-strategy on GitHub</a></td>
         <td>The complete source of the former website, including all pages, 38 news items and proof point case studies, every published document, and the full revision history. Released into the public domain under CC0.</td>
       </tr>
-      <tr>
-        <td><a href="https://web.archive.org/web/*/strategy.data.gov/*">strategy.data.gov in the Wayback Machine</a></td>
-        <td>Captures of the live site as it appeared, from 2018 through its retirement.</td>
-      </tr>
     </tbody>
   </table>
 
