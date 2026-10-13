@@ -30,6 +30,7 @@
         "jekyll": "bundle exec jekyll build",
         "merge-dcat-us-docs": "node scripts/merge-dcat-us-docs.js",
         "fetch-harvester-openapi": "node scripts/fetch-harvester-openapi.js",
+        "federalist": "npm run build",
         "qa": "bundle exec htmlproofer --http-status-ignore \"301,302,401,403,429\" --check-html _site",
         "setup": "bundle install",
         "start": "concurrently \"npm run watch\" \"npm run merge-dcat-us-docs && bundle exec jekyll serve\"",
