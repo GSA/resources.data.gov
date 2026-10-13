@@ -1,11 +1,25 @@
 ---
 title: Harvester API - Interactive Documentation
 layout: page
+primary_nav_section: Developers
 ---
+
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">API Authentication Required</h4>
+    <p class="usa-alert__text">
+      To use this API, you need an API key from <a href="https://open.gsa.gov/api/datadotgov/">api.data.gov</a>. 
+      All requests must include your API key in the <code>X-Api-Key</code> header.
+    </p>
+    <p class="usa-alert__text">
+      <strong>Base URL:</strong> <code>https://api.gsa.gov/technology/datagov_harvest/v2/</code>
+    </p>
+  </div>
+</div>
 
 <div id="swagger-ui"></div>
 
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5.17.14/swagger-ui.css" />
 <style>
   #swagger-ui {
     font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
@@ -34,8 +48,8 @@ layout: page
   }
 </style>
 
-<script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
-<script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-standalone-preset.js"></script>
+<script src="https://unpkg.com/swagger-ui-dist@5.17.14/swagger-ui-bundle.js"></script>
+<script src="https://unpkg.com/swagger-ui-dist@5.17.14/swagger-ui-standalone-preset.js"></script>
 
 <script>
 window.onload = function() {
@@ -57,6 +71,12 @@ window.onload = function() {
     filter: true,
     tryItOutEnabled: true,
     requestInterceptor: function(request) {
+      if (request.url.includes('harvest.data.gov')) {
+        request.url = request.url.replace(
+          'https://harvest.data.gov',
+          'https://api.gsa.gov/technology/datagov_harvest/v2'
+        );
+      }
       return request;
     }
   });
@@ -64,19 +84,6 @@ window.onload = function() {
   window.ui = ui;
 };
 </script>
-
-<div class="usa-alert usa-alert--info" style="margin-top: 2rem;">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">API Authentication Required</h4>
-    <p class="usa-alert__text">
-      To use this API, you need an API key from <a href="https://open.gsa.gov/api/datadotgov/">api.data.gov</a>. 
-      All requests must include your API key in the <code>X-Api-Key</code> header.
-    </p>
-    <p class="usa-alert__text">
-      <strong>Base URL:</strong> <code>https://api.gsa.gov/technology/datagov_harvest/v2/</code>
-    </p>
-  </div>
-</div>
 
 ## About This Documentation
 
