@@ -241,6 +241,10 @@ details: >+
         <td>Final</td>
       </tr>
       <tr>
+        <td><a href="/assets/documents/FDS-2021-Action-Plan.pdf">2021 Action Plan</a></td>
+        <td>Final, alternate file. Same plan as the entry above, published under a second filename on the former site.</td>
+      </tr>
+      <tr>
         <td><a href="/assets/documents/draft-2021-federal-data-strategy-action-plan.pdf">2021 Action Plan</a></td>
         <td>Draft</td>
       </tr>
