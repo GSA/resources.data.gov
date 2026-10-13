@@ -27,7 +27,7 @@ details: >+
       </tr>
       <tr>
         <th>Status:</th>
-        <td>Historical reference. Published 2019, carried forward from strategy.data.gov.</td>
+        <td>Published 2019. Carried forward from strategy.data.gov.</td>
       </tr>
       <tr>
         <th>Related:</th>
