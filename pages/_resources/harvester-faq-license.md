@@ -7,7 +7,8 @@ description: How to fix license validation errors caused by free text descriptio
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
+
 
 tags:
   - open data
