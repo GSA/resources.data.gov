@@ -7,7 +7,7 @@ description: How to identify and fix malformed date values in the modified and i
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data
