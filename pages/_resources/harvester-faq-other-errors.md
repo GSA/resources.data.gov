@@ -7,7 +7,7 @@ description: How to identify and respond to less common harvest errors including
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data
