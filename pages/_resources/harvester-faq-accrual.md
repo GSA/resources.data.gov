@@ -1,5 +1,5 @@
 ---
-resource_name: "Harvest Error: accrualPeriodicity"
+resource_name: "Harvest error: accrualPeriodicity"
 
 slug: harvester-faq-accrual
 

@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- Quick Reference
+resource_name: "Harvest error: quick reference"
 
 slug: harvester-faq-quick-reference
 
