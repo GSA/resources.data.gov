@@ -1,6 +1,6 @@
 ---
 category_name: Skills development
-description: Guides, tutorials, and personnel-related resources to build and
+description: Playbooks, training catalogs, and hiring strategies to build and
   develop a data-savvy workforce
 primary_nav_section: Resources
 layout: resource_category
