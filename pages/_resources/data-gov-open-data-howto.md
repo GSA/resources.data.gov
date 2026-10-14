@@ -4,7 +4,7 @@ resource_name: How to get your Open Data on Data.gov
 slug: data-gov-open-data-howto
 description: Learn how Data.gov harvests metadata from agency data sources and how to request a new harvest source or modify an existing one.
 source: data.gov
-category: Skills development
+category: Publishing and harvesting help
 tags:
   - open data
   - workforce development
