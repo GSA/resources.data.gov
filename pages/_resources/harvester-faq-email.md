@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- contactPoint.hasEmail
+resource_name: "Harvest error: contactPoint.hasEmail"
 
 slug: harvester-faq-email
 
