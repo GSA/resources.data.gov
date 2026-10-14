@@ -11,3 +11,13 @@
     max-width: 38rem;
   }
 }
+
+.usa-table-container--scrollable > table {
+  width: 100%;
+  margin: 0;
+}
+
+.usa-table-container--scrollable td,
+.usa-table-container--scrollable th {
+  overflow-wrap: anywhere;
+}
