@@ -1,129 +1,117 @@
 ---
 layout: toc
 ---
+{% comment %}
+  Pages using this layout fall into two shapes:
+  a catalog record, where the description is the content and the details body
+  is a line or two, and a full document, where the details body is the content
+  and the description is a subtitle. body_size tells them apart.
+{% endcomment %}
+{% assign body = page.details | default: "" %}
+{% assign body_size = body | strip | size %}
+{% assign desc = page.description | default: "" | strip %}
+{% assign title_text = page.resource_name | default: "" | strip %}
+
 <div class="padding-bottom-2">
-  <h1 class="margin-top-0 margin-bottom-0">{{ page.resource_name }}</h1>
-  <div>
+  <h1 class="margin-top-0 margin-bottom-1">{{ page.resource_name }}</h1>
 
-    <div class="grid-row display-flex flex-column margin-top-205 padding-bottom-205 border-bottom border-base">
-      <h2 id="overview" class="margin-top-0 text-primary-dark">Overview</h2>
-      <div class="usa-prose">
-        {{ page.description | default: "No description provided." | markdownify }}
-      </div>
-
-    </div>
-
-    <div class="grid-row grid-gap display-flex margin-top-205 no_toc_section">
-
-      {% if page.format == "" %}
-        {% if page.link == "" %}
-          {% assign column_length = "desktop:grid-col-6" %}
-        {% else %}
-          {% assign column_length = "desktop:grid-col-4" %}
-        {% endif %}
+  {% if desc != "" and desc != title_text %}
+    <div class="usa-prose measure-5 margin-bottom-2">
+      {% if body_size > 1000 %}
+        <p class="font-sans-md line-height-sans-4 margin-top-0 margin-bottom-0">
+          {{ desc | strip_html | truncatewords: 45, "…" }}
+        </p>
       {% else %}
-        {% if page.link == "" %}
-          {% assign column_length = "desktop:grid-col-4" %}
-        {% else %}
-          {% assign column_length = "desktop:grid-col-3" %}
-        {% endif %}
-      {% endif %}
-
-      <div class="{{ column_length }}">
-        <h3 class="margin-top-0 margin-bottom-0">Source</h3>
-        <div class="resource-markdown-metadata">
-          {{ page.source | default: "No source provided." | markdownify }}
-        </div>
-      </div>
-
-      <div class="{{ column_length }}">
-        <h3 class="margin-top-0 margin-bottom-0">Category</h3>
-        <div class="margin-top-05 margin-bottom-205">
-          {% for category in page.category %}
-            {% assign category_slug = category | slugify %}
-            <div>
-              <a href="{{ "/categories/" | append: category_slug | relative_url }}">{{ category }}</a>{% if forloop.last != true %},{% endif %}
-            </div>
-            {% endfor %}
-          </div>
-
-        <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
-        <div class="margin-top-05 margin-bottom-205">
-          {% for tag in page.tags %}
-            {% assign slug_tag = tag | slugify %}
-            <div>
-              <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last != true %},{% endif %}
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-
-      {% if page.format != "" %}
-        <div class="{{ column_length }}">
-          <h3 class="margin-top-0 margin-bottom-0">Format</h3>
-          <p class="margin-top-05 margin-bottom-205">
-            {{ page.format }}
-          </p>
-        </div>
-      {% endif %}
-
-      {% if page.link != "" %}
-        <div class="{{ column_length }}">
-          <h3 class="margin-top-0 margin-bottom-0">Links</h3>
-          <div class="resource-markdown-metadata">
-            {{ page.link | markdownify }}
-          </div>
-        </div>
+        {{ desc | markdownify }}
       {% endif %}
     </div>
+  {% endif %}
 
-    {% if page.file %}
-      <div class="grid-row padding-top-205 padding-bottom-205 border-top border-bottom border-base flex-column">
-        <h2 id="files" class="text-primary-dark">Downloads</h2>
-        <div class="flex-row">
-          <p>
-            <a href="../..{{ page.file }}">{{ page.file }}</a> <i class="fa fa-file"></i>
-          </p>
+  <div class="no_toc_section font-sans-2xs border-top border-bottom border-base padding-y-1 margin-bottom-3">
+    <div class="grid-row grid-gap">
+
+      <div class="tablet:grid-col-auto margin-right-3">
+        <span class="text-bold">Source:</span>
+        {{ page.source | default: "Not provided" }}
+      </div>
+
+      {% if page.category and page.category != "" %}
+        <div class="tablet:grid-col-auto margin-right-3">
+          <span class="text-bold">Category:</span>
+          {%- for category in page.category -%}
+            {%- assign category_slug = category | slugify %} <a href="{{ "/categories/" | append: category_slug | relative_url }}">{{ category }}</a>{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
         </div>
-      </div>
-    {% endif %}
+      {% endif %}
 
-    <div class="grid-row display-flex flex-column padding-top-205 padding-bottom-205 border-top border-bottom border-base">
-      <h2 id="details" class="margin-top-0 text-primary-dark">Details</h2>
-      <div>
-        {{ page.details | default: "No details provided." | markdownify }}
-      </div>
+      {% if page.format and page.format != "" %}
+        <div class="tablet:grid-col-auto margin-right-3">
+          <span class="text-bold">Format:</span>
+          {{ page.format }}
+        </div>
+      {% endif %}
+
+      {% if page.tags and page.tags != empty %}
+        <div class="tablet:grid-col-auto margin-right-3">
+          <span class="text-bold">Keywords:</span>
+          {%- for tag in page.tags -%}
+            {%- if tag and tag != "" -%}
+              {%- assign slug_tag = tag | slugify %} <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{%- unless forloop.last -%},{%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      {% endif %}
+
+      {% if page.link and page.link != "" %}
+        <div class="tablet:grid-col-auto margin-right-3 resource-markdown-metadata">
+          <span class="text-bold">Link:</span>
+          {{ page.link | markdownify | remove: "<p>" | remove: "</p>" | strip }}
+        </div>
+      {% endif %}
+
     </div>
-
-    {% if page.examples != "" %}
-      <div class="grid-row padding-top-205 padding-bottom-205 border-bottom border-base">
-        <h2 id="examples" class="margin-top-0 text-primary-dark">Examples</h2>
-        <div>
-          {{ page.examples | markdownify }}
-        </div>
-      </div>
-    {% endif %}
-
-    {% if page.guidance_tags != "" %}
-      <div class="grid-row display-flex flex-column padding-top-205 padding-bottom-205 border-bottom border-base">
-        <h2 id="guidance-references" class="margin-top-0 text-primary-dark">Guidance references</h2>
-        <div>
-          <ul>
-            {% if page.guidance_tags %}
-              {% assign guidance_tags = page.guidance_tags | sort %}
-              {% for tag in guidance_tags %}
-                {% assign slug_tag = tag | slugify %}
-                <li>
-                  <a href="{{ "/guidance_tags/" | append: slug_tag | relative_url }}">
-                    {{ tag }}
-                  </a>
-                </li>
-              {% endfor %}
-            {% endif %}
-          </ul>
-        </div>
-      </div>
-    {% endif %}
-
   </div>
+
+  {% if page.file %}
+    <p class="margin-top-0 margin-bottom-3">
+      <a class="usa-button usa-button--outline" href="../..{{ page.file }}">
+        Download {{ page.file | split: "/" | last }}
+      </a>
+    </p>
+  {% endif %}
+
+  {% if body_size > 0 %}
+    <div>
+      {{ body | markdownify }}
+    </div>
+  {% endif %}
+
+  {% if page.examples and page.examples != "" %}
+    <div class="grid-row padding-top-205 padding-bottom-205 border-top border-base">
+      <h2 id="examples" class="margin-top-0 text-primary-dark">Examples</h2>
+      <div>
+        {{ page.examples | markdownify }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.guidance_tags and page.guidance_tags != "" %}
+    <div class="grid-row display-flex flex-column padding-top-205 padding-bottom-205 border-top border-base">
+      <h2 id="guidance-references" class="margin-top-0 text-primary-dark">Guidance references</h2>
+      <div>
+        <ul>
+          {% assign guidance_tags = page.guidance_tags | sort %}
+          {% for tag in guidance_tags %}
+            {% assign slug_tag = tag | slugify %}
+            <li>
+              <a href="{{ "/guidance_tags/" | append: slug_tag | relative_url }}">
+                {{ tag }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+
 </div>
