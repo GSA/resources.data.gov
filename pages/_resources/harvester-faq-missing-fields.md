@@ -7,7 +7,7 @@ description: How to fix harvest validation errors caused by required metadata fi
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data
