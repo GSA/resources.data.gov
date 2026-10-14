@@ -13,7 +13,6 @@ tags:
   - data visualization
   - federal data strategy
   - data governance
-  - 
 format: ""
 link: "/assets/documents/CDO_Playbook_2021.pdf"
 ---
