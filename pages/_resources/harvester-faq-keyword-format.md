@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- Keyword Format
+resource_name: "Harvest error: keyword format"
 
 slug: harvester-faq-keyword-format
 
