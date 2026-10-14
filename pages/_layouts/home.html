@@ -5,96 +5,55 @@ class: home
 
 <div class="bg-primary text-white" id="main-content">
   <div class="grid-container padding-y-3 tablet:padding-y-6">
-    <div class="measure-1 font-heading-md tablet:font-heading-xl line-height-serif-4 margin-bottom-4 text-semibold">
-      {{page.tagline}}
-    </div>
-    <a href="{{page.button.href | relative_url}}" class="usa-button usa-button--outline usa-button--inverse width-auto">{{page.button.text}}</a>
+    <h1 class="measure-4 font-heading-md tablet:font-heading-xl line-height-serif-4 margin-top-0 margin-bottom-4 text-semibold">
+      {{ page.tagline }}
+    </h1>
+    <a href="{{ page.button.href | relative_url }}" class="usa-button usa-button--outline usa-button--inverse width-auto">{{ page.button.text }}</a>
   </div>
 </div>
 
-<div id="featured-resources" class="border-bottom border-base">
+<div id="featured-resources" class="grid-container padding-top-3 padding-bottom-2 border-bottom border-base">
+  <h2 class="margin-top-0 margin-bottom-2 text-primary-dark">Featured resource</h2>
 
-  <div class="grid-container usa-layout__docs-main">
-    <div class="grid-row grid-gap">
-
-      <div class="desktop:grid-col-3 padding-205">
-        <div>
-          <ul class="usa-sidenav">
-            <h3>Featured Resource</h3>
-          </ul>
-        </div>
-      </div>
-
-      <div class="desktop:grid-col-9 padding-205">
-
-          {% assign resources = site.resources | concat: site.summaries | where: "slug", page.featured %}
-
-          {% for resource in resources %}
-            <div class="border-bottom border-base featured-block">
-              {% include resource_block.html resource=resource %}
-            </div>
-          {% else %}
-            <p>No categories match the category <code>{{ category.category_name }}</code>.</p>
-          {% endfor %}
-
-
-      </div>
+  {% assign featured = site.resources | concat: site.summaries | where: "slug", page.featured %}
+  {% for resource in featured %}
+    <div class="featured-block">
+      {% include resource_block.html resource=resource %}
     </div>
-
-  </div>
+  {% else %}
+    <p>No resource matches the featured slug <code>{{ page.featured }}</code>.</p>
+  {% endfor %}
 </div>
 
-<div class="grid-container margin-bottom-3 tablet:margin-bottom-6 usa-layout__docs-main">
-  <div>
+{% if content != "" %}
+  <div class="grid-container padding-top-3">
     {{ content }}
   </div>
+{% endif %}
 
-
+<div id="browse-by-category" class="grid-container padding-y-4 border-bottom border-base">
+  <h2 class="margin-top-0 margin-bottom-2 text-primary-dark">Browse resources</h2>
   <div class="grid-row grid-gap">
-
-    <div class="desktop:grid-col-3 padding-205">
-      <div class="usa-layout__docs-sidenav margin-top-4 desktop:margin-top-0 padding-top-4 display-none desktop:padding-top-0 desktop:display-block desktop:order-first border-base border-top desktop:border-top-0">
-        <ul class="usa-sidenav">
-          <li class="usa-sidenav__item usa-h2"><a href="#browse-by-category">Browse resources by category</a></li>
-          <li class="usa-sidenav__item usa-h2"><a href="#browse-by-keyword">Browse resources by keyword</a></li>
-        </ul>
+    {% assign front_categories = site.categories | where: "show_on_front_page", true | sort: "category_name" %}
+    {% for category in front_categories %}
+      <div class="tablet:grid-col-6 desktop:grid-col-4 margin-bottom-3">
+        <h3 class="margin-top-0 margin-bottom-05">{{ category.category_name }}</h3>
+        <p class="text-ink line-height-sans-4 margin-top-0 margin-bottom-1">{{ category.description }}</p>
+        <a href="{{ category.url | relative_url }}">Browse {{ category.category_name }} &gt;</a>
       </div>
-    </div>
-
-    <div class="desktop:grid-col-9 padding-205">
-      <h1 id="browse-by-category" class="margin-top-0 padding-top-2 text-primary-dark">Browse resources by category</h1>
-      <!-- rely on site navigation to guide which resources show up -->
-      {% assign resources = site.data.navigation | where: "text", "Resources" | first %}
-      {% for resource in resources.children %}
-        {% assign category = site.categories | where: "category_name", resource.text | first %}
-        {% if category.show_on_front_page %}
-          <div class="display-flex flex-column padding-left-0 padding-205 tablet:margin-bottom-0 border-bottom">
-            <h2 class="margin-top-0 margin-bottom-0">{{ category.category_name }}</h2>
-            <p class="text-ink line-height-sans-4">{{ category.description }}</p>
-            <a href="{{ category.url | relative_url }}">
-              Browse {{ category.category_name }} &gt;
-            </a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
+    {% endfor %}
   </div>
+</div>
 
-  <div class="grid-row grid-gap">
-    <div class="desktop:grid-col-3">
-    </div>
-    <div class="desktop:grid-col-9 padding-top-205">
-      <h1 id="browse-by-keyword" class="padding-bottom-205 text-primary-dark">Browse resources by keyword</h1>
-      <div class="display-flex flex-row flex-wrap">
-        {% for tag in site.keywords %}
-          <div class="mobile-lg:grid-col-6 tablet:grid-col-6 desktop:grid-col-4">
-            <a href="{{ tag.url | relative_url }}" class="border-primary-vivid border-2px radius-lg padding-1 hover:bg-base-lightest hover:shadow-2 margin-05 text-no-underline display-flex flex-justify-center">
-              {{ tag.keyword_name }}
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-
+<div id="browse-by-keyword" class="grid-container padding-y-4 margin-bottom-4">
+  <h2 class="margin-top-0 margin-bottom-2 text-primary-dark">Browse by keyword</h2>
+  <ul class="usa-list usa-list--unstyled display-flex flex-row flex-wrap">
+    {% for tag in site.keywords %}
+      <li class="margin-right-1 margin-bottom-1">
+        <a href="{{ tag.url | relative_url }}" class="border-primary-vivid border-1px radius-md padding-x-105 padding-y-05 hover:bg-base-lightest text-no-underline display-inline-block font-sans-2xs">
+          {{ tag.keyword_name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
