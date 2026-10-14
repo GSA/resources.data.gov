@@ -7,7 +7,7 @@ description: An overview of the most common harvest errors on harvest.data.gov, 
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data
