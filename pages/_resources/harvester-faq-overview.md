@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error FAQ -- Overview
+resource_name: "Harvest error: overview"
 
 slug: harvester-faq-overview
 
