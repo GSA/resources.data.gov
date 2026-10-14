@@ -3,7 +3,7 @@ resource_name: Geospatial datasets in data.gov
 slug: geospatial-supplemental-guidance
 description: Guidance on how to tag, list, display, and create linkages for geospatial data between Data.gov and GeoPlatform.gov.
 source: data.gov
-category: Skills development
+category: Data standards
 tags:
   - data tagging
   - API
