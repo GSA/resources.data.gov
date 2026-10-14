@@ -3,7 +3,7 @@ resource_name: DCAT-US 3 / M-25-05 Crosswalk
 slug: dcat-us-3-crosswalk
 description: DCAT-US 3 / M-25-05 Crosswalk
 source: data.gov
-category: Skills development
+category: Data standards
 tags:
   - open data
   - data sharing
