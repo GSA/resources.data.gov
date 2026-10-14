@@ -1,4 +1,7 @@
 .resource-prose {
+  font-size: 1.125rem;
+  line-height: 1.6;
+
   > p,
   > ul,
   > ol,
@@ -8,7 +11,7 @@
   > h5,
   > h6,
   > blockquote {
-    max-width: 38rem;
+    max-width: 48rem;
   }
 }
 
