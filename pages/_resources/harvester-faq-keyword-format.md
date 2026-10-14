@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- Keyword Format
+resource_name: "Harvest error: keyword format"
 
 slug: harvester-faq-keyword-format
 
@@ -7,8 +7,7 @@ description: How to fix harvest validation errors where the keyword field is pre
 
 source: data.gov
 
-category: Skills development
-
+category: Publishing and harvesting help
 tags:
   - open data
 

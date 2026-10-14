@@ -3,7 +3,7 @@ resource_name: Harvester Help
 slug: harvester-help
 description:  A step-by-step guide to understanding harvest errors, reading the harvest job page, and fixing the most common metadata problems.
 source: data.gov
-category: Skills development
+category: Publishing and harvesting help
 tags:
   - open data
   - workforce development

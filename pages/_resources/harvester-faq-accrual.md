@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- accrualPeriodicity
+resource_name: "Harvest Error: accrualPeriodicity"
 
 slug: harvester-faq-accrual
 
@@ -7,7 +7,7 @@ description: How to fix accrualPeriodicity validation errors caused by plain Eng
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data

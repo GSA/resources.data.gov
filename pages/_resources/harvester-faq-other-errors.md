@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- Other Error Types
+resource_name: "Harvest error: other error types"
 
 slug: harvester-faq-other-errors
 
@@ -7,7 +7,7 @@ description: How to identify and respond to less common harvest errors including
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data

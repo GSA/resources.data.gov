@@ -7,7 +7,7 @@ description: A one-page summary of the most common harvest validation error fixe
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data
