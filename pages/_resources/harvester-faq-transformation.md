@@ -3,7 +3,7 @@ resource_name: "Harvest error: transformation"
 slug: harvester-faq-transformation
 description: How to identify and fix transformation errors, which occur when harvest.data.gov cannot read or convert a metadata record before validation even begins.
 source: data.gov
-category: Skills development
+category: Publishing and harvesting help
 tags:
   - open data
 guidance_tags: ""
