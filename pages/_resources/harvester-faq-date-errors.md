@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- Date Format Errors
+resource_name: "Harvest error: date format"
 
 slug: harvester-faq-date-errors
 
