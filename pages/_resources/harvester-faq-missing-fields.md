@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- Missing Required Fields
+resource_name: "Harvest error: missing required fields"
 
 slug: harvester-faq-missing-fields
 
