@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- Other Error Types
+resource_name: "Harvest error: other error types"
 
 slug: harvester-faq-other-errors
 
