@@ -5,7 +5,7 @@ description: Details on how to get started with using inventory.data.gov, from
   creating a user account to using its features to manage datasets and export
   data.json.
 source: inventory.data.gov
-category: Skills development
+category: Publishing and harvesting help
 tags:
   - data inventory
   - data management
