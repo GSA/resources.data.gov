@@ -1,0 +1,13 @@
+.resource-prose {
+  > p,
+  > ul,
+  > ol,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > blockquote {
+    max-width: 38rem;
+  }
+}
