@@ -25,11 +25,13 @@
         "x64": "^1.0.0"
     },
     "scripts": {
-        "build": "npm run gulp && npm run merge-dcat-us-docs && npm run jekyll",
+        "build": "npm run gulp && npm run merge-dcat-us-docs && npm run fetch-harvester-openapi && npm run jekyll",
+        "build-assets": "npm run gulp && npm run merge-dcat-us-docs && npm run fetch-harvester-openapi",
         "gulp": "gulp",
         "jekyll": "bundle exec jekyll build",
         "merge-dcat-us-docs": "node scripts/merge-dcat-us-docs.js",
-        "pages": "npm i && npm run gulp",
+        "fetch-harvester-openapi": "node scripts/fetch-harvester-openapi.js",
+        "federalist": "npm run build-assets",
         "qa": "bundle exec htmlproofer --http-status-ignore \"301,302,401,403,429\" --check-html _site",
         "setup": "bundle install",
         "start": "concurrently \"npm run watch\" \"npm run merge-dcat-us-docs && bundle exec jekyll serve\"",
