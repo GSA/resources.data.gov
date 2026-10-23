@@ -1,6 +1,5 @@
 node_modules
 pages/assets/uswds
-pages/assets/js
 _site
 .sass-cache
 .jekyll-metadata
