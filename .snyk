@@ -2,4 +2,11 @@
 version: v1.25.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
+SNYK-JS-PICOMATCH-21248802:
+    - '*':
+        reason: >-
+          no published fix yet.
+          https://security.snyk.io/vuln/SNYK-JS-PICOMATCH-21248802
+        expires: 2026-11-18T00:00:00.000Z
+        created: 2026-10-23T00:00:00.000Z
 patch: {}
