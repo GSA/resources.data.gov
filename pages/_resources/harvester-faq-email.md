@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- contactPoint.hasEmail
+resource_name: "Harvest error: contactPoint.hasEmail"
 
 slug: harvester-faq-email
 
@@ -7,7 +7,7 @@ description: How to fix harvest validation errors in the contactPoint.hasEmail f
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data

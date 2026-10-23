@@ -118,27 +118,6 @@ A group of related datasets that are published separately and identified by @id 
                     "mediaType": "text/csv"
                 }
             ]
-        },
-        {
-            "@id": "https://example.gov/datasets/climate-observations-2024",
-            "@type": "Dataset",
-            "title": "Climate Observations 2024",
-            "description": "Latest year of climate observations.",
-            "contactPoint": {
-                "fn": "Climate Support",
-                "hasEmail": "mailto:climate@example.gov"
-            },
-            "publisher": {
-                "name": "National Climate Data Center"
-            },
-            "identifier": "https://example.gov/datasets/series-last",
-            "distribution": [
-                {
-                    "title": "Climate Observations 2024 CSV",
-                    "downloadURL": "https://example.gov/downloads/climate-observations-2024.csv",
-                    "mediaType": "text/csv"
-                }
-            ]
         }
     ],
     "spatial": [
@@ -183,22 +162,22 @@ A group of related datasets that are published separately and identified by @id 
 }
 ```
 
-| Property                                   | Type                                                                                  | Requirement Level | Title/Description                                                                                                                        |
-| ------------------------------------------ | ------------------------------------------------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [description](#description)               | string                                                                                | Mandatory         | Plain-language summary of the dataset series                                                                                             |
-| [title](#title)                           | string                                                                                | Mandatory         | Human-readable title of the dataset series                                                                                               |
-| [@id](#@id)                               | string                                                                                | Recommended       | IRI that uniquely identifies the dataset series. Use @id as the identifier field for DatasetSeries.                                      |
-| [contactPoint](#contactPoint)             | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes                                     | Recommended       | List of contacts people can use to ask questions or send feedback about the dataset series                                               |
-| [modified](#modified)                     | null or object                                                                        | Recommended       | Most recent date when the Dataset Series changed, not the modified date of the newest dataset in the series                              |
-| [publisher](#publisher)                   | null or [Agent](/standards/catalog/dcat-us-3/agents/#agent)                                                    | Recommended       | Organization responsible for maintaining the Dataset Series as a coherent series; this may differ from publishers of individual datasets |
-| [seriesMember](#seriesMember)             | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                 | Recommended       | List of members of the Dataset Series                                                                                                    |
-| [spatial](#spatial)                       | null or array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes           | Recommended       | A geographic region that is covered by the Dataset Series                                                                                |
-| [temporal](#temporal)                     | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes | Recommended       | Time periods covered by the dataset series                                                                                               |
-| [@type](#@type)                           | string                                                                                | Optional          |                                                                                                                                          |
-| [accrualPeriodicity](#accrualPeriodicity) | More than one type                                                                    | Optional          | The frequency at which the Dataset Series is updated. This is the series update frequency, not necessarily each dataset's frequency      |
-| [first](#first)                           | null or [Dataset](/standards/catalog/dcat-us-3/dataset/#root)                                                  | Optional          | The first dataset in an ordered dataset series                                                                                           |
-| [issued](#issued)                         | null or object                                                                        | Optional          | Date when the Dataset Series was formally established or published, not the release date of the oldest dataset in the series             |
-| [last](#last)                             | null or [Dataset](/standards/catalog/dcat-us-3/dataset/#root)                                                  | Optional          | The last dataset in an ordered dataset series                                                                                            |
+| Property                                   | Type                                                                                  | Requirement Level | Title/Description                                                                                                                                                     |
+| ------------------------------------------ | ------------------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [description](#description)               | string                                                                                | Mandatory         | Plain-language summary of the dataset series                                                                                                                          |
+| [title](#title)                           | string                                                                                | Mandatory         | Human-readable title of the dataset series                                                                                                                            |
+| [@id](#@id)                               | string                                                                                | Recommended       | IRI that uniquely identifies the dataset series. Use @id as the identifier field for DatasetSeries.                                                                   |
+| [contactPoint](#contactPoint)             | null or array of [Kind](/standards/catalog/dcat-us-3/agents/#kind) classes                                     | Recommended       | List of contacts people can use to ask questions or send feedback about the dataset series                                                                            |
+| [modified](#modified)                     | null or object                                                                        | Recommended       | Most recent date when the Dataset Series changed, not the modified date of the newest dataset in the series                                                           |
+| [publisher](#publisher)                   | null or [Agent](/standards/catalog/dcat-us-3/agents/#agent)                                                    | Recommended       | Organization responsible for maintaining the Dataset Series as a coherent series; this may differ from publishers of individual datasets                              |
+| [seriesMember](#seriesMember)             | null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes                                 | Recommended       | List of members of the Dataset Series. Each member's identifier must be unique across its Catalog, and members must not also be listed in the Catalog's dataset list. |
+| [spatial](#spatial)                       | null or array of [Location](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#location) classes           | Recommended       | A geographic region that is covered by the Dataset Series                                                                                                             |
+| [temporal](#temporal)                     | null or array of [PeriodOfTime](/standards/catalog/dcat-us-3/temporal-spatial-metrics/#period-of-time) classes | Recommended       | Time periods covered by the dataset series                                                                                                                            |
+| [@type](#@type)                           | string                                                                                | Optional          |                                                                                                                                                                       |
+| [accrualPeriodicity](#accrualPeriodicity) | More than one type                                                                    | Optional          | The frequency at which the Dataset Series is updated. This is the series update frequency, not necessarily each dataset's frequency                                   |
+| [first](#first)                           | null or [Dataset](/standards/catalog/dcat-us-3/dataset/#root)                                                  | Optional          | The first dataset in an ordered dataset series                                                                                                                        |
+| [issued](#issued)                         | null or object                                                                        | Optional          | Date when the Dataset Series was formally established or published, not the release date of the oldest dataset in the series                                          |
+| [last](#last)                             | null or [Dataset](/standards/catalog/dcat-us-3/dataset/#root)                                                  | Optional          | The last dataset in an ordered dataset series                                                                                                                         |
 
 ## <a name="description"></a>`DatasetSeries > description` [#](#description)
 
@@ -304,7 +283,7 @@ Organization responsible for maintaining the Dataset Series as a coherent series
 
 **Requirement:** Recommended
 
-List of members of the Dataset Series
+List of members of the Dataset Series. Each member's identifier must be unique across its Catalog, and members must not also be listed in the Catalog's dataset list.
 
 - **Type**: null or array of [Dataset](/standards/catalog/dcat-us-3/dataset/#root) classes
 

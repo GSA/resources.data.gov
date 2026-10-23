@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error FAQ -- Overview
+resource_name: "Harvest error: overview"
 
 slug: harvester-faq-overview
 
@@ -7,7 +7,7 @@ description: An overview of the most common harvest errors on harvest.data.gov, 
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data

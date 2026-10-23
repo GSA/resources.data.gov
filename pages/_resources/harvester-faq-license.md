@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error - License Field
+resource_name: "Harvest error: license field"
 
 slug: harvester-faq-license
 
@@ -7,7 +7,8 @@ description: How to fix license validation errors caused by free text descriptio
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
+
 
 tags:
   - open data

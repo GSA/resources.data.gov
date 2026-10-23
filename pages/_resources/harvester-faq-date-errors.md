@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- Date Format Errors
+resource_name: "Harvest error: date format"
 
 slug: harvester-faq-date-errors
 
@@ -7,7 +7,7 @@ description: How to identify and fix malformed date values in the modified and i
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data

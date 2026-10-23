@@ -1,5 +1,5 @@
 ---
-resource_name: Harvest Error -- Missing Required Fields
+resource_name: "Harvest error: missing required fields"
 
 slug: harvester-faq-missing-fields
 
@@ -7,7 +7,7 @@ description: How to fix harvest validation errors caused by required metadata fi
 
 source: data.gov
 
-category: Skills development
+category: Publishing and harvesting help
 
 tags:
   - open data

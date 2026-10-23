@@ -1,0 +1,34 @@
+.resource-prose {
+  font-size: 1.125rem;
+  line-height: 1.6;
+
+  > p,
+  > ul,
+  > ol,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > blockquote {
+    max-width: 48rem;
+  }
+}
+
+.usa-table-container--scrollable > table {
+  width: 100%;
+  margin: 0;
+}
+
+.usa-table-container--scrollable td,
+.usa-table-container--scrollable th {
+  overflow-wrap: anywhere;
+}
+
+
+.crosswalk-meta {
+  background-color: #f0f0f0;
+  border-left: 3px solid #1a4480;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}

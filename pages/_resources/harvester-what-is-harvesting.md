@@ -3,7 +3,7 @@ resource_name: What is Harvesting?
 slug: harvester-what-is-harvesting
 description: A plain-language introduction to how harvest.data.gov works, what it does, and why it matters for federal data publishers.
 source: data.gov
-category: Skills development
+category: Publishing and harvesting help
 tags:
   - open data
   - data sharing

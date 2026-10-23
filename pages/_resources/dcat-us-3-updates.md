@@ -3,7 +3,7 @@ resource_name: DCAT-US 3 Schedule, Maintenance, and Release Plan
 slug: dcat-us-3-updates
 description: DCAT-US 3 Schedule, Maintenance, and Release Plan
 source: data.gov
-category: Skills development
+category: Data standards
 tags:
   - open data
   - data sharing

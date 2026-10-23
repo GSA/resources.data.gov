@@ -1,49 +1,69 @@
-# Welcome!
+# Contributing
 
-We're so glad you're thinking about contributing to a [open source project of the U.S. government](https://digital.gov/resources/requirements-for-achieving-efficiency-transparency-and-innovation-through-reusable-and-open-source-software/)!  We encourage you to read the CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), and its [README](README.md).
+Thanks for contributing to Data.gov. This document describes how our team works.
 
-## Policies
+We follow the [GSA Code of Conduct](https://github.com/GSA/open-source-policy/blob/master/CODE_OF_CONDUCT.md) and expect all contributors to do the same.
 
-We want to ensure a welcoming environment for all of our projects. Our staff follow the [TTS Code of Conduct](https://handbook.tts.gsa.gov/about-us/code-of-conduct/) and all contributors should do the same.
+## How we work
 
-## Publishing workflow
+Data.gov is a small team covering a broad portfolio. We work in the open, default to GitHub for all work tracking, and share everything that isn't sensitive.
 
-This describes the workflow for how edits are incorporated and published to the
-site.
+- **Ask questions** -- Data.gov is a complex program with a long history. There are no stupid questions.
+- **Work in the open** -- all work starts as a GitHub issue.
+- **Family and yourself first** -- work is never as important as personal demands or health.
 
-1. All changes are submitted through pull requests. Site owners should use
-   branches while members of the public should use forks.
-1. Each site owner must
-   [approve](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-reviews)
-   a pull request before it can be merged.
-1. Changes are merged to the `main` branch where they are automatically
-   published to [resources.data.gov](https://resources.data.gov)
-   and the publishing is done.
+## Sprint rituals
 
-## DCAT-US 3.0 documentation workflow
+We follow two-week sprints.
 
-This repository includes a git submodule at `_external/dcat-us` for upstream
-DCAT-US 3.0 documentation. The local checkout is configured as sparse checkout
-to only include:
+- Daily standup (daily)
+- Sprint planning (first Thursday of the sprint)
+- Sprint review and retrospective (last Tuesday of the sprint)
 
-- `jsonschema/definitions/`
-- `jsonschema/docs/`
+## How we track work
 
-Builds merge those upstream markdown files into local pages using:
+Work is tracked as issues in [GSA/data.gov](https://github.com/GSA/data.gov/issues) and visualized on our [GitHub Projects board](https://github.com/orgs/GSA/projects/11/views/1).
 
-- `npm run merge-dcat-us-docs`
+Issue templates are available for common work types:
+- Bug reports
+- Feature requests
+- Security and compliance findings
+- Support requests
+- Onboarding and offboarding
 
-To update upstream content:
+For security and compliance related work, see our [Incident Response repo](https://github.com/GSA/datagov-incident-response).
 
-1. Run `git submodule update --remote _external/dcat-us`.
-2. Re-apply sparse checkout patterns:
-   - `git -C _external/dcat-us sparse-checkout init --no-cone`
-   - `printf "/jsonschema/definitions/\n/jsonschema/docs/\n" | git -C _external/dcat-us sparse-checkout set --stdin`
-3. Run `npm run merge-dcat-us-docs`.
-4. Review generated pages under `pages/_data_standards/dcat-us-3/` and commit.
+## Pull requests
 
-## Public domain
+Any developer on the team can review any PR. When reviewing:
 
-This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+- Review for code quality and consistency
+- Call out any breaking changes
+- Verify tests are written and running in CI
+- Verify documentation is updated if applicable
+- A single approval is sufficient to merge
 
-All contributions to this project will be released under the CC0 dedication. By submitting a pull request or issue, you are agreeing to comply with this waiver of copyright interest.
+## Managing deployment
+
+All application deployments are handled via GitHub Actions on push to `main`. Each application repository has its own deployment workflow that deploys sequentially to staging and then production on cloud.gov.
+
+### Application deployment
+
+Changes merged to `main` trigger an automatic deployment pipeline:
+
+1. Deploy to staging -- runs smoke tests to verify the deployment
+2. Deploy to prod -- runs after staging succeeds
+
+If there is an issue with the deploy at any stage, address it via the usual PR workflow before starting a new deploy.
+
+For emergency deployments outside of the normal CI/CD pipeline, see [Break Glass deployment](https://github.com/GSA/data.gov/wiki/Break-Glass-deployment).
+
+### Application repositories
+
+| Application | Repository |
+|-------------|------------|
+| catalog.data.gov | https://github.com/GSA/datagov-catalog |
+| harvest.data.gov | https://github.com/GSA/datagov-harvester |
+| inventory.data.gov | https://github.com/GSA/inventory-app |
+| www.data.gov | https://github.com/GSA/datagov-website |
+| resources.data.gov | https://github.com/GSA/resources.data.gov |

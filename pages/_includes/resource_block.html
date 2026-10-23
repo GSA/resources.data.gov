@@ -3,43 +3,44 @@
   <div class="desktop:grid-col-8">
     {% if resource.collection == "summaries" %}
       <a href="{{ resource.link }}" target="_blank">
-        <h2 id="{{ resource.resource_name | slugify }}" class="margin-top-0">{{ resource.resource_name }}<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
+        <h2 id="{{ resource.resource_name | slugify }}" class="margin-top-0 margin-bottom-1">{{ resource.resource_name }}<i class="fa fa-xs fa-external-link-alt display-flex flex-align-center"></i></h2>
       </a>
     {% else %}
       <a href="{{ resource.url | relative_url }}">
-        <h2 id="{{ resource.resource_name | slugify }}" class="margin-top-0">{{ resource.resource_name }}</h2>
+        <h2 id="{{ resource.resource_name | slugify }}" class="margin-top-0 margin-bottom-1">{{ resource.resource_name }}</h2>
       </a>
     {% endif %}
 
-    <p>
-      {% if resource.description %}
-        {{ resource.description | default: "No description provided" }}
-      {% endif %}
-    </p>
+    {% if resource.description %}
+      <p class="margin-top-0">
+        {{ resource.description | strip_html | truncatewords: 32, "…" }}
+      </p>
+    {% endif %}
   </div>
 
-  <div class="desktop:grid-col-4 no_toc_section">
-    <h3 class="margin-top-0 margin-bottom-0">Source</h3>
-    <p class="margin-top-05 margin-bottom-205">
+  <div class="desktop:grid-col-4 no_toc_section font-sans-2xs">
+
+    <p class="margin-top-0 margin-bottom-1">
+      <span class="text-bold">Source:</span>
       {{ resource.source | default: "No source provided" }}
     </p>
 
-    <h3 class="margin-top-0 margin-bottom-0">Keywords</h3>
-    <p class="margin-top-05 margin-bottom-205">
-      {% for tag in resource.tags %}
-        {% assign slug_tag = tag | slugify %}
-        <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
-      {% else %}
-        This resource has no keywords.
-      {% endfor %}
-    </p>
-
-    {% if resource.format != "" %}
-      <h3 class="margin-top-0 margin-bottom-0">Format</h3>
-      <p class="margin-top-05 margin-bottom-205">
+    {% if resource.format and resource.format != "" %}
+      <p class="margin-top-0 margin-bottom-1">
+        <span class="text-bold">Format:</span>
         {{ resource.format }}
       </p>
     {% endif %}
+
+    {% if resource.tags and resource.tags != empty %}
+      <p class="margin-top-0 margin-bottom-0">
+        <span class="text-bold">Keywords:</span>
+        {%- for tag in resource.tags -%}
+          {%- assign slug_tag = tag | slugify %} <a href="{{ "/keywords/" | append: slug_tag | relative_url }}">{{ tag }}</a>{%- unless forloop.last -%},{%- endunless -%}
+        {%- endfor -%}
+      </p>
+    {% endif %}
+
   </div>
 
 </div>
