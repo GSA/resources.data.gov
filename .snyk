@@ -7,6 +7,7 @@ SNYK-JS-PICOMATCH-21248802:
         reason: >-
           no published fix yet.
           https://security.snyk.io/vuln/SNYK-JS-PICOMATCH-21248802
+          https://github.com/GSA/data.gov/issues/6457
         expires: 2026-11-18T00:00:00.000Z
         created: 2026-10-23T00:00:00.000Z
 patch: {}
