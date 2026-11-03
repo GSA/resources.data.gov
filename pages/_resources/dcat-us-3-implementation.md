@@ -51,7 +51,7 @@ details: |+
 
   This DCAT Implementation Guide is provided as a best-practice resource to assist federal agencies in implementing the DCAT-US v3.0 schema, and applicable requirements of OMB Memorandum M-25-05 related to data inventory metadata and submission to Data.gov. The guide is intended to support consistency, interoperability, and effective implementation across agencies. Other aspects of M-25-05, such as open data and public engagement plans, are not addressed in this Guide.
 
-  This guide was developed by an interagency tiger team consisting of representatives from the Federal Chief Data Officers Council’s Customer Experience Working Group, GSA’s [data.gov](http://data.gov) team, and various agency representatives. It is not a legally binding document and does not create, modify, nor supersede any statute, regulation, OMB policy, agency requirement, or other authoritative directive. Agencies remain responsible for determining how best to meet their legal, policy, operational, security, privacy, records management, and mission requirements. To the extent there is any inconsistency between this guide and applicable law, regulation, or binding policy, the law, regulation, or binding policy controls.
+  This guide was developed by an interagency tiger team consisting of representatives from the Federal Chief Data Officers Council’s Customer Experience Working Group, GSA’s [data.gov](https://data.gov) team, and various agency representatives. It is not a legally binding document and does not create, modify, nor supersede any statute, regulation, OMB policy, agency requirement, or other authoritative directive. Agencies remain responsible for determining how best to meet their legal, policy, operational, security, privacy, records management, and mission requirements. To the extent there is any inconsistency between this guide and applicable law, regulation, or binding policy, the law, regulation, or binding policy controls.
 
   This guide reflects the recommendations that reached sufficient consensus and were feasible to incorporate during the current development cycle. Several additional recommendations proposed by the tiger team were not included in this version due to considerations such as implementation timing, the need for additional policy or technical clarification, or current system and platform constraints. To ensure these recommendations remain available for future consideration, the tiger team consolidated all outstanding recommendations and formally elevated them to OMB and the Federal Chief Data Officers Council (CDOC) for review and potential incorporation into future updates of this guide.
 
@@ -62,7 +62,7 @@ details: |+
   - **Step 1: Identify All Data Assets**: Establish a baseline by locating all agency data assets consistent with the Evidence Act and OMB Memorandum M-25-05.
   - **Step 2: Inventory Data Assets:** Document data assets and associated metadata across agency programs, and organizational components utilizing prioritization approaches based on high-value assets, mission relevance, access level, publication status, stakeholder needs, or system readiness.
   - [**Step 3: Categorize Data Assets:**](#step-3-categorize-data-assets) Classify data assets as non-public, restricted, public, or open government data assets and document access determinations in accordance with the "open by default" policy.
-  - [**Step 4: Catalog Data Assets and Submission to Data.gov:**](#step-4-catalog-data-assets-and-submission-to-datagov) Implement the DCAT-US v3.0 schema to submit required metadata to [Data.gov](http://data.gov). The guide provides implementation guidance for the **Catalog**, **Dataset**, **Distribution**, **DataService**, and **DatasetSeries** classes. It includes a mapping of M-25-05 metadata requirements to DCAT-US v3.0 properties, recommended implementation practices, JSON examples, and guidance for agencies transitioning from DCAT-US v1.1.
+  - [**Step 4: Catalog Data Assets and Submission to Data.gov:**](#step-4-catalog-data-assets-and-submission-to-datagov) Implement the DCAT-US v3.0 schema to submit required metadata to [Data.gov](https://data.gov). The guide provides implementation guidance for the **Catalog**, **Dataset**, **Distribution**, **DataService**, and **DatasetSeries** classes. It includes a mapping of M-25-05 metadata requirements to DCAT-US v3.0 properties, recommended implementation practices, JSON examples, and guidance for agencies transitioning from DCAT-US v1.1.
   - [**Step 5: Update Data Inventory and Catalog**](#step-5-update-data-inventory-and-catalog): Maintain the inventory through an annual review cycle, with new data assets added within 90 days. This step includes management of data asset retirement, delisting, and metadata updates necessitated by schema changes or data asset status modifications.
 
   ### Role of Data Governance {#role-of-data-governance}
@@ -75,28 +75,28 @@ details: |+
 
   ## Background {#background}
 
-  Through the passage of Title II of the Foundations for Evidence-Based Policymaking Act of 2018 (also known as the OPEN Government Data Act), and the release of [OMB M-25-05](https://bidenwhitehouse.archives.gov/wp-content/uploads/2025/01/M-25-05-Phase-2-Implementation-of-the-Foundations-for-Evidence-Based-Policymaking-Act-of-2018-Open-Government-Data-Access-and-Management-Guidance.pdf),[^2] each federal agency has been directed to “develop and maintain a comprehensive data inventory” and submit metadata for agency data assets to the public-facing Federal Data Catalog hosted on [Data.gov](http://data.gov)[^3] by September 30, 2026[^4] (M-25-05 Key Requirements and Actions are located in [Appendix A](#appendix-a-m-25-05-key-requirements-and-actions)). This centralization supports government-wide data visibility and fosters innovation and civic engagement by providing the public and private sectors with access to federal data assets.
+  Through the passage of Title II of the Foundations for Evidence-Based Policymaking Act of 2018 (also known as the OPEN Government Data Act), and the release of [OMB M-25-05](https://bidenwhitehouse.archives.gov/wp-content/uploads/2025/01/M-25-05-Phase-2-Implementation-of-the-Foundations-for-Evidence-Based-Policymaking-Act-of-2018-Open-Government-Data-Access-and-Management-Guidance.pdf),[^2] each federal agency has been directed to “develop and maintain a comprehensive data inventory” and submit metadata for agency data assets to the public-facing Federal Data Catalog hosted on [Data.gov](https://data.gov)[^3] by September 30, 2026[^4] (M-25-05 Key Requirements and Actions are located in [Appendix A](#appendix-a-m-25-05-key-requirements-and-actions)). This centralization supports government-wide data visibility and fosters innovation and civic engagement by providing the public and private sectors with access to federal data assets.
 
   To fulfill these requirements "to the maximum extent practicable,"[^5] agencies are strongly encouraged to establish operationally feasible, phased implementation plans.[^6] While agencies may adopt different [implementation strategies](#step-2-inventory-data-assets) based on mission needs, available resources, data sensitivity, and publication readiness, one of the most important implementation considerations is ensuring that agency metadata conforms to the DCAT-US v3.0 schema.
 
-  As part of M-25-05, OMB requires metadata submitted to [Data.gov](http://data.gov) to conform to the DCAT-US v3.0 schema, which was finalized and released in May 2026.[^7] Although the development of the DCAT-US v3.0 schema largely focused on accommodating public and open government data assets, it can also meet the new M-25-05 requirements to inventory and catalog restricted and non-public data assets.
+  As part of M-25-05, OMB requires metadata submitted to [Data.gov](https://data.gov) to conform to the DCAT-US v3.0 schema, which was finalized and released in May 2026.[^7] Although the development of the DCAT-US v3.0 schema largely focused on accommodating public and open government data assets, it can also meet the new M-25-05 requirements to inventory and catalog restricted and non-public data assets.
 
-  **DCAT-US v3.0 modernizes the federal metadata standard by aligning with** [**World Wide Web Consortium (W3C) Data Catalog Vocabulary (DCAT) - Version 3**](https://www.w3.org/TR/vocab-dcat-3/) **standard, improving support for current data discovery, sharing and reuse needs.** Since 2014, federal agencies have used DCAT-US v1.1[^8], a US-based profile of the W3C DCAT 1 Standard,[^9] to submit their metadata to [Data.gov](http://data.gov). As the DCAT-US v1.1 schema became increasingly insufficient for the evolving agency data ecosystems, OMB mandated use of the DCAT-US v3.0 schema[^10] to ensure datasets are more visible, accessible, and useful across the broader data ecosystem.[^11] DCAT-US v3.0 provides a more structured, interoperable, and flexible framework for describing data assets, which will enable improvements in linkage between related datasets, and enhanced representation of data series and live data services, such as APIs.[^12] A more detailed comparison of DCAT-US v1.1 and DCAT-US v3.0 is available at [resources.data.gov](https://resources.data.gov/resources/dcat-us3/#changes-from-v11).
+  **DCAT-US v3.0 modernizes the federal metadata standard by aligning with** [**World Wide Web Consortium (W3C) Data Catalog Vocabulary (DCAT) - Version 3**](https://www.w3.org/TR/vocab-dcat-3/) **standard, improving support for current data discovery, sharing and reuse needs.** Since 2014, federal agencies have used DCAT-US v1.1[^8], a US-based profile of the W3C DCAT 1 Standard,[^9] to submit their metadata to [Data.gov](https://data.gov). As the DCAT-US v1.1 schema became increasingly insufficient for the evolving agency data ecosystems, OMB mandated use of the DCAT-US v3.0 schema[^10] to ensure datasets are more visible, accessible, and useful across the broader data ecosystem.[^11] DCAT-US v3.0 provides a more structured, interoperable, and flexible framework for describing data assets, which will enable improvements in linkage between related datasets, and enhanced representation of data series and live data services, such as APIs.[^12] A more detailed comparison of DCAT-US v1.1 and DCAT-US v3.0 is available at [resources.data.gov](https://resources.data.gov/resources/dcat-us3/#changes-from-v11).
 
   The DCAT-US v3.0 schema will continue to improve over time as agencies identify implementation challenges and new versions of the schema address them. Agencies should align their inventory with these schema updates as they are released.[^13]
 
   Adopting the DCAT-US v3.0 schema also aligns with the administration’s priorities related to artificial intelligence (AI).[^14] As agencies use the schema to make their metadata more descriptive, comprehensive, and understandable, their data assets will more easily convey context, structure, and lineage needed for AI models to correctly interpret and use the data.[^15]
 
-  Agencies should be aware that successfully submitting a data catalog entry to [Data.gov](http://data.gov) that conforms to the DCAT-US v3.0 schema **does not, by itself,** guarantee compliance with the metadata requirements of M-25-05. While the schema’s openness and flexibility make it possible to meet these requirements, [Data.gov](http://data.gov) verifies only that catalog submissions include the DCAT-US v3.0 mandatory properties and that those properties are correctly formatted according to the schema.[^16] [Step 4](#step-4-catalog-data-assets-and-submission-to-datagov) below provides detailed guidance on how to submit metadata to [Data.gov](http://data.gov) in a manner that is both M-25-05-compliant and DCAT-US v3.0-compliant.
+  Agencies should be aware that successfully submitting a data catalog entry to [Data.gov](https://data.gov) that conforms to the DCAT-US v3.0 schema **does not, by itself,** guarantee compliance with the metadata requirements of M-25-05. While the schema’s openness and flexibility make it possible to meet these requirements, [Data.gov](https://data.gov) verifies only that catalog submissions include the DCAT-US v3.0 mandatory properties and that those properties are correctly formatted according to the schema.[^16] [Step 4](#step-4-catalog-data-assets-and-submission-to-datagov) below provides detailed guidance on how to submit metadata to [Data.gov](https://data.gov) in a manner that is both M-25-05-compliant and DCAT-US v3.0-compliant.
 
   ### Implementation Approach {#implementation-approach}
 
-  This guide outlines a five-step approach agencies can use to meet the core M-25-05 requirements for developing a comprehensive data inventory and submitting their metadata to [Data.gov](http://data.gov) using the DCAT-US v3.0 schema:
+  This guide outlines a five-step approach agencies can use to meet the core M-25-05 requirements for developing a comprehensive data inventory and submitting their metadata to [Data.gov](https://data.gov) using the DCAT-US v3.0 schema:
 
   1. **Identify** all data assets within the agency.
   2. **Inventory** all agency data assets.
   3. **Categorize** all data assets based on M-25-05 definitions.
-  4. **Catalog** all data assets and submit catalog entries with the required metadata to [Data.gov](http://data.gov) using DCAT-US v3.0 schema.
+  4. **Catalog** all data assets and submit catalog entries with the required metadata to [Data.gov](https://data.gov) using DCAT-US v3.0 schema.
   5. **Update** the data inventory and data catalog.
 
   This approach serves as a flexible framework agencies can use to execute their data management activities, particularly those related to M-25-05 and comprehensive data inventorying. Some steps can be executed concurrently, and agencies may adjust the order of steps to better align with their organizational processes. Figure 1 illustrates how this process can be iterative over time as agency data assets change and inventories and catalogs are updated annually, or more frequently as needed.[^17]
@@ -125,7 +125,7 @@ details: |+
   - The process for determining whether the data asset may be categorized as a public data asset or open government data asset under M-25-05.
   - The legal, contractual, privacy, confidentiality, security, or other restrictions that may limit access, sharing, publication, or reuse.
 
-  This continuous governance function provides the operational framework for effective data management throughout the data lifecycle, additionally enabling more streamlined M-25-05 implementation. The following sections outline the sequential five-step process for compliance, detailing the required actions for data asset identification, inventory, categorization, and the DCAT-US v3.0-compliant submission of metadata to [Data.gov](http://data.gov).
+  This continuous governance function provides the operational framework for effective data management throughout the data lifecycle, additionally enabling more streamlined M-25-05 implementation. The following sections outline the sequential five-step process for compliance, detailing the required actions for data asset identification, inventory, categorization, and the DCAT-US v3.0-compliant submission of metadata to [Data.gov](https://data.gov).
 
   ## Step 1: Identify All Data Assets {#step-1-identify-all-data-assets}
 
@@ -154,9 +154,9 @@ details: |+
 
   Although the functional needs of an agency’s data inventory may extend beyond the requirements set forth in M-25-05, the OMB memo states that a truly **comprehensive data inventory should** adhere to these requirements as a minimum baseline:[^31]
 
-  1. Be interoperable with the Federal Data Catalog hosted on [Data.gov](http://data.gov), including being in JSON format on both [Data.gov](http://data.gov) and the agency website at \[agency\].gov/data.json.
+  1. Be interoperable with the Federal Data Catalog hosted on [Data.gov](https://data.gov), including being in JSON format on both [Data.gov](https://data.gov) and the agency website at \[agency\].gov/data.json.
   2. Conform to the DCAT-US v3.0 standards for metadata.[^32]
-  3. Be submitted to [Data.gov](http://data.gov) with applicable restrictions.[^33]
+  3. Be submitted to [Data.gov](https://data.gov) with applicable restrictions.[^33]
   4. Include data from all agency components or operating units, which they should regularly update for accuracy and quality.
 
   Agencies implementing M-25-05 may adopt a phased approach, beginning with critical, high-use, or statutorily mandated data assets and developing long-term plans to inventory remaining assets according to established priorities. The following are examples of prioritization strategies agencies can use for data inventorying:[^34]
@@ -176,7 +176,7 @@ details: |+
   - **Restricted Public**: Data assets available under certain conditions or to designated audiences, such as researchers who obtain authorization through a waiver or application process.
   - **Non-public**: Data assets that cannot be made available to the public due to privacy, security, or other agency-determined constraints.
 
-  OMB M-25-05 expands upon these definitions and provides updated guidance for populating inventory metadata for [Data.gov](http://data.gov). A key enhancement in M-25-05 is the distinction between **public data assets** and **open government data assets** (see Figure 3 below). Open government data assets represent a subset of public data assets that are available in an open format under an open license.
+  OMB M-25-05 expands upon these definitions and provides updated guidance for populating inventory metadata for [Data.gov](https://data.gov). A key enhancement in M-25-05 is the distinction between **public data assets** and **open government data assets** (see Figure 3 below). Open government data assets represent a subset of public data assets that are available in an open format under an open license.
 
   A data asset’s categorization can be captured in the DCAT-US v3.0 schema using a combination of the newly created [accessRights](https://resources.data.gov/standards/catalog/dcat-us-3/dataset/#accessRights) property and the rights property carried over from DCAT-US v1.1. Within accessRights, agencies can mark a data asset as Non-public, Restricted, or Public, and they can indicate whether the asset is an open government data asset using a plain-language explanation within the rights property (see [Step 4](#step-4-catalog-data-assets-and-submission-to-datagov) for more details).
 
@@ -277,11 +277,11 @@ details: |+
 
   ### Next Steps: {#next-steps}
 
-  Once all data assets are inventoried and categorized — as non-public, restricted, or public — agencies should catalog and submit them to [Data.gov](http://data.gov). The DCAT-US v3.0 schema supports this process by allowing for granular access procedures and the use of a “not yet determined” status for assets currently undergoing review. Further guidance on this approach is provided in [Step 4](#step-4-catalog-data-assets-and-submission-to-datagov).
+  Once all data assets are inventoried and categorized — as non-public, restricted, or public — agencies should catalog and submit them to [Data.gov](https://data.gov). The DCAT-US v3.0 schema supports this process by allowing for granular access procedures and the use of a “not yet determined” status for assets currently undergoing review. Further guidance on this approach is provided in [Step 4](#step-4-catalog-data-assets-and-submission-to-datagov).
 
   ## Step 4: Catalog Data Assets and Submission to Data.gov {#step-4-catalog-data-assets-and-submission-to-datagov}
 
-  Agencies frequently utilize internal data catalogs — ranging from commercial platforms to custom-built solutions – to manage metadata tailored to specific mission needs.[^58] Agencies should ensure these catalogs capture all necessary metadata to satisfy both the policy mandates of M-25-05 and the technical specifications of the DCAT-US v3.0 schema so that it will be accepted and validated by [Data.gov](http://data.gov). Step 4 provides guidance on how to meet both of these needs. For agencies handling geospatial data, additional guidance is provided in [Guidance for Geospatial Providers](#guidance-for-geospatial-data-providers).
+  Agencies frequently utilize internal data catalogs — ranging from commercial platforms to custom-built solutions – to manage metadata tailored to specific mission needs.[^58] Agencies should ensure these catalogs capture all necessary metadata to satisfy both the policy mandates of M-25-05 and the technical specifications of the DCAT-US v3.0 schema so that it will be accepted and validated by [Data.gov](https://data.gov). Step 4 provides guidance on how to meet both of these needs. For agencies handling geospatial data, additional guidance is provided in [Guidance for Geospatial Providers](#guidance-for-geospatial-data-providers).
 
   ### DCAT-US v3.0 {#dcat-us-v30}
 
@@ -312,9 +312,9 @@ details: |+
 
   *Note: DCAT-US v3.0 includes a broad set of supporting classes that provide additional context and metadata enrichment. Examples include* [***Agent***](https://resources.data.gov/standards/catalog/dcat-us-3/agents/#class-agent-)*,* [***Location***](https://resources.data.gov/standards/catalog/dcat-us-3/temporal-spatial-metrics/#class-location-)*, or* [***Identifier***](https://resources.data.gov/standards/catalog/dcat-us-3/identifiers-and-relationships/#identifier)*. Agencies should consult the* [*Supporting Classes Quick Reference*](https://resources.data.gov/resources/dcat-us3/#schema-reference-pages) *to understand the purpose and applicability of each supporting class.*
 
-  ***Overall,*** the properties in each class are categorized as **mandatory, recommended, and optional** based on [Data.gov](http://data.gov) technical implementation requirements. Mandatory properties must always be populated, whereas recommended properties are useful and functionally necessary in many contexts. As *agencies populate these properties, they should initially use the* [***@type***](https://resources.data.gov/standards/catalog/dcat-us-3/dataset/#@type) ***property within their JSON*** *to specify the class*.
+  ***Overall,*** the properties in each class are categorized as **mandatory, recommended, and optional** based on [Data.gov](https://data.gov) technical implementation requirements. Mandatory properties must always be populated, whereas recommended properties are useful and functionally necessary in many contexts. As *agencies populate these properties, they should initially use the* [***@type***](https://resources.data.gov/standards/catalog/dcat-us-3/dataset/#@type) ***property within their JSON*** *to specify the class*.
 
-  Agencies should be aware that successfully submitting a data catalog entry to [Data.gov](http://data.gov) that includes all mandatory properties **does not, by itself,** guarantee compliance with the metadata requirements of M-25-05. Table 2 below outlines how agencies can use the DCAT-US v3.0 schema to address each M-25-05 metadata requirement, indicating the classes and properties that can satisfy each requirement.
+  Agencies should be aware that successfully submitting a data catalog entry to [Data.gov](https://data.gov) that includes all mandatory properties **does not, by itself,** guarantee compliance with the metadata requirements of M-25-05. Table 2 below outlines how agencies can use the DCAT-US v3.0 schema to address each M-25-05 metadata requirement, indicating the classes and properties that can satisfy each requirement.
 
   **Table 2: DCAT-US v3.0 Mapped to M-25-05**
 
@@ -411,7 +411,7 @@ details: |+
   </tbody>
   </table>
 
-  The following sections describe each core class in DCAT-US v3.0 (e.g., Catalog, Dataset, Distribution, DataService, and DatasetSeries), and explain how to meet both the [Data.gov](http://data.gov) technical requirements and M-25-05 metadata requirements that are relevant to each class.
+  The following sections describe each core class in DCAT-US v3.0 (e.g., Catalog, Dataset, Distribution, DataService, and DatasetSeries), and explain how to meet both the [Data.gov](https://data.gov) technical requirements and M-25-05 metadata requirements that are relevant to each class.
 
   *Note: Agencies migrating from* [***DCAT-US v1.1***](https://resources.data.gov/resources/dcat-us/) *are encouraged to reference the* [***DCAT-US v1.1 to v3.0 Migration Steps***](https://resources.data.gov/resources/dcat-us-3-migration/) *first before incorporating the additional properties below. All other agencies should use this guide as a baseline supplementing with any metadata needed to meet agency-specific business, governance, and operational requirements.*
 
@@ -703,7 +703,7 @@ details: |+
 
   1. An open government data asset.
   2. Exempt from disclosure under FOIA.
-  3. Publishable (or currently published) on [data.gov](http://data.gov).
+  3. Publishable (or currently published) on [data.gov](https://data.gov).
   4. Subject to access requests (and if so, provide method(s) for requesting access).
 
   Example: “This data asset is an open government data asset. It is not exempt from disclosure under FOIA. It is a public data asset eligible for disclosure in the Federal Data Catalog.”
@@ -1407,7 +1407,7 @@ details: |+
 
   Describes who is authorized to use the data service and any applicable access conditions.
 
-  Example: “This data service is open to any individual with a valid [login.gov](http://login.gov) account.”
+  Example: “This data service is open to any individual with a valid [login.gov](https://login.gov) account.”
 
   </td>
   </tr>
@@ -1543,7 +1543,7 @@ details: |+
 
   The primary purpose of this example is to demonstrate how properties should be populated in each class. Because multiple classes reference the same underlying Datasets, the example may seem repetitive. Agencies are encouraged to reference this example in conjunction with the additional JSON examples available in the [**DCAT-US GitHub**](https://github.com/GSA/dcat-us/tree/main/jsonschema/examples) repository[^93] and [Appendix F](#appendix-f-additional-json-examples).
 
-  When submitting a completed JSON to [harvest.data.gov](http://harvest.data.gov), agencies can also reference the information on [this page](https://resources.data.gov/resources/harvester-what-is-harvesting/) to troubleshoot any errors encountered during the submission process.
+  When submitting a completed JSON to [harvest.data.gov](https://harvest.data.gov), agencies can also reference the information on [this page](https://resources.data.gov/resources/harvester-what-is-harvesting/) to troubleshoot any errors encountered during the submission process.
 
   **Example 8: All Core Classes**
 
@@ -1956,11 +1956,11 @@ details: |+
   Per M-25-05, agencies are required to update their comprehensive data inventories according to the following protocols:
 
   1. **Adding new data assets** to the inventory **within 90 days of their creation**.
-  2. **Updating the inventory annually** to reflect changes to existing data assets and accommodate updates to **DCAT-US standards** or [**Data.gov**](http://data.gov) **functional requirements.**
+  2. **Updating the inventory annually** to reflect changes to existing data assets and accommodate updates to **DCAT-US standards** or [**Data.gov**](https://data.gov) **functional requirements.**
 
-  In addition to these required activities, agencies may need to remove data assets from [Data.gov](http://data.gov) or revise their categorization when an asset’s status changes (e.g., shift from public to restricted or non-public status) to mitigate security and privacy risks.
+  In addition to these required activities, agencies may need to remove data assets from [Data.gov](https://data.gov) or revise their categorization when an asset’s status changes (e.g., shift from public to restricted or non-public status) to mitigate security and privacy risks.
 
-  The following guidance supports agencies in managing the addition, modification, and removal of data assets in [Data.gov](http://data.gov).
+  The following guidance supports agencies in managing the addition, modification, and removal of data assets in [Data.gov](https://data.gov).
 
   ### Adding New Data Assets {#adding-new-data-assets}
 
@@ -1974,9 +1974,9 @@ details: |+
 
   #### Capture Metadata Beyond Required Fields {#capture-metadata-beyond-required-fields}
 
-  Data stewards should avoid limiting metadata to only the fields required by M-25-05 or [Data.gov](http://data.gov). Additional metadata can improve usability, discoverability, and long-term inventory management.
+  Data stewards should avoid limiting metadata to only the fields required by M-25-05 or [Data.gov](https://data.gov). Additional metadata can improve usability, discoverability, and long-term inventory management.
 
-  For example, while the [keyword](https://resources.data.gov/standards/catalog/dcat-us-3/dataset/#keyword) property may not be required, agencies widely use it to associate relevant words and terms with a data asset, making it easier for the public to find on [Data.gov](http://data.gov) searches.
+  For example, while the [keyword](https://resources.data.gov/standards/catalog/dcat-us-3/dataset/#keyword) property may not be required, agencies widely use it to associate relevant words and terms with a data asset, making it easier for the public to find on [Data.gov](https://data.gov) searches.
 
   #### Link Related Datasets {#link-related-datasets}
 
@@ -2003,13 +2003,13 @@ details: |+
 
   ### Data Asset Retirement and Delisting {#data-asset-retirement-and-delisting}
 
-  The retirement or delisting of a data asset from [Data.gov](http://data.gov) is a standard lifecycle management event that may be necessitated by the following reasons:
+  The retirement or delisting of a data asset from [Data.gov](https://data.gov) is a standard lifecycle management event that may be necessitated by the following reasons:
 
   - **Reclassification to Non-Public**: Occurs when a formal review by the agency’s SAOP, FOIA officer, Office of General Counsel, or another appropriate authority determines a data asset no longer meets public disclosure criteria.
   - **Obsolescence or Programmatic Shifts**: Occurs when program retirement, shifting mission priorities, or conclusion of a data collection effort renders the asset obsolete or unnecessary for public use.
   - **Technical Incompatibility**: Occurs when hosting infrastructure or file formats become legacy and can no longer be supported. In such cases, agencies should attempt to publish a simplified, static, or otherwise accessible version of the data asset prior to full retirement.
 
-  To maintain public trust and mitigate reputational risk, agencies should exercise particular care when removing data assets from [Data.gov](http://data.gov). Removing data assets without adequate acknowledgement may give the impression that information is being withheld. Agencies can reduce this risk by providing clear, timely, and transparent explanations for removal decisions.
+  To maintain public trust and mitigate reputational risk, agencies should exercise particular care when removing data assets from [Data.gov](https://data.gov). Removing data assets without adequate acknowledgement may give the impression that information is being withheld. Agencies can reduce this risk by providing clear, timely, and transparent explanations for removal decisions.
 
   Where applicable, agencies should detail a data asset’s legally defined retention period in advance so the public understands when an asset may be retired or delisted. This information may be communicated through an agency website notice, public statement, or within the asset’s metadata, such as in the [description](https://resources.data.gov/standards/catalog/dcat-us-3/dataset/#description) or [rights](https://resources.data.gov/standards/catalog/dcat-us-3/dataset/#rights) properties,[^95] using language such as the following (see highlighted portion below):
 
@@ -2730,9 +2730,9 @@ details: |+
 
   [^2]: There are additional regulations related to data inventorying, however this guide will focus on these two.
 
-  [^3]: [Data.gov](http://data.gov) is the U.S. government's official open data portal where agencies can make their data assets publicly accessible and freely available to anyone.
+  [^3]: [Data.gov](https://data.gov) is the U.S. government's official open data portal where agencies can make their data assets publicly accessible and freely available to anyone.
 
-  [^4]: Title II of the Evidence Act, named the OPEN Government Data Act, specifically requires agencies to make their data “open by default,” maintain a comprehensive data inventory with useful and descriptive metadata, and submit their metadata to the Federal Data Catalog hosted at [Data.gov](http://data.gov). “Open by default” still allows agencies to exempt data from public release for reasons including, but not limited to, FOIA exemptions or national security concerns.
+  [^4]: Title II of the Evidence Act, named the OPEN Government Data Act, specifically requires agencies to make their data “open by default,” maintain a comprehensive data inventory with useful and descriptive metadata, and submit their metadata to the Federal Data Catalog hosted at [Data.gov](https://data.gov). “Open by default” still allows agencies to exempt data from public release for reasons including, but not limited to, FOIA exemptions or national security concerns.
 
   [^5]: [https://www.whitehouse.gov/wp-content/uploads/2025/01/M-25-05](https://bidenwhitehouse.archives.gov/wp-content/uploads/2025/01/M-25-05-Phase-2-Implementation-of-the-Foundations-for-Evidence-Based-Policymaking-Act-of-2018-Open-Government-Data-Access-and-Management-Guidance.pdf)
 
@@ -2750,7 +2750,7 @@ details: |+
 
   [^12]: [https://resources.data.gov/resources/dcat-us3/](https://resources.data.gov/resources/dcat-us3/)
 
-  [^13]: See Section 4.a.ii of M-25-05: Each agency’s comprehensive data inventory must conform to the standard [metadata schema approved by OMB and available on resources.data.gov. If that schema changes, agencies](http://resources.data.gov) must update their inventories appropriately within one year.” [https://www.whitehouse.gov/wp-content/uploads/2025/01/M-25-05](https://bidenwhitehouse.archives.gov/wp-content/uploads/2025/01/M-25-05-Phase-2-Implementation-of-the-Foundations-for-Evidence-Based-Policymaking-Act-of-2018-Open-Government-Data-Access-and-Management-Guidance.pdf)
+  [^13]: See Section 4.a.ii of M-25-05: Each agency’s comprehensive data inventory must conform to the standard [metadata schema approved by OMB and available on resources.data.gov. If that schema changes, agencies](https://resources.data.gov) must update their inventories appropriately within one year.” [https://www.whitehouse.gov/wp-content/uploads/2025/01/M-25-05](https://bidenwhitehouse.archives.gov/wp-content/uploads/2025/01/M-25-05-Phase-2-Implementation-of-the-Foundations-for-Evidence-Based-Policymaking-Act-of-2018-Open-Government-Data-Access-and-Management-Guidance.pdf)
 
   [^14]: “Agencies have been encouraged to “develop public AI strategies that elevate AI adoption and innovation as a priority, while increasing transparency to the American public, civil society, and industry.” [https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21](https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21)
 
@@ -2788,7 +2788,7 @@ details: |+
 
   [^31]: [https://www.whitehouse.gov/wp-content/uploads/2025/01/M-25-05](https://www.whitehouse.gov/wp-content/uploads/2025/01/M-25-05-Phase-2-Implementation-of-the-Foundations-for-Evidence-Based-Policymaking-Act-of-2018-Open-Government-Data-Access-and-Management-Guidance.pdf)
 
-  [^32]: As the schema changes in the future, agencies are expected to keep their inventory conformant to the most up-to-date version of the schema hosted on [Data.gov](http://data.gov).
+  [^32]: As the schema changes in the future, agencies are expected to keep their inventory conformant to the most up-to-date version of the schema hosted on [Data.gov](https://data.gov).
 
   [^33]: For example, FOIA is a common restriction.
 
@@ -2918,7 +2918,7 @@ details: |+
 
   [^96]: The FGDC may provide additional guidance on this process in the future.
 
-  [^97]: The FGDC Metadata Standards Technical Crosswalk was not yet published at the time of this guide’s release. Agencies should refer to [fgdc.gov](http://fgdc.gov) for updates on its publication.
+  [^97]: The FGDC Metadata Standards Technical Crosswalk was not yet published at the time of this guide’s release. Agencies should refer to [fgdc.gov](https://fgdc.gov) for updates on its publication.
 
   [^98]: [https://www.whitehouse.gov/wp-content/uploads/2025/01/M-25-05](https://www.whitehouse.gov/wp-content/uploads/2025/01/M-25-05-Phase-2-Implementation-of-the-Foundations-for-Evidence-Based-Policymaking-Act-of-2018-Open-Government-Data-Access-and-Management-Guidance.pdf)
 

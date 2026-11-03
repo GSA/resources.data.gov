@@ -23,24 +23,24 @@ details: >-
   implementing the [Project Open Data Metadata Schema v1.1](../dcat-us/).
 
 
-  In addition to template and sample files we also produce Project Open Data Metadata schema in JSON schema format. [JSON schema](http://json-schema.org/) describes a JSON data format. It can be used to automatically validate Data.json files and to generate forms for creating JSON.
+  In addition to template and sample files we also produce Project Open Data Metadata schema in JSON schema format. [JSON schema](https://json-schema.org/) describes a JSON data format. It can be used to automatically validate Data.json files and to generate forms for creating JSON.
 
 
   ### Terms and Abbreviations 
 
   * **POD** - [Project Open Data](../dcat-us/)
 
-  * **JSON** - [JavaScript Object Notation](http://json.org/)
+  * **JSON** - [JavaScript Object Notation](https://json.org/)
 
-  * **DCAT** - [Data Catalog Vocabulary](http://www.w3.org/TR/vocab-dcat/)
+  * **DCAT** - [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat/)
 
-  * **CKAN** - [CKAN software](http://ckan.org/)
+  * **CKAN** - [CKAN software](https://ckan.org/)
 
-  * **Schema.org** - [schema.org](http://schema.org/)
+  * **Schema.org** - [schema.org](https://schema.org/)
 
-  * **JSON Schema** - [JSON Schema docs](http://json-schema.org/) and [specification](http://json-schema.org/latest/json-schema-core.html)
+  * **JSON Schema** - [JSON Schema docs](https://json-schema.org/) and [specification](https://json-schema.org/latest/json-schema-core.html)
 
-  * **JSON-LD** - [JSON-LD docs](http://json-ld.org/) and [specification](http://www.w3.org/TR/json-ld/)
+  * **JSON-LD** - [JSON-LD docs](https://json-ld.org/) and [specification](https://www.w3.org/TR/json-ld/)
 
 
   ### JSON Schema Files 
@@ -78,12 +78,12 @@ details: >-
 
   #### Utilizing CKAN
 
-  [CKAN](http://www.CKAN.org) is a popular, open-source data catalog that can be installed independently or run as a service.  Even if an agency hasn't begun a data catalog, adopting CKAN can provide a robust and feature-rich solution with which to begin maintaining an internal or external catalog.  In addition to providing an effective means of organizing the agency's data catalog, CKAN provides several opportunities for generating the needed data.json file. See the [ckanext-datajson](https://github.com/GSA/ckanext-datajson) and [USMetadata](https://github.com/GSA/USMetadata/) extensions.
+  [CKAN](https://www.CKAN.org) is a popular, open-source data catalog that can be installed independently or run as a service.  Even if an agency hasn't begun a data catalog, adopting CKAN can provide a robust and feature-rich solution with which to begin maintaining an internal or external catalog.  In addition to providing an effective means of organizing the agency's data catalog, CKAN provides several opportunities for generating the needed data.json file. See the [ckanext-datajson](https://github.com/GSA/ckanext-datajson) and [USMetadata](https://github.com/GSA/USMetadata/) extensions.
 
 
   #### Using Socrata
 
-  [Socrata](http://www.socrata.com/open-data-portal/) is a popular, open data catalog that is run as a service.  Agencies that have not adapted a data catalog yet, can use Socrata without having to install or setup any servers or software.  In addition to providing rich visualizations and data management features, Socrata **natively supports data.json** so any datasets managed through Socrata will be automatically exposed correctly.  Socrata also supports all the extended metadata fields through it's extensible metadata features.
+  [Socrata](https://www.socrata.com/open-data-portal/) is a popular, open data catalog that is run as a service.  Agencies that have not adapted a data catalog yet, can use Socrata without having to install or setup any servers or software.  In addition to providing rich visualizations and data management features, Socrata **natively supports data.json** so any datasets managed through Socrata will be automatically exposed correctly.  Socrata also supports all the extended metadata fields through it's extensible metadata features.
 
 
   #### Manual translating a data file from another system
@@ -128,7 +128,7 @@ details: >-
 
   Schema URL          | *describedBy*                 | *n/a*        | *n/a*       | *n/a*          |  *n/a*
 
-  Dataset             | *dataset*                     | *n/a*        | *results*       | [dct:dataset](http://www.w3.org/TR/vocab-dcat/#Property:catalog_dataset) | [dataset](http://schema.org/dataset)
+  Dataset             | *dataset*                     | *n/a*        | *results*       | [dct:dataset](https://www.w3.org/TR/vocab-dcat/#Property:catalog_dataset) | [dataset](https://schema.org/dataset)
 
 
 
@@ -147,23 +147,23 @@ details: >-
 
   Metadata Type                  | *@type*                                | *n/a*        | *n/a*       | *n/a*          |  *itemtype attribute* 
 
-  Title                          | *title*                                | *title*                 | *title*           | [dct:title](http://www.w3.org/TR/vocab-dcat/#Property:dataset_title)                  | [name](http://schema.org/name)
+  Title                          | *title*                                | *title*                 | *title*           | [dct:title](https://www.w3.org/TR/vocab-dcat/#Property:dataset_title)                  | [name](https://schema.org/name)
 
-  Description                    | *description*                          | *description*           | *notes*                | [dct:description](http://www.w3.org/TR/vocab-dcat/#Property:dataset_description) | [description](http://schema.org/description)
+  Description                    | *description*                          | *description*           | *notes*                | [dct:description](https://www.w3.org/TR/vocab-dcat/#Property:dataset_description) | [description](https://schema.org/description)
 
-  Tags                           | *keyword*                              | *keyword*              | *tags*                | [dcat:keyword](http://www.w3.org/TR/vocab-dcat/#Property:dataset_keyword)    | [keywords](http://schema.org/keywords)
+  Tags                           | *keyword*                              | *keyword*              | *tags*                | [dcat:keyword](https://www.w3.org/TR/vocab-dcat/#Property:dataset_keyword)    | [keywords](https://schema.org/keywords)
 
-  Last Update                    | *modified*                             | *modified*          | *n/a*                 | [dct:modified](http://www.w3.org/TR/vocab-dcat/#Property:dataset_update_date) | [dateModified](http://schema.org/dateModified)
+  Last Update                    | *modified*                             | *modified*          | *n/a*                 | [dct:modified](https://www.w3.org/TR/vocab-dcat/#Property:dataset_update_date) | [dateModified](https://schema.org/dateModified)
 
-  Publisher                      | *publisher &rarr; name*                | *publisher*           | *organization* &rarr; *title*              | [dct:publisher](http://www.w3.org/TR/vocab-dcat/#Property:dataset_publisher)  &rarr; [foaf:name](http://xmlns.com/foaf/spec/#term_name)| [publisher](http://schema.org/publisher) &rarr; [Organization](http://schema.org/Organization):[name](http://schema.org/name)
+  Publisher                      | *publisher &rarr; name*                | *publisher*           | *organization* &rarr; *title*              | [dct:publisher](https://www.w3.org/TR/vocab-dcat/#Property:dataset_publisher)  &rarr; [foaf:name](https://xmlns.com/foaf/spec/#term_name)| [publisher](https://schema.org/publisher) &rarr; [Organization](https://schema.org/Organization):[name](https://schema.org/name)
 
-  Publisher Parent Organization  | *publisher &rarr; subOrganizationOf*   | *n/a*           | *n/a*              | [dct:publisher](http://www.w3.org/TR/vocab-dcat/#Property:dataset_publisher) &rarr; [org:subOrganizationOf](http://www.w3.org/TR/vocab-org/#org:subOrganizationOf) | [publisher](http://schema.org/publisher) &rarr; [Organization](http://schema.org/Organization):[memberOf](http://schema.org/memberOf)
+  Publisher Parent Organization  | *publisher &rarr; subOrganizationOf*   | *n/a*           | *n/a*              | [dct:publisher](https://www.w3.org/TR/vocab-dcat/#Property:dataset_publisher) &rarr; [org:subOrganizationOf](https://www.w3.org/TR/vocab-org/#org:subOrganizationOf) | [publisher](https://schema.org/publisher) &rarr; [Organization](https://schema.org/Organization):[memberOf](https://schema.org/memberOf)
 
-  Contact Name                   | *contactPoint &rarr; fn*               | *contactPoint*          | *maintainer*                | [dcat:contactPoint](http://www.w3.org/TR/vocab-dcat/#Property:dataset_contactPoint)  &rarr; [vcard:fn](http://www.w3.org/TR/vcard-rdf/#d4e199) | [provider](http://schema.org/publisher) &rarr; [Person](http://schema.org/Person):[name](http://schema.org/name)
+  Contact Name                   | *contactPoint &rarr; fn*               | *contactPoint*          | *maintainer*                | [dcat:contactPoint](https://www.w3.org/TR/vocab-dcat/#Property:dataset_contactPoint)  &rarr; [vcard:fn](https://www.w3.org/TR/vcard-rdf/#d4e199) | [provider](https://schema.org/publisher) &rarr; [Person](https://schema.org/Person):[name](https://schema.org/name)
 
-  Contact Email                  | *contactPoint &rarr; hasEmail*         | *mbox* | *maintainer_email*                | [dcat:contactPoint](http://www.w3.org/TR/vocab-dcat/#Property:dataset_contactPoint) &rarr; [vcard:hasEmail](http://www.w3.org/TR/vcard-rdf/#d4e183) | [provider](http://schema.org/publisher) &rarr; [Person](http://schema.org/Person):[email](http://schema.org/email)
+  Contact Email                  | *contactPoint &rarr; hasEmail*         | *mbox* | *maintainer_email*                | [dcat:contactPoint](https://www.w3.org/TR/vocab-dcat/#Property:dataset_contactPoint) &rarr; [vcard:hasEmail](https://www.w3.org/TR/vcard-rdf/#d4e183) | [provider](https://schema.org/publisher) &rarr; [Person](https://schema.org/Person):[email](https://schema.org/email)
 
-  Unique Identifier              | *identifier*                           | *identifier*     | *id*                | [dct:identifier](http://www.w3.org/TR/vocab-dcat/#Property:dataset_identifier) | *n/a*
+  Unique Identifier              | *identifier*                           | *identifier*     | *id*                | [dct:identifier](https://www.w3.org/TR/vocab-dcat/#Property:dataset_identifier) | *n/a*
 
   Public Access Level            | *accessLevel*                          | *accessLevel*                   | *n/a*             | *n/a* | *n/a*
 
@@ -171,33 +171,33 @@ details: >-
 
   Program Code                   | *programCode*                          | *programCode*                   | *n/a*             | *n/a* | *n/a*
 
-  Distribution                   | *distribution*                         | *distribution*  | *resources*              | [dcat:distribution](http://www.w3.org/TR/vocab-dcat/#Property:dataset_distribution)| [distribution](http://schema.org/distribution)
+  Distribution                   | *distribution*                         | *distribution*  | *resources*              | [dcat:distribution](https://www.w3.org/TR/vocab-dcat/#Property:dataset_distribution)| [distribution](https://schema.org/distribution)
 
-  License                        | *license*                              | *license* | *license_title*        | [dct:license](http://www.w3.org/TR/vocab-dcat/#Property:distribution_license) | [license](http://schema.org/license)
+  License                        | *license*                              | *license* | *license_title*        | [dct:license](https://www.w3.org/TR/vocab-dcat/#Property:distribution_license) | [license](https://schema.org/license)
 
-  Rights                         | *rights*                               | *accessLevelComment*                   | *n/a*             | [dct:rights](http://www.w3.org/TR/vocab-dcat/#Property:distribution_rights)| *n/a*
+  Rights                         | *rights*                               | *accessLevelComment*                   | *n/a*             | [dct:rights](https://www.w3.org/TR/vocab-dcat/#Property:distribution_rights)| *n/a*
 
-  Endpoint                       | **Removed**                            | *webService*          | *resources*  &rarr; *url*             | [dcat:accessURL](http://www.w3.org/TR/vocab-dcat/#Property:distribution_accessurl) | *n/a*
+  Endpoint                       | **Removed**                            | *webService*          | *resources*  &rarr; *url*             | [dcat:accessURL](https://www.w3.org/TR/vocab-dcat/#Property:distribution_accessurl) | *n/a*
 
-  Spatial                        | *spatial*                              | *spatial*      | *n/a*                | [dct:spatial](http://www.w3.org/TR/vocab-dcat/#Property:dataset_spatial) | [spatial](http://schema.org/spatial)
+  Spatial                        | *spatial*                              | *spatial*      | *n/a*                | [dct:spatial](https://www.w3.org/TR/vocab-dcat/#Property:dataset_spatial) | [spatial](https://schema.org/spatial)
 
-  Temporal                       | *temporal*                             | *temporal*    | *n/a*                | [dct:temporal](http://www.w3.org/TR/vocab-dcat/#Property:dataset_temporal) | [temporal](http://schema.org/temporal)
+  Temporal                       | *temporal*                             | *temporal*    | *n/a*                | [dct:temporal](https://www.w3.org/TR/vocab-dcat/#Property:dataset_temporal) | [temporal](https://schema.org/temporal)
 
-  Release Date                   | *issued*                               | *issued*         | *n/a*                | [dct:issued](http://www.w3.org/TR/vocab-dcat/#Property:dataset_release_date) | [datePublished](http://schema.org/datePublished)
+  Release Date                   | *issued*                               | *issued*         | *n/a*                | [dct:issued](https://www.w3.org/TR/vocab-dcat/#Property:dataset_release_date) | [datePublished](https://schema.org/datePublished)
 
-  Frequency                      | *accrualPeriodicity*                   | *accrualPeriodicity*             | *n/a*                | [dct:accrualPeriodicity](http://www.w3.org/TR/vocab-dcat/#Property:dataset_frequency)    | *n/a*
+  Frequency                      | *accrualPeriodicity*                   | *accrualPeriodicity*             | *n/a*                | [dct:accrualPeriodicity](https://www.w3.org/TR/vocab-dcat/#Property:dataset_frequency)    | *n/a*
 
-  Language                       | *language*                             | *language*                   | *n/a*                | [dct:language](http://www.w3.org/TR/vocab-dcat/#Property:dataset_language)     | [inLanguage](http://schema.org/inLanguage)
+  Language                       | *language*                             | *language*                   | *n/a*                | [dct:language](https://www.w3.org/TR/vocab-dcat/#Property:dataset_language)     | [inLanguage](https://schema.org/inLanguage)
 
   Data Quality                   | *dataQuality*                          | *dataQuality*          | *n/a*                | *n/a*  | *n/a*
 
-  Category                       | *theme*                                | *theme*          | *groups*                | [dcat:theme](http://www.w3.org/TR/vocab-dcat/#Property:dataset_theme)   | [about](http://schema.org/about)
+  Category                       | *theme*                                | *theme*          | *groups*                | [dcat:theme](https://www.w3.org/TR/vocab-dcat/#Property:dataset_theme)   | [about](https://schema.org/about)
 
-  Related Documents              | *references*                           | *references* | *n/a*                | [dct:references](http://dublincore.org/documents/dcmi-terms/#terms-references) | *n/a*
+  Related Documents              | *references*                           | *references* | *n/a*                | [dct:references](https://dublincore.org/documents/dcmi-terms/#terms-references) | *n/a*
 
-  Homepage URL                   | *landingPage*                          | *landingPage*                  | *n/a*                | [dcat:landingPage](http://www.w3.org/ns/dcat#Property:dataset_landingpage)  | [url](http://schema.org/url)
+  Homepage URL                   | *landingPage*                          | *landingPage*                  | *n/a*                | [dcat:landingPage](https://www.w3.org/ns/dcat#Property:dataset_landingpage)  | [url](https://schema.org/url)
 
-  Collection                     | *isPartOf*                             | *n/a*             |                                   | *n/a*   | [isPartOf](http://schema.org/isPartOf)
+  Collection                     | *isPartOf*                             | *n/a*             |                                   | *n/a*   | [isPartOf](https://schema.org/isPartOf)
 
   System of Records              | *systemOfRecords*                      | *systemOfRecords*                  | *n/a*                | *n/a*  | *n/a*
 
@@ -224,17 +224,17 @@ details: >-
 
   Metadata Type           | *@type*           | *n/a*             | *n/a*                             | *n/a*   |  *itemtype attribute* 
 
-  Download URL            | *downloadURL*     | *accessURL*       | *resources*  &rarr; *url*         | [dcat:downloadURL](http://www.w3.org/TR/vocab-dcat/#Property:distribution_downloadurl) | [contentUrl](http://schema.org/contentUrl)
+  Download URL            | *downloadURL*     | *accessURL*       | *resources*  &rarr; *url*         | [dcat:downloadURL](https://www.w3.org/TR/vocab-dcat/#Property:distribution_downloadurl) | [contentUrl](https://schema.org/contentUrl)
 
-  Access URL              | *accessURL*       | *n/a*             | *resources*  &rarr; *url*         | [dcat:accessURL](http://www.w3.org/TR/vocab-dcat/#Property:distribution_accessurl) | [contentUrl](http://schema.org/contentUrl)
+  Access URL              | *accessURL*       | *n/a*             | *resources*  &rarr; *url*         | [dcat:accessURL](https://www.w3.org/TR/vocab-dcat/#Property:distribution_accessurl) | [contentUrl](https://schema.org/contentUrl)
 
-  Media Type              | *mediaType*       | *format*          | *resources*  &rarr; *mimetype*    | [dcat:mediaType](http://www.w3.org/TR/vocab-dcat/#Property:distribution_media_type)       | *n/a*
+  Media Type              | *mediaType*       | *format*          | *resources*  &rarr; *mimetype*    | [dcat:mediaType](https://www.w3.org/TR/vocab-dcat/#Property:distribution_media_type)       | *n/a*
 
-  Format                  | *format*          | *n/a*             | *resources*  &rarr; *format*      | [dct:format](http://www.w3.org/TR/vocab-dcat/#Property:distribution_format)       | [encodingFormat](http://schema.org/encodingFormat)
+  Format                  | *format*          | *n/a*             | *resources*  &rarr; *format*      | [dct:format](https://www.w3.org/TR/vocab-dcat/#Property:distribution_format)       | [encodingFormat](https://schema.org/encodingFormat)
 
-  Title                   | *title*           | *n/a*             | *resources*  &rarr; *name*        | [dct:title](http://www.w3.org/TR/vocab-dcat/#Property:distribution_title)         | [name](http://schema.org/name)
+  Title                   | *title*           | *n/a*             | *resources*  &rarr; *name*        | [dct:title](https://www.w3.org/TR/vocab-dcat/#Property:distribution_title)         | [name](https://schema.org/name)
 
-  Description             | *description*     | *n/a*             | *resources*  &rarr; *description* | [dct:description](http://www.w3.org/TR/vocab-dcat/#Property:distribution_description)   | [description](http://schema.org/description)
+  Description             | *description*     | *n/a*             | *resources*  &rarr; *description* | [dct:description](https://www.w3.org/TR/vocab-dcat/#Property:distribution_description)   | [description](https://schema.org/description)
 
   Data Dictionary         | *describedBy*     | *n/a*             |                                   | *n/a*   | *n/a*  
 
@@ -247,16 +247,16 @@ details: >-
 
   -----------------------------
 
-  [FGDC](http://www.fgdc.gov/) member agencies developed these crosswalks as a standardized resource for use by agencies in creating their Project Open Data metadata schema v1.1 (data.json) records. The crosswalks are intended as a reference model for the development of strategies and applications that support the conversion of existing geospatial metadata to the Project Open Data metadata schema v1.1.
+  [FGDC](https://www.fgdc.gov/) member agencies developed these crosswalks as a standardized resource for use by agencies in creating their Project Open Data metadata schema v1.1 (data.json) records. The crosswalks are intended as a reference model for the development of strategies and applications that support the conversion of existing geospatial metadata to the Project Open Data metadata schema v1.1.
 
 
   The crosswalks will be periodically updated to address user comments and revisions to the source metadata standards. Users are asked to add their own information about strategies, applications, and other products generated using these crosswalks. Problems or suggestions can be submitted by [creating a new issue](https://github.com/project-open-data/project-open-data.github.io/issues/new) or improvements can be proposed directly following the [guidelines for contributing](https://github.com/project-open-data/project-open-data.github.io/blob/master/CONTRIBUTING.md).
 
 
-  Since the Project Open Data Metadata Schema v1.1 is also a JSON and JSON-LD serialization of [DCAT](http://www.w3.org/TR/vocab-dcat/). Others working with transforms between ISO 19115 and DCAT may also be interested in this crosswalk. 
+  Since the Project Open Data Metadata Schema v1.1 is also a JSON and JSON-LD serialization of [DCAT](https://www.w3.org/TR/vocab-dcat/). Others working with transforms between ISO 19115 and DCAT may also be interested in this crosswalk. 
 
 
-  #### [CSDGM](http://www.fgdc.gov/metadata/csdgm/) to Project Open Data Metadata Schema v1.1 (POD v1.1) Crosswalk
+  #### [CSDGM](https://www.fgdc.gov/metadata/csdgm/) to Project Open Data Metadata Schema v1.1 (POD v1.1) Crosswalk
 
   -------------------------------------------
 
