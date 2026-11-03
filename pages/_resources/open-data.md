@@ -35,7 +35,7 @@ details: >
   ### Empower employees to make better-informed, data-driven decisions
 
 
-  The new requirement to publish details about each dataset owned by your agency in a specific format will power a central search engine at [Data.gov](http://www.data.gov) that every single Federal employee (and member of the public) can use to easily locate data held, owned, and/or created by the Federal Government. Making it easier to find existing data is key to being able to then incorporate that data into your agency's everyday decision-making processes.
+  The new requirement to publish details about each dataset owned by your agency in a specific format will power a central search engine at [Data.gov](https://www.data.gov) that every single Federal employee (and member of the public) can use to easily locate data held, owned, and/or created by the Federal Government. Making it easier to find existing data is key to being able to then incorporate that data into your agency's everyday decision-making processes.
 
 
   ### Positive attention from the public, media, and other agencies
@@ -47,7 +47,7 @@ details: >
   ### Generate revenue and create new jobs in the private sector
 
 
-  McKinsey estimates that open health data alone adds over $300 billion to the economy each year. Entrepreneurs and non-profits integrate existing open government datasets in ways ranging from web apps that connect you with the nearest hospital in case of an emergency, with [information](https://findahealthcenter.hrsa.gov/) from Health and Human Services, to matching prospective college students with the most appropriate schools, based on [IPEDS](http://nces.ed.gov/ipeds/) data maintained by the Department of Education. Making more of your agency data publicly available in standards-compliant, machine-readable formats makes it easier for private sector companies and entrepreneurs to create new innovations fueled by your agency's data.
+  McKinsey estimates that open health data alone adds over $300 billion to the economy each year. Entrepreneurs and non-profits integrate existing open government datasets in ways ranging from web apps that connect you with the nearest hospital in case of an emergency, with [information](https://findahealthcenter.hrsa.gov/) from Health and Human Services, to matching prospective college students with the most appropriate schools, based on [IPEDS](https://nces.ed.gov/ipeds/) data maintained by the Department of Education. Making more of your agency data publicly available in standards-compliant, machine-readable formats makes it easier for private sector companies and entrepreneurs to create new innovations fueled by your agency's data.
 examples: ""
 link: ""
 layout: resource
