@@ -19,6 +19,17 @@ curl -H 'X-Api-Key: DEMO_KEY' 'https://api.gsa.gov/technology/datagov/v4/search?
 
 Replace `DEMO_KEY` with your personal key for production use or any automated querying. See [API Key and Rate Limit Errors](#api-key-and-rate-limit-errors) below.
 
+<div class="usa-alert usa-alert--info margin-bottom-3">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">📘 Two Ways to Explore This API</h4>
+    <p class="usa-alert__text">
+      This page provides a <strong>curated getting-started guide</strong> with common use cases and examples. 
+      For comprehensive endpoint documentation with live testing, see the 
+      <a href="/catalog-api-interactive/"><strong>Interactive API Documentation</strong></a>.
+    </p>
+  </div>
+</div>
+
 ---
 
 ## Table of Contents
@@ -187,6 +198,8 @@ GET https://api.gsa.gov/technology/datagov/v4/search?q=climate&org_slug=nasa&per
 ```
 
 Continue repeating this step until the response no longer includes an `after` field, which means you have reached the last page. For more details see [Pagination](#pagination) below.
+
+**Want to explore all endpoints interactively?** Try the [Interactive API Documentation](/catalog-api-interactive/) with live request testing and comprehensive schema details.
 
 
 ---
@@ -1228,3 +1241,18 @@ Rate limit error responses use this JSON format:
 ```
 
 For more information see the [api.data.gov developer manual](https://api.data.gov/docs/developer-manual/).
+
+---
+
+## More Documentation
+
+For comprehensive, auto-generated API documentation with live testing capabilities:
+
+**[→ View Interactive API Documentation](/catalog-api-interactive/)**
+
+The interactive documentation is automatically synchronized with the latest catalog application code and includes:
+- All available endpoints with detailed descriptions
+- Request and response schemas
+- Live "Try it out" functionality
+- Parameter validation and examples
+- Auto-generated from OpenAPI 3.0 specification
