@@ -27,7 +27,7 @@ function jsTask() {
         .pipe(source(paths.js.dest))
         .pipe(buffer())
         .pipe(gulpif(isProd, uglify()))
-        .pipe(dest("_site"));
+        .pipe(dest("pages"));
 };
 
 const defaultTask = parallel(
@@ -60,10 +60,10 @@ uswds.settings.version = 3;
 * Path settings
 * Set as many as you need
 */
-uswds.paths.dist.css = './_site/assets/uswds/css';
-uswds.paths.dist.js = './_site/assets/uswds/js';
-uswds.paths.dist.img = './_site/assets/uswds/img';
-uswds.paths.dist.fonts = './_site/assets/uswds/fonts';
+uswds.paths.dist.css = './pages/assets/uswds/css';
+uswds.paths.dist.js = './pages/assets/uswds/js';
+uswds.paths.dist.img = './pages/assets/uswds/img';
+uswds.paths.dist.fonts = './pages/assets/uswds/fonts';
 uswds.paths.dist.theme = './pages/_scss';
 
 /**

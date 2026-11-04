@@ -34,6 +34,7 @@ source: pages
 keep_files:
   - assets/js
   - assets/uswds
+  - assets/api
 
 exclude:
   - CONTRIBUTING.md
