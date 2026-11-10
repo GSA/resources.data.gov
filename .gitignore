@@ -1,5 +1,8 @@
 node_modules
 pages/assets/uswds
+pages/assets/api
+pages/assets/js
+assets/
 _site
 .sass-cache
 .jekyll-metadata
