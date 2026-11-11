@@ -75,12 +75,12 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     mini_portile2 (2.8.9)
-    nokogiri (1.19.4)
+    nokogiri (1.19.5)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.19.4-x86_64-darwin)
+    nokogiri (1.19.5-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.4-x86_64-linux-gnu)
+    nokogiri (1.19.5-x86_64-linux-gnu)
       racc (~> 1.4)
     parallel (1.22.1)
     pathutil (0.16.2)
@@ -123,7 +123,7 @@ DEPENDENCIES
   jekyll-sitemap (>= 1.4.0)
   jekyll-toc (~> 0.18, >= 0.18.0)
   liquid (~> 4.0, >= 4.0.4)
-  nokogiri (~> 1.19, >= 1.19.4)
+  nokogiri (~> 1.19)
   tzinfo-data
 
 BUNDLED WITH
