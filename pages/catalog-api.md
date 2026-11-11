@@ -25,7 +25,7 @@ Replace `DEMO_KEY` with your personal key for production use or any automated qu
     <p class="usa-alert__text">
       This page provides a <strong>curated getting-started guide</strong> with common use cases and examples. 
       For comprehensive endpoint documentation with live testing, see the 
-      <a href="/catalog-api-interactive/"><strong>Interactive API Documentation</strong></a>.
+      <a href="https://catalog.data.gov/openapi/docs"><strong>Interactive API Documentation</strong></a>.
     </p>
   </div>
 </div>
@@ -199,7 +199,7 @@ GET https://api.gsa.gov/technology/datagov/v4/search?q=climate&org_slug=nasa&per
 
 Continue repeating this step until the response no longer includes an `after` field, which means you have reached the last page. For more details see [Pagination](#pagination) below.
 
-**Want to explore all endpoints interactively?** Try the [Interactive API Documentation](/catalog-api-interactive/) with live request testing and comprehensive schema details.
+**Want to explore all endpoints interactively?** Try the [Interactive API Documentation](https://catalog.data.gov/openapi/docs) with live request testing and comprehensive schema details.
 
 
 ---
@@ -1248,7 +1248,7 @@ For more information see the [api.data.gov developer manual](https://api.data.go
 
 For comprehensive, auto-generated API documentation with live testing capabilities:
 
-**[→ View Interactive API Documentation](/catalog-api-interactive/)**
+**[→ View Interactive API Documentation](https://catalog.data.gov/openapi/docs)**
 
 The interactive documentation is automatically synchronized with the latest catalog application code and includes:
 - All available endpoints with detailed descriptions

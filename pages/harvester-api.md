@@ -11,7 +11,7 @@ The Harvester API provides programmatic access to Data.gov's harvest infrastruct
     <p class="usa-alert__text">
       This page provides a <strong>curated getting-started guide</strong> with common use cases and examples. 
       For comprehensive endpoint documentation with live testing, see the 
-      <a href="/harvester-api-interactive/"><strong>Interactive API Documentation</strong></a>.
+      <a href="https://harvest.data.gov/openapi/docs"><strong>Interactive API Documentation</strong></a>.
     </p>
   </div>
 </div>
@@ -37,7 +37,7 @@ Get a list of all registered harvest sources:
 curl -H 'X-Api-Key: DEMO_KEY' https://api.gsa.gov/technology/datagov_harvest/v2/harvest_sources/
 ```
 
-**Want to explore all endpoints interactively?** Try the [Interactive API Documentation](/harvester-api-interactive/) with live request testing.
+**Want to explore all endpoints interactively?** Try the [Interactive API Documentation](https://harvest.data.gov/openapi/docs) with live request testing.
 
 ---
 
@@ -501,7 +501,7 @@ If you encounter problems with the Harvester API or have questions about your ag
 
 For comprehensive, auto-generated API documentation with live testing capabilities:
 
-**[→ View Interactive API Documentation](/harvester-api-interactive/)**
+**[→ View Interactive API Documentation](https://harvest.data.gov/openapi/docs)**
 
 The interactive documentation is automatically synchronized with the latest harvester application code and includes:
 - All available endpoints with detailed descriptions
