@@ -9,7 +9,7 @@
     - text: Publishing and harvesting help
       url: /categories/publishing-and-harvesting-help
     - text: Harvester Help
-      url: /resources/harvester-what-is-harvesting/
+      url: /resources/harvester-help/
 - text: Data Standards, Schemas
   children:
     - text: DCAT-US 3.0 Overview
