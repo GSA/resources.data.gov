@@ -5,12 +5,8 @@ layout: resource
 slug: ckan
 publish: true
 resource_name: CKAN
-description: Comprehensive Knowledge Archive Network (CKAN) is a powerful open
-  source data management system that makes data accessible by providing tools to
-  streamline publishing, sharing, finding, and using data. The Data.gov catalog
-  is based on CKAN, a technology that powers many government open data sites.
-  Inventory.data.gov is a separate instance of CKAN hosted at GSA on the same
-  infrastructure as the Data.gov catalog.
+description: Open source data management system for publishing, sharing and finding data, used by many government open data sites.
+
 source: ckan.org
 category: Data tools
 tags:
