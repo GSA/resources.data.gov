@@ -5,7 +5,7 @@ layout: resource
 slug: 2025-cdo-council-survey-results
 publish: true
 resource_name: 2025 CDO Council Survey Results
-description: 2025 CDO Council Survey Results
+description: Results of the CDO Council's 2025 survey of federal Chief Data Officers from 29 agencies, covering their backgrounds, responsibilities, staffing and support, and readiness for AI.
 source: CDO Council
 category: Data management & governance
 tags:

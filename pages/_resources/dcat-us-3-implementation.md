@@ -1,8 +1,8 @@
 ---
-resource_name: Implementation Guide
+resource_name: DCAT-US v3.0 Implementation Guide
 slug: dcat-us-3-implementation
 description: >-
-  Implementation Guide
+    Step-by-step guidance for building your agency's data inventory and describing it with DCAT-US 3.0 metadata to meet OMB M-25-05. Includes field mappings, JSON examples, and v1.1 transition tips.
 source: data.gov
 category: Data standards
 tags:
