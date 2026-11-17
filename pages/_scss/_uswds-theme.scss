@@ -89,6 +89,10 @@ in the form $setting: value,
     $theme-lead-line-height: 4,
     $theme-lead-measure: 5,
     $theme-grid-container-max-width: "desktop-lg",
+    $theme-banner-max-width: "desktop-lg",
+    $theme-header-max-width: "desktop-lg",
+    $theme-footer-max-width: "desktop-lg",
+    $theme-identifier-max-width: "desktop-lg",
     $theme-utility-breakpoints: ('card': false, // 160px
         'card-lg': false, // 240px
         'mobile': false, // 320px
