@@ -1,7 +1,7 @@
 ---
 resource_name: DCAT-US 3 Schedule, Maintenance, and Release Plan
 slug: dcat-us-3-updates
-description: Current status and upcoming schedule for DCAT-US 3.0: which tools and resources are live now, what's coming next, and how schema updates are planned and released.
+description: Current status and upcoming schedule for DCAT-US 3.0 - which tools and resources are live now, what's coming next, and how schema updates are planned and released.
 source: data.gov
 category: Data standards
 tags:
