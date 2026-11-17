@@ -5,10 +5,8 @@ layout: resource
 slug: schema-dot-og
 publish: true
 resource_name: "Schema.org "
-description: Through an open community process, schema.org creates, maintains,
-  and promotes schemas for structured data on the Internet. The schema.org
-  vocabulary is used along with the Microdata, RDFa, or JSON-LD formats to add
-  information to Web content.
+description: Community-maintained schemas for adding structured data to web pages, used with the Microdata, RDFa or JSON-LD formats.
+
 source: schema.org
 category: Data standards
 tags:
