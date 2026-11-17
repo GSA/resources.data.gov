@@ -2,9 +2,7 @@
 resource_name: Improving Discoverability, Usability and Governance of Priority Agency Data
 slug: dcat-us-priorities
 description: >-
-  To improve the discoverability, usability, and governance of these priority
-  agency data assets agencies shall apply the documenting techniques illustrated
-  below.
+  Metadata priorities for federal agency data assets- the keyword and field requirements tied to federal policy directives, and how they map to DCAT-US v3.0 fields.
 source: data.gov
 category: Data standards
 tags:
