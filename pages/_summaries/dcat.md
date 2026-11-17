@@ -5,9 +5,8 @@ layout: resource
 slug: dcat
 publish: true
 resource_name: Data Catalog Vocabulary (DCAT)
-description: DCAT is an RDF vocabulary designed to facilitate interoperability
-  between data catalogs published on the Web. DCAT-US (used in the Project Open
-  Data Metadata Schema) is based on this W3C data schema.
+description: The W3C vocabulary for describing data catalogs on the web so they can work together. DCAT-US, the federal metadata standard, is based on it.
+
 source: W3C
 category: Data standards
 tags:
