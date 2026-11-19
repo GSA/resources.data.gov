@@ -8648,7 +8648,7 @@
       "@type": "dcat:Dataset",
       "title": "GSA Enterprise Data Inventory (EDI)",
       "description": "GSA Enterprise Data Inventory (EDI)",
-      "modified": "2026-11-06T15:51:45.997Z",
+      "modified": "2026-11-17T14:29:54.302Z",
       "accessLevel": "public",
       "identifier": "GSA-2015-11-13-01",
       "dataQuality": true,
@@ -8672,8 +8672,8 @@
         {
           "@type": "dcat:Distribution",
           "mediaType": "application/json",
-          "title": "11.6.26data.json",
-          "downloadURL": "https://inventory.data.gov/dataset/acf8e47e-24d2-4e4d-a786-847643f101fd/resource/a0dfbdf9-1b32-436d-a04b-6d328e5031e8/download/11.6.26data.json",
+          "title": "11.17.26data.json",
+          "downloadURL": "https://inventory.data.gov/dataset/acf8e47e-24d2-4e4d-a786-847643f101fd/resource/917e8f7d-7c9c-4a2d-8368-7b43946064f2/download/11.17.26data.json",
           "license": "https://creativecommons.org/publicdomain/zero/1.0/"
         }
       ],
@@ -19351,7 +19351,7 @@
       "@type": "dcat:Dataset",
       "title": "Federal Real Property Profile (FRPP)",
       "description": "An ISO compliant metadata file to be used for harvesting the FRPP NGDA to the geoPlatform.   Assets on a campus or installation may share one main address or identical Lat/Long coordinates and appear stacked visually, but each remains a unique GIS feature. Due to national security and other authorized exclusions, some FRPP data is not available to the public.",
-      "modified": "2026-10-27T14:53:48.099Z",
+      "modified": "2026-11-19T17:19:10.523Z",
       "accessLevel": "public",
       "identifier": "GSA-2023-10-30-01",
       "dataQuality": true,
@@ -19389,14 +19389,8 @@
         {
           "@type": "dcat:Distribution",
           "mediaType": "application/xml",
-          "title": "FedRealPropertyProfileDataFRPP_NGDARecord_GSA_20231011 (1).xml",
-          "conformsTo": [
-            {
-              "@type": "Standard",
-              "identifier": "http://www.isotc211.org/2005/gmd"
-            }
-          ],
-          "downloadURL": "https://inventory.data.gov/dataset/ebd7d483-e022-4940-8480-e7b92555754d/resource/b86810c6-f9b3-4688-aa59-fb89d172a2ba/download/fedrealpropertyprofiledatafrpp_ngdarecord_gsa_20231011-1.xml",
+          "title": "FRPP19139_10282026.xml",
+          "downloadURL": "https://inventory.data.gov/dataset/ebd7d483-e022-4940-8480-e7b92555754d/resource/6d910c4a-9a01-4b09-836e-c7caeab898f6/download/frpp19139_10282026.xml",
           "license": "https://creativecommons.org/publicdomain/zero/1.0/"
         }
       ],
