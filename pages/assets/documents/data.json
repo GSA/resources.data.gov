@@ -4194,7 +4194,7 @@
       "@type": "dcat:Dataset",
       "title": "Inventory of Owned and Leased Properties (IOLP)",
       "description": "The Inventory of Owned and Leased Properties (IOLP) allows users to search properties owned and leased by the General Services Administration (GSA) across the United States, Puerto Rico, Guam and American Samoa.\n\nThe Owned and Leased Data Sets include the following data except where noted below for Leases:\n\n- Location Code - GSA’s alphanumeric identifier for the building\n- Real Property Asset Name - Allows users to find information about a specific building \n- Installation Name - Allows users to identify whether a property is part of an installation, such as a campus\n- Owned or Leased - Indicates the building is federally owned (F) or leased (L)\n- GSA Region - GSA assigned region for building location\n- Street Address/City/State/Zip Code - Building address\n- Longitude and Latitude - Map coordinates of the building (only through .csv export)\n- Rentable Square Feet - Total rentable square feet in building\n- Available Square Feet - Vacant space in building\n- Construction Date (Owned Only) - Year built\n- Congressional District - Congressional District building is located\n- Senator/Representative/URL - Senator/Representative of the Congressional District and their URL\n- Building Status (Owned Only) - Indicates building is active\n- Lease Number (Leased Only) - GSA’s alphanumeric identifier for the lease\n- Lease Effective/Expiration Dates (Leased Only) - Date lease starts/expires\n- Real Property Asset Type - Identifies a property as land, building, or structure",
-      "modified": "2026-11-17T14:27:52.281Z",
+      "modified": "2026-11-23T14:12:31.528Z",
       "accessLevel": "public",
       "identifier": "GSA-4495",
       "dataQuality": true,
@@ -4230,15 +4230,15 @@
         {
           "@type": "dcat:Distribution",
           "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-          "title": "2026 - 11 - 13 - IOLP Leases.xlsx",
-          "downloadURL": "https://inventory.data.gov/dataset/9a9e946e-124e-46f5-a934-e458a6c1c2b2/resource/8cb110a2-bfb7-4bd0-842b-795b5949c58e/download/2026-11-13-iolp-leases.xlsx",
+          "title": "2026 - 11 - 20 - IOLP Leases.xlsx",
+          "downloadURL": "https://inventory.data.gov/dataset/9a9e946e-124e-46f5-a934-e458a6c1c2b2/resource/a9792d13-2ce6-45c3-b09d-156270eac88e/download/2026-11-20-iolp-leases.xlsx",
           "license": "https://creativecommons.org/publicdomain/zero/1.0/"
         },
         {
           "@type": "dcat:Distribution",
           "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-          "title": "2026 - 11 - 13 - IOLP Buildings.xlsx",
-          "downloadURL": "https://inventory.data.gov/dataset/9a9e946e-124e-46f5-a934-e458a6c1c2b2/resource/f02d2ae2-4f12-4985-bac2-fa68022f01fb/download/2026-11-13-iolp-buildings.xlsx",
+          "title": "2026 - 11 - 20 - IOLP Buildings.xlsx",
+          "downloadURL": "https://inventory.data.gov/dataset/9a9e946e-124e-46f5-a934-e458a6c1c2b2/resource/b3281a26-dee0-4ee1-8600-c57e197b137e/download/2026-11-20-iolp-buildings.xlsx",
           "license": "https://creativecommons.org/publicdomain/zero/1.0/"
         }
       ],
@@ -8648,7 +8648,7 @@
       "@type": "dcat:Dataset",
       "title": "GSA Enterprise Data Inventory (EDI)",
       "description": "GSA Enterprise Data Inventory (EDI)",
-      "modified": "2026-11-17T14:29:54.302Z",
+      "modified": "2026-11-19T17:21:03.636Z",
       "accessLevel": "public",
       "identifier": "GSA-2015-11-13-01",
       "dataQuality": true,
@@ -8672,8 +8672,8 @@
         {
           "@type": "dcat:Distribution",
           "mediaType": "application/json",
-          "title": "11.17.26data.json",
-          "downloadURL": "https://inventory.data.gov/dataset/acf8e47e-24d2-4e4d-a786-847643f101fd/resource/917e8f7d-7c9c-4a2d-8368-7b43946064f2/download/11.17.26data.json",
+          "title": "11.19.26data.json",
+          "downloadURL": "https://inventory.data.gov/dataset/acf8e47e-24d2-4e4d-a786-847643f101fd/resource/4fb96deb-2f10-4b21-9126-825dd2277180/download/11.19.26data.json",
           "license": "https://creativecommons.org/publicdomain/zero/1.0/"
         }
       ],
